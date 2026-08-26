@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Uma Race Results</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <div class="eyebrow">Tournament results</div>
+        <h1 id="title">Uma Race Results</h1>
+      </div>
+      <div id="updated" class="updated">Loading…</div>
+    </header>
+
+    <nav class="tabs" aria-label="Sections">
+      <button class="tab active" data-panel="results">Results</button>
+      <button class="tab" data-panel="standings">Standings</button>
+    </nav>
+
+    <section id="results" class="panel active">
+      <div id="race-list"></div>
+    </section>
+
+    <section id="standings" class="panel">
+      <div class="standings-grid">
+        <article class="standing-card">
+          <h2>Trainer standings</h2>
+          <div id="trainer-standings"></div>
+        </article>
+        <article class="standing-card">
+          <h2>Team standings</h2>
+          <div id="team-standings"></div>
+        </article>
+      </div>
+    </section>
+
+    <footer>Static GitHub Pages frontend · race data is published from the host PC.</footer>
+  </main>
+  <script src="assets/app.js"></script>
+</body>
+</html>

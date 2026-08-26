@@ -1,0 +1,30 @@
+{
+  "ts": 1781549234417,
+  "running": false,
+  "horses": [
+    {
+      "gate": 7,
+      "name": "Narita Taishin",
+      "trainer": "ExampleTrainer",
+      "finished": true,
+      "order": 1,
+      "finish_time": 130.302
+    },
+    {
+      "gate": 3,
+      "name": "Oguri Cap",
+      "trainer": "RivalA",
+      "finished": true,
+      "order": 2,
+      "finish_time": 130.611
+    },
+    {
+      "gate": 11,
+      "name": "Gold Ship",
+      "trainer": "RivalB",
+      "finished": true,
+      "order": 3,
+      "finish_time": 130.843
+    }
+  ]
+}
