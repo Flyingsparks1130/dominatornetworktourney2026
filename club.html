@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><title>Club · UMA Legends Cup</title><link rel="stylesheet" href="assets/site.css"></head>
+<body><script src="assets/site.js"></script><script>siteHeader("clubs");</script>
+<main class="page"><div id="club-detail"></div></main>
+<script>
+(async()=>{const id=new URLSearchParams(location.search).get("id");const data=await getJSON("config/clubs.json");const c=data.clubs.find(x=>x.id===id),root=document.getElementById("club-detail");
+if(!c){root.innerHTML=`<div class="page-head"><h1>CLUB NOT FOUND</h1></div>`;return}
+document.title=`${c.name} · UMA Legends Cup`;root.innerHTML=`
+<div class="page-head team-detail-head"><div><div class="section-kicker mono">RANDOM DRAW #${c.draw_order}</div><h1>${esc(c.name)}</h1>
+<p class="lead">Round 1 · Lobby ${c.r1_lobby}</p></div><a class="btn" href="clubs.html">← BACK TO CLUBS</a></div>
+<div class="team-detail-meta"><div class="detail-stat"><div class="meta-label">DRAW</div><div class="meta-value">#${c.draw_order}</div></div>
+<div class="detail-stat"><div class="meta-label">ROUND 1</div><div class="meta-value">Lobby ${c.r1_lobby}</div></div>
+<div class="detail-stat"><div class="meta-label">ROSTER</div><div class="meta-value">${c.members?.length||0} trainers</div></div></div>
+<div class="rule"></div><div class="section-kicker mono">CLUB MEMBERS</div><div class="member-grid">${(c.members||[]).map((m,i)=>`
+<article class="member-card"><div class="num">#${String(i+1).padStart(2,"0")}</div><h3>${esc(m.name)}</h3><p>${esc(m.role||"Trainer")}</p></article>`).join("")}</div>`})().catch(console.error);
+</script><script>siteFooter();</script></body></html>

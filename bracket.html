@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><title>Bracket · UMA Legends Cup</title><link rel="stylesheet" href="assets/site.css"></head>
+<body><script src="assets/site.js"></script><script>siteHeader("bracket");</script>
+
+<main class="page"><div class="page-head"><h1>THE BRACKET</h1><p class="lead">Twelve clubs. Round 1 consists of three four-club lobbies assigned by a random draw.</p></div><div class="round-strip" id="round-strip"></div>
+<section><h2 class="flow-title mono">HOW THE FIELD MOVES</h2><div class="micro" style="color:#6f6a61;margin-bottom:22px">ROUND 1 IS RANDOMIZED · DOWNSTREAM ADVANCEMENT FORMAT TBD</div>
+<div class="bracket-flow"><svg viewBox="0 0 1320 390"><text class="flow-label" x="45" y="25">R1</text><text class="flow-label" x="420" y="25">QF</text><text class="flow-label" x="815" y="25">SF</text><text class="flow-label" x="1210" y="25">GF</text><g id="flow-lines"></g><g id="flow-boxes"></g></svg></div></section>
+<section><h2 class="lobby-section-title mono">ROUND 1</h2><div class="micro" style="color:#6f6a61">3 LOBBIES · 4 CLUBS EACH · RANDOM DRAW</div><div id="lobby-grid" class="lobby-grid"></div></section></main>
+
+<script>
+(async()=>{const [b,tdata,idx]=await Promise.all([getJSON("data/bracket.json"),getJSON("config/clubs.json"),getJSON("data/index.json")]);const clubMap=Object.fromEntries(tdata.clubs.map(c=>[c.id,c]));
+document.getElementById("round-strip").innerHTML=b.rounds.map(r=>`<div class="round-cell"><div class="date">${esc(r.date)}</div><h3>${esc(r.title)}</h3><p>${esc(r.format)}</p><p class="advance">${esc(r.advance)}</p></div>`).join("");
+const boxes=[];
+[["R1 Lobby 1",45,80],["R1 Lobby 2",45,170],["R1 Lobby 3",45,260],
+ ["Quarter Finals",415,170],["Semi Finals",805,170],["Grand Final",1160,170]].forEach(([label,x,y],i)=>{
+ boxes.push(`<rect class="flow-box ${label==="Grand Final"?"flow-box-final":""}" x="${x}" y="${y}" width="${label==="Grand Final"?130:145}" height="34"/>
+ <text class="flow-text" x="${x+18}" y="${y+22}">${label}</text>`);
+});
+document.getElementById("flow-boxes").innerHTML=boxes.join("");
+document.getElementById("flow-lines").innerHTML=`
+<path class="flow-line" d="M190 97 C290 97 315 187 415 187"/>
+<path class="flow-line" d="M190 187 H415"/>
+<path class="flow-line" d="M190 277 C290 277 315 187 415 187"/>
+<path class="flow-line-dash" d="M560 187 H805"/>
+<path class="flow-line-dash" d="M950 187 H1160"/>`;
+document.getElementById("lobby-grid").innerHTML=b.r1_lobbies.map(l=>`<article class="lobby-card">
+<div class="lobby-title">LOBBY ${l.lobby}</div><div class="lobby-teams">${l.club_ids.map(id=>clubMap[id]).filter(Boolean).map(c=>`
+<div class="lobby-team"><span class="seed-dot"></span><span class="team-seed">#${c.draw_order}</span>
+<div><div class="team-name">${esc(c.name)}</div><div class="team-club">Random draw</div></div><div class="team-score">—</div></div>`).join("")}</div>
+<div class="lobby-actions"><a href="lobby.html?round=1&lobby=${l.lobby}">RESULTS</a><a href="lobby.html?round=1&lobby=${l.lobby}">DETAILS ›</a></div></article>`).join("");
+})().catch(console.error);
+</script><script>siteFooter();</script></body></html>

@@ -167,7 +167,7 @@ def process_race(raw_path: Path, round_no: int, lobby_no: int, race_no: int, cfg
     for x in rows:
         p = players.get(x["trainer"], {})
         x["display_trainer"] = p.get("display_name") or x["trainer"] or "Unknown trainer"
-        x["team"] = p.get("team")
+        x["club"] = p.get("club") or p.get("team")
         x["time_display"] = fmt_time(x["time_seconds"])
         x["points"] = int(points.get(str(x["place"]), 0))
 
@@ -205,7 +205,7 @@ def update_manifest(race: dict[str, Any]) -> None:
 def rebuild_standings() -> None:
     idx = load_json(INDEX_PATH, {"races": []})
     trainers = defaultdict(lambda: {"points": 0, "wins": 0, "races": 0})
-    teams = defaultdict(lambda: {"points": 0, "wins": 0, "races": 0})
+    clubs = defaultdict(lambda: {"points": 0, "wins": 0, "races": 0})
 
     for meta in idx.get("races", []):
         race_path = ROOT / meta["file"]
@@ -213,7 +213,7 @@ def rebuild_standings() -> None:
             continue
         race = load_json(race_path)
         seen_trainer = set()
-        seen_team = set()
+        seen_club = set()
         for x in race.get("results", []):
             trainer = x.get("display_trainer") or x.get("trainer") or "Unknown trainer"
             trainers[trainer]["points"] += int(x.get("points", 0))
@@ -223,28 +223,28 @@ def rebuild_standings() -> None:
                 trainers[trainer]["races"] += 1
                 seen_trainer.add(trainer)
 
-            team = x.get("team")
-            if team:
-                teams[team]["points"] += int(x.get("points", 0))
+            club = x.get("club") or x.get("team")
+            if club:
+                clubs[club]["points"] += int(x.get("points", 0))
                 if x.get("place") == 1:
-                    teams[team]["wins"] += 1
-                if team not in seen_team:
-                    teams[team]["races"] += 1
-                    seen_team.add(team)
+                    clubs[club]["wins"] += 1
+                if club not in seen_club:
+                    clubs[club]["races"] += 1
+                    seen_club.add(club)
 
     trainer_rows = [
         {"trainer": k, **v} for k, v in trainers.items()
     ]
-    team_rows = [
-        {"team": k, **v} for k, v in teams.items()
+    club_rows = [
+        {"club": k, **v} for k, v in clubs.items()
     ]
     trainer_rows.sort(key=lambda x: (-x["points"], -x["wins"], x["trainer"].lower()))
-    team_rows.sort(key=lambda x: (-x["points"], -x["wins"], x["team"].lower()))
+    club_rows.sort(key=lambda x: (-x["points"], -x["wins"], x["club"].lower()))
 
     save_json(STANDINGS_PATH, {
         "updated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "trainers": trainer_rows,
-        "teams": team_rows,
+        "clubs": club_rows,
     })
 
 

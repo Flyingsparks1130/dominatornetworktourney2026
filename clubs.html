@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><title>Clubs · UMA Legends Cup</title><link rel="stylesheet" href="assets/site.css"></head>
+<body><script src="assets/site.js"></script><script>siteHeader("clubs");</script>
+<main class="page"><div class="page-head"><h1>THE CLUBS</h1>
+<p class="lead">Twelve clubs. Round 1 placement is determined by a random draw — not by rating.</p></div>
+<input id="club-search" class="search-box" placeholder="Search clubs" autocomplete="off">
+<table class="teams-table"><thead><tr><th>DRAW</th><th>CLUB</th><th>R1 LOBBY</th><th>ROSTER</th></tr></thead><tbody id="club-rows"></tbody></table></main>
+<script>
+(async()=>{const data=await getJSON("config/clubs.json");const rows=document.getElementById("club-rows"),search=document.getElementById("club-search");
+function draw(q=""){const s=q.trim().toLowerCase();rows.innerHTML=data.clubs.filter(c=>!s||c.name.toLowerCase().includes(s)).sort((a,b)=>a.draw_order-b.draw_order).map(c=>`
+<tr data-link="club.html?id=${encodeURIComponent(c.id)}"><td class="seed-cell">#${c.draw_order}</td><td class="team-cell">${esc(c.name)}</td>
+<td class="lobby-cell"><span class="lobby-mark"></span>Lobby ${c.r1_lobby}</td><td>${c.members?.length||0} trainers</td></tr>`).join("");
+rows.querySelectorAll("tr[data-link]").forEach(tr=>tr.onclick=()=>location.href=tr.dataset.link)}
+draw();search.addEventListener("input",()=>draw(search.value))})().catch(console.error);
+</script><script>siteFooter();</script></body></html>

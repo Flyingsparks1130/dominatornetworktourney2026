@@ -1,0 +1,1000 @@
+{
+  "clubs": [
+    {
+      "id": "dominator",
+      "name": "Dominator",
+      "members": [
+        {
+          "name": "Dominator Trainer 1",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominator Trainer 2",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominator Trainer 3",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominator Trainer 4",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominator Trainer 5",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominator Trainer 6",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominator Trainer 7",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominator Trainer 8",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominator Trainer 9",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominator Trainer 10",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominator Trainer 11",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominator Trainer 12",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominator Trainer 13",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominator Trainer 14",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominator Trainer 15",
+          "role": "Trainer",
+          "discord": ""
+        }
+      ],
+      "draw_order": 1,
+      "r1_lobby": 1
+    },
+    {
+      "id": "dominante",
+      "name": "Dominante",
+      "members": [
+        {
+          "name": "Dominante Trainer 1",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Trainer 2",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Trainer 3",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Trainer 4",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Trainer 5",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Trainer 6",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Trainer 7",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Trainer 8",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Trainer 9",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Trainer 10",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Trainer 11",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Trainer 12",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Trainer 13",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Trainer 14",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Trainer 15",
+          "role": "Trainer",
+          "discord": ""
+        }
+      ],
+      "draw_order": 2,
+      "r1_lobby": 1
+    },
+    {
+      "id": "dominant-h",
+      "name": "Dominant H",
+      "members": [
+        {
+          "name": "Dominant H Trainer 1",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Trainer 2",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Trainer 3",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Trainer 4",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Trainer 5",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Trainer 6",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Trainer 7",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Trainer 8",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Trainer 9",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Trainer 10",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Trainer 11",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Trainer 12",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Trainer 13",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Trainer 14",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Trainer 15",
+          "role": "Trainer",
+          "discord": ""
+        }
+      ],
+      "draw_order": 3,
+      "r1_lobby": 1
+    },
+    {
+      "id": "domicile",
+      "name": "Domicile",
+      "members": [
+        {
+          "name": "Domicile Trainer 1",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domicile Trainer 2",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domicile Trainer 3",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domicile Trainer 4",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domicile Trainer 5",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domicile Trainer 6",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domicile Trainer 7",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domicile Trainer 8",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domicile Trainer 9",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domicile Trainer 10",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domicile Trainer 11",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domicile Trainer 12",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domicile Trainer 13",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domicile Trainer 14",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domicile Trainer 15",
+          "role": "Trainer",
+          "discord": ""
+        }
+      ],
+      "draw_order": 4,
+      "r1_lobby": 1
+    },
+    {
+      "id": "dominion",
+      "name": "Dominion",
+      "members": [
+        {
+          "name": "Dominion Trainer 1",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Trainer 2",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Trainer 3",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Trainer 4",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Trainer 5",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Trainer 6",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Trainer 7",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Trainer 8",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Trainer 9",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Trainer 10",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Trainer 11",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Trainer 12",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Trainer 13",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Trainer 14",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Trainer 15",
+          "role": "Trainer",
+          "discord": ""
+        }
+      ],
+      "draw_order": 5,
+      "r1_lobby": 2
+    },
+    {
+      "id": "dominacion",
+      "name": "Dominacion",
+      "members": [
+        {
+          "name": "Dominacion Trainer 1",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Trainer 2",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Trainer 3",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Trainer 4",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Trainer 5",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Trainer 6",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Trainer 7",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Trainer 8",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Trainer 9",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Trainer 10",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Trainer 11",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Trainer 12",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Trainer 13",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Trainer 14",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Trainer 15",
+          "role": "Trainer",
+          "discord": ""
+        }
+      ],
+      "draw_order": 6,
+      "r1_lobby": 2
+    },
+    {
+      "id": "dominance",
+      "name": "Dominance",
+      "members": [
+        {
+          "name": "Dominance Trainer 1",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Trainer 2",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Trainer 3",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Trainer 4",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Trainer 5",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Trainer 6",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Trainer 7",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Trainer 8",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Trainer 9",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Trainer 10",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Trainer 11",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Trainer 12",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Trainer 13",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Trainer 14",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Trainer 15",
+          "role": "Trainer",
+          "discord": ""
+        }
+      ],
+      "draw_order": 7,
+      "r1_lobby": 2
+    },
+    {
+      "id": "domical",
+      "name": "Domical",
+      "members": [
+        {
+          "name": "Domical Trainer 1",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domical Trainer 2",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domical Trainer 3",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domical Trainer 4",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domical Trainer 5",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domical Trainer 6",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domical Trainer 7",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domical Trainer 8",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domical Trainer 9",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domical Trainer 10",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domical Trainer 11",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domical Trainer 12",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domical Trainer 13",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domical Trainer 14",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domical Trainer 15",
+          "role": "Trainer",
+          "discord": ""
+        }
+      ],
+      "draw_order": 8,
+      "r1_lobby": 2
+    },
+    {
+      "id": "dominate",
+      "name": "Dominate",
+      "members": [
+        {
+          "name": "Dominate Trainer 1",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Trainer 2",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Trainer 3",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Trainer 4",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Trainer 5",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Trainer 6",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Trainer 7",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Trainer 8",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Trainer 9",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Trainer 10",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Trainer 11",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Trainer 12",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Trainer 13",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Trainer 14",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Trainer 15",
+          "role": "Trainer",
+          "discord": ""
+        }
+      ],
+      "draw_order": 9,
+      "r1_lobby": 3
+    },
+    {
+      "id": "dominium",
+      "name": "Dominium",
+      "members": [
+        {
+          "name": "Dominium Trainer 1",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Trainer 2",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Trainer 3",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Trainer 4",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Trainer 5",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Trainer 6",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Trainer 7",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Trainer 8",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Trainer 9",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Trainer 10",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Trainer 11",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Trainer 12",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Trainer 13",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Trainer 14",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Trainer 15",
+          "role": "Trainer",
+          "discord": ""
+        }
+      ],
+      "draw_order": 10,
+      "r1_lobby": 3
+    },
+    {
+      "id": "domineer",
+      "name": "Domineer",
+      "members": [
+        {
+          "name": "Domineer Trainer 1",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Trainer 2",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Trainer 3",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Trainer 4",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Trainer 5",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Trainer 6",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Trainer 7",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Trainer 8",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Trainer 9",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Trainer 10",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Trainer 11",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Trainer 12",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Trainer 13",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Trainer 14",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Trainer 15",
+          "role": "Trainer",
+          "discord": ""
+        }
+      ],
+      "draw_order": 11,
+      "r1_lobby": 3
+    },
+    {
+      "id": "domichill",
+      "name": "DomiChill",
+      "members": [
+        {
+          "name": "DomiChill Trainer 1",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Trainer 2",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Trainer 3",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Trainer 4",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Trainer 5",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Trainer 6",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Trainer 7",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Trainer 8",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Trainer 9",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Trainer 10",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Trainer 11",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Trainer 12",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Trainer 13",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Trainer 14",
+          "role": "Trainer",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Trainer 15",
+          "role": "Trainer",
+          "discord": ""
+        }
+      ],
+      "draw_order": 12,
+      "r1_lobby": 3
+    }
+  ]
+}

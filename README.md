@@ -3,11 +3,24 @@
 A small, static tournament-results site plus a **one-click Windows publisher** for finished
 Umamusume races archived by Uma Race Overlay.
 
+## Frontend page map
+
+- `index.html` — Home.
+- `rules.html` — Rules with a sticky contents rail.
+- `tracks.html` — Track overview + detailed course sections.
+- `bracket.html` — Bracket flow + Round 1 lobby cards.
+- `clubs.html` — Searchable 12-club field in randomized draw order.
+- `club.html?id=...` — Club drilldown with 15 tournament roster members.
+- `lobby.html?round=1&lobby=1` — Race/lobby results drilldown.
+- `stats.html` — Stats page scaffolded; content TBD.
+
+The frontend is data-driven from `config/clubs.json`, `config/tracks.json`, `data/bracket.json`, and the race JSON files created by the publisher.
+
 ## What it does
 
 1. Reads the newest `.json` file from `%LOCALAPPDATA%\uma_race_overlay_races`.
 2. Extracts finishing place, gate, Uma name, trainer, and finish time.
-3. Applies your points table and optional team/player aliases.
+3. Applies your points table and optional club/trainer aliases.
 4. Writes a normalized race file to `data/races/`.
 5. Updates `data/index.json` and `data/standings.json`.
 6. Optionally commits and pushes the update to GitHub.
@@ -176,3 +189,21 @@ The normalized schema is intentionally simple, so you can add:
 - Discord webhook announcements.
 
 The original raw race archive is **not** copied into the repository by default.
+
+
+## Random Round 1 draw
+
+The tournament no longer uses rating-based seeding.
+
+`randomize_draw.bat` performs a new random draw of all 12 clubs into **3 Round 1 lobbies of 4** and updates both:
+
+- `config/clubs.json`
+- `data/bracket.json`
+
+To make a reproducible draw from the command line:
+
+```powershell
+py scripts\randomize_draw.py --seed "official-draw-1"
+```
+
+Omit `--seed` to use system randomness.
