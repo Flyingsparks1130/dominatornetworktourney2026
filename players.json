@@ -1,0 +1,7 @@
+{
+  "_comment": "Optional. Map exact in-game trainer names to a display name and/or team.",
+  "ExampleTrainer": {
+    "display_name": "Example Trainer",
+    "team": "Example Team"
+  }
+}

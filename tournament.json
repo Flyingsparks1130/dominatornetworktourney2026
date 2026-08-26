@@ -1,0 +1,19 @@
+{
+  "name": "Uma Race Results",
+  "source_directory": "%LOCALAPPDATA%\\uma_race_overlay_races",
+  "current_round": 1,
+  "current_lobby": 1,
+  "next_race": 1,
+  "auto_advance_race": true,
+  "expected_entries": null,
+  "points_by_place": {
+    "1": 10,
+    "2": 8,
+    "3": 6,
+    "4": 5,
+    "5": 4,
+    "6": 3,
+    "7": 2,
+    "8": 1
+  }
+}
