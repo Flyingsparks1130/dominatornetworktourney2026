@@ -264,8 +264,8 @@ This avoids leaking or fabricating matchups before the official draw.
 2. The 6 Round 1 winners become seeds 1–6.
 3. The 6 Round 1 losers enter a 5-round redemption round robin, fielding 2 Umas each per redemption round.
 4. The top 2 redemption clubs become seeds 7 and 8.
-5. Quarterfinals: Seed 1 vs 4, Seed 2 vs 3, Seed 6 vs 7, Seed 5 vs 8.
-6. Semifinals: 1/4 winner vs 2/3 winner; 6/7 winner vs 5/8 winner.
+5. Quarterfinals: Seed 1 vs 8, Seed 4 vs 5, Seed 2 vs 7, Seed 3 vs 6.
+6. Semifinals: 1/8 winner vs 4/5 winner; 2/7 winner vs 3/6 winner.
 7. Grand Final: semifinal winners.
 
 Actual Round 1 club matchups remain hidden until `randomize_draw.bat` is run.
