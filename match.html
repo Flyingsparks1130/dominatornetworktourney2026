@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><title>Match · The Dominator Draft</title><link rel="stylesheet" href="assets/site.css"></head>
+<body><script src="assets/site.js"></script><script>siteHeader("bracket");</script>
+<main class="page"><div id="match-root"></div></main>
+<script>
+(async()=>{const p=new URLSearchParams(location.search),round=Number(p.get("round")||1),match=Number(p.get("match")||1);
+const [clubs,b,drafts,idx,scores]=await Promise.all([getJSON("config/clubs.json"),getJSON("data/bracket.json"),getJSON("data/drafts.json"),getJSON("data/index.json"),getJSON("data/match_scores.json")]);
+const cmap=Object.fromEntries(clubs.clubs.map(c=>[c.id,c])),mdef=(b.opening_matches||[]).find(x=>round===1&&x.match===match),root=document.getElementById("match-root");
+if(!mdef){root.innerHTML=`<div class="page-head"><h1>MATCH NOT FOUND</h1></div>`;return}
+const a=cmap[mdef.club_ids[0]],bb=cmap[mdef.club_ids[1]],draft=drafts.matches?.[`r${round}-m${match}`]||{},score=(scores.matches||[]).find(x=>x.round===round&&x.match===match);
+const ap=score?.club_points?.[a.name]??0,bp=score?.club_points?.[bb.name]??0,races=(idx.races||[]).filter(x=>x.round===round&&x.match===match).sort((x,y)=>x.race-y.race);
+function list(v){return Array.isArray(v)&&v.length?v.map(esc).join(", "):"—"}
+let html=`<div class="page-head"><div class="section-kicker mono">OPENING ROUND · MATCH ${match}</div><h1>${esc(a.name)} <span class="red">VS</span> ${esc(bb.name)}</h1>
+<p class="lead">Six standard races. First club to 25 points wins; if no winner is decided through Race 6, the pre-rolled tiebreaker is used.</p>
+<div class="match-header-score"><div class="score-panel"><div class="club">${esc(a.name)}</div><strong>${ap}</strong></div><span class="status-badge ${score?.status==="winner"?"red":""}">${esc((score?.status||"NOT STARTED").replaceAll("_"," ").toUpperCase())}</span><div class="score-panel"><div class="club">${esc(bb.name)}</div><strong>${bp}</strong></div></div></div>
+<div class="draft-board">
+<article class="draft-panel"><h3>TRACK DRAFT</h3><div class="data-line"><strong>Tiebreaker:</strong> ${esc(draft.tiebreaker_track||"—")}</div>
+<div class="data-line"><strong>${esc(a.name)} picks:</strong> ${list(draft.track_picks?.club_a)}</div><div class="data-line"><strong>${esc(bb.name)} picks:</strong> ${list(draft.track_picks?.club_b)}</div>
+<div class="data-line"><strong>${esc(a.name)} veto:</strong> ${esc(draft.track_vetoes?.club_a||"—")}</div><div class="data-line"><strong>${esc(bb.name)} veto:</strong> ${esc(draft.track_vetoes?.club_b||"—")}</div>
+<div class="data-line"><strong>Final 6:</strong> ${list(draft.final_tracks)}</div></article>
+<article class="draft-panel"><h3>UMA DRAFT</h3><div class="data-line"><strong>Pre-bans:</strong> ${esc(draft.uma_pre_bans?.club_a||"—")} / ${esc(draft.uma_pre_bans?.club_b||"—")}</div>
+<div class="data-line"><strong>${esc(a.name)} initial 5:</strong> ${list(draft.uma_initial_picks?.club_a)}</div><div class="data-line"><strong>${esc(bb.name)} initial 5:</strong> ${list(draft.uma_initial_picks?.club_b)}</div>
+<div class="data-line"><strong>Second bans:</strong> ${esc(draft.uma_second_bans?.club_a||"—")} / ${esc(draft.uma_second_bans?.club_b||"—")}</div>
+<div class="data-line"><strong>${esc(a.name)} +2:</strong> ${list(draft.uma_additional_picks?.club_a)}</div><div class="data-line"><strong>${esc(bb.name)} +2:</strong> ${list(draft.uma_additional_picks?.club_b)}</div>
+<div class="data-line"><strong>Benches:</strong> ${esc(draft.benched_uma?.club_a||"—")} / ${esc(draft.benched_uma?.club_b||"—")}</div>
+<div class="data-line"><strong>Build deadline:</strong> ${esc(draft.build_deadline||"—")}</div></article></div>
+<div class="rule"></div><div class="section-kicker mono">RACE RESULTS</div>`;
+if(!races.length)html+=`<div class="pool-empty mono">NO RACES PUBLISHED YET.</div>`;
+for(const meta of races){const race=await getJSON(meta.file);html+=`<article class="race-card"><div class="race-head"><strong>Race ${race.race}${race.is_tiebreaker?" · TIEBREAKER":""}</strong><span class="micro">${esc(race.source_file||"")}</span></div>
+<table class="result-table"><thead><tr><th>PLACE</th><th>UMA</th><th>TRAINER</th><th>CLUB</th><th>TIME</th><th>POINTS</th></tr></thead><tbody>${(race.results||[]).map(x=>`
+<tr class="${x.non_scoring?"npc":""}"><td>${x.place}</td><td>${esc(x.uma)}</td><td>${esc(x.display_trainer||x.trainer)}</td><td>${esc(x.club||"—")}</td><td>${esc(x.time_display||"—")}</td><td class="point">${x.points??0}${x.non_scoring?" · NPC/DQ":""}</td></tr>`).join("")}</tbody></table></article>`}
+root.innerHTML=html})().catch(console.error);
+</script><script>siteFooter();</script></body></html>

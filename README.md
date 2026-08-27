@@ -1,209 +1,233 @@
-# Uma Race Results — GitHub Pages starter
+# The Dominator Draft 2026
 
-A small, static tournament-results site plus a **one-click Windows publisher** for finished
+Static GitHub Pages tournament site plus a one-click Windows race publisher for finished
 Umamusume races archived by Uma Race Overlay.
+
+## Tournament model
+
+- 12 clubs.
+- 5 trainers per club: Sprint, Mile, Medium, Long, Dirt.
+- 2 clubs compete head-to-head in a match.
+- 6 standard races.
+- A random tiebreaker track is rolled before the draft.
+- Each club picks 4 tracks; each club vetoes 1 opposing pick.
+- Final race card: 6 selected tracks + the reserved tiebreaker.
+- Each club pre-bans 1 Uma.
+- Each club picks 5 Umas in snake order.
+- Each club then bans 1 opposing selected Uma and adds 2 more picks.
+- Final pool: 6 Umas per club, with 1 benched.
+- 24-hour build window.
+- One submitted Uma per trainer.
+- Submitted build/running style is used across all selected tracks.
+- Scoring: 1st = 4, 2nd = 2, 3rd = 1.
+- First club to 25 points wins.
+- If no winner is decided through Race 6, use the tiebreaker.
+- NPC/DQ replacements cannot score. Their scoring position passes to the next eligible finisher.
+
+## Dominator visual theme
+
+The site uses a separate Dominator identity based on the supplied reference art:
+
+- black / deep-maroon base
+- vivid crimson accents
+- antique-gold trim
+- pale desaturated text accents
+- gothic/serif title treatment
+- angular red brush/streak treatment in the hero
+
+The reference image itself is not required by the website.
 
 ## Frontend page map
 
-- `index.html` — Home.
-- `rules.html` — Rules with a sticky contents rail.
-- `tracks.html` — Track overview + detailed course sections.
-- `bracket.html` — Bracket flow + Round 1 lobby cards.
-- `clubs.html` — Searchable 12-club field in randomized draw order.
-- `club.html?id=...` — Club drilldown with 15 tournament roster members.
-- `lobby.html?round=1&lobby=1` — Race/lobby results drilldown.
-- `stats.html` — Stats page scaffolded; content TBD.
+- `index.html` — Home / event landing page.
+- `rules.html` — Full Draft format and competition rules.
+- `tracks.html` — Track-draft process and future random track pool.
+- `bracket.html` — 12-club random opening draw, displayed as 6 head-to-head matches.
+- `clubs.html` — Searchable club field.
+- `club.html?id=...` — Club drilldown with five specialist trainers.
+- `match.html?round=1&match=1` — One head-to-head matchup, draft state, score, and race results.
+- `stats.html` — Reserved analytics page.
+- `teams.html`, `team.html`, `lobby.html` — compatibility redirects from the earlier build.
 
-The frontend is data-driven from `config/clubs.json`, `config/tracks.json`, `data/bracket.json`, and the race JSON files created by the publisher.
+## Data files
 
-## What it does
+- `config/tournament.json` — current host match/race and scoring rules.
+- `config/clubs.json` — the 12 clubs and their five-player rosters.
+- `config/players.json` — exact in-game trainer name → club mapping.
+- `config/track_pool.json` — official random track pool when available.
+- `data/bracket.json` — official random opening-round pairings.
+- `data/drafts.json` — per-match track/Uma draft state.
+- `data/index.json` — published-race manifest.
+- `data/match_scores.json` — precomputed club scores/status by match.
+- `data/races/` — normalized race-result files created by the publisher.
 
-1. Reads the newest `.json` file from `%LOCALAPPDATA%\uma_race_overlay_races`.
-2. Extracts finishing place, gate, Uma name, trainer, and finish time.
-3. Applies your points table and optional club/trainer aliases.
-4. Writes a normalized race file to `data/races/`.
-5. Updates `data/index.json` and `data/standings.json`.
-6. Optionally commits and pushes the update to GitHub.
-7. GitHub Pages shows the new race and standings.
-
-No server, database, API key, or JavaScript build step is required.
-
-## 1. Prerequisites
+## One-time prerequisites
 
 - Windows
 - Steam Umamusume
-- Hachimi + [Uma Race Overlay](https://github.com/timanovdd-arch/uma-race-overlay) configured so completed races are archived
+- Hachimi + Uma Race Overlay configured so finished races are archived
 - Python 3
 - Git for Windows
-- A GitHub repository cloned to this folder
+- This repository cloned locally
 
-The publisher uses only Python's standard library.
+Uma Race Overlay normally archives races under:
 
-## 2. Configure the tournament
-
-Edit `config/tournament.json`.
-
-Important fields:
-
-- `name`: site title.
-- `source_directory`: normally leave this as `%LOCALAPPDATA%\uma_race_overlay_races`.
-- `current_round`: round currently being hosted.
-- `current_lobby`: lobby currently being hosted.
-- `next_race`: next race number to publish.
-- `auto_advance_race`: increments `next_race` after a successful publish.
-- `expected_entries`: set to a number such as `12` if you want publishing blocked unless exactly that many finishers are found. Leave `null` to disable.
-- `points_by_place`: tournament points awarded to each finishing place.
-
-Example:
-
-```json
-"points_by_place": {
-  "1": 10,
-  "2": 8,
-  "3": 6,
-  "4": 5
-}
+```text
+%LOCALAPPDATA%\uma_race_overlay_races
 ```
 
-## 3. Optional trainer/team mapping
+## Set the official opening draw
 
-Edit `config/players.json`.
+Double-click:
 
-The key should be the exact trainer name found in the game:
+```text
+randomize_draw.bat
+```
+
+That randomly pairs the 12 clubs into 6 head-to-head opening matches and resets the opening
+draft-state files.
+
+For a reproducible public draw:
+
+```powershell
+py scripts\randomize_draw.py --seed "official-draw-2026"
+```
+
+Do not rerun the draw once official matchup drafting has started unless you intentionally want
+to reset the opening bracket.
+
+## Configure a match for publishing
+
+Edit `config/tournament.json`:
 
 ```json
 {
-  "ExactInGameName": {
-    "display_name": "Eric",
-    "team": "Team A"
+  "current_round": 1,
+  "current_match": 1,
+  "next_race": 1
+}
+```
+
+When you move to another matchup, change `current_match` and reset `next_race` to `1`.
+
+The default live safeguards are:
+
+```json
+{
+  "expected_entries": 10,
+  "standard_races": 6,
+  "tiebreaker_race": 7,
+  "win_threshold": 25,
+  "points_by_scoring_place": {
+    "1": 4,
+    "2": 2,
+    "3": 1
   }
 }
 ```
 
-If a trainer is not listed, their in-game trainer name is displayed unchanged.
+## Map trainers to clubs
 
-## 4. Test without touching your live race archive
+Edit `config/players.json`.
 
-From the repo root:
-
-```powershell
-py scripts\publish_race.py --source sample\sample_raw_race.json --round 1 --lobby 1 --race 2
-```
-
-The script prints a preview and asks for confirmation.
-
-## 5. Publish a real race
-
-After a race finishes, double-click:
-
-`publish_latest.bat`
-
-The script:
-
-- selects the newest race archive;
-- refuses a file marked `running: true`;
-- prints the extracted finishing order;
-- asks `Publish this race? [y/N]`;
-- updates the site data;
-- runs `git add`, `git commit`, and `git push`.
-
-If you prefer to inspect everything before pushing:
-
-```powershell
-py scripts\publish_race.py
-```
-
-That updates the files locally but does not run Git.
-
-## 6. Change round or lobby
-
-Edit:
+The key must match the trainer name in the race archive exactly:
 
 ```json
-"current_round": 2,
-"current_lobby": 3,
-"next_race": 1
+{
+  "ExactInGameTrainer": {
+    "display_name": "Public Display Name",
+    "club": "Dominator"
+  }
+}
 ```
 
-in `config/tournament.json`.
+All 10 competing trainers should be mapped before an official match is published.
 
-You can also override values for one publish:
+## Enter the draft state
+
+Edit `data/drafts.json` for the relevant match, for example `r1-m1`.
+
+You can fill in:
+
+- tiebreaker track
+- four track picks per club
+- one track veto per club
+- final six tracks
+- Uma pre-bans
+- initial five Uma picks
+- second bans
+- two additional Uma picks
+- final six-Uma pools
+- benched Uma
+- build deadline
+
+The match page reads this file directly.
+
+## Publish a race
+
+After an official race finishes, double-click:
+
+```text
+publish_latest.bat
+```
+
+It:
+
+1. finds the newest archived race JSON;
+2. requires exactly 10 finishers by default;
+3. extracts placement, Uma, trainer, gate, and finish time;
+4. maps each trainer to a club;
+5. awards 4 / 2 / 1 to the first three eligible finishers;
+6. previews the result;
+7. asks for confirmation;
+8. updates `data/races/`, `data/index.json`, and `data/match_scores.json`;
+9. increments `next_race`;
+10. runs Git commit + push.
+
+The raw race archive is not copied into the public repository.
+
+### DQ / NPC scoring
+
+To make a trainer non-scoring for one publish:
 
 ```powershell
-py scripts\publish_race.py --round 2 --lobby 3 --race 1
+py scripts\publish_race.py --non-scoring "ExactInGameTrainer" --git-push
 ```
 
-## 7. Enable GitHub Pages
+Repeat `--non-scoring` for multiple entries.
 
-In the GitHub repository:
+You can also put trainer names in the `non_scoring_trainers` array in
+`config/tournament.json`. The publisher then skips those entries when assigning 4 / 2 / 1,
+so the points automatically pass to the next eligible finisher.
 
-1. Open **Settings → Pages**.
-2. Choose **Deploy from a branch**.
-3. Select your default branch (usually `main`).
-4. Select `/ (root)`.
-5. Save.
-
-The repo's `index.html` is the site.
-
-## 8. Data layout
-
-Processed race:
-
-```text
-data/races/r1-l1-race1.json
-```
-
-Manifest read by the frontend:
-
-```text
-data/index.json
-```
-
-Precomputed standings:
-
-```text
-data/standings.json
-```
-
-The site itself does not calculate official tournament points. The local publisher writes the
-points into every result and rebuilds standings before the commit.
-
-## Safety against accidental uploads
-
-The publisher deliberately requires confirmation by default. If you accidentally run a career
-race before your tournament race, the preview gives you a chance to reject it.
-
-For an additional guard, set `expected_entries` to your lobby size.
-
-## Later upgrades
-
-The normalized schema is intentionally simple, so you can add:
-
-- individual trainer profile pages;
-- per-Uma win rates;
-- team pages;
-- round/lobby filters;
-- course metadata;
-- stats and skill builds;
-- CSV export;
-- Discord webhook announcements.
-
-The original raw race archive is **not** copied into the repository by default.
-
-
-## Random Round 1 draw
-
-The tournament no longer uses rating-based seeding.
-
-`randomize_draw.bat` performs a new random draw of all 12 clubs into **3 Round 1 lobbies of 4** and updates both:
-
-- `config/clubs.json`
-- `data/bracket.json`
-
-To make a reproducible draw from the command line:
+## Test with bundled sample data
 
 ```powershell
-py scripts\randomize_draw.py --seed "official-draw-1"
+py scripts\publish_race.py --source sample\sample_raw_race.json --round 1 --match 1 --race 1
 ```
 
-Omit `--seed` to use system randomness.
+The script shows a preview before changing files.
+
+## GitHub Pages
+
+Repository → **Settings → Pages**:
+
+1. Deploy from a branch.
+2. Select `main`.
+3. Select `/ (root)`.
+4. Save.
+
+`index.html` is the homepage.
+
+## Important placeholders
+
+The reference image visibly supplied 10 named Dominator-network clubs. Because the tournament
+field is 12 clubs but the other two names were not provided, the current config includes:
+
+- `TBD Club 11`
+- `TBD Club 12`
+
+Replace those names in `config/clubs.json` when the final two clubs are known.
+
+The post-opening-round advancement structure is also intentionally marked TBD rather than
+inventing byes or wildcard rules for a 12-club bracket.

@@ -1,7 +1,43 @@
 {
-  "_comment": "Optional. Map exact in-game trainer names to a display name and club. Club should match a name in config/clubs.json.",
-  "ExampleTrainer": {
-    "display_name": "Example Trainer",
-    "club": "Dominator"
+  "_comment": "Replace with exact in-game trainer names before using live publishing.",
+  "SampleA1": {
+    "display_name": "Domineer Player 1",
+    "club": "Domineer"
+  },
+  "SampleB1": {
+    "display_name": "Domical Player 1",
+    "club": "Domical"
+  },
+  "SampleA2": {
+    "display_name": "Domineer Player 2",
+    "club": "Domineer"
+  },
+  "SampleB2": {
+    "display_name": "Domical Player 2",
+    "club": "Domical"
+  },
+  "SampleA3": {
+    "display_name": "Domineer Player 3",
+    "club": "Domineer"
+  },
+  "SampleB3": {
+    "display_name": "Domical Player 3",
+    "club": "Domical"
+  },
+  "SampleA4": {
+    "display_name": "Domineer Player 4",
+    "club": "Domineer"
+  },
+  "SampleB4": {
+    "display_name": "Domical Player 4",
+    "club": "Domical"
+  },
+  "SampleA5": {
+    "display_name": "Domineer Player 5",
+    "club": "Domineer"
+  },
+  "SampleB5": {
+    "display_name": "Domical Player 5",
+    "club": "Domical"
   }
 }

@@ -1,67 +1,78 @@
 {
   "draw": {
     "method": "random",
-    "generated_at": "2026-08-26T23:21:33.975747Z",
+    "generated_at": "2026-08-27T00:28:42.698859Z",
     "club_count": 12,
-    "round1_lobbies": 3,
-    "clubs_per_lobby": 4
+    "opening_matches": 6,
+    "clubs_per_match": 2
   },
   "rounds": [
     {
       "key": "r1",
-      "date": "TBD",
-      "title": "ROUND 1",
-      "format": "3 lobbies · 4 clubs each · random draw",
-      "advance": "Advancement rule TBD"
+      "title": "OPENING ROUND",
+      "format": "6 head-to-head matches",
+      "advance": "Winner advances"
     },
     {
-      "key": "qf",
-      "date": "TBD",
-      "title": "QUARTER FINALS",
-      "format": "Format TBD",
+      "key": "next",
+      "title": "NEXT STAGE",
+      "format": "TBD",
       "advance": "TBD"
     },
     {
       "key": "sf",
-      "date": "TBD",
       "title": "SEMI FINALS",
-      "format": "Format TBD",
-      "advance": "TBD"
+      "format": "TBD",
+      "advance": "Winner advances"
     },
     {
       "key": "gf",
-      "date": "TBD",
       "title": "GRAND FINAL",
-      "format": "Format TBD",
-      "advance": "Most points wins"
+      "format": "Head-to-head",
+      "advance": "Champion"
     }
   ],
-  "r1_lobbies": [
+  "opening_matches": [
     {
-      "lobby": 1,
+      "match": 1,
       "club_ids": [
-        "dominator",
-        "dominante",
-        "dominant-h",
-        "domicile"
-      ]
-    },
-    {
-      "lobby": 2,
-      "club_ids": [
-        "dominion",
-        "dominacion",
-        "dominance",
+        "domineer",
         "domical"
       ]
     },
     {
-      "lobby": 3,
+      "match": 2,
       "club_ids": [
-        "dominate",
+        "dominant-h",
+        "dominion"
+      ]
+    },
+    {
+      "match": 3,
+      "club_ids": [
+        "domichill",
+        "tbd-club-11"
+      ]
+    },
+    {
+      "match": 4,
+      "club_ids": [
         "dominium",
-        "domineer",
-        "domichill"
+        "dominate"
+      ]
+    },
+    {
+      "match": 5,
+      "club_ids": [
+        "tbd-club-12",
+        "dominance"
+      ]
+    },
+    {
+      "match": 6,
+      "club_ids": [
+        "dominator",
+        "domicile"
       ]
     }
   ]

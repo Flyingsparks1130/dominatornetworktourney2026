@@ -1,33 +1,23 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark"><title>Bracket · UMA Legends Cup</title><link rel="stylesheet" href="assets/site.css"></head>
+<meta name="color-scheme" content="dark"><title>Bracket · The Dominator Draft</title><link rel="stylesheet" href="assets/site.css"></head>
 <body><script src="assets/site.js"></script><script>siteHeader("bracket");</script>
 
-<main class="page"><div class="page-head"><h1>THE BRACKET</h1><p class="lead">Twelve clubs. Round 1 consists of three four-club lobbies assigned by a random draw.</p></div><div class="round-strip" id="round-strip"></div>
-<section><h2 class="flow-title mono">HOW THE FIELD MOVES</h2><div class="micro" style="color:#6f6a61;margin-bottom:22px">ROUND 1 IS RANDOMIZED · DOWNSTREAM ADVANCEMENT FORMAT TBD</div>
-<div class="bracket-flow"><svg viewBox="0 0 1320 390"><text class="flow-label" x="45" y="25">R1</text><text class="flow-label" x="420" y="25">QF</text><text class="flow-label" x="815" y="25">SF</text><text class="flow-label" x="1210" y="25">GF</text><g id="flow-lines"></g><g id="flow-boxes"></g></svg></div></section>
-<section><h2 class="lobby-section-title mono">ROUND 1</h2><div class="micro" style="color:#6f6a61">3 LOBBIES · 4 CLUBS EACH · RANDOM DRAW</div><div id="lobby-grid" class="lobby-grid"></div></section></main>
+<main class="page"><div class="page-head"><div class="section-kicker mono">RANDOMIZED OPENING DRAW</div><h1>THE BRACKET</h1>
+<p class="lead">Twelve clubs. Six head-to-head opening matches. Every match is a self-contained draft between two clubs.</p></div>
+<div class="round-strip" id="round-strip"></div>
+<div class="section-kicker mono">OPENING ROUND · 6 MATCHES</div><div id="match-grid" class="match-grid"></div>
+<div class="future-stage"><strong>Downstream bracket format:</strong> intentionally left TBD until the post-opening-round advancement structure is finalized. The site will not invent byes or wildcard rules.</div>
+</main>
 
 <script>
-(async()=>{const [b,tdata,idx]=await Promise.all([getJSON("data/bracket.json"),getJSON("config/clubs.json"),getJSON("data/index.json")]);const clubMap=Object.fromEntries(tdata.clubs.map(c=>[c.id,c]));
-document.getElementById("round-strip").innerHTML=b.rounds.map(r=>`<div class="round-cell"><div class="date">${esc(r.date)}</div><h3>${esc(r.title)}</h3><p>${esc(r.format)}</p><p class="advance">${esc(r.advance)}</p></div>`).join("");
-const boxes=[];
-[["R1 Lobby 1",45,80],["R1 Lobby 2",45,170],["R1 Lobby 3",45,260],
- ["Quarter Finals",415,170],["Semi Finals",805,170],["Grand Final",1160,170]].forEach(([label,x,y],i)=>{
- boxes.push(`<rect class="flow-box ${label==="Grand Final"?"flow-box-final":""}" x="${x}" y="${y}" width="${label==="Grand Final"?130:145}" height="34"/>
- <text class="flow-text" x="${x+18}" y="${y+22}">${label}</text>`);
-});
-document.getElementById("flow-boxes").innerHTML=boxes.join("");
-document.getElementById("flow-lines").innerHTML=`
-<path class="flow-line" d="M190 97 C290 97 315 187 415 187"/>
-<path class="flow-line" d="M190 187 H415"/>
-<path class="flow-line" d="M190 277 C290 277 315 187 415 187"/>
-<path class="flow-line-dash" d="M560 187 H805"/>
-<path class="flow-line-dash" d="M950 187 H1160"/>`;
-document.getElementById("lobby-grid").innerHTML=b.r1_lobbies.map(l=>`<article class="lobby-card">
-<div class="lobby-title">LOBBY ${l.lobby}</div><div class="lobby-teams">${l.club_ids.map(id=>clubMap[id]).filter(Boolean).map(c=>`
-<div class="lobby-team"><span class="seed-dot"></span><span class="team-seed">#${c.draw_order}</span>
-<div><div class="team-name">${esc(c.name)}</div><div class="team-club">Random draw</div></div><div class="team-score">—</div></div>`).join("")}</div>
-<div class="lobby-actions"><a href="lobby.html?round=1&lobby=${l.lobby}">RESULTS</a><a href="lobby.html?round=1&lobby=${l.lobby}">DETAILS ›</a></div></article>`).join("");
-})().catch(console.error);
+(async()=>{const [b,clubs,scores]=await Promise.all([getJSON("data/bracket.json"),getJSON("config/clubs.json"),getJSON("data/match_scores.json")]);
+const cmap=Object.fromEntries(clubs.clubs.map(c=>[c.id,c])),smap=Object.fromEntries((scores.matches||[]).map(s=>[`r${s.round}-m${s.match}`,s]));
+document.getElementById("round-strip").innerHTML=b.rounds.map(r=>`<div class="round-cell"><h3>${esc(r.title)}</h3><p>${esc(r.format)}</p><p>${esc(r.advance)}</p></div>`).join("");
+document.getElementById("match-grid").innerHTML=b.opening_matches.map(m=>{const a=cmap[m.club_ids[0]],bb=cmap[m.club_ids[1]],s=smap[`r1-m${m.match}`],ap=s?.club_points?.[a.name]??0,bp=s?.club_points?.[bb.name]??0;
+return `<article class="match-card"><div class="match-title">MATCH ${m.match}</div><div class="match-versus">
+<div class="club-side"><div class="name">${esc(a.name)}</div><div class="drawmeta">DRAW #${a.draw_order}</div></div><div class="vs">VS</div>
+<div class="club-side right"><div class="name">${esc(bb.name)}</div><div class="drawmeta">DRAW #${bb.draw_order}</div></div></div>
+<div class="match-scorebar"><span class="score">${ap} PTS</span><span class="mid">${esc((s?.status||"not_started").replaceAll("_"," ").toUpperCase())}</span><span class="score" style="text-align:right">${bp} PTS</span></div>
+<div class="match-actions"><a href="match.html?round=1&match=${m.match}">DRAFT + RESULTS</a><a href="match.html?round=1&match=${m.match}">DETAILS ›</a></div></article>`}).join("")})().catch(console.error);
 </script><script>siteFooter();</script></body></html>

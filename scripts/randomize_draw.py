@@ -1,81 +1,81 @@
 #!/usr/bin/env python3
-"""Randomize the 12-club Round 1 draw and save it to config/clubs.json + data/bracket.json."""
 from __future__ import annotations
-import argparse
-import json
-import random
-import secrets
+import argparse, json, random, secrets
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CLUBS_PATH = ROOT / "config" / "clubs.json"
-BRACKET_PATH = ROOT / "data" / "bracket.json"
+CLUBS = ROOT / "config" / "clubs.json"
+BRACKET = ROOT / "data" / "bracket.json"
+DRAFTS = ROOT / "data" / "drafts.json"
 
-def load(path):
-    with path.open("r", encoding="utf-8-sig") as f:
+def load(p):
+    with p.open("r", encoding="utf-8-sig") as f:
         return json.load(f)
 
-def save(path, obj):
-    with path.open("w", encoding="utf-8", newline="\n") as f:
+def save(p, obj):
+    with p.open("w", encoding="utf-8", newline="\n") as f:
         json.dump(obj, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
+def blank_draft(round_no, match_no):
+    return {
+        "round": round_no, "match": match_no, "status": "not_started",
+        "tiebreaker_track": None,
+        "track_picks": {"club_a": [], "club_b": []},
+        "track_vetoes": {"club_a": None, "club_b": None},
+        "final_tracks": [],
+        "uma_pre_bans": {"club_a": None, "club_b": None},
+        "uma_initial_picks": {"club_a": [], "club_b": []},
+        "uma_second_bans": {"club_a": None, "club_b": None},
+        "uma_additional_picks": {"club_a": [], "club_b": []},
+        "final_uma_pool": {"club_a": [], "club_b": []},
+        "benched_uma": {"club_a": None, "club_b": None},
+        "build_deadline": None
+    }
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--seed", help="Optional reproducible draw seed. Omit for system randomness.")
+    ap.add_argument("--seed", help="Optional reproducible draw seed.")
     args = ap.parse_args()
 
-    data = load(CLUBS_PATH)
+    data = load(CLUBS)
     clubs = data["clubs"]
     if len(clubs) != 12:
-        raise SystemExit(f"Expected exactly 12 clubs, found {len(clubs)}.")
+        raise SystemExit(f"Expected 12 clubs, found {len(clubs)}.")
 
     ids = [c["id"] for c in clubs]
-    if args.seed is None:
-        rng = secrets.SystemRandom()
-        draw_seed = None
-    else:
-        rng = random.Random(args.seed)
-        draw_seed = str(args.seed)
-
+    rng = random.Random(args.seed) if args.seed is not None else secrets.SystemRandom()
     rng.shuffle(ids)
-    pos = {club_id: i + 1 for i, club_id in enumerate(ids)}
+    pos = {cid: i+1 for i, cid in enumerate(ids)}
 
     for c in clubs:
         c["draw_order"] = pos[c["id"]]
-        c["r1_lobby"] = ((pos[c["id"]] - 1) // 4) + 1
-
+        c["opening_match"] = ((pos[c["id"]] - 1) // 2) + 1
     clubs.sort(key=lambda c: c["draw_order"])
-    save(CLUBS_PATH, {"clubs": clubs})
+    save(CLUBS, {"clubs": clubs})
 
-    bracket = load(BRACKET_PATH)
-    bracket["draw"] = {
+    b = load(BRACKET)
+    b["draw"] = {
         "method": "random",
-        "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-        "club_count": 12,
-        "round1_lobbies": 3,
-        "clubs_per_lobby": 4,
-        "reproducible_seed": draw_seed,
+        "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00","Z"),
+        "club_count": 12, "opening_matches": 6, "clubs_per_match": 2,
+        "reproducible_seed": args.seed
     }
-    bracket["r1_lobbies"] = [
-        {
-            "lobby": lobby,
-            "club_ids": [
-                c["id"] for c in clubs if c["r1_lobby"] == lobby
-            ]
-        }
-        for lobby in range(1, 4)
+    b["opening_matches"] = [
+        {"match": m, "club_ids": [c["id"] for c in clubs if c["opening_match"] == m]}
+        for m in range(1, 7)
     ]
-    save(BRACKET_PATH, bracket)
+    save(BRACKET, b)
 
-    print("Random Round 1 draw:")
-    for lobby in bracket["r1_lobbies"]:
-        names = [
-            next(c["name"] for c in clubs if c["id"] == cid)
-            for cid in lobby["club_ids"]
-        ]
-        print(f"  Lobby {lobby['lobby']}: " + " | ".join(names))
+    # New official draw resets the opening-round draft state.
+    save(DRAFTS, {"matches": {f"r1-m{m}": blank_draft(1,m) for m in range(1,7)}})
+
+    print("Opening-round random draw:")
+    by_id = {c["id"]: c["name"] for c in clubs}
+    for match in b["opening_matches"]:
+        a,bid = match["club_ids"]
+        print(f"  Match {match['match']}: {by_id[a]} vs {by_id[bid]}")
 
 if __name__ == "__main__":
     main()
