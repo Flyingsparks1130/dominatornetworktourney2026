@@ -362,62 +362,116 @@
 
 
 <style>
-/* v14 — qualification-flow spacing only. Final 8 bracket untouched. */
-
-/* Make both branches carry their own vertical rhythm instead of forcing
-   the winners side to match the full redemption stack height. */
-.qual-fork{
-  align-items:start;
+/* v15 qualification flow only — fixed coordinates, Final 8 untouched */
+.qual-section{
+  margin-top:44px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:30px;
+  overflow-x:auto;
 }
-
-/* Pull the winners card lower and give it a visible continuation toward merge. */
-.qual-branch:first-child{
+.qual-fixed-wrap{min-width:1000px}
+.qual-fixed{
   position:relative;
-  padding-top:82px;
+  width:1000px;
+  height:620px;
+  margin:18px auto 0;
 }
-
-/* vertical continuation from winners card down toward merge */
-.qual-branch:first-child::after{
-  content:"";
+.qual-fixed-lines{
   position:absolute;
-  left:50%;
-  top:calc(82px + 108px);
-  width:2px;
-  height:238px;
-  background:#8f8f95;
-  transform:translateX(-1px);
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+}
+.qual-fixed-lines path{
+  fill:none;
+  stroke:#b8b8bd;
+  stroke-width:2;
+  vector-effect:non-scaling-stroke;
+}
+.qual-fixed-card{
+  position:absolute;
+  z-index:2;
+  width:300px;
+  min-height:90px;
+  padding:18px 20px;
+  background:var(--surface-2);
+  border:1px solid #3a3a40;
+  border-radius:9px;
+  text-align:center;
+}
+.qual-fixed-card strong{display:block;font-size:15px}
+.qual-fixed-card span{
+  display:block;
+  margin-top:6px;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.45
 }
 
-/* Remove excess blank vertical space before the merge box. */
-.qual-merge{
-  margin-top:-34px;
-  padding-top:70px;
+.qf-r1{left:350px;top:20px}
+.qf-winners{left:110px;top:185px}
+.qf-losers{left:590px;top:185px}
+.qf-redemption{left:590px;top:315px}
+.qf-top2{left:590px;top:445px}
+.qf-final8{
+  left:350px;
+  top:550px;
+  border-color:rgba(183,32,46,.68)
 }
+</style>
 
-/* Redraw the lower merge so both winner and redemption branches visibly
-   feed the same Final 8 node without the giant empty rectangle. */
-.qual-merge::before{
-  left:25%;
-  right:25%;
-  top:0;
-  height:38px;
-}
-.qual-merge::after{
-  top:38px;
-  height:32px;
-}
 
-@media(max-width:760px){
-  .qual-branch:first-child{
-    padding-top:0;
-  }
-  .qual-branch:first-child::after{
-    display:none;
-  }
-  .qual-merge{
-    margin-top:0;
-    padding-top:18px;
-  }
+<style>
+/* v16 qualification flow: one SVG owns boxes + text + lines */
+.qual-section{
+  margin-top:44px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:30px;
+}
+.qual-svg-wrap{
+  width:100%;
+  overflow:hidden;
+}
+.qual-svg{
+  display:block;
+  width:min(100%,1100px);
+  height:auto;
+  margin:12px auto 0;
+}
+.qual-svg-lines path{
+  fill:none;
+  stroke:#b8b8bd;
+  stroke-width:2;
+  vector-effect:non-scaling-stroke;
+}
+.qual-svg-box rect{
+  fill:var(--surface-2);
+  stroke:#3a3a40;
+  stroke-width:1.5;
+  vector-effect:non-scaling-stroke;
+}
+.qual-svg-final rect{
+  stroke:rgba(183,32,46,.72);
+}
+.qual-svg-title{
+  fill:#f1f1f2;
+  font-family:Inter,Arial,sans-serif;
+  font-size:16px;
+  font-weight:800;
+}
+.qual-svg-sub{
+  fill:#a2a2a8;
+  font-family:Inter,Arial,sans-serif;
+  font-size:11px;
+}
+@media(max-width:700px){
+  .qual-section{padding:18px}
+  .qual-svg-title{font-size:18px}
+  .qual-svg-sub{font-size:12px}
 }
 </style>
 
@@ -437,50 +491,68 @@
   <section class="qual-section">
     <div class="section-kicker mono">ROAD TO THE FINAL 8</div>
 
-    <div class="qual-stage">
-      <div class="qual-top">
-        <div class="qual-card">
-          <strong>Round 1</strong>
-          <span>12 clubs · random draw · 6 head-to-head matches</span>
-        </div>
-      </div>
+    <div class="qual-svg-wrap">
+      <svg class="qual-svg" viewBox="0 0 1000 650" role="img" aria-label="Road to the Final 8">
 
-      <div class="qual-fork">
-        <div class="qual-branch">
-          <div class="qual-card">
-            <strong>6 Round 1 winners</strong>
-            <span>Become Seeds 1–6</span>
-          </div>
-        </div>
+        <!-- CONNECTORS -->
+        <g class="qual-svg-lines">
+          <!-- Round 1 fork -->
+          <path d="M500 118 V155 H250 V205" />
+          <path d="M500 155 H750 V205" />
 
-        <div class="qual-branch">
-          <div class="qual-card">
-            <strong>6 Round 1 losers</strong>
-            <span>Enter redemption</span>
-          </div>
+          <!-- Redemption vertical -->
+          <path d="M750 295 V340" />
+          <path d="M750 430 V475" />
 
-          <div class="qual-arrow">↓</div>
+          <!-- Merge -->
+          <path d="M250 295 V555 H500" />
+          <path d="M750 565 H500" />
+          <path d="M500 555 V585" />
+        </g>
 
-          <div class="qual-card">
-            <strong>Redemption round robin</strong>
-            <span>5 rounds · 2 Umas per club</span>
-          </div>
+        <!-- ROUND 1 -->
+        <g class="qual-svg-box">
+          <rect x="350" y="28" width="300" height="90" rx="10" />
+          <text x="500" y="64" text-anchor="middle" class="qual-svg-title">Round 1</text>
+          <text x="500" y="88" text-anchor="middle" class="qual-svg-sub">12 clubs · random draw · 6 head-to-head matches</text>
+        </g>
 
-          <div class="qual-arrow">↓</div>
+        <!-- WINNERS -->
+        <g class="qual-svg-box">
+          <rect x="100" y="205" width="300" height="90" rx="10" />
+          <text x="250" y="241" text-anchor="middle" class="qual-svg-title">6 Round 1 winners</text>
+          <text x="250" y="265" text-anchor="middle" class="qual-svg-sub">Become Seeds 1–6</text>
+        </g>
 
-          <div class="qual-card">
-            <strong>Top 2 advance</strong>
-            <span>1st = Seed 7 · 2nd = Seed 8</span>
-          </div>
-        </div>
-      </div>
+        <!-- LOSERS -->
+        <g class="qual-svg-box">
+          <rect x="600" y="205" width="300" height="90" rx="10" />
+          <text x="750" y="241" text-anchor="middle" class="qual-svg-title">6 Round 1 losers</text>
+          <text x="750" y="265" text-anchor="middle" class="qual-svg-sub">Enter redemption</text>
+        </g>
 
-      <div class="qual-merge">
-        <div class="qual-card qual-final-card">
-          <strong>Final 8</strong>
-          <span>Seeds 1–8 enter single elimination</span>
-        </div>
-      </div>
+        <!-- REDEMPTION -->
+        <g class="qual-svg-box">
+          <rect x="600" y="340" width="300" height="90" rx="10" />
+          <text x="750" y="376" text-anchor="middle" class="qual-svg-title">Redemption round robin</text>
+          <text x="750" y="400" text-anchor="middle" class="qual-svg-sub">5 rounds · 2 Umas per club</text>
+        </g>
+
+        <!-- TOP 2 -->
+        <g class="qual-svg-box">
+          <rect x="600" y="475" width="300" height="90" rx="10" />
+          <text x="750" y="511" text-anchor="middle" class="qual-svg-title">Top 2 advance</text>
+          <text x="750" y="535" text-anchor="middle" class="qual-svg-sub">1st = Seed 7 · 2nd = Seed 8</text>
+        </g>
+
+        <!-- FINAL 8 -->
+        <g class="qual-svg-box qual-svg-final">
+          <rect x="350" y="585" width="300" height="58" rx="10" />
+          <text x="500" y="611" text-anchor="middle" class="qual-svg-title">Final 8</text>
+          <text x="500" y="631" text-anchor="middle" class="qual-svg-sub">Seeds 1–8 enter single elimination</text>
+        </g>
+
+      </svg>
     </div>
   </section>
 
