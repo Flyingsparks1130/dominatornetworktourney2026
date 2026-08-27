@@ -1,0 +1,30 @@
+{
+  "timezone_label": "UTC",
+  "items": [
+    {
+      "date": "TBD",
+      "label": "ROUND 1",
+      "detail": "6 head-to-head matches"
+    },
+    {
+      "date": "TBD",
+      "label": "REDEMPTION",
+      "detail": "5-round round robin"
+    },
+    {
+      "date": "TBD",
+      "label": "QUARTERFINALS",
+      "detail": "8-club single elimination"
+    },
+    {
+      "date": "TBD",
+      "label": "SEMIFINALS",
+      "detail": "4 clubs remain"
+    },
+    {
+      "date": "TBD",
+      "label": "GRAND FINAL",
+      "detail": "championship match"
+    }
+  ]
+}

@@ -269,3 +269,22 @@ This avoids leaking or fabricating matchups before the official draw.
 7. Grand Final: semifinal winners.
 
 Actual Round 1 club matchups remain hidden until `randomize_draw.bat` is run.
+
+
+## Home-page timeline
+
+Edit `config/timeline.json` to change the public tournament dates shown on the home page.
+No HTML edit is required.
+
+Each item has:
+
+```json
+{
+  "date": "TBD",
+  "label": "ROUND 1",
+  "detail": "6 head-to-head matches"
+}
+```
+
+The home page also includes the championship prize: **5 Discord Nitro total, one for each player**
+on the winning club.
