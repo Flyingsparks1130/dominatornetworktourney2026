@@ -1,38 +1,7 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark"><title>Bracket · The Dominator Draft</title><link rel="stylesheet" href="assets/site.css"></head>
-<body><script src="assets/site.js"></script><script>siteHeader("bracket");</script>
-
-<main class="page"><div class="page-head"><div class="section-kicker mono">RANDOMIZED OPENING DRAW</div><h1>THE BRACKET</h1>
-<p class="lead">Twelve clubs. Six head-to-head opening matches. Every match is a self-contained draft between two clubs.</p></div>
-<div class="round-strip" id="round-strip"></div>
-<div id="draw-state"></div>
-<div class="future-stage"><strong>Downstream bracket format:</strong> intentionally left TBD until the post-opening-round advancement structure is finalized. The site will not invent byes or wildcard rules.</div>
-</main>
-
-<script>
-(async()=>{
-const [b,clubs,scores]=await Promise.all([getJSON("data/bracket.json"),getJSON("config/clubs.json"),getJSON("data/match_scores.json")]);
-document.getElementById("round-strip").innerHTML=b.rounds.map(r=>`<div class="round-cell"><h3>${esc(r.title)}</h3><p>${esc(r.format)}</p><p>${esc(r.advance)}</p></div>`).join("");
-const root=document.getElementById("draw-state");
-if(b.draw?.status!=="rolled" || !(b.opening_matches||[]).length){
-  root.innerHTML=`<section class="draw-pending"><div class="draw-pending-inner">
-    <div class="draw-icon">?</div>
-    <div class="section-kicker mono">OFFICIAL DRAW PENDING</div>
-    <h2>No matchups have been rolled yet.</h2>
-    <p>The 12-club field is locked, but the bracket will remain blank until the official random draw is run. Once the draw is rolled, the six head-to-head opening matches will appear here automatically.</p>
-  </div></section>`;
-  return;
-}
-const cmap=Object.fromEntries(clubs.clubs.map(c=>[c.id,c]));
-const smap=Object.fromEntries((scores.matches||[]).map(s=>[`r${s.round}-m${s.match}`,s]));
-root.innerHTML=`<div class="section-kicker mono">OPENING ROUND · 6 MATCHES</div><div class="match-grid">${
-b.opening_matches.map(m=>{const a=cmap[m.club_ids[0]],bb=cmap[m.club_ids[1]],s=smap[`r1-m${m.match}`],ap=s?.club_points?.[a.name]??0,bp=s?.club_points?.[bb.name]??0;
-return `<article class="match-card"><div class="match-title">MATCH ${m.match}</div><div class="match-versus">
-<div class="club-side"><div class="name">${esc(a.name)}</div><div class="drawmeta">DRAW #${a.draw_order}</div></div><div class="vs">VS</div>
-<div class="club-side right"><div class="name">${esc(bb.name)}</div><div class="drawmeta">DRAW #${bb.draw_order}</div></div></div>
-<div class="match-scorebar"><span class="score">${ap} PTS</span><span class="mid">${esc((s?.status||"not_started").replaceAll("_"," ").toUpperCase())}</span><span class="score" style="text-align:right">${bp} PTS</span></div>
-<div class="match-actions"><a href="match.html?round=1&match=${m.match}">DRAFT + RESULTS</a><a href="match.html?round=1&match=${m.match}">DETAILS ›</a></div></article>`}).join("")
-}</div>`;
-})().catch(console.error);
-</script><script>siteFooter();</script></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Bracket · The Dominator Draft</title><link rel="stylesheet" href="assets/site.css"></head>
+<body><script src="assets/site.js"></script><script>siteHeader("bracket");</script><main class="page">
+<div class="page-head"><div class="section-kicker mono">12 → 6 + REDEMPTION → 8 → 1</div><h1>THE BRACKET</h1><p class="lead">The tournament structure is public now. Actual Round 1 club matchups stay hidden until the official random draw is rolled.</p></div>
+<section class="bracket-journey"><div class="section-kicker mono">ROAD TO THE 8-CLUB BRACKET</div><div class="journey-row"><article class="journey-card"><strong>Round 1</strong><span>12 clubs · random draw · 6 matches</span></article></div>
+<div class="journey-split"><div class="journey-branch"><article class="journey-card winner"><strong>6 winners</strong><span>Seeds 1–6</span></article></div><div class="journey-branch"><article class="journey-card redemption"><strong>6 losers</strong><span>Drop to redemption</span></article><div class="journey-arrow">↓</div><article class="journey-card redemption"><strong>Redemption round robin</strong><span>5 rounds · 2 Umas each</span></article><div class="journey-arrow">↓</div><article class="journey-card redemption"><strong>Top 2 advance</strong><span>Seeds 7 & 8</span></article></div></div><div class="journey-merge"><article class="journey-card final"><strong>8-club bracket</strong><span>Seeds 1–8 merge</span></article></div></section>
+<section class="final-bracket"><div class="section-kicker mono">8-CLUB SINGLE ELIMINATION</div><div class="qf-grid"><article class="seed-card"><strong>Seed 1 vs 4</strong></article><article class="seed-card"><strong>Seed 2 vs 3</strong></article><article class="seed-card redemption-seed"><strong>Seed 6 vs 7</strong></article><article class="seed-card redemption-seed"><strong>Seed 5 vs 8</strong></article></div><div class="sf-grid"><article class="seed-card semifinal"><strong>Semifinal 1</strong><span>1/4 winner vs 2/3 winner</span></article><article class="seed-card semifinal"><strong>Semifinal 2</strong><span>6/7 winner vs 5/8 winner</span></article></div><div class="gf-row"><article class="seed-card grand-final"><strong>Grand Final</strong><span>SF1 winner vs SF2 winner</span></article></div></section><section id="draw-state"></section></main>
+<script>(async()=>{const[b,clubs,scores]=await Promise.all([getJSON("data/bracket.json"),getJSON("config/clubs.json"),getJSON("data/match_scores.json")]);const root=document.getElementById("draw-state");if(b.draw?.status!=="rolled"||!(b.opening_matches||[]).length){root.innerHTML=`<section class="draw-pending"><div class="draw-pending-inner"><div class="draw-icon">?</div><div class="section-kicker mono">OFFICIAL ROUND 1 DRAW PENDING</div><h2>No club matchups have been rolled yet.</h2><p>The tournament path above is fixed, but the six Round 1 pairings stay hidden until the official random draw is run.</p></div></section>`;return}const cmap=Object.fromEntries(clubs.clubs.map(c=>[c.id,c]));const smap=Object.fromEntries((scores.matches||[]).map(s=>[`r${s.round}-m${s.match}`,s]));root.innerHTML=`<div class="section-kicker mono" style="margin-top:42px">OFFICIAL ROUND 1 DRAW</div><div class="match-grid">${b.opening_matches.map(m=>{const a=cmap[m.club_ids[0]],bb=cmap[m.club_ids[1]],s=smap[`r1-m${m.match}`],ap=s?.club_points?.[a.name]??0,bp=s?.club_points?.[bb.name]??0;return `<article class="match-card"><div class="match-title">MATCH ${m.match}</div><div class="match-versus"><div class="club-side"><div class="name">${esc(a.name)}</div><div class="drawmeta">DRAW #${a.draw_order}</div></div><div class="vs">VS</div><div class="club-side right"><div class="name">${esc(bb.name)}</div><div class="drawmeta">DRAW #${bb.draw_order}</div></div></div><div class="match-scorebar"><span class="score">${ap} PTS</span><span class="mid">${esc((s?.status||"not_started").replaceAll("_"," ").toUpperCase())}</span><span class="score" style="text-align:right">${bp} PTS</span></div><div class="match-actions"><a href="match.html?round=1&match=${m.match}">DRAFT + RESULTS</a><a href="match.html?round=1&match=${m.match}">DETAILS ›</a></div></article>`}).join("")}</div>`})().catch(console.error);</script><script>siteFooter();</script></body></html>

@@ -111,7 +111,7 @@ def process(source,round_no,match_no,race_no,cfg,non_scoring_extra):
     rid=f"r{round_no}-m{match_no}-race{race_no}"
     return {
         "id":rid,"round":round_no,"match":match_no,"race":race_no,
-        "is_tiebreaker":race_no>int(cfg.get("standard_races",6)),
+        "is_tiebreaker":race_no>int(cfg.get("standard_races",5)),
         "published_at":datetime.now(timezone.utc).isoformat().replace("+00:00","Z"),
         "source_file":source.name,"results":rows
     }
@@ -130,7 +130,7 @@ def rebuild_scores(cfg):
     grouped=defaultdict(list)
     for meta in idx.get("races",[]): grouped[(meta["round"],meta["match"])].append(meta)
     out=[]
-    threshold=int(cfg.get("win_threshold",25)); standard=int(cfg.get("standard_races",6))
+    threshold=int(cfg.get("win_threshold",25)); standard=int(cfg.get("standard_races",5))
     for (round_no,match_no),metas in sorted(grouped.items()):
         metas.sort(key=lambda x:x["race"])
         totals=defaultdict(int)

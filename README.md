@@ -6,12 +6,12 @@ Umamusume races archived by Uma Race Overlay.
 ## Tournament model
 
 - 12 clubs.
-- 5 trainers per club: Sprint, Mile, Medium, Long, Dirt.
+- 5 players per club; there are no distance/style specialist roster slots.
 - 2 clubs compete head-to-head in a match.
-- 6 standard races.
+- 5 standard races.
 - A random tiebreaker track is rolled before the draft.
 - Each club picks 4 tracks; each club vetoes 1 opposing pick.
-- Final race card: 6 selected tracks + the reserved tiebreaker.
+- Final normal match card: 5 standard tracks + the reserved tiebreaker.
 - Each club pre-bans 1 Uma.
 - Each club picks 5 Umas in snake order.
 - Each club then bans 1 opposing selected Uma and adds 2 more picks.
@@ -256,3 +256,16 @@ is the action that:
 5. makes the matchups visible on the public Bracket page.
 
 This avoids leaking or fabricating matchups before the official draw.
+
+
+## Tournament progression
+
+1. Round 1: 12 clubs are randomly drawn into 6 head-to-head matches.
+2. The 6 Round 1 winners become seeds 1–6.
+3. The 6 Round 1 losers enter a 5-round redemption round robin, fielding 2 Umas each per redemption round.
+4. The top 2 redemption clubs become seeds 7 and 8.
+5. Quarterfinals: Seed 1 vs 4, Seed 2 vs 3, Seed 6 vs 7, Seed 5 vs 8.
+6. Semifinals: 1/4 winner vs 2/3 winner; 6/7 winner vs 5/8 winner.
+7. Grand Final: semifinal winners.
+
+Actual Round 1 club matchups remain hidden until `randomize_draw.bat` is run.

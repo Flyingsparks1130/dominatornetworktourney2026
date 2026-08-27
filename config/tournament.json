@@ -6,8 +6,8 @@
   "next_race": 1,
   "auto_advance_race": true,
   "expected_entries": 10,
-  "standard_races": 6,
-  "tiebreaker_race": 7,
+  "standard_races": 5,
+  "tiebreaker_race": 6,
   "win_threshold": 25,
   "points_by_scoring_place": {
     "1": 4,

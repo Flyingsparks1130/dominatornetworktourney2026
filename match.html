@@ -12,7 +12,7 @@ const a=cmap[mdef.club_ids[0]],bb=cmap[mdef.club_ids[1]],draft=drafts.matches?.[
 const ap=score?.club_points?.[a.name]??0,bp=score?.club_points?.[bb.name]??0,races=(idx.races||[]).filter(x=>x.round===round&&x.match===match).sort((x,y)=>x.race-y.race);
 function list(v){return Array.isArray(v)&&v.length?v.map(esc).join(", "):"—"}
 let html=`<div class="page-head"><div class="section-kicker mono">OPENING ROUND · MATCH ${match}</div><h1>${esc(a.name)} <span class="red">VS</span> ${esc(bb.name)}</h1>
-<p class="lead">Six standard races. First club to 25 points wins; if no winner is decided through Race 6, the pre-rolled tiebreaker is used.</p>
+<p class="lead">Five standard races. First club to 25 points wins; if no winner is decided through Race 5, the pre-rolled tiebreaker is used.</p>
 <div class="match-header-score"><div class="score-panel"><div class="club">${esc(a.name)}</div><strong>${ap}</strong></div><span class="status-badge ${score?.status==="winner"?"red":""}">${esc((score?.status||"NOT STARTED").replaceAll("_"," ").toUpperCase())}</span><div class="score-panel"><div class="club">${esc(bb.name)}</div><strong>${bp}</strong></div></div></div>
 <div class="draft-board">
 <article class="draft-panel"><h3>TRACK DRAFT</h3><div class="data-line"><strong>Tiebreaker:</strong> ${esc(draft.tiebreaker_track||"—")}</div>
