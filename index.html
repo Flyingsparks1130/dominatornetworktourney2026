@@ -5,7 +5,89 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="dark">
 <title>The Dominator Draft 2026</title>
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/site.css?v=10">
+
+<style>
+/* HOME PAGE — critical inline layout */
+.home-section{padding:58px 0;border-top:1px solid var(--border)}
+.home-section:first-child{border-top:0;padding-top:10px}
+.home-section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:28px}
+.home-section h2{font-size:32px;line-height:1.1;margin:0 0 12px;letter-spacing:-.035em}
+.home-section p{color:var(--muted);line-height:1.6;margin:0}
+.home-section code{color:#c8c8cc;background:#151517;border:1px solid var(--border);padding:2px 5px;border-radius:5px}
+
+.timeline-grid{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:0;
+  position:relative;
+  margin-top:30px
+}
+.timeline-grid::before{
+  content:"";
+  position:absolute;
+  left:5px;right:5px;top:8px;
+  height:1px;background:#3b3b40
+}
+.timeline-item{
+  position:relative;
+  min-height:145px;
+  padding:31px 24px 0 0
+}
+.timeline-marker{
+  position:absolute;
+  top:3px;left:0;
+  width:11px;height:11px;
+  border-radius:50%;
+  background:var(--red-bright);
+  box-shadow:0 0 0 4px var(--bg)
+}
+.timeline-date{font:700 12px "Courier New",monospace;color:#e4e4e6;margin-bottom:12px}
+.timeline-label{font:700 11px "Courier New",monospace;letter-spacing:.08em;color:#fff;margin-bottom:8px}
+.timeline-detail{font-size:12px;color:var(--faint);line-height:1.45}
+
+.prize-section{background:linear-gradient(90deg,rgba(183,32,46,.045),transparent 60%)}
+.prize-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);
+  gap:70px;
+  align-items:end
+}
+.prize-label{font:700 10px "Courier New",monospace;color:var(--faint);letter-spacing:.1em;margin-bottom:12px}
+.prize-title{font-size:clamp(42px,5.5vw,68px);font-weight:900;letter-spacing:-.055em;margin-bottom:12px}
+.prize-breakdown{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.prize-stat{border-top:1px solid var(--border);padding-top:18px}
+.prize-stat strong{display:block;font-size:34px;margin-bottom:8px}
+.prize-stat span{font:700 10px "Courier New",monospace;color:var(--faint);letter-spacing:.08em}
+
+.rules-teaser-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.9fr);gap:70px;align-items:start}
+.rules-teaser .btn{margin-top:24px}
+.rule-summary-list{display:flex;flex-direction:column}
+.rule-summary-item{
+  display:grid;
+  grid-template-columns:42px 1fr;
+  gap:14px;
+  padding:17px 0;
+  border-bottom:1px solid var(--border)
+}
+.rule-summary-item:first-child{border-top:1px solid var(--border)}
+.rule-summary-item>span{font:700 11px "Courier New",monospace;color:var(--red-bright)}
+.rule-summary-item strong{display:block;font-size:14px;margin-bottom:5px}
+.rule-summary-item p{font-size:12px;color:var(--faint);line-height:1.5}
+
+@media(max-width:900px){
+  .timeline-grid{grid-template-columns:1fr 1fr;gap:14px}
+  .timeline-grid::before{display:none}
+  .timeline-item{padding:18px;min-height:0;border:1px solid var(--border);border-radius:8px;background:var(--surface)}
+  .timeline-marker{display:none}
+  .prize-layout,.rules-teaser-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .timeline-grid{grid-template-columns:1fr}
+  .prize-breakdown{grid-template-columns:1fr 1fr}
+}
+</style>
+
 </head>
 <body>
 <script src="assets/site.js"></script>
