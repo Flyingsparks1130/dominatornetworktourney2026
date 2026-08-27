@@ -8,182 +8,248 @@
 <link rel="stylesheet" href="assets/site.css?v=10">
 
 <style>
-/* BRACKET PAGE — critical inline layout */
-.qualification-flow,.tournament-bracket-section{
-  margin-top:44px;
+/* BRACKET PAGE ONLY — v11 */
+
+/* qualification */
+.qual-section,
+.final-eight-section{
+  margin-top:42px;
   background:var(--surface);
   border:1px solid var(--border);
   border-radius:12px;
-  padding:30px
+  padding:30px;
 }
+.qual-stage{
+  width:min(860px,100%);
+  margin:26px auto 0;
+}
+.qual-top{
+  display:flex;
+  justify-content:center;
+}
+.qual-card{
+  width:300px;
+  max-width:100%;
+  padding:18px 20px;
+  border:1px solid #3a3a40;
+  border-radius:9px;
+  background:var(--surface-2);
+  text-align:center;
+}
+.qual-card strong{display:block;font-size:15px}
+.qual-card span{display:block;margin-top:6px;color:var(--muted);font-size:11px;line-height:1.45}
 
-/* qualification */
-.qual-grid{
+.qual-fork{
+  position:relative;
   display:grid;
   grid-template-columns:1fr 1fr;
-  grid-template-areas:
-    "r1 r1"
-    "stem stem"
-    "win lose"
-    ". a1"
-    ". redeem"
-    ". a2"
-    ". top2"
-    "merge merge"
-    "final8 final8";
-  column-gap:70px;
-  row-gap:14px;
-  max-width:900px;
-  margin:24px auto 0
+  gap:90px;
+  padding-top:58px;
 }
-.qual-node{
-  width:min(100%,340px);
-  justify-self:center;
-  padding:18px 20px;
-  background:var(--surface-2);
-  border:1px solid #39393f;
-  border-radius:9px;
-  text-align:center
-}
-.qual-node strong{display:block;font-size:15px}
-.qual-node span{display:block;margin-top:6px;color:var(--muted);font-size:11px;line-height:1.45}
-.qual-r1{grid-area:r1}
-.qual-winners{grid-area:win}
-.qual-losers{grid-area:lose}
-.qual-redemption{grid-area:redeem}
-.qual-top2{grid-area:top2}
-.qual-final8{grid-area:final8;border-color:rgba(183,32,46,.6)}
-.qa1{grid-area:a1}.qa2{grid-area:a2}.qa3{grid-area:merge}
-.qual-arrow{
-  align-self:center;justify-self:center;
-  color:#fff;font-size:24px;line-height:1
-}
-/* visible fork connector */
-.qual-grid::before{
+.qual-fork::before{
   content:"";
-  grid-area:stem;
-  width:50%;
-  height:34px;
-  justify-self:center;
-  border-top:2px solid #a9a9ae;
-  border-left:2px solid #a9a9ae;
-  border-right:2px solid #a9a9ae;
-  margin-top:-6px
+  position:absolute;
+  left:25%;
+  right:25%;
+  top:28px;
+  height:28px;
+  border-top:2px solid #8f8f95;
+  border-left:2px solid #8f8f95;
+  border-right:2px solid #8f8f95;
 }
-
-/* traditional tournament bracket */
-.tournament-bracket-section{overflow-x:auto}
-.tourney-bracket{
+.qual-fork::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  width:2px;
+  height:28px;
+  background:#8f8f95;
+  transform:translateX(-1px);
+}
+.qual-branch{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.qual-arrow{
+  color:#fff;
+  font-size:22px;
+  line-height:1;
+  margin:12px 0;
+}
+.qual-merge{
   position:relative;
-  width:100%;
-  min-width:1000px;
-  min-height:680px;
-  margin-top:18px
+  display:flex;
+  justify-content:center;
+  padding-top:74px;
+  margin-top:18px;
 }
-.round-heading{
-  position:absolute;top:0;
+.qual-merge::before{
+  content:"";
+  position:absolute;
+  left:25%;
+  right:25%;
+  top:0;
+  height:44px;
+  border-bottom:2px solid #8f8f95;
+  border-left:2px solid #8f8f95;
+  border-right:2px solid #8f8f95;
+}
+.qual-merge::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:44px;
+  width:2px;
+  height:30px;
+  background:#8f8f95;
+  transform:translateX(-1px);
+}
+.qual-final-card{border-color:rgba(183,32,46,.65)}
+
+/* final 8 true bracket */
+.final-eight-section{overflow-x:auto}
+.bracket-scroll{
+  min-width:980px;
+}
+.bracket-labels{
+  display:grid;
+  grid-template-columns:300px 1fr 250px 1fr 230px;
+  align-items:end;
   color:var(--faint);
   font:700 10px "Courier New",monospace;
-  letter-spacing:.1em
+  letter-spacing:.1em;
+  margin:0 0 16px;
 }
-.qf-heading{left:0}
-.sf-heading{left:43%}
-.gf-heading{left:79%}
+.bracket-labels .qf-label{grid-column:1}
+.bracket-labels .sf-label{grid-column:3}
+.bracket-labels .gf-label{grid-column:5}
 
-.tb-match{
+.bracket-canvas{
+  position:relative;
+  width:100%;
+  height:720px;
+}
+.bracket-lines{
   position:absolute;
-  z-index:3;
+  inset:0;
+  width:100%;
+  height:100%;
+  z-index:1;
+  pointer-events:none;
+}
+.bracket-lines path{
+  fill:none;
+  stroke:#b8b8bd;
+  stroke-width:2;
+  vector-effect:non-scaling-stroke;
+}
+.bracket-lines marker path{
+  fill:#fff;
+  stroke:none;
+}
+
+.match-box{
+  position:absolute;
+  z-index:2;
+  width:300px;
   background:var(--surface-2);
   border:1px solid #3a3a40;
   border-radius:9px;
-  overflow:hidden
+  overflow:hidden;
 }
-/* QF boxes */
-.qf{left:0;width:29%;height:106px}
-.qf1{top:58px}
-.qf2{top:214px}
-.qf3{top:388px}
-.qf4{top:544px}
-/* SF */
-.sf{left:43%;width:25%;height:86px;padding:22px;text-align:center}
-.sf1{top:137px}
-.sf2{top:467px}
-/* Final */
-.gf{left:79%;width:21%;height:92px;top:300px;padding:23px;text-align:center;border-color:rgba(183,32,46,.68)}
+.match-box.qf{left:0;height:104px}
+.match-box.qf1{top:30px}
+.match-box.qf2{top:202px}
+.match-box.qf3{top:386px}
+.match-box.qf4{top:558px}
 
-.tb-slot{
+.match-box.sf{
+  left:50%;
+  width:250px;
+  transform:translateX(-50%);
+  padding:24px 18px;
+  text-align:center;
+}
+.match-box.sf1{top:116px}
+.match-box.sf2{top:472px}
+
+.match-box.gf{
+  right:0;
+  width:230px;
+  top:296px;
+  padding:26px 18px;
+  text-align:center;
+  border-color:rgba(183,32,46,.7);
+}
+
+.seed-row{
   display:grid;
   grid-template-columns:34px 1fr;
-  min-height:52px;
   align-items:center;
+  min-height:51px;
   padding:0 14px;
-  border-bottom:1px solid #2a2a2f
+  border-bottom:1px solid #29292e;
 }
-.tb-slot:last-child{border-bottom:0}
-.tb-slot .seed{
-  width:24px;height:24px;border-radius:6px;
-  display:grid;place-items:center;
-  background:#252529;color:#fff;
-  font:700 11px "Courier New",monospace
+.seed-row:last-child{border-bottom:0}
+.seed-num{
+  width:24px;
+  height:24px;
+  display:grid;
+  place-items:center;
+  border-radius:6px;
+  background:#252529;
+  font:700 11px "Courier New",monospace;
 }
-.tb-slot strong{font-size:14px}
-.tb-slot small{grid-column:2;color:var(--faint);font-size:9px;margin-top:-7px;padding-bottom:7px}
-.redemption-slot{background:rgba(183,32,46,.05)}
-.redemption-slot .seed{background:var(--red)}
-.tb-round-name{font-size:16px;font-weight:800}
-.tb-sub{margin-top:7px;color:var(--muted);font-size:11px;line-height:1.45}
+.seed-row strong{font-size:14px}
+.seed-row small{
+  grid-column:2;
+  margin-top:-7px;
+  padding-bottom:7px;
+  color:var(--faint);
+  font-size:9px;
+}
+.seed-row.redemption{
+  background:rgba(183,32,46,.055);
+}
+.seed-row.redemption .seed-num{
+  background:var(--red);
+}
+.round-title{
+  font-size:16px;
+  font-weight:800;
+}
+.round-sub{
+  margin-top:7px;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.45;
+}
 
-/* connector system: explicitly drawn, high contrast */
-.tb-line{position:absolute;z-index:1;background:#c4c4c8}
-
-/* QF1/QF2 -> SF1 */
-.l-qf1{left:29%;top:111px;width:7%;height:2px}
-.l-qf2{left:29%;top:267px;width:7%;height:2px}
-.l-sf1-vert{left:36%;top:111px;width:2px;height:156px}
-.l-sf1-h{left:36%;top:189px;width:7%;height:2px}
-
-/* QF3/QF4 -> SF2 */
-.l-qf3{left:29%;top:441px;width:7%;height:2px}
-.l-qf4{left:29%;top:597px;width:7%;height:2px}
-.l-sf2-vert{left:36%;top:441px;width:2px;height:156px}
-.l-sf2-h{left:36%;top:519px;width:7%;height:2px}
-
-/* SFs -> Final */
-.l-sf1-out{left:68%;top:180px;width:6%;height:2px}
-.l-sf2-out{left:68%;top:510px;width:6%;height:2px}
-.l-gf-vert{left:74%;top:180px;width:2px;height:330px}
-.l-gf-in{left:74%;top:346px;width:5%;height:2px}
-
-/* arrowheads */
-.l-sf1-h::after,.l-sf2-h::after,.l-gf-in::after{
-  content:"";
-  position:absolute;
-  right:-1px;top:50%;
-  width:8px;height:8px;
-  border-top:2px solid #fff;
-  border-right:2px solid #fff;
-  transform:translateY(-50%) rotate(45deg)
+.draw-pending{
+  margin-top:36px;
 }
 
 @media(max-width:760px){
-  .qual-grid{
+  .qual-fork{
     grid-template-columns:1fr;
-    grid-template-areas:
-      "r1"
-      "win"
-      "lose"
-      "a1"
-      "redeem"
-      "a2"
-      "top2"
-      "merge"
-      "final8";
+    gap:24px;
+    padding-top:30px;
   }
-  .qual-grid::before{display:none}
+  .qual-fork::before,
+  .qual-fork::after,
+  .qual-merge::before,
+  .qual-merge::after{
+    display:none;
+  }
+  .qual-merge{
+    padding-top:18px;
+  }
 }
 </style>
-
 </head>
+
 <body>
 <script src="assets/site.js"></script>
 <script>siteHeader("bracket");</script>
@@ -192,123 +258,149 @@
   <div class="page-head">
     <div class="section-kicker mono">12 → ROUND 1 → REDEMPTION → FINAL 8</div>
     <h1>THE BRACKET</h1>
-    <p class="lead">The qualification path is fixed. Actual Round 1 club matchups stay hidden until the official random draw is rolled.</p>
+    <p class="lead">The tournament structure is fixed. Actual Round 1 club matchups remain hidden until the official random draw is rolled.</p>
   </div>
 
-  <!-- QUALIFICATION FLOW -->
-  <section class="qualification-flow">
+  <section class="qual-section">
     <div class="section-kicker mono">ROAD TO THE FINAL 8</div>
 
-    <div class="qual-grid">
-      <div class="qual-node qual-r1">
-        <strong>Round 1</strong>
-        <span>12 clubs · random draw · 6 matches</span>
+    <div class="qual-stage">
+      <div class="qual-top">
+        <div class="qual-card">
+          <strong>Round 1</strong>
+          <span>12 clubs · random draw · 6 head-to-head matches</span>
+        </div>
       </div>
 
-      <div class="qual-line qline-r1-left"></div>
-      <div class="qual-line qline-r1-right"></div>
+      <div class="qual-fork">
+        <div class="qual-branch">
+          <div class="qual-card">
+            <strong>6 Round 1 winners</strong>
+            <span>Become Seeds 1–6</span>
+          </div>
+        </div>
 
-      <div class="qual-node qual-winners">
-        <strong>6 winners</strong>
-        <span>Become Seeds 1–6</span>
+        <div class="qual-branch">
+          <div class="qual-card">
+            <strong>6 Round 1 losers</strong>
+            <span>Enter redemption</span>
+          </div>
+
+          <div class="qual-arrow">↓</div>
+
+          <div class="qual-card">
+            <strong>Redemption round robin</strong>
+            <span>5 rounds · 2 Umas per club</span>
+          </div>
+
+          <div class="qual-arrow">↓</div>
+
+          <div class="qual-card">
+            <strong>Top 2 advance</strong>
+            <span>1st = Seed 7 · 2nd = Seed 8</span>
+          </div>
+        </div>
       </div>
 
-      <div class="qual-node qual-losers">
-        <strong>6 losers</strong>
-        <span>Enter redemption</span>
-      </div>
-
-      <div class="qual-arrow qa1">↓</div>
-
-      <div class="qual-node qual-redemption">
-        <strong>Redemption round robin</strong>
-        <span>5 rounds · 2 Umas each</span>
-      </div>
-
-      <div class="qual-arrow qa2">↓</div>
-
-      <div class="qual-node qual-top2">
-        <strong>Top 2 advance</strong>
-        <span>1st = Seed 7 · 2nd = Seed 8</span>
-      </div>
-
-      <div class="qual-line qline-merge-left"></div>
-      <div class="qual-line qline-merge-right"></div>
-      <div class="qual-arrow qa3">↓</div>
-
-      <div class="qual-node qual-final8">
-        <strong>Final 8</strong>
-        <span>Seeds 1–8 enter single elimination</span>
+      <div class="qual-merge">
+        <div class="qual-card qual-final-card">
+          <strong>Final 8</strong>
+          <span>Seeds 1–8 enter single elimination</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ACTUAL SEEDED BRACKET -->
-  <section class="tournament-bracket-section">
+  <section class="final-eight-section">
     <div class="section-kicker mono">FINAL 8 · SINGLE ELIMINATION</div>
 
-    <div class="tourney-bracket" aria-label="8 team seeded tournament bracket">
-      <!-- Quarterfinal column -->
-      <div class="round-heading qf-heading">QUARTERFINALS</div>
-      <div class="round-heading sf-heading">SEMIFINALS</div>
-      <div class="round-heading gf-heading">GRAND FINAL</div>
+    <div class="bracket-scroll">
+      <div class="bracket-labels">
+        <div class="qf-label">QUARTERFINALS</div>
+        <div class="sf-label">SEMIFINALS</div>
+        <div class="gf-label">GRAND FINAL</div>
+      </div>
 
-      <article class="tb-match qf qf1">
-        <div class="tb-slot"><span class="seed">1</span><strong>Seed 1</strong></div>
-        <div class="tb-slot redemption-slot"><span class="seed">8</span><strong>Seed 8</strong><small>2nd redemption</small></div>
-      </article>
+      <div class="bracket-canvas">
+        <!-- One SVG draws every connector cleanly -->
+        <svg class="bracket-lines" viewBox="0 0 1000 720" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L8,4 L0,8 Z"></path>
+            </marker>
+          </defs>
 
-      <article class="tb-match qf qf2">
-        <div class="tb-slot"><span class="seed">4</span><strong>Seed 4</strong></div>
-        <div class="tb-slot"><span class="seed">5</span><strong>Seed 5</strong></div>
-      </article>
+          <!-- QF1 + QF2 feed SF1 -->
+          <path d="M300 82 H365 V168 H500" marker-end="url(#arrow)"></path>
+          <path d="M300 254 H365 V168"></path>
 
-      <article class="tb-match qf qf3">
-        <div class="tb-slot"><span class="seed">2</span><strong>Seed 2</strong></div>
-        <div class="tb-slot redemption-slot"><span class="seed">7</span><strong>Seed 7</strong><small>1st redemption</small></div>
-      </article>
+          <!-- QF3 + QF4 feed SF2 -->
+          <path d="M300 438 H365 V524 H500" marker-end="url(#arrow)"></path>
+          <path d="M300 610 H365 V524"></path>
 
-      <article class="tb-match qf qf4">
-        <div class="tb-slot"><span class="seed">3</span><strong>Seed 3</strong></div>
-        <div class="tb-slot"><span class="seed">6</span><strong>Seed 6</strong></div>
-      </article>
+          <!-- SF1 + SF2 feed Final -->
+          <path d="M750 168 H815 V342 H770"></path>
+          <path d="M750 524 H815 V342"></path>
+          <path d="M815 342 H870" marker-end="url(#arrow)"></path>
+        </svg>
 
-      <!-- Semifinals -->
-      <article class="tb-match sf sf1">
-        <div class="tb-round-name">Semifinal 1</div>
-        <div class="tb-sub">Winner 1v8 vs Winner 4v5</div>
-      </article>
+        <!-- QFs -->
+        <article class="match-box qf qf1">
+          <div class="seed-row">
+            <span class="seed-num">1</span><strong>Seed 1</strong>
+          </div>
+          <div class="seed-row redemption">
+            <span class="seed-num">8</span><strong>Seed 8</strong><small>2nd redemption</small>
+          </div>
+        </article>
 
-      <article class="tb-match sf sf2">
-        <div class="tb-round-name">Semifinal 2</div>
-        <div class="tb-sub">Winner 2v7 vs Winner 3v6</div>
-      </article>
+        <article class="match-box qf qf2">
+          <div class="seed-row">
+            <span class="seed-num">4</span><strong>Seed 4</strong>
+          </div>
+          <div class="seed-row">
+            <span class="seed-num">5</span><strong>Seed 5</strong>
+          </div>
+        </article>
 
-      <!-- Final -->
-      <article class="tb-match gf">
-        <div class="tb-round-name">Grand Final</div>
-        <div class="tb-sub">SF1 winner vs SF2 winner</div>
-      </article>
+        <article class="match-box qf qf3">
+          <div class="seed-row">
+            <span class="seed-num">2</span><strong>Seed 2</strong>
+          </div>
+          <div class="seed-row redemption">
+            <span class="seed-num">7</span><strong>Seed 7</strong><small>1st redemption</small>
+          </div>
+        </article>
 
-      <!-- QF -> SF connectors -->
-      <div class="tb-line l-qf1"></div>
-      <div class="tb-line l-qf2"></div>
-      <div class="tb-line l-qf3"></div>
-      <div class="tb-line l-qf4"></div>
-      <div class="tb-line l-sf1-vert"></div>
-      <div class="tb-line l-sf2-vert"></div>
-      <div class="tb-line l-sf1-h"></div>
-      <div class="tb-line l-sf2-h"></div>
+        <article class="match-box qf qf4">
+          <div class="seed-row">
+            <span class="seed-num">3</span><strong>Seed 3</strong>
+          </div>
+          <div class="seed-row">
+            <span class="seed-num">6</span><strong>Seed 6</strong>
+          </div>
+        </article>
 
-      <!-- SF -> GF connectors -->
-      <div class="tb-line l-sf1-out"></div>
-      <div class="tb-line l-sf2-out"></div>
-      <div class="tb-line l-gf-vert"></div>
-      <div class="tb-line l-gf-in"></div>
+        <!-- SFs -->
+        <article class="match-box sf sf1">
+          <div class="round-title">Semifinal 1</div>
+          <div class="round-sub">Winner 1v8 vs Winner 4v5</div>
+        </article>
+
+        <article class="match-box sf sf2">
+          <div class="round-title">Semifinal 2</div>
+          <div class="round-sub">Winner 2v7 vs Winner 3v6</div>
+        </article>
+
+        <!-- GF -->
+        <article class="match-box gf">
+          <div class="round-title">Grand Final</div>
+          <div class="round-sub">SF1 winner vs SF2 winner</div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- Actual Round 1 clubs appear only once draw is rolled -->
   <section id="draw-state"></section>
 </main>
 
