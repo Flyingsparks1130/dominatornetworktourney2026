@@ -219,15 +219,40 @@ Repository → **Settings → Pages**:
 
 `index.html` is the homepage.
 
-## Important placeholders
+## Official 12-club field
 
-The reference image visibly supplied 10 named Dominator-network clubs. Because the tournament
-field is 12 clubs but the other two names were not provided, the current config includes:
+The club list is synchronized to the Dominator Network fan tracker:
 
-- `TBD Club 11`
-- `TBD Club 12`
+- Dominator
+- Dominant H
+- Dominance
+- Dominate
+- Dominacion
+- Domineer
+- Dominium
+- Dominion
+- Domical
+- Dominante
+- Domicile
+- DomiChill
 
-Replace those names in `config/clubs.json` when the final two clubs are known.
+## Bracket publication behavior
 
-The post-opening-round advancement structure is also intentionally marked TBD rather than
-inventing byes or wildcard rules for a 12-club bracket.
+The repository ships with the bracket in `pending` state. No club matchups are displayed on
+`bracket.html` until the official draw is actually run.
+
+Running:
+
+```text
+randomize_draw.bat
+```
+
+is the action that:
+
+1. randomizes all 12 clubs;
+2. creates the six opening head-to-head matches;
+3. sets `data/bracket.json` to `status: "rolled"`;
+4. creates the six draft-state records;
+5. makes the matchups visible on the public Bracket page.
+
+This avoids leaking or fabricating matchups before the official draw.

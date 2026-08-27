@@ -7,9 +7,9 @@
 (async()=>{const id=new URLSearchParams(location.search).get("id"),data=await getJSON("config/clubs.json"),c=data.clubs.find(x=>x.id===id),root=document.getElementById("club-detail");
 if(!c){root.innerHTML=`<div class="page-head"><h1>CLUB NOT FOUND</h1></div>`;return}
 document.title=`${c.name} · The Dominator Draft`;root.innerHTML=`
-<div class="page-head club-detail-head"><div><div class="section-kicker mono">RANDOM DRAW #${c.draw_order}</div><h1>${esc(c.name)}</h1><p class="lead">Opening Round · Match ${c.opening_match}</p></div>
+<div class="page-head club-detail-head"><div><div class="section-kicker mono">${c.draw_order ? `RANDOM DRAW #${c.draw_order}` : "AWAITING OFFICIAL DRAW"}</div><h1>${esc(c.name)}</h1><p class="lead">${c.opening_match ? `Opening Round · Match ${c.opening_match}` : "Opening-round opponent has not been drawn yet."}</p></div>
 <a class="btn" href="clubs.html">← BACK TO CLUBS</a></div>
-<div class="detail-stats"><div><div class="label" style="font-size:9px;color:#795f59">TRAINERS</div><strong>5</strong></div><div><div class="label" style="font-size:9px;color:#795f59">MATCH</div><strong>${c.opening_match}</strong></div></div>
+<div class="detail-stats"><div><div class="label" style="font-size:9px;color:#795f59">TRAINERS</div><strong>5</strong></div><div><div class="label" style="font-size:9px;color:#795f59">MATCH</div><strong>${c.opening_match ?? "—"}</strong></div></div>
 <div class="rule"></div><div class="section-kicker mono">TOURNAMENT ROSTER</div>
 <div class="member-grid">${(c.members||[]).map(m=>`<article class="member-card"><div class="role">${esc(m.role)} SPECIALIST</div><h3>${esc(m.name)}</h3><p>Trainer</p></article>`).join("")}</div>`})().catch(console.error);
 </script><script>siteFooter();</script></body></html>

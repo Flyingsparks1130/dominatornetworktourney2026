@@ -11,8 +11,8 @@
 <script>
 (async()=>{const data=await getJSON("config/clubs.json"),rows=document.getElementById("club-rows"),search=document.getElementById("club-search");
 function render(q=""){const s=q.trim().toLowerCase();rows.innerHTML=data.clubs.filter(c=>!s||c.name.toLowerCase().includes(s)).sort((a,b)=>a.draw_order-b.draw_order).map(c=>`
-<tr data-link="club.html?id=${encodeURIComponent(c.id)}"><td class="draw-cell">#${c.draw_order}</td><td class="club-cell">${esc(c.name)}</td>
-<td>Match ${c.opening_match}</td><td>${(c.members||[]).map(m=>`<span class="role-pill">${esc(m.role)}</span>`).join("")}</td></tr>`).join("");
+<tr data-link="club.html?id=${encodeURIComponent(c.id)}"><td class="draw-cell">${c.draw_order ? `#${c.draw_order}` : "—"}</td><td class="club-cell">${esc(c.name)}</td>
+<td>${c.opening_match ? `Match ${c.opening_match}` : "Not drawn"}</td><td>${(c.members||[]).map(m=>`<span class="role-pill">${esc(m.role)}</span>`).join("")}</td></tr>`).join("");
 rows.querySelectorAll("tr[data-link]").forEach(tr=>tr.onclick=()=>location.href=tr.dataset.link)}
 render();search.addEventListener("input",()=>render(search.value))})().catch(console.error);
 </script><script>siteFooter();</script></body></html>

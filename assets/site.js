@@ -7,7 +7,7 @@ function siteHeader(active){
     ["stats.html","STATS","stats"]
   ];
   document.body.insertAdjacentHTML("afterbegin",`<header class="site-header"><div class="header-inner">
-  <a class="brand" href="index.html">The Dominator</a>
+  <a class="brand" href="index.html">The <span>Dominator</span></a>
   <button class="mobile-toggle">MENU</button>
   <nav class="nav">${items.map(([h,l,k])=>`<a href="${h}" class="${active===k?'active':''}">${l}</a>`).join("")}</nav>
   </div></header>`);

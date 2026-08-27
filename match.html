@@ -7,7 +7,7 @@
 (async()=>{const p=new URLSearchParams(location.search),round=Number(p.get("round")||1),match=Number(p.get("match")||1);
 const [clubs,b,drafts,idx,scores]=await Promise.all([getJSON("config/clubs.json"),getJSON("data/bracket.json"),getJSON("data/drafts.json"),getJSON("data/index.json"),getJSON("data/match_scores.json")]);
 const cmap=Object.fromEntries(clubs.clubs.map(c=>[c.id,c])),mdef=(b.opening_matches||[]).find(x=>round===1&&x.match===match),root=document.getElementById("match-root");
-if(!mdef){root.innerHTML=`<div class="page-head"><h1>MATCH NOT FOUND</h1></div>`;return}
+if(b.draw?.status!=="rolled"){root.innerHTML=`<div class="page-head"><div class="section-kicker mono">OFFICIAL DRAW PENDING</div><h1>NO MATCHUPS YET</h1><p class="lead">The opening bracket has not been rolled. Match pages will become available after the official random draw.</p></div>`;return} if(!mdef){root.innerHTML=`<div class="page-head"><h1>MATCH NOT FOUND</h1></div>`;return}
 const a=cmap[mdef.club_ids[0]],bb=cmap[mdef.club_ids[1]],draft=drafts.matches?.[`r${round}-m${match}`]||{},score=(scores.matches||[]).find(x=>x.round===round&&x.match===match);
 const ap=score?.club_points?.[a.name]??0,bp=score?.club_points?.[bb.name]??0,races=(idx.races||[]).filter(x=>x.round===round&&x.match===match).sort((x,y)=>x.race-y.race);
 function list(v){return Array.isArray(v)&&v.length?v.map(esc).join(", "):"—"}

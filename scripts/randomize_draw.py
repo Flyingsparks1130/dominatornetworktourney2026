@@ -47,7 +47,7 @@ def main():
     ids = [c["id"] for c in clubs]
     rng = random.Random(args.seed) if args.seed is not None else secrets.SystemRandom()
     rng.shuffle(ids)
-    pos = {cid: i+1 for i, cid in enumerate(ids)}
+    pos = {cid: i + 1 for i, cid in enumerate(ids)}
 
     for c in clubs:
         c["draw_order"] = pos[c["id"]]
@@ -55,27 +55,31 @@ def main():
     clubs.sort(key=lambda c: c["draw_order"])
     save(CLUBS, {"clubs": clubs})
 
-    b = load(BRACKET)
-    b["draw"] = {
+    bracket = load(BRACKET)
+    bracket["draw"] = {
+        "status": "rolled",
         "method": "random",
         "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00","Z"),
-        "club_count": 12, "opening_matches": 6, "clubs_per_match": 2,
-        "reproducible_seed": args.seed
+        "club_count": 12,
+        "opening_matches": 6,
+        "clubs_per_match": 2,
+        "reproducible_seed": args.seed,
     }
-    b["opening_matches"] = [
+    bracket["opening_matches"] = [
         {"match": m, "club_ids": [c["id"] for c in clubs if c["opening_match"] == m]}
         for m in range(1, 7)
     ]
-    save(BRACKET, b)
-
-    # New official draw resets the opening-round draft state.
+    save(BRACKET, bracket)
     save(DRAFTS, {"matches": {f"r1-m{m}": blank_draft(1,m) for m in range(1,7)}})
 
-    print("Opening-round random draw:")
     by_id = {c["id"]: c["name"] for c in clubs}
-    for match in b["opening_matches"]:
-        a,bid = match["club_ids"]
-        print(f"  Match {match['match']}: {by_id[a]} vs {by_id[bid]}")
+    print("OFFICIAL OPENING DRAW")
+    print("=" * 54)
+    for match in bracket["opening_matches"]:
+        a, b = match["club_ids"]
+        print(f"Match {match['match']}: {by_id[a]} vs {by_id[b]}")
+    print("=" * 54)
+    print("Bracket files have now been published locally.")
 
 if __name__ == "__main__":
     main()

@@ -1,338 +1,11 @@
 {
   "clubs": [
     {
-      "id": "domineer",
-      "name": "Domineer",
-      "members": [
-        {
-          "name": "Domineer Sprint Trainer",
-          "role": "Sprint",
-          "discord": ""
-        },
-        {
-          "name": "Domineer Mile Trainer",
-          "role": "Mile",
-          "discord": ""
-        },
-        {
-          "name": "Domineer Medium Trainer",
-          "role": "Medium",
-          "discord": ""
-        },
-        {
-          "name": "Domineer Long Trainer",
-          "role": "Long",
-          "discord": ""
-        },
-        {
-          "name": "Domineer Dirt Trainer",
-          "role": "Dirt",
-          "discord": ""
-        }
-      ],
-      "draw_order": 1,
-      "opening_match": 1
-    },
-    {
-      "id": "domical",
-      "name": "Domical",
-      "members": [
-        {
-          "name": "Domical Sprint Trainer",
-          "role": "Sprint",
-          "discord": ""
-        },
-        {
-          "name": "Domical Mile Trainer",
-          "role": "Mile",
-          "discord": ""
-        },
-        {
-          "name": "Domical Medium Trainer",
-          "role": "Medium",
-          "discord": ""
-        },
-        {
-          "name": "Domical Long Trainer",
-          "role": "Long",
-          "discord": ""
-        },
-        {
-          "name": "Domical Dirt Trainer",
-          "role": "Dirt",
-          "discord": ""
-        }
-      ],
-      "draw_order": 2,
-      "opening_match": 1
-    },
-    {
-      "id": "dominant-h",
-      "name": "Dominant H",
-      "members": [
-        {
-          "name": "Dominant H Sprint Trainer",
-          "role": "Sprint",
-          "discord": ""
-        },
-        {
-          "name": "Dominant H Mile Trainer",
-          "role": "Mile",
-          "discord": ""
-        },
-        {
-          "name": "Dominant H Medium Trainer",
-          "role": "Medium",
-          "discord": ""
-        },
-        {
-          "name": "Dominant H Long Trainer",
-          "role": "Long",
-          "discord": ""
-        },
-        {
-          "name": "Dominant H Dirt Trainer",
-          "role": "Dirt",
-          "discord": ""
-        }
-      ],
-      "draw_order": 3,
-      "opening_match": 2
-    },
-    {
-      "id": "dominion",
-      "name": "Dominion",
-      "members": [
-        {
-          "name": "Dominion Sprint Trainer",
-          "role": "Sprint",
-          "discord": ""
-        },
-        {
-          "name": "Dominion Mile Trainer",
-          "role": "Mile",
-          "discord": ""
-        },
-        {
-          "name": "Dominion Medium Trainer",
-          "role": "Medium",
-          "discord": ""
-        },
-        {
-          "name": "Dominion Long Trainer",
-          "role": "Long",
-          "discord": ""
-        },
-        {
-          "name": "Dominion Dirt Trainer",
-          "role": "Dirt",
-          "discord": ""
-        }
-      ],
-      "draw_order": 4,
-      "opening_match": 2
-    },
-    {
-      "id": "domichill",
-      "name": "DomiChill",
-      "members": [
-        {
-          "name": "DomiChill Sprint Trainer",
-          "role": "Sprint",
-          "discord": ""
-        },
-        {
-          "name": "DomiChill Mile Trainer",
-          "role": "Mile",
-          "discord": ""
-        },
-        {
-          "name": "DomiChill Medium Trainer",
-          "role": "Medium",
-          "discord": ""
-        },
-        {
-          "name": "DomiChill Long Trainer",
-          "role": "Long",
-          "discord": ""
-        },
-        {
-          "name": "DomiChill Dirt Trainer",
-          "role": "Dirt",
-          "discord": ""
-        }
-      ],
-      "draw_order": 5,
-      "opening_match": 3
-    },
-    {
-      "id": "tbd-club-11",
-      "name": "TBD Club 11",
-      "members": [
-        {
-          "name": "TBD Club 11 Sprint Trainer",
-          "role": "Sprint",
-          "discord": ""
-        },
-        {
-          "name": "TBD Club 11 Mile Trainer",
-          "role": "Mile",
-          "discord": ""
-        },
-        {
-          "name": "TBD Club 11 Medium Trainer",
-          "role": "Medium",
-          "discord": ""
-        },
-        {
-          "name": "TBD Club 11 Long Trainer",
-          "role": "Long",
-          "discord": ""
-        },
-        {
-          "name": "TBD Club 11 Dirt Trainer",
-          "role": "Dirt",
-          "discord": ""
-        }
-      ],
-      "draw_order": 6,
-      "opening_match": 3
-    },
-    {
-      "id": "dominium",
-      "name": "Dominium",
-      "members": [
-        {
-          "name": "Dominium Sprint Trainer",
-          "role": "Sprint",
-          "discord": ""
-        },
-        {
-          "name": "Dominium Mile Trainer",
-          "role": "Mile",
-          "discord": ""
-        },
-        {
-          "name": "Dominium Medium Trainer",
-          "role": "Medium",
-          "discord": ""
-        },
-        {
-          "name": "Dominium Long Trainer",
-          "role": "Long",
-          "discord": ""
-        },
-        {
-          "name": "Dominium Dirt Trainer",
-          "role": "Dirt",
-          "discord": ""
-        }
-      ],
-      "draw_order": 7,
-      "opening_match": 4
-    },
-    {
-      "id": "dominate",
-      "name": "Dominate",
-      "members": [
-        {
-          "name": "Dominate Sprint Trainer",
-          "role": "Sprint",
-          "discord": ""
-        },
-        {
-          "name": "Dominate Mile Trainer",
-          "role": "Mile",
-          "discord": ""
-        },
-        {
-          "name": "Dominate Medium Trainer",
-          "role": "Medium",
-          "discord": ""
-        },
-        {
-          "name": "Dominate Long Trainer",
-          "role": "Long",
-          "discord": ""
-        },
-        {
-          "name": "Dominate Dirt Trainer",
-          "role": "Dirt",
-          "discord": ""
-        }
-      ],
-      "draw_order": 8,
-      "opening_match": 4
-    },
-    {
-      "id": "tbd-club-12",
-      "name": "TBD Club 12",
-      "members": [
-        {
-          "name": "TBD Club 12 Sprint Trainer",
-          "role": "Sprint",
-          "discord": ""
-        },
-        {
-          "name": "TBD Club 12 Mile Trainer",
-          "role": "Mile",
-          "discord": ""
-        },
-        {
-          "name": "TBD Club 12 Medium Trainer",
-          "role": "Medium",
-          "discord": ""
-        },
-        {
-          "name": "TBD Club 12 Long Trainer",
-          "role": "Long",
-          "discord": ""
-        },
-        {
-          "name": "TBD Club 12 Dirt Trainer",
-          "role": "Dirt",
-          "discord": ""
-        }
-      ],
-      "draw_order": 9,
-      "opening_match": 5
-    },
-    {
-      "id": "dominance",
-      "name": "Dominance",
-      "members": [
-        {
-          "name": "Dominance Sprint Trainer",
-          "role": "Sprint",
-          "discord": ""
-        },
-        {
-          "name": "Dominance Mile Trainer",
-          "role": "Mile",
-          "discord": ""
-        },
-        {
-          "name": "Dominance Medium Trainer",
-          "role": "Medium",
-          "discord": ""
-        },
-        {
-          "name": "Dominance Long Trainer",
-          "role": "Long",
-          "discord": ""
-        },
-        {
-          "name": "Dominance Dirt Trainer",
-          "role": "Dirt",
-          "discord": ""
-        }
-      ],
-      "draw_order": 10,
-      "opening_match": 5
-    },
-    {
-      "id": "dominator",
+      "id": "114037107",
       "name": "Dominator",
+      "tracker_url": "https://uma.moe/circles/114037107",
+      "draw_order": null,
+      "opening_match": null,
       "members": [
         {
           "name": "Dominator Sprint Trainer",
@@ -359,13 +32,320 @@
           "role": "Dirt",
           "discord": ""
         }
-      ],
-      "draw_order": 11,
-      "opening_match": 6
+      ]
     },
     {
-      "id": "domicile",
+      "id": "278155676",
+      "name": "Dominant H",
+      "tracker_url": "https://uma.moe/circles/278155676",
+      "draw_order": null,
+      "opening_match": null,
+      "members": [
+        {
+          "name": "Dominant H Sprint Trainer",
+          "role": "Sprint",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Mile Trainer",
+          "role": "Mile",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Medium Trainer",
+          "role": "Medium",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Long Trainer",
+          "role": "Long",
+          "discord": ""
+        },
+        {
+          "name": "Dominant H Dirt Trainer",
+          "role": "Dirt",
+          "discord": ""
+        }
+      ]
+    },
+    {
+      "id": "955490905",
+      "name": "Dominance",
+      "tracker_url": "https://uma.moe/circles/955490905",
+      "draw_order": null,
+      "opening_match": null,
+      "members": [
+        {
+          "name": "Dominance Sprint Trainer",
+          "role": "Sprint",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Mile Trainer",
+          "role": "Mile",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Medium Trainer",
+          "role": "Medium",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Long Trainer",
+          "role": "Long",
+          "discord": ""
+        },
+        {
+          "name": "Dominance Dirt Trainer",
+          "role": "Dirt",
+          "discord": ""
+        }
+      ]
+    },
+    {
+      "id": "147185239",
+      "name": "Dominate",
+      "tracker_url": "https://uma.moe/circles/147185239",
+      "draw_order": null,
+      "opening_match": null,
+      "members": [
+        {
+          "name": "Dominate Sprint Trainer",
+          "role": "Sprint",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Mile Trainer",
+          "role": "Mile",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Medium Trainer",
+          "role": "Medium",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Long Trainer",
+          "role": "Long",
+          "discord": ""
+        },
+        {
+          "name": "Dominate Dirt Trainer",
+          "role": "Dirt",
+          "discord": ""
+        }
+      ]
+    },
+    {
+      "id": "739453372",
+      "name": "Dominacion",
+      "tracker_url": "https://uma.moe/circles/739453372",
+      "draw_order": null,
+      "opening_match": null,
+      "members": [
+        {
+          "name": "Dominacion Sprint Trainer",
+          "role": "Sprint",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Mile Trainer",
+          "role": "Mile",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Medium Trainer",
+          "role": "Medium",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Long Trainer",
+          "role": "Long",
+          "discord": ""
+        },
+        {
+          "name": "Dominacion Dirt Trainer",
+          "role": "Dirt",
+          "discord": ""
+        }
+      ]
+    },
+    {
+      "id": "961801794",
+      "name": "Domineer",
+      "tracker_url": "https://uma.moe/circles/961801794",
+      "draw_order": null,
+      "opening_match": null,
+      "members": [
+        {
+          "name": "Domineer Sprint Trainer",
+          "role": "Sprint",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Mile Trainer",
+          "role": "Mile",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Medium Trainer",
+          "role": "Medium",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Long Trainer",
+          "role": "Long",
+          "discord": ""
+        },
+        {
+          "name": "Domineer Dirt Trainer",
+          "role": "Dirt",
+          "discord": ""
+        }
+      ]
+    },
+    {
+      "id": "449007774",
+      "name": "Dominium",
+      "tracker_url": "https://uma.moe/circles/449007774",
+      "draw_order": null,
+      "opening_match": null,
+      "members": [
+        {
+          "name": "Dominium Sprint Trainer",
+          "role": "Sprint",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Mile Trainer",
+          "role": "Mile",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Medium Trainer",
+          "role": "Medium",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Long Trainer",
+          "role": "Long",
+          "discord": ""
+        },
+        {
+          "name": "Dominium Dirt Trainer",
+          "role": "Dirt",
+          "discord": ""
+        }
+      ]
+    },
+    {
+      "id": "510137721",
+      "name": "Dominion",
+      "tracker_url": "https://uma.moe/circles/510137721",
+      "draw_order": null,
+      "opening_match": null,
+      "members": [
+        {
+          "name": "Dominion Sprint Trainer",
+          "role": "Sprint",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Mile Trainer",
+          "role": "Mile",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Medium Trainer",
+          "role": "Medium",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Long Trainer",
+          "role": "Long",
+          "discord": ""
+        },
+        {
+          "name": "Dominion Dirt Trainer",
+          "role": "Dirt",
+          "discord": ""
+        }
+      ]
+    },
+    {
+      "id": "754870359",
+      "name": "Domical",
+      "tracker_url": "https://uma.moe/circles/754870359",
+      "draw_order": null,
+      "opening_match": null,
+      "members": [
+        {
+          "name": "Domical Sprint Trainer",
+          "role": "Sprint",
+          "discord": ""
+        },
+        {
+          "name": "Domical Mile Trainer",
+          "role": "Mile",
+          "discord": ""
+        },
+        {
+          "name": "Domical Medium Trainer",
+          "role": "Medium",
+          "discord": ""
+        },
+        {
+          "name": "Domical Long Trainer",
+          "role": "Long",
+          "discord": ""
+        },
+        {
+          "name": "Domical Dirt Trainer",
+          "role": "Dirt",
+          "discord": ""
+        }
+      ]
+    },
+    {
+      "id": "570535790",
+      "name": "Dominante",
+      "tracker_url": "https://uma.moe/circles/570535790",
+      "draw_order": null,
+      "opening_match": null,
+      "members": [
+        {
+          "name": "Dominante Sprint Trainer",
+          "role": "Sprint",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Mile Trainer",
+          "role": "Mile",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Medium Trainer",
+          "role": "Medium",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Long Trainer",
+          "role": "Long",
+          "discord": ""
+        },
+        {
+          "name": "Dominante Dirt Trainer",
+          "role": "Dirt",
+          "discord": ""
+        }
+      ]
+    },
+    {
+      "id": "387070372",
       "name": "Domicile",
+      "tracker_url": "https://uma.moe/circles/387070372",
+      "draw_order": null,
+      "opening_match": null,
       "members": [
         {
           "name": "Domicile Sprint Trainer",
@@ -392,9 +372,41 @@
           "role": "Dirt",
           "discord": ""
         }
-      ],
-      "draw_order": 12,
-      "opening_match": 6
+      ]
+    },
+    {
+      "id": "918879715",
+      "name": "DomiChill",
+      "tracker_url": "https://uma.moe/circles/918879715",
+      "draw_order": null,
+      "opening_match": null,
+      "members": [
+        {
+          "name": "DomiChill Sprint Trainer",
+          "role": "Sprint",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Mile Trainer",
+          "role": "Mile",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Medium Trainer",
+          "role": "Medium",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Long Trainer",
+          "role": "Long",
+          "discord": ""
+        },
+        {
+          "name": "DomiChill Dirt Trainer",
+          "role": "Dirt",
+          "discord": ""
+        }
+      ]
     }
   ]
 }

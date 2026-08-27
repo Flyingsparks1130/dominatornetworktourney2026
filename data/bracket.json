@@ -1,10 +1,12 @@
 {
   "draw": {
+    "status": "pending",
     "method": "random",
-    "generated_at": "2026-08-27T00:28:42.698859Z",
+    "generated_at": null,
     "club_count": 12,
     "opening_matches": 6,
-    "clubs_per_match": 2
+    "clubs_per_match": 2,
+    "reproducible_seed": null
   },
   "rounds": [
     {
@@ -32,48 +34,5 @@
       "advance": "Champion"
     }
   ],
-  "opening_matches": [
-    {
-      "match": 1,
-      "club_ids": [
-        "domineer",
-        "domical"
-      ]
-    },
-    {
-      "match": 2,
-      "club_ids": [
-        "dominant-h",
-        "dominion"
-      ]
-    },
-    {
-      "match": 3,
-      "club_ids": [
-        "domichill",
-        "tbd-club-11"
-      ]
-    },
-    {
-      "match": 4,
-      "club_ids": [
-        "dominium",
-        "dominate"
-      ]
-    },
-    {
-      "match": 5,
-      "club_ids": [
-        "tbd-club-12",
-        "dominance"
-      ]
-    },
-    {
-      "match": 6,
-      "club_ids": [
-        "dominator",
-        "domicile"
-      ]
-    }
-  ]
+  "opening_matches": []
 }

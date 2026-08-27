@@ -6,18 +6,33 @@
 <main class="page"><div class="page-head"><div class="section-kicker mono">RANDOMIZED OPENING DRAW</div><h1>THE BRACKET</h1>
 <p class="lead">Twelve clubs. Six head-to-head opening matches. Every match is a self-contained draft between two clubs.</p></div>
 <div class="round-strip" id="round-strip"></div>
-<div class="section-kicker mono">OPENING ROUND · 6 MATCHES</div><div id="match-grid" class="match-grid"></div>
+<div id="draw-state"></div>
 <div class="future-stage"><strong>Downstream bracket format:</strong> intentionally left TBD until the post-opening-round advancement structure is finalized. The site will not invent byes or wildcard rules.</div>
 </main>
 
 <script>
-(async()=>{const [b,clubs,scores]=await Promise.all([getJSON("data/bracket.json"),getJSON("config/clubs.json"),getJSON("data/match_scores.json")]);
-const cmap=Object.fromEntries(clubs.clubs.map(c=>[c.id,c])),smap=Object.fromEntries((scores.matches||[]).map(s=>[`r${s.round}-m${s.match}`,s]));
+(async()=>{
+const [b,clubs,scores]=await Promise.all([getJSON("data/bracket.json"),getJSON("config/clubs.json"),getJSON("data/match_scores.json")]);
 document.getElementById("round-strip").innerHTML=b.rounds.map(r=>`<div class="round-cell"><h3>${esc(r.title)}</h3><p>${esc(r.format)}</p><p>${esc(r.advance)}</p></div>`).join("");
-document.getElementById("match-grid").innerHTML=b.opening_matches.map(m=>{const a=cmap[m.club_ids[0]],bb=cmap[m.club_ids[1]],s=smap[`r1-m${m.match}`],ap=s?.club_points?.[a.name]??0,bp=s?.club_points?.[bb.name]??0;
+const root=document.getElementById("draw-state");
+if(b.draw?.status!=="rolled" || !(b.opening_matches||[]).length){
+  root.innerHTML=`<section class="draw-pending"><div class="draw-pending-inner">
+    <div class="draw-icon">?</div>
+    <div class="section-kicker mono">OFFICIAL DRAW PENDING</div>
+    <h2>No matchups have been rolled yet.</h2>
+    <p>The 12-club field is locked, but the bracket will remain blank until the official random draw is run. Once the draw is rolled, the six head-to-head opening matches will appear here automatically.</p>
+  </div></section>`;
+  return;
+}
+const cmap=Object.fromEntries(clubs.clubs.map(c=>[c.id,c]));
+const smap=Object.fromEntries((scores.matches||[]).map(s=>[`r${s.round}-m${s.match}`,s]));
+root.innerHTML=`<div class="section-kicker mono">OPENING ROUND · 6 MATCHES</div><div class="match-grid">${
+b.opening_matches.map(m=>{const a=cmap[m.club_ids[0]],bb=cmap[m.club_ids[1]],s=smap[`r1-m${m.match}`],ap=s?.club_points?.[a.name]??0,bp=s?.club_points?.[bb.name]??0;
 return `<article class="match-card"><div class="match-title">MATCH ${m.match}</div><div class="match-versus">
 <div class="club-side"><div class="name">${esc(a.name)}</div><div class="drawmeta">DRAW #${a.draw_order}</div></div><div class="vs">VS</div>
 <div class="club-side right"><div class="name">${esc(bb.name)}</div><div class="drawmeta">DRAW #${bb.draw_order}</div></div></div>
 <div class="match-scorebar"><span class="score">${ap} PTS</span><span class="mid">${esc((s?.status||"not_started").replaceAll("_"," ").toUpperCase())}</span><span class="score" style="text-align:right">${bp} PTS</span></div>
-<div class="match-actions"><a href="match.html?round=1&match=${m.match}">DRAFT + RESULTS</a><a href="match.html?round=1&match=${m.match}">DETAILS ›</a></div></article>`}).join("")})().catch(console.error);
+<div class="match-actions"><a href="match.html?round=1&match=${m.match}">DRAFT + RESULTS</a><a href="match.html?round=1&match=${m.match}">DETAILS ›</a></div></article>`}).join("")
+}</div>`;
+})().catch(console.error);
 </script><script>siteFooter();</script></body></html>
