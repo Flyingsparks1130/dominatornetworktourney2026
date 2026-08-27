@@ -360,6 +360,67 @@
 }
 </style>
 
+
+<style>
+/* v14 — qualification-flow spacing only. Final 8 bracket untouched. */
+
+/* Make both branches carry their own vertical rhythm instead of forcing
+   the winners side to match the full redemption stack height. */
+.qual-fork{
+  align-items:start;
+}
+
+/* Pull the winners card lower and give it a visible continuation toward merge. */
+.qual-branch:first-child{
+  position:relative;
+  padding-top:82px;
+}
+
+/* vertical continuation from winners card down toward merge */
+.qual-branch:first-child::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:calc(82px + 108px);
+  width:2px;
+  height:238px;
+  background:#8f8f95;
+  transform:translateX(-1px);
+}
+
+/* Remove excess blank vertical space before the merge box. */
+.qual-merge{
+  margin-top:-34px;
+  padding-top:70px;
+}
+
+/* Redraw the lower merge so both winner and redemption branches visibly
+   feed the same Final 8 node without the giant empty rectangle. */
+.qual-merge::before{
+  left:25%;
+  right:25%;
+  top:0;
+  height:38px;
+}
+.qual-merge::after{
+  top:38px;
+  height:32px;
+}
+
+@media(max-width:760px){
+  .qual-branch:first-child{
+    padding-top:0;
+  }
+  .qual-branch:first-child::after{
+    display:none;
+  }
+  .qual-merge{
+    margin-top:0;
+    padding-top:18px;
+  }
+}
+</style>
+
 </head>
 
 <body>
