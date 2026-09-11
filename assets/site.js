@@ -2,8 +2,7 @@ function siteHeader(active){
   const items=[
     ["rules.html","RULES","rules"],
     ["tracks.html","TRACK DRAFT","tracks"],
-    ["bracket.html","BRACKET","bracket"],
-    ["archive.html","RESULTS","archive"],
+    ["bracket.html","TOURNAMENT","bracket"],
     ["clubs.html","CLUBS","clubs"],
     ["stats.html","STATS","stats"]
   ];

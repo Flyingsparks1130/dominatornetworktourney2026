@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "match_id": "r1-m3",
+  "external_match_id": "WSPWLR",
+  "source": "Organizer-supplied written results and roster. Track conditions follow the written schedule where screenshots differ. Original race exports are unavailable.",
+  "mvp": {
+    "team_id": "dominium",
+    "uma": "Seiun Sky",
+    "discord": "@Juqi"
+  },
+  "races": [
+    {
+      "number": 1,
+      "track": "Hanshin (Outer) 1600m · Turf · Winter / Snowy / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominium",
+          "uma": "Seiun Sky",
+          "discord": "@Juqi"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Oguri Cap",
+          "discord": "@Sky"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Smart Falcon",
+          "discord": "@Mor Mas"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "track": "Kyoto (Outer) 2200m · Turf · Spring / Rainy / Soft",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominium",
+          "uma": "Mejiro Ryan",
+          "discord": "@unluckyyy"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Kitasan Black",
+          "discord": "@Mamboo 🌊🩵"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Fuji Kiseki",
+          "discord": "@Raven621|Flying Free"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "track": "Kyoto (Inner) 2000m · Turf · Fall / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominium",
+          "uma": "Seiun Sky",
+          "discord": "@Juqi"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Mejiro Dober",
+          "discord": "@RaptorBolt717"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Oguri Cap",
+          "discord": "@Sky"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "track": "Tokyo 2400m · Turf · Spring / Cloudy / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominium",
+          "uma": "Mejiro Ryan",
+          "discord": "@unluckyyy"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Seiun Sky",
+          "discord": "@Juqi"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Oguri Cap",
+          "discord": "@Sky"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "track": "Nakayama (Inner) 2000m · Turf · Spring / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominante",
+          "uma": "Smart Falcon",
+          "discord": "@Mor Mas"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Mejiro Ryan",
+          "discord": "@unluckyyy"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Seiun Sky",
+          "discord": "@Juqi"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "track": "Sapporo 1800m · Turf · Spring / Rainy / Heavy",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominium",
+          "uma": "Seiun Sky",
+          "discord": "@Juqi"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Special Week",
+          "discord": "@Yumi"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Taiki Shuttle",
+          "discord": "@Yokka"
+        }
+      ]
+    }
+  ]
+}

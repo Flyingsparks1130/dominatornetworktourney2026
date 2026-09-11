@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="dark"><title>Club · The Dominator Draft</title><link rel="stylesheet" href="assets/site.css?v=10"></head>
-<body><script src="assets/site.js"></script><script>siteHeader("clubs");</script>
+<body><script src="assets/site.js?v=4"></script><script>siteHeader("clubs");</script>
 <main class="page"><div id="club-detail"></div></main>
 <script>
 (async()=>{const id=new URLSearchParams(location.search).get("id"),[data,rosters]=await Promise.all([getJSON("data/tournament-index.json"),getJSON("config/clubs.json")]),c=data.teams.find(x=>x.id===id||x.club_id===id),root=document.getElementById("club-detail");

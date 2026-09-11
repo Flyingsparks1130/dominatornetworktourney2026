@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T13:42:07Z",
+  "generated_at": "2026-09-11T15:28:51Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
-  "revision": 1,
+  "revision": 2,
   "rounds": [
     {
       "id": "R1",
@@ -714,40 +714,393 @@
           "aliases": []
         }
       ],
-      "winner_id": null,
-      "loser_id": null,
-      "status": "ready",
-      "manual_scores": null,
-      "decision_reason": null,
-      "source": "race_files",
+      "winner_id": "dominium",
+      "loser_id": "dominante",
+      "status": "complete",
+      "manual_scores": {
+        "dominante": 13,
+        "dominium": 29
+      },
+      "decision_reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+      "source": "manual",
       "races": [],
       "draft": {
         "schema_version": 1,
         "match_id": "r1-m3",
-        "status": "pending",
+        "status": "locked",
         "track_pool": [],
         "track_picks": [],
         "track_vetoes": [],
-        "final_tracks": [],
-        "tiebreaker_track": null,
-        "uma_pre_bans": [],
+        "final_tracks": [
+          "Hanshin (Outer) 1600m · Turf · Winter / Snowy / Good",
+          "Kyoto (Outer) 2200m · Turf · Spring / Rainy / Soft",
+          "Kyoto (Inner) 2000m · Turf · Fall / Sunny / Good",
+          "Tokyo 2400m · Turf · Spring / Cloudy / Firm",
+          "Nakayama (Inner) 2000m · Turf · Spring / Sunny / Good",
+          "Sapporo 1800m · Turf · Spring / Rainy / Heavy"
+        ],
+        "tiebreaker_track": "Hakodate 1700m · Dirt · Fall / Cloudy / Firm",
+        "uma_pre_bans": [
+          {
+            "team_id": "dominium",
+            "uma": "Mihono Bourbon (Valentine)"
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Agnes Digital"
+          },
+          {
+            "team_id": "dominante",
+            "uma": "Silence Suzuka"
+          },
+          {
+            "team_id": "dominante",
+            "uma": "Aston Machan"
+          }
+        ],
         "uma_picks": [],
-        "uma_bans": [],
+        "uma_bans": [
+          {
+            "team_id": "dominante",
+            "uma": "Oguri Cap (Christmas)"
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Maruzensky (Summer)"
+          }
+        ],
         "uma_additions": [],
-        "benched_umas": [],
+        "benched_umas": [
+          {
+            "team_id": "dominium",
+            "uma": "Narita Brian"
+          },
+          {
+            "team_id": "dominante",
+            "uma": "Nice Nature (Cheerleader)"
+          }
+        ],
         "training_start": null,
         "training_deadline": null,
-        "notes": "",
-        "external_match_id": null,
-        "roster": []
+        "notes": "Organizer-supplied written schedule is authoritative. Some conditions differ in the supplied screenshots. Pick order, original pool and training dates were not supplied. Hakodate was the reserved tiebreaker and was not run.",
+        "external_match_id": "WSPWLR",
+        "roster": [
+          {
+            "team_id": "dominium",
+            "uma": "Seiun Sky",
+            "discord": "@Juqi",
+            "benched": false
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Narita Brian",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Mejiro Ryan",
+            "discord": "@unluckyyy",
+            "benched": false
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Kitasan Black",
+            "discord": "@Mamboo 🌊🩵",
+            "benched": false
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Taiki Shuttle",
+            "discord": "@Yokka",
+            "benched": false
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Fuji Kiseki",
+            "discord": "@Raven621|Flying Free",
+            "benched": false
+          },
+          {
+            "team_id": "dominante",
+            "uma": "Mejiro Dober",
+            "discord": "@RaptorBolt717",
+            "benched": false
+          },
+          {
+            "team_id": "dominante",
+            "uma": "Oguri Cap",
+            "discord": "@Sky",
+            "benched": false
+          },
+          {
+            "team_id": "dominante",
+            "uma": "Special Week",
+            "discord": "@Yumi",
+            "benched": false
+          },
+          {
+            "team_id": "dominante",
+            "uma": "King Halo",
+            "discord": "@David",
+            "benched": false
+          },
+          {
+            "team_id": "dominante",
+            "uma": "Smart Falcon",
+            "discord": "@Mor Mas",
+            "benched": false
+          },
+          {
+            "team_id": "dominante",
+            "uma": "Nice Nature (Cheerleader)",
+            "discord": null,
+            "benched": true
+          }
+        ]
       },
       "draft_path": "Dominator Tournament/R1/Dominium vs Dominante/draft.json",
-      "draft_has_content": false,
-      "reported_results": null,
-      "report_path": null,
+      "draft_has_content": true,
+      "reported_results": {
+        "schema_version": 1,
+        "match_id": "r1-m3",
+        "external_match_id": "WSPWLR",
+        "source": "Organizer-supplied written results and roster. Track conditions follow the written schedule where screenshots differ. Original race exports are unavailable.",
+        "mvp": {
+          "team_id": "dominium",
+          "uma": "Seiun Sky",
+          "discord": "@Juqi"
+        },
+        "races": [
+          {
+            "number": 1,
+            "track": "Hanshin (Outer) 1600m · Turf · Winter / Snowy / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominium",
+                "uma": "Seiun Sky",
+                "discord": "@Juqi",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominante",
+                "uma": "Oguri Cap",
+                "discord": "@Sky",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominante",
+                "uma": "Smart Falcon",
+                "discord": "@Mor Mas",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominante": 3,
+              "dominium": 4
+            },
+            "cumulative_scores": {
+              "dominante": 3,
+              "dominium": 4
+            }
+          },
+          {
+            "number": 2,
+            "track": "Kyoto (Outer) 2200m · Turf · Spring / Rainy / Soft",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominium",
+                "uma": "Mejiro Ryan",
+                "discord": "@unluckyyy",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominium",
+                "uma": "Kitasan Black",
+                "discord": "@Mamboo 🌊🩵",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominium",
+                "uma": "Fuji Kiseki",
+                "discord": "@Raven621|Flying Free",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominante": 0,
+              "dominium": 7
+            },
+            "cumulative_scores": {
+              "dominante": 3,
+              "dominium": 11
+            }
+          },
+          {
+            "number": 3,
+            "track": "Kyoto (Inner) 2000m · Turf · Fall / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominium",
+                "uma": "Seiun Sky",
+                "discord": "@Juqi",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominante",
+                "uma": "Mejiro Dober",
+                "discord": "@RaptorBolt717",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominante",
+                "uma": "Oguri Cap",
+                "discord": "@Sky",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominante": 3,
+              "dominium": 4
+            },
+            "cumulative_scores": {
+              "dominante": 6,
+              "dominium": 15
+            }
+          },
+          {
+            "number": 4,
+            "track": "Tokyo 2400m · Turf · Spring / Cloudy / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominium",
+                "uma": "Mejiro Ryan",
+                "discord": "@unluckyyy",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominium",
+                "uma": "Seiun Sky",
+                "discord": "@Juqi",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominante",
+                "uma": "Oguri Cap",
+                "discord": "@Sky",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominante": 1,
+              "dominium": 6
+            },
+            "cumulative_scores": {
+              "dominante": 7,
+              "dominium": 21
+            }
+          },
+          {
+            "number": 5,
+            "track": "Nakayama (Inner) 2000m · Turf · Spring / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominante",
+                "uma": "Smart Falcon",
+                "discord": "@Mor Mas",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominium",
+                "uma": "Mejiro Ryan",
+                "discord": "@unluckyyy",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominium",
+                "uma": "Seiun Sky",
+                "discord": "@Juqi",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominante": 4,
+              "dominium": 3
+            },
+            "cumulative_scores": {
+              "dominante": 11,
+              "dominium": 24
+            }
+          },
+          {
+            "number": 6,
+            "track": "Sapporo 1800m · Turf · Spring / Rainy / Heavy",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominium",
+                "uma": "Seiun Sky",
+                "discord": "@Juqi",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominante",
+                "uma": "Special Week",
+                "discord": "@Yumi",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominium",
+                "uma": "Taiki Shuttle",
+                "discord": "@Yokka",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominante": 2,
+              "dominium": 5
+            },
+            "cumulative_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          }
+        ],
+        "totals": {
+          "dominante": 13,
+          "dominium": 29
+        }
+      },
+      "report_path": "Dominator Tournament/R1/Dominium vs Dominante/results.json",
       "computed_scores": null,
-      "scores": null,
-      "score_only": false,
+      "scores": {
+        "dominante": 13,
+        "dominium": 29
+      },
+      "score_only": true,
       "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": []
@@ -919,7 +1272,13 @@
         }
       ],
       "participants": [
-        null,
+        {
+          "id": "dominium",
+          "name": "Dominium",
+          "seed": 7,
+          "club_id": "449007774",
+          "aliases": []
+        },
         {
           "id": "dominate",
           "name": "Dominate",
@@ -930,7 +1289,7 @@
       ],
       "winner_id": null,
       "loser_id": null,
-      "status": "awaiting_opponent",
+      "status": "ready",
       "manual_scores": null,
       "decision_reason": null,
       "source": "race_files",
@@ -1055,6 +1414,7 @@
   ],
   "warnings": [],
   "eliminated": [
+    "dominante",
     "dominion"
   ],
   "champion_id": null

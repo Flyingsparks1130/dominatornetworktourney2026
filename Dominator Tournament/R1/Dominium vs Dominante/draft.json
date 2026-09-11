@@ -1,18 +1,135 @@
 {
   "schema_version": 1,
   "match_id": "r1-m3",
-  "status": "pending",
+  "status": "locked",
+  "external_match_id": "WSPWLR",
+  "roster": [
+    {
+      "team_id": "dominium",
+      "uma": "Seiun Sky",
+      "discord": "@Juqi",
+      "benched": false
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Narita Brian",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Mejiro Ryan",
+      "discord": "@unluckyyy",
+      "benched": false
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Kitasan Black",
+      "discord": "@Mamboo 🌊🩵",
+      "benched": false
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Taiki Shuttle",
+      "discord": "@Yokka",
+      "benched": false
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Fuji Kiseki",
+      "discord": "@Raven621|Flying Free",
+      "benched": false
+    },
+    {
+      "team_id": "dominante",
+      "uma": "Mejiro Dober",
+      "discord": "@RaptorBolt717",
+      "benched": false
+    },
+    {
+      "team_id": "dominante",
+      "uma": "Oguri Cap",
+      "discord": "@Sky",
+      "benched": false
+    },
+    {
+      "team_id": "dominante",
+      "uma": "Special Week",
+      "discord": "@Yumi",
+      "benched": false
+    },
+    {
+      "team_id": "dominante",
+      "uma": "King Halo",
+      "discord": "@David",
+      "benched": false
+    },
+    {
+      "team_id": "dominante",
+      "uma": "Smart Falcon",
+      "discord": "@Mor Mas",
+      "benched": false
+    },
+    {
+      "team_id": "dominante",
+      "uma": "Nice Nature (Cheerleader)",
+      "discord": null,
+      "benched": true
+    }
+  ],
   "track_pool": [],
   "track_picks": [],
   "track_vetoes": [],
-  "final_tracks": [],
-  "tiebreaker_track": null,
-  "uma_pre_bans": [],
+  "final_tracks": [
+    "Hanshin (Outer) 1600m · Turf · Winter / Snowy / Good",
+    "Kyoto (Outer) 2200m · Turf · Spring / Rainy / Soft",
+    "Kyoto (Inner) 2000m · Turf · Fall / Sunny / Good",
+    "Tokyo 2400m · Turf · Spring / Cloudy / Firm",
+    "Nakayama (Inner) 2000m · Turf · Spring / Sunny / Good",
+    "Sapporo 1800m · Turf · Spring / Rainy / Heavy"
+  ],
+  "tiebreaker_track": "Hakodate 1700m · Dirt · Fall / Cloudy / Firm",
+  "uma_pre_bans": [
+    {
+      "team_id": "dominium",
+      "uma": "Mihono Bourbon (Valentine)"
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Agnes Digital"
+    },
+    {
+      "team_id": "dominante",
+      "uma": "Silence Suzuka"
+    },
+    {
+      "team_id": "dominante",
+      "uma": "Aston Machan"
+    }
+  ],
   "uma_picks": [],
-  "uma_bans": [],
+  "uma_bans": [
+    {
+      "team_id": "dominante",
+      "uma": "Oguri Cap (Christmas)"
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Maruzensky (Summer)"
+    }
+  ],
   "uma_additions": [],
-  "benched_umas": [],
+  "benched_umas": [
+    {
+      "team_id": "dominium",
+      "uma": "Narita Brian"
+    },
+    {
+      "team_id": "dominante",
+      "uma": "Nice Nature (Cheerleader)"
+    }
+  ],
   "training_start": null,
   "training_deadline": null,
-  "notes": ""
+  "notes": "Organizer-supplied written schedule is authoritative. Some conditions differ in the supplied screenshots. Pick order, original pool and training dates were not supplied. Hakodate was the reserved tiebreaker and was not run."
 }
