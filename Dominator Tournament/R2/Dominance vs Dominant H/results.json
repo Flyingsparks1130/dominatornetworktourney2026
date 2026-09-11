@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "match_id": "r2-m2",
+  "external_match_id": null,
+  "source": "Organizer-reported seven-race result and screenshots, cross-checked with all seven original race exports. Player names are in-game owners; Discord identities and external match ID were not provided. Reports and exports corroborate each other and are not added together.",
+  "mvp": {
+    "team_id": "dominance",
+    "uma": "Satono Diamond",
+    "discord": null,
+    "display_name": "Raykini"
+  },
+  "races": [
+    {
+      "number": 1,
+      "track": "Hanshin (Inner) 2200m · Turf · Fall / Cloudy / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominance",
+          "uma": "Satono Diamond",
+          "discord": null,
+          "display_name": "Raykini"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Taiki Shuttle (Camping)",
+          "discord": null,
+          "display_name": "Toji Fushiguro"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Mejiro Dober",
+          "discord": null,
+          "display_name": "Fizzle"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "track": "Sapporo 1800m · Turf · Fall / Sunny / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominance",
+          "uma": "Satono Diamond",
+          "discord": null,
+          "display_name": "Raykini"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Kitasan Black",
+          "discord": null,
+          "display_name": "Kitasan"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Grass Wonder",
+          "discord": null,
+          "display_name": "Essential"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "track": "Hakodate 2000m · Turf · Summer / Sunny / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominance",
+          "uma": "Daiwa Scarlet",
+          "discord": null,
+          "display_name": "NakeGhostie"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Grass Wonder",
+          "discord": null,
+          "display_name": "Essential"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Kitasan Black",
+          "discord": null,
+          "display_name": "Kitasan"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "track": "Kyoto (Outer) 2400m · Turf · Summer / Sunny / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominance",
+          "uma": "Daiwa Scarlet",
+          "discord": null,
+          "display_name": "NakeGhostie"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Mayano Top Gun",
+          "discord": null,
+          "display_name": "JeryDream"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Mejiro Palmer",
+          "discord": null,
+          "display_name": "Iviers"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "track": "Tokyo 2500m · Turf · Spring / Cloudy / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominant-h",
+          "uma": "Mayano Top Gun",
+          "discord": null,
+          "display_name": "JeryDream"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Mejiro Palmer",
+          "discord": null,
+          "display_name": "Iviers"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Kitasan Black",
+          "discord": null,
+          "display_name": "Kitasan"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "track": "Sapporo 1500m · Turf · Fall / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominant-h",
+          "uma": "Kitasan Black",
+          "discord": null,
+          "display_name": "Kitasan"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Maruzensky",
+          "discord": null,
+          "display_name": "Bean"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Satono Diamond",
+          "discord": null,
+          "display_name": "Raykini"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "track": "Chukyo 1600m · Turf · Fall / Cloudy / Firm",
+      "tiebreaker": true,
+      "podium": [
+        {
+          "team_id": "dominance",
+          "uma": "Grass Wonder",
+          "discord": null,
+          "display_name": "Essential"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Taiki Shuttle (Camping)",
+          "discord": null,
+          "display_name": "Toji Fushiguro"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Maruzensky",
+          "discord": null,
+          "display_name": "Bean"
+        }
+      ]
+    }
+  ]
+}

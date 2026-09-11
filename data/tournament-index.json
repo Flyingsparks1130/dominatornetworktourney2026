@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T22:11:22Z",
+  "generated_at": "2026-09-11T22:08:24Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
-  "revision": 14,
+  "revision": 31,
   "rounds": [
     {
       "id": "R1",
@@ -1165,26 +1165,29 @@
         ],
         "training_start": null,
         "training_deadline": null,
-        "notes": "The match ended after Race 5 when Domineer reached 28 points. Tokyo 1800m (Race 6) and the Niigata tiebreaker were not run. Discord mentions are preserved exactly as provided; usernames were not supplied. Original pool, pick order and training dates were not supplied.",
+        "notes": "The match ended after Race 5 when Domineer reached 28 points. Tokyo 1800m (Race 6) and the Niigata tiebreaker were not run. Discord identities are preserved; player display names were transcribed from the organizer’s roster screenshot on September 11, 2026. Original pool, pick order and training dates were not supplied.",
         "external_match_id": "8GVX7Y",
         "roster": [
           {
             "team_id": "domineer",
             "uma": "T.M. Opera O (New Year)",
             "discord": "<@382269416836038656>",
-            "benched": false
+            "benched": false,
+            "display_name": "Stayk, Taco Enjoyer"
           },
           {
             "team_id": "domineer",
             "uma": "Mayano Top Gun",
             "discord": "<@753451025012097047>",
-            "benched": false
+            "benched": false,
+            "display_name": "Zen"
           },
           {
             "team_id": "domineer",
             "uma": "Biwa Hayahide",
             "discord": "<@1351236267731583036>",
-            "benched": false
+            "benched": false,
+            "display_name": "JUNI"
           },
           {
             "team_id": "domineer",
@@ -1196,43 +1199,50 @@
             "team_id": "domineer",
             "uma": "Gold Ship",
             "discord": "<@680664099679371265>",
-            "benched": false
+            "benched": false,
+            "display_name": "Emperor | The Radiant One"
           },
           {
             "team_id": "domineer",
             "uma": "Inari One",
             "discord": "<@479998555290075136>",
-            "benched": false
+            "benched": false,
+            "display_name": "Sonic"
           },
           {
             "team_id": "domichill",
             "uma": "Nishino Flower",
             "discord": "<@199604689321459719>",
-            "benched": false
+            "benched": false,
+            "display_name": "arvmilla"
           },
           {
             "team_id": "domichill",
             "uma": "Manhattan Cafe",
             "discord": "<@499642536554659860>",
-            "benched": false
+            "benched": false,
+            "display_name": "cannibalmira"
           },
           {
             "team_id": "domichill",
             "uma": "Narita Brian",
             "discord": "<@797271628773982269>",
-            "benched": false
+            "benched": false,
+            "display_name": "ZUnknown"
           },
           {
             "team_id": "domichill",
             "uma": "Smart Falcon",
             "discord": "<@897274147841912843>",
-            "benched": false
+            "benched": false,
+            "display_name": "muuchan"
           },
           {
             "team_id": "domichill",
             "uma": "Kitasan Black",
             "discord": "<@229748241866948609>",
-            "benched": false
+            "benched": false,
+            "display_name": "Kurotomono"
           },
           {
             "team_id": "domichill",
@@ -1255,7 +1265,7 @@
           "discord": "<@479998555290075136>",
           "variant_id": 103401,
           "portrait": "assets/runners/103401.webp",
-          "display_name": "",
+          "display_name": "Sonic",
           "points": 10
         },
         "races": [
@@ -1272,7 +1282,7 @@
                 "points": 4,
                 "variant_id": 102301,
                 "portrait": "assets/runners/102301.webp",
-                "display_name": ""
+                "display_name": "JUNI"
               },
               {
                 "team_id": "domineer",
@@ -1282,7 +1292,7 @@
                 "points": 2,
                 "variant_id": 103401,
                 "portrait": "assets/runners/103401.webp",
-                "display_name": ""
+                "display_name": "Sonic"
               },
               {
                 "team_id": "domineer",
@@ -1292,7 +1302,7 @@
                 "points": 1,
                 "variant_id": 100701,
                 "portrait": "assets/runners/100701.webp",
-                "display_name": ""
+                "display_name": "Emperor | The Radiant One"
               }
             ],
             "scores": {
@@ -1317,7 +1327,7 @@
                 "points": 4,
                 "variant_id": 102501,
                 "portrait": "assets/runners/102501.webp",
-                "display_name": ""
+                "display_name": "cannibalmira"
               },
               {
                 "team_id": "domineer",
@@ -1327,7 +1337,7 @@
                 "points": 2,
                 "variant_id": 102301,
                 "portrait": "assets/runners/102301.webp",
-                "display_name": ""
+                "display_name": "JUNI"
               },
               {
                 "team_id": "domineer",
@@ -1337,7 +1347,7 @@
                 "points": 1,
                 "variant_id": 101502,
                 "portrait": "assets/runners/101502.webp",
-                "display_name": ""
+                "display_name": "Stayk, Taco Enjoyer"
               }
             ],
             "scores": {
@@ -1362,7 +1372,7 @@
                 "points": 4,
                 "variant_id": 103401,
                 "portrait": "assets/runners/103401.webp",
-                "display_name": ""
+                "display_name": "Sonic"
               },
               {
                 "team_id": "domineer",
@@ -1372,7 +1382,7 @@
                 "points": 2,
                 "variant_id": 102401,
                 "portrait": "assets/runners/102401.webp",
-                "display_name": ""
+                "display_name": "Zen"
               },
               {
                 "team_id": "domineer",
@@ -1382,7 +1392,7 @@
                 "points": 1,
                 "variant_id": 100701,
                 "portrait": "assets/runners/100701.webp",
-                "display_name": ""
+                "display_name": "Emperor | The Radiant One"
               }
             ],
             "scores": {
@@ -1407,7 +1417,7 @@
                 "points": 4,
                 "variant_id": 102401,
                 "portrait": "assets/runners/102401.webp",
-                "display_name": ""
+                "display_name": "Zen"
               },
               {
                 "team_id": "domineer",
@@ -1417,7 +1427,7 @@
                 "points": 2,
                 "variant_id": 101502,
                 "portrait": "assets/runners/101502.webp",
-                "display_name": ""
+                "display_name": "Stayk, Taco Enjoyer"
               },
               {
                 "team_id": "domichill",
@@ -1427,7 +1437,7 @@
                 "points": 1,
                 "variant_id": 104601,
                 "portrait": "assets/runners/104601.webp",
-                "display_name": ""
+                "display_name": "muuchan"
               }
             ],
             "scores": {
@@ -1452,7 +1462,7 @@
                 "points": 4,
                 "variant_id": 103401,
                 "portrait": "assets/runners/103401.webp",
-                "display_name": ""
+                "display_name": "Sonic"
               },
               {
                 "team_id": "domichill",
@@ -1462,7 +1472,7 @@
                 "points": 2,
                 "variant_id": 104601,
                 "portrait": "assets/runners/104601.webp",
-                "display_name": ""
+                "display_name": "muuchan"
               },
               {
                 "team_id": "domineer",
@@ -1472,7 +1482,7 @@
                 "points": 1,
                 "variant_id": 102301,
                 "portrait": "assets/runners/102301.webp",
-                "display_name": ""
+                "display_name": "JUNI"
               }
             ],
             "scores": {
@@ -1506,27 +1516,27 @@
           "uma": "T.M. Opera O (New Year)",
           "discord": "<@382269416836038656>",
           "benched": false,
+          "display_name": "Stayk, Taco Enjoyer",
           "variant_id": 101502,
-          "portrait": "assets/runners/101502.webp",
-          "display_name": ""
+          "portrait": "assets/runners/101502.webp"
         },
         {
           "team_id": "domineer",
           "uma": "Mayano Top Gun",
           "discord": "<@753451025012097047>",
           "benched": false,
+          "display_name": "Zen",
           "variant_id": 102401,
-          "portrait": "assets/runners/102401.webp",
-          "display_name": ""
+          "portrait": "assets/runners/102401.webp"
         },
         {
           "team_id": "domineer",
           "uma": "Biwa Hayahide",
           "discord": "<@1351236267731583036>",
           "benched": false,
+          "display_name": "JUNI",
           "variant_id": 102301,
-          "portrait": "assets/runners/102301.webp",
-          "display_name": ""
+          "portrait": "assets/runners/102301.webp"
         },
         {
           "team_id": "domineer",
@@ -1542,63 +1552,63 @@
           "uma": "Gold Ship",
           "discord": "<@680664099679371265>",
           "benched": false,
+          "display_name": "Emperor | The Radiant One",
           "variant_id": 100701,
-          "portrait": "assets/runners/100701.webp",
-          "display_name": ""
+          "portrait": "assets/runners/100701.webp"
         },
         {
           "team_id": "domineer",
           "uma": "Inari One",
           "discord": "<@479998555290075136>",
           "benched": false,
+          "display_name": "Sonic",
           "variant_id": 103401,
-          "portrait": "assets/runners/103401.webp",
-          "display_name": ""
+          "portrait": "assets/runners/103401.webp"
         },
         {
           "team_id": "domichill",
           "uma": "Nishino Flower",
           "discord": "<@199604689321459719>",
           "benched": false,
+          "display_name": "arvmilla",
           "variant_id": 105101,
-          "portrait": "assets/runners/105101.webp",
-          "display_name": ""
+          "portrait": "assets/runners/105101.webp"
         },
         {
           "team_id": "domichill",
           "uma": "Manhattan Cafe",
           "discord": "<@499642536554659860>",
           "benched": false,
+          "display_name": "cannibalmira",
           "variant_id": 102501,
-          "portrait": "assets/runners/102501.webp",
-          "display_name": ""
+          "portrait": "assets/runners/102501.webp"
         },
         {
           "team_id": "domichill",
           "uma": "Narita Brian",
           "discord": "<@797271628773982269>",
           "benched": false,
+          "display_name": "ZUnknown",
           "variant_id": 101601,
-          "portrait": "assets/runners/101601.webp",
-          "display_name": ""
+          "portrait": "assets/runners/101601.webp"
         },
         {
           "team_id": "domichill",
           "uma": "Smart Falcon",
           "discord": "<@897274147841912843>",
           "benched": false,
+          "display_name": "muuchan",
           "variant_id": 104601,
-          "portrait": "assets/runners/104601.webp",
-          "display_name": ""
+          "portrait": "assets/runners/104601.webp"
         },
         {
           "team_id": "domichill",
           "uma": "Kitasan Black",
           "discord": "<@229748241866948609>",
           "benched": false,
+          "display_name": "Kurotomono",
           "variant_id": 106801,
-          "portrait": "assets/runners/106801.webp",
-          "display_name": ""
+          "portrait": "assets/runners/106801.webp"
         },
         {
           "team_id": "domichill",
@@ -1674,27 +1684,27 @@
           "uma": "T.M. Opera O (New Year)",
           "discord": "<@382269416836038656>",
           "benched": false,
+          "display_name": "Stayk, Taco Enjoyer",
           "variant_id": 101502,
-          "portrait": "assets/runners/101502.webp",
-          "display_name": ""
+          "portrait": "assets/runners/101502.webp"
         },
         {
           "team_id": "domineer",
           "uma": "Mayano Top Gun",
           "discord": "<@753451025012097047>",
           "benched": false,
+          "display_name": "Zen",
           "variant_id": 102401,
-          "portrait": "assets/runners/102401.webp",
-          "display_name": ""
+          "portrait": "assets/runners/102401.webp"
         },
         {
           "team_id": "domineer",
           "uma": "Biwa Hayahide",
           "discord": "<@1351236267731583036>",
           "benched": false,
+          "display_name": "JUNI",
           "variant_id": 102301,
-          "portrait": "assets/runners/102301.webp",
-          "display_name": ""
+          "portrait": "assets/runners/102301.webp"
         },
         {
           "team_id": "domineer",
@@ -1710,63 +1720,63 @@
           "uma": "Gold Ship",
           "discord": "<@680664099679371265>",
           "benched": false,
+          "display_name": "Emperor | The Radiant One",
           "variant_id": 100701,
-          "portrait": "assets/runners/100701.webp",
-          "display_name": ""
+          "portrait": "assets/runners/100701.webp"
         },
         {
           "team_id": "domineer",
           "uma": "Inari One",
           "discord": "<@479998555290075136>",
           "benched": false,
+          "display_name": "Sonic",
           "variant_id": 103401,
-          "portrait": "assets/runners/103401.webp",
-          "display_name": ""
+          "portrait": "assets/runners/103401.webp"
         },
         {
           "team_id": "domichill",
           "uma": "Nishino Flower",
           "discord": "<@199604689321459719>",
           "benched": false,
+          "display_name": "arvmilla",
           "variant_id": 105101,
-          "portrait": "assets/runners/105101.webp",
-          "display_name": ""
+          "portrait": "assets/runners/105101.webp"
         },
         {
           "team_id": "domichill",
           "uma": "Manhattan Cafe",
           "discord": "<@499642536554659860>",
           "benched": false,
+          "display_name": "cannibalmira",
           "variant_id": 102501,
-          "portrait": "assets/runners/102501.webp",
-          "display_name": ""
+          "portrait": "assets/runners/102501.webp"
         },
         {
           "team_id": "domichill",
           "uma": "Narita Brian",
           "discord": "<@797271628773982269>",
           "benched": false,
+          "display_name": "ZUnknown",
           "variant_id": 101601,
-          "portrait": "assets/runners/101601.webp",
-          "display_name": ""
+          "portrait": "assets/runners/101601.webp"
         },
         {
           "team_id": "domichill",
           "uma": "Smart Falcon",
           "discord": "<@897274147841912843>",
           "benched": false,
+          "display_name": "muuchan",
           "variant_id": 104601,
-          "portrait": "assets/runners/104601.webp",
-          "display_name": ""
+          "portrait": "assets/runners/104601.webp"
         },
         {
           "team_id": "domichill",
           "uma": "Kitasan Black",
           "discord": "<@229748241866948609>",
           "benched": false,
+          "display_name": "Kurotomono",
           "variant_id": 106801,
-          "portrait": "assets/runners/106801.webp",
-          "display_name": ""
+          "portrait": "assets/runners/106801.webp"
         },
         {
           "team_id": "domichill",
@@ -1785,9 +1795,9 @@
           "uma": "Manhattan Cafe",
           "discord": "<@499642536554659860>",
           "benched": false,
+          "display_name": "cannibalmira",
           "variant_id": 102501,
           "portrait": "assets/runners/102501.webp",
-          "display_name": "",
           "points": 4
         },
         {
@@ -1795,9 +1805,9 @@
           "uma": "Smart Falcon",
           "discord": "<@897274147841912843>",
           "benched": false,
+          "display_name": "muuchan",
           "variant_id": 104601,
           "portrait": "assets/runners/104601.webp",
-          "display_name": "",
           "points": 3
         },
         {
@@ -1805,19 +1815,9 @@
           "uma": "Nishino Flower",
           "discord": "<@199604689321459719>",
           "benched": false,
+          "display_name": "arvmilla",
           "variant_id": 105101,
           "portrait": "assets/runners/105101.webp",
-          "display_name": "",
-          "points": 0
-        },
-        {
-          "team_id": "domichill",
-          "uma": "Narita Brian",
-          "discord": "<@797271628773982269>",
-          "benched": false,
-          "variant_id": 101601,
-          "portrait": "assets/runners/101601.webp",
-          "display_name": "",
           "points": 0
         },
         {
@@ -1825,9 +1825,19 @@
           "uma": "Kitasan Black",
           "discord": "<@229748241866948609>",
           "benched": false,
+          "display_name": "Kurotomono",
           "variant_id": 106801,
           "portrait": "assets/runners/106801.webp",
-          "display_name": "",
+          "points": 0
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Narita Brian",
+          "discord": "<@797271628773982269>",
+          "benched": false,
+          "display_name": "ZUnknown",
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
           "points": 0
         },
         {
@@ -1835,9 +1845,9 @@
           "uma": "Inari One",
           "discord": "<@479998555290075136>",
           "benched": false,
+          "display_name": "Sonic",
           "variant_id": 103401,
           "portrait": "assets/runners/103401.webp",
-          "display_name": "",
           "points": 10
         },
         {
@@ -1845,9 +1855,9 @@
           "uma": "Biwa Hayahide",
           "discord": "<@1351236267731583036>",
           "benched": false,
+          "display_name": "JUNI",
           "variant_id": 102301,
           "portrait": "assets/runners/102301.webp",
-          "display_name": "",
           "points": 7
         },
         {
@@ -1855,9 +1865,9 @@
           "uma": "Mayano Top Gun",
           "discord": "<@753451025012097047>",
           "benched": false,
+          "display_name": "Zen",
           "variant_id": 102401,
           "portrait": "assets/runners/102401.webp",
-          "display_name": "",
           "points": 6
         },
         {
@@ -1865,9 +1875,9 @@
           "uma": "T.M. Opera O (New Year)",
           "discord": "<@382269416836038656>",
           "benched": false,
+          "display_name": "Stayk, Taco Enjoyer",
           "variant_id": 101502,
           "portrait": "assets/runners/101502.webp",
-          "display_name": "",
           "points": 3
         },
         {
@@ -1875,9 +1885,9 @@
           "uma": "Gold Ship",
           "discord": "<@680664099679371265>",
           "benched": false,
+          "display_name": "Emperor | The Radiant One",
           "variant_id": 100701,
           "portrait": "assets/runners/100701.webp",
-          "display_name": "",
           "points": 2
         }
       ],
@@ -2848,55 +2858,1113 @@
           "aliases": []
         }
       ],
-      "winner_id": null,
-      "loser_id": null,
-      "status": "ready",
-      "manual_scores": null,
-      "decision_reason": null,
-      "source": "race_files",
-      "races": [],
+      "winner_id": "dominance",
+      "loser_id": "dominant-h",
+      "status": "complete",
+      "manual_scores": {
+        "dominance": 27,
+        "dominant-h": 22
+      },
+      "decision_reason": "Organizer confirmed Dominant H 22–27 Dominance after seven races; MVP Raykini. All podiums verified against the original exports.",
+      "source": "manual",
+      "races": [
+        {
+          "id": "6b375895af26d382dc5b",
+          "round": "R2",
+          "match_id": "r2-m2",
+          "race_folder": "01 - Hanshin (Inner) 2200m",
+          "file_name": "Satono Diamond-104.7746s-20260910(1).json",
+          "raw_path": "Dominator Tournament/R2/Dominance vs Dominant H/01 - Hanshin (Inner) 2200m/Satono Diamond-104.7746s-20260910(1).json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10906,
+            "track_id": 10009,
+            "distance_m": 2200,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Soft",
+            "weather": "Cloudy",
+            "season": "Fall"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominant-h": 3,
+            "dominance": 4
+          },
+          "data_file": "data/tournament-races/6b375895af26d382dc5b.json"
+        },
+        {
+          "id": "6c7b39c05c11ae6e840e",
+          "round": "R2",
+          "match_id": "r2-m2",
+          "race_folder": "02 - Sapporo 1800m",
+          "file_name": "Satono Diamond-84.8006s-20260910(1).json",
+          "raw_path": "Dominator Tournament/R2/Dominance vs Dominant H/02 - Sapporo 1800m/Satono Diamond-84.8006s-20260910(1).json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10103,
+            "track_id": 10001,
+            "distance_m": 1800,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Good",
+            "weather": "Sunny",
+            "season": "Fall"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominant-h": 2,
+            "dominance": 5
+          },
+          "data_file": "data/tournament-races/6c7b39c05c11ae6e840e.json"
+        },
+        {
+          "id": "e8033244e144f415b64f",
+          "round": "R2",
+          "match_id": "r2-m2",
+          "race_folder": "03 - Hakodate 2000m",
+          "file_name": "Daiwa Scarlet-95.1954s-20260910(1).json",
+          "raw_path": "Dominator Tournament/R2/Dominance vs Dominant H/03 - Hakodate 2000m/Daiwa Scarlet-95.1954s-20260910(1).json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10204,
+            "track_id": 10002,
+            "distance_m": 2000,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Good",
+            "weather": "Sunny",
+            "season": "Summer"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominant-h": 1,
+            "dominance": 6
+          },
+          "data_file": "data/tournament-races/e8033244e144f415b64f.json"
+        },
+        {
+          "id": "9e3e00480b7fde58c39a",
+          "round": "R2",
+          "match_id": "r2-m2",
+          "race_folder": "04 - Kyoto (Outer) 2400m",
+          "file_name": "Daiwa Scarlet-115.7281s-20260910(1).json",
+          "raw_path": "Dominator Tournament/R2/Dominance vs Dominant H/04 - Kyoto (Outer) 2400m/Daiwa Scarlet-115.7281s-20260910(1).json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10809,
+            "track_id": 10008,
+            "distance_m": 2400,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Good",
+            "weather": "Sunny",
+            "season": "Summer"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominant-h": 2,
+            "dominance": 5
+          },
+          "data_file": "data/tournament-races/9e3e00480b7fde58c39a.json"
+        },
+        {
+          "id": "87d47b802411a4514be0",
+          "round": "R2",
+          "match_id": "r2-m2",
+          "race_folder": "05 - Tokyo 2500m",
+          "file_name": "Mayano Top Gun-120.9185s-20260910(1).json",
+          "raw_path": "Dominator Tournament/R2/Dominance vs Dominant H/05 - Tokyo 2500m/Mayano Top Gun-120.9185s-20260910(1).json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10607,
+            "track_id": 10006,
+            "distance_m": 2500,
+            "surface": "Turf",
+            "turn": "Left",
+            "condition": "Good",
+            "weather": "Cloudy",
+            "season": "Spring"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominant-h": 5,
+            "dominance": 2
+          },
+          "data_file": "data/tournament-races/87d47b802411a4514be0.json"
+        },
+        {
+          "id": "10f9086a1ed9a5f9368f",
+          "round": "R2",
+          "match_id": "r2-m2",
+          "race_folder": "06 - Sapporo 1500m",
+          "file_name": "Kitasan Black-69.8798s-20260910(1).json",
+          "raw_path": "Dominator Tournament/R2/Dominance vs Dominant H/06 - Sapporo 1500m/Kitasan Black-69.8798s-20260910(1).json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10102,
+            "track_id": 10001,
+            "distance_m": 1500,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Soft",
+            "weather": "Sunny",
+            "season": "Fall"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominant-h": 6,
+            "dominance": 1
+          },
+          "data_file": "data/tournament-races/10f9086a1ed9a5f9368f.json"
+        },
+        {
+          "id": "4814a3b2d89cf0102452",
+          "round": "R2",
+          "match_id": "r2-m2",
+          "race_folder": "07 - Chukyo 1600m",
+          "file_name": "Grass Wonder-74.2465s-20260910(1).json",
+          "raw_path": "Dominator Tournament/R2/Dominance vs Dominant H/07 - Chukyo 1600m/Grass Wonder-74.2465s-20260910(1).json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10703,
+            "track_id": 10007,
+            "distance_m": 1600,
+            "surface": "Turf",
+            "turn": "Left",
+            "condition": "Good",
+            "weather": "Cloudy",
+            "season": "Fall"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominant-h": 3,
+            "dominance": 4
+          },
+          "data_file": "data/tournament-races/4814a3b2d89cf0102452.json"
+        }
+      ],
       "draft": {
         "schema_version": 1,
         "match_id": "r2-m2",
-        "status": "pending",
+        "status": "locked",
         "track_pool": [],
-        "track_picks": [],
-        "track_vetoes": [],
-        "final_tracks": [],
-        "tiebreaker_track": null,
-        "uma_pre_bans": [],
+        "track_picks": [
+          {
+            "team_id": "dominant-h",
+            "track": "Hanshin (Inner) 2200m · Turf · Fall / Cloudy / Good"
+          },
+          {
+            "team_id": "dominance",
+            "track": "Sapporo 1800m · Turf · Fall / Sunny / Firm"
+          },
+          {
+            "team_id": "dominant-h",
+            "track": "Hakodate 2000m · Turf · Summer / Sunny / Firm"
+          },
+          {
+            "team_id": "dominance",
+            "track": "Kyoto (Outer) 2400m · Turf · Summer / Sunny / Firm"
+          },
+          {
+            "team_id": "dominant-h",
+            "track": "Tokyo 2500m · Turf · Spring / Cloudy / Firm"
+          },
+          {
+            "team_id": "dominance",
+            "track": "Sapporo 1500m · Turf · Fall / Sunny / Good"
+          }
+        ],
+        "track_vetoes": [
+          {
+            "team_id": "dominance",
+            "track": "Hanshin (Outer) 2600m · Turf · Spring / Rainy / Heavy"
+          },
+          {
+            "team_id": "dominant-h",
+            "track": "Nakayama (Inner) 2000m · Turf · Spring / Sunny / Firm"
+          }
+        ],
+        "final_tracks": [
+          "Hanshin (Inner) 2200m · Turf · Fall / Cloudy / Good",
+          "Sapporo 1800m · Turf · Fall / Sunny / Firm",
+          "Hakodate 2000m · Turf · Summer / Sunny / Firm",
+          "Kyoto (Outer) 2400m · Turf · Summer / Sunny / Firm",
+          "Tokyo 2500m · Turf · Spring / Cloudy / Firm",
+          "Sapporo 1500m · Turf · Fall / Sunny / Good"
+        ],
+        "tiebreaker_track": "Chukyo 1600m · Turf · Fall / Cloudy / Firm",
+        "uma_pre_bans": [
+          {
+            "team_id": "dominant-h",
+            "uma": "Mihono Bourbon (Valentine)"
+          },
+          {
+            "team_id": "dominant-h",
+            "uma": "Maruzensky (Summer)"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Oguri Cap (Christmas)"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Fine Motion (Wedding)"
+          }
+        ],
         "uma_picks": [],
-        "uma_bans": [],
+        "uma_bans": [
+          {
+            "team_id": "dominance",
+            "uma": "Silence Suzuka"
+          },
+          {
+            "team_id": "dominant-h",
+            "uma": "Seiun Sky"
+          }
+        ],
         "uma_additions": [],
-        "benched_umas": [],
+        "benched_umas": [
+          {
+            "team_id": "dominant-h",
+            "uma": "Oguri Cap"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Mejiro Ryan"
+          }
+        ],
         "training_start": null,
         "training_deadline": null,
-        "notes": "",
+        "notes": "Final selections, track picks, pre-bans and enemy vetoes transcribed from organizer screenshots. Player names come from owner_trainer_name in all seven original exports; Discord identities and external draft ID were not supplied. Oguri Cap and Mejiro Ryan were drafted but absent from all seven exports and are listed as the unfielded benches. Original snake-pick order and training dates were not supplied. Draft condition wording and literal export condition labels are preserved separately.",
         "external_match_id": null,
-        "roster": []
+        "roster": [
+          {
+            "team_id": "dominant-h",
+            "uma": "Oguri Cap",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominant-h",
+            "uma": "Kitasan Black",
+            "discord": null,
+            "benched": false,
+            "display_name": "Kitasan"
+          },
+          {
+            "team_id": "dominant-h",
+            "uma": "Maruzensky",
+            "discord": null,
+            "benched": false,
+            "display_name": "Bean"
+          },
+          {
+            "team_id": "dominant-h",
+            "uma": "Mejiro Dober",
+            "discord": null,
+            "benched": false,
+            "display_name": "Fizzle"
+          },
+          {
+            "team_id": "dominant-h",
+            "uma": "Taiki Shuttle (Camping)",
+            "discord": null,
+            "benched": false,
+            "display_name": "Toji Fushiguro"
+          },
+          {
+            "team_id": "dominant-h",
+            "uma": "Mayano Top Gun",
+            "discord": null,
+            "benched": false,
+            "display_name": "JeryDream"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Narita Brian",
+            "discord": null,
+            "benched": false,
+            "display_name": "Bloodvvolf"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Satono Diamond",
+            "discord": null,
+            "benched": false,
+            "display_name": "Raykini"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Grass Wonder",
+            "discord": null,
+            "benched": false,
+            "display_name": "Essential"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Mejiro Ryan",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Mejiro Palmer",
+            "discord": null,
+            "benched": false,
+            "display_name": "Iviers"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Daiwa Scarlet",
+            "discord": null,
+            "benched": false,
+            "display_name": "NakeGhostie"
+          }
+        ]
       },
       "draft_path": "Dominator Tournament/R2/Dominance vs Dominant H/draft.json",
-      "draft_has_content": false,
-      "reported_results": null,
-      "report_path": null,
-      "computed_scores": null,
-      "scores": null,
+      "draft_has_content": true,
+      "reported_results": {
+        "schema_version": 1,
+        "match_id": "r2-m2",
+        "external_match_id": null,
+        "source": "Organizer-reported seven-race result and screenshots, cross-checked with all seven original race exports. Player names are in-game owners; Discord identities and external match ID were not provided. Reports and exports corroborate each other and are not added together.",
+        "mvp": {
+          "team_id": "dominance",
+          "uma": "Satono Diamond",
+          "discord": null,
+          "display_name": "Raykini",
+          "variant_id": 106701,
+          "portrait": "assets/runners/106701.webp",
+          "points": 9
+        },
+        "races": [
+          {
+            "number": 1,
+            "track": "Hanshin (Inner) 2200m · Turf · Fall / Cloudy / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominance",
+                "uma": "Satono Diamond",
+                "discord": null,
+                "display_name": "Raykini",
+                "place": 1,
+                "points": 4,
+                "variant_id": 106701,
+                "portrait": "assets/runners/106701.webp"
+              },
+              {
+                "team_id": "dominant-h",
+                "uma": "Taiki Shuttle (Camping)",
+                "discord": null,
+                "display_name": "Toji Fushiguro",
+                "place": 2,
+                "points": 2,
+                "variant_id": 101002,
+                "portrait": "assets/runners/101002.webp"
+              },
+              {
+                "team_id": "dominant-h",
+                "uma": "Mejiro Dober",
+                "discord": null,
+                "display_name": "Fizzle",
+                "place": 3,
+                "points": 1,
+                "variant_id": 105901,
+                "portrait": "assets/runners/105901.webp"
+              }
+            ],
+            "scores": {
+              "dominance": 4,
+              "dominant-h": 3
+            },
+            "cumulative_scores": {
+              "dominance": 4,
+              "dominant-h": 3
+            }
+          },
+          {
+            "number": 2,
+            "track": "Sapporo 1800m · Turf · Fall / Sunny / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominance",
+                "uma": "Satono Diamond",
+                "discord": null,
+                "display_name": "Raykini",
+                "place": 1,
+                "points": 4,
+                "variant_id": 106701,
+                "portrait": "assets/runners/106701.webp"
+              },
+              {
+                "team_id": "dominant-h",
+                "uma": "Kitasan Black",
+                "discord": null,
+                "display_name": "Kitasan",
+                "place": 2,
+                "points": 2,
+                "variant_id": 106801,
+                "portrait": "assets/runners/106801.webp"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "Grass Wonder",
+                "discord": null,
+                "display_name": "Essential",
+                "place": 3,
+                "points": 1,
+                "variant_id": 101101,
+                "portrait": "assets/runners/101101.webp"
+              }
+            ],
+            "scores": {
+              "dominance": 5,
+              "dominant-h": 2
+            },
+            "cumulative_scores": {
+              "dominance": 9,
+              "dominant-h": 5
+            }
+          },
+          {
+            "number": 3,
+            "track": "Hakodate 2000m · Turf · Summer / Sunny / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominance",
+                "uma": "Daiwa Scarlet",
+                "discord": null,
+                "display_name": "NakeGhostie",
+                "place": 1,
+                "points": 4,
+                "variant_id": 100901,
+                "portrait": "assets/runners/100901.webp"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "Grass Wonder",
+                "discord": null,
+                "display_name": "Essential",
+                "place": 2,
+                "points": 2,
+                "variant_id": 101101,
+                "portrait": "assets/runners/101101.webp"
+              },
+              {
+                "team_id": "dominant-h",
+                "uma": "Kitasan Black",
+                "discord": null,
+                "display_name": "Kitasan",
+                "place": 3,
+                "points": 1,
+                "variant_id": 106801,
+                "portrait": "assets/runners/106801.webp"
+              }
+            ],
+            "scores": {
+              "dominance": 6,
+              "dominant-h": 1
+            },
+            "cumulative_scores": {
+              "dominance": 15,
+              "dominant-h": 6
+            }
+          },
+          {
+            "number": 4,
+            "track": "Kyoto (Outer) 2400m · Turf · Summer / Sunny / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominance",
+                "uma": "Daiwa Scarlet",
+                "discord": null,
+                "display_name": "NakeGhostie",
+                "place": 1,
+                "points": 4,
+                "variant_id": 100901,
+                "portrait": "assets/runners/100901.webp"
+              },
+              {
+                "team_id": "dominant-h",
+                "uma": "Mayano Top Gun",
+                "discord": null,
+                "display_name": "JeryDream",
+                "place": 2,
+                "points": 2,
+                "variant_id": 102401,
+                "portrait": "assets/runners/102401.webp"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "Mejiro Palmer",
+                "discord": null,
+                "display_name": "Iviers",
+                "place": 3,
+                "points": 1,
+                "variant_id": 106401,
+                "portrait": "assets/runners/106401.webp"
+              }
+            ],
+            "scores": {
+              "dominance": 5,
+              "dominant-h": 2
+            },
+            "cumulative_scores": {
+              "dominance": 20,
+              "dominant-h": 8
+            }
+          },
+          {
+            "number": 5,
+            "track": "Tokyo 2500m · Turf · Spring / Cloudy / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominant-h",
+                "uma": "Mayano Top Gun",
+                "discord": null,
+                "display_name": "JeryDream",
+                "place": 1,
+                "points": 4,
+                "variant_id": 102401,
+                "portrait": "assets/runners/102401.webp"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "Mejiro Palmer",
+                "discord": null,
+                "display_name": "Iviers",
+                "place": 2,
+                "points": 2,
+                "variant_id": 106401,
+                "portrait": "assets/runners/106401.webp"
+              },
+              {
+                "team_id": "dominant-h",
+                "uma": "Kitasan Black",
+                "discord": null,
+                "display_name": "Kitasan",
+                "place": 3,
+                "points": 1,
+                "variant_id": 106801,
+                "portrait": "assets/runners/106801.webp"
+              }
+            ],
+            "scores": {
+              "dominance": 2,
+              "dominant-h": 5
+            },
+            "cumulative_scores": {
+              "dominance": 22,
+              "dominant-h": 13
+            }
+          },
+          {
+            "number": 6,
+            "track": "Sapporo 1500m · Turf · Fall / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominant-h",
+                "uma": "Kitasan Black",
+                "discord": null,
+                "display_name": "Kitasan",
+                "place": 1,
+                "points": 4,
+                "variant_id": 106801,
+                "portrait": "assets/runners/106801.webp"
+              },
+              {
+                "team_id": "dominant-h",
+                "uma": "Maruzensky",
+                "discord": null,
+                "display_name": "Bean",
+                "place": 2,
+                "points": 2,
+                "variant_id": 100401,
+                "portrait": "assets/runners/100401.webp"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "Satono Diamond",
+                "discord": null,
+                "display_name": "Raykini",
+                "place": 3,
+                "points": 1,
+                "variant_id": 106701,
+                "portrait": "assets/runners/106701.webp"
+              }
+            ],
+            "scores": {
+              "dominance": 1,
+              "dominant-h": 6
+            },
+            "cumulative_scores": {
+              "dominance": 23,
+              "dominant-h": 19
+            }
+          },
+          {
+            "number": 7,
+            "track": "Chukyo 1600m · Turf · Fall / Cloudy / Firm",
+            "tiebreaker": true,
+            "podium": [
+              {
+                "team_id": "dominance",
+                "uma": "Grass Wonder",
+                "discord": null,
+                "display_name": "Essential",
+                "place": 1,
+                "points": 4,
+                "variant_id": 101101,
+                "portrait": "assets/runners/101101.webp"
+              },
+              {
+                "team_id": "dominant-h",
+                "uma": "Taiki Shuttle (Camping)",
+                "discord": null,
+                "display_name": "Toji Fushiguro",
+                "place": 2,
+                "points": 2,
+                "variant_id": 101002,
+                "portrait": "assets/runners/101002.webp"
+              },
+              {
+                "team_id": "dominant-h",
+                "uma": "Maruzensky",
+                "discord": null,
+                "display_name": "Bean",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100401,
+                "portrait": "assets/runners/100401.webp"
+              }
+            ],
+            "scores": {
+              "dominance": 4,
+              "dominant-h": 3
+            },
+            "cumulative_scores": {
+              "dominance": 27,
+              "dominant-h": 22
+            }
+          }
+        ],
+        "totals": {
+          "dominance": 27,
+          "dominant-h": 22
+        }
+      },
+      "report_path": "Dominator Tournament/R2/Dominance vs Dominant H/results.json",
+      "computed_scores": {
+        "dominance": 27,
+        "dominant-h": 22
+      },
+      "scores": {
+        "dominance": 27,
+        "dominant-h": 22
+      },
       "score_only": false,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": [],
-      "draft_lineup": [],
+      "target_reached": [
+        "dominance"
+      ],
+      "draft_lineup": [
+        {
+          "team_id": "dominant-h",
+          "uma": "Oguri Cap",
+          "discord": null,
+          "benched": true,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Kitasan Black",
+          "discord": null,
+          "benched": false,
+          "display_name": "Kitasan",
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Maruzensky",
+          "discord": null,
+          "benched": false,
+          "display_name": "Bean",
+          "variant_id": 100401,
+          "portrait": "assets/runners/100401.webp"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Mejiro Dober",
+          "discord": null,
+          "benched": false,
+          "display_name": "Fizzle",
+          "variant_id": 105901,
+          "portrait": "assets/runners/105901.webp"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Taiki Shuttle (Camping)",
+          "discord": null,
+          "benched": false,
+          "display_name": "Toji Fushiguro",
+          "variant_id": 101002,
+          "portrait": "assets/runners/101002.webp"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Mayano Top Gun",
+          "discord": null,
+          "benched": false,
+          "display_name": "JeryDream",
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Narita Brian",
+          "discord": null,
+          "benched": false,
+          "display_name": "Bloodvvolf",
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Satono Diamond",
+          "discord": null,
+          "benched": false,
+          "display_name": "Raykini",
+          "variant_id": 106701,
+          "portrait": "assets/runners/106701.webp"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Grass Wonder",
+          "discord": null,
+          "benched": false,
+          "display_name": "Essential",
+          "variant_id": 101101,
+          "portrait": "assets/runners/101101.webp"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Mejiro Ryan",
+          "discord": null,
+          "benched": true,
+          "variant_id": 102701,
+          "portrait": "assets/runners/102701.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Mejiro Palmer",
+          "discord": null,
+          "benched": false,
+          "display_name": "Iviers",
+          "variant_id": 106401,
+          "portrait": "assets/runners/106401.webp"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Daiwa Scarlet",
+          "discord": null,
+          "benched": false,
+          "display_name": "NakeGhostie",
+          "variant_id": 100901,
+          "portrait": "assets/runners/100901.webp"
+        }
+      ],
       "draft_uma_actions": {
-        "uma_pre_bans": [],
+        "uma_pre_bans": [
+          {
+            "team_id": "dominant-h",
+            "uma": "Mihono Bourbon (Valentine)",
+            "variant_id": 102602,
+            "portrait": "assets/runners/102602.webp"
+          },
+          {
+            "team_id": "dominant-h",
+            "uma": "Maruzensky (Summer)",
+            "variant_id": 100402,
+            "portrait": "assets/runners/100402.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Oguri Cap (Christmas)",
+            "variant_id": 100602,
+            "portrait": "assets/runners/100602.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Fine Motion (Wedding)",
+            "variant_id": 102202,
+            "portrait": "assets/runners/102202.webp"
+          }
+        ],
         "uma_picks": [],
-        "uma_bans": [],
+        "uma_bans": [
+          {
+            "team_id": "dominance",
+            "uma": "Silence Suzuka",
+            "variant_id": 100201,
+            "portrait": "assets/runners/100201.webp"
+          },
+          {
+            "team_id": "dominant-h",
+            "uma": "Seiun Sky",
+            "variant_id": 102001,
+            "portrait": "assets/runners/102001.webp"
+          }
+        ],
         "uma_additions": [],
-        "benched_umas": []
+        "benched_umas": [
+          {
+            "team_id": "dominant-h",
+            "uma": "Oguri Cap",
+            "variant_id": 100601,
+            "portrait": "assets/runners/100601.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Mejiro Ryan",
+            "variant_id": 102701,
+            "portrait": "assets/runners/102701.webp"
+          }
+        ]
       },
-      "lineup": [],
-      "lineup_source": "draft",
-      "player_points": [],
-      "player_points_recorded": false
+      "lineup": [
+        {
+          "team_id": "dominance",
+          "uma": "Narita Brian",
+          "discord": null,
+          "benched": false,
+          "display_name": "Bloodvvolf",
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Grass Wonder",
+          "discord": null,
+          "benched": false,
+          "display_name": "Essential",
+          "variant_id": 101101,
+          "portrait": "assets/runners/101101.webp"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Mejiro Palmer",
+          "discord": null,
+          "benched": false,
+          "display_name": "Iviers",
+          "variant_id": 106401,
+          "portrait": "assets/runners/106401.webp"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Daiwa Scarlet",
+          "discord": null,
+          "benched": false,
+          "display_name": "NakeGhostie",
+          "variant_id": 100901,
+          "portrait": "assets/runners/100901.webp"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Satono Diamond",
+          "discord": null,
+          "benched": false,
+          "display_name": "Raykini",
+          "variant_id": 106701,
+          "portrait": "assets/runners/106701.webp"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Maruzensky",
+          "discord": null,
+          "benched": false,
+          "display_name": "Bean",
+          "variant_id": 100401,
+          "portrait": "assets/runners/100401.webp"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Mejiro Dober",
+          "discord": null,
+          "benched": false,
+          "display_name": "Fizzle",
+          "variant_id": 105901,
+          "portrait": "assets/runners/105901.webp"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Mayano Top Gun",
+          "discord": null,
+          "benched": false,
+          "display_name": "JeryDream",
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Kitasan Black",
+          "discord": null,
+          "benched": false,
+          "display_name": "Kitasan",
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Taiki Shuttle (Camping)",
+          "discord": null,
+          "benched": false,
+          "display_name": "Toji Fushiguro",
+          "variant_id": 101002,
+          "portrait": "assets/runners/101002.webp"
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Oguri Cap",
+          "discord": null,
+          "benched": true,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Mejiro Ryan",
+          "discord": null,
+          "benched": true,
+          "variant_id": 102701,
+          "portrait": "assets/runners/102701.webp",
+          "display_name": ""
+        }
+      ],
+      "lineup_source": "race",
+      "player_points": [
+        {
+          "team_id": "dominance",
+          "uma": "Satono Diamond",
+          "discord": null,
+          "benched": false,
+          "display_name": "Raykini",
+          "variant_id": 106701,
+          "portrait": "assets/runners/106701.webp",
+          "points": 9
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Daiwa Scarlet",
+          "discord": null,
+          "benched": false,
+          "display_name": "NakeGhostie",
+          "variant_id": 100901,
+          "portrait": "assets/runners/100901.webp",
+          "points": 8
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Grass Wonder",
+          "discord": null,
+          "benched": false,
+          "display_name": "Essential",
+          "variant_id": 101101,
+          "portrait": "assets/runners/101101.webp",
+          "points": 7
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Mejiro Palmer",
+          "discord": null,
+          "benched": false,
+          "display_name": "Iviers",
+          "variant_id": 106401,
+          "portrait": "assets/runners/106401.webp",
+          "points": 3
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Narita Brian",
+          "discord": null,
+          "benched": false,
+          "display_name": "Bloodvvolf",
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
+          "points": 0
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Kitasan Black",
+          "discord": null,
+          "benched": false,
+          "display_name": "Kitasan",
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp",
+          "points": 8
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Mayano Top Gun",
+          "discord": null,
+          "benched": false,
+          "display_name": "JeryDream",
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
+          "points": 6
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Taiki Shuttle (Camping)",
+          "discord": null,
+          "benched": false,
+          "display_name": "Toji Fushiguro",
+          "variant_id": 101002,
+          "portrait": "assets/runners/101002.webp",
+          "points": 4
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Maruzensky",
+          "discord": null,
+          "benched": false,
+          "display_name": "Bean",
+          "variant_id": 100401,
+          "portrait": "assets/runners/100401.webp",
+          "points": 3
+        },
+        {
+          "team_id": "dominant-h",
+          "uma": "Mejiro Dober",
+          "discord": null,
+          "benched": false,
+          "display_name": "Fizzle",
+          "variant_id": 105901,
+          "portrait": "assets/runners/105901.webp",
+          "points": 1
+        }
+      ],
+      "player_points_recorded": true
     },
     {
       "id": "r2-m3",
@@ -3932,7 +5000,13 @@
       ],
       "participants": [
         null,
-        null
+        {
+          "id": "dominance",
+          "name": "Dominance",
+          "seed": 5,
+          "club_id": "955490905",
+          "aliases": []
+        }
       ],
       "winner_id": null,
       "loser_id": null,
@@ -4069,6 +5143,7 @@
   "warnings": [],
   "eliminated": [
     "domichill",
+    "dominant-h",
     "dominante",
     "dominion",
     "dominium"
@@ -4125,19 +5200,19 @@
       "source": "draft",
       "members": [
         {
-          "display_name": ""
+          "display_name": "arvmilla"
         },
         {
-          "display_name": ""
+          "display_name": "cannibalmira"
         },
         {
-          "display_name": ""
+          "display_name": "ZUnknown"
         },
         {
-          "display_name": ""
+          "display_name": "muuchan"
         },
         {
-          "display_name": ""
+          "display_name": "Kurotomono"
         }
       ]
     },
@@ -4147,19 +5222,19 @@
       "source": "draft",
       "members": [
         {
-          "display_name": ""
+          "display_name": "Stayk, Taco Enjoyer"
         },
         {
-          "display_name": ""
+          "display_name": "Zen"
         },
         {
-          "display_name": ""
+          "display_name": "JUNI"
         },
         {
-          "display_name": ""
+          "display_name": "Emperor | The Radiant One"
         },
         {
-          "display_name": ""
+          "display_name": "Sonic"
         }
       ]
     },
@@ -4204,6 +5279,50 @@
         },
         {
           "display_name": "Mor Mas"
+        }
+      ]
+    },
+    "dominance": {
+      "match_id": "r2-m2",
+      "round": "R2",
+      "source": "race",
+      "members": [
+        {
+          "display_name": "Bloodvvolf"
+        },
+        {
+          "display_name": "Essential"
+        },
+        {
+          "display_name": "Iviers"
+        },
+        {
+          "display_name": "NakeGhostie"
+        },
+        {
+          "display_name": "Raykini"
+        }
+      ]
+    },
+    "dominant-h": {
+      "match_id": "r2-m2",
+      "round": "R2",
+      "source": "race",
+      "members": [
+        {
+          "display_name": "Bean"
+        },
+        {
+          "display_name": "Fizzle"
+        },
+        {
+          "display_name": "JeryDream"
+        },
+        {
+          "display_name": "Kitasan"
+        },
+        {
+          "display_name": "Toji Fushiguro"
         }
       ]
     },

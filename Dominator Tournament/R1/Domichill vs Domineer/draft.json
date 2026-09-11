@@ -2,81 +2,6 @@
   "schema_version": 1,
   "match_id": "r1-m2",
   "status": "locked",
-  "external_match_id": "8GVX7Y",
-  "roster": [
-    {
-      "team_id": "domineer",
-      "uma": "T.M. Opera O (New Year)",
-      "discord": "<@382269416836038656>",
-      "benched": false
-    },
-    {
-      "team_id": "domineer",
-      "uma": "Mayano Top Gun",
-      "discord": "<@753451025012097047>",
-      "benched": false
-    },
-    {
-      "team_id": "domineer",
-      "uma": "Biwa Hayahide",
-      "discord": "<@1351236267731583036>",
-      "benched": false
-    },
-    {
-      "team_id": "domineer",
-      "uma": "Satono Diamond",
-      "discord": null,
-      "benched": true
-    },
-    {
-      "team_id": "domineer",
-      "uma": "Gold Ship",
-      "discord": "<@680664099679371265>",
-      "benched": false
-    },
-    {
-      "team_id": "domineer",
-      "uma": "Inari One",
-      "discord": "<@479998555290075136>",
-      "benched": false
-    },
-    {
-      "team_id": "domichill",
-      "uma": "Nishino Flower",
-      "discord": "<@199604689321459719>",
-      "benched": false
-    },
-    {
-      "team_id": "domichill",
-      "uma": "Manhattan Cafe",
-      "discord": "<@499642536554659860>",
-      "benched": false
-    },
-    {
-      "team_id": "domichill",
-      "uma": "Narita Brian",
-      "discord": "<@797271628773982269>",
-      "benched": false
-    },
-    {
-      "team_id": "domichill",
-      "uma": "Smart Falcon",
-      "discord": "<@897274147841912843>",
-      "benched": false
-    },
-    {
-      "team_id": "domichill",
-      "uma": "Kitasan Black",
-      "discord": "<@229748241866948609>",
-      "benched": false
-    },
-    {
-      "team_id": "domichill",
-      "uma": "Curren Chan (Wedding)",
-      "discord": null,
-      "benched": true
-    }
-  ],
   "track_pool": [],
   "track_picks": [],
   "track_vetoes": [],
@@ -131,5 +56,90 @@
   ],
   "training_start": null,
   "training_deadline": null,
-  "notes": "The match ended after Race 5 when Domineer reached 28 points. Tokyo 1800m (Race 6) and the Niigata tiebreaker were not run. Discord mentions are preserved exactly as provided; usernames were not supplied. Original pool, pick order and training dates were not supplied."
+  "notes": "The match ended after Race 5 when Domineer reached 28 points. Tokyo 1800m (Race 6) and the Niigata tiebreaker were not run. Discord identities are preserved; player display names were transcribed from the organizer’s roster screenshot on September 11, 2026. Original pool, pick order and training dates were not supplied.",
+  "external_match_id": "8GVX7Y",
+  "roster": [
+    {
+      "team_id": "domineer",
+      "uma": "T.M. Opera O (New Year)",
+      "discord": "<@382269416836038656>",
+      "benched": false,
+      "display_name": "Stayk, Taco Enjoyer"
+    },
+    {
+      "team_id": "domineer",
+      "uma": "Mayano Top Gun",
+      "discord": "<@753451025012097047>",
+      "benched": false,
+      "display_name": "Zen"
+    },
+    {
+      "team_id": "domineer",
+      "uma": "Biwa Hayahide",
+      "discord": "<@1351236267731583036>",
+      "benched": false,
+      "display_name": "JUNI"
+    },
+    {
+      "team_id": "domineer",
+      "uma": "Satono Diamond",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "domineer",
+      "uma": "Gold Ship",
+      "discord": "<@680664099679371265>",
+      "benched": false,
+      "display_name": "Emperor | The Radiant One"
+    },
+    {
+      "team_id": "domineer",
+      "uma": "Inari One",
+      "discord": "<@479998555290075136>",
+      "benched": false,
+      "display_name": "Sonic"
+    },
+    {
+      "team_id": "domichill",
+      "uma": "Nishino Flower",
+      "discord": "<@199604689321459719>",
+      "benched": false,
+      "display_name": "arvmilla"
+    },
+    {
+      "team_id": "domichill",
+      "uma": "Manhattan Cafe",
+      "discord": "<@499642536554659860>",
+      "benched": false,
+      "display_name": "cannibalmira"
+    },
+    {
+      "team_id": "domichill",
+      "uma": "Narita Brian",
+      "discord": "<@797271628773982269>",
+      "benched": false,
+      "display_name": "ZUnknown"
+    },
+    {
+      "team_id": "domichill",
+      "uma": "Smart Falcon",
+      "discord": "<@897274147841912843>",
+      "benched": false,
+      "display_name": "muuchan"
+    },
+    {
+      "team_id": "domichill",
+      "uma": "Kitasan Black",
+      "discord": "<@229748241866948609>",
+      "benched": false,
+      "display_name": "Kurotomono"
+    },
+    {
+      "team_id": "domichill",
+      "uma": "Curren Chan (Wedding)",
+      "discord": null,
+      "benched": true
+    }
+  ]
 }
