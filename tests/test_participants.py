@@ -25,6 +25,19 @@ class ParticipantTests(unittest.TestCase):
         self.assertEqual(len(match['races']), 5)
         self.assertTrue(all(result['races'][r['id']]['replay']['status'] == 'ready' for r in match['races']))
 
+    def test_match_contributions_do_not_double_count_report_and_exports(self):
+        result = build(ROOT, write=False)
+        for m in result['index']['matches']:
+            if not m['player_points_recorded']:
+                continue
+            self.assertEqual(len(m['player_points']), 10)
+            for team in m['participants']:
+                self.assertEqual(sum(r['points'] for r in m['player_points'] if r['team_id']==team['id']), m['scores'][team['id']])
+            for player in m['lineup']:
+                self.assertTrue((ROOT/player['portrait']).is_file())
+        match = next(m for m in result['index']['matches'] if m['id']=='r2-m4')
+        self.assertEqual(sorted(r['points'] for r in match['player_points']), [0,0,0,2,2,2,3,5,8,13])
+
     def test_unverified_race_cannot_replace_draft_roster(self):
         match = {'id':'r1-m1','round':'R1','participants':[{'id':'a'},{'id':'b'}],
                  'draft':{'roster':[{'team_id':'a','uma':'Uma','discord':'@Known','benched':False}]},

@@ -2,6 +2,9 @@
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
 const context={};vm.createContext(context);vm.runInContext(fs.readFileSync('assets/replay.js','utf8'),context);
 const {sample,orderRows}=context.RaceReplay;
+for(const [ms,status] of [[0,'Normal'],[65.999,'Normal'],[66,'Late'],[66.001,'Late'],[120,'Late'],[null,null],[NaN,null]]){
+ assert.equal(context.RaceReplay.startStatus(ms),status);
+}
 vm.runInContext(fs.readFileSync('assets/runner-analysis.js','utf8'),context);
 let races=0;
 for(const file of fs.readdirSync('data/tournament-races')){
@@ -23,7 +26,8 @@ for(const file of fs.readdirSync('data/tournament-races')){
   const phases=context.RunnerAnalysis.phases(data,runner);
   assert.equal(phases.length,4);
   for(const p of phases){
-   if(p.position!==null)assert(p.position>=1&&p.position<=10);
+   // Weighted averages can exceed an endpoint by floating-point roundoff.
+   if(p.position!==null)assert(p.position>=1-1e-9&&p.position<=10+1e-9);
    if(p.speed!==null)assert(p.speed>0&&p.speed<40);
   }
  }
