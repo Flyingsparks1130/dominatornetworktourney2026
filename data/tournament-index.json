@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T17:15:19Z",
+  "generated_at": "2026-09-11T20:11:42Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
@@ -346,7 +346,8 @@
         "mvp": {
           "team_id": "dominarium",
           "uma": "Tamamo Cross",
-          "discord": "@LESKBILL"
+          "discord": "@LESKBILL",
+          "display_name": "LESKBILL"
         },
         "races": [
           {
@@ -359,21 +360,24 @@
                 "uma": "Tamamo Cross",
                 "discord": "@LESKBILL",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "LESKBILL"
               },
               {
                 "team_id": "dominion",
                 "uma": "Gold Ship",
                 "discord": "@Beep",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Beep"
               },
               {
                 "team_id": "dominarium",
                 "uma": "Mayano Top Gun",
                 "discord": "@eibarman",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "eibarman"
               }
             ],
             "scores": {
@@ -395,21 +399,24 @@
                 "uma": "Mayano Top Gun",
                 "discord": "@eibarman",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "eibarman"
               },
               {
                 "team_id": "dominion",
                 "uma": "Gold Ship",
                 "discord": "@Beep",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Beep"
               },
               {
                 "team_id": "dominion",
                 "uma": "Oguri Cap (Christmas)",
                 "discord": "@Flareon",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Flareon"
               }
             ],
             "scores": {
@@ -431,21 +438,24 @@
                 "uma": "Mayano Top Gun",
                 "discord": "@eibarman",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "eibarman"
               },
               {
                 "team_id": "dominion",
                 "uma": "Gold Ship",
                 "discord": "@Beep",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Beep"
               },
               {
                 "team_id": "dominion",
                 "uma": "Satono Diamond",
                 "discord": "@Purge",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Purge"
               }
             ],
             "scores": {
@@ -467,21 +477,24 @@
                 "uma": "Mejiro McQueen",
                 "discord": "@IceColaa",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "IceColaa"
               },
               {
                 "team_id": "dominarium",
                 "uma": "Ines Fujin",
                 "discord": "@Cal",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Cal"
               },
               {
                 "team_id": "dominarium",
                 "uma": "Oguri Cap",
                 "discord": "@David",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "David"
               }
             ],
             "scores": {
@@ -503,21 +516,24 @@
                 "uma": "Tamamo Cross",
                 "discord": "@LESKBILL",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "LESKBILL"
               },
               {
                 "team_id": "dominion",
                 "uma": "Oguri Cap (Christmas)",
                 "discord": "@Flareon",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Flareon"
               },
               {
                 "team_id": "dominion",
                 "uma": "Gold Ship",
                 "discord": "@Beep",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Beep"
               }
             ],
             "scores": {
@@ -539,21 +555,24 @@
                 "uma": "Oguri Cap (Christmas)",
                 "discord": "@Flareon",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "Flareon"
               },
               {
                 "team_id": "dominarium",
                 "uma": "Ines Fujin",
                 "discord": "@Cal",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Cal"
               },
               {
                 "team_id": "dominion",
                 "uma": "Gold Ship",
                 "discord": "@Beep",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Beep"
               }
             ],
             "scores": {
@@ -575,21 +594,24 @@
                 "uma": "Tamamo Cross",
                 "discord": "@LESKBILL",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "LESKBILL"
               },
               {
                 "team_id": "dominion",
                 "uma": "Oguri Cap (Christmas)",
                 "discord": "@Flareon",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Flareon"
               },
               {
                 "team_id": "dominarium",
                 "uma": "Ines Fujin",
                 "discord": "@Cal",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Cal"
               }
             ],
             "scores": {
@@ -616,7 +638,94 @@
       "score_only": true,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": []
+      "target_reached": [],
+      "lineup": [
+        {
+          "team_id": "dominion",
+          "uma": "Oguri Cap (Christmas)",
+          "discord": "@Flareon",
+          "benched": false,
+          "display_name": "Flareon"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Gold Ship",
+          "discord": "@Beep",
+          "benched": false,
+          "display_name": "Beep"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Satono Diamond",
+          "discord": "@Purge",
+          "benched": false,
+          "display_name": "Purge"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "@Zangona",
+          "benched": false,
+          "display_name": "Zangona"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Mejiro McQueen",
+          "discord": "@IceColaa",
+          "benched": false,
+          "display_name": "IceColaa"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Mejiro Palmer",
+          "discord": null,
+          "benched": true,
+          "display_name": ""
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "@CallMeNeko",
+          "benched": false,
+          "display_name": "CallMeNeko"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Ines Fujin",
+          "discord": "@Cal",
+          "benched": false,
+          "display_name": "Cal"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Mayano Top Gun",
+          "discord": "@eibarman",
+          "benched": false,
+          "display_name": "eibarman"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Oguri Cap",
+          "discord": "@David",
+          "benched": false,
+          "display_name": "David"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Mejiro Dober (Camping)",
+          "discord": null,
+          "benched": true,
+          "display_name": ""
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Tamamo Cross",
+          "discord": "@LESKBILL",
+          "benched": false,
+          "display_name": "LESKBILL"
+        }
+      ],
+      "lineup_source": "draft"
     },
     {
       "id": "r1-m2",
@@ -803,7 +912,8 @@
         "mvp": {
           "team_id": "domineer",
           "uma": "Inari One",
-          "discord": "<@479998555290075136>"
+          "discord": "<@479998555290075136>",
+          "display_name": ""
         },
         "races": [
           {
@@ -816,21 +926,24 @@
                 "uma": "Biwa Hayahide",
                 "discord": "<@1351236267731583036>",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": ""
               },
               {
                 "team_id": "domineer",
                 "uma": "Inari One",
                 "discord": "<@479998555290075136>",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": ""
               },
               {
                 "team_id": "domineer",
                 "uma": "Gold Ship",
                 "discord": "<@680664099679371265>",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": ""
               }
             ],
             "scores": {
@@ -852,21 +965,24 @@
                 "uma": "Manhattan Cafe",
                 "discord": "<@499642536554659860>",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": ""
               },
               {
                 "team_id": "domineer",
                 "uma": "Biwa Hayahide",
                 "discord": "<@1351236267731583036>",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": ""
               },
               {
                 "team_id": "domineer",
                 "uma": "T.M. Opera O (New Year)",
                 "discord": "<@382269416836038656>",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": ""
               }
             ],
             "scores": {
@@ -888,21 +1004,24 @@
                 "uma": "Inari One",
                 "discord": "<@479998555290075136>",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": ""
               },
               {
                 "team_id": "domineer",
                 "uma": "Mayano Top Gun",
                 "discord": "<@753451025012097047>",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": ""
               },
               {
                 "team_id": "domineer",
                 "uma": "Gold Ship",
                 "discord": "<@680664099679371265>",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": ""
               }
             ],
             "scores": {
@@ -924,21 +1043,24 @@
                 "uma": "Mayano Top Gun",
                 "discord": "<@753451025012097047>",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": ""
               },
               {
                 "team_id": "domineer",
                 "uma": "T.M. Opera O (New Year)",
                 "discord": "<@382269416836038656>",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": ""
               },
               {
                 "team_id": "domichill",
                 "uma": "Smart Falcon",
                 "discord": "<@897274147841912843>",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": ""
               }
             ],
             "scores": {
@@ -960,21 +1082,24 @@
                 "uma": "Inari One",
                 "discord": "<@479998555290075136>",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": ""
               },
               {
                 "team_id": "domichill",
                 "uma": "Smart Falcon",
                 "discord": "<@897274147841912843>",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": ""
               },
               {
                 "team_id": "domineer",
                 "uma": "Biwa Hayahide",
                 "discord": "<@1351236267731583036>",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": ""
               }
             ],
             "scores": {
@@ -1001,7 +1126,94 @@
       "score_only": true,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": []
+      "target_reached": [],
+      "lineup": [
+        {
+          "team_id": "domineer",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "<@382269416836038656>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Mayano Top Gun",
+          "discord": "<@753451025012097047>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Biwa Hayahide",
+          "discord": "<@1351236267731583036>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Satono Diamond",
+          "discord": null,
+          "benched": true,
+          "display_name": ""
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Gold Ship",
+          "discord": "<@680664099679371265>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Inari One",
+          "discord": "<@479998555290075136>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Nishino Flower",
+          "discord": "<@199604689321459719>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Manhattan Cafe",
+          "discord": "<@499642536554659860>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Narita Brian",
+          "discord": "<@797271628773982269>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Smart Falcon",
+          "discord": "<@897274147841912843>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Kitasan Black",
+          "discord": "<@229748241866948609>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Curren Chan (Wedding)",
+          "discord": null,
+          "benched": true,
+          "display_name": ""
+        }
+      ],
+      "lineup_source": "draft"
     },
     {
       "id": "r1-m3",
@@ -1186,7 +1398,8 @@
         "mvp": {
           "team_id": "dominium",
           "uma": "Seiun Sky",
-          "discord": "@Juqi"
+          "discord": "@Juqi",
+          "display_name": "Juqi"
         },
         "races": [
           {
@@ -1199,21 +1412,24 @@
                 "uma": "Seiun Sky",
                 "discord": "@Juqi",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "Juqi"
               },
               {
                 "team_id": "dominante",
                 "uma": "Oguri Cap",
                 "discord": "@Sky",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Sky"
               },
               {
                 "team_id": "dominante",
                 "uma": "Smart Falcon",
                 "discord": "@Mor Mas",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Mor Mas"
               }
             ],
             "scores": {
@@ -1235,21 +1451,24 @@
                 "uma": "Mejiro Ryan",
                 "discord": "@unluckyyy",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "unluckyyy"
               },
               {
                 "team_id": "dominium",
                 "uma": "Kitasan Black",
                 "discord": "@Mamboo 🌊🩵",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Mamboo 🌊🩵"
               },
               {
                 "team_id": "dominium",
                 "uma": "Fuji Kiseki",
                 "discord": "@Raven621|Flying Free",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Raven621|Flying Free"
               }
             ],
             "scores": {
@@ -1271,21 +1490,24 @@
                 "uma": "Seiun Sky",
                 "discord": "@Juqi",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "Juqi"
               },
               {
                 "team_id": "dominante",
                 "uma": "Mejiro Dober",
                 "discord": "@RaptorBolt717",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "RaptorBolt717"
               },
               {
                 "team_id": "dominante",
                 "uma": "Oguri Cap",
                 "discord": "@Sky",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Sky"
               }
             ],
             "scores": {
@@ -1307,21 +1529,24 @@
                 "uma": "Mejiro Ryan",
                 "discord": "@unluckyyy",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "unluckyyy"
               },
               {
                 "team_id": "dominium",
                 "uma": "Seiun Sky",
                 "discord": "@Juqi",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Juqi"
               },
               {
                 "team_id": "dominante",
                 "uma": "Oguri Cap",
                 "discord": "@Sky",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Sky"
               }
             ],
             "scores": {
@@ -1343,21 +1568,24 @@
                 "uma": "Smart Falcon",
                 "discord": "@Mor Mas",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "Mor Mas"
               },
               {
                 "team_id": "dominium",
                 "uma": "Mejiro Ryan",
                 "discord": "@unluckyyy",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "unluckyyy"
               },
               {
                 "team_id": "dominium",
                 "uma": "Seiun Sky",
                 "discord": "@Juqi",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Juqi"
               }
             ],
             "scores": {
@@ -1379,21 +1607,24 @@
                 "uma": "Seiun Sky",
                 "discord": "@Juqi",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "Juqi"
               },
               {
                 "team_id": "dominante",
                 "uma": "Special Week",
                 "discord": "@Yumi",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Yumi"
               },
               {
                 "team_id": "dominium",
                 "uma": "Taiki Shuttle",
                 "discord": "@Yokka",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Yokka"
               }
             ],
             "scores": {
@@ -1420,7 +1651,94 @@
       "score_only": true,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": []
+      "target_reached": [],
+      "lineup": [
+        {
+          "team_id": "dominium",
+          "uma": "Seiun Sky",
+          "discord": "@Juqi",
+          "benched": false,
+          "display_name": "Juqi"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Narita Brian",
+          "discord": null,
+          "benched": true,
+          "display_name": ""
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Mejiro Ryan",
+          "discord": "@unluckyyy",
+          "benched": false,
+          "display_name": "unluckyyy"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Kitasan Black",
+          "discord": "@Mamboo 🌊🩵",
+          "benched": false,
+          "display_name": "Mamboo 🌊🩵"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Taiki Shuttle",
+          "discord": "@Yokka",
+          "benched": false,
+          "display_name": "Yokka"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Fuji Kiseki",
+          "discord": "@Raven621|Flying Free",
+          "benched": false,
+          "display_name": "Raven621|Flying Free"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Mejiro Dober",
+          "discord": "@RaptorBolt717",
+          "benched": false,
+          "display_name": "RaptorBolt717"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Oguri Cap",
+          "discord": "@Sky",
+          "benched": false,
+          "display_name": "Sky"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Special Week",
+          "discord": "@Yumi",
+          "benched": false,
+          "display_name": "Yumi"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "King Halo",
+          "discord": "@David",
+          "benched": false,
+          "display_name": "David"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Smart Falcon",
+          "discord": "@Mor Mas",
+          "benched": false,
+          "display_name": "Mor Mas"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Nice Nature (Cheerleader)",
+          "discord": null,
+          "benched": true,
+          "display_name": ""
+        }
+      ],
+      "lineup_source": "draft"
     },
     {
       "id": "r2-m1",
@@ -1486,7 +1804,9 @@
       "score_only": false,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": []
+      "target_reached": [],
+      "lineup": [],
+      "lineup_source": "draft"
     },
     {
       "id": "r2-m2",
@@ -1552,7 +1872,9 @@
       "score_only": false,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": []
+      "target_reached": [],
+      "lineup": [],
+      "lineup_source": "draft"
     },
     {
       "id": "r2-m3",
@@ -1618,7 +1940,9 @@
       "score_only": false,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": []
+      "target_reached": [],
+      "lineup": [],
+      "lineup_source": "draft"
     },
     {
       "id": "r2-m4",
@@ -1679,8 +2003,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominate": 6,
-            "dominium": 1
+            "dominium": 1,
+            "dominate": 6
           },
           "data_file": "data/tournament-races/88e67acbf1bf9d722ad3.json"
         },
@@ -1705,8 +2029,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominate": 3,
-            "dominium": 4
+            "dominium": 4,
+            "dominate": 3
           },
           "data_file": "data/tournament-races/6a90afd4af061a79b568.json"
         },
@@ -1731,8 +2055,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominate": 7,
-            "dominium": 0
+            "dominium": 0,
+            "dominate": 7
           },
           "data_file": "data/tournament-races/37e67a4d0d6bea4e9f3e.json"
         },
@@ -1757,8 +2081,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominate": 4,
-            "dominium": 3
+            "dominium": 3,
+            "dominate": 4
           },
           "data_file": "data/tournament-races/80443fe07928e4407b7a.json"
         },
@@ -1783,8 +2107,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominate": 6,
-            "dominium": 1
+            "dominium": 1,
+            "dominate": 6
           },
           "data_file": "data/tournament-races/7c48300d6cdd861a5834.json"
         }
@@ -1847,7 +2171,7 @@
         ],
         "training_start": null,
         "training_deadline": null,
-        "notes": "Dominate won 26–9 after Race 5. Race 6 and the reserved tiebreaker were not run. The supplied draft schedule is preserved as written. Race analysis preserves the exporter’s literal condition labels (Soft, Hard, Good), which differ from the draft wording; no raw metadata has been rewritten. Discord mentions are preserved as supplied. MVP was not specified.",
+        "notes": "Dominate won 26–9 after Race 5. Race 6 and the tiebreaker were not run.",
         "external_match_id": "SE3RMK",
         "roster": [
           {
@@ -1943,21 +2267,24 @@
                 "uma": "Mejiro McQueen (Summer)",
                 "discord": "<@762151062839885824>",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "raine"
               },
               {
                 "team_id": "dominate",
                 "uma": "Mihono Bourbon (Valentine)",
                 "discord": "<@221323450529087488>",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Mayday"
               },
               {
                 "team_id": "dominium",
                 "uma": "Oguri Cap",
                 "discord": "<@667998121929998349>",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Unluckyyy"
               }
             ],
             "scores": {
@@ -1979,21 +2306,24 @@
                 "uma": "Rice Shower (Halloween)",
                 "discord": "<@1244589187202551809>",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "Mamboo"
               },
               {
                 "team_id": "dominate",
                 "uma": "Seiun Sky",
                 "discord": "<@1456439897047957766>",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Reyov"
               },
               {
                 "team_id": "dominate",
                 "uma": "Mejiro McQueen (Summer)",
                 "discord": "<@762151062839885824>",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "raine"
               }
             ],
             "scores": {
@@ -2015,21 +2345,24 @@
                 "uma": "Mejiro McQueen (Summer)",
                 "discord": "<@762151062839885824>",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "raine"
               },
               {
                 "team_id": "dominate",
                 "uma": "Mihono Bourbon (Valentine)",
                 "discord": "<@221323450529087488>",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Mayday"
               },
               {
                 "team_id": "dominate",
                 "uma": "Seiun Sky",
                 "discord": "<@1456439897047957766>",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Reyov"
               }
             ],
             "scores": {
@@ -2051,21 +2384,24 @@
                 "uma": "Mejiro McQueen (Summer)",
                 "discord": "<@762151062839885824>",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "raine"
               },
               {
                 "team_id": "dominium",
                 "uma": "Seiun Sky (Ballroom)",
                 "discord": "<@378745083236712449>",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Juqi"
               },
               {
                 "team_id": "dominium",
                 "uma": "Oguri Cap",
                 "discord": "<@667998121929998349>",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Unluckyyy"
               }
             ],
             "scores": {
@@ -2087,21 +2423,24 @@
                 "uma": "Mihono Bourbon (Valentine)",
                 "discord": "<@221323450529087488>",
                 "place": 1,
-                "points": 4
+                "points": 4,
+                "display_name": "Mayday"
               },
               {
                 "team_id": "dominate",
                 "uma": "Mayano Top Gun",
                 "discord": "<@419307287581032449>",
                 "place": 2,
-                "points": 2
+                "points": 2,
+                "display_name": "Flyingsparkz"
               },
               {
                 "team_id": "dominium",
                 "uma": "Rice Shower (Halloween)",
                 "discord": "<@1244589187202551809>",
                 "place": 3,
-                "points": 1
+                "points": 1,
+                "display_name": "Mamboo"
               }
             ],
             "scores": {
@@ -2133,7 +2472,94 @@
       "needs_review": false,
       "target_reached": [
         "dominate"
-      ]
+      ],
+      "lineup": [
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen",
+          "variant_id": 101302,
+          "display_name": "BYond",
+          "benched": false
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mayano Top Gun",
+          "variant_id": 102401,
+          "display_name": "Flyingsparkz",
+          "benched": false
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mihono Bourbon",
+          "variant_id": 102602,
+          "display_name": "Mayday",
+          "benched": false
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen",
+          "variant_id": 101303,
+          "display_name": "raine",
+          "benched": false
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Seiun Sky",
+          "variant_id": 102001,
+          "display_name": "Reyov",
+          "benched": false
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Seiun Sky",
+          "variant_id": 102002,
+          "display_name": "Juqi",
+          "benched": false
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Rice Shower",
+          "variant_id": 103002,
+          "display_name": "Mamboo",
+          "benched": false
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Special Week",
+          "variant_id": 100101,
+          "display_name": "Raven621",
+          "benched": false
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Oguri Cap",
+          "variant_id": 100601,
+          "display_name": "Unluckyyy",
+          "benched": false
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Tamamo Cross",
+          "variant_id": 102101,
+          "display_name": "Yokka",
+          "benched": false
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen",
+          "discord": null,
+          "benched": true,
+          "display_name": ""
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Satono Diamond",
+          "discord": null,
+          "benched": true,
+          "display_name": ""
+        }
+      ],
+      "lineup_source": "race"
     },
     {
       "id": "r3-m1",
@@ -2168,7 +2594,9 @@
       "score_only": false,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": []
+      "target_reached": [],
+      "lineup": [],
+      "lineup_source": "draft"
     },
     {
       "id": "r3-m2",
@@ -2209,7 +2637,9 @@
       "score_only": false,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": []
+      "target_reached": [],
+      "lineup": [],
+      "lineup_source": "draft"
     },
     {
       "id": "r4-m1",
@@ -2244,7 +2674,9 @@
       "score_only": false,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": []
+      "target_reached": [],
+      "lineup": [],
+      "lineup_source": "draft"
     }
   ],
   "warnings": [],
@@ -2254,5 +2686,301 @@
     "dominion",
     "dominium"
   ],
-  "champion_id": null
+  "champion_id": null,
+  "club_rosters": {
+    "dominion": {
+      "match_id": "r1-m1",
+      "round": "R1",
+      "source": "draft",
+      "members": [
+        {
+          "team_id": "dominion",
+          "uma": "Oguri Cap (Christmas)",
+          "discord": "@Flareon",
+          "benched": false,
+          "display_name": "Flareon"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Gold Ship",
+          "discord": "@Beep",
+          "benched": false,
+          "display_name": "Beep"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Satono Diamond",
+          "discord": "@Purge",
+          "benched": false,
+          "display_name": "Purge"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "@Zangona",
+          "benched": false,
+          "display_name": "Zangona"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Mejiro McQueen",
+          "discord": "@IceColaa",
+          "benched": false,
+          "display_name": "IceColaa"
+        }
+      ]
+    },
+    "dominarium": {
+      "match_id": "r1-m1",
+      "round": "R1",
+      "source": "draft",
+      "members": [
+        {
+          "team_id": "dominarium",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "@CallMeNeko",
+          "benched": false,
+          "display_name": "CallMeNeko"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Ines Fujin",
+          "discord": "@Cal",
+          "benched": false,
+          "display_name": "Cal"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Mayano Top Gun",
+          "discord": "@eibarman",
+          "benched": false,
+          "display_name": "eibarman"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Oguri Cap",
+          "discord": "@David",
+          "benched": false,
+          "display_name": "David"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Tamamo Cross",
+          "discord": "@LESKBILL",
+          "benched": false,
+          "display_name": "LESKBILL"
+        }
+      ]
+    },
+    "domichill": {
+      "match_id": "r1-m2",
+      "round": "R1",
+      "source": "draft",
+      "members": [
+        {
+          "team_id": "domichill",
+          "uma": "Nishino Flower",
+          "discord": "<@199604689321459719>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Manhattan Cafe",
+          "discord": "<@499642536554659860>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Narita Brian",
+          "discord": "<@797271628773982269>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Smart Falcon",
+          "discord": "<@897274147841912843>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Kitasan Black",
+          "discord": "<@229748241866948609>",
+          "benched": false,
+          "display_name": ""
+        }
+      ]
+    },
+    "domineer": {
+      "match_id": "r1-m2",
+      "round": "R1",
+      "source": "draft",
+      "members": [
+        {
+          "team_id": "domineer",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "<@382269416836038656>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Mayano Top Gun",
+          "discord": "<@753451025012097047>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Biwa Hayahide",
+          "discord": "<@1351236267731583036>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Gold Ship",
+          "discord": "<@680664099679371265>",
+          "benched": false,
+          "display_name": ""
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Inari One",
+          "discord": "<@479998555290075136>",
+          "benched": false,
+          "display_name": ""
+        }
+      ]
+    },
+    "dominium": {
+      "match_id": "r2-m4",
+      "round": "R2",
+      "source": "race",
+      "members": [
+        {
+          "team_id": "dominium",
+          "uma": "Seiun Sky",
+          "variant_id": 102002,
+          "display_name": "Juqi",
+          "benched": false
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Rice Shower",
+          "variant_id": 103002,
+          "display_name": "Mamboo",
+          "benched": false
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Special Week",
+          "variant_id": 100101,
+          "display_name": "Raven621",
+          "benched": false
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Oguri Cap",
+          "variant_id": 100601,
+          "display_name": "Unluckyyy",
+          "benched": false
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Tamamo Cross",
+          "variant_id": 102101,
+          "display_name": "Yokka",
+          "benched": false
+        }
+      ]
+    },
+    "dominante": {
+      "match_id": "r1-m3",
+      "round": "R1",
+      "source": "draft",
+      "members": [
+        {
+          "team_id": "dominante",
+          "uma": "Mejiro Dober",
+          "discord": "@RaptorBolt717",
+          "benched": false,
+          "display_name": "RaptorBolt717"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Oguri Cap",
+          "discord": "@Sky",
+          "benched": false,
+          "display_name": "Sky"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Special Week",
+          "discord": "@Yumi",
+          "benched": false,
+          "display_name": "Yumi"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "King Halo",
+          "discord": "@David",
+          "benched": false,
+          "display_name": "David"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Smart Falcon",
+          "discord": "@Mor Mas",
+          "benched": false,
+          "display_name": "Mor Mas"
+        }
+      ]
+    },
+    "dominate": {
+      "match_id": "r2-m4",
+      "round": "R2",
+      "source": "race",
+      "members": [
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen",
+          "variant_id": 101302,
+          "display_name": "BYond",
+          "benched": false
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mayano Top Gun",
+          "variant_id": 102401,
+          "display_name": "Flyingsparkz",
+          "benched": false
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mihono Bourbon",
+          "variant_id": 102602,
+          "display_name": "Mayday",
+          "benched": false
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen",
+          "variant_id": 101303,
+          "display_name": "raine",
+          "benched": false
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Seiun Sky",
+          "variant_id": 102001,
+          "display_name": "Reyov",
+          "benched": false
+        }
+      ]
+    }
+  }
 }

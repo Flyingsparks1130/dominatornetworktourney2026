@@ -20,6 +20,7 @@ from typing import Any
 from tournament_draft import normalize_draft, has_content as draft_has_content
 from tournament_report import normalize_report
 from tournament_replay import decode_replay, ReplayError
+from tournament_participants import attach_participants
 
 ARCHIVE = 'Dominator Tournament'
 MAX_BYTES = 20 * 1024 * 1024
@@ -147,7 +148,9 @@ def normalize_race(raw: dict) -> dict:
             'scaled_seconds': scaled, 'raw_display': time_display(raw_time), 'scaled_display': time_display(scaled),
             'stats': stats, 'running_style_code': style, 'aptitudes': aptitude, 'skills': rowskills, 'support': rowsupport,
             'build_fingerprint': digest(identity), 'is_ghost': bool(h.get('isGhost', False)),
-            'mood': params.get('motivation') if act else None})
+            'mood': params.get('motivation') if act else None,
+            'base_stats': {k: number(params.get(a), k, optional=True) for k,a in
+                [('speed','baseSpeed'),('stamina','baseStamina'),('power','basePow'),('guts','baseGuts'),('wisdom','baseWiz')]}})
     n = len(results)
     if sorted(r['place'] for r in results) != list(range(1, n + 1)):
         raise TournamentError('Finishing places are not a complete unique sequence. No runner was silently dropped.')
@@ -369,11 +372,12 @@ def build(root: Path, write=True) -> dict:
         m['target_reached'] = [t for t,v in (m['computed_scores'] or {}).items() if v>=config['scoring']['target_points']]
         # No winner is ever inferred from a threshold, directory name or filename.
         if m['loser_id']: eliminated.add(m['loser_id'])
+    club_rosters = attach_participants(matches, race_docs)
     final = next(m for m in matches if m['round']=='R4')
     output={'schema_version':1,'generated_at':now(),'id':config['id'],'name':config['name'],
         'published':config.get('published',False),'revision':control['revision'],'rounds':config['rounds'],
         'teams':config['teams'],'scoring':config['scoring'],'matches':matches,'warnings':warnings,
-        'eliminated':sorted(eliminated),'champion_id':final['winner_id']}
+        'eliminated':sorted(eliminated),'champion_id':final['winner_id'], 'club_rosters': club_rosters}
     if write:
         target=root/'data/tournament-races';target.mkdir(parents=True,exist_ok=True)
         for rid,race in race_docs.items():write_json(target/f'{rid}.json',race)
