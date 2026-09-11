@@ -1,0 +1,114 @@
+{
+  "round1_qf": [
+    {
+      "slug": "tokyo-1400",
+      "category": "SPRINT",
+      "name": "TOKYO 1400M",
+      "turn": "Left",
+      "condition": "Soft",
+      "season": "Summer",
+      "thresholds": [
+        "Stamina",
+        "Power"
+      ],
+      "phases": [
+        "Start 0–233",
+        "Midrace 233–933",
+        "Laterace 933–1167",
+        "Stretch 1167–1400"
+      ],
+      "corners": [
+        "3 350–625",
+        "4 625–875"
+      ],
+      "slopes": [
+        "↗ 125–200",
+        "↘ 250–500",
+        "↗ 950–1100"
+      ],
+      "straights": [
+        "0–350",
+        "875–1400"
+      ],
+      "other": [
+        "Pos-keep 0–583",
+        "Spurt 933m",
+        "Triple 7s ~310 Spurt"
+      ]
+    },
+    {
+      "slug": "fukushima-1800",
+      "category": "MILE",
+      "name": "FUKUSHIMA 1800M"
+    },
+    {
+      "slug": "sapporo-2000",
+      "category": "MEDIUM",
+      "name": "SAPPORO 2000M"
+    },
+    {
+      "slug": "hanshin-2600",
+      "category": "LONG",
+      "name": "HANSHIN 2600M"
+    },
+    {
+      "slug": "kokura-1700",
+      "category": "DIRT",
+      "name": "KOKURA 1700M"
+    }
+  ],
+  "semifinals": [
+    {
+      "slug": "takamatsunomiya-kinen",
+      "category": "SPRINT",
+      "name": "TAKAMATSUNOMIYA KINEN"
+    },
+    {
+      "slug": "yasuda-kinen",
+      "category": "MILE",
+      "name": "YASUDA KINEN"
+    },
+    {
+      "slug": "satsuki-sho",
+      "category": "MEDIUM",
+      "name": "SATSUKI SHO"
+    },
+    {
+      "slug": "tenno-sho-spring",
+      "category": "LONG",
+      "name": "TENNO SHO SPRING"
+    },
+    {
+      "slug": "february-stakes",
+      "category": "DIRT",
+      "name": "FEBRUARY STAKES"
+    }
+  ],
+  "grand_final": [
+    {
+      "slug": "sprinter-stakes",
+      "category": "SPRINT",
+      "name": "SPRINTER STAKES"
+    },
+    {
+      "slug": "mile-championship",
+      "category": "MILE",
+      "name": "MILE CHAMPIONSHIP"
+    },
+    {
+      "slug": "japan-cup",
+      "category": "MEDIUM",
+      "name": "JAPAN CUP"
+    },
+    {
+      "slug": "arima-kinen",
+      "category": "LONG",
+      "name": "ARIMA KINEN"
+    },
+    {
+      "slug": "champions-cup",
+      "category": "DIRT",
+      "name": "CHAMPIONS CUP"
+    }
+  ]
+}
