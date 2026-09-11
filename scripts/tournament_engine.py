@@ -372,7 +372,9 @@ def build(root: Path, write=True) -> dict:
         m['target_reached'] = [t for t,v in (m['computed_scores'] or {}).items() if v>=config['scoring']['target_points']]
         # No winner is ever inferred from a threshold, directory name or filename.
         if m['loser_id']: eliminated.add(m['loser_id'])
-    club_rosters = attach_participants(matches, race_docs)
+    portrait_path = root / 'assets/uma-portraits.json'
+    portraits = json.loads(portrait_path.read_text(encoding='utf-8')) if portrait_path.exists() else {}
+    club_rosters = attach_participants(matches, race_docs, portraits)
     final = next(m for m in matches if m['round']=='R4')
     output={'schema_version':1,'generated_at':now(),'id':config['id'],'name':config['name'],
         'published':config.get('published',False),'revision':control['revision'],'rounds':config['rounds'],

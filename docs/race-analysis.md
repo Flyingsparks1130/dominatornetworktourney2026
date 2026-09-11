@@ -16,7 +16,7 @@ The build adds replay data to each generated `data/tournament-races/*.json`. No 
 
 ## Measurement limits
 
-- Start delay and last-spurt distance come directly from simulation results. Spurt delay is the distance beyond two-thirds of the course.
+- Start delay and last-spurt distance come directly from simulation results. A start delay of **66 ms or greater** is labeled Late, using the unrounded value. Spurt delay is the distance beyond two-thirds of the course.
 - Finish HP is interpolated at that runner's raw finish time. Empty-HP distance is the first recorded zero-HP sample before the finish; it is not a modeled HP deficit.
 - Peak speed is the highest recorded pre-finish sample, not a modeled spurt target speed.
 - Duel events are trigger counts; their duration is not supplied by these events.
@@ -26,8 +26,10 @@ The build adds replay data to each generated `data/tournament-races/*.json`. No 
 - Hakuraku's estimated downhill, pace and wit-lottery metrics and separate individual skill-analysis graphs are not reproduced.
 - Raw course-condition names are shown as exported; the per-match draft preserves the organizer's schedule wording. The match and club pages display verified owner names without changing the underlying Discord references or scoring assignments.
 
-The decoder and asset attributions are in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md). Character portraits are bundled for the ten variants currently raced. Future variants retain their gate number if no portrait is bundled.
+The decoder and asset attributions are in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md). Character portraits are bundled for the recorded drafts and races. `assets/uma-portraits.json` maps draft names and costume aliases to explicit card IDs and local images. Unknown variants retain a text or gate-number fallback.
+
+Match pages show each active player's Uma and total podium points, including zero scorers. Verified exports supply the points; reported podiums fill numbered races without a verified export. The two sources are never added together for the same race. Organizer score overrides do not invent individual player points. Club pages show player names only, using the latest populated lineup.
 
 ## Validation
 
-Run the Python tests, rebuild the site, then run `node tests/test_replay_client.js`. Checks cover real Kyoto measurements, identity mapping, malformed payloads, each recorded frame, interpolation, playback boundaries and all five finishing orders. The GitHub workflow runs these checks before deployment. These are automated data/playback checks, not a visual browser test.
+Run the Python tests, rebuild the site, then run `node tests/test_replay_client.js`. Checks cover real Kyoto measurements, identity mapping, malformed payloads, every imported race's recorded frames, interpolation, playback boundaries, finishing orders, the 66 ms cutoff and match contributions. The GitHub workflow runs these checks before deployment. These are automated data/playback checks, not a visual browser test.

@@ -1,0 +1,170 @@
+{
+  "Special Week": {
+    "variant_id": 100101,
+    "portrait": "assets/runners/100101.webp"
+  },
+  "Silence Suzuka": {
+    "variant_id": 100201,
+    "portrait": "assets/runners/100201.webp"
+  },
+  "Maruzensky": {
+    "variant_id": 100401,
+    "portrait": "assets/runners/100401.webp"
+  },
+  "Fuji Kiseki": {
+    "variant_id": 100501,
+    "portrait": "assets/runners/100501.webp"
+  },
+  "Oguri Cap": {
+    "variant_id": 100601,
+    "portrait": "assets/runners/100601.webp"
+  },
+  "Gold Ship": {
+    "variant_id": 100701,
+    "portrait": "assets/runners/100701.webp"
+  },
+  "Daiwa Scarlet": {
+    "variant_id": 100901,
+    "portrait": "assets/runners/100901.webp"
+  },
+  "Taiki Shuttle": {
+    "variant_id": 101001,
+    "portrait": "assets/runners/101001.webp"
+  },
+  "Grass Wonder": {
+    "variant_id": 101101,
+    "portrait": "assets/runners/101101.webp"
+  },
+  "Mejiro McQueen": {
+    "variant_id": 101301,
+    "portrait": "assets/runners/101301.webp"
+  },
+  "Narita Brian": {
+    "variant_id": 101601,
+    "portrait": "assets/runners/101601.webp"
+  },
+  "Agnes Digital": {
+    "variant_id": 101901,
+    "portrait": "assets/runners/101901.webp"
+  },
+  "Seiun Sky": {
+    "variant_id": 102001,
+    "portrait": "assets/runners/102001.webp"
+  },
+  "Tamamo Cross": {
+    "variant_id": 102101,
+    "portrait": "assets/runners/102101.webp"
+  },
+  "Biwa Hayahide": {
+    "variant_id": 102301,
+    "portrait": "assets/runners/102301.webp"
+  },
+  "Mayano Top Gun": {
+    "variant_id": 102401,
+    "portrait": "assets/runners/102401.webp"
+  },
+  "Manhattan Cafe": {
+    "variant_id": 102501,
+    "portrait": "assets/runners/102501.webp"
+  },
+  "Mejiro Ryan": {
+    "variant_id": 102701,
+    "portrait": "assets/runners/102701.webp"
+  },
+  "Ines Fujin": {
+    "variant_id": 103101,
+    "portrait": "assets/runners/103101.webp"
+  },
+  "Inari One": {
+    "variant_id": 103401,
+    "portrait": "assets/runners/103401.webp"
+  },
+  "Smart Falcon": {
+    "variant_id": 104601,
+    "portrait": "assets/runners/104601.webp"
+  },
+  "Narita Taishin": {
+    "variant_id": 105001,
+    "portrait": "assets/runners/105001.webp"
+  },
+  "Nishino Flower": {
+    "variant_id": 105101,
+    "portrait": "assets/runners/105101.webp"
+  },
+  "Mejiro Dober": {
+    "variant_id": 105901,
+    "portrait": "assets/runners/105901.webp"
+  },
+  "King Halo": {
+    "variant_id": 106101,
+    "portrait": "assets/runners/106101.webp"
+  },
+  "Mejiro Palmer": {
+    "variant_id": 106401,
+    "portrait": "assets/runners/106401.webp"
+  },
+  "Satono Diamond": {
+    "variant_id": 106701,
+    "portrait": "assets/runners/106701.webp"
+  },
+  "Kitasan Black": {
+    "variant_id": 106801,
+    "portrait": "assets/runners/106801.webp"
+  },
+  "Aston Machan": {
+    "variant_id": 108701,
+    "portrait": "assets/runners/108701.webp"
+  },
+  "Oguri Cap (Christmas)": {
+    "variant_id": 100602,
+    "portrait": "assets/runners/100602.webp"
+  },
+  "T.M. Opera O (New Year)": {
+    "variant_id": 101502,
+    "portrait": "assets/runners/101502.webp"
+  },
+  "Mejiro McQueen (Summer)": {
+    "variant_id": 101303,
+    "portrait": "assets/runners/101303.webp"
+  },
+  "Mejiro McQueen (Anime)": {
+    "variant_id": 101302,
+    "portrait": "assets/runners/101302.webp"
+  },
+  "Mejiro Dober (Camping)": {
+    "variant_id": 105902,
+    "portrait": "assets/runners/105902.webp"
+  },
+  "Mihono Bourbon (Valentine)": {
+    "variant_id": 102602,
+    "portrait": "assets/runners/102602.webp"
+  },
+  "Maruzensky (Summer)": {
+    "variant_id": 100402,
+    "portrait": "assets/runners/100402.webp"
+  },
+  "Seiun Sky (Ballroom)": {
+    "variant_id": 102002,
+    "portrait": "assets/runners/102002.webp"
+  },
+  "Nice Nature (Cheerleader)": {
+    "variant_id": 106002,
+    "portrait": "assets/runners/106002.webp"
+  },
+  "Curren Chan (Wedding)": {
+    "variant_id": 103802,
+    "portrait": "assets/runners/103802.webp"
+  },
+  "Rice Shower (Halloween)": {
+    "variant_id": 103002,
+    "portrait": "assets/runners/103002.webp"
+  },
+  "Taiki Shuttle (Camping)": {
+    "variant_id": 101002,
+    "portrait": "assets/runners/101002.webp"
+  },
+  "Fine Motion (Wedding)": {
+    "variant_id": 102202,
+    "portrait": "assets/runners/102202.webp"
+  }
+}

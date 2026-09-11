@@ -3,6 +3,7 @@
  'use strict';
  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const fmt=(v,n=1)=>Number.isFinite(v)?v.toFixed(n):'—';
+ const startStatus=ms=>Number.isFinite(ms)?(ms>=66?'Late':'Normal'):null;
  const clean=x=>String(x||'').replace(/^@+/,'');
  const styles={1:'Front',2:'Pace',3:'Late',4:'End'};
  const colors=['#f48194','#70c5ff','#c4a2ff','#f4ca6a','#64d9ba','#f89862','#b5d877','#8fa9ff','#e6a7d5','#b6ccd6'];
@@ -54,7 +55,7 @@
   const td=(label,value)=>`<td data-label="${label}">${value}</td>`;
   const resultRows=data.results.map(r=>{
    const m=info.get(r.entry_id);
-   return `<tr>${td('Finish',`<b class="rp-place">${r.place}</b>`)}${td('No.',r.gate)}${td('Character / trainer',runner(r))}${td('Time',`<strong>${esc(r.raw_display)}</strong>`)}${td('Style',`${esc(styles[r.running_style_code]||'—')}<small>${esc(r.mood==='Max'?'Great':r.mood||'')}</small>`)}${td('Start delay',m?`${fmt(m.start_delay_ms)} ms`:'—')}${td('Spurt delay',m?`${fmt(m.spurt_delay_m)} m`:'—')}${td('Finish HP',m?`<strong class="${m.hp_finish>0?'rp-good':'rp-low'}">${fmt(m.hp_finish,0)}</strong><small>${fmt(100*m.hp_finish/m.hp_start)}%</small>`:'—')}${td('Peak speed',m?`${fmt(m.peak_speed_mps,2)} m/s`:'—')}${td('Points',`${r.points}${data.scoring_verified?'':'*'}`)}</tr>`;
+   return `<tr>${td('Finish',`<b class="rp-place">${r.place}</b>`)}${td('No.',r.gate)}${td('Character / trainer',runner(r))}${td('Time',`<strong>${esc(r.raw_display)}</strong>`)}${td('Style',`${esc(styles[r.running_style_code]||'—')}<small>${esc(r.mood==='Max'?'Great':r.mood||'')}</small>`)}${td('Start delay',m?`${fmt(m.start_delay_ms)} ms<small class="${startStatus(m.start_delay_ms)==='Late'?'rp-late-start':'rp-normal-start'}">${startStatus(m.start_delay_ms)||'—'}</small>`:'—')}${td('Spurt delay',m?`${fmt(m.spurt_delay_m)} m`:'—')}${td('Finish HP',m?`<strong class="${m.hp_finish>0?'rp-good':'rp-low'}">${fmt(m.hp_finish,0)}</strong><small>${fmt(100*m.hp_finish/m.hp_start)}%</small>`:'—')}${td('Peak speed',m?`${fmt(m.peak_speed_mps,2)} m/s`:'—')}${td('Points',`${r.points}${data.scoring_verified?'':'*'}`)}</tr>`;
   }).join('');
   host.innerHTML=`<section class="rp-summary"><div class="dt-caption"><h2>Race results</h2><span class="dt-small">Select a runner for details</span></div><table class="rp-table rp-results-table"><colgroup>${[4,4,24,10,10,8,10,12,12,6].map(w=>`<col style="width:${w}%">`).join('')}</colgroup><thead><tr>${['Finish','No.','Character / trainer','Time','Style','Start delay','Spurt delay','Finish HP','Peak speed','Points'].map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${resultRows}</tbody></table></section>${replay?`
    <section class="rp-playback"><div class="dt-caption"><h2>Race replay</h2></div>
@@ -106,5 +107,5 @@
   for(const marker of markers){const select=()=>{selected=selected===marker.dataset.marker?'':marker.dataset.marker;q('[data-runner]').value=selected;render()};marker.onclick=select;marker.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select()}}}
   document.addEventListener('visibilitychange',visibility);render();return cleanup;
  }
- global.RaceReplay={mount,sample,orderRows,recentSkills,placeBubbles};
+ global.RaceReplay={mount,sample,orderRows,recentSkills,placeBubbles,startStatus};
 })(typeof window==='undefined'?globalThis:window);

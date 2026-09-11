@@ -32,7 +32,7 @@
   const portrait=labels.portraits[r.variant_id];
   const stats=Object.entries(r.stats),phase=rep?phases(data,r):[];
   const metrics=[['Time',r.raw_display],['Behind winner',r.place===1?'Winner':`+${fmt(r.raw_seconds-data.results[0].raw_seconds,3)} s`],
-   ['Start delay',m?`${fmt(m.start_delay_ms)} ms`:'—'],['Peak speed',m?`${fmt(m.peak_speed_mps,2)} m/s`:'—'],
+   ['Start delay',m?`${fmt(m.start_delay_ms)} ms · ${global.RaceReplay.startStatus(m.start_delay_ms)||'—'}`:'—'],['Peak speed',m?`${fmt(m.peak_speed_mps,2)} m/s`:'—'],
    ['Last spurt',m?.last_spurt_m!=null?`${fmt(m.last_spurt_m)} m`:'—'],['Spurt delay',m?`${fmt(m.spurt_delay_m)} m`:'—'],
    ['Duel triggers',m?.duel_events??'—'],['Finish HP',m?`${fmt(m.hp_finish,0)} · ${fmt(100*m.hp_finish/m.hp_start)}%`:'—'],
    ['Scaled time',r.scaled_display||'—'],['Points',r.points],['Skill activations',m?.skill_activations??'—'],

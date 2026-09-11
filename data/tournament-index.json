@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T20:11:42Z",
+  "generated_at": "2026-09-11T21:27:05Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
@@ -347,7 +347,10 @@
           "team_id": "dominarium",
           "uma": "Tamamo Cross",
           "discord": "@LESKBILL",
-          "display_name": "LESKBILL"
+          "variant_id": 102101,
+          "portrait": "assets/runners/102101.webp",
+          "display_name": "LESKBILL",
+          "points": 12
         },
         "races": [
           {
@@ -361,6 +364,8 @@
                 "discord": "@LESKBILL",
                 "place": 1,
                 "points": 4,
+                "variant_id": 102101,
+                "portrait": "assets/runners/102101.webp",
                 "display_name": "LESKBILL"
               },
               {
@@ -369,6 +374,8 @@
                 "discord": "@Beep",
                 "place": 2,
                 "points": 2,
+                "variant_id": 100701,
+                "portrait": "assets/runners/100701.webp",
                 "display_name": "Beep"
               },
               {
@@ -377,6 +384,8 @@
                 "discord": "@eibarman",
                 "place": 3,
                 "points": 1,
+                "variant_id": 102401,
+                "portrait": "assets/runners/102401.webp",
                 "display_name": "eibarman"
               }
             ],
@@ -400,6 +409,8 @@
                 "discord": "@eibarman",
                 "place": 1,
                 "points": 4,
+                "variant_id": 102401,
+                "portrait": "assets/runners/102401.webp",
                 "display_name": "eibarman"
               },
               {
@@ -408,6 +419,8 @@
                 "discord": "@Beep",
                 "place": 2,
                 "points": 2,
+                "variant_id": 100701,
+                "portrait": "assets/runners/100701.webp",
                 "display_name": "Beep"
               },
               {
@@ -416,6 +429,8 @@
                 "discord": "@Flareon",
                 "place": 3,
                 "points": 1,
+                "variant_id": 100602,
+                "portrait": "assets/runners/100602.webp",
                 "display_name": "Flareon"
               }
             ],
@@ -439,6 +454,8 @@
                 "discord": "@eibarman",
                 "place": 1,
                 "points": 4,
+                "variant_id": 102401,
+                "portrait": "assets/runners/102401.webp",
                 "display_name": "eibarman"
               },
               {
@@ -447,6 +464,8 @@
                 "discord": "@Beep",
                 "place": 2,
                 "points": 2,
+                "variant_id": 100701,
+                "portrait": "assets/runners/100701.webp",
                 "display_name": "Beep"
               },
               {
@@ -455,6 +474,8 @@
                 "discord": "@Purge",
                 "place": 3,
                 "points": 1,
+                "variant_id": 106701,
+                "portrait": "assets/runners/106701.webp",
                 "display_name": "Purge"
               }
             ],
@@ -478,6 +499,8 @@
                 "discord": "@IceColaa",
                 "place": 1,
                 "points": 4,
+                "variant_id": 101301,
+                "portrait": "assets/runners/101301.webp",
                 "display_name": "IceColaa"
               },
               {
@@ -486,6 +509,8 @@
                 "discord": "@Cal",
                 "place": 2,
                 "points": 2,
+                "variant_id": 103101,
+                "portrait": "assets/runners/103101.webp",
                 "display_name": "Cal"
               },
               {
@@ -494,6 +519,8 @@
                 "discord": "@David",
                 "place": 3,
                 "points": 1,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
                 "display_name": "David"
               }
             ],
@@ -517,6 +544,8 @@
                 "discord": "@LESKBILL",
                 "place": 1,
                 "points": 4,
+                "variant_id": 102101,
+                "portrait": "assets/runners/102101.webp",
                 "display_name": "LESKBILL"
               },
               {
@@ -525,6 +554,8 @@
                 "discord": "@Flareon",
                 "place": 2,
                 "points": 2,
+                "variant_id": 100602,
+                "portrait": "assets/runners/100602.webp",
                 "display_name": "Flareon"
               },
               {
@@ -533,6 +564,8 @@
                 "discord": "@Beep",
                 "place": 3,
                 "points": 1,
+                "variant_id": 100701,
+                "portrait": "assets/runners/100701.webp",
                 "display_name": "Beep"
               }
             ],
@@ -556,6 +589,8 @@
                 "discord": "@Flareon",
                 "place": 1,
                 "points": 4,
+                "variant_id": 100602,
+                "portrait": "assets/runners/100602.webp",
                 "display_name": "Flareon"
               },
               {
@@ -564,6 +599,8 @@
                 "discord": "@Cal",
                 "place": 2,
                 "points": 2,
+                "variant_id": 103101,
+                "portrait": "assets/runners/103101.webp",
                 "display_name": "Cal"
               },
               {
@@ -572,6 +609,8 @@
                 "discord": "@Beep",
                 "place": 3,
                 "points": 1,
+                "variant_id": 100701,
+                "portrait": "assets/runners/100701.webp",
                 "display_name": "Beep"
               }
             ],
@@ -595,6 +634,8 @@
                 "discord": "@LESKBILL",
                 "place": 1,
                 "points": 4,
+                "variant_id": 102101,
+                "portrait": "assets/runners/102101.webp",
                 "display_name": "LESKBILL"
               },
               {
@@ -603,6 +644,8 @@
                 "discord": "@Flareon",
                 "place": 2,
                 "points": 2,
+                "variant_id": 100602,
+                "portrait": "assets/runners/100602.webp",
                 "display_name": "Flareon"
               },
               {
@@ -611,6 +654,8 @@
                 "discord": "@Cal",
                 "place": 3,
                 "points": 1,
+                "variant_id": 103101,
+                "portrait": "assets/runners/103101.webp",
                 "display_name": "Cal"
               }
             ],
@@ -645,6 +690,8 @@
           "uma": "Oguri Cap (Christmas)",
           "discord": "@Flareon",
           "benched": false,
+          "variant_id": 100602,
+          "portrait": "assets/runners/100602.webp",
           "display_name": "Flareon"
         },
         {
@@ -652,6 +699,8 @@
           "uma": "Gold Ship",
           "discord": "@Beep",
           "benched": false,
+          "variant_id": 100701,
+          "portrait": "assets/runners/100701.webp",
           "display_name": "Beep"
         },
         {
@@ -659,6 +708,8 @@
           "uma": "Satono Diamond",
           "discord": "@Purge",
           "benched": false,
+          "variant_id": 106701,
+          "portrait": "assets/runners/106701.webp",
           "display_name": "Purge"
         },
         {
@@ -666,6 +717,8 @@
           "uma": "T.M. Opera O (New Year)",
           "discord": "@Zangona",
           "benched": false,
+          "variant_id": 101502,
+          "portrait": "assets/runners/101502.webp",
           "display_name": "Zangona"
         },
         {
@@ -673,6 +726,8 @@
           "uma": "Mejiro McQueen",
           "discord": "@IceColaa",
           "benched": false,
+          "variant_id": 101301,
+          "portrait": "assets/runners/101301.webp",
           "display_name": "IceColaa"
         },
         {
@@ -680,6 +735,8 @@
           "uma": "Mejiro Palmer",
           "discord": null,
           "benched": true,
+          "variant_id": 106401,
+          "portrait": "assets/runners/106401.webp",
           "display_name": ""
         },
         {
@@ -687,6 +744,8 @@
           "uma": "Mejiro McQueen (Summer)",
           "discord": "@CallMeNeko",
           "benched": false,
+          "variant_id": 101303,
+          "portrait": "assets/runners/101303.webp",
           "display_name": "CallMeNeko"
         },
         {
@@ -694,6 +753,8 @@
           "uma": "Ines Fujin",
           "discord": "@Cal",
           "benched": false,
+          "variant_id": 103101,
+          "portrait": "assets/runners/103101.webp",
           "display_name": "Cal"
         },
         {
@@ -701,6 +762,8 @@
           "uma": "Mayano Top Gun",
           "discord": "@eibarman",
           "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
           "display_name": "eibarman"
         },
         {
@@ -708,6 +771,8 @@
           "uma": "Oguri Cap",
           "discord": "@David",
           "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
           "display_name": "David"
         },
         {
@@ -715,6 +780,8 @@
           "uma": "Mejiro Dober (Camping)",
           "discord": null,
           "benched": true,
+          "variant_id": 105902,
+          "portrait": "assets/runners/105902.webp",
           "display_name": ""
         },
         {
@@ -722,10 +789,115 @@
           "uma": "Tamamo Cross",
           "discord": "@LESKBILL",
           "benched": false,
+          "variant_id": 102101,
+          "portrait": "assets/runners/102101.webp",
           "display_name": "LESKBILL"
         }
       ],
-      "lineup_source": "draft"
+      "lineup_source": "draft",
+      "player_points": [
+        {
+          "team_id": "dominarium",
+          "uma": "Tamamo Cross",
+          "discord": "@LESKBILL",
+          "benched": false,
+          "variant_id": 102101,
+          "portrait": "assets/runners/102101.webp",
+          "display_name": "LESKBILL",
+          "points": 12
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Mayano Top Gun",
+          "discord": "@eibarman",
+          "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
+          "display_name": "eibarman",
+          "points": 9
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Ines Fujin",
+          "discord": "@Cal",
+          "benched": false,
+          "variant_id": 103101,
+          "portrait": "assets/runners/103101.webp",
+          "display_name": "Cal",
+          "points": 5
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Oguri Cap",
+          "discord": "@David",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "David",
+          "points": 1
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "@CallMeNeko",
+          "benched": false,
+          "variant_id": 101303,
+          "portrait": "assets/runners/101303.webp",
+          "display_name": "CallMeNeko",
+          "points": 0
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Oguri Cap (Christmas)",
+          "discord": "@Flareon",
+          "benched": false,
+          "variant_id": 100602,
+          "portrait": "assets/runners/100602.webp",
+          "display_name": "Flareon",
+          "points": 9
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Gold Ship",
+          "discord": "@Beep",
+          "benched": false,
+          "variant_id": 100701,
+          "portrait": "assets/runners/100701.webp",
+          "display_name": "Beep",
+          "points": 8
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Mejiro McQueen",
+          "discord": "@IceColaa",
+          "benched": false,
+          "variant_id": 101301,
+          "portrait": "assets/runners/101301.webp",
+          "display_name": "IceColaa",
+          "points": 4
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Satono Diamond",
+          "discord": "@Purge",
+          "benched": false,
+          "variant_id": 106701,
+          "portrait": "assets/runners/106701.webp",
+          "display_name": "Purge",
+          "points": 1
+        },
+        {
+          "team_id": "dominion",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "@Zangona",
+          "benched": false,
+          "variant_id": 101502,
+          "portrait": "assets/runners/101502.webp",
+          "display_name": "Zangona",
+          "points": 0
+        }
+      ],
+      "player_points_recorded": true
     },
     {
       "id": "r1-m2",
@@ -913,7 +1085,10 @@
           "team_id": "domineer",
           "uma": "Inari One",
           "discord": "<@479998555290075136>",
-          "display_name": ""
+          "variant_id": 103401,
+          "portrait": "assets/runners/103401.webp",
+          "display_name": "",
+          "points": 10
         },
         "races": [
           {
@@ -927,6 +1102,8 @@
                 "discord": "<@1351236267731583036>",
                 "place": 1,
                 "points": 4,
+                "variant_id": 102301,
+                "portrait": "assets/runners/102301.webp",
                 "display_name": ""
               },
               {
@@ -935,6 +1112,8 @@
                 "discord": "<@479998555290075136>",
                 "place": 2,
                 "points": 2,
+                "variant_id": 103401,
+                "portrait": "assets/runners/103401.webp",
                 "display_name": ""
               },
               {
@@ -943,6 +1122,8 @@
                 "discord": "<@680664099679371265>",
                 "place": 3,
                 "points": 1,
+                "variant_id": 100701,
+                "portrait": "assets/runners/100701.webp",
                 "display_name": ""
               }
             ],
@@ -966,6 +1147,8 @@
                 "discord": "<@499642536554659860>",
                 "place": 1,
                 "points": 4,
+                "variant_id": 102501,
+                "portrait": "assets/runners/102501.webp",
                 "display_name": ""
               },
               {
@@ -974,6 +1157,8 @@
                 "discord": "<@1351236267731583036>",
                 "place": 2,
                 "points": 2,
+                "variant_id": 102301,
+                "portrait": "assets/runners/102301.webp",
                 "display_name": ""
               },
               {
@@ -982,6 +1167,8 @@
                 "discord": "<@382269416836038656>",
                 "place": 3,
                 "points": 1,
+                "variant_id": 101502,
+                "portrait": "assets/runners/101502.webp",
                 "display_name": ""
               }
             ],
@@ -1005,6 +1192,8 @@
                 "discord": "<@479998555290075136>",
                 "place": 1,
                 "points": 4,
+                "variant_id": 103401,
+                "portrait": "assets/runners/103401.webp",
                 "display_name": ""
               },
               {
@@ -1013,6 +1202,8 @@
                 "discord": "<@753451025012097047>",
                 "place": 2,
                 "points": 2,
+                "variant_id": 102401,
+                "portrait": "assets/runners/102401.webp",
                 "display_name": ""
               },
               {
@@ -1021,6 +1212,8 @@
                 "discord": "<@680664099679371265>",
                 "place": 3,
                 "points": 1,
+                "variant_id": 100701,
+                "portrait": "assets/runners/100701.webp",
                 "display_name": ""
               }
             ],
@@ -1044,6 +1237,8 @@
                 "discord": "<@753451025012097047>",
                 "place": 1,
                 "points": 4,
+                "variant_id": 102401,
+                "portrait": "assets/runners/102401.webp",
                 "display_name": ""
               },
               {
@@ -1052,6 +1247,8 @@
                 "discord": "<@382269416836038656>",
                 "place": 2,
                 "points": 2,
+                "variant_id": 101502,
+                "portrait": "assets/runners/101502.webp",
                 "display_name": ""
               },
               {
@@ -1060,6 +1257,8 @@
                 "discord": "<@897274147841912843>",
                 "place": 3,
                 "points": 1,
+                "variant_id": 104601,
+                "portrait": "assets/runners/104601.webp",
                 "display_name": ""
               }
             ],
@@ -1083,6 +1282,8 @@
                 "discord": "<@479998555290075136>",
                 "place": 1,
                 "points": 4,
+                "variant_id": 103401,
+                "portrait": "assets/runners/103401.webp",
                 "display_name": ""
               },
               {
@@ -1091,6 +1292,8 @@
                 "discord": "<@897274147841912843>",
                 "place": 2,
                 "points": 2,
+                "variant_id": 104601,
+                "portrait": "assets/runners/104601.webp",
                 "display_name": ""
               },
               {
@@ -1099,6 +1302,8 @@
                 "discord": "<@1351236267731583036>",
                 "place": 3,
                 "points": 1,
+                "variant_id": 102301,
+                "portrait": "assets/runners/102301.webp",
                 "display_name": ""
               }
             ],
@@ -1133,6 +1338,8 @@
           "uma": "T.M. Opera O (New Year)",
           "discord": "<@382269416836038656>",
           "benched": false,
+          "variant_id": 101502,
+          "portrait": "assets/runners/101502.webp",
           "display_name": ""
         },
         {
@@ -1140,6 +1347,8 @@
           "uma": "Mayano Top Gun",
           "discord": "<@753451025012097047>",
           "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
           "display_name": ""
         },
         {
@@ -1147,6 +1356,8 @@
           "uma": "Biwa Hayahide",
           "discord": "<@1351236267731583036>",
           "benched": false,
+          "variant_id": 102301,
+          "portrait": "assets/runners/102301.webp",
           "display_name": ""
         },
         {
@@ -1154,6 +1365,8 @@
           "uma": "Satono Diamond",
           "discord": null,
           "benched": true,
+          "variant_id": 106701,
+          "portrait": "assets/runners/106701.webp",
           "display_name": ""
         },
         {
@@ -1161,6 +1374,8 @@
           "uma": "Gold Ship",
           "discord": "<@680664099679371265>",
           "benched": false,
+          "variant_id": 100701,
+          "portrait": "assets/runners/100701.webp",
           "display_name": ""
         },
         {
@@ -1168,6 +1383,8 @@
           "uma": "Inari One",
           "discord": "<@479998555290075136>",
           "benched": false,
+          "variant_id": 103401,
+          "portrait": "assets/runners/103401.webp",
           "display_name": ""
         },
         {
@@ -1175,6 +1392,8 @@
           "uma": "Nishino Flower",
           "discord": "<@199604689321459719>",
           "benched": false,
+          "variant_id": 105101,
+          "portrait": "assets/runners/105101.webp",
           "display_name": ""
         },
         {
@@ -1182,6 +1401,8 @@
           "uma": "Manhattan Cafe",
           "discord": "<@499642536554659860>",
           "benched": false,
+          "variant_id": 102501,
+          "portrait": "assets/runners/102501.webp",
           "display_name": ""
         },
         {
@@ -1189,6 +1410,8 @@
           "uma": "Narita Brian",
           "discord": "<@797271628773982269>",
           "benched": false,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
           "display_name": ""
         },
         {
@@ -1196,6 +1419,8 @@
           "uma": "Smart Falcon",
           "discord": "<@897274147841912843>",
           "benched": false,
+          "variant_id": 104601,
+          "portrait": "assets/runners/104601.webp",
           "display_name": ""
         },
         {
@@ -1203,6 +1428,8 @@
           "uma": "Kitasan Black",
           "discord": "<@229748241866948609>",
           "benched": false,
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp",
           "display_name": ""
         },
         {
@@ -1210,10 +1437,115 @@
           "uma": "Curren Chan (Wedding)",
           "discord": null,
           "benched": true,
+          "variant_id": 103802,
+          "portrait": "assets/runners/103802.webp",
           "display_name": ""
         }
       ],
-      "lineup_source": "draft"
+      "lineup_source": "draft",
+      "player_points": [
+        {
+          "team_id": "domichill",
+          "uma": "Manhattan Cafe",
+          "discord": "<@499642536554659860>",
+          "benched": false,
+          "variant_id": 102501,
+          "portrait": "assets/runners/102501.webp",
+          "display_name": "",
+          "points": 4
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Smart Falcon",
+          "discord": "<@897274147841912843>",
+          "benched": false,
+          "variant_id": 104601,
+          "portrait": "assets/runners/104601.webp",
+          "display_name": "",
+          "points": 3
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Nishino Flower",
+          "discord": "<@199604689321459719>",
+          "benched": false,
+          "variant_id": 105101,
+          "portrait": "assets/runners/105101.webp",
+          "display_name": "",
+          "points": 0
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Narita Brian",
+          "discord": "<@797271628773982269>",
+          "benched": false,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
+          "display_name": "",
+          "points": 0
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Kitasan Black",
+          "discord": "<@229748241866948609>",
+          "benched": false,
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp",
+          "display_name": "",
+          "points": 0
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Inari One",
+          "discord": "<@479998555290075136>",
+          "benched": false,
+          "variant_id": 103401,
+          "portrait": "assets/runners/103401.webp",
+          "display_name": "",
+          "points": 10
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Biwa Hayahide",
+          "discord": "<@1351236267731583036>",
+          "benched": false,
+          "variant_id": 102301,
+          "portrait": "assets/runners/102301.webp",
+          "display_name": "",
+          "points": 7
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Mayano Top Gun",
+          "discord": "<@753451025012097047>",
+          "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
+          "display_name": "",
+          "points": 6
+        },
+        {
+          "team_id": "domineer",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "<@382269416836038656>",
+          "benched": false,
+          "variant_id": 101502,
+          "portrait": "assets/runners/101502.webp",
+          "display_name": "",
+          "points": 3
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Gold Ship",
+          "discord": "<@680664099679371265>",
+          "benched": false,
+          "variant_id": 100701,
+          "portrait": "assets/runners/100701.webp",
+          "display_name": "",
+          "points": 2
+        }
+      ],
+      "player_points_recorded": true
     },
     {
       "id": "r1-m3",
@@ -1399,7 +1731,10 @@
           "team_id": "dominium",
           "uma": "Seiun Sky",
           "discord": "@Juqi",
-          "display_name": "Juqi"
+          "variant_id": 102001,
+          "portrait": "assets/runners/102001.webp",
+          "display_name": "Juqi",
+          "points": 15
         },
         "races": [
           {
@@ -1413,6 +1748,8 @@
                 "discord": "@Juqi",
                 "place": 1,
                 "points": 4,
+                "variant_id": 102001,
+                "portrait": "assets/runners/102001.webp",
                 "display_name": "Juqi"
               },
               {
@@ -1421,6 +1758,8 @@
                 "discord": "@Sky",
                 "place": 2,
                 "points": 2,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
                 "display_name": "Sky"
               },
               {
@@ -1429,6 +1768,8 @@
                 "discord": "@Mor Mas",
                 "place": 3,
                 "points": 1,
+                "variant_id": 104601,
+                "portrait": "assets/runners/104601.webp",
                 "display_name": "Mor Mas"
               }
             ],
@@ -1452,6 +1793,8 @@
                 "discord": "@unluckyyy",
                 "place": 1,
                 "points": 4,
+                "variant_id": 102701,
+                "portrait": "assets/runners/102701.webp",
                 "display_name": "unluckyyy"
               },
               {
@@ -1460,6 +1803,8 @@
                 "discord": "@Mamboo 🌊🩵",
                 "place": 2,
                 "points": 2,
+                "variant_id": 106801,
+                "portrait": "assets/runners/106801.webp",
                 "display_name": "Mamboo 🌊🩵"
               },
               {
@@ -1468,6 +1813,8 @@
                 "discord": "@Raven621|Flying Free",
                 "place": 3,
                 "points": 1,
+                "variant_id": 100501,
+                "portrait": "assets/runners/100501.webp",
                 "display_name": "Raven621|Flying Free"
               }
             ],
@@ -1491,6 +1838,8 @@
                 "discord": "@Juqi",
                 "place": 1,
                 "points": 4,
+                "variant_id": 102001,
+                "portrait": "assets/runners/102001.webp",
                 "display_name": "Juqi"
               },
               {
@@ -1499,6 +1848,8 @@
                 "discord": "@RaptorBolt717",
                 "place": 2,
                 "points": 2,
+                "variant_id": 105901,
+                "portrait": "assets/runners/105901.webp",
                 "display_name": "RaptorBolt717"
               },
               {
@@ -1507,6 +1858,8 @@
                 "discord": "@Sky",
                 "place": 3,
                 "points": 1,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
                 "display_name": "Sky"
               }
             ],
@@ -1530,6 +1883,8 @@
                 "discord": "@unluckyyy",
                 "place": 1,
                 "points": 4,
+                "variant_id": 102701,
+                "portrait": "assets/runners/102701.webp",
                 "display_name": "unluckyyy"
               },
               {
@@ -1538,6 +1893,8 @@
                 "discord": "@Juqi",
                 "place": 2,
                 "points": 2,
+                "variant_id": 102001,
+                "portrait": "assets/runners/102001.webp",
                 "display_name": "Juqi"
               },
               {
@@ -1546,6 +1903,8 @@
                 "discord": "@Sky",
                 "place": 3,
                 "points": 1,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
                 "display_name": "Sky"
               }
             ],
@@ -1569,6 +1928,8 @@
                 "discord": "@Mor Mas",
                 "place": 1,
                 "points": 4,
+                "variant_id": 104601,
+                "portrait": "assets/runners/104601.webp",
                 "display_name": "Mor Mas"
               },
               {
@@ -1577,6 +1938,8 @@
                 "discord": "@unluckyyy",
                 "place": 2,
                 "points": 2,
+                "variant_id": 102701,
+                "portrait": "assets/runners/102701.webp",
                 "display_name": "unluckyyy"
               },
               {
@@ -1585,6 +1948,8 @@
                 "discord": "@Juqi",
                 "place": 3,
                 "points": 1,
+                "variant_id": 102001,
+                "portrait": "assets/runners/102001.webp",
                 "display_name": "Juqi"
               }
             ],
@@ -1608,6 +1973,8 @@
                 "discord": "@Juqi",
                 "place": 1,
                 "points": 4,
+                "variant_id": 102001,
+                "portrait": "assets/runners/102001.webp",
                 "display_name": "Juqi"
               },
               {
@@ -1616,6 +1983,8 @@
                 "discord": "@Yumi",
                 "place": 2,
                 "points": 2,
+                "variant_id": 100101,
+                "portrait": "assets/runners/100101.webp",
                 "display_name": "Yumi"
               },
               {
@@ -1624,6 +1993,8 @@
                 "discord": "@Yokka",
                 "place": 3,
                 "points": 1,
+                "variant_id": 101001,
+                "portrait": "assets/runners/101001.webp",
                 "display_name": "Yokka"
               }
             ],
@@ -1658,6 +2029,8 @@
           "uma": "Seiun Sky",
           "discord": "@Juqi",
           "benched": false,
+          "variant_id": 102001,
+          "portrait": "assets/runners/102001.webp",
           "display_name": "Juqi"
         },
         {
@@ -1665,6 +2038,8 @@
           "uma": "Narita Brian",
           "discord": null,
           "benched": true,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
           "display_name": ""
         },
         {
@@ -1672,6 +2047,8 @@
           "uma": "Mejiro Ryan",
           "discord": "@unluckyyy",
           "benched": false,
+          "variant_id": 102701,
+          "portrait": "assets/runners/102701.webp",
           "display_name": "unluckyyy"
         },
         {
@@ -1679,6 +2056,8 @@
           "uma": "Kitasan Black",
           "discord": "@Mamboo 🌊🩵",
           "benched": false,
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp",
           "display_name": "Mamboo 🌊🩵"
         },
         {
@@ -1686,6 +2065,8 @@
           "uma": "Taiki Shuttle",
           "discord": "@Yokka",
           "benched": false,
+          "variant_id": 101001,
+          "portrait": "assets/runners/101001.webp",
           "display_name": "Yokka"
         },
         {
@@ -1693,6 +2074,8 @@
           "uma": "Fuji Kiseki",
           "discord": "@Raven621|Flying Free",
           "benched": false,
+          "variant_id": 100501,
+          "portrait": "assets/runners/100501.webp",
           "display_name": "Raven621|Flying Free"
         },
         {
@@ -1700,6 +2083,8 @@
           "uma": "Mejiro Dober",
           "discord": "@RaptorBolt717",
           "benched": false,
+          "variant_id": 105901,
+          "portrait": "assets/runners/105901.webp",
           "display_name": "RaptorBolt717"
         },
         {
@@ -1707,6 +2092,8 @@
           "uma": "Oguri Cap",
           "discord": "@Sky",
           "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
           "display_name": "Sky"
         },
         {
@@ -1714,6 +2101,8 @@
           "uma": "Special Week",
           "discord": "@Yumi",
           "benched": false,
+          "variant_id": 100101,
+          "portrait": "assets/runners/100101.webp",
           "display_name": "Yumi"
         },
         {
@@ -1721,6 +2110,8 @@
           "uma": "King Halo",
           "discord": "@David",
           "benched": false,
+          "variant_id": 106101,
+          "portrait": "assets/runners/106101.webp",
           "display_name": "David"
         },
         {
@@ -1728,6 +2119,8 @@
           "uma": "Smart Falcon",
           "discord": "@Mor Mas",
           "benched": false,
+          "variant_id": 104601,
+          "portrait": "assets/runners/104601.webp",
           "display_name": "Mor Mas"
         },
         {
@@ -1735,10 +2128,115 @@
           "uma": "Nice Nature (Cheerleader)",
           "discord": null,
           "benched": true,
+          "variant_id": 106002,
+          "portrait": "assets/runners/106002.webp",
           "display_name": ""
         }
       ],
-      "lineup_source": "draft"
+      "lineup_source": "draft",
+      "player_points": [
+        {
+          "team_id": "dominante",
+          "uma": "Smart Falcon",
+          "discord": "@Mor Mas",
+          "benched": false,
+          "variant_id": 104601,
+          "portrait": "assets/runners/104601.webp",
+          "display_name": "Mor Mas",
+          "points": 5
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Oguri Cap",
+          "discord": "@Sky",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Sky",
+          "points": 4
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Mejiro Dober",
+          "discord": "@RaptorBolt717",
+          "benched": false,
+          "variant_id": 105901,
+          "portrait": "assets/runners/105901.webp",
+          "display_name": "RaptorBolt717",
+          "points": 2
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Special Week",
+          "discord": "@Yumi",
+          "benched": false,
+          "variant_id": 100101,
+          "portrait": "assets/runners/100101.webp",
+          "display_name": "Yumi",
+          "points": 2
+        },
+        {
+          "team_id": "dominante",
+          "uma": "King Halo",
+          "discord": "@David",
+          "benched": false,
+          "variant_id": 106101,
+          "portrait": "assets/runners/106101.webp",
+          "display_name": "David",
+          "points": 0
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Seiun Sky",
+          "discord": "@Juqi",
+          "benched": false,
+          "variant_id": 102001,
+          "portrait": "assets/runners/102001.webp",
+          "display_name": "Juqi",
+          "points": 15
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Mejiro Ryan",
+          "discord": "@unluckyyy",
+          "benched": false,
+          "variant_id": 102701,
+          "portrait": "assets/runners/102701.webp",
+          "display_name": "unluckyyy",
+          "points": 10
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Kitasan Black",
+          "discord": "@Mamboo 🌊🩵",
+          "benched": false,
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp",
+          "display_name": "Mamboo 🌊🩵",
+          "points": 2
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Fuji Kiseki",
+          "discord": "@Raven621|Flying Free",
+          "benched": false,
+          "variant_id": 100501,
+          "portrait": "assets/runners/100501.webp",
+          "display_name": "Raven621|Flying Free",
+          "points": 1
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Taiki Shuttle",
+          "discord": "@Yokka",
+          "benched": false,
+          "variant_id": 101001,
+          "portrait": "assets/runners/101001.webp",
+          "display_name": "Yokka",
+          "points": 1
+        }
+      ],
+      "player_points_recorded": true
     },
     {
       "id": "r2-m1",
@@ -1806,7 +2304,9 @@
       "needs_review": false,
       "target_reached": [],
       "lineup": [],
-      "lineup_source": "draft"
+      "lineup_source": "draft",
+      "player_points": [],
+      "player_points_recorded": false
     },
     {
       "id": "r2-m2",
@@ -1874,7 +2374,9 @@
       "needs_review": false,
       "target_reached": [],
       "lineup": [],
-      "lineup_source": "draft"
+      "lineup_source": "draft",
+      "player_points": [],
+      "player_points_recorded": false
     },
     {
       "id": "r2-m3",
@@ -1942,7 +2444,9 @@
       "needs_review": false,
       "target_reached": [],
       "lineup": [],
-      "lineup_source": "draft"
+      "lineup_source": "draft",
+      "player_points": [],
+      "player_points_recorded": false
     },
     {
       "id": "r2-m4",
@@ -2268,6 +2772,8 @@
                 "discord": "<@762151062839885824>",
                 "place": 1,
                 "points": 4,
+                "variant_id": 101303,
+                "portrait": "assets/runners/101303.webp",
                 "display_name": "raine"
               },
               {
@@ -2276,6 +2782,8 @@
                 "discord": "<@221323450529087488>",
                 "place": 2,
                 "points": 2,
+                "variant_id": 102602,
+                "portrait": "assets/runners/102602.webp",
                 "display_name": "Mayday"
               },
               {
@@ -2284,6 +2792,8 @@
                 "discord": "<@667998121929998349>",
                 "place": 3,
                 "points": 1,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
                 "display_name": "Unluckyyy"
               }
             ],
@@ -2307,6 +2817,8 @@
                 "discord": "<@1244589187202551809>",
                 "place": 1,
                 "points": 4,
+                "variant_id": 103002,
+                "portrait": "assets/runners/103002.webp",
                 "display_name": "Mamboo"
               },
               {
@@ -2315,6 +2827,8 @@
                 "discord": "<@1456439897047957766>",
                 "place": 2,
                 "points": 2,
+                "variant_id": 102001,
+                "portrait": "assets/runners/102001.webp",
                 "display_name": "Reyov"
               },
               {
@@ -2323,6 +2837,8 @@
                 "discord": "<@762151062839885824>",
                 "place": 3,
                 "points": 1,
+                "variant_id": 101303,
+                "portrait": "assets/runners/101303.webp",
                 "display_name": "raine"
               }
             ],
@@ -2346,6 +2862,8 @@
                 "discord": "<@762151062839885824>",
                 "place": 1,
                 "points": 4,
+                "variant_id": 101303,
+                "portrait": "assets/runners/101303.webp",
                 "display_name": "raine"
               },
               {
@@ -2354,6 +2872,8 @@
                 "discord": "<@221323450529087488>",
                 "place": 2,
                 "points": 2,
+                "variant_id": 102602,
+                "portrait": "assets/runners/102602.webp",
                 "display_name": "Mayday"
               },
               {
@@ -2362,6 +2882,8 @@
                 "discord": "<@1456439897047957766>",
                 "place": 3,
                 "points": 1,
+                "variant_id": 102001,
+                "portrait": "assets/runners/102001.webp",
                 "display_name": "Reyov"
               }
             ],
@@ -2385,6 +2907,8 @@
                 "discord": "<@762151062839885824>",
                 "place": 1,
                 "points": 4,
+                "variant_id": 101303,
+                "portrait": "assets/runners/101303.webp",
                 "display_name": "raine"
               },
               {
@@ -2393,6 +2917,8 @@
                 "discord": "<@378745083236712449>",
                 "place": 2,
                 "points": 2,
+                "variant_id": 102002,
+                "portrait": "assets/runners/102002.webp",
                 "display_name": "Juqi"
               },
               {
@@ -2401,6 +2927,8 @@
                 "discord": "<@667998121929998349>",
                 "place": 3,
                 "points": 1,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
                 "display_name": "Unluckyyy"
               }
             ],
@@ -2424,6 +2952,8 @@
                 "discord": "<@221323450529087488>",
                 "place": 1,
                 "points": 4,
+                "variant_id": 102602,
+                "portrait": "assets/runners/102602.webp",
                 "display_name": "Mayday"
               },
               {
@@ -2432,6 +2962,8 @@
                 "discord": "<@419307287581032449>",
                 "place": 2,
                 "points": 2,
+                "variant_id": 102401,
+                "portrait": "assets/runners/102401.webp",
                 "display_name": "Flyingsparkz"
               },
               {
@@ -2440,6 +2972,8 @@
                 "discord": "<@1244589187202551809>",
                 "place": 3,
                 "points": 1,
+                "variant_id": 103002,
+                "portrait": "assets/runners/103002.webp",
                 "display_name": "Mamboo"
               }
             ],
@@ -2476,79 +3010,101 @@
       "lineup": [
         {
           "team_id": "dominate",
-          "uma": "Mejiro McQueen",
+          "uma": "Mejiro McQueen (Anime)",
+          "discord": "<@451774062491074560>",
+          "benched": false,
           "variant_id": 101302,
-          "display_name": "BYond",
-          "benched": false
+          "portrait": "assets/runners/101302.webp",
+          "display_name": "BYond"
         },
         {
           "team_id": "dominate",
           "uma": "Mayano Top Gun",
+          "discord": "<@419307287581032449>",
+          "benched": false,
           "variant_id": 102401,
-          "display_name": "Flyingsparkz",
-          "benched": false
+          "portrait": "assets/runners/102401.webp",
+          "display_name": "Flyingsparkz"
         },
         {
           "team_id": "dominate",
-          "uma": "Mihono Bourbon",
+          "uma": "Mihono Bourbon (Valentine)",
+          "discord": "<@221323450529087488>",
+          "benched": false,
           "variant_id": 102602,
-          "display_name": "Mayday",
-          "benched": false
+          "portrait": "assets/runners/102602.webp",
+          "display_name": "Mayday"
         },
         {
           "team_id": "dominate",
-          "uma": "Mejiro McQueen",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "<@762151062839885824>",
+          "benched": false,
           "variant_id": 101303,
-          "display_name": "raine",
-          "benched": false
+          "portrait": "assets/runners/101303.webp",
+          "display_name": "raine"
         },
         {
           "team_id": "dominate",
           "uma": "Seiun Sky",
+          "discord": "<@1456439897047957766>",
+          "benched": false,
           "variant_id": 102001,
-          "display_name": "Reyov",
-          "benched": false
+          "portrait": "assets/runners/102001.webp",
+          "display_name": "Reyov"
         },
         {
           "team_id": "dominium",
-          "uma": "Seiun Sky",
+          "uma": "Seiun Sky (Ballroom)",
+          "discord": "<@378745083236712449>",
+          "benched": false,
           "variant_id": 102002,
-          "display_name": "Juqi",
-          "benched": false
+          "portrait": "assets/runners/102002.webp",
+          "display_name": "Juqi"
         },
         {
           "team_id": "dominium",
-          "uma": "Rice Shower",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "<@1244589187202551809>",
+          "benched": false,
           "variant_id": 103002,
-          "display_name": "Mamboo",
-          "benched": false
+          "portrait": "assets/runners/103002.webp",
+          "display_name": "Mamboo"
         },
         {
           "team_id": "dominium",
           "uma": "Special Week",
+          "discord": "<@555964243258769409>",
+          "benched": false,
           "variant_id": 100101,
-          "display_name": "Raven621",
-          "benched": false
+          "portrait": "assets/runners/100101.webp",
+          "display_name": "Raven621"
         },
         {
           "team_id": "dominium",
           "uma": "Oguri Cap",
+          "discord": "<@667998121929998349>",
+          "benched": false,
           "variant_id": 100601,
-          "display_name": "Unluckyyy",
-          "benched": false
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Unluckyyy"
         },
         {
           "team_id": "dominium",
           "uma": "Tamamo Cross",
+          "discord": "<@329792187443445761>",
+          "benched": false,
           "variant_id": 102101,
-          "display_name": "Yokka",
-          "benched": false
+          "portrait": "assets/runners/102101.webp",
+          "display_name": "Yokka"
         },
         {
           "team_id": "dominate",
           "uma": "Mejiro McQueen",
           "discord": null,
           "benched": true,
+          "variant_id": 101301,
+          "portrait": "assets/runners/101301.webp",
           "display_name": ""
         },
         {
@@ -2556,10 +3112,115 @@
           "uma": "Satono Diamond",
           "discord": null,
           "benched": true,
+          "variant_id": 106701,
+          "portrait": "assets/runners/106701.webp",
           "display_name": ""
         }
       ],
-      "lineup_source": "race"
+      "lineup_source": "race",
+      "player_points": [
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "<@762151062839885824>",
+          "benched": false,
+          "variant_id": 101303,
+          "portrait": "assets/runners/101303.webp",
+          "display_name": "raine",
+          "points": 13
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mihono Bourbon (Valentine)",
+          "discord": "<@221323450529087488>",
+          "benched": false,
+          "variant_id": 102602,
+          "portrait": "assets/runners/102602.webp",
+          "display_name": "Mayday",
+          "points": 8
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Seiun Sky",
+          "discord": "<@1456439897047957766>",
+          "benched": false,
+          "variant_id": 102001,
+          "portrait": "assets/runners/102001.webp",
+          "display_name": "Reyov",
+          "points": 3
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mayano Top Gun",
+          "discord": "<@419307287581032449>",
+          "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
+          "display_name": "Flyingsparkz",
+          "points": 2
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen (Anime)",
+          "discord": "<@451774062491074560>",
+          "benched": false,
+          "variant_id": 101302,
+          "portrait": "assets/runners/101302.webp",
+          "display_name": "BYond",
+          "points": 0
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "<@1244589187202551809>",
+          "benched": false,
+          "variant_id": 103002,
+          "portrait": "assets/runners/103002.webp",
+          "display_name": "Mamboo",
+          "points": 5
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Seiun Sky (Ballroom)",
+          "discord": "<@378745083236712449>",
+          "benched": false,
+          "variant_id": 102002,
+          "portrait": "assets/runners/102002.webp",
+          "display_name": "Juqi",
+          "points": 2
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Oguri Cap",
+          "discord": "<@667998121929998349>",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Unluckyyy",
+          "points": 2
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Special Week",
+          "discord": "<@555964243258769409>",
+          "benched": false,
+          "variant_id": 100101,
+          "portrait": "assets/runners/100101.webp",
+          "display_name": "Raven621",
+          "points": 0
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Tamamo Cross",
+          "discord": "<@329792187443445761>",
+          "benched": false,
+          "variant_id": 102101,
+          "portrait": "assets/runners/102101.webp",
+          "display_name": "Yokka",
+          "points": 0
+        }
+      ],
+      "player_points_recorded": true
     },
     {
       "id": "r3-m1",
@@ -2596,7 +3257,9 @@
       "needs_review": false,
       "target_reached": [],
       "lineup": [],
-      "lineup_source": "draft"
+      "lineup_source": "draft",
+      "player_points": [],
+      "player_points_recorded": false
     },
     {
       "id": "r3-m2",
@@ -2639,7 +3302,9 @@
       "needs_review": false,
       "target_reached": [],
       "lineup": [],
-      "lineup_source": "draft"
+      "lineup_source": "draft",
+      "player_points": [],
+      "player_points_recorded": false
     },
     {
       "id": "r4-m1",
@@ -2676,7 +3341,9 @@
       "needs_review": false,
       "target_reached": [],
       "lineup": [],
-      "lineup_source": "draft"
+      "lineup_source": "draft",
+      "player_points": [],
+      "player_points_recorded": false
     }
   ],
   "warnings": [],
@@ -2698,6 +3365,8 @@
           "uma": "Oguri Cap (Christmas)",
           "discord": "@Flareon",
           "benched": false,
+          "variant_id": 100602,
+          "portrait": "assets/runners/100602.webp",
           "display_name": "Flareon"
         },
         {
@@ -2705,6 +3374,8 @@
           "uma": "Gold Ship",
           "discord": "@Beep",
           "benched": false,
+          "variant_id": 100701,
+          "portrait": "assets/runners/100701.webp",
           "display_name": "Beep"
         },
         {
@@ -2712,6 +3383,8 @@
           "uma": "Satono Diamond",
           "discord": "@Purge",
           "benched": false,
+          "variant_id": 106701,
+          "portrait": "assets/runners/106701.webp",
           "display_name": "Purge"
         },
         {
@@ -2719,6 +3392,8 @@
           "uma": "T.M. Opera O (New Year)",
           "discord": "@Zangona",
           "benched": false,
+          "variant_id": 101502,
+          "portrait": "assets/runners/101502.webp",
           "display_name": "Zangona"
         },
         {
@@ -2726,6 +3401,8 @@
           "uma": "Mejiro McQueen",
           "discord": "@IceColaa",
           "benched": false,
+          "variant_id": 101301,
+          "portrait": "assets/runners/101301.webp",
           "display_name": "IceColaa"
         }
       ]
@@ -2740,6 +3417,8 @@
           "uma": "Mejiro McQueen (Summer)",
           "discord": "@CallMeNeko",
           "benched": false,
+          "variant_id": 101303,
+          "portrait": "assets/runners/101303.webp",
           "display_name": "CallMeNeko"
         },
         {
@@ -2747,6 +3426,8 @@
           "uma": "Ines Fujin",
           "discord": "@Cal",
           "benched": false,
+          "variant_id": 103101,
+          "portrait": "assets/runners/103101.webp",
           "display_name": "Cal"
         },
         {
@@ -2754,6 +3435,8 @@
           "uma": "Mayano Top Gun",
           "discord": "@eibarman",
           "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
           "display_name": "eibarman"
         },
         {
@@ -2761,6 +3444,8 @@
           "uma": "Oguri Cap",
           "discord": "@David",
           "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
           "display_name": "David"
         },
         {
@@ -2768,6 +3453,8 @@
           "uma": "Tamamo Cross",
           "discord": "@LESKBILL",
           "benched": false,
+          "variant_id": 102101,
+          "portrait": "assets/runners/102101.webp",
           "display_name": "LESKBILL"
         }
       ]
@@ -2782,6 +3469,8 @@
           "uma": "Nishino Flower",
           "discord": "<@199604689321459719>",
           "benched": false,
+          "variant_id": 105101,
+          "portrait": "assets/runners/105101.webp",
           "display_name": ""
         },
         {
@@ -2789,6 +3478,8 @@
           "uma": "Manhattan Cafe",
           "discord": "<@499642536554659860>",
           "benched": false,
+          "variant_id": 102501,
+          "portrait": "assets/runners/102501.webp",
           "display_name": ""
         },
         {
@@ -2796,6 +3487,8 @@
           "uma": "Narita Brian",
           "discord": "<@797271628773982269>",
           "benched": false,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
           "display_name": ""
         },
         {
@@ -2803,6 +3496,8 @@
           "uma": "Smart Falcon",
           "discord": "<@897274147841912843>",
           "benched": false,
+          "variant_id": 104601,
+          "portrait": "assets/runners/104601.webp",
           "display_name": ""
         },
         {
@@ -2810,6 +3505,8 @@
           "uma": "Kitasan Black",
           "discord": "<@229748241866948609>",
           "benched": false,
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp",
           "display_name": ""
         }
       ]
@@ -2824,6 +3521,8 @@
           "uma": "T.M. Opera O (New Year)",
           "discord": "<@382269416836038656>",
           "benched": false,
+          "variant_id": 101502,
+          "portrait": "assets/runners/101502.webp",
           "display_name": ""
         },
         {
@@ -2831,6 +3530,8 @@
           "uma": "Mayano Top Gun",
           "discord": "<@753451025012097047>",
           "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
           "display_name": ""
         },
         {
@@ -2838,6 +3539,8 @@
           "uma": "Biwa Hayahide",
           "discord": "<@1351236267731583036>",
           "benched": false,
+          "variant_id": 102301,
+          "portrait": "assets/runners/102301.webp",
           "display_name": ""
         },
         {
@@ -2845,6 +3548,8 @@
           "uma": "Gold Ship",
           "discord": "<@680664099679371265>",
           "benched": false,
+          "variant_id": 100701,
+          "portrait": "assets/runners/100701.webp",
           "display_name": ""
         },
         {
@@ -2852,6 +3557,8 @@
           "uma": "Inari One",
           "discord": "<@479998555290075136>",
           "benched": false,
+          "variant_id": 103401,
+          "portrait": "assets/runners/103401.webp",
           "display_name": ""
         }
       ]
@@ -2863,38 +3570,48 @@
       "members": [
         {
           "team_id": "dominium",
-          "uma": "Seiun Sky",
+          "uma": "Seiun Sky (Ballroom)",
+          "discord": "<@378745083236712449>",
+          "benched": false,
           "variant_id": 102002,
-          "display_name": "Juqi",
-          "benched": false
+          "portrait": "assets/runners/102002.webp",
+          "display_name": "Juqi"
         },
         {
           "team_id": "dominium",
-          "uma": "Rice Shower",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "<@1244589187202551809>",
+          "benched": false,
           "variant_id": 103002,
-          "display_name": "Mamboo",
-          "benched": false
+          "portrait": "assets/runners/103002.webp",
+          "display_name": "Mamboo"
         },
         {
           "team_id": "dominium",
           "uma": "Special Week",
+          "discord": "<@555964243258769409>",
+          "benched": false,
           "variant_id": 100101,
-          "display_name": "Raven621",
-          "benched": false
+          "portrait": "assets/runners/100101.webp",
+          "display_name": "Raven621"
         },
         {
           "team_id": "dominium",
           "uma": "Oguri Cap",
+          "discord": "<@667998121929998349>",
+          "benched": false,
           "variant_id": 100601,
-          "display_name": "Unluckyyy",
-          "benched": false
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Unluckyyy"
         },
         {
           "team_id": "dominium",
           "uma": "Tamamo Cross",
+          "discord": "<@329792187443445761>",
+          "benched": false,
           "variant_id": 102101,
-          "display_name": "Yokka",
-          "benched": false
+          "portrait": "assets/runners/102101.webp",
+          "display_name": "Yokka"
         }
       ]
     },
@@ -2908,6 +3625,8 @@
           "uma": "Mejiro Dober",
           "discord": "@RaptorBolt717",
           "benched": false,
+          "variant_id": 105901,
+          "portrait": "assets/runners/105901.webp",
           "display_name": "RaptorBolt717"
         },
         {
@@ -2915,6 +3634,8 @@
           "uma": "Oguri Cap",
           "discord": "@Sky",
           "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
           "display_name": "Sky"
         },
         {
@@ -2922,6 +3643,8 @@
           "uma": "Special Week",
           "discord": "@Yumi",
           "benched": false,
+          "variant_id": 100101,
+          "portrait": "assets/runners/100101.webp",
           "display_name": "Yumi"
         },
         {
@@ -2929,6 +3652,8 @@
           "uma": "King Halo",
           "discord": "@David",
           "benched": false,
+          "variant_id": 106101,
+          "portrait": "assets/runners/106101.webp",
           "display_name": "David"
         },
         {
@@ -2936,6 +3661,8 @@
           "uma": "Smart Falcon",
           "discord": "@Mor Mas",
           "benched": false,
+          "variant_id": 104601,
+          "portrait": "assets/runners/104601.webp",
           "display_name": "Mor Mas"
         }
       ]
@@ -2947,38 +3674,48 @@
       "members": [
         {
           "team_id": "dominate",
-          "uma": "Mejiro McQueen",
+          "uma": "Mejiro McQueen (Anime)",
+          "discord": "<@451774062491074560>",
+          "benched": false,
           "variant_id": 101302,
-          "display_name": "BYond",
-          "benched": false
+          "portrait": "assets/runners/101302.webp",
+          "display_name": "BYond"
         },
         {
           "team_id": "dominate",
           "uma": "Mayano Top Gun",
+          "discord": "<@419307287581032449>",
+          "benched": false,
           "variant_id": 102401,
-          "display_name": "Flyingsparkz",
-          "benched": false
+          "portrait": "assets/runners/102401.webp",
+          "display_name": "Flyingsparkz"
         },
         {
           "team_id": "dominate",
-          "uma": "Mihono Bourbon",
+          "uma": "Mihono Bourbon (Valentine)",
+          "discord": "<@221323450529087488>",
+          "benched": false,
           "variant_id": 102602,
-          "display_name": "Mayday",
-          "benched": false
+          "portrait": "assets/runners/102602.webp",
+          "display_name": "Mayday"
         },
         {
           "team_id": "dominate",
-          "uma": "Mejiro McQueen",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "<@762151062839885824>",
+          "benched": false,
           "variant_id": 101303,
-          "display_name": "raine",
-          "benched": false
+          "portrait": "assets/runners/101303.webp",
+          "display_name": "raine"
         },
         {
           "team_id": "dominate",
           "uma": "Seiun Sky",
+          "discord": "<@1456439897047957766>",
+          "benched": false,
           "variant_id": 102001,
-          "display_name": "Reyov",
-          "benched": false
+          "portrait": "assets/runners/102001.webp",
+          "display_name": "Reyov"
         }
       ]
     }

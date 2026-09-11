@@ -62,11 +62,21 @@ function courseFacts(c){return [c.distance_m?c.distance_m+'m':null,c.surface,c.t
 function matchTabs(m, active){
  return `<nav class="dt-match-tabs" aria-label="Match sections">${[['results','Race results'],['draft','Match draft']].map(([view,label])=>`<a href="${pageUrl({round:m.round,match:m.id,view})}" ${view===active?'aria-current="page"':''}>${label}</a>`).join('')}</nav>`;
 }
-function rosterTeam(m, team){
- const rows=(m.lineup||m.draft?.roster||[]).filter(r=>r.team_id===team.id);
+function umaPortrait(r){
+ return r?.portrait?`<img class="dt-uma-portrait" src="${esc(r.portrait)}" alt="" loading="lazy">`:'';
+}
+function rosterTeam(m, team, contributions=false){
+ const rows=(contributions?m.player_points||[]:m.lineup||m.draft?.roster||[]).filter(r=>r.team_id===team.id);
  if(!rows.length)return '';
  const mvp=m.reported_results?.mvp;
- return `<ul class="dt-roster">${rows.map(r=>`<li class="${r.benched?'dt-benched':''}"><div><strong>${esc(r.uma)}</strong><span>${esc(r.benched?'Not fielded':r.display_name||participantName(r.discord))}</span></div>${r.benched?'<span class="dt-badge">Bench</span>':mvp?.team_id===r.team_id&&mvp?.discord===r.discord?'<span class="dt-badge red">MVP</span>':''}</li>`).join('')}</ul>`;
+ return `<ul class="dt-roster">${rows.map(r=>{
+  const isMvp=!r.benched&&mvp?.team_id===r.team_id&&mvp?.display_name===r.display_name&&(mvp?.variant_id?mvp.variant_id===r.variant_id:mvp?.uma===r.uma);
+  return `<li class="${r.benched?'dt-benched':''}"><div class="dt-roster-person">${umaPortrait(r)}<div><strong>${esc(r.benched?r.uma:r.display_name||participantName(r.discord))}</strong><span>${esc(r.benched?'Not fielded':r.uma)}</span>${isMvp?'<span class="dt-badge red">MVP</span>':''}</div></div>${r.benched?'<span class="dt-badge">Bench</span>':contributions?`<div class="dt-player-points"><strong>${m.player_points_recorded?r.points:'—'}</strong><span>pts</span></div>`:''}</li>`;
+ }).join('')}</ul>`;
+}
+function matchPlayers(m){
+ if(!m.player_points?.length)return '';
+ return `<section class="dt-contributions"><div class="dt-caption"><h2>Player contributions</h2><span class="dt-small">Match podium points</span></div><div class="dt-grid">${m.participants.filter(Boolean).map(t=>`<section class="dt-panel dt-draft-team"><div class="dt-contribution-head"><h2>${esc(t.name)}</h2><span>${m.player_points_recorded?m.player_points.filter(r=>r.team_id===t.id).reduce((n,r)=>n+r.points,0)+' pts':'Awaiting results'}</span></div>${rosterTeam(m,t,true)}</section>`).join('')}</div></section>`;
 }
 function raceNav(m,current=''){
  if(!m.races.length)return '';
@@ -78,12 +88,12 @@ function reportRaceLinks(m, number){
 }
 function reportedResults(m){
  const report=m.reported_results;
- if(!report)return '';
+ if(!report)return matchPlayers(m);
  const teams=m.participants.filter(Boolean);
  const pair=s=>teams.map(t=>s[t.id]).join(' – ');
  const mvp=report.mvp;
- const points=mvp?report.races.flatMap(r=>r.podium).filter(r=>r.team_id===mvp.team_id&&r.discord===mvp.discord).reduce((sum,r)=>sum+r.points,0):0;
- return `${mvp?`<section class="dt-mvp"><div><p class="dt-kicker">Match MVP</p><h2>${esc(mvp.display_name||participantName(mvp.discord))}</h2><p>${esc(mvp.uma)} · ${esc(teamName(mvp.team_id))}</p></div><div class="dt-mvp-points"><strong>${points}</strong><span>podium points</span></div></section>`:''}<div class="dt-caption"><div><h2>Race-by-race results</h2><p class="dt-small">${report.races.filter(r=>!r.tiebreaker).length} standard races${report.races.some(r=>r.tiebreaker)?' + tiebreaker':''} · ${esc(teams.map(t=>t.name).join(' / '))} score order</p></div><span class="dt-badge">${esc(report.external_match_id)}</span></div>${m.report_score_mismatch?'<div class="dt-notice">The official score has an organizer adjustment. The table preserves the originally reported podium totals.</div>':''}<div class="dt-panel dt-reported-table"><div class="dt-table-scroll" tabindex="0" aria-label="Reported race placings and running scores"><table class="dt-table"><thead><tr><th>Race</th><th>1st · 4 pts</th><th>2nd · 2 pts</th><th>3rd · 1 pt</th><th>Race score</th><th>Running total</th></tr></thead><tbody>${report.races.map(r=>`<tr><td><span class="dt-track-number">${r.tiebreaker?'Tiebreaker · ':''}Race ${r.number}</span><strong>${esc(r.track.split(' · ')[0])}</strong><div class="dt-small">${esc(r.track.split(' · ').slice(1).join(' · '))}</div>${reportRaceLinks(m,r.number)}</td>${r.podium.map(p=>`<td><strong>${esc(p.uma)}</strong><div class="dt-small">${esc(p.display_name||participantName(p.discord))}<br>${esc(teamName(p.team_id))}</div></td>`).join('')}<td class="num">${pair(r.scores)}</td><td class="num"><strong>${pair(r.cumulative_scores)}</strong></td></tr>`).join('')}</tbody><tfoot><tr><th colspan="5">Reported total · ${esc(teams.map(t=>t.name).join(' / '))}</th><td class="num"><strong>${pair(report.totals)}</strong></td></tr></tfoot></table></div></div><div class="dt-button-row"><a class="dt-button" href="${pathUrl(m.report_path)}" download="results.json">Download results</a><a class="dt-button" href="${pageUrl({round:m.round,match:m.id,view:'draft'})}">View the match draft →</a></div>${m.draft?.roster?.length?`<div class="dt-caption"><h2>Match lineups</h2></div><div class="dt-grid">${teams.map(t=>`<section class="dt-panel dt-draft-team"><h2>${esc(t.name)}</h2>${rosterTeam(m,t)}</section>`).join('')}</div>`:''}`;
+ const points=mvp?.points??0;
+ return `${mvp?`<section class="dt-mvp"><div class="dt-mvp-person">${umaPortrait(mvp)}<div><p class="dt-kicker">Match MVP</p><h2>${esc(mvp.display_name||participantName(mvp.discord))}</h2><p>${esc(mvp.uma)} · ${esc(teamName(mvp.team_id))}</p></div></div><div class="dt-mvp-points"><strong>${points}</strong><span>podium points</span></div></section>`:''}${matchPlayers(m)}<div class="dt-caption"><div><h2>Race-by-race results</h2><p class="dt-small">${report.races.filter(r=>!r.tiebreaker).length} standard races${report.races.some(r=>r.tiebreaker)?' + tiebreaker':''} · ${esc(teams.map(t=>t.name).join(' / '))} score order</p></div><span class="dt-badge">${esc(report.external_match_id)}</span></div>${m.report_score_mismatch?'<div class="dt-notice">The official score has an organizer adjustment. The table preserves the originally reported podium totals.</div>':''}<div class="dt-panel dt-reported-table"><div class="dt-table-scroll" tabindex="0" aria-label="Reported race placings and running scores"><table class="dt-table"><thead><tr><th>Race</th><th>1st · 4 pts</th><th>2nd · 2 pts</th><th>3rd · 1 pt</th><th>Race score</th><th>Running total</th></tr></thead><tbody>${report.races.map(r=>`<tr><td><span class="dt-track-number">${r.tiebreaker?'Tiebreaker · ':''}Race ${r.number}</span><strong>${esc(r.track.split(' · ')[0])}</strong><div class="dt-small">${esc(r.track.split(' · ').slice(1).join(' · '))}</div>${reportRaceLinks(m,r.number)}</td>${r.podium.map(p=>`<td><div class="dt-podium-person">${umaPortrait(p)}<div><strong>${esc(p.uma)}</strong><div class="dt-small">${esc(p.display_name||participantName(p.discord))}<br>${esc(teamName(p.team_id))}</div></div></td>`).join('')}<td class="num">${pair(r.scores)}</td><td class="num"><strong>${pair(r.cumulative_scores)}</strong></td></tr>`).join('')}</tbody><tfoot><tr><th colspan="5">Reported total · ${esc(teams.map(t=>t.name).join(' / '))}</th><td class="num"><strong>${pair(report.totals)}</strong></td></tr></tfoot></table></div></div><div class="dt-button-row"><a class="dt-button" href="${pathUrl(m.report_path)}" download="results.json">Download results</a><a class="dt-button" href="${pageUrl({round:m.round,match:m.id,view:'draft'})}">View the match draft →</a></div>`;
 }
 function draftContent(m){
  const d=m.draft;
