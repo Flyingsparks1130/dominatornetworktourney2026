@@ -19,6 +19,7 @@ from pathlib import Path
 from typing import Any
 from tournament_draft import normalize_draft, has_content as draft_has_content
 from tournament_report import normalize_report
+from tournament_replay import decode_replay, ReplayError
 
 ARCHIVE = 'Dominator Tournament'
 MAX_BYTES = 20 * 1024 * 1024
@@ -145,7 +146,8 @@ def normalize_race(raw: dict) -> dict:
             'gate': gate, 'post_number': h.get('postNumber'), 'variant_id': variant, 'raw_seconds': raw_time,
             'scaled_seconds': scaled, 'raw_display': time_display(raw_time), 'scaled_display': time_display(scaled),
             'stats': stats, 'running_style_code': style, 'aptitudes': aptitude, 'skills': rowskills, 'support': rowsupport,
-            'build_fingerprint': digest(identity), 'is_ghost': bool(h.get('isGhost', False))})
+            'build_fingerprint': digest(identity), 'is_ghost': bool(h.get('isGhost', False)),
+            'mood': params.get('motivation') if act else None})
     n = len(results)
     if sorted(r['place'] for r in results) != list(range(1, n + 1)):
         raise TournamentError('Finishing places are not a complete unique sequence. No runner was silently dropped.')
@@ -155,12 +157,16 @@ def normalize_race(raw: dict) -> dict:
         raise TournamentError('numRaceHorses does not match raceHorse length.')
     course = raw.get('raceCourseSet') or {}
     results.sort(key=lambda r: r['place'])
+    try:
+        replay = decode_replay(raw, results)
+    except ReplayError as exc:
+        replay = {'status': 'unavailable', 'reason': str(exc)}
     return {'schema': 'horseACT' if act else 'uma-race-overlay', 'export_version': raw.get('horseACT_version'),
         'runner_count': n, 'race_type': raw.get('raceType'), 'content_hash': digest(raw),
         'course': {'course_id': course.get('id'), 'track_id': course.get('raceTrackId'), 'distance_m': course.get('distance'),
             'surface': {1:'Turf',2:'Dirt'}.get(course.get('ground'), 'Unknown'), 'turn': raw.get('rotationCategory'),
             'condition': raw.get('groundCondition'), 'weather': raw.get('weather'), 'season': raw.get('season')},
-        'has_scenario': bool(raw.get('simDataBase64')), 'results': results}
+        'has_scenario': bool(raw.get('simDataBase64')), 'replay': replay, 'results': results}
 
 
 def load_setup(root: Path) -> tuple[dict, dict]:
