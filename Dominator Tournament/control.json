@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 1,
+  "revision": 2,
   "decisions": {
     "r1-m1": {
       "winner_id": "dominarium",
@@ -10,6 +10,16 @@
       "manual_scores": {
         "dominarium": 27,
         "dominion": 22
+      }
+    },
+    "r1-m3": {
+      "winner_id": "dominium",
+      "method": "advance",
+      "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+      "decided_at": "2026-09-11T15:27:52Z",
+      "manual_scores": {
+        "dominante": 13,
+        "dominium": 29
       }
     }
   },
@@ -38,6 +48,56 @@
             "manual_scores": {
               "dominarium": 27,
               "dominion": 22
+            }
+          }
+        },
+        "race_overrides": {},
+        "roster": {}
+      }
+    },
+    {
+      "at": "2026-09-11T15:27:52Z",
+      "actor": "organizer",
+      "action": "record_report",
+      "match_id": "r1-m3",
+      "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+      "revision": 2,
+      "before": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          }
+        },
+        "race_overrides": {},
+        "roster": {}
+      },
+      "after": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
             }
           }
         },
