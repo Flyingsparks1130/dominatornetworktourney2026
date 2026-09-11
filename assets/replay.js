@@ -20,6 +20,31 @@
    .sort((a,b)=>a.finished&&b.finished?a.place-b.place:a.finished?-1:b.finished?1:b.state[0]-a.state[0]||a.gate-b.gate);
  }
  function recentSkills(replay,time){return replay.events.filter(e=>e.type===3&&e.params.length>1&&e.t<=time&&time-e.t<2)}
+ // Retain each row and animate from its current visual position to its new rank.
+ // Measuring before cancellation also makes interrupted overtakes continuous.
+ function positionList(container,nodes,reducedMotion=()=>false){
+  let order=[];const animations=new Map();
+  function cancel(){for(const [id,a] of animations){a.cancel();nodes.get(id).style.zIndex=''}animations.clear()}
+  function update(ids,animate=true){
+   if(ids.length===order.length&&ids.every((id,i)=>id===order[i])){if(!animate||reducedMotion())cancel();return}
+   const motion=animate&&order.length>0&&!reducedMotion();
+   const before=new Map(motion?ids.map(id=>[id,nodes.get(id).getBoundingClientRect().top]):[]);
+   cancel();
+   for(const id of ids)container.appendChild(nodes.get(id));
+   order=ids.slice();
+   if(!motion)return;
+   // Read all final positions together, then write animation styles.
+   const moves=ids.map(id=>({id,delta:before.get(id)-nodes.get(id).getBoundingClientRect().top}));
+   for(const {id,delta} of moves){
+    const node=nodes.get(id);if(Math.abs(delta)<.5||!node.animate)continue;
+    node.style.zIndex=delta>0?'3':'1';
+    const animation=node.animate([{transform:`translateY(${delta}px)`},{transform:'translateY(0px)'}],{duration:440,easing:'cubic-bezier(.22,.7,.25,1)'});
+    animations.set(id,animation);
+    animation.onfinish=()=>{if(animations.get(id)===animation){animations.delete(id);node.style.zIndex=''}};
+   }
+  }
+  return {update,cancel};
+ }
  function placeBubbles(items,obstacles=[]){
   const occupied=obstacles.slice(),placed=[];
   const overlap=(a,b)=>a.x<b.x+b.w+4&&a.x+a.w+4>b.x&&a.y<b.y+b.h+4&&a.y+a.h+4>b.y;
@@ -40,12 +65,15 @@
   return placed;
  }
  async function mount(host,data,teamName){
-  let destroyed=false,raf=0,playing=false,last=0,time=0,speed=1,view='pack',selected='',showSkills=true;
-  const cleanup=()=>{destroyed=true;cancelAnimationFrame(raf);document.removeEventListener('visibilitychange',visibility);document.querySelector('.ra-dialog')?.close()};
+  let destroyed=false,raf=0,playing=false,last=0,time=0,speed=1,view='pack',selected='',showSkills=true,positions;
+  const cleanup=()=>{destroyed=true;cancelAnimationFrame(raf);positions?.cancel();document.removeEventListener('visibilitychange',visibility);document.querySelector('.ra-dialog')?.close()};
   cleanup.pause=()=>{pause();document.querySelector('.ra-dialog')?.close()};
   function visibility(){if(document.hidden)pause()}
   function pause(){playing=false;cancelAnimationFrame(raf);const button=host.querySelector('[data-play]');if(button)button.textContent='Play'}
-  labelsPromise??=fetch('assets/race-labels.json').then(r=>{if(!r.ok)throw Error('labels');return r.json()}).catch(()=>({skills:{},cards:{},portraits:{}}));
+  labelsPromise??=Promise.all([
+   fetch('assets/race-labels.json').then(r=>{if(!r.ok)throw Error('labels');return r.json()}).catch(()=>({skills:{},cards:{},portraits:{}})),
+   fetch('assets/skill-metadata.json').then(r=>{if(!r.ok)throw Error('skill icons');return r.json()}).catch(()=>({}))
+  ]).then(([labels,skill_meta])=>({...labels,skill_meta}));
   const labels=await labelsPromise;
   if(!host.isConnected)return cleanup;
   const replay=data.replay?.status==='ready'?data.replay:null,info=new Map((replay?.runners||[]).map(r=>[r.entry_id,r]));
@@ -76,6 +104,14 @@
   host.addEventListener('click',e=>{const button=e.target.closest('[data-inspect]');if(!button)return;pause();const r=data.results.find(r=>r.entry_id===button.dataset.inspect);if(r)RunnerAnalysis.open({data,runner:r,labels,teamName,sample,seek})});
   if(!replay)return cleanup;
   const q=s=>host.querySelector(s),byIndex=new Map(replay.runners.map(m=>[m.frame_index,data.results.find(r=>r.entry_id===m.entry_id)]));
+  const live=q('[data-live]'),liveRows=new Map();
+  for(const r of data.results){
+   const row=document.createElement('tr');row.dataset.entry=r.entry_id;
+   row.innerHTML=['Position','Runner','Distance','Gap','Speed','HP','Lane','Blocked by','Recent skill'].map(label=>td(label,label==='Runner'?runner(r):'')).join('');
+   liveRows.set(r.entry_id,row);
+  }
+  const reduced=global.matchMedia?.('(prefers-reduced-motion: reduce)');
+  positions=positionList(live,liveRows,()=>reduced?.matches||false);
   const laneMax=replay.frames.reduce((max,f)=>f.r.reduce((m,h)=>Math.max(m,h[1]),max),.6)+.08;
   const markers=[...host.querySelectorAll('[data-marker]')];
   function render(){
@@ -92,13 +128,19 @@
    }).filter(b=>b.lines.length):[];
    const obstacles=s.rows.map(h=>({x:x(h[0])-23,y:y(h)-23,w:46,h:58}));
    q('[data-popups]').innerHTML=placeBubbles(bubbles,obstacles).map(b=>`<g class="rp-skill-popup"><line x1="${b.ax}" y1="${b.ay}" x2="${b.x+b.w/2}" y2="${b.y+b.h/2}"/><rect x="${b.x}" y="${b.y}" width="${b.w}" height="${b.h}" rx="5"/>${b.lines.map((line,i)=>`<text x="${b.x+11}" y="${b.y+22+i*21}">${esc(Array.from(line).length>38?Array.from(line).slice(0,37).join('')+'…':line)}</text>`).join('')}</g>`).join('');
-   q('[data-live]').innerHTML=ordered.map((r,i)=>`<tr class="${selected===r.entry_id?'rp-selected':''}">${td('Position',`<b class="rp-place">${time===0?'—':i+1}</b>${r.finished?'<small>Finished</small>':''}`)}${td('Runner',runner(r))}${td('Distance',`${fmt(Math.min(r.state[0],replay.distance_m))} m`)}${td('Gap',`${fmt(Math.max(0,leader-Math.min(r.state[0],replay.distance_m)))} m`)}${td('Speed',`${fmt(r.state[2],2)} m/s`)}${td('HP',`${fmt(r.state[3],0)}<small>${fmt(100*r.state[3]/r.frame.hp_start)}%</small>`)}${td('Lane',`${fmt(r.state[1]*100)}%`)}${td('Blocked by',r.state[5]>=0?'#'+esc(byIndex.get(r.state[5])?.gate??'?'):'—')}${td('Recent skill',esc(skillsFor(r.frame.frame_index).join(', ')||'—'))}</tr>`).join('');
+   for(const [i,r] of ordered.entries()){
+    const row=liveRows.get(r.entry_id),skills=skillsFor(r.frame.frame_index).join(', ')||'—';
+    row.classList.toggle('rp-selected',selected===r.entry_id);
+    const values=[`<b class="rp-place">${time===0?'—':i+1}</b>${r.finished?'<small>Finished</small>':''}`,null,`${fmt(Math.min(r.state[0],replay.distance_m))} m`,`${fmt(Math.max(0,leader-Math.min(r.state[0],replay.distance_m)))} m`,`${fmt(r.state[2],2)} m/s`,`${fmt(r.state[3],0)}<small>${fmt(100*r.state[3]/r.frame.hp_start)}%</small>`,`${fmt(r.state[1]*100)}%`,r.state[5]>=0?'#'+esc(byIndex.get(r.state[5])?.gate??'?'):'—',`<span class="rp-recent-skills" title="${esc(skills)}">${esc(skills)}</span>`];
+    values.forEach((value,k)=>{if(value!==null&&row.children[k]._value!==value){row.children[k].innerHTML=value;row.children[k]._value=value}});
+   }
+   positions.update(ordered.map(r=>r.entry_id),playing);
    q('[data-progress]').style.width=100*leader/replay.distance_m+'%';q('[data-time]').value=time;
    q('[data-clock]').textContent=`${fmt(time,2)} / ${fmt(replay.duration_s,2)} s`;
    q('[data-frame]').textContent=`Frame ${s.index+1} / ${replay.frame_count}`;q('[data-live-time]').textContent=fmt(time,2)+' s';
   }
   function tick(now){if(!playing||destroyed)return;time=Math.min(replay.duration_s,time+(now-last)/1000*speed);last=now;render();if(time>=replay.duration_s)pause();else raf=requestAnimationFrame(tick)}
-  q('[data-play]').onclick=()=>{if(playing){pause();return}if(time>=replay.duration_s)time=0;playing=true;last=performance.now();q('[data-play]').textContent='Pause';raf=requestAnimationFrame(tick)};
+  q('[data-play]').onclick=()=>{if(playing){pause();return}if(time>=replay.duration_s){time=0;render()}playing=true;last=performance.now();q('[data-play]').textContent='Pause';raf=requestAnimationFrame(tick)};
   q('[data-time]').oninput=e=>seek(Number(e.target.value));
   q('[data-back]').onclick=()=>{const i=sample(replay,time).index;seek(replay.frames[Math.max(0,i-(Math.abs(time-replay.frames[i].t)<1e-6?1:0))].t)};
   q('[data-next]').onclick=()=>seek(replay.frames[Math.min(replay.frame_count-1,sample(replay,time).index+1)].t);
@@ -107,5 +149,5 @@
   for(const marker of markers){const select=()=>{selected=selected===marker.dataset.marker?'':marker.dataset.marker;q('[data-runner]').value=selected;render()};marker.onclick=select;marker.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select()}}}
   document.addEventListener('visibilitychange',visibility);render();return cleanup;
  }
- global.RaceReplay={mount,sample,orderRows,recentSkills,placeBubbles,startStatus};
+ global.RaceReplay={mount,sample,orderRows,recentSkills,placeBubbles,startStatus,positionList};
 })(typeof window==='undefined'?globalThis:window);

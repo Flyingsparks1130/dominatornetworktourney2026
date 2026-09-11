@@ -10,6 +10,7 @@ import gzip
 import math
 import struct
 import zlib
+from tournament_skills import attach_skill_outcomes
 
 
 class ReplayError(ValueError):
@@ -132,7 +133,9 @@ def decode_replay(raw, rows):
             'peak_speed_mps': max(h[2] for t, h in before),
             'skill_activations': sum(e['type'] == 3 and bool(e['params']) and e['params'][0] == i for e in events),
             'duel_events': sum(e['type'] == 5 and bool(e['params']) and e['params'][0] == i for e in events)})
-    return {'schema_version': 1, 'status': 'ready', 'simulation_version': version,
+    replay = {'schema_version': 1, 'status': 'ready', 'simulation_version': version,
         'distance_m': distance, 'duration_s': frames[-1]['t'], 'frame_count': frame_count,
         'columns': ['distance_m', 'lane_fraction', 'speed_mps', 'hp', 'temptation_mode', 'blocked_by_frame_index'],
         'frames': frames, 'runners': runner_info, 'events': events}
+    attach_skill_outcomes(raw, replay)
+    return replay

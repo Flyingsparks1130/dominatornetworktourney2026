@@ -6,6 +6,36 @@ for(const [ms,status] of [[0,'Normal'],[65.999,'Normal'],[66,'Late'],[66.001,'La
  assert.equal(context.RaceReplay.startStatus(ms),status);
 }
 vm.runInContext(fs.readFileSync('assets/runner-analysis.js','utf8'),context);
+for(const [value,color,pearl,capped] of [[null,0,0,false],[-1,0,0,false],[800,40,0,false],[1199,59.95,0,false],[1200,60,0,true],[1500,60,15,true],[2500,60,40,true]]){
+ const s=context.RunnerAnalysis.statSegments(value);
+ assert.equal(s.color,color);assert.equal(s.pearl,pearl);assert.equal(s.capped,capped);
+}
+// A small layout model verifies the actual row controller, including a new
+// overtake that interrupts an existing animation before it reaches its rank.
+{
+ const children=[],calls=[],nodes=new Map();let reduce=false;
+ const container={appendChild(node){const i=children.indexOf(node);if(i>=0)children.splice(i,1);children.push(node)}};
+ for(const id of ['a','b','c']){
+  const node={id,style:{},offset:0,getBoundingClientRect(){return {top:children.indexOf(this)*100+this.offset}},animate(frames,options){
+   const animation={cancel:()=>{node.offset=0;animation.cancelled=true},onfinish:null};
+   node.offset=Number(frames[0].transform.match(/\(([-.\d]+)px/)[1]);calls.push({id,frames,options,animation});return animation;
+  }};nodes.set(id,node);
+ }
+ const list=context.RaceReplay.positionList(container,nodes,()=>reduce);
+ list.update(['a','b','c']);assert.equal(calls.length,0);
+ list.update(['b','a','c']);assert.equal(calls.length,2);
+ assert.equal(nodes.get('b').style.zIndex,'3');assert.equal(nodes.get('a').style.zIndex,'1');
+ assert.equal(calls[0].frames[0].transform,'translateY(100px)');
+ list.update(['b','a','c']);assert.equal(calls.length,2,'Stable rankings must not restart motion');
+ nodes.get('b').offset=40;nodes.get('a').offset=-40;
+ list.update(['c','a','b']);assert(calls[0].animation.cancelled);
+ assert.equal(calls.findLast(c=>c.id==='b').frames[0].transform,'translateY(-160px)','Retarget from current visual position');
+ assert.equal(nodes.get('c').style.zIndex,'3');assert.equal(children.length,3);
+ reduce=true;list.update(['a','b','c']);assert.equal(calls.length,5);assert([...nodes.values()].every(n=>n.style.zIndex===''));
+ reduce=false;list.update(['c','b','a']);list.update(['c','b','a'],false);
+ assert([...nodes.values()].every(n=>n.style.zIndex===''),'Seeking snaps and cancels unfinished motion');
+ list.cancel();
+}
 let races=0;
 for(const file of fs.readdirSync('data/tournament-races')){
  const data=JSON.parse(fs.readFileSync(path.join('data/tournament-races',file)));
@@ -23,6 +53,12 @@ for(const file of fs.readdirSync('data/tournament-races')){
  assert.equal(JSON.stringify(orderRows(data,end).map(r=>r.place)),JSON.stringify([1,2,3,4,5,6,7,8,9,10]));
  assert.equal(new Set(orderRows(data,mid).map(r=>r.entry_id)).size,10);
  for(const runner of data.results){
+  const meta=rep.runners.find(r=>r.entry_id===runner.entry_id);
+  const groups=context.RunnerAnalysis.skillGroups(runner,rep,meta);
+  assert.equal(Object.values(groups).flat().length,runner.skills.length);
+  assert.equal(new Set(Object.values(groups).flat().map(s=>s.id)).size,runner.skills.length);
+  for(const skill of groups.activated)assert(skill.occurrences.length>0);
+  for(const skill of groups.failed_wit)assert(skill.outcome.roll>=skill.outcome.activation_chance);
   const phases=context.RunnerAnalysis.phases(data,runner);
   assert.equal(phases.length,4);
   for(const p of phases){

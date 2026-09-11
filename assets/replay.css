@@ -43,3 +43,41 @@ body .dt-main.rp-page{max-width:1720px}
 @media(max-width:600px){.rp-playback{padding:12px}.rp-controls select{max-width:230px}.rp-scrubber{flex-wrap:wrap;gap:5px}.rp-scrubber input{flex-basis:100%}.rp-scrubber output{min-width:0}.rp-controls .dt-button{padding:10px}.ra-dialog{width:calc(100vw - 16px);max-height:96vh}.ra-header{padding:14px;gap:10px}.ra-header h2{font-size:19px}.ra-header img{width:40px;height:46px}.ra-skills{display:block}.ra-phases th,.ra-phases td{padding:8px 3px;font-size:12px}.ra-metrics{gap:18px}.dt-race-nav a{flex-basis:135px}}
 .rp-summary .rp-late-start{color:#f3a0b1;font-weight:700}
 .rp-summary .rp-normal-start{color:#bcb8c5}
+
+/* Keyed live cards overlap vertically during overtakes, without lateral motion. */
+.rp-live .rp-table,.rp-live .rp-table thead,.rp-live .rp-table tbody{display:block;width:100%}
+.rp-live .rp-table tbody{isolation:isolate}
+.rp-live .rp-table tr{display:grid;grid-template-columns:55px minmax(170px,2.8fr) repeat(6,minmax(44px,.9fr)) minmax(120px,1.8fr);align-items:center;width:100%;position:relative;z-index:2;background:#19181f}
+.rp-live .rp-table tbody tr{height:104px;border:1px solid #39313f;border-radius:8px;margin:7px 0;box-shadow:0 3px 10px #0003}
+.rp-live .rp-table tbody tr:nth-child(even){background:#211d27}
+.rp-live .rp-table td{border:0;padding:10px 8px;min-width:0;font-size:12px}
+.rp-live .rp-table th{width:auto;padding:12px 8px;font-size:11px;height:100%;display:flex;align-items:center}
+.rp-live .rp-runner strong,.rp-live .rp-runner span span{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.rp-live .rp-runner strong{font-size:13px}.rp-live .rp-runner span span{font-size:11px}
+.rp-recent-skills{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;font-size:11px;color:#cfbdce}
+.rp-live .rp-place{font-size:26px}.rp-live .rp-selected{border-color:#ef8ca1!important}
+/* Five native stat icons and a pearl overflow segment beginning at 1200. */
+.ra-layout{grid-template-columns:350px minmax(0,1fr)}
+.ra-stat-scale{display:flex;justify-content:space-between;color:#a99baa;font-size:10px;text-transform:uppercase;letter-spacing:.05em;margin:0 0 12px}
+.ra-stats>div{grid-template-columns:82px minmax(35px,1fr) 34px 34px;gap:8px}
+.ra-stat-label{display:flex;align-items:center;gap:7px}.ra-stat-label img{width:24px;height:24px;object-fit:contain}
+.ra-stat-bar{position:relative;height:10px;overflow:visible;border-radius:1px;background:#302a35}
+.ra-stat-bar i{position:absolute;left:0;top:0;background:linear-gradient(90deg,#ffffff15,var(--stat-color));height:100%}
+.ra-stat-bar b{position:absolute;left:60%;top:0;height:100%;background:linear-gradient(90deg,#f7dfec,#fff9e9 35%,#cbe2ff 80%,#f8f7ff);box-shadow:2px 0 8px #f5efff44}
+.ra-stat-bar b[style="width:0%"]{box-shadow:none}
+.ra-stat-bar em{position:absolute;left:60%;top:-3px;bottom:-3px;width:1px;background:#fffb;box-shadow:0 0 4px #fff4}
+.ra-stat-high>strong{color:#f6ebff;text-shadow:0 0 9px #efc6ff55}
+/* Skill type colors accompany the source icons; failed groups stay subdued. */
+.ra-skill-regular{--skill-color:#eeb35b}.ra-skill-recovery{--skill-color:#6ad0f0}.ra-skill-innate{--skill-color:#a4d87b}.ra-skill-debuff{--skill-color:#f07c88}
+.ra-skills li{border-left:2px solid var(--skill-color,#86778e);border-bottom:0;padding:8px 7px;margin:4px 0;border-radius:5px;background:#1c192080}
+.ra-skills li>div:first-child{align-items:center;gap:9px}.ra-skills strong{font-size:13px;line-height:1.5}
+.ra-skill-icon{display:flex;align-items:center;justify-content:center;width:27px;height:27px;flex-shrink:0;color:var(--skill-color)}.ra-skill-icon img{width:27px;height:27px;border-radius:5px}
+.ra-skill-times{margin-left:36px}.ra-skill-times button{border-color:#55404b;color:var(--skill-color);background:#211923;min-height:32px;font-variant-numeric:tabular-nums}
+.ra-skill-times button:hover{border-color:var(--skill-color);background:#302632}
+.ra-gold:not(.ra-failed) strong{color:#f1d08c;font-weight:600}
+.ra-skills .ra-failed{border-left-color:#493844;background:transparent}.ra-failed strong{color:#9a8e9f}.ra-failed .ra-skill-icon{filter:saturate(.2);opacity:.5}
+.ra-failure-x{color:#db667b;font-size:22px;font-weight:400;flex-shrink:0;margin-left:auto;line-height:1}
+.ra-skill-group+.ra-skill-group{margin-top:28px}.ra-skill-group .ra-section-title h3{font-size:11px}
+@media(max-width:1100px) and (min-width:901px){.ra-layout{grid-template-columns:315px minmax(0,1fr)}.ra-sidebar{padding:16px}.ra-stats>div{grid-template-columns:78px minmax(25px,1fr) 32px 32px;gap:6px}}
+@media(max-width:900px){.rp-live .rp-table thead{display:none}.rp-live .rp-table tbody tr{height:244px;padding:8px;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:64px 80px 80px;gap:0;margin:9px 0;align-items:start}.rp-live .rp-table td{width:auto;padding:6px;line-height:1.4;font-size:12px}.rp-live .rp-table td[data-label="Runner"]{grid-column:1/-1;grid-row:1}.rp-live .rp-table td::before{font-size:10px;margin-bottom:3px}.rp-live .rp-table td[data-label="Runner"]::before{display:none}.rp-live .rp-runner strong{font-size:15px}.rp-live .rp-runner span span{font-size:12px}.rp-live .rp-recent-skills{-webkit-line-clamp:3;font-size:10px}.ra-layout{display:block}.ra-stats>div{grid-template-columns:88px minmax(30px,1fr) 40px 40px}}
+@media(prefers-reduced-motion:reduce){.rp-live .rp-table tbody tr{animation:none!important;transition:none!important}}

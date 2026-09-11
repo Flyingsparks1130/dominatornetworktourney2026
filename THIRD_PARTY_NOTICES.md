@@ -1,6 +1,6 @@
 # Race analysis attribution
 
-Simulation binary layout adapted from [ayaliz/hakuraku](https://github.com/ayaliz/hakuraku), descended from SSHZ.ORG Hakuraku. Skill/card labels and character thumbnails are sourced from that repository. Character artwork and game names belong to Cygames; this is an unofficial community site.
+Simulation binary layout and verified wit-lottery reconstruction adapted from [ayaliz/hakuraku](https://github.com/ayaliz/hakuraku), descended from SSHZ.ORG Hakuraku. Skill/card labels, skill metadata, character thumbnails, stat icons and skill icons are sourced from that repository. Character artwork and game names belong to Cygames; this is an unofficial community site.
 
 This project implements its own Python decoder and standalone replay UI. It is not affiliated with Hakuraku. No race data is sent to Hakuraku.
 
@@ -27,3 +27,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 Source revision: `88015af9f6473fa4b76463b9cf217a3c79817811`.
+
+Wit failures are reconstructed from the exported random seed and equipped-skill order only when all recorded start delays match the random stream bit for bit. Recorded activations take precedence, including permanent green skills. If verification fails, the UI leaves the failure reason unavailable. For a master-data icon absent from the source asset set, `source_icon_id` preserves the original identifier and the UI uses an existing icon for the same skill category.

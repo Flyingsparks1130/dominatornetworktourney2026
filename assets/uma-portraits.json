@@ -166,5 +166,37 @@
   "Fine Motion (Wedding)": {
     "variant_id": 102202,
     "portrait": "assets/runners/102202.webp"
+  },
+  "El Condor Pasa": {
+    "variant_id": 101401,
+    "portrait": "assets/runners/101401.webp"
+  },
+  "El Condor Pasa (Fantasy)": {
+    "variant_id": 101402,
+    "portrait": "assets/runners/101402.webp"
+  },
+  "Bamboo Memory": {
+    "variant_id": 105301,
+    "portrait": "assets/runners/105301.webp"
+  },
+  "Smart Falcon (Grand Live)": {
+    "variant_id": 104602,
+    "portrait": "assets/runners/104602.webp"
+  },
+  "Gold City": {
+    "variant_id": 104001,
+    "portrait": "assets/runners/104001.webp"
+  },
+  "Inari One (Festival)": {
+    "variant_id": 103402,
+    "portrait": "assets/runners/103402.webp"
+  },
+  "Agnes Digital (Halloween)": {
+    "variant_id": 101902,
+    "portrait": "assets/runners/101902.webp"
+  },
+  "King Halo (Cheerleader)": {
+    "variant_id": 106102,
+    "portrait": "assets/runners/106102.webp"
   }
 }
