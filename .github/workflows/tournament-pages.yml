@@ -21,10 +21,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Test the importer and organizer rules
-        run: python -m unittest discover -s tests -p test_tournament.py -v
+      - name: Test the importer, replay decoder and organizer rules
+        run: python -m unittest discover -s tests -v
       - name: Build the folder index and static site
         run: python scripts/tournament_engine.py site
+      - name: Check replay playback against the recorded races
+        run: node tests/test_replay_client.js
       - name: Configure Pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5

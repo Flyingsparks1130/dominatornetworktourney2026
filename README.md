@@ -30,6 +30,7 @@ This is a workflow for requested updates during an active conversation. It does 
 
 - [Maintaining and publishing the site](docs/maintaining.md)
 - [Drafts, reported results, race files, and official decisions](docs/match-data.md)
+- [Native race analysis and replay](docs/race-analysis.md)
 - [Known content inconsistencies and deferred work](docs/known-issues.md)
 
 ## Local development (optional)
@@ -39,6 +40,7 @@ Python 3.10+ is sufficient; the backend has no third-party Python dependencies.
 ```sh
 python -m unittest discover -s tests -v
 python scripts/tournament_engine.py site
+node tests/test_replay_client.js
 ```
 
 On Windows, `manage_tournament.bat` opens the local organizer and preview. `rebuild_tournament.bat` rescans the archive. These launchers remain available, but are not needed when Codex makes and publishes the update through GitHub.
