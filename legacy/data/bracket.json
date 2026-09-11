@@ -1,0 +1,115 @@
+{
+  "draw": {
+    "status": "pending",
+    "method": "random",
+    "generated_at": null,
+    "club_count": 12,
+    "opening_matches": 6,
+    "clubs_per_match": 2,
+    "reproducible_seed": null
+  },
+  "rounds": [
+    {
+      "key": "r1",
+      "title": "ROUND 1",
+      "format": "12 clubs · random draw · 6 head-to-head matches",
+      "advance": "6 winners become seeds 1–6"
+    },
+    {
+      "key": "redemption",
+      "title": "REDEMPTION",
+      "format": "6 losing clubs · 5-round round robin · 2 Umas each",
+      "advance": "Top 2 become seeds 7–8"
+    },
+    {
+      "key": "qf",
+      "title": "QUARTER FINALS",
+      "format": "8-club single elimination",
+      "advance": "4 winners"
+    },
+    {
+      "key": "sf",
+      "title": "SEMI FINALS",
+      "format": "4 clubs",
+      "advance": "2 winners"
+    },
+    {
+      "key": "gf",
+      "title": "GRAND FINAL",
+      "format": "2 clubs",
+      "advance": "Champion"
+    }
+  ],
+  "opening_matches": [],
+  "format": {
+    "opening_round": {
+      "clubs": 12,
+      "matches": 6,
+      "draw_method": "random",
+      "winners_advance_directly": 6,
+      "winner_seed_range": [
+        1,
+        6
+      ]
+    },
+    "redemption": {
+      "clubs": 6,
+      "format": "round_robin",
+      "rounds": 5,
+      "umas_per_club_per_round": 2,
+      "advance": 2,
+      "advance_seed_range": [
+        7,
+        8
+      ]
+    },
+    "final_bracket": {
+      "clubs": 8,
+      "format": "single_elimination",
+      "quarterfinals": [
+        {
+          "slot": "QF1",
+          "a": 1,
+          "b": 8
+        },
+        {
+          "slot": "QF2",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "slot": "QF3",
+          "a": 2,
+          "b": 7
+        },
+        {
+          "slot": "QF4",
+          "a": 3,
+          "b": 6
+        }
+      ],
+      "semifinals": [
+        {
+          "slot": "SF1",
+          "from": [
+            "QF1",
+            "QF2"
+          ]
+        },
+        {
+          "slot": "SF2",
+          "from": [
+            "QF3",
+            "QF4"
+          ]
+        }
+      ],
+      "grand_final": {
+        "from": [
+          "SF1",
+          "SF2"
+        ]
+      }
+    }
+  }
+}

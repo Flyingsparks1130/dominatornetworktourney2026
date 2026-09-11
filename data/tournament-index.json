@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T02:35:18Z",
+  "generated_at": "2026-09-11T13:42:07Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
-  "revision": 0,
+  "revision": 1,
   "rounds": [
     {
       "id": "R1",
@@ -149,15 +149,472 @@
           "aliases": []
         }
       ],
-      "winner_id": null,
-      "loser_id": null,
-      "status": "ready",
-      "manual_scores": null,
-      "decision_reason": null,
-      "source": "race_files",
+      "winner_id": "dominarium",
+      "loser_id": "dominion",
+      "status": "complete",
+      "manual_scores": {
+        "dominarium": 27,
+        "dominion": 22
+      },
+      "decision_reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+      "source": "manual",
       "races": [],
+      "draft": {
+        "schema_version": 1,
+        "match_id": "r1-m1",
+        "status": "locked",
+        "track_pool": [],
+        "track_picks": [
+          {
+            "team_id": "dominion",
+            "track": "Nakayama (Inner) 2500m · Turf · Right · Summer / Sunny / Good"
+          },
+          {
+            "team_id": "dominion",
+            "track": "Tokyo 3400m · Turf · Left · Fall / Sunny / Firm"
+          },
+          {
+            "team_id": "dominion",
+            "track": "Hanshin (Outer) 2400m · Turf · Right · Spring / Rainy / Soft"
+          },
+          {
+            "team_id": "dominion",
+            "track": "Kyoto (Outer) 2400m · Turf · Right · Summer / Sunny / Good"
+          },
+          {
+            "team_id": "dominarium",
+            "track": "Kyoto (Outer) 3200m · Turf · Right · Fall / Cloudy / Firm"
+          },
+          {
+            "team_id": "dominarium",
+            "track": "Tokyo 2000m · Turf · Left · Fall / Sunny / Good"
+          },
+          {
+            "team_id": "dominarium",
+            "track": "Tokyo 1600m · Turf · Left · Summer / Sunny / Good"
+          },
+          {
+            "team_id": "dominarium",
+            "track": "Sapporo 1200m · Turf · Right · Spring / Cloudy / Good"
+          }
+        ],
+        "track_vetoes": [
+          {
+            "team_id": "dominarium",
+            "track": "Kyoto (Outer) 2400m · Turf · Right · Summer / Sunny / Good"
+          },
+          {
+            "team_id": "dominion",
+            "track": "Sapporo 1200m · Turf · Right · Spring / Cloudy / Good"
+          }
+        ],
+        "final_tracks": [
+          "Nakayama (Inner) 2500m · Turf · Right · Summer / Sunny / Good",
+          "Kyoto (Outer) 3200m · Turf · Right · Fall / Cloudy / Firm",
+          "Tokyo 3400m · Turf · Left · Fall / Sunny / Firm",
+          "Tokyo 2000m · Turf · Left · Fall / Sunny / Good",
+          "Hanshin (Outer) 2400m · Turf · Right · Spring / Rainy / Soft",
+          "Tokyo 1600m · Turf · Left · Summer / Sunny / Good"
+        ],
+        "tiebreaker_track": "Hanshin (Inner) 2000m · Turf · Right · Winter / Sunny / Firm",
+        "uma_pre_bans": [
+          {
+            "team_id": "dominion",
+            "uma": "Seiun Sky"
+          },
+          {
+            "team_id": "dominion",
+            "uma": "Narita Taishin"
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Kitasan Black"
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Seiun Sky (Ballroom)"
+          }
+        ],
+        "uma_picks": [],
+        "uma_bans": [
+          {
+            "team_id": "dominarium",
+            "uma": "Mihono Bourbon (Valentine)"
+          },
+          {
+            "team_id": "dominion",
+            "uma": "Maruzensky (Summer)"
+          }
+        ],
+        "uma_additions": [],
+        "benched_umas": [
+          {
+            "team_id": "dominion",
+            "uma": "Mejiro Palmer"
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Mejiro Dober (Camping)"
+          }
+        ],
+        "training_start": null,
+        "training_deadline": null,
+        "notes": "Recorded from the organizer’s text and Uma Drafter screenshots for LHNCFL. This match used six standard races plus the Hanshin 2000m tiebreaker. The full random track pool, initial Uma pick order, additional-pick phase and training dates were not supplied. Final rosters are shown without reconstructing those phases. Track vetoes and Uma vetoes are grouped under the club that made the ban.",
+        "external_match_id": "LHNCFL",
+        "roster": [
+          {
+            "team_id": "dominion",
+            "uma": "Oguri Cap (Christmas)",
+            "discord": "@Flareon",
+            "benched": false
+          },
+          {
+            "team_id": "dominion",
+            "uma": "Gold Ship",
+            "discord": "@Beep",
+            "benched": false
+          },
+          {
+            "team_id": "dominion",
+            "uma": "Satono Diamond",
+            "discord": "@Purge",
+            "benched": false
+          },
+          {
+            "team_id": "dominion",
+            "uma": "T.M. Opera O (New Year)",
+            "discord": "@Zangona",
+            "benched": false
+          },
+          {
+            "team_id": "dominion",
+            "uma": "Mejiro McQueen",
+            "discord": "@IceColaa",
+            "benched": false
+          },
+          {
+            "team_id": "dominion",
+            "uma": "Mejiro Palmer",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Mejiro McQueen (Summer)",
+            "discord": "@CallMeNeko",
+            "benched": false
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Ines Fujin",
+            "discord": "@Cal",
+            "benched": false
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Mayano Top Gun",
+            "discord": "@eibarman",
+            "benched": false
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Oguri Cap",
+            "discord": "@David",
+            "benched": false
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Mejiro Dober (Camping)",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Tamamo Cross",
+            "discord": "@LESKBILL",
+            "benched": false
+          }
+        ]
+      },
+      "draft_path": "Dominator Tournament/R1/Dominion vs Dominarium/draft.json",
+      "draft_has_content": true,
+      "reported_results": {
+        "schema_version": 1,
+        "match_id": "r1-m1",
+        "external_match_id": "LHNCFL",
+        "source": "Organizer-supplied match results and Uma Drafter screenshots. Original race exports are unavailable.",
+        "mvp": {
+          "team_id": "dominarium",
+          "uma": "Tamamo Cross",
+          "discord": "@LESKBILL"
+        },
+        "races": [
+          {
+            "number": 1,
+            "track": "Nakayama (Inner) 2500m · Turf · Right · Summer / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominarium",
+                "uma": "Tamamo Cross",
+                "discord": "@LESKBILL",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominion",
+                "uma": "Gold Ship",
+                "discord": "@Beep",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominarium",
+                "uma": "Mayano Top Gun",
+                "discord": "@eibarman",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominarium": 5,
+              "dominion": 2
+            },
+            "cumulative_scores": {
+              "dominarium": 5,
+              "dominion": 2
+            }
+          },
+          {
+            "number": 2,
+            "track": "Kyoto (Outer) 3200m · Turf · Right · Fall / Cloudy / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominarium",
+                "uma": "Mayano Top Gun",
+                "discord": "@eibarman",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominion",
+                "uma": "Gold Ship",
+                "discord": "@Beep",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominion",
+                "uma": "Oguri Cap (Christmas)",
+                "discord": "@Flareon",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominarium": 4,
+              "dominion": 3
+            },
+            "cumulative_scores": {
+              "dominarium": 9,
+              "dominion": 5
+            }
+          },
+          {
+            "number": 3,
+            "track": "Tokyo 3400m · Turf · Left · Fall / Sunny / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominarium",
+                "uma": "Mayano Top Gun",
+                "discord": "@eibarman",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominion",
+                "uma": "Gold Ship",
+                "discord": "@Beep",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominion",
+                "uma": "Satono Diamond",
+                "discord": "@Purge",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominarium": 4,
+              "dominion": 3
+            },
+            "cumulative_scores": {
+              "dominarium": 13,
+              "dominion": 8
+            }
+          },
+          {
+            "number": 4,
+            "track": "Tokyo 2000m · Turf · Left · Fall / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominion",
+                "uma": "Mejiro McQueen",
+                "discord": "@IceColaa",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominarium",
+                "uma": "Ines Fujin",
+                "discord": "@Cal",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominarium",
+                "uma": "Oguri Cap",
+                "discord": "@David",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominarium": 3,
+              "dominion": 4
+            },
+            "cumulative_scores": {
+              "dominarium": 16,
+              "dominion": 12
+            }
+          },
+          {
+            "number": 5,
+            "track": "Hanshin (Outer) 2400m · Turf · Right · Spring / Rainy / Soft",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominarium",
+                "uma": "Tamamo Cross",
+                "discord": "@LESKBILL",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominion",
+                "uma": "Oguri Cap (Christmas)",
+                "discord": "@Flareon",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominion",
+                "uma": "Gold Ship",
+                "discord": "@Beep",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominarium": 4,
+              "dominion": 3
+            },
+            "cumulative_scores": {
+              "dominarium": 20,
+              "dominion": 15
+            }
+          },
+          {
+            "number": 6,
+            "track": "Tokyo 1600m · Turf · Left · Summer / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominion",
+                "uma": "Oguri Cap (Christmas)",
+                "discord": "@Flareon",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominarium",
+                "uma": "Ines Fujin",
+                "discord": "@Cal",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominion",
+                "uma": "Gold Ship",
+                "discord": "@Beep",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominarium": 2,
+              "dominion": 5
+            },
+            "cumulative_scores": {
+              "dominarium": 22,
+              "dominion": 20
+            }
+          },
+          {
+            "number": 7,
+            "track": "Hanshin (Inner) 2000m · Turf · Right · Winter / Sunny / Firm",
+            "tiebreaker": true,
+            "podium": [
+              {
+                "team_id": "dominarium",
+                "uma": "Tamamo Cross",
+                "discord": "@LESKBILL",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominion",
+                "uma": "Oguri Cap (Christmas)",
+                "discord": "@Flareon",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominarium",
+                "uma": "Ines Fujin",
+                "discord": "@Cal",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominarium": 5,
+              "dominion": 2
+            },
+            "cumulative_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          }
+        ],
+        "totals": {
+          "dominarium": 27,
+          "dominion": 22
+        }
+      },
+      "report_path": "Dominator Tournament/R1/Dominion vs Dominarium/results.json",
       "computed_scores": null,
-      "scores": null,
+      "scores": {
+        "dominarium": 27,
+        "dominion": 22
+      },
+      "score_only": true,
+      "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": []
     },
@@ -198,8 +655,34 @@
       "decision_reason": null,
       "source": "race_files",
       "races": [],
+      "draft": {
+        "schema_version": 1,
+        "match_id": "r1-m2",
+        "status": "pending",
+        "track_pool": [],
+        "track_picks": [],
+        "track_vetoes": [],
+        "final_tracks": [],
+        "tiebreaker_track": null,
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": [],
+        "training_start": null,
+        "training_deadline": null,
+        "notes": "",
+        "external_match_id": null,
+        "roster": []
+      },
+      "draft_path": "Dominator Tournament/R1/Domichill vs Domineer/draft.json",
+      "draft_has_content": false,
+      "reported_results": null,
+      "report_path": null,
       "computed_scores": null,
       "scores": null,
+      "score_only": false,
+      "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": []
     },
@@ -238,8 +721,34 @@
       "decision_reason": null,
       "source": "race_files",
       "races": [],
+      "draft": {
+        "schema_version": 1,
+        "match_id": "r1-m3",
+        "status": "pending",
+        "track_pool": [],
+        "track_picks": [],
+        "track_vetoes": [],
+        "final_tracks": [],
+        "tiebreaker_track": null,
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": [],
+        "training_start": null,
+        "training_deadline": null,
+        "notes": "",
+        "external_match_id": null,
+        "roster": []
+      },
+      "draft_path": "Dominator Tournament/R1/Dominium vs Dominante/draft.json",
+      "draft_has_content": false,
+      "reported_results": null,
+      "report_path": null,
       "computed_scores": null,
       "scores": null,
+      "score_only": false,
+      "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": []
     },
@@ -263,17 +772,30 @@
           "club_id": "114037107",
           "aliases": []
         },
-        null
+        {
+          "id": "dominarium",
+          "name": "Dominarium",
+          "seed": 8,
+          "club_id": null,
+          "aliases": []
+        }
       ],
       "winner_id": null,
       "loser_id": null,
-      "status": "awaiting_opponent",
+      "status": "ready",
       "manual_scores": null,
       "decision_reason": null,
       "source": "race_files",
       "races": [],
+      "draft": null,
+      "draft_path": null,
+      "draft_has_content": false,
+      "reported_results": null,
+      "report_path": null,
       "computed_scores": null,
       "scores": null,
+      "score_only": false,
+      "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": []
     },
@@ -312,8 +834,34 @@
       "decision_reason": null,
       "source": "race_files",
       "races": [],
+      "draft": {
+        "schema_version": 1,
+        "match_id": "r2-m2",
+        "status": "pending",
+        "track_pool": [],
+        "track_picks": [],
+        "track_vetoes": [],
+        "final_tracks": [],
+        "tiebreaker_track": null,
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": [],
+        "training_start": null,
+        "training_deadline": null,
+        "notes": "",
+        "external_match_id": null,
+        "roster": []
+      },
+      "draft_path": "Dominator Tournament/R2/Dominance vs Dominant H/draft.json",
+      "draft_has_content": false,
+      "reported_results": null,
+      "report_path": null,
       "computed_scores": null,
       "scores": null,
+      "score_only": false,
+      "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": []
     },
@@ -346,8 +894,15 @@
       "decision_reason": null,
       "source": "race_files",
       "races": [],
+      "draft": null,
+      "draft_path": null,
+      "draft_has_content": false,
+      "reported_results": null,
+      "report_path": null,
       "computed_scores": null,
       "scores": null,
+      "score_only": false,
+      "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": []
     },
@@ -380,8 +935,15 @@
       "decision_reason": null,
       "source": "race_files",
       "races": [],
+      "draft": null,
+      "draft_path": null,
+      "draft_has_content": false,
+      "reported_results": null,
+      "report_path": null,
       "computed_scores": null,
       "scores": null,
+      "score_only": false,
+      "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": []
     },
@@ -408,8 +970,15 @@
       "decision_reason": null,
       "source": "race_files",
       "races": [],
+      "draft": null,
+      "draft_path": null,
+      "draft_has_content": false,
+      "reported_results": null,
+      "report_path": null,
       "computed_scores": null,
       "scores": null,
+      "score_only": false,
+      "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": []
     },
@@ -436,8 +1005,15 @@
       "decision_reason": null,
       "source": "race_files",
       "races": [],
+      "draft": null,
+      "draft_path": null,
+      "draft_has_content": false,
+      "reported_results": null,
+      "report_path": null,
       "computed_scores": null,
       "scores": null,
+      "score_only": false,
+      "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": []
     },
@@ -464,13 +1040,22 @@
       "decision_reason": null,
       "source": "race_files",
       "races": [],
+      "draft": null,
+      "draft_path": null,
+      "draft_has_content": false,
+      "reported_results": null,
+      "report_path": null,
       "computed_scores": null,
       "scores": null,
+      "score_only": false,
+      "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": []
     }
   ],
   "warnings": [],
-  "eliminated": [],
+  "eliminated": [
+    "dominion"
+  ],
   "champion_id": null
 }
