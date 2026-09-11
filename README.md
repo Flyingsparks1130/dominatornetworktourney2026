@@ -1,3 +1,13 @@
+# Current tournament workflow
+
+Use [TOURNAMENT_SETUP.md](TOURNAMENT_SETUP.md) for the four-round bracket, folder imports, local organizer, and GitHub Desktop publishing steps. It supersedes the historical instructions below.
+
+The current bracket is configured in `Dominator Tournament/tournament.json`. The new public data is `data/tournament-index.json`.
+
+---
+
+<details><summary>Historical build notes (superseded)</summary>
+
 # The Dominator Draft 2026
 
 Static GitHub Pages tournament site plus a one-click Windows race publisher for finished
@@ -288,3 +298,6 @@ Each item has:
 
 The home page also includes the championship prize: **5 Discord Nitro total, one for each player**
 on the winning club.
+
+
+</details>

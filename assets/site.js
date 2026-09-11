@@ -3,6 +3,7 @@ function siteHeader(active){
     ["rules.html","RULES","rules"],
     ["tracks.html","TRACK DRAFT","tracks"],
     ["bracket.html","BRACKET","bracket"],
+    ["archive.html","RESULTS","archive"],
     ["clubs.html","CLUBS","clubs"],
     ["stats.html","STATS","stats"]
   ];

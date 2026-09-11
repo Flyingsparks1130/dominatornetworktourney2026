@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "id": "dominator-2026",
+  "name": "Dominator Tournament",
+  "published": true,
+  "source_note": "Bracket transcribed from the image supplied in the latest request. 11 teams, 3 played R1 matches, 5 byes. No redemption round. No results have been entered.",
+  "rounds": [
+    {
+      "id": "R1",
+      "name": "Round 1",
+      "order": 1
+    },
+    {
+      "id": "R2",
+      "name": "Quarterfinals",
+      "order": 2
+    },
+    {
+      "id": "R3",
+      "name": "Semifinals",
+      "order": 3
+    },
+    {
+      "id": "R4",
+      "name": "Grand Final",
+      "order": 4
+    }
+  ],
+  "teams": [
+    {
+      "id": "dominator",
+      "name": "Dominator",
+      "seed": 1,
+      "club_id": "114037107",
+      "aliases": []
+    },
+    {
+      "id": "dominate",
+      "name": "Dominate",
+      "seed": 2,
+      "club_id": "147185239",
+      "aliases": []
+    },
+    {
+      "id": "dominacion",
+      "name": "Dominacion",
+      "seed": 3,
+      "club_id": "739453372",
+      "aliases": []
+    },
+    {
+      "id": "dominant-h",
+      "name": "Dominant H",
+      "seed": 4,
+      "club_id": "278155676",
+      "aliases": []
+    },
+    {
+      "id": "dominance",
+      "name": "Dominance",
+      "seed": 5,
+      "club_id": "955490905",
+      "aliases": []
+    },
+    {
+      "id": "domineer",
+      "name": "Domineer",
+      "seed": 6,
+      "club_id": "961801794",
+      "aliases": []
+    },
+    {
+      "id": "dominium",
+      "name": "Dominium",
+      "seed": 7,
+      "club_id": "449007774",
+      "aliases": []
+    },
+    {
+      "id": "dominarium",
+      "name": "Dominarium",
+      "seed": 8,
+      "club_id": null,
+      "aliases": []
+    },
+    {
+      "id": "dominion",
+      "name": "Dominion",
+      "seed": 9,
+      "club_id": "510137721",
+      "aliases": []
+    },
+    {
+      "id": "dominante",
+      "name": "Dominante",
+      "seed": 10,
+      "club_id": "570535790",
+      "aliases": []
+    },
+    {
+      "id": "domichill",
+      "name": "Domichill",
+      "seed": 11,
+      "club_id": "918879715",
+      "aliases": [
+        "DomiChill"
+      ]
+    }
+  ],
+  "scoring": {
+    "points_by_place": [
+      4,
+      2,
+      1
+    ],
+    "standard_races": 5,
+    "target_points": 25,
+    "expected_entries": 10,
+    "players_per_team": 5,
+    "auto_finalize": false
+  },
+  "matches": [
+    {
+      "id": "r1-m1",
+      "round": "R1",
+      "slot": 1,
+      "sources": [
+        {
+          "team": "dominion"
+        },
+        {
+          "team": "dominarium"
+        }
+      ]
+    },
+    {
+      "id": "r1-m2",
+      "round": "R1",
+      "slot": 2,
+      "sources": [
+        {
+          "team": "domichill"
+        },
+        {
+          "team": "domineer"
+        }
+      ]
+    },
+    {
+      "id": "r1-m3",
+      "round": "R1",
+      "slot": 3,
+      "sources": [
+        {
+          "team": "dominium"
+        },
+        {
+          "team": "dominante"
+        }
+      ]
+    },
+    {
+      "id": "r2-m1",
+      "round": "R2",
+      "slot": 1,
+      "sources": [
+        {
+          "team": "dominator"
+        },
+        {
+          "winner_of": "r1-m1"
+        }
+      ]
+    },
+    {
+      "id": "r2-m2",
+      "round": "R2",
+      "slot": 2,
+      "sources": [
+        {
+          "team": "dominance"
+        },
+        {
+          "team": "dominant-h"
+        }
+      ]
+    },
+    {
+      "id": "r2-m3",
+      "round": "R2",
+      "slot": 3,
+      "sources": [
+        {
+          "team": "dominacion"
+        },
+        {
+          "winner_of": "r1-m2"
+        }
+      ]
+    },
+    {
+      "id": "r2-m4",
+      "round": "R2",
+      "slot": 4,
+      "sources": [
+        {
+          "winner_of": "r1-m3"
+        },
+        {
+          "team": "dominate"
+        }
+      ]
+    },
+    {
+      "id": "r3-m1",
+      "round": "R3",
+      "slot": 1,
+      "sources": [
+        {
+          "winner_of": "r2-m1"
+        },
+        {
+          "winner_of": "r2-m2"
+        }
+      ]
+    },
+    {
+      "id": "r3-m2",
+      "round": "R3",
+      "slot": 2,
+      "sources": [
+        {
+          "winner_of": "r2-m3"
+        },
+        {
+          "winner_of": "r2-m4"
+        }
+      ]
+    },
+    {
+      "id": "r4-m1",
+      "round": "R4",
+      "slot": 1,
+      "sources": [
+        {
+          "winner_of": "r3-m1"
+        },
+        {
+          "winner_of": "r3-m2"
+        }
+      ]
+    }
+  ]
+}

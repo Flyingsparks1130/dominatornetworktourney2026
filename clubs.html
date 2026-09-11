@@ -3,16 +3,16 @@
 <meta name="color-scheme" content="dark"><title>Clubs · The Dominator Draft</title><link rel="stylesheet" href="assets/site.css?v=10"></head>
 <body><script src="assets/site.js"></script><script>siteHeader("clubs");</script>
 
-<main class="page"><div class="page-head"><div class="section-kicker mono">12-CLUB FIELD</div><h1>THE CLUBS</h1>
-<p class="lead">Each club carries five tournament trainers: Sprint, Mile, Medium, Long, and Dirt. Opening-round matchups are assigned by a random draw.</p></div>
+<main class="page"><div class="page-head"><div class="section-kicker mono">TOURNAMENT FIELD</div><h1>THE CLUBS</h1>
+<p class="lead">Each club fields five players in every race. Follow their next matchup and official tournament status.</p></div>
 <input id="club-search" class="search-box" placeholder="Search clubs" autocomplete="off">
-<table class="clubs-table"><thead><tr><th>DRAW</th><th>CLUB</th><th>OPENING MATCH</th><th>ROSTER ROLES</th></tr></thead><tbody id="club-rows"></tbody></table></main>
+<table class="clubs-table"><thead><tr><th>SEED</th><th>CLUB</th><th>ENTRY ROUND</th><th>STATUS</th></tr></thead><tbody id="club-rows"></tbody></table></main>
 
 <script>
-(async()=>{const data=await getJSON("config/clubs.json"),rows=document.getElementById("club-rows"),search=document.getElementById("club-search");
-function render(q=""){const s=q.trim().toLowerCase();rows.innerHTML=data.clubs.filter(c=>!s||c.name.toLowerCase().includes(s)).sort((a,b)=>a.draw_order-b.draw_order).map(c=>`
-<tr data-link="club.html?id=${encodeURIComponent(c.id)}"><td class="draw-cell">${c.draw_order ? `#${c.draw_order}` : "—"}</td><td class="club-cell">${esc(c.name)}</td>
-<td>${c.opening_match ? `Match ${c.opening_match}` : "Not drawn"}</td><td>${(c.members||[]).map(m=>`<span class="role-pill">${esc(m.role)}</span>`).join("")}</td></tr>`).join("");
-rows.querySelectorAll("tr[data-link]").forEach(tr=>tr.onclick=()=>location.href=tr.dataset.link)}
-render();search.addEventListener("input",()=>render(search.value))})().catch(console.error);
+(async()=>{const data=await getJSON("data/tournament-index.json"),rows=document.getElementById("club-rows"),search=document.getElementById("club-search");
+function render(q=""){const text=q.trim().toLowerCase();rows.innerHTML=data.teams.filter(c=>!text||c.name.toLowerCase().includes(text)).sort((a,b)=>a.seed-b.seed).map(c=>{
+const entry=data.matches.find(m=>m.sources.some(s=>s.team===c.id));
+const status=data.champion_id===c.id?'Champion':data.eliminated.includes(c.id)?'Eliminated':'In contention';
+return `<tr><td class="draw-cell">#${esc(c.seed)}</td><td class="club-cell"><a href="club.html?id=${encodeURIComponent(c.id)}">${esc(c.name)}</a></td><td>${esc(entry?.round||'—')}${entry?.round==='R2'?' · bye':''}</td><td>${esc(status)}</td></tr>`}).join("");}
+render();search.addEventListener("input",()=>render(search.value));})().catch(e=>{document.getElementById('club-rows').innerHTML=`<tr><td colspan="4">${esc(e.message)}</td></tr>`});
 </script><script>siteFooter();</script></body></html>
