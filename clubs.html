@@ -1,18 +1,11 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark"><title>Clubs · The Dominator Draft</title><link rel="stylesheet" href="assets/site.css?v=10"><link rel="stylesheet" href="assets/ui.css?v=1"></head>
+<meta name="color-scheme" content="dark"><title>Clubs · The Dominator Draft</title><link rel="stylesheet" href="assets/site.css?v=10"><link rel="stylesheet" href="assets/ui.css?v=1"><style>.club-player-list{max-width:430px}.club-player-list span{display:inline-block;margin:2px 12px 2px 0}.club-player-list small{display:block;color:var(--muted);font-size:12px}@media(max-width:600px){.clubs-table th:nth-child(1),.clubs-table td:nth-child(1),.clubs-table th:nth-child(4),.clubs-table td:nth-child(4){display:none}}</style></head>
 <body><script src="assets/site.js?v=5"></script><script>siteHeader("clubs");</script>
 
 <main class="page"><div class="page-head"><div class="section-kicker mono">TOURNAMENT FIELD</div><h1>THE CLUBS</h1>
-<p class="lead">Each club fields five players in every race. Follow their next matchup and official tournament status.</p></div>
-<input id="club-search" class="search-box" placeholder="Search clubs" autocomplete="off">
-<table class="clubs-table"><thead><tr><th>SEED</th><th>CLUB</th><th>ENTRY ROUND</th><th>STATUS</th></tr></thead><tbody id="club-rows"></tbody></table></main>
+<p class="lead">Clubs, players and matchups.</p></div>
+<input id="club-search" class="search-box" placeholder="Search clubs or players" aria-label="Search clubs or players" autocomplete="off">
+<table class="clubs-table"><thead><tr><th>SEED</th><th>CLUB</th><th>PLAYERS</th><th>ENTRY</th><th>STATUS</th></tr></thead><tbody id="club-rows"></tbody></table></main>
 
-<script>
-(async()=>{const data=await getJSON("data/tournament-index.json"),rows=document.getElementById("club-rows"),search=document.getElementById("club-search");
-function render(q=""){const text=q.trim().toLowerCase();rows.innerHTML=data.teams.filter(c=>!text||c.name.toLowerCase().includes(text)).sort((a,b)=>a.seed-b.seed).map(c=>{
-const entry=data.matches.find(m=>m.sources.some(s=>s.team===c.id));
-const status=data.champion_id===c.id?'Champion':data.eliminated.includes(c.id)?'Eliminated':'In contention';
-return `<tr><td class="draw-cell">#${esc(c.seed)}</td><td class="club-cell"><a href="club.html?id=${encodeURIComponent(c.id)}">${esc(c.name)}</a></td><td>${esc(entry?.round||'—')}${entry?.round==='R2'?' · bye':''}</td><td>${esc(status)}</td></tr>`}).join("");}
-render();search.addEventListener("input",()=>render(search.value));})().catch(e=>{document.getElementById('club-rows').innerHTML=`<tr><td colspan="4">${esc(e.message)}</td></tr>`});
-</script><script>siteFooter();</script></body></html>
+<script src="assets/clubs.js?v=1" defer></script><script>siteFooter();</script></body></html>

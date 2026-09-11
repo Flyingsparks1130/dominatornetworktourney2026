@@ -12334,6 +12334,13 @@
       "build_fingerprint": "fb1781c0855442f3a1045d2419af387c45e554df6a7d78ab7a241967242d98dc",
       "is_ghost": true,
       "mood": "Max",
+      "base_stats": {
+        "speed": 1652.5599365234375,
+        "stamina": 1062.8800048828125,
+        "power": 1046.239990234375,
+        "guts": 786.239990234375,
+        "wisdom": 1006.719970703125
+      },
       "team_id": "dominate",
       "eligible": true,
       "scoring_place": 1,
@@ -12463,6 +12470,13 @@
       "build_fingerprint": "21f883425beeaf2be0d325c1e7be11ca4b4ab35ae6efc56b247814fd0ac2dff3",
       "is_ghost": true,
       "mood": "Max",
+      "base_stats": {
+        "speed": 1633.8399658203125,
+        "stamina": 1044.159912109375,
+        "power": 1250.0799560546875,
+        "guts": 707.199951171875,
+        "wisdom": 1121.1199951171875
+      },
       "team_id": "dominate",
       "eligible": true,
       "scoring_place": 2,
@@ -12600,6 +12614,13 @@
       "build_fingerprint": "deb1f7152af221b635fc6e9125fe67aec73e61872951220e4167ea22ada4a318",
       "is_ghost": true,
       "mood": "Max",
+      "base_stats": {
+        "speed": 1543.3599853515625,
+        "stamina": 783.1199951171875,
+        "power": 1053.52001953125,
+        "guts": 681.199951171875,
+        "wisdom": 1218.8800048828125
+      },
       "team_id": "dominate",
       "eligible": true,
       "scoring_place": 3,
@@ -12745,6 +12766,13 @@
       "build_fingerprint": "2f081e1b6fc4aa409c66cf1a586394d99dfce89b48403245f4fa32360943aa5f",
       "is_ghost": true,
       "mood": "Max",
+      "base_stats": {
+        "speed": 1664.0,
+        "stamina": 827.8399658203125,
+        "power": 1245.919921875,
+        "guts": 673.9199829101562,
+        "wisdom": 1073.2799072265625
+      },
       "team_id": "dominium",
       "eligible": true,
       "scoring_place": 4,
@@ -12874,6 +12902,13 @@
       "build_fingerprint": "5b0fbe3a5a169dc4f9f00176af9abd3db934814d2f81e4595949a37bb65d8964",
       "is_ghost": true,
       "mood": "Max",
+      "base_stats": {
+        "speed": 1664.0,
+        "stamina": 710.3199462890625,
+        "power": 1155.43994140625,
+        "guts": 706.1599731445312,
+        "wisdom": 1367.5999755859375
+      },
       "team_id": "dominium",
       "eligible": true,
       "scoring_place": 5,
@@ -13015,6 +13050,13 @@
       "build_fingerprint": "c60b711ed6022bfc4989d30c6bcb0c3c7e15594c81c808cc1bc0c50afc0e245f",
       "is_ghost": true,
       "mood": "Max",
+      "base_stats": {
+        "speed": 1446.639892578125,
+        "stamina": 1002.5599365234375,
+        "power": 1017.1199340820312,
+        "guts": 782.0799560546875,
+        "wisdom": 989.0399780273438
+      },
       "team_id": "dominate",
       "eligible": true,
       "scoring_place": 6,
@@ -13152,6 +13194,13 @@
       "build_fingerprint": "b7af88c0acd219332669780e5cd07405a74a97bfbf1e5245fe4986cf6a7dbb00",
       "is_ghost": true,
       "mood": "Max",
+      "base_stats": {
+        "speed": 1517.3599853515625,
+        "stamina": 1047.2799072265625,
+        "power": 1135.679931640625,
+        "guts": 765.43994140625,
+        "wisdom": 976.5599365234375
+      },
       "team_id": "dominate",
       "eligible": true,
       "scoring_place": 7,
@@ -13285,6 +13334,13 @@
       "build_fingerprint": "1df66331582804642e7ed2a6bb77d584c533d7b4f0443a872eab86b1926a8eef",
       "is_ghost": true,
       "mood": "Max",
+      "base_stats": {
+        "speed": 1672.3199462890625,
+        "stamina": 818.47998046875,
+        "power": 1108.6400146484375,
+        "guts": 696.7999877929688,
+        "wisdom": 1235.5198974609375
+      },
       "team_id": "dominium",
       "eligible": true,
       "scoring_place": 8,
@@ -13418,6 +13474,13 @@
       "build_fingerprint": "01daf0028c0360f4369a68d90189395a19bc4728b8ae7588e6fc8680253efc13",
       "is_ghost": true,
       "mood": "Max",
+      "base_stats": {
+        "speed": 1388.39990234375,
+        "stamina": 1050.39990234375,
+        "power": 1035.8399658203125,
+        "guts": 716.5599975585938,
+        "wisdom": 965.1199951171875
+      },
       "team_id": "dominium",
       "eligible": true,
       "scoring_place": 9,
@@ -13547,6 +13610,13 @@
       "build_fingerprint": "3db45383aae1cbd95075d3a261a7c243ed1aa1a0640d03074b3c66b541356c7f",
       "is_ghost": true,
       "mood": "Max",
+      "base_stats": {
+        "speed": 1408.159912109375,
+        "stamina": 1110.719970703125,
+        "power": 925.5999755859375,
+        "guts": 742.5599975585938,
+        "wisdom": 774.7999877929688
+      },
       "team_id": "dominium",
       "eligible": true,
       "scoring_place": 10,
@@ -13563,7 +13633,7 @@
   "scoring_verified": true,
   "review_reasons": [],
   "team_points": {
-    "dominate": 7,
-    "dominium": 0
+    "dominium": 0,
+    "dominate": 7
   }
 }
