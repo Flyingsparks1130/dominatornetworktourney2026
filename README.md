@@ -1,5 +1,7 @@
 # Current tournament workflow
 
+The latest rework adds [per-match draft JSON and score-only results](MATCH_DRAFTS_UPDATE.md). Track pools and picks are managed inside each matchup's folder and detail page.
+
 Use [TOURNAMENT_SETUP.md](TOURNAMENT_SETUP.md) for the four-round bracket, folder imports, local organizer, and GitHub Desktop publishing steps. It supersedes the historical instructions below.
 
 The current bracket is configured in `Dominator Tournament/tournament.json`. The new public data is `data/tournament-index.json`.

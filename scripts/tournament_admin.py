@@ -11,7 +11,7 @@ import webbrowser
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
-from tournament_engine import ARCHIVE, MAX_BYTES, TournamentError, build, mutate, import_race
+from tournament_engine import ARCHIVE, MAX_BYTES, TournamentError, build, mutate, import_race, save_draft
 
 class Handler(SimpleHTTPRequestHandler):
     server_version='DominatorLocal/1.0'
@@ -73,6 +73,7 @@ class Handler(SimpleHTTPRequestHandler):
                 path=urlsplit(self.path).path
                 if path=='/api/control':result=mutate(self.root,data)
                 elif path=='/api/import':result=import_race(self.root,data)
+                elif path=='/api/draft':result=save_draft(self.root,data)
                 elif path=='/api/build':result=build(self.root)
                 else:return self.respond(404,{'error':'Unknown endpoint.'})
             return self.respond(200,self.state(result))

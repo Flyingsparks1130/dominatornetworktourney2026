@@ -1,21 +1,3 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark"><title>Track Draft · The Dominator Draft</title><link rel="stylesheet" href="assets/site.css?v=10"></head>
-<body><script src="assets/site.js"></script><script>siteHeader("tracks");</script>
-
-<main class="page"><div class="page-head"><div class="section-kicker mono">PLAYER-CONTROLLED COURSE SELECTION</div><h1>THE TRACK DRAFT</h1>
-<p class="lead">There is no fixed five-race course list. The matchup itself determines the standard tracks.</p></div>
-<section class="draft-overview">
-<article class="draft-step"><div class="draft-step-num">01 · RESERVE</div><h3>Roll tiebreaker</h3><p>One random track is revealed first and reserved for a sixth race if required.</p></article>
-<article class="draft-step"><div class="draft-step-num">02 · PICK</div><h3>4 tracks each</h3><p>Club A and Club B each select four tracks from the random pool, producing eight picks.</p></article>
-<article class="draft-step"><div class="draft-step-num">03 · VETO</div><h3>1 opposing track each</h3><p>Each club removes one track chosen by its opponent.</p></article>
-<article class="draft-step"><div class="draft-step-num">04 · LOCK</div><h3>5 + tiebreaker</h3><p>The organizers confirm the final five standard tracks from the six remaining after vetoes. The separate tiebreaker stays in reserve.</p></article>
-</section>
-<section class="card pool-card"><div class="section-kicker mono">RANDOM TRACK POOL</div><div id="pool"></div></section>
-</main>
-
-<script>
-(async()=>{const data=await getJSON("config/track_pool.json"),root=document.getElementById("pool");
-if(!data.tracks?.length){root.innerHTML=`<div class="pool-empty mono">TRACK POOL NOT LOADED YET.<br><br>Add courses to <strong>config/track_pool.json</strong> when the official pool is ready.</div>`;return}
-root.innerHTML=`<div class="track-state">${data.tracks.map(t=>`<span class="track-chip">${esc(t.name||t)}</span>`).join("")}</div>`})().catch(console.error);
-</script><script>siteFooter();</script></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Match Drafts · The Dominator</title><link rel="stylesheet" href="assets/tournament.css?v=2"></head>
+<body class="dt-body" data-page="drafts"><header class="dt-header"></header><main class="dt-main" id="dt-root"><p class="dt-muted">Loading tournament…</p></main><footer class="dt-footer"></footer><noscript>JavaScript is required for the tournament archive.</noscript><script src="assets/tournament.js?v=2" defer></script></body></html>

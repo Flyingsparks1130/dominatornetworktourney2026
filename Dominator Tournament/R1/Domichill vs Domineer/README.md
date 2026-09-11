@@ -1,1 +1,1 @@
-Create a race-description folder here, for example `01 - 2200m Turf Left Good`, and put the original race JSON inside that folder. No example race is counted automatically.
+`match.json` connects this folder to the bracket. Edit `draft.json` for this matchup’s own draft. Create numbered race-description subfolders for original race JSONs. Official scores and winners can be entered in the organizer even if no race JSON is available. See MATCH_DRAFTS_UPDATE.md at the repo root.

@@ -12,7 +12,8 @@ import http.cookiejar
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from tournament_engine import ARCHIVE,TournamentError,build,normalize_race,mutate,import_race,read_json,time_display
+from tournament_engine import ARCHIVE,TournamentError,build,normalize_race,mutate,import_race,read_json,time_display,save_draft
+from tournament_draft import blank_draft
 from tournament_admin import serve
 
 def fixture(seed=100):
@@ -81,8 +82,12 @@ class EngineTests(unittest.TestCase):
         self.assertEqual(build(self.root)['index']['matches'][0]['scores'],{'dominion':25,'dominarium':18})
         self.assertIsNone(build(self.root)['index']['matches'][0]['winner_id'])
     def test_advance_eliminate_and_fill_next(self):
+        self.command('score',scores={'dominion':25,'dominarium':10})
         r=self.command('advance',winner_id='dominion')['index'];m=next(m for m in r['matches'] if m['id']=='r2-m1')
         self.assertEqual([p['id'] for p in m['participants']],['dominator','dominion']);self.assertIn('dominarium',r['eliminated'])
+        finished=next(m for m in r['matches'] if m['id']=='r1-m1')
+        self.assertEqual(finished['status'],'complete');self.assertTrue(finished['score_only']);self.assertEqual(finished['races'],[])
+        self.assertEqual(finished['scores'],{'dominion':25,'dominarium':10})
     def test_full_progression(self):
         choices={'r1-m1':'dominion','r1-m2':'domineer','r1-m3':'dominium','r2-m1':'dominator','r2-m2':'dominance','r2-m3':'dominacion','r2-m4':'dominate','r3-m1':'dominator','r3-m2':'dominate','r4-m1':'dominator'}
         for mid,w in choices.items():r=self.command('advance',mid,winner_id=w)
@@ -111,6 +116,45 @@ class EngineTests(unittest.TestCase):
         r=build(self.root);self.assertEqual(next(iter(r['races'].values()))['match_id'],'r1-m2')
     def test_no_advancement_before_participants(self):
         with self.assertRaises(TournamentError):self.command('advance','r4-m1',winner_id='dominator')
+    def draft(self,mid='r1-m1',**fields):
+        raw=blank_draft(mid);raw.update(fields)
+        rev=read_json(self.root/ARCHIVE/'control.json')['revision']
+        return save_draft(self.root,{'revision':rev,'match_id':mid,'reason':'Record match draft','draft_json':raw})
+    def test_drafts_are_isolated_from_other_matches_and_races(self):
+        r=self.draft(track_pool=['R1 pool'],track_picks=[{'team_id':'dominion','track':'2200m Turf'}])
+        r=self.draft('r2-m2',track_pool=['R2 pool'],final_tracks=['1600m Turf'])
+        by_id={m['id']:m for m in r['index']['matches']}
+        self.assertEqual(by_id['r1-m1']['draft']['track_pool'],['R1 pool'])
+        self.assertEqual(by_id['r2-m2']['draft']['track_pool'],['R2 pool'])
+        self.assertEqual(r['races'],{});self.assertFalse(any(m['scores'] or m['winner_id'] for m in by_id.values()))
+        folder=self.root/ARCHIVE/'R1/Dominion vs Dominarium';folder.rename(folder.with_name('Renamed match'))
+        self.assertEqual(build(self.root)['index']['matches'][0]['draft']['track_pool'],['R1 pool'])
+    def test_wrong_draft_match_and_club_rejected_without_overwrite(self):
+        self.draft(track_pool=['Keep this pool'])
+        path=self.root/ARCHIVE/'R1/Dominion vs Dominarium/draft.json';before=path.read_bytes()
+        for raw in [blank_draft('r2-m2'),dict(blank_draft('r1-m1'),track_picks=[{'team_id':'dominator','track':'Wrong club'}])]:
+            with self.assertRaises(TournamentError):
+                save_draft(self.root,{'revision':1,'match_id':'r1-m1','reason':'Invalid draft','draft_json':raw})
+        self.assertEqual(path.read_bytes(),before)
+        with self.assertRaises(TournamentError):
+            save_draft(self.root,{'revision':0,'match_id':'r1-m1','reason':'Stale edit','draft_json':blank_draft('r1-m1')})
+    def test_r2_json_scores_and_historical_draft_coexist(self):
+        r=self.upload(match_id='r2-m2');rid=next(iter(r['races']))
+        self.command('score','r2-m2',scores={'dominance':25,'dominant-h':10})
+        self.command('advance','r2-m2',winner_id='dominance')
+        r=self.draft('r2-m2',status='locked',final_tracks=['Race '+str(i) for i in range(1,6)])
+        m=next(m for m in r['index']['matches'] if m['id']=='r2-m2')
+        self.assertEqual(m['scores'],{'dominance':25,'dominant-h':10});self.assertEqual(m['winner_id'],'dominance')
+        self.assertFalse(m['score_only']);self.assertEqual(m['races'][0]['id'],rid);self.assertEqual(len(m['draft']['final_tracks']),5)
+    def test_downstream_populated_draft_blocks_earlier_winner_change(self):
+        self.command('advance',winner_id='dominion')
+        self.draft('r2-m1',track_picks=[{'team_id':'dominion','track':'2200m Turf'}])
+        with self.assertRaises(TournamentError):self.command('reopen')
+        self.assertEqual(build(self.root)['index']['matches'][0]['winner_id'],'dominion')
+    def test_downstream_empty_template_does_not_block_winner_change(self):
+        self.command('advance',winner_id='dominion');self.draft('r2-m1')
+        r=self.command('advance',winner_id='dominarium')
+        self.assertEqual(next(m for m in r['index']['matches'] if m['id']=='r2-m1')['participants'][1]['id'],'dominarium')
     def test_http_csrf_host_and_write(self):
         s=serve(self.root,0);thread=threading.Thread(target=s.serve_forever,daemon=True);thread.start()
         base=f'http://127.0.0.1:{s.server_port}'
@@ -122,6 +166,13 @@ class EngineTests(unittest.TestCase):
             with self.assertRaises(urllib.error.HTTPError) as fail:opener.open(req)
             self.assertEqual(fail.exception.code,403)
             req.add_header('X-CSRF-Token',session['csrf']);result=json.load(opener.open(req));self.assertEqual(result['index']['revision'],1)
+            draft=dict(blank_draft('r1-m1'),track_pool=['Local draft pool'])
+            body={'revision':1,'match_id':'r1-m1','reason':'Record local draft','draft_json':draft}
+            req=urllib.request.Request(base+'/api/draft',data=json.dumps(body).encode(),headers={'Content-Type':'application/json','Origin':base})
+            with self.assertRaises(urllib.error.HTTPError) as fail:opener.open(req)
+            self.assertEqual(fail.exception.code,403)
+            req.add_header('X-CSRF-Token',session['csrf']);result=json.load(opener.open(req))
+            self.assertEqual(result['index']['matches'][0]['draft']['track_pool'],['Local draft pool'])
             req=urllib.request.Request(base+'/api/session',headers={'Host':'evil.example'})
             with self.assertRaises(urllib.error.HTTPError) as fail:opener.open(req)
             self.assertEqual(fail.exception.code,403)

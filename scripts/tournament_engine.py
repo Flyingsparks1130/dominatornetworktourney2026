@@ -17,6 +17,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from tournament_draft import normalize_draft, has_content as draft_has_content
 
 ARCHIVE = 'Dominator Tournament'
 MAX_BYTES = 20 * 1024 * 1024
@@ -273,10 +274,21 @@ def build(root: Path, write=True) -> dict:
     race_docs = {}
     warnings = []
     content_seen = {}
-    for m in matches: m['races'] = []
+    for m in matches:
+        m.update(races=[], draft=None, draft_path=None, draft_has_content=False)
     for m, folder in match_folders(root, config, matches):
+        draft_path = folder / 'draft.json'
+        if draft_path.exists():
+            if m['draft_path']:
+                raise TournamentError(f"Multiple draft.json files for {m['id']}; keep one draft per matchup.")
+            try:
+                m['draft'] = normalize_draft(read_json(draft_path), m)
+            except ValueError as exc:
+                raise TournamentError(f'{draft_path.relative_to(root)}: {exc}') from exc
+            m['draft_path'] = draft_path.relative_to(root).as_posix()
+            m['draft_has_content'] = draft_has_content(m['draft'])
         for loose in folder.glob('*.json'):
-            if loose.name!='match.json':
+            if loose.name not in ('match.json', 'draft.json'):
                 raise TournamentError(f'Race JSON needs its race-description subfolder: {loose.relative_to(root)}')
         for racefolder in sorted((d for d in folder.iterdir() if d.is_dir()), key=lambda p:natural(p.name)):
             if racefolder.is_symlink(): raise TournamentError('Archive symlinks are not allowed.')
@@ -329,6 +341,7 @@ def build(root: Path, write=True) -> dict:
                 for tid,v in r['team_points'].items(): pts[tid]+=v
         m['computed_scores'] = pts if all_verified else None
         m['scores'] = m['manual_scores'] if m['manual_scores'] is not None else m['computed_scores']
+        m['score_only'] = not m['races'] and m['manual_scores'] is not None
         m['needs_review'] = any(not r['scoring_verified'] for r in m['races'])
         if not m['winner_id'] and m['status']=='ready' and m['races']:
             m['status'] = 'needs_review' if m['needs_review'] else 'in_progress'
@@ -366,8 +379,8 @@ def mutate(root: Path, payload: dict) -> dict:
     ids=[p['id'] for p in m['participants'] if p]
     children=descendants(config,mid)
     if action in ('advance','forfeit','reopen'):
-        occupied=[x['id'] for x in index['matches'] if x['id'] in children and (x['races'] or control.get('decisions',{}).get(x['id']))]
-        if occupied:raise TournamentError('Downstream records exist: '+', '.join(occupied)+'. Reopen the latest rounds and relocate their race files before changing this winner. Nothing has been changed.')
+        occupied=[x['id'] for x in index['matches'] if x['id'] in children and (x['races'] or x['draft_has_content'] or control.get('decisions',{}).get(x['id']))]
+        if occupied:raise TournamentError('Downstream records exist: '+', '.join(occupied)+'. Reopen the latest rounds and relocate their race files and populated drafts before changing this winner. Nothing has been changed.')
         if action=='reopen':
             control['decisions'].pop(mid,None)
         else:
@@ -450,6 +463,60 @@ def import_race(root: Path, payload: dict) -> dict:
     try:return build(root)
     except Exception:
         target.unlink(missing_ok=True);write_json(root/ARCHIVE/'control.json',previous);raise
+
+
+def save_draft(root: Path, payload: dict) -> dict:
+    """Save this match's draft independently of its official score or race files."""
+    root = root.resolve()
+    config, control = load_setup(root)
+    if payload.get('revision') != control['revision']:
+        raise TournamentError('This organizer page is stale. Reload before saving the draft.')
+    reason = payload.get('reason', '')
+    if not isinstance(reason, str) or not 3 <= len(reason.strip()) <= 500:
+        raise TournamentError('Provide an audit reason (3–500 characters).')
+    current = build(root, write=False)
+    match = next((m for m in current['index']['matches'] if m['id'] == payload.get('match_id')), None)
+    if not match or not all(match['participants']):
+        raise TournamentError('Choose a match with two known opponents before saving its draft.')
+    try:
+        draft = normalize_draft(payload.get('draft_json'), match)
+    except ValueError as exc:
+        raise TournamentError(str(exc)) from exc
+    raw_text = payload.get('raw_text')
+    if raw_text is not None:
+        if not isinstance(raw_text, str) or json.loads(raw_text.lstrip('\ufeff')) != payload['draft_json']:
+            raise TournamentError('Draft upload text does not match its parsed JSON.')
+        encoded = raw_text.encode('utf-8')
+    else:
+        encoded = (json.dumps(draft, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
+    if len(encoded) > MAX_BYTES:
+        raise TournamentError('Draft exceeds the JSON size limit.')
+    folders = [p for m,p in match_folders(root,config,current['index']['matches']) if m['id']==match['id']]
+    if len(folders) > 1:
+        raise TournamentError('Multiple folders for this match; consolidate them before saving its draft.')
+    parent = folders[0] if folders else root/ARCHIVE/match['round']/safe_part(' vs '.join(t['name'] for t in match['participants']))
+    target = parent/'draft.json'
+    if target.is_symlink() or not target.resolve().is_relative_to((root/ARCHIVE).resolve()):
+        raise TournamentError('Invalid draft destination.')
+    previous_bytes = target.read_bytes() if target.exists() else None
+    previous_control = copy.deepcopy(control)
+    parent.mkdir(parents=True, exist_ok=True)
+    if not (parent/'match.json').exists():
+        write_json(parent/'match.json', {'match_id':match['id']})
+    control['revision'] += 1
+    control['audit'].append({'at':now(), 'actor':'organizer', 'action':'draft', 'match_id':match['id'],
+        'reason':reason.strip(), 'revision':control['revision'], 'path':target.relative_to(root).as_posix(),
+        'before_sha256':hashlib.sha256(previous_bytes).hexdigest() if previous_bytes is not None else None,
+        'after_sha256':hashlib.sha256(encoded).hexdigest()})
+    try:
+        tmp = target.with_suffix('.json.tmp'); tmp.write_bytes(encoded); tmp.replace(target)
+        write_json(root/ARCHIVE/'control.json', control)
+        return build(root)
+    except Exception:
+        if previous_bytes is None: target.unlink(missing_ok=True)
+        else: target.write_bytes(previous_bytes)
+        write_json(root/ARCHIVE/'control.json', previous_control)
+        raise
 
 
 def make_site(root: Path, destination: Path) -> None:

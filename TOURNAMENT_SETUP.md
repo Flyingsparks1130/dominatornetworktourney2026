@@ -1,5 +1,7 @@
 # Tournament update — GitHub Desktop
 
+For the newer match-level draft JSON workflow and score-only results, read [MATCH_DRAFTS_UPDATE.md](MATCH_DRAFTS_UPDATE.md). Draft files now live inside each matchup, alongside `match.json`.
+
 This update is prepared for `Flyingsparks1130/dominatornetworktourney2026`, based on commit `0325b61e21c82f210d4ef408987f9b61b2cbfc7d`.
 
 ## Install once
