@@ -33,11 +33,16 @@ Use `R1` through `R4` for Round 1, quarterfinals, semifinals and final. `Round 1
 
 For actions, `team_id` is the club making the pick or veto. For a bench or roster entry, it is the owning club. Preserve known snake-pick order across both teams. A bench may use `discord:null`. Do not reconstruct unsupplied pick phases from the final roster. Only one draft belongs to each match.
 
+Roster entries may include `display_name` to resolve a supplied Discord ID or record an export-backed player name. An active entry may use `discord:null` only with a non-empty `display_name`; an in-game owner name is not assumed to be a Discord handle. Club rosters expose only player names. Uma selections and portraits remain specific to each matchup.
+
 ## Reported results
 
 `results.json` contains `schema_version`, `match_id`, `external_match_id`, `source`, `mvp`, and `races`. Each race has `number`, `track`, `tiebreaker`, and a three-runner `podium` in finishing order. Each runner and MVP has `team_id`, `uma`, and `discord`; MVP may be `null`.
 
 The engine validates active roster membership and variants, applies 4/2/1 to reported podiums, and generates race scores and cumulative totals. A report does not become an original race export and does not automatically confirm the winner. Report totals and raw-export totals remain separate. Official adjustments remain available through organizer controls.
+
+Reported runners and MVP may also include `display_name`, with the same rule for an unknown Discord identity. Use `external_match_id:null` when no external ID was supplied. Player contributions include zero-point players and combine verified race points with reported podiums only for races that have no verified export.
+
 
 LHNCFL records Dominion **22–27** Dominarium after six standard races plus a tiebreaker. MVP is **@LESKBILL**, Tamamo Cross, with 12 podium points. Dominarium advances to face Dominator in R2. Its source is the organizer's text and screenshots; live Uma Drafter retrieval was blocked. No original race files were provided.
 

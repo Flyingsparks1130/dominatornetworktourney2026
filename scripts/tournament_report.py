@@ -15,7 +15,8 @@ def normalize_report(raw, match, points):
             raise ValueError('Report text must be non-empty and at most 1000 characters.')
 
     text(result['source'])
-    text(result['external_match_id'])
+    if result['external_match_id'] is not None:
+        text(result['external_match_id'])
     teams = {p['id'] for p in match['participants'] if p}
     if len(teams) != 2:
         raise ValueError('Both opponents must be known for reported results.')
@@ -25,13 +26,15 @@ def normalize_report(raw, match, points):
     roster = draft.get('roster', [])
 
     def runner(row):
-        if not isinstance(row, dict) or set(row) != {'team_id', 'uma', 'discord'}:
+        if not isinstance(row, dict) or set(row) - {'display_name'} != {'team_id', 'uma', 'discord'}:
             raise ValueError('A reported runner needs team_id, uma and discord.')
-        for value in row.values():
+        for key, value in row.items():
+            if key == 'discord' and value is None and row.get('display_name'):
+                continue
             text(value)
         if row['team_id'] not in teams:
             raise ValueError('Reported runner must belong to this match.')
-        if roster and not any(not r['benched'] and all(r[k] == row[k] for k in row) for r in roster):
+        if roster and not any(not r['benched'] and all(r.get(k) == row[k] for k in row) for r in roster):
             raise ValueError('Reported runner must match an active drafted Uma and Discord player.')
 
     if result['mvp'] is not None:
@@ -61,7 +64,7 @@ def normalize_report(raw, match, points):
         scores = dict.fromkeys(sorted(teams), 0)
         for place, row in enumerate(race['podium'], 1):
             runner(row)
-            key = row['discord'].casefold()
+            key = (row['discord'] or row['display_name']).casefold()
             if key in seen:
                 raise ValueError('A runner cannot occupy two podium places in the same race.')
             seen.add(key)

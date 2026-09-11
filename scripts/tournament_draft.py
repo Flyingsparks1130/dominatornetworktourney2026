@@ -76,15 +76,17 @@ def normalize_draft(raw, match):
         raise ValueError('roster must be an array of at most 12 entries.')
     seen_umas, seen_players = set(), set()
     for row in roster:
-        if not isinstance(row, dict) or set(row) != {'team_id', 'uma', 'discord', 'benched'}:
+        if not isinstance(row, dict) or set(row) - {'display_name'} != {'team_id', 'uma', 'discord', 'benched'}:
             raise ValueError('Each roster entry needs team_id, uma, discord and benched.')
         text(row['team_id'], 'roster.team_id')
         text(row['uma'], 'roster.uma')
-        text(row['discord'], 'roster.discord', optional=row['benched'] is True)
+        if 'display_name' in row:
+            text(row['display_name'], 'roster.display_name')
+        text(row['discord'], 'roster.discord', optional=row['benched'] is True or bool(row.get('display_name')))
         if row['team_id'] not in teams or type(row['benched']) is not bool:
             raise ValueError('Roster club must be a participant and benched must be a boolean.')
         key = (row['team_id'], row['uma'].casefold())
-        player = (row['discord'] or '').casefold()
+        player = (row['discord'] or row.get('display_name') or '').casefold()
         if key in seen_umas or (player and player in seen_players):
             raise ValueError('Duplicate roster Uma or Discord player.')
         seen_umas.add(key)
