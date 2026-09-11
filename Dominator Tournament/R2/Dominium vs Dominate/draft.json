@@ -1,18 +1,135 @@
 {
   "schema_version": 1,
   "match_id": "r2-m4",
-  "status": "pending",
+  "status": "locked",
+  "external_match_id": "SE3RMK",
+  "roster": [
+    {
+      "team_id": "dominate",
+      "uma": "Seiun Sky",
+      "discord": "<@1456439897047957766>",
+      "benched": false
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Mihono Bourbon (Valentine)",
+      "discord": "<@221323450529087488>",
+      "benched": false
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Mayano Top Gun",
+      "discord": "<@419307287581032449>",
+      "benched": false
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Mejiro McQueen (Anime)",
+      "discord": "<@451774062491074560>",
+      "benched": false
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Mejiro McQueen (Summer)",
+      "discord": "<@762151062839885824>",
+      "benched": false
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Mejiro McQueen",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Special Week",
+      "discord": "<@555964243258769409>",
+      "benched": false
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Rice Shower (Halloween)",
+      "discord": "<@1244589187202551809>",
+      "benched": false
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Satono Diamond",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Tamamo Cross",
+      "discord": "<@329792187443445761>",
+      "benched": false
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Oguri Cap",
+      "discord": "<@667998121929998349>",
+      "benched": false
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Seiun Sky (Ballroom)",
+      "discord": "<@378745083236712449>",
+      "benched": false
+    }
+  ],
   "track_pool": [],
   "track_picks": [],
   "track_vetoes": [],
-  "final_tracks": [],
-  "tiebreaker_track": null,
-  "uma_pre_bans": [],
+  "final_tracks": [
+    "Nakayama (Inner) 2500m · Turf · Summer / Sunny / Good",
+    "Kyoto (Outer) 2200m · Turf · Winter / Snowy / Good",
+    "Fukushima 2000m · Turf · Summer / Rainy / Soft",
+    "Niigata (Inner) 2400m · Turf · Summer / Sunny / Good",
+    "Niigata (Inner) 2200m · Turf · Summer / Sunny / Firm",
+    "Kyoto (Outer) 3000m · Turf · Summer / Sunny / Good"
+  ],
+  "tiebreaker_track": "Hanshin (Inner) 3000m · Turf · Fall / Rainy / Heavy",
+  "uma_pre_bans": [
+    {
+      "team_id": "dominate",
+      "uma": "Gold Ship"
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Mejiro Ryan"
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Maruzensky (Summer)"
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Narita Taishin"
+    }
+  ],
   "uma_picks": [],
-  "uma_bans": [],
+  "uma_bans": [
+    {
+      "team_id": "dominium",
+      "uma": "Kitasan Black"
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Oguri Cap (Christmas)"
+    }
+  ],
   "uma_additions": [],
-  "benched_umas": [],
+  "benched_umas": [
+    {
+      "team_id": "dominate",
+      "uma": "Mejiro McQueen"
+    },
+    {
+      "team_id": "dominium",
+      "uma": "Satono Diamond"
+    }
+  ],
   "training_start": null,
   "training_deadline": null,
-  "notes": ""
+  "notes": "Dominate won 26–9 after Race 5. Race 6 and the reserved tiebreaker were not run. The supplied draft schedule is preserved as written. Race analysis preserves the exporter’s literal condition labels (Soft, Hard, Good), which differ from the draft wording; no raw metadata has been rewritten. Discord mentions are preserved as supplied. MVP was not specified."
 }

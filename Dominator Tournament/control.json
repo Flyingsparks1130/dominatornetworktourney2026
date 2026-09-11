@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 3,
+  "revision": 14,
   "decisions": {
     "r1-m1": {
       "winner_id": "dominarium",
@@ -31,9 +31,230 @@
         "domichill": 7,
         "domineer": 28
       }
+    },
+    "r2-m4": {
+      "winner_id": "dominate",
+      "method": "advance",
+      "reason": "Organizer-supplied SE3RMK final 26–9 after Race 5, verified against all five original exports and reported podiums.",
+      "decided_at": "2026-09-11T16:36:56Z",
+      "manual_scores": {
+        "dominate": 26,
+        "dominium": 9
+      }
     }
   },
-  "race_overrides": {},
+  "race_overrides": {
+    "88e67acbf1bf9d722ad3": {
+      "9": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "4": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "8": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "7": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "1": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "3": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "5": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "6": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "2": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "0": {
+        "team_id": "dominium",
+        "eligible": true
+      }
+    },
+    "6a90afd4af061a79b568": {
+      "3": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "4": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "9": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "6": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "8": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "0": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "5": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "1": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "7": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "2": {
+        "team_id": "dominium",
+        "eligible": true
+      }
+    },
+    "37e67a4d0d6bea4e9f3e": {
+      "9": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "8": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "4": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "1": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "2": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "3": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "0": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "6": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "5": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "7": {
+        "team_id": "dominium",
+        "eligible": true
+      }
+    },
+    "80443fe07928e4407b7a": {
+      "1": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "2": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "9": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "5": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "6": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "3": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "0": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "8": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "7": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "4": {
+        "team_id": "dominium",
+        "eligible": true
+      }
+    },
+    "7c48300d6cdd861a5834": {
+      "8": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "5": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "4": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "9": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "2": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "3": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "6": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "1": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "7": {
+        "team_id": "dominium",
+        "eligible": true
+      },
+      "0": {
+        "team_id": "dominium",
+        "eligible": true
+      }
+    }
+  },
   "roster": {},
   "audit": [
     {
@@ -182,6 +403,2022 @@
           }
         },
         "race_overrides": {},
+        "roster": {}
+      }
+    },
+    {
+      "at": "2026-09-11T16:36:55Z",
+      "actor": "organizer",
+      "action": "import",
+      "match_id": "r2-m4",
+      "path": "Dominator Tournament/R2/Dominium vs Dominate/01 - Nakayama 2500m/race.json",
+      "content_hash": "88e67acbf1bf9d722ad3050a3e9281ecfd7653584aa0911e2891169f10ca38fc",
+      "revision": 4
+    },
+    {
+      "at": "2026-09-11T16:36:55Z",
+      "actor": "organizer",
+      "action": "mapping",
+      "match_id": "r2-m4",
+      "reason": "Map explicit drafted character variants to their clubs; all 10 supplied runners fielded, no NPC/DQ reported.",
+      "revision": 5,
+      "before": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          }
+        },
+        "race_overrides": {},
+        "roster": {}
+      },
+      "after": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          }
+        },
+        "roster": {}
+      }
+    },
+    {
+      "at": "2026-09-11T16:36:55Z",
+      "actor": "organizer",
+      "action": "import",
+      "match_id": "r2-m4",
+      "path": "Dominator Tournament/R2/Dominium vs Dominate/02 - Kyoto 2200m/race.json",
+      "content_hash": "6a90afd4af061a79b568ae8bd7fde0fa739564f0a26f0bbf043b7b20219b0e69",
+      "revision": 6
+    },
+    {
+      "at": "2026-09-11T16:36:55Z",
+      "actor": "organizer",
+      "action": "mapping",
+      "match_id": "r2-m4",
+      "reason": "Map explicit drafted character variants to their clubs; all 10 supplied runners fielded, no NPC/DQ reported.",
+      "revision": 7,
+      "before": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          }
+        },
+        "roster": {}
+      },
+      "after": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6a90afd4af061a79b568": {
+            "3": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          }
+        },
+        "roster": {}
+      }
+    },
+    {
+      "at": "2026-09-11T16:36:55Z",
+      "actor": "organizer",
+      "action": "import",
+      "match_id": "r2-m4",
+      "path": "Dominator Tournament/R2/Dominium vs Dominate/03 - Fukushima 2000m/race.json",
+      "content_hash": "37e67a4d0d6bea4e9f3e70c5765c2ba8a7f76d5743c865cbc8bc61ee9b0bf6d8",
+      "revision": 8
+    },
+    {
+      "at": "2026-09-11T16:36:55Z",
+      "actor": "organizer",
+      "action": "mapping",
+      "match_id": "r2-m4",
+      "reason": "Map explicit drafted character variants to their clubs; all 10 supplied runners fielded, no NPC/DQ reported.",
+      "revision": 9,
+      "before": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6a90afd4af061a79b568": {
+            "3": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          }
+        },
+        "roster": {}
+      },
+      "after": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6a90afd4af061a79b568": {
+            "3": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "37e67a4d0d6bea4e9f3e": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          }
+        },
+        "roster": {}
+      }
+    },
+    {
+      "at": "2026-09-11T16:36:55Z",
+      "actor": "organizer",
+      "action": "import",
+      "match_id": "r2-m4",
+      "path": "Dominator Tournament/R2/Dominium vs Dominate/04 - Niigata 2400m/race.json",
+      "content_hash": "80443fe07928e4407b7a4b3f518c8433ee23c5f877283e6cb150dabca9ff00a9",
+      "revision": 10
+    },
+    {
+      "at": "2026-09-11T16:36:55Z",
+      "actor": "organizer",
+      "action": "mapping",
+      "match_id": "r2-m4",
+      "reason": "Map explicit drafted character variants to their clubs; all 10 supplied runners fielded, no NPC/DQ reported.",
+      "revision": 11,
+      "before": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6a90afd4af061a79b568": {
+            "3": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "37e67a4d0d6bea4e9f3e": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          }
+        },
+        "roster": {}
+      },
+      "after": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6a90afd4af061a79b568": {
+            "3": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "37e67a4d0d6bea4e9f3e": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "80443fe07928e4407b7a": {
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          }
+        },
+        "roster": {}
+      }
+    },
+    {
+      "at": "2026-09-11T16:36:56Z",
+      "actor": "organizer",
+      "action": "import",
+      "match_id": "r2-m4",
+      "path": "Dominator Tournament/R2/Dominium vs Dominate/05 - Niigata 2200m/race.json",
+      "content_hash": "7c48300d6cdd861a5834195b66d83f3c75d38e98d8faca54baee348a0ce7f054",
+      "revision": 12
+    },
+    {
+      "at": "2026-09-11T16:36:56Z",
+      "actor": "organizer",
+      "action": "mapping",
+      "match_id": "r2-m4",
+      "reason": "Map explicit drafted character variants to their clubs; all 10 supplied runners fielded, no NPC/DQ reported.",
+      "revision": 13,
+      "before": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6a90afd4af061a79b568": {
+            "3": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "37e67a4d0d6bea4e9f3e": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "80443fe07928e4407b7a": {
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          }
+        },
+        "roster": {}
+      },
+      "after": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6a90afd4af061a79b568": {
+            "3": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "37e67a4d0d6bea4e9f3e": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "80443fe07928e4407b7a": {
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "7c48300d6cdd861a5834": {
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          }
+        },
+        "roster": {}
+      }
+    },
+    {
+      "at": "2026-09-11T16:36:56Z",
+      "actor": "organizer",
+      "action": "record_report",
+      "match_id": "r2-m4",
+      "reason": "Organizer-supplied SE3RMK final 26–9 after Race 5, verified against all five original exports and reported podiums.",
+      "revision": 14,
+      "before": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6a90afd4af061a79b568": {
+            "3": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "37e67a4d0d6bea4e9f3e": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "80443fe07928e4407b7a": {
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "7c48300d6cdd861a5834": {
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          }
+        },
+        "roster": {}
+      },
+      "after": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          },
+          "r2-m4": {
+            "winner_id": "dominate",
+            "method": "advance",
+            "reason": "Organizer-supplied SE3RMK final 26–9 after Race 5, verified against all five original exports and reported podiums.",
+            "decided_at": "2026-09-11T16:36:56Z",
+            "manual_scores": {
+              "dominate": 26,
+              "dominium": 9
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6a90afd4af061a79b568": {
+            "3": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "37e67a4d0d6bea4e9f3e": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "80443fe07928e4407b7a": {
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "7c48300d6cdd861a5834": {
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          }
+        },
         "roster": {}
       }
     }

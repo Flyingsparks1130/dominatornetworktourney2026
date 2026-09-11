@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T15:52:13Z",
+  "generated_at": "2026-09-11T16:38:13Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
-  "revision": 3,
+  "revision": 14,
   "rounds": [
     {
       "id": "R1",
@@ -1648,43 +1648,492 @@
           "aliases": []
         }
       ],
-      "winner_id": null,
-      "loser_id": null,
-      "status": "ready",
-      "manual_scores": null,
-      "decision_reason": null,
-      "source": "race_files",
-      "races": [],
+      "winner_id": "dominate",
+      "loser_id": "dominium",
+      "status": "complete",
+      "manual_scores": {
+        "dominate": 26,
+        "dominium": 9
+      },
+      "decision_reason": "Organizer-supplied SE3RMK final 26–9 after Race 5, verified against all five original exports and reported podiums.",
+      "source": "manual",
+      "races": [
+        {
+          "id": "88e67acbf1bf9d722ad3",
+          "round": "R2",
+          "match_id": "r2-m4",
+          "race_folder": "01 - Nakayama 2500m",
+          "file_name": "race.json",
+          "raw_path": "Dominator Tournament/R2/Dominium vs Dominate/01 - Nakayama 2500m/race.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10506,
+            "track_id": 10005,
+            "distance_m": 2500,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Soft",
+            "weather": "Sunny",
+            "season": "Summer"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominate": 6,
+            "dominium": 1
+          },
+          "data_file": "data/tournament-races/88e67acbf1bf9d722ad3.json"
+        },
+        {
+          "id": "6a90afd4af061a79b568",
+          "round": "R2",
+          "match_id": "r2-m4",
+          "race_folder": "02 - Kyoto 2200m",
+          "file_name": "race.json",
+          "raw_path": "Dominator Tournament/R2/Dominium vs Dominate/02 - Kyoto 2200m/race.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10808,
+            "track_id": 10008,
+            "distance_m": 2200,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Soft",
+            "weather": "Snow",
+            "season": "Winter"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominate": 3,
+            "dominium": 4
+          },
+          "data_file": "data/tournament-races/6a90afd4af061a79b568.json"
+        },
+        {
+          "id": "37e67a4d0d6bea4e9f3e",
+          "round": "R2",
+          "match_id": "r2-m4",
+          "race_folder": "03 - Fukushima 2000m",
+          "file_name": "race.json",
+          "raw_path": "Dominator Tournament/R2/Dominium vs Dominate/03 - Fukushima 2000m/race.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10403,
+            "track_id": 10004,
+            "distance_m": 2000,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Hard",
+            "weather": "Rainy",
+            "season": "Summer"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominate": 7,
+            "dominium": 0
+          },
+          "data_file": "data/tournament-races/37e67a4d0d6bea4e9f3e.json"
+        },
+        {
+          "id": "80443fe07928e4407b7a",
+          "round": "R2",
+          "match_id": "r2-m4",
+          "race_folder": "04 - Niigata 2400m",
+          "file_name": "race.json",
+          "raw_path": "Dominator Tournament/R2/Dominium vs Dominate/04 - Niigata 2400m/race.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10309,
+            "track_id": 10003,
+            "distance_m": 2400,
+            "surface": "Turf",
+            "turn": "Left",
+            "condition": "Soft",
+            "weather": "Sunny",
+            "season": "Summer"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominate": 4,
+            "dominium": 3
+          },
+          "data_file": "data/tournament-races/80443fe07928e4407b7a.json"
+        },
+        {
+          "id": "7c48300d6cdd861a5834",
+          "round": "R2",
+          "match_id": "r2-m4",
+          "race_folder": "05 - Niigata 2200m",
+          "file_name": "race.json",
+          "raw_path": "Dominator Tournament/R2/Dominium vs Dominate/05 - Niigata 2200m/race.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10308,
+            "track_id": 10003,
+            "distance_m": 2200,
+            "surface": "Turf",
+            "turn": "Left",
+            "condition": "Good",
+            "weather": "Sunny",
+            "season": "Summer"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominate": 6,
+            "dominium": 1
+          },
+          "data_file": "data/tournament-races/7c48300d6cdd861a5834.json"
+        }
+      ],
       "draft": {
         "schema_version": 1,
         "match_id": "r2-m4",
-        "status": "pending",
+        "status": "locked",
         "track_pool": [],
         "track_picks": [],
         "track_vetoes": [],
-        "final_tracks": [],
-        "tiebreaker_track": null,
-        "uma_pre_bans": [],
+        "final_tracks": [
+          "Nakayama (Inner) 2500m · Turf · Summer / Sunny / Good",
+          "Kyoto (Outer) 2200m · Turf · Winter / Snowy / Good",
+          "Fukushima 2000m · Turf · Summer / Rainy / Soft",
+          "Niigata (Inner) 2400m · Turf · Summer / Sunny / Good",
+          "Niigata (Inner) 2200m · Turf · Summer / Sunny / Firm",
+          "Kyoto (Outer) 3000m · Turf · Summer / Sunny / Good"
+        ],
+        "tiebreaker_track": "Hanshin (Inner) 3000m · Turf · Fall / Rainy / Heavy",
+        "uma_pre_bans": [
+          {
+            "team_id": "dominate",
+            "uma": "Gold Ship"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mejiro Ryan"
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Maruzensky (Summer)"
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Narita Taishin"
+          }
+        ],
         "uma_picks": [],
-        "uma_bans": [],
+        "uma_bans": [
+          {
+            "team_id": "dominium",
+            "uma": "Kitasan Black"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Oguri Cap (Christmas)"
+          }
+        ],
         "uma_additions": [],
-        "benched_umas": [],
+        "benched_umas": [
+          {
+            "team_id": "dominate",
+            "uma": "Mejiro McQueen"
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Satono Diamond"
+          }
+        ],
         "training_start": null,
         "training_deadline": null,
-        "notes": "",
-        "external_match_id": null,
-        "roster": []
+        "notes": "Dominate won 26–9 after Race 5. Race 6 and the reserved tiebreaker were not run. The supplied draft schedule is preserved as written. Race analysis preserves the exporter’s literal condition labels (Soft, Hard, Good), which differ from the draft wording; no raw metadata has been rewritten. Discord mentions are preserved as supplied. MVP was not specified.",
+        "external_match_id": "SE3RMK",
+        "roster": [
+          {
+            "team_id": "dominate",
+            "uma": "Seiun Sky",
+            "discord": "<@1456439897047957766>",
+            "benched": false
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mihono Bourbon (Valentine)",
+            "discord": "<@221323450529087488>",
+            "benched": false
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mayano Top Gun",
+            "discord": "<@419307287581032449>",
+            "benched": false
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mejiro McQueen (Anime)",
+            "discord": "<@451774062491074560>",
+            "benched": false
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mejiro McQueen (Summer)",
+            "discord": "<@762151062839885824>",
+            "benched": false
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mejiro McQueen",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Special Week",
+            "discord": "<@555964243258769409>",
+            "benched": false
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Rice Shower (Halloween)",
+            "discord": "<@1244589187202551809>",
+            "benched": false
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Satono Diamond",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Tamamo Cross",
+            "discord": "<@329792187443445761>",
+            "benched": false
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Oguri Cap",
+            "discord": "<@667998121929998349>",
+            "benched": false
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Seiun Sky (Ballroom)",
+            "discord": "<@378745083236712449>",
+            "benched": false
+          }
+        ]
       },
       "draft_path": "Dominator Tournament/R2/Dominium vs Dominate/draft.json",
-      "draft_has_content": false,
-      "reported_results": null,
-      "report_path": null,
-      "computed_scores": null,
-      "scores": null,
+      "draft_has_content": true,
+      "reported_results": {
+        "schema_version": 1,
+        "match_id": "r2-m4",
+        "external_match_id": "SE3RMK",
+        "source": "Organizer-reported podiums cross-checked against all five original horseACT exports. Raw exports and reported points are parallel evidence, not additive scores. Draft condition wording and literal exported condition labels are preserved separately.",
+        "mvp": null,
+        "races": [
+          {
+            "number": 1,
+            "track": "Nakayama (Inner) 2500m · Turf · Summer / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominate",
+                "uma": "Mejiro McQueen (Summer)",
+                "discord": "<@762151062839885824>",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominate",
+                "uma": "Mihono Bourbon (Valentine)",
+                "discord": "<@221323450529087488>",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominium",
+                "uma": "Oguri Cap",
+                "discord": "<@667998121929998349>",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominate": 6,
+              "dominium": 1
+            },
+            "cumulative_scores": {
+              "dominate": 6,
+              "dominium": 1
+            }
+          },
+          {
+            "number": 2,
+            "track": "Kyoto (Outer) 2200m · Turf · Winter / Snowy / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominium",
+                "uma": "Rice Shower (Halloween)",
+                "discord": "<@1244589187202551809>",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominate",
+                "uma": "Seiun Sky",
+                "discord": "<@1456439897047957766>",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominate",
+                "uma": "Mejiro McQueen (Summer)",
+                "discord": "<@762151062839885824>",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominate": 3,
+              "dominium": 4
+            },
+            "cumulative_scores": {
+              "dominate": 9,
+              "dominium": 5
+            }
+          },
+          {
+            "number": 3,
+            "track": "Fukushima 2000m · Turf · Summer / Rainy / Soft",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominate",
+                "uma": "Mejiro McQueen (Summer)",
+                "discord": "<@762151062839885824>",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominate",
+                "uma": "Mihono Bourbon (Valentine)",
+                "discord": "<@221323450529087488>",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominate",
+                "uma": "Seiun Sky",
+                "discord": "<@1456439897047957766>",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominate": 7,
+              "dominium": 0
+            },
+            "cumulative_scores": {
+              "dominate": 16,
+              "dominium": 5
+            }
+          },
+          {
+            "number": 4,
+            "track": "Niigata (Inner) 2400m · Turf · Summer / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominate",
+                "uma": "Mejiro McQueen (Summer)",
+                "discord": "<@762151062839885824>",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominium",
+                "uma": "Seiun Sky (Ballroom)",
+                "discord": "<@378745083236712449>",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominium",
+                "uma": "Oguri Cap",
+                "discord": "<@667998121929998349>",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominate": 4,
+              "dominium": 3
+            },
+            "cumulative_scores": {
+              "dominate": 20,
+              "dominium": 8
+            }
+          },
+          {
+            "number": 5,
+            "track": "Niigata (Inner) 2200m · Turf · Summer / Sunny / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominate",
+                "uma": "Mihono Bourbon (Valentine)",
+                "discord": "<@221323450529087488>",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "dominate",
+                "uma": "Mayano Top Gun",
+                "discord": "<@419307287581032449>",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "dominium",
+                "uma": "Rice Shower (Halloween)",
+                "discord": "<@1244589187202551809>",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "dominate": 6,
+              "dominium": 1
+            },
+            "cumulative_scores": {
+              "dominate": 26,
+              "dominium": 9
+            }
+          }
+        ],
+        "totals": {
+          "dominate": 26,
+          "dominium": 9
+        }
+      },
+      "report_path": "Dominator Tournament/R2/Dominium vs Dominate/results.json",
+      "computed_scores": {
+        "dominium": 9,
+        "dominate": 26
+      },
+      "scores": {
+        "dominate": 26,
+        "dominium": 9
+      },
       "score_only": false,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": []
+      "target_reached": [
+        "dominate"
+      ]
     },
     {
       "id": "r3-m1",
@@ -1735,7 +2184,13 @@
       ],
       "participants": [
         null,
-        null
+        {
+          "id": "dominate",
+          "name": "Dominate",
+          "seed": 2,
+          "club_id": "147185239",
+          "aliases": []
+        }
       ],
       "winner_id": null,
       "loser_id": null,
@@ -1796,7 +2251,8 @@
   "eliminated": [
     "domichill",
     "dominante",
-    "dominion"
+    "dominion",
+    "dominium"
   ],
   "champion_id": null
 }
