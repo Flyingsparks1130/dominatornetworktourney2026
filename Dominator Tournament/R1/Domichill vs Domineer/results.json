@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "match_id": "r1-m2",
+  "external_match_id": "8GVX7Y",
+  "source": "Organizer-supplied written results, roster and Uma Drafter screenshots. Original race exports are unavailable.",
+  "mvp": {
+    "team_id": "domineer",
+    "uma": "Inari One",
+    "discord": "<@479998555290075136>"
+  },
+  "races": [
+    {
+      "number": 1,
+      "track": "Hanshin (Outer) 1600m · Turf · Spring / Cloudy / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "domineer",
+          "uma": "Biwa Hayahide",
+          "discord": "<@1351236267731583036>"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Inari One",
+          "discord": "<@479998555290075136>"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Gold Ship",
+          "discord": "<@680664099679371265>"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "track": "Kyoto (Outer) 3000m · Turf · Winter / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "domichill",
+          "uma": "Manhattan Cafe",
+          "discord": "<@499642536554659860>"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Biwa Hayahide",
+          "discord": "<@1351236267731583036>"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "<@382269416836038656>"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "track": "Tokyo 2000m · Turf · Summer / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "domineer",
+          "uma": "Inari One",
+          "discord": "<@479998555290075136>"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Mayano Top Gun",
+          "discord": "<@753451025012097047>"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Gold Ship",
+          "discord": "<@680664099679371265>"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "track": "Nakayama (Inner) 2000m · Turf · Summer / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "domineer",
+          "uma": "Mayano Top Gun",
+          "discord": "<@753451025012097047>"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "<@382269416836038656>"
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Smart Falcon",
+          "discord": "<@897274147841912843>"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "track": "Tokyo 1600m · Turf · Spring / Rainy / Soft",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "domineer",
+          "uma": "Inari One",
+          "discord": "<@479998555290075136>"
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Smart Falcon",
+          "discord": "<@897274147841912843>"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Biwa Hayahide",
+          "discord": "<@1351236267731583036>"
+        }
+      ]
+    }
+  ]
+}

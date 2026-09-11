@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "match_id": "r2-m4",
+  "status": "pending",
+  "track_pool": [],
+  "track_picks": [],
+  "track_vetoes": [],
+  "final_tracks": [],
+  "tiebreaker_track": null,
+  "uma_pre_bans": [],
+  "uma_picks": [],
+  "uma_bans": [],
+  "uma_additions": [],
+  "benched_umas": [],
+  "training_start": null,
+  "training_deadline": null,
+  "notes": ""
+}

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark"><title>Club · The Dominator Draft</title><link rel="stylesheet" href="assets/site.css?v=10"></head>
-<body><script src="assets/site.js?v=4"></script><script>siteHeader("clubs");</script>
+<meta name="color-scheme" content="dark"><title>Club · The Dominator Draft</title><link rel="stylesheet" href="assets/site.css?v=10"><link rel="stylesheet" href="assets/ui.css?v=1"></head>
+<body><script src="assets/site.js?v=5"></script><script>siteHeader("clubs");</script>
 <main class="page"><div id="club-detail"></div></main>
 <script>
 (async()=>{const id=new URLSearchParams(location.search).get("id"),[data,rosters]=await Promise.all([getJSON("data/tournament-index.json"),getJSON("config/clubs.json")]),c=data.teams.find(x=>x.id===id||x.club_id===id),root=document.getElementById("club-detail");
@@ -10,6 +10,6 @@ const roster=rosters.clubs.find(x=>x.id===c.club_id||x.id===c.id||x.name.toLower
 const matches=data.matches.filter(m=>m.participants.some(t=>t?.id===c.id)),next=matches.find(m=>!m.winner_id);
 const status=data.champion_id===c.id?'CHAMPION':data.eliminated.includes(c.id)?'ELIMINATED':'IN CONTENTION';
 document.title=`${c.name} · The Dominator Draft`;
-root.innerHTML=`<div class="page-head club-detail-head"><div><div class="section-kicker mono">SEED ${esc(c.seed)} · ${esc(status)}</div><h1>${esc(c.name)}</h1><p class="lead">Five players. One submitted Uma per player across every standard race.</p></div><a class="btn" href="clubs.html">← BACK TO CLUBS</a></div><div class="section-kicker mono">MATCHES</div>${matches.map(m=>`<p><a class="btn" href="archive.html?${new URLSearchParams({round:m.round,match:m.id})}">${esc(m.id.toUpperCase())} · ${esc(m.participants.map(t=>t?.name||'Opponent pending').join(' vs '))} →</a></p>`).join('')}<div class="rule"></div><div class="section-kicker mono">TOURNAMENT ROSTER</div><div class="member-grid">${Array.from({length:5},(_,i)=>{const name=roster?.members?.[i]?.name;const known=name&&!/ Player \d+$/.test(name);return `<article class="member-card"><div class="role">PLAYER ${i+1}</div><h3>${esc(known?name:'Not announced')}</h3><p>Runs on all five standard tracks</p></article>`}).join('')}</div>`;
+root.innerHTML=`<div class="page-head club-detail-head"><div><div class="section-kicker mono">SEED ${esc(c.seed)} · ${esc(status)}</div><h1>${esc(c.name)}</h1><p class="lead">Five players. One submitted Uma per player across every standard race.</p></div><a class="btn" href="clubs.html">← BACK TO CLUBS</a></div><div class="section-kicker mono">MATCHES</div>${matches.map(m=>`<p><a class="btn" href="archive.html?${new URLSearchParams({round:m.round,match:m.id})}">${esc(m.id.toUpperCase())} · ${esc(m.participants.map(t=>t?.name||'Opponent pending').join(' vs '))} →</a></p>`).join('')}<div class="rule"></div><div class="section-kicker mono">TOURNAMENT ROSTER</div><div class="member-grid">${Array.from({length:5},(_,i)=>{const name=roster?.members?.[i]?.name;const known=name&&!/ Player \d+$/.test(name);return `<article class="member-card"><div class="role">PLAYER ${i+1}</div><h3>${esc(known?name:'Not announced')}</h3><p>Fields the same Uma in each race played</p></article>`}).join('')}</div>`;
 })().catch(e=>{document.getElementById('club-detail').textContent=e.message});
 </script><script>siteFooter();</script></body></html>
