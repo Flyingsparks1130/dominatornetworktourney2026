@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T21:27:05Z",
+  "generated_at": "2026-09-11T22:11:22Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
@@ -684,6 +684,174 @@
       "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": [],
+      "draft_lineup": [
+        {
+          "team_id": "dominion",
+          "uma": "Oguri Cap (Christmas)",
+          "discord": "@Flareon",
+          "benched": false,
+          "variant_id": 100602,
+          "portrait": "assets/runners/100602.webp",
+          "display_name": "Flareon"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Gold Ship",
+          "discord": "@Beep",
+          "benched": false,
+          "variant_id": 100701,
+          "portrait": "assets/runners/100701.webp",
+          "display_name": "Beep"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Satono Diamond",
+          "discord": "@Purge",
+          "benched": false,
+          "variant_id": 106701,
+          "portrait": "assets/runners/106701.webp",
+          "display_name": "Purge"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "@Zangona",
+          "benched": false,
+          "variant_id": 101502,
+          "portrait": "assets/runners/101502.webp",
+          "display_name": "Zangona"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Mejiro McQueen",
+          "discord": "@IceColaa",
+          "benched": false,
+          "variant_id": 101301,
+          "portrait": "assets/runners/101301.webp",
+          "display_name": "IceColaa"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Mejiro Palmer",
+          "discord": null,
+          "benched": true,
+          "variant_id": 106401,
+          "portrait": "assets/runners/106401.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "@CallMeNeko",
+          "benched": false,
+          "variant_id": 101303,
+          "portrait": "assets/runners/101303.webp",
+          "display_name": "CallMeNeko"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Ines Fujin",
+          "discord": "@Cal",
+          "benched": false,
+          "variant_id": 103101,
+          "portrait": "assets/runners/103101.webp",
+          "display_name": "Cal"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Mayano Top Gun",
+          "discord": "@eibarman",
+          "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
+          "display_name": "eibarman"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Oguri Cap",
+          "discord": "@David",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "David"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Mejiro Dober (Camping)",
+          "discord": null,
+          "benched": true,
+          "variant_id": 105902,
+          "portrait": "assets/runners/105902.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Tamamo Cross",
+          "discord": "@LESKBILL",
+          "benched": false,
+          "variant_id": 102101,
+          "portrait": "assets/runners/102101.webp",
+          "display_name": "LESKBILL"
+        }
+      ],
+      "draft_uma_actions": {
+        "uma_pre_bans": [
+          {
+            "team_id": "dominion",
+            "uma": "Seiun Sky",
+            "variant_id": 102001,
+            "portrait": "assets/runners/102001.webp"
+          },
+          {
+            "team_id": "dominion",
+            "uma": "Narita Taishin",
+            "variant_id": 105001,
+            "portrait": "assets/runners/105001.webp"
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Kitasan Black",
+            "variant_id": 106801,
+            "portrait": "assets/runners/106801.webp"
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Seiun Sky (Ballroom)",
+            "variant_id": 102002,
+            "portrait": "assets/runners/102002.webp"
+          }
+        ],
+        "uma_picks": [],
+        "uma_bans": [
+          {
+            "team_id": "dominarium",
+            "uma": "Mihono Bourbon (Valentine)",
+            "variant_id": 102602,
+            "portrait": "assets/runners/102602.webp"
+          },
+          {
+            "team_id": "dominion",
+            "uma": "Maruzensky (Summer)",
+            "variant_id": 100402,
+            "portrait": "assets/runners/100402.webp"
+          }
+        ],
+        "uma_additions": [],
+        "benched_umas": [
+          {
+            "team_id": "dominion",
+            "uma": "Mejiro Palmer",
+            "variant_id": 106401,
+            "portrait": "assets/runners/106401.webp"
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Mejiro Dober (Camping)",
+            "variant_id": 105902,
+            "portrait": "assets/runners/105902.webp"
+          }
+        ]
+      },
       "lineup": [
         {
           "team_id": "dominion",
@@ -1332,6 +1500,174 @@
       "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": [],
+      "draft_lineup": [
+        {
+          "team_id": "domineer",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "<@382269416836038656>",
+          "benched": false,
+          "variant_id": 101502,
+          "portrait": "assets/runners/101502.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Mayano Top Gun",
+          "discord": "<@753451025012097047>",
+          "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Biwa Hayahide",
+          "discord": "<@1351236267731583036>",
+          "benched": false,
+          "variant_id": 102301,
+          "portrait": "assets/runners/102301.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Satono Diamond",
+          "discord": null,
+          "benched": true,
+          "variant_id": 106701,
+          "portrait": "assets/runners/106701.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Gold Ship",
+          "discord": "<@680664099679371265>",
+          "benched": false,
+          "variant_id": 100701,
+          "portrait": "assets/runners/100701.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Inari One",
+          "discord": "<@479998555290075136>",
+          "benched": false,
+          "variant_id": 103401,
+          "portrait": "assets/runners/103401.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Nishino Flower",
+          "discord": "<@199604689321459719>",
+          "benched": false,
+          "variant_id": 105101,
+          "portrait": "assets/runners/105101.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Manhattan Cafe",
+          "discord": "<@499642536554659860>",
+          "benched": false,
+          "variant_id": 102501,
+          "portrait": "assets/runners/102501.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Narita Brian",
+          "discord": "<@797271628773982269>",
+          "benched": false,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Smart Falcon",
+          "discord": "<@897274147841912843>",
+          "benched": false,
+          "variant_id": 104601,
+          "portrait": "assets/runners/104601.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Kitasan Black",
+          "discord": "<@229748241866948609>",
+          "benched": false,
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "domichill",
+          "uma": "Curren Chan (Wedding)",
+          "discord": null,
+          "benched": true,
+          "variant_id": 103802,
+          "portrait": "assets/runners/103802.webp",
+          "display_name": ""
+        }
+      ],
+      "draft_uma_actions": {
+        "uma_pre_bans": [
+          {
+            "team_id": "domineer",
+            "uma": "Mihono Bourbon (Valentine)",
+            "variant_id": 102602,
+            "portrait": "assets/runners/102602.webp"
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Mejiro Dober",
+            "variant_id": 105901,
+            "portrait": "assets/runners/105901.webp"
+          },
+          {
+            "team_id": "domichill",
+            "uma": "Taiki Shuttle",
+            "variant_id": 101001,
+            "portrait": "assets/runners/101001.webp"
+          },
+          {
+            "team_id": "domichill",
+            "uma": "Oguri Cap (Christmas)",
+            "variant_id": 100602,
+            "portrait": "assets/runners/100602.webp"
+          }
+        ],
+        "uma_picks": [],
+        "uma_bans": [
+          {
+            "team_id": "domichill",
+            "uma": "Narita Taishin",
+            "variant_id": 105001,
+            "portrait": "assets/runners/105001.webp"
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Seiun Sky",
+            "variant_id": 102001,
+            "portrait": "assets/runners/102001.webp"
+          }
+        ],
+        "uma_additions": [],
+        "benched_umas": [
+          {
+            "team_id": "domineer",
+            "uma": "Satono Diamond",
+            "variant_id": 106701,
+            "portrait": "assets/runners/106701.webp"
+          },
+          {
+            "team_id": "domichill",
+            "uma": "Curren Chan (Wedding)",
+            "variant_id": 103802,
+            "portrait": "assets/runners/103802.webp"
+          }
+        ]
+      },
       "lineup": [
         {
           "team_id": "domineer",
@@ -2023,6 +2359,174 @@
       "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": [],
+      "draft_lineup": [
+        {
+          "team_id": "dominium",
+          "uma": "Seiun Sky",
+          "discord": "@Juqi",
+          "benched": false,
+          "variant_id": 102001,
+          "portrait": "assets/runners/102001.webp",
+          "display_name": "Juqi"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Narita Brian",
+          "discord": null,
+          "benched": true,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Mejiro Ryan",
+          "discord": "@unluckyyy",
+          "benched": false,
+          "variant_id": 102701,
+          "portrait": "assets/runners/102701.webp",
+          "display_name": "unluckyyy"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Kitasan Black",
+          "discord": "@Mamboo 🌊🩵",
+          "benched": false,
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp",
+          "display_name": "Mamboo 🌊🩵"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Taiki Shuttle",
+          "discord": "@Yokka",
+          "benched": false,
+          "variant_id": 101001,
+          "portrait": "assets/runners/101001.webp",
+          "display_name": "Yokka"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Fuji Kiseki",
+          "discord": "@Raven621|Flying Free",
+          "benched": false,
+          "variant_id": 100501,
+          "portrait": "assets/runners/100501.webp",
+          "display_name": "Raven621|Flying Free"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Mejiro Dober",
+          "discord": "@RaptorBolt717",
+          "benched": false,
+          "variant_id": 105901,
+          "portrait": "assets/runners/105901.webp",
+          "display_name": "RaptorBolt717"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Oguri Cap",
+          "discord": "@Sky",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Sky"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Special Week",
+          "discord": "@Yumi",
+          "benched": false,
+          "variant_id": 100101,
+          "portrait": "assets/runners/100101.webp",
+          "display_name": "Yumi"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "King Halo",
+          "discord": "@David",
+          "benched": false,
+          "variant_id": 106101,
+          "portrait": "assets/runners/106101.webp",
+          "display_name": "David"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Smart Falcon",
+          "discord": "@Mor Mas",
+          "benched": false,
+          "variant_id": 104601,
+          "portrait": "assets/runners/104601.webp",
+          "display_name": "Mor Mas"
+        },
+        {
+          "team_id": "dominante",
+          "uma": "Nice Nature (Cheerleader)",
+          "discord": null,
+          "benched": true,
+          "variant_id": 106002,
+          "portrait": "assets/runners/106002.webp",
+          "display_name": ""
+        }
+      ],
+      "draft_uma_actions": {
+        "uma_pre_bans": [
+          {
+            "team_id": "dominium",
+            "uma": "Mihono Bourbon (Valentine)",
+            "variant_id": 102602,
+            "portrait": "assets/runners/102602.webp"
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Agnes Digital",
+            "variant_id": 101901,
+            "portrait": "assets/runners/101901.webp"
+          },
+          {
+            "team_id": "dominante",
+            "uma": "Silence Suzuka",
+            "variant_id": 100201,
+            "portrait": "assets/runners/100201.webp"
+          },
+          {
+            "team_id": "dominante",
+            "uma": "Aston Machan",
+            "variant_id": 108701,
+            "portrait": "assets/runners/108701.webp"
+          }
+        ],
+        "uma_picks": [],
+        "uma_bans": [
+          {
+            "team_id": "dominante",
+            "uma": "Oguri Cap (Christmas)",
+            "variant_id": 100602,
+            "portrait": "assets/runners/100602.webp"
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Maruzensky (Summer)",
+            "variant_id": 100402,
+            "portrait": "assets/runners/100402.webp"
+          }
+        ],
+        "uma_additions": [],
+        "benched_umas": [
+          {
+            "team_id": "dominium",
+            "uma": "Narita Brian",
+            "variant_id": 101601,
+            "portrait": "assets/runners/101601.webp"
+          },
+          {
+            "team_id": "dominante",
+            "uma": "Nice Nature (Cheerleader)",
+            "variant_id": 106002,
+            "portrait": "assets/runners/106002.webp"
+          }
+        ]
+      },
       "lineup": [
         {
           "team_id": "dominium",
@@ -2303,6 +2807,14 @@
       "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": [],
+      "draft_lineup": [],
+      "draft_uma_actions": {
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": []
+      },
       "lineup": [],
       "lineup_source": "draft",
       "player_points": [],
@@ -2373,6 +2885,14 @@
       "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": [],
+      "draft_lineup": [],
+      "draft_uma_actions": {
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": []
+      },
       "lineup": [],
       "lineup_source": "draft",
       "player_points": [],
@@ -2443,6 +2963,14 @@
       "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": [],
+      "draft_lineup": [],
+      "draft_uma_actions": {
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": []
+      },
       "lineup": [],
       "lineup_source": "draft",
       "player_points": [],
@@ -2507,8 +3035,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominium": 1,
-            "dominate": 6
+            "dominate": 6,
+            "dominium": 1
           },
           "data_file": "data/tournament-races/88e67acbf1bf9d722ad3.json"
         },
@@ -2533,8 +3061,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominium": 4,
-            "dominate": 3
+            "dominate": 3,
+            "dominium": 4
           },
           "data_file": "data/tournament-races/6a90afd4af061a79b568.json"
         },
@@ -2559,8 +3087,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominium": 0,
-            "dominate": 7
+            "dominate": 7,
+            "dominium": 0
           },
           "data_file": "data/tournament-races/37e67a4d0d6bea4e9f3e.json"
         },
@@ -2585,8 +3113,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominium": 3,
-            "dominate": 4
+            "dominate": 4,
+            "dominium": 3
           },
           "data_file": "data/tournament-races/80443fe07928e4407b7a.json"
         },
@@ -2611,8 +3139,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominium": 1,
-            "dominate": 6
+            "dominate": 6,
+            "dominium": 1
           },
           "data_file": "data/tournament-races/7c48300d6cdd861a5834.json"
         }
@@ -3007,6 +3535,174 @@
       "target_reached": [
         "dominate"
       ],
+      "draft_lineup": [
+        {
+          "team_id": "dominate",
+          "uma": "Seiun Sky",
+          "discord": "<@1456439897047957766>",
+          "benched": false,
+          "variant_id": 102001,
+          "portrait": "assets/runners/102001.webp",
+          "display_name": "Reyov"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mihono Bourbon (Valentine)",
+          "discord": "<@221323450529087488>",
+          "benched": false,
+          "variant_id": 102602,
+          "portrait": "assets/runners/102602.webp",
+          "display_name": "Mayday"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mayano Top Gun",
+          "discord": "<@419307287581032449>",
+          "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
+          "display_name": "Flyingsparkz"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen (Anime)",
+          "discord": "<@451774062491074560>",
+          "benched": false,
+          "variant_id": 101302,
+          "portrait": "assets/runners/101302.webp",
+          "display_name": "BYond"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "<@762151062839885824>",
+          "benched": false,
+          "variant_id": 101303,
+          "portrait": "assets/runners/101303.webp",
+          "display_name": "raine"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen",
+          "discord": null,
+          "benched": true,
+          "variant_id": 101301,
+          "portrait": "assets/runners/101301.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Special Week",
+          "discord": "<@555964243258769409>",
+          "benched": false,
+          "variant_id": 100101,
+          "portrait": "assets/runners/100101.webp",
+          "display_name": "Raven621"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "<@1244589187202551809>",
+          "benched": false,
+          "variant_id": 103002,
+          "portrait": "assets/runners/103002.webp",
+          "display_name": "Mamboo"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Satono Diamond",
+          "discord": null,
+          "benched": true,
+          "variant_id": 106701,
+          "portrait": "assets/runners/106701.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Tamamo Cross",
+          "discord": "<@329792187443445761>",
+          "benched": false,
+          "variant_id": 102101,
+          "portrait": "assets/runners/102101.webp",
+          "display_name": "Yokka"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Oguri Cap",
+          "discord": "<@667998121929998349>",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Unluckyyy"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Seiun Sky (Ballroom)",
+          "discord": "<@378745083236712449>",
+          "benched": false,
+          "variant_id": 102002,
+          "portrait": "assets/runners/102002.webp",
+          "display_name": "Juqi"
+        }
+      ],
+      "draft_uma_actions": {
+        "uma_pre_bans": [
+          {
+            "team_id": "dominate",
+            "uma": "Gold Ship",
+            "variant_id": 100701,
+            "portrait": "assets/runners/100701.webp"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mejiro Ryan",
+            "variant_id": 102701,
+            "portrait": "assets/runners/102701.webp"
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Maruzensky (Summer)",
+            "variant_id": 100402,
+            "portrait": "assets/runners/100402.webp"
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Narita Taishin",
+            "variant_id": 105001,
+            "portrait": "assets/runners/105001.webp"
+          }
+        ],
+        "uma_picks": [],
+        "uma_bans": [
+          {
+            "team_id": "dominium",
+            "uma": "Kitasan Black",
+            "variant_id": 106801,
+            "portrait": "assets/runners/106801.webp"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Oguri Cap (Christmas)",
+            "variant_id": 100602,
+            "portrait": "assets/runners/100602.webp"
+          }
+        ],
+        "uma_additions": [],
+        "benched_umas": [
+          {
+            "team_id": "dominate",
+            "uma": "Mejiro McQueen",
+            "variant_id": 101301,
+            "portrait": "assets/runners/101301.webp"
+          },
+          {
+            "team_id": "dominium",
+            "uma": "Satono Diamond",
+            "variant_id": 106701,
+            "portrait": "assets/runners/106701.webp"
+          }
+        ]
+      },
       "lineup": [
         {
           "team_id": "dominate",
@@ -3256,6 +3952,14 @@
       "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": [],
+      "draft_lineup": [],
+      "draft_uma_actions": {
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": []
+      },
       "lineup": [],
       "lineup_source": "draft",
       "player_points": [],
@@ -3301,6 +4005,14 @@
       "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": [],
+      "draft_lineup": [],
+      "draft_uma_actions": {
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": []
+      },
       "lineup": [],
       "lineup_source": "draft",
       "player_points": [],
@@ -3340,6 +4052,14 @@
       "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": [],
+      "draft_lineup": [],
+      "draft_uma_actions": {
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": []
+      },
       "lineup": [],
       "lineup_source": "draft",
       "player_points": [],
@@ -3361,48 +4081,18 @@
       "source": "draft",
       "members": [
         {
-          "team_id": "dominion",
-          "uma": "Oguri Cap (Christmas)",
-          "discord": "@Flareon",
-          "benched": false,
-          "variant_id": 100602,
-          "portrait": "assets/runners/100602.webp",
           "display_name": "Flareon"
         },
         {
-          "team_id": "dominion",
-          "uma": "Gold Ship",
-          "discord": "@Beep",
-          "benched": false,
-          "variant_id": 100701,
-          "portrait": "assets/runners/100701.webp",
           "display_name": "Beep"
         },
         {
-          "team_id": "dominion",
-          "uma": "Satono Diamond",
-          "discord": "@Purge",
-          "benched": false,
-          "variant_id": 106701,
-          "portrait": "assets/runners/106701.webp",
           "display_name": "Purge"
         },
         {
-          "team_id": "dominion",
-          "uma": "T.M. Opera O (New Year)",
-          "discord": "@Zangona",
-          "benched": false,
-          "variant_id": 101502,
-          "portrait": "assets/runners/101502.webp",
           "display_name": "Zangona"
         },
         {
-          "team_id": "dominion",
-          "uma": "Mejiro McQueen",
-          "discord": "@IceColaa",
-          "benched": false,
-          "variant_id": 101301,
-          "portrait": "assets/runners/101301.webp",
           "display_name": "IceColaa"
         }
       ]
@@ -3413,48 +4103,18 @@
       "source": "draft",
       "members": [
         {
-          "team_id": "dominarium",
-          "uma": "Mejiro McQueen (Summer)",
-          "discord": "@CallMeNeko",
-          "benched": false,
-          "variant_id": 101303,
-          "portrait": "assets/runners/101303.webp",
           "display_name": "CallMeNeko"
         },
         {
-          "team_id": "dominarium",
-          "uma": "Ines Fujin",
-          "discord": "@Cal",
-          "benched": false,
-          "variant_id": 103101,
-          "portrait": "assets/runners/103101.webp",
           "display_name": "Cal"
         },
         {
-          "team_id": "dominarium",
-          "uma": "Mayano Top Gun",
-          "discord": "@eibarman",
-          "benched": false,
-          "variant_id": 102401,
-          "portrait": "assets/runners/102401.webp",
           "display_name": "eibarman"
         },
         {
-          "team_id": "dominarium",
-          "uma": "Oguri Cap",
-          "discord": "@David",
-          "benched": false,
-          "variant_id": 100601,
-          "portrait": "assets/runners/100601.webp",
           "display_name": "David"
         },
         {
-          "team_id": "dominarium",
-          "uma": "Tamamo Cross",
-          "discord": "@LESKBILL",
-          "benched": false,
-          "variant_id": 102101,
-          "portrait": "assets/runners/102101.webp",
           "display_name": "LESKBILL"
         }
       ]
@@ -3465,48 +4125,18 @@
       "source": "draft",
       "members": [
         {
-          "team_id": "domichill",
-          "uma": "Nishino Flower",
-          "discord": "<@199604689321459719>",
-          "benched": false,
-          "variant_id": 105101,
-          "portrait": "assets/runners/105101.webp",
           "display_name": ""
         },
         {
-          "team_id": "domichill",
-          "uma": "Manhattan Cafe",
-          "discord": "<@499642536554659860>",
-          "benched": false,
-          "variant_id": 102501,
-          "portrait": "assets/runners/102501.webp",
           "display_name": ""
         },
         {
-          "team_id": "domichill",
-          "uma": "Narita Brian",
-          "discord": "<@797271628773982269>",
-          "benched": false,
-          "variant_id": 101601,
-          "portrait": "assets/runners/101601.webp",
           "display_name": ""
         },
         {
-          "team_id": "domichill",
-          "uma": "Smart Falcon",
-          "discord": "<@897274147841912843>",
-          "benched": false,
-          "variant_id": 104601,
-          "portrait": "assets/runners/104601.webp",
           "display_name": ""
         },
         {
-          "team_id": "domichill",
-          "uma": "Kitasan Black",
-          "discord": "<@229748241866948609>",
-          "benched": false,
-          "variant_id": 106801,
-          "portrait": "assets/runners/106801.webp",
           "display_name": ""
         }
       ]
@@ -3517,48 +4147,18 @@
       "source": "draft",
       "members": [
         {
-          "team_id": "domineer",
-          "uma": "T.M. Opera O (New Year)",
-          "discord": "<@382269416836038656>",
-          "benched": false,
-          "variant_id": 101502,
-          "portrait": "assets/runners/101502.webp",
           "display_name": ""
         },
         {
-          "team_id": "domineer",
-          "uma": "Mayano Top Gun",
-          "discord": "<@753451025012097047>",
-          "benched": false,
-          "variant_id": 102401,
-          "portrait": "assets/runners/102401.webp",
           "display_name": ""
         },
         {
-          "team_id": "domineer",
-          "uma": "Biwa Hayahide",
-          "discord": "<@1351236267731583036>",
-          "benched": false,
-          "variant_id": 102301,
-          "portrait": "assets/runners/102301.webp",
           "display_name": ""
         },
         {
-          "team_id": "domineer",
-          "uma": "Gold Ship",
-          "discord": "<@680664099679371265>",
-          "benched": false,
-          "variant_id": 100701,
-          "portrait": "assets/runners/100701.webp",
           "display_name": ""
         },
         {
-          "team_id": "domineer",
-          "uma": "Inari One",
-          "discord": "<@479998555290075136>",
-          "benched": false,
-          "variant_id": 103401,
-          "portrait": "assets/runners/103401.webp",
           "display_name": ""
         }
       ]
@@ -3569,48 +4169,18 @@
       "source": "race",
       "members": [
         {
-          "team_id": "dominium",
-          "uma": "Seiun Sky (Ballroom)",
-          "discord": "<@378745083236712449>",
-          "benched": false,
-          "variant_id": 102002,
-          "portrait": "assets/runners/102002.webp",
           "display_name": "Juqi"
         },
         {
-          "team_id": "dominium",
-          "uma": "Rice Shower (Halloween)",
-          "discord": "<@1244589187202551809>",
-          "benched": false,
-          "variant_id": 103002,
-          "portrait": "assets/runners/103002.webp",
           "display_name": "Mamboo"
         },
         {
-          "team_id": "dominium",
-          "uma": "Special Week",
-          "discord": "<@555964243258769409>",
-          "benched": false,
-          "variant_id": 100101,
-          "portrait": "assets/runners/100101.webp",
           "display_name": "Raven621"
         },
         {
-          "team_id": "dominium",
-          "uma": "Oguri Cap",
-          "discord": "<@667998121929998349>",
-          "benched": false,
-          "variant_id": 100601,
-          "portrait": "assets/runners/100601.webp",
           "display_name": "Unluckyyy"
         },
         {
-          "team_id": "dominium",
-          "uma": "Tamamo Cross",
-          "discord": "<@329792187443445761>",
-          "benched": false,
-          "variant_id": 102101,
-          "portrait": "assets/runners/102101.webp",
           "display_name": "Yokka"
         }
       ]
@@ -3621,48 +4191,18 @@
       "source": "draft",
       "members": [
         {
-          "team_id": "dominante",
-          "uma": "Mejiro Dober",
-          "discord": "@RaptorBolt717",
-          "benched": false,
-          "variant_id": 105901,
-          "portrait": "assets/runners/105901.webp",
           "display_name": "RaptorBolt717"
         },
         {
-          "team_id": "dominante",
-          "uma": "Oguri Cap",
-          "discord": "@Sky",
-          "benched": false,
-          "variant_id": 100601,
-          "portrait": "assets/runners/100601.webp",
           "display_name": "Sky"
         },
         {
-          "team_id": "dominante",
-          "uma": "Special Week",
-          "discord": "@Yumi",
-          "benched": false,
-          "variant_id": 100101,
-          "portrait": "assets/runners/100101.webp",
           "display_name": "Yumi"
         },
         {
-          "team_id": "dominante",
-          "uma": "King Halo",
-          "discord": "@David",
-          "benched": false,
-          "variant_id": 106101,
-          "portrait": "assets/runners/106101.webp",
           "display_name": "David"
         },
         {
-          "team_id": "dominante",
-          "uma": "Smart Falcon",
-          "discord": "@Mor Mas",
-          "benched": false,
-          "variant_id": 104601,
-          "portrait": "assets/runners/104601.webp",
           "display_name": "Mor Mas"
         }
       ]
@@ -3673,48 +4213,18 @@
       "source": "race",
       "members": [
         {
-          "team_id": "dominate",
-          "uma": "Mejiro McQueen (Anime)",
-          "discord": "<@451774062491074560>",
-          "benched": false,
-          "variant_id": 101302,
-          "portrait": "assets/runners/101302.webp",
           "display_name": "BYond"
         },
         {
-          "team_id": "dominate",
-          "uma": "Mayano Top Gun",
-          "discord": "<@419307287581032449>",
-          "benched": false,
-          "variant_id": 102401,
-          "portrait": "assets/runners/102401.webp",
           "display_name": "Flyingsparkz"
         },
         {
-          "team_id": "dominate",
-          "uma": "Mihono Bourbon (Valentine)",
-          "discord": "<@221323450529087488>",
-          "benched": false,
-          "variant_id": 102602,
-          "portrait": "assets/runners/102602.webp",
           "display_name": "Mayday"
         },
         {
-          "team_id": "dominate",
-          "uma": "Mejiro McQueen (Summer)",
-          "discord": "<@762151062839885824>",
-          "benched": false,
-          "variant_id": 101303,
-          "portrait": "assets/runners/101303.webp",
           "display_name": "raine"
         },
         {
-          "team_id": "dominate",
-          "uma": "Seiun Sky",
-          "discord": "<@1456439897047957766>",
-          "benched": false,
-          "variant_id": 102001,
-          "portrait": "assets/runners/102001.webp",
           "display_name": "Reyov"
         }
       ]

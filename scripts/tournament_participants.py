@@ -21,6 +21,11 @@ def attach_participants(matches, race_docs, portraits=None):
     for match in matches:
         draft = [{**r, **portraits.get(r['uma'], {})}
                  for r in (match.get('draft') or {}).get('roster', [])]
+        match['draft_lineup'] = [{**r, 'display_name': r.get('display_name') or display_name(r.get('discord'))}
+                                for r in draft]
+        match['draft_uma_actions'] = {
+            key: [{**r, **portraits.get(r['uma'], {})} for r in (match.get('draft') or {}).get(key, [])]
+            for key in ('uma_pre_bans', 'uma_picks', 'uma_bans', 'uma_additions', 'benched_umas')}
         verified = [race_docs[r['id']] for r in match['races'] if r['scoring_verified']]
 
         def runner(row):
@@ -36,12 +41,21 @@ def attach_participants(matches, race_docs, portraits=None):
                       if r['eligible'] and r['team_id']]
             lineup += [{**r, 'display_name': ''} for r in draft if r['benched']]
         else:
-            lineup = [{**r, 'display_name': display_name(r.get('discord'))} for r in draft]
+            lineup = match['draft_lineup']
         match['lineup'] = lineup
         match['lineup_source'] = 'race' if verified else 'draft'
+        for selection in match['draft_lineup']:
+            if selection['benched'] or selection['display_name']:
+                continue
+            player = next((r for r in lineup if r['team_id'] == selection['team_id']
+                           and r.get('variant_id') == selection.get('variant_id')
+                           and r['uma'] == selection['uma']), None)
+            if player:
+                selection['display_name'] = player['display_name']
 
         def reported_player(row):
-            result = {**row, **portraits.get(row['uma'], {}), 'display_name': display_name(row.get('discord'))}
+            result = {**row, **portraits.get(row['uma'], {}),
+                      'display_name': row.get('display_name') or display_name(row.get('discord'))}
             player = next((r for r in lineup if not r['benched'] and r['team_id'] == row['team_id']
                            and ((r.get('variant_id') is not None and r.get('variant_id') == result.get('variant_id'))
                                 or r['uma'] == row['uma'])), None)
@@ -96,5 +110,6 @@ def attach_participants(matches, race_docs, portraits=None):
             members = [r for r in lineup if r['team_id'] == team['id'] and not r['benched']]
             if members:
                 clubs[team['id']] = {'match_id': match['id'], 'round': match['round'],
-                                     'source': match['lineup_source'], 'members': members}
+                                     'source': match['lineup_source'],
+                                     'members': [{'display_name': r['display_name']} for r in members]}
     return clubs
