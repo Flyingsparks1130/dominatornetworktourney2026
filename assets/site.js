@@ -1,7 +1,8 @@
 function siteHeader(active){
   const items=[
+    ["index.html","HOME","home"],
     ["rules.html","RULES","rules"],
-    ["tracks.html","TRACK DRAFT","tracks"],
+    ["tracks.html","MATCH DRAFTS","tracks"],
     ["bracket.html","TOURNAMENT","bracket"],
     ["clubs.html","CLUBS","clubs"],
     ["stats.html","STATS","stats"]
@@ -14,7 +15,7 @@ function siteHeader(active){
   document.querySelector(".mobile-toggle")?.addEventListener("click",()=>document.querySelector(".nav")?.classList.toggle("open"));
 }
 function siteFooter(){document.body.insertAdjacentHTML("beforeend",`<footer class="site-footer"><div class="footer-inner">
-<span>THE DOMINATOR DRAFT 2026</span><span>Unofficial community competition · not affiliated with Cygames</span>
+<span>The Dominator Tournament</span><span>Unofficial community competition</span>
 </div></footer>`)}
 async function getJSON(path){const r=await fetch(`${path}?v=${Date.now()}`,{cache:"no-store"});if(!r.ok)throw new Error(`${path}: ${r.status}`);return r.json()}
 function esc(v){return String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;")}

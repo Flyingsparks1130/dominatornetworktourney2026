@@ -1,0 +1,33 @@
+/* Shared visual system for home, tournament, drafts, rules, clubs and organizer.
+   SVG bracket geometry and its type sizes remain owned by tournament.css. */
+:root{--bg:#101012;--surface:#19181d;--surface-2:#201e25;--text:#f5f3f0;--muted:#b9b6c1;--faint:#b9b6c1;--border:#37343b;--red:#d5344d;--red-bright:#ed6679;--red-soft:#29181e;--max:1240px;--dt-bg:#101012;--dt-panel:#19181d;--dt-panel2:#201e25;--dt-text:#f5f3f0;--dt-muted:#b9b6c1;--dt-line:#37343b;--dt-red:#d5344d;--dt-bright:#ed6679}
+body,body.dt-body{background:var(--bg);color:var(--text);font:16px/1.6 Arial,Helvetica,sans-serif}
+.mono,.nav,.label,.micro,.btn,.toc{font-family:inherit}
+.site-header,.dt-header{position:relative;top:auto;height:auto;background:#101012;border-bottom:1px solid #37343b;backdrop-filter:none}
+.header-inner,.dt-header-inner{width:100%;max-width:1240px;height:auto;padding:20px 28px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand,.dt-brand,.dn-home .dt-brand{font:800 19px/1.5 Arial,Helvetica,sans-serif;letter-spacing:-.04em;white-space:nowrap}
+.brand span,.dt-brand span{color:#ed6679}
+.nav,.dt-nav,.dn-home .dt-nav{display:flex;flex-wrap:wrap;gap:24px;align-items:center;font:700 14px/1.5 Arial,Helvetica,sans-serif;color:#b9b6c1;position:static;width:auto;background:none;padding:0;border:0}
+.nav a,.dt-nav a{padding:0 0 6px;border-bottom:2px solid transparent}
+.nav a.active,.dt-nav a.active,.dn-home .dt-nav a[href="index.html"]{color:#fff;border-bottom-color:#e34c60}
+.nav a:hover,.dt-nav a:hover{color:#fff}.mobile-toggle{display:none}
+.page,.dt-main{width:100%;max-width:1240px;margin:auto;padding:40px 28px 70px}
+.page-head,.dt-head{padding-bottom:28px;margin-bottom:28px;border-bottom:1px solid #37343b}
+.page-head h1,body:not(.dn-home) .dt-main h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.1;letter-spacing:-.04em}
+.section-kicker,.dt-kicker{font:700 14px/1.5 Arial,Helvetica,sans-serif;letter-spacing:.12em;color:#e87989}
+.lead,.dt-lead{font-size:18px;line-height:1.7;color:#b9b6c1}
+.dt-breadcrumb,.dt-small,.dt-label,.dt-match-top,.dt-match-foot,.dt-fact,.dt-folder-card p,.dt-match-tabs a,.dt-folder-icon,.dt-track-number,.dt-roster li span,.dt-mvp p,.dt-mvp-points span{font-size:14px}
+.dt-badge{font-size:12px;white-space:normal}.dt-match-foot{gap:14px;flex-wrap:wrap}.dt-team-row strong{overflow-wrap:anywhere}
+.dt-panel,.dt-folder-card,.dt-match-card,.dt-round,.card,.member-card,.score-box,.tbd-box{background:#19181d;border:1px solid #37343b;border-radius:8px}
+.dt-folder-card,.dt-round,.member-card{padding:24px}.dt-panel h2,.rules-section h2{font-size:24px;letter-spacing:-.025em}.dt-folder-card h3{font-size:20px}
+.dt-button,.btn{background:#201e25;border:1px solid #49434e;border-radius:5px;min-height:44px;padding:10px 18px;font:700 14px/1.5 Arial,Helvetica,sans-serif;color:#f5f3f0}
+.dt-button.primary,.btn.primary{background:#d5344d;border-color:#d5344d;color:white}.dt-button:hover,.btn:hover{border-color:#e87989}
+.dt-round:hover,.dt-folder-card:hover,.dt-match-card:hover{border-color:#e87989}
+.dt-empty,.dt-notice,.dt-draft-notes,.dt-error{font-size:16px;line-height:1.7}.dt-mvp{background:#29181e;border-color:#74414d}.dt-mvp h2{overflow-wrap:anywhere}
+.dt-table th,.clubs-table th{font:700 14px/1.5 Arial,Helvetica,sans-serif;letter-spacing:.03em;color:#b9b6c1}.dt-table td,.clubs-table td{font-size:16px;line-height:1.6}.clubs-table{background:#19181d}.clubs-table th,.clubs-table td{padding:16px}.clubs-table tbody tr:hover td{background:#201e25}
+.rules-layout{padding-top:0;gap:48px;grid-template-columns:minmax(0,1fr) 240px}.rules-title{font-size:14px;color:#b9b6c1;letter-spacing:.08em}.rules-section{font-size:16px;color:#d8d5dc;line-height:1.8}.rules-section h3{font-size:20px}.rules-section a,.toc a:hover{color:#f1b4be}.callout{background:#29181e;border-left-color:#df5369;border-radius:0 5px 5px 0}.toc,.toc-label{font-size:14px;line-height:1.6;color:#b9b6c1}.toc-wrap{top:24px}.score-box strong{font-size:36px;color:#f1b4be}.score-box span{font-size:14px}
+.member-card h3{font-size:18px;overflow-wrap:anywhere}.member-card .role,.member-card p{font:14px/1.6 Arial,Helvetica,sans-serif}.member-grid{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}.search-box,.dt-input{font-size:16px;background:#19181d;border:1px solid #49434e;border-radius:5px}
+.site-footer,.dt-footer,.dn-home .dt-footer{border-top:1px solid #37343b;padding:26px 28px;text-align:center;font:14px/1.6 Arial,Helvetica,sans-serif;color:#b9b6c1}.footer-inner{width:100%;display:block}.footer-inner span+span:before{content:' · '}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid #f4bac5;outline-offset:4px}
+@media(max-width:960px){.header-inner,.dt-header-inner{flex-direction:column;align-items:flex-start;gap:14px}.nav,.dt-nav,.dn-home .dt-nav{gap:18px}.rules-layout{grid-template-columns:1fr}.toc-wrap{position:static;grid-row:1}.toc{flex-direction:row;flex-wrap:wrap;border-left:0;border-bottom:1px solid #37343b;padding:0 0 20px}.toc-label{margin-bottom:12px}}
+@media(max-width:600px){.header-inner,.dt-header-inner{padding:18px}.page,.dt-main{padding:28px 18px 48px}.nav,.dt-nav,.dn-home .dt-nav{font-size:14px;gap:14px}.club-detail-head{grid-template-columns:1fr}.clubs-table th,.clubs-table td{padding:12px 5px;font-size:14px;overflow-wrap:anywhere}.draw-cell{width:auto}.dt-match-foot{font-size:14px}.dt-mvp{flex-wrap:wrap}.dt-scoreboard{min-width:min(100%,220px)}.dt-roster li{gap:12px}.dt-roster li>div{min-width:0;overflow-wrap:anywhere}}

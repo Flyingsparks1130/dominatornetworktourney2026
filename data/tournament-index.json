@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T15:28:51Z",
+  "generated_at": "2026-09-11T15:52:13Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
-  "revision": 2,
+  "revision": 3,
   "rounds": [
     {
       "id": "R1",
@@ -114,7 +114,7 @@
       2,
       1
     ],
-    "standard_races": 5,
+    "standard_races": 6,
     "target_points": 25,
     "expected_entries": 10,
     "players_per_team": 5,
@@ -648,40 +648,357 @@
           "aliases": []
         }
       ],
-      "winner_id": null,
-      "loser_id": null,
-      "status": "ready",
-      "manual_scores": null,
-      "decision_reason": null,
-      "source": "race_files",
+      "winner_id": "domineer",
+      "loser_id": "domichill",
+      "status": "complete",
+      "manual_scores": {
+        "domichill": 7,
+        "domineer": 28
+      },
+      "decision_reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+      "source": "manual",
       "races": [],
       "draft": {
         "schema_version": 1,
         "match_id": "r1-m2",
-        "status": "pending",
+        "status": "locked",
         "track_pool": [],
         "track_picks": [],
         "track_vetoes": [],
-        "final_tracks": [],
-        "tiebreaker_track": null,
-        "uma_pre_bans": [],
+        "final_tracks": [
+          "Hanshin (Outer) 1600m · Turf · Spring / Cloudy / Good",
+          "Kyoto (Outer) 3000m · Turf · Winter / Sunny / Good",
+          "Tokyo 2000m · Turf · Summer / Sunny / Good",
+          "Nakayama (Inner) 2000m · Turf · Summer / Sunny / Good",
+          "Tokyo 1600m · Turf · Spring / Rainy / Soft",
+          "Tokyo 1800m · Turf · Spring / Rainy / Heavy"
+        ],
+        "tiebreaker_track": "Niigata (Inner) 2400m · Turf · Fall / Sunny / Firm",
+        "uma_pre_bans": [
+          {
+            "team_id": "domineer",
+            "uma": "Mihono Bourbon (Valentine)"
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Mejiro Dober"
+          },
+          {
+            "team_id": "domichill",
+            "uma": "Taiki Shuttle"
+          },
+          {
+            "team_id": "domichill",
+            "uma": "Oguri Cap (Christmas)"
+          }
+        ],
         "uma_picks": [],
-        "uma_bans": [],
+        "uma_bans": [
+          {
+            "team_id": "domichill",
+            "uma": "Narita Taishin"
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Seiun Sky"
+          }
+        ],
         "uma_additions": [],
-        "benched_umas": [],
+        "benched_umas": [
+          {
+            "team_id": "domineer",
+            "uma": "Satono Diamond"
+          },
+          {
+            "team_id": "domichill",
+            "uma": "Curren Chan (Wedding)"
+          }
+        ],
         "training_start": null,
         "training_deadline": null,
-        "notes": "",
-        "external_match_id": null,
-        "roster": []
+        "notes": "The match ended after Race 5 when Domineer reached 28 points. Tokyo 1800m (Race 6) and the Niigata tiebreaker were not run. Discord mentions are preserved exactly as provided; usernames were not supplied. Original pool, pick order and training dates were not supplied.",
+        "external_match_id": "8GVX7Y",
+        "roster": [
+          {
+            "team_id": "domineer",
+            "uma": "T.M. Opera O (New Year)",
+            "discord": "<@382269416836038656>",
+            "benched": false
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Mayano Top Gun",
+            "discord": "<@753451025012097047>",
+            "benched": false
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Biwa Hayahide",
+            "discord": "<@1351236267731583036>",
+            "benched": false
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Satono Diamond",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Gold Ship",
+            "discord": "<@680664099679371265>",
+            "benched": false
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Inari One",
+            "discord": "<@479998555290075136>",
+            "benched": false
+          },
+          {
+            "team_id": "domichill",
+            "uma": "Nishino Flower",
+            "discord": "<@199604689321459719>",
+            "benched": false
+          },
+          {
+            "team_id": "domichill",
+            "uma": "Manhattan Cafe",
+            "discord": "<@499642536554659860>",
+            "benched": false
+          },
+          {
+            "team_id": "domichill",
+            "uma": "Narita Brian",
+            "discord": "<@797271628773982269>",
+            "benched": false
+          },
+          {
+            "team_id": "domichill",
+            "uma": "Smart Falcon",
+            "discord": "<@897274147841912843>",
+            "benched": false
+          },
+          {
+            "team_id": "domichill",
+            "uma": "Kitasan Black",
+            "discord": "<@229748241866948609>",
+            "benched": false
+          },
+          {
+            "team_id": "domichill",
+            "uma": "Curren Chan (Wedding)",
+            "discord": null,
+            "benched": true
+          }
+        ]
       },
       "draft_path": "Dominator Tournament/R1/Domichill vs Domineer/draft.json",
-      "draft_has_content": false,
-      "reported_results": null,
-      "report_path": null,
+      "draft_has_content": true,
+      "reported_results": {
+        "schema_version": 1,
+        "match_id": "r1-m2",
+        "external_match_id": "8GVX7Y",
+        "source": "Organizer-supplied written results, roster and Uma Drafter screenshots. Original race exports are unavailable.",
+        "mvp": {
+          "team_id": "domineer",
+          "uma": "Inari One",
+          "discord": "<@479998555290075136>"
+        },
+        "races": [
+          {
+            "number": 1,
+            "track": "Hanshin (Outer) 1600m · Turf · Spring / Cloudy / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "domineer",
+                "uma": "Biwa Hayahide",
+                "discord": "<@1351236267731583036>",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "domineer",
+                "uma": "Inari One",
+                "discord": "<@479998555290075136>",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "domineer",
+                "uma": "Gold Ship",
+                "discord": "<@680664099679371265>",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "domichill": 0,
+              "domineer": 7
+            },
+            "cumulative_scores": {
+              "domichill": 0,
+              "domineer": 7
+            }
+          },
+          {
+            "number": 2,
+            "track": "Kyoto (Outer) 3000m · Turf · Winter / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "domichill",
+                "uma": "Manhattan Cafe",
+                "discord": "<@499642536554659860>",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "domineer",
+                "uma": "Biwa Hayahide",
+                "discord": "<@1351236267731583036>",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "domineer",
+                "uma": "T.M. Opera O (New Year)",
+                "discord": "<@382269416836038656>",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "domichill": 4,
+              "domineer": 3
+            },
+            "cumulative_scores": {
+              "domichill": 4,
+              "domineer": 10
+            }
+          },
+          {
+            "number": 3,
+            "track": "Tokyo 2000m · Turf · Summer / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "domineer",
+                "uma": "Inari One",
+                "discord": "<@479998555290075136>",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "domineer",
+                "uma": "Mayano Top Gun",
+                "discord": "<@753451025012097047>",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "domineer",
+                "uma": "Gold Ship",
+                "discord": "<@680664099679371265>",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "domichill": 0,
+              "domineer": 7
+            },
+            "cumulative_scores": {
+              "domichill": 4,
+              "domineer": 17
+            }
+          },
+          {
+            "number": 4,
+            "track": "Nakayama (Inner) 2000m · Turf · Summer / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "domineer",
+                "uma": "Mayano Top Gun",
+                "discord": "<@753451025012097047>",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "domineer",
+                "uma": "T.M. Opera O (New Year)",
+                "discord": "<@382269416836038656>",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "domichill",
+                "uma": "Smart Falcon",
+                "discord": "<@897274147841912843>",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "domichill": 1,
+              "domineer": 6
+            },
+            "cumulative_scores": {
+              "domichill": 5,
+              "domineer": 23
+            }
+          },
+          {
+            "number": 5,
+            "track": "Tokyo 1600m · Turf · Spring / Rainy / Soft",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "domineer",
+                "uma": "Inari One",
+                "discord": "<@479998555290075136>",
+                "place": 1,
+                "points": 4
+              },
+              {
+                "team_id": "domichill",
+                "uma": "Smart Falcon",
+                "discord": "<@897274147841912843>",
+                "place": 2,
+                "points": 2
+              },
+              {
+                "team_id": "domineer",
+                "uma": "Biwa Hayahide",
+                "discord": "<@1351236267731583036>",
+                "place": 3,
+                "points": 1
+              }
+            ],
+            "scores": {
+              "domichill": 2,
+              "domineer": 5
+            },
+            "cumulative_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          }
+        ],
+        "totals": {
+          "domichill": 7,
+          "domineer": 28
+        }
+      },
+      "report_path": "Dominator Tournament/R1/Domichill vs Domineer/results.json",
       "computed_scores": null,
-      "scores": null,
-      "score_only": false,
+      "scores": {
+        "domichill": 7,
+        "domineer": 28
+      },
+      "score_only": true,
       "report_score_mismatch": false,
       "needs_review": false,
       "target_reached": []
@@ -1140,8 +1457,27 @@
       "decision_reason": null,
       "source": "race_files",
       "races": [],
-      "draft": null,
-      "draft_path": null,
+      "draft": {
+        "schema_version": 1,
+        "match_id": "r2-m1",
+        "status": "pending",
+        "track_pool": [],
+        "track_picks": [],
+        "track_vetoes": [],
+        "final_tracks": [],
+        "tiebreaker_track": null,
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": [],
+        "training_start": null,
+        "training_deadline": null,
+        "notes": "",
+        "external_match_id": null,
+        "roster": []
+      },
+      "draft_path": "Dominator Tournament/R2/Dominator vs Dominarium/draft.json",
       "draft_has_content": false,
       "reported_results": null,
       "report_path": null,
@@ -1238,17 +1574,42 @@
           "club_id": "739453372",
           "aliases": []
         },
-        null
+        {
+          "id": "domineer",
+          "name": "Domineer",
+          "seed": 6,
+          "club_id": "961801794",
+          "aliases": []
+        }
       ],
       "winner_id": null,
       "loser_id": null,
-      "status": "awaiting_opponent",
+      "status": "ready",
       "manual_scores": null,
       "decision_reason": null,
       "source": "race_files",
       "races": [],
-      "draft": null,
-      "draft_path": null,
+      "draft": {
+        "schema_version": 1,
+        "match_id": "r2-m3",
+        "status": "pending",
+        "track_pool": [],
+        "track_picks": [],
+        "track_vetoes": [],
+        "final_tracks": [],
+        "tiebreaker_track": null,
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": [],
+        "training_start": null,
+        "training_deadline": null,
+        "notes": "",
+        "external_match_id": null,
+        "roster": []
+      },
+      "draft_path": "Dominator Tournament/R2/Dominacion vs Domineer/draft.json",
       "draft_has_content": false,
       "reported_results": null,
       "report_path": null,
@@ -1294,8 +1655,27 @@
       "decision_reason": null,
       "source": "race_files",
       "races": [],
-      "draft": null,
-      "draft_path": null,
+      "draft": {
+        "schema_version": 1,
+        "match_id": "r2-m4",
+        "status": "pending",
+        "track_pool": [],
+        "track_picks": [],
+        "track_vetoes": [],
+        "final_tracks": [],
+        "tiebreaker_track": null,
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": [],
+        "training_start": null,
+        "training_deadline": null,
+        "notes": "",
+        "external_match_id": null,
+        "roster": []
+      },
+      "draft_path": "Dominator Tournament/R2/Dominium vs Dominate/draft.json",
       "draft_has_content": false,
       "reported_results": null,
       "report_path": null,
@@ -1414,6 +1794,7 @@
   ],
   "warnings": [],
   "eliminated": [
+    "domichill",
     "dominante",
     "dominion"
   ],
