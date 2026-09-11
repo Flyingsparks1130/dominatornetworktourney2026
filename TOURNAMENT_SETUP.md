@@ -1,3 +1,5 @@
+Latest recorded match: see [LHNCFL_UPDATE.md](LHNCFL_UPDATE.md) for Dominion 22–27 Dominarium and installation instructions.
+
 # Tournament update — GitHub Desktop
 
 For the newer match-level draft JSON workflow and score-only results, read [MATCH_DRAFTS_UPDATE.md](MATCH_DRAFTS_UPDATE.md). Draft files now live inside each matchup, alongside `match.json`.

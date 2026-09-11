@@ -1,3 +1,5 @@
+Latest recorded match: see [LHNCFL_UPDATE.md](LHNCFL_UPDATE.md) for Dominion 22–27 Dominarium and installation instructions.
+
 # Current tournament workflow
 
 The latest rework adds [per-match draft JSON and score-only results](MATCH_DRAFTS_UPDATE.md). Track pools and picks are managed inside each matchup's folder and detail page.

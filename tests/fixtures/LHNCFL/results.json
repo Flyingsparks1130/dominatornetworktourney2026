@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "match_id": "r1-m1",
+  "external_match_id": "LHNCFL",
+  "source": "Organizer-supplied match results and Uma Drafter screenshots. Original race exports are unavailable.",
+  "mvp": {
+    "team_id": "dominarium",
+    "uma": "Tamamo Cross",
+    "discord": "@LESKBILL"
+  },
+  "races": [
+    {
+      "number": 1,
+      "track": "Nakayama (Inner) 2500m · Turf · Right · Summer / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominarium",
+          "uma": "Tamamo Cross",
+          "discord": "@LESKBILL"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Gold Ship",
+          "discord": "@Beep"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Mayano Top Gun",
+          "discord": "@eibarman"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "track": "Kyoto (Outer) 3200m · Turf · Right · Fall / Cloudy / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominarium",
+          "uma": "Mayano Top Gun",
+          "discord": "@eibarman"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Gold Ship",
+          "discord": "@Beep"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Oguri Cap (Christmas)",
+          "discord": "@Flareon"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "track": "Tokyo 3400m · Turf · Left · Fall / Sunny / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominarium",
+          "uma": "Mayano Top Gun",
+          "discord": "@eibarman"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Gold Ship",
+          "discord": "@Beep"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Satono Diamond",
+          "discord": "@Purge"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "track": "Tokyo 2000m · Turf · Left · Fall / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominion",
+          "uma": "Mejiro McQueen",
+          "discord": "@IceColaa"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Ines Fujin",
+          "discord": "@Cal"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Oguri Cap",
+          "discord": "@David"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "track": "Hanshin (Outer) 2400m · Turf · Right · Spring / Rainy / Soft",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominarium",
+          "uma": "Tamamo Cross",
+          "discord": "@LESKBILL"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Oguri Cap (Christmas)",
+          "discord": "@Flareon"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Gold Ship",
+          "discord": "@Beep"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "track": "Tokyo 1600m · Turf · Left · Summer / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominion",
+          "uma": "Oguri Cap (Christmas)",
+          "discord": "@Flareon"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Ines Fujin",
+          "discord": "@Cal"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Gold Ship",
+          "discord": "@Beep"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "track": "Hanshin (Inner) 2000m · Turf · Right · Winter / Sunny / Firm",
+      "tiebreaker": true,
+      "podium": [
+        {
+          "team_id": "dominarium",
+          "uma": "Tamamo Cross",
+          "discord": "@LESKBILL"
+        },
+        {
+          "team_id": "dominion",
+          "uma": "Oguri Cap (Christmas)",
+          "discord": "@Flareon"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Ines Fujin",
+          "discord": "@Cal"
+        }
+      ]
+    }
+  ]
+}

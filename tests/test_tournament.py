@@ -15,6 +15,7 @@ sys.path.insert(0,str(ROOT/'scripts'))
 from tournament_engine import ARCHIVE,TournamentError,build,normalize_race,mutate,import_race,read_json,time_display,save_draft
 from tournament_draft import blank_draft
 from tournament_admin import serve
+from apply_lhncfl import apply as apply_lhncfl
 
 def fixture(seed=100):
     horses=[]
@@ -155,6 +156,60 @@ class EngineTests(unittest.TestCase):
         self.command('advance',winner_id='dominion');self.draft('r2-m1')
         r=self.command('advance',winner_id='dominarium')
         self.assertEqual(next(m for m in r['index']['matches'] if m['id']=='r2-m1')['participants'][1]['id'],'dominarium')
+    def install_lhncfl(self):
+        folder = Path(ARCHIVE)/'R1/Dominion vs Dominarium'
+        for name in ('draft.json', 'results.json'):
+            shutil.copy2(ROOT/'tests/fixtures/LHNCFL'/name, self.root/folder/name)
+        return self.root/folder
+    def test_lhncfl_report_verifies_all_seven_scores_without_raw_exports(self):
+        self.install_lhncfl()
+        state=build(self.root);m=state['index']['matches'][0];report=m['reported_results']
+        self.assertEqual(report['totals'],{'dominion':22,'dominarium':27})
+        self.assertEqual([(r['scores']['dominion'],r['scores']['dominarium']) for r in report['races']],
+                         [(2,5),(3,4),(3,4),(4,3),(3,4),(5,2),(2,5)])
+        self.assertEqual(report['races'][5]['cumulative_scores'],{'dominion':20,'dominarium':22})
+        self.assertTrue(report['races'][6]['tiebreaker'])
+        self.assertEqual(report['mvp']['discord'],'@LESKBILL')
+        self.assertEqual(sum(p['points'] for r in report['races'] for p in r['podium'] if p['discord']=='@LESKBILL'),12)
+        self.assertEqual(len(m['draft']['roster']),12);self.assertEqual(len(m['draft']['final_tracks']),6)
+        self.assertEqual(m['races'],[]);self.assertEqual(state['races'],{})
+        self.assertIsNone(m['scores']);self.assertIsNone(m['winner_id'])
+    def test_apply_lhncfl_is_idempotent_and_preserves_other_decisions(self):
+        self.install_lhncfl()
+        self.command('score','r2-m2',scores={'dominance':14,'dominant-h':21})
+        before=read_json(self.root/ARCHIVE/'control.json')
+        state=apply_lhncfl(self.root);m=state['index']['matches'][0]
+        self.assertEqual(m['winner_id'],'dominarium');self.assertEqual(m['scores'],{'dominion':22,'dominarium':27})
+        self.assertIn('dominion',state['index']['eliminated']);self.assertTrue(m['score_only'])
+        qf=next(m for m in state['index']['matches'] if m['id']=='r2-m1')
+        self.assertEqual([p['id'] for p in qf['participants']],['dominator','dominarium'])
+        after=read_json(self.root/ARCHIVE/'control.json')
+        self.assertEqual(after['decisions']['r2-m2'],before['decisions']['r2-m2'])
+        self.assertEqual(after['revision'],before['revision']+1)
+        apply_lhncfl(self.root)
+        self.assertEqual(read_json(self.root/ARCHIVE/'control.json'),after)
+    def test_lhncfl_conflict_does_not_overwrite_scores_or_winner(self):
+        self.install_lhncfl();self.command('score',scores={'dominion':25,'dominarium':24})
+        before=(self.root/ARCHIVE/'control.json').read_bytes()
+        with self.assertRaises(TournamentError):apply_lhncfl(self.root)
+        self.assertEqual((self.root/ARCHIVE/'control.json').read_bytes(),before)
+    def test_report_rejects_bench_duplicate_or_wrong_variant(self):
+        folder=self.install_lhncfl();path=folder/'results.json';original=read_json(path)
+        for bad in [dict(team_id='dominion',uma='Mejiro Palmer',discord='@Flareon'),
+                    dict(team_id='dominion',uma='Oguri Cap',discord='@Flareon'),
+                    original['races'][0]['podium'][1]]:
+            raw=copy.deepcopy(original);raw['races'][0]['podium'][0]=bad;path.write_text(json.dumps(raw))
+            with self.assertRaises(TournamentError):build(self.root)
+    def test_report_and_race_export_are_never_added_together(self):
+        self.install_lhncfl()
+        state=self.upload();rid=next(iter(state['races']))
+        apply_lhncfl(self.root)
+        state=self.command('mapping',race_id=rid,assignments={str(i):{'team_id':'dominion' if i<5 else 'dominarium','eligible':True} for i in range(10)})
+        m=state['index']['matches'][0]
+        self.assertEqual(m['scores'],{'dominion':22,'dominarium':27})
+        self.assertEqual(m['computed_scores'],{'dominion':7,'dominarium':0})
+        self.assertEqual(m['reported_results']['totals'],{'dominion':22,'dominarium':27})
+        self.assertFalse(m['score_only'])
     def test_http_csrf_host_and_write(self):
         s=serve(self.root,0);thread=threading.Thread(target=s.serve_forever,daemon=True);thread.start()
         base=f'http://127.0.0.1:{s.server_port}'

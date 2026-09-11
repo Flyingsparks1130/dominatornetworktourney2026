@@ -17,6 +17,7 @@ def blank_draft(match_id):
         'uma_pre_bans': [], 'uma_picks': [], 'uma_bans': [],
         'uma_additions': [], 'benched_umas': [],
         'training_start': None, 'training_deadline': None, 'notes': '',
+        'external_match_id': None, 'roster': [],
     }
 
 
@@ -24,6 +25,7 @@ def has_content(draft):
     return bool(draft and (
         draft['status'] != 'pending' or draft['notes'] or draft['tiebreaker_track']
         or draft['training_start'] or draft['training_deadline']
+        or draft.get('external_match_id') or draft.get('roster')
         or any(draft[k] for k in (*STRING_LISTS, *EVENT_LISTS))
     ))
 
@@ -68,6 +70,30 @@ def normalize_draft(raw, match):
                 text(value[key], label + '.' + key)
     for key in ('tiebreaker_track', 'training_start', 'training_deadline'):
         text(result[key], key, optional=True)
+    text(result['external_match_id'], 'external_match_id', optional=True, max_length=100)
+    roster = result['roster']
+    if not isinstance(roster, list) or len(roster) > 12:
+        raise ValueError('roster must be an array of at most 12 entries.')
+    seen_umas, seen_players = set(), set()
+    for row in roster:
+        if not isinstance(row, dict) or set(row) != {'team_id', 'uma', 'discord', 'benched'}:
+            raise ValueError('Each roster entry needs team_id, uma, discord and benched.')
+        text(row['team_id'], 'roster.team_id')
+        text(row['uma'], 'roster.uma')
+        text(row['discord'], 'roster.discord', optional=row['benched'] is True)
+        if row['team_id'] not in teams or type(row['benched']) is not bool:
+            raise ValueError('Roster club must be a participant and benched must be a boolean.')
+        key = (row['team_id'], row['uma'].casefold())
+        player = (row['discord'] or '').casefold()
+        if key in seen_umas or (player and player in seen_players):
+            raise ValueError('Duplicate roster Uma or Discord player.')
+        seen_umas.add(key)
+        if player:
+            seen_players.add(player)
+    for team in teams:
+        entries = [r for r in roster if r['team_id'] == team]
+        if sum(not r['benched'] for r in entries) > 5 or sum(r['benched'] for r in entries) > 1:
+            raise ValueError('Each club may list up to five active Umas and one bench.')
     text(result['notes'], 'notes', optional=True, max_length=4000)
     if result['notes'] is None:
         result['notes'] = ''

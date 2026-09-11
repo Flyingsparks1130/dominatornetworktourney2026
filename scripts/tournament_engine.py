@@ -18,6 +18,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from tournament_draft import normalize_draft, has_content as draft_has_content
+from tournament_report import normalize_report
 
 ARCHIVE = 'Dominator Tournament'
 MAX_BYTES = 20 * 1024 * 1024
@@ -275,7 +276,8 @@ def build(root: Path, write=True) -> dict:
     warnings = []
     content_seen = {}
     for m in matches:
-        m.update(races=[], draft=None, draft_path=None, draft_has_content=False)
+        m.update(races=[], draft=None, draft_path=None, draft_has_content=False,
+                 reported_results=None, report_path=None)
     for m, folder in match_folders(root, config, matches):
         draft_path = folder / 'draft.json'
         if draft_path.exists():
@@ -288,7 +290,7 @@ def build(root: Path, write=True) -> dict:
             m['draft_path'] = draft_path.relative_to(root).as_posix()
             m['draft_has_content'] = draft_has_content(m['draft'])
         for loose in folder.glob('*.json'):
-            if loose.name not in ('match.json', 'draft.json'):
+            if loose.name not in ('match.json', 'draft.json', 'results.json'):
                 raise TournamentError(f'Race JSON needs its race-description subfolder: {loose.relative_to(root)}')
         for racefolder in sorted((d for d in folder.iterdir() if d.is_dir()), key=lambda p:natural(p.name)):
             if racefolder.is_symlink(): raise TournamentError('Archive symlinks are not allowed.')
@@ -331,6 +333,17 @@ def build(root: Path, write=True) -> dict:
                 meta={k:race[k] for k in ('id','round','match_id','race_folder','file_name','raw_path','runner_count','course','scoring_verified','review_reasons','team_points')}
                 meta['data_file']=f'data/tournament-races/{rid}.json'
                 m['races'].append(meta);race_docs[rid]=race
+    # Read reports after all drafts, including when a match has more than one folder.
+    for m, folder in match_folders(root, config, matches):
+        report_path = folder / 'results.json'
+        if report_path.exists():
+            if m['report_path']:
+                raise TournamentError(f"Multiple results.json reports for {m['id']}.")
+            try:
+                m['reported_results'] = normalize_report(read_json(report_path), m, config['scoring']['points_by_place'])
+            except ValueError as exc:
+                raise TournamentError(f'{report_path.relative_to(root)}: {exc}') from exc
+            m['report_path'] = report_path.relative_to(root).as_posix()
     eliminated = set()
     for m in matches:
         m['races'].sort(key=lambda r:(natural(r['race_folder']),natural(r['file_name'])))
@@ -342,6 +355,8 @@ def build(root: Path, write=True) -> dict:
         m['computed_scores'] = pts if all_verified else None
         m['scores'] = m['manual_scores'] if m['manual_scores'] is not None else m['computed_scores']
         m['score_only'] = not m['races'] and m['manual_scores'] is not None
+        m['report_score_mismatch'] = bool(m['reported_results'] and m['scores'] is not None
+                                         and m['reported_results']['totals'] != m['scores'])
         m['needs_review'] = any(not r['scoring_verified'] for r in m['races'])
         if not m['winner_id'] and m['status']=='ready' and m['races']:
             m['status'] = 'needs_review' if m['needs_review'] else 'in_progress'
@@ -378,8 +393,10 @@ def mutate(root: Path, payload: dict) -> dict:
     old=copy.deepcopy(control)
     ids=[p['id'] for p in m['participants'] if p]
     children=descendants(config,mid)
-    if action in ('advance','forfeit','reopen'):
-        occupied=[x['id'] for x in index['matches'] if x['id'] in children and (x['races'] or x['draft_has_content'] or control.get('decisions',{}).get(x['id']))]
+    if action in ('advance','forfeit','reopen','record_report'):
+        occupied=[x['id'] for x in index['matches'] if x['id'] in children and (x['races'] or x['draft_has_content'] or x['reported_results'] or control.get('decisions',{}).get(x['id']))]
+        if action == 'record_report' and payload.get('winner_id') == m['winner_id']:
+            occupied = []  # Recording evidence for an unchanged winner preserves downstream slots.
         if occupied:raise TournamentError('Downstream records exist: '+', '.join(occupied)+'. Reopen the latest rounds and relocate their race files and populated drafts before changing this winner. Nothing has been changed.')
         if action=='reopen':
             control['decisions'].pop(mid,None)
@@ -387,8 +404,18 @@ def mutate(root: Path, payload: dict) -> dict:
             if len(ids)!=2:raise TournamentError('Both opponents must be known.')
             winner=payload.get('winner_id')
             if winner not in ids:raise TournamentError('Winner must be a participant in this match.')
+            if action == 'record_report':
+                report = m['reported_results']
+                if not report or payload.get('scores') != report['totals']:
+                    raise TournamentError('The official scores must match this reported result.')
+                if m['manual_scores'] is not None and m['manual_scores'] != report['totals']:
+                    raise TournamentError('Existing official scores differ. Review this match in the organizer before changing them.')
+                if m['winner_id'] and m['winner_id'] != winner:
+                    raise TournamentError('Existing winner differs. Review this match in the organizer before changing it.')
             d=control['decisions'].setdefault(mid,{})
-            d.update(winner_id=winner,method=action,reason=reason,decided_at=now())
+            d.update(winner_id=winner,method='advance' if action=='record_report' else action,reason=reason,decided_at=now())
+            if action == 'record_report':
+                d['manual_scores'] = copy.deepcopy(report['totals'])
     elif action=='score':
         if len(ids)!=2:raise TournamentError('Both opponents must be known before scores are entered.')
         scores=payload.get('scores')

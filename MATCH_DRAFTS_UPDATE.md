@@ -1,5 +1,7 @@
 # Match drafts and score-only results
 
+For the populated LHNCFL match, see [LHNCFL_UPDATE.md](LHNCFL_UPDATE.md). The repository-review section below describes the original remote commit before this local update.
+
 ## Repository review
 
 Reviewed commit [`9c407172582e9b5df9e31f23b544a9b7cc29fecf` — BIG Update Race Data Support](https://github.com/Flyingsparks1130/dominatornetworktourney2026/commit/9c407172582e9b5df9e31f23b544a9b7cc29fecf).
@@ -31,7 +33,7 @@ Example matchup folder: `Dominator Tournament/R1/Dominion vs Dominarium/`
 | `01 - race description/original.json` | First original race export |
 | `02 - race description/original.json` | Another original race export |
 
-Blank `draft.json` files are included for the four matchup folders already in the repo. They contain no invented picks, tracks, or results. For a new matchup, use **Download blank template** in the organizer after both opponents are known; it fills the correct `match_id` automatically.
+The initial draft update supplied four blank templates. The LHNCFL package supplies only the populated Dominion vs Dominarium draft and preserves other local drafts. For a new matchup, use **Download blank template** in the organizer after both opponents are known; it fills the correct `match_id` automatically.
 
 To update a draft manually, edit its `draft.json`, then rescan/rebuild or commit and push. To use the organizer, choose the match, download the template, edit it in a text editor, choose that file under **Match draft JSON**, enter a reason, and save.
 
@@ -68,6 +70,8 @@ To update a draft manually, edit its `draft.json`, then rescan/rebuild or commit
 | `benched_umas` | The same Uma object format; `team_id` is the club benching that Uma |
 | `training_start`, `training_deadline` | Date/time strings including a timezone, or `null` |
 | `notes` | Optional matchup-specific notes |
+| `external_match_id` | Optional source match identifier such as `LHNCFL` |
+| `roster` | Optional array of `{"team_id":"dominion","uma":"Gold Ship","discord":"@Beep","benched":false}`; use a null Discord value for an unassigned bench |
 
 Use the exact tournament club IDs shown in the organizer. The importer rejects a draft with the wrong `match_id` or an action assigned to a different matchup's club. Array order records the action order; snake-pick numbers retain the overall order across both clubs. Partial historical drafts are accepted, so absent information can remain blank.
 
@@ -79,7 +83,7 @@ One `draft.json` is allowed per matchup. A populated downstream draft protects i
 
 **Round 2, scores plus JSON:** import/drop its original race exports, assign trainers to clubs, and enter the official score if needed. Calculated race totals remain available separately. Confirm the winner when ready. Draft JSON and race JSON can be added independently.
 
-This update does not enter results for either round. Send the real scores, winners, and Round 2 exports after the site rework is installed.
+The LHNCFL supplement now contains the first Round 1 match; follow LHNCFL_UPDATE.md to apply its official score and advancement. Other results remain unentered until supplied.
 
 ## Install with GitHub Desktop
 
