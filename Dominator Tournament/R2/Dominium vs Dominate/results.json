@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "match_id": "r2-m4",
+  "external_match_id": "SE3RMK",
+  "source": "Organizer-reported podiums cross-checked against all five original horseACT exports. Raw exports and reported points are parallel evidence, not additive scores. Draft condition wording and literal exported condition labels are preserved separately.",
+  "mvp": null,
+  "races": [
+    {
+      "number": 1,
+      "track": "Nakayama (Inner) 2500m · Turf · Summer / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "<@762151062839885824>"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mihono Bourbon (Valentine)",
+          "discord": "<@221323450529087488>"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Oguri Cap",
+          "discord": "<@667998121929998349>"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "track": "Kyoto (Outer) 2200m · Turf · Winter / Snowy / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominium",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "<@1244589187202551809>"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Seiun Sky",
+          "discord": "<@1456439897047957766>"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "<@762151062839885824>"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "track": "Fukushima 2000m · Turf · Summer / Rainy / Soft",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "<@762151062839885824>"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mihono Bourbon (Valentine)",
+          "discord": "<@221323450529087488>"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Seiun Sky",
+          "discord": "<@1456439897047957766>"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "track": "Niigata (Inner) 2400m · Turf · Summer / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "<@762151062839885824>"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Seiun Sky (Ballroom)",
+          "discord": "<@378745083236712449>"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Oguri Cap",
+          "discord": "<@667998121929998349>"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "track": "Niigata (Inner) 2200m · Turf · Summer / Sunny / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominate",
+          "uma": "Mihono Bourbon (Valentine)",
+          "discord": "<@221323450529087488>"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mayano Top Gun",
+          "discord": "<@419307287581032449>"
+        },
+        {
+          "team_id": "dominium",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "<@1244589187202551809>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1381 @@
+{
+  "schema": "horseACT",
+  "export_version": "1.1.7",
+  "runner_count": 10,
+  "race_type": "Practice",
+  "content_hash": "88e67acbf1bf9d722ad3050a3e9281ecfd7653584aa0911e2891169f10ca38fc",
+  "course": {
+    "course_id": 10506,
+    "track_id": 10005,
+    "distance_m": 2500,
+    "surface": "Turf",
+    "turn": "Right",
+    "condition": "Soft",
+    "weather": "Sunny",
+    "season": "Summer"
+  },
+  "has_scenario": true,
+  "results": [
+    {
+      "entry_id": "9",
+      "place": 1,
+      "uma": "Mejiro McQueen",
+      "owner": "raine",
+      "capture_trainer": "NakeGhostie",
+      "gate": 10,
+      "post_number": 8,
+      "variant_id": 101303,
+      "raw_seconds": 121.10285949707031,
+      "scaled_seconds": 148.42025756835938,
+      "raw_display": "2:01.103",
+      "scaled_display": "2:28.420",
+      "stats": {
+        "speed": 1589,
+        "stamina": 1022,
+        "power": 1006,
+        "guts": 756,
+        "wisdom": 968
+      },
+      "running_style_code": 1,
+      "aptitudes": {
+        "distance": "S",
+        "surface": "A"
+      },
+      "skills": [
+        {
+          "id": 120131,
+          "level": 4
+        },
+        {
+          "id": 200282,
+          "level": 1
+        },
+        {
+          "id": 200331,
+          "level": 1
+        },
+        {
+          "id": 200351,
+          "level": 1
+        },
+        {
+          "id": 200432,
+          "level": 1
+        },
+        {
+          "id": 200492,
+          "level": 1
+        },
+        {
+          "id": 200531,
+          "level": 1
+        },
+        {
+          "id": 201102,
+          "level": 1
+        },
+        {
+          "id": 201112,
+          "level": 1
+        },
+        {
+          "id": 201251,
+          "level": 1
+        },
+        {
+          "id": 201271,
+          "level": 1
+        },
+        {
+          "id": 201522,
+          "level": 1
+        },
+        {
+          "id": 201571,
+          "level": 1
+        },
+        {
+          "id": 201601,
+          "level": 1
+        },
+        {
+          "id": 201662,
+          "level": 1
+        },
+        {
+          "id": 201701,
+          "level": 1
+        },
+        {
+          "id": 202011,
+          "level": 1
+        },
+        {
+          "id": 210101,
+          "level": 1
+        },
+        {
+          "id": 900201,
+          "level": 1
+        },
+        {
+          "id": 900681,
+          "level": 1
+        },
+        {
+          "id": 910261,
+          "level": 1
+        }
+      ],
+      "support": [
+        {
+          "id": 30101,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30107,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30016,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30066,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30052,
+          "limit_breaks": 2
+        },
+        {
+          "id": 30111,
+          "limit_breaks": 4
+        }
+      ],
+      "build_fingerprint": "fb1781c0855442f3a1045d2419af387c45e554df6a7d78ab7a241967242d98dc",
+      "is_ghost": true,
+      "team_id": "dominate",
+      "eligible": true,
+      "scoring_place": 1,
+      "points": 4
+    },
+    {
+      "entry_id": "4",
+      "place": 2,
+      "uma": "Mihono Bourbon",
+      "owner": "Mayday",
+      "capture_trainer": "NakeGhostie",
+      "gate": 5,
+      "post_number": 5,
+      "variant_id": 102602,
+      "raw_seconds": 121.10961151123047,
+      "scaled_seconds": 148.42822265625,
+      "raw_display": "2:01.110",
+      "scaled_display": "2:28.428",
+      "stats": {
+        "speed": 1571,
+        "stamina": 1004,
+        "power": 1202,
+        "guts": 680,
+        "wisdom": 1078
+      },
+      "running_style_code": 1,
+      "aptitudes": {
+        "distance": "A",
+        "surface": "A"
+      },
+      "skills": [
+        {
+          "id": 110261,
+          "level": 4
+        },
+        {
+          "id": 200212,
+          "level": 1
+        },
+        {
+          "id": 200331,
+          "level": 1
+        },
+        {
+          "id": 200351,
+          "level": 1
+        },
+        {
+          "id": 200431,
+          "level": 1
+        },
+        {
+          "id": 200452,
+          "level": 1
+        },
+        {
+          "id": 200532,
+          "level": 1
+        },
+        {
+          "id": 200541,
+          "level": 1
+        },
+        {
+          "id": 201242,
+          "level": 1
+        },
+        {
+          "id": 201252,
+          "level": 1
+        },
+        {
+          "id": 201262,
+          "level": 1
+        },
+        {
+          "id": 201271,
+          "level": 1
+        },
+        {
+          "id": 201522,
+          "level": 1
+        },
+        {
+          "id": 201601,
+          "level": 1
+        },
+        {
+          "id": 201662,
+          "level": 1
+        },
+        {
+          "id": 900201,
+          "level": 1
+        },
+        {
+          "id": 900681,
+          "level": 1
+        }
+      ],
+      "support": [
+        {
+          "id": 30028,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30107,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30052,
+          "limit_breaks": 2
+        },
+        {
+          "id": 30016,
+          "limit_breaks": 1
+        },
+        {
+          "id": 30010,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30111,
+          "limit_breaks": 4
+        }
+      ],
+      "build_fingerprint": "21f883425beeaf2be0d325c1e7be11ca4b4ab35ae6efc56b247814fd0ac2dff3",
+      "is_ghost": true,
+      "team_id": "dominate",
+      "eligible": true,
+      "scoring_place": 2,
+      "points": 2
+    },
+    {
+      "entry_id": "8",
+      "place": 3,
+      "uma": "Oguri Cap",
+      "owner": "Unluckyyy",
+      "capture_trainer": "NakeGhostie",
+      "gate": 9,
+      "post_number": 8,
+      "variant_id": 100601,
+      "raw_seconds": 121.55950927734375,
+      "scaled_seconds": 148.9591064453125,
+      "raw_display": "2:01.560",
+      "scaled_display": "2:28.959",
+      "stats": {
+        "speed": 1600,
+        "stamina": 683,
+        "power": 1111,
+        "guts": 679,
+        "wisdom": 1315
+      },
+      "running_style_code": 2,
+      "aptitudes": {
+        "distance": "A",
+        "surface": "A"
+      },
+      "skills": [
+        {
+          "id": 100061,
+          "level": 5
+        },
+        {
+          "id": 200331,
+          "level": 1
+        },
+        {
+          "id": 200381,
+          "level": 1
+        },
+        {
+          "id": 200492,
+          "level": 1
+        },
+        {
+          "id": 201321,
+          "level": 1
+        },
+        {
+          "id": 201342,
+          "level": 1
+        },
+        {
+          "id": 201351,
+          "level": 1
+        },
+        {
+          "id": 201662,
+          "level": 1
+        },
+        {
+          "id": 201701,
+          "level": 1
+        },
+        {
+          "id": 201902,
+          "level": 1
+        },
+        {
+          "id": 202082,
+          "level": 1
+        },
+        {
+          "id": 202371,
+          "level": 1
+        },
+        {
+          "id": 202412,
+          "level": 1
+        },
+        {
+          "id": 202432,
+          "level": 1
+        },
+        {
+          "id": 900051,
+          "level": 1
+        },
+        {
+          "id": 900321,
+          "level": 1
+        },
+        {
+          "id": 900451,
+          "level": 1
+        }
+      ],
+      "support": [
+        {
+          "id": 30101,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30028,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30052,
+          "limit_breaks": 3
+        },
+        {
+          "id": 30010,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30084,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30097,
+          "limit_breaks": 4
+        }
+      ],
+      "build_fingerprint": "5b0fbe3a5a169dc4f9f00176af9abd3db934814d2f81e4595949a37bb65d8964",
+      "is_ghost": true,
+      "team_id": "dominium",
+      "eligible": true,
+      "scoring_place": 3,
+      "points": 1
+    },
+    {
+      "entry_id": "7",
+      "place": 4,
+      "uma": "Seiun Sky",
+      "owner": "Reyov",
+      "capture_trainer": "NakeGhostie",
+      "gate": 8,
+      "post_number": 7,
+      "variant_id": 102001,
+      "raw_seconds": 121.76168823242188,
+      "scaled_seconds": 149.1976776123047,
+      "raw_display": "2:01.762",
+      "scaled_display": "2:29.198",
+      "stats": {
+        "speed": 1484,
+        "stamina": 753,
+        "power": 1013,
+        "guts": 655,
+        "wisdom": 1172
+      },
+      "running_style_code": 1,
+      "aptitudes": {
+        "distance": "A",
+        "surface": "A"
+      },
+      "skills": [
+        {
+          "id": 100201,
+          "level": 5
+        },
+        {
+          "id": 200042,
+          "level": 1
+        },
+        {
+          "id": 200331,
+          "level": 1
+        },
+        {
+          "id": 200351,
+          "level": 1
+        },
+        {
+          "id": 200362,
+          "level": 1
+        },
+        {
+          "id": 200382,
+          "level": 1
+        },
+        {
+          "id": 200531,
+          "level": 1
+        },
+        {
+          "id": 200541,
+          "level": 1
+        },
+        {
+          "id": 201172,
+          "level": 1
+        },
+        {
+          "id": 201181,
+          "level": 1
+        },
+        {
+          "id": 201242,
+          "level": 1
+        },
+        {
+          "id": 201251,
+          "level": 1
+        },
+        {
+          "id": 201271,
+          "level": 1
+        },
+        {
+          "id": 201282,
+          "level": 1
+        },
+        {
+          "id": 201611,
+          "level": 1
+        },
+        {
+          "id": 201662,
+          "level": 1
+        },
+        {
+          "id": 210101,
+          "level": 1
+        },
+        {
+          "id": 900681,
+          "level": 1
+        },
+        {
+          "id": 910201,
+          "level": 1
+        }
+      ],
+      "support": [
+        {
+          "id": 30028,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30016,
+          "limit_breaks": 3
+        },
+        {
+          "id": 30066,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30010,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30052,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30107,
+          "limit_breaks": 4
+        }
+      ],
+      "build_fingerprint": "deb1f7152af221b635fc6e9125fe67aec73e61872951220e4167ea22ada4a318",
+      "is_ghost": true,
+      "team_id": "dominate",
+      "eligible": true,
+      "scoring_place": 4,
+      "points": 0
+    },
+    {
+      "entry_id": "1",
+      "place": 5,
+      "uma": "Rice Shower",
+      "owner": "Mamboo",
+      "capture_trainer": "NakeGhostie",
+      "gate": 2,
+      "post_number": 2,
+      "variant_id": 103002,
+      "raw_seconds": 121.7960205078125,
+      "scaled_seconds": 149.23818969726562,
+      "raw_display": "2:01.796",
+      "scaled_display": "2:29.238",
+      "stats": {
+        "speed": 1600,
+        "stamina": 796,
+        "power": 1198,
+        "guts": 648,
+        "wisdom": 1032
+      },
+      "running_style_code": 2,
+      "aptitudes": {
+        "distance": "A",
+        "surface": "A"
+      },
+      "skills": [
+        {
+          "id": 110301,
+          "level": 6
+        },
+        {
+          "id": 200062,
+          "level": 1
+        },
+        {
+          "id": 200331,
+          "level": 1
+        },
+        {
+          "id": 200362,
+          "level": 1
+        },
+        {
+          "id": 200462,
+          "level": 1
+        },
+        {
+          "id": 200492,
+          "level": 1
+        },
+        {
+          "id": 200561,
+          "level": 1
+        },
+        {
+          "id": 200722,
+          "level": 1
+        },
+        {
+          "id": 201112,
+          "level": 1
+        },
+        {
+          "id": 201352,
+          "level": 1
+        },
+        {
+          "id": 201571,
+          "level": 1
+        },
+        {
+          "id": 201591,
+          "level": 1
+        },
+        {
+          "id": 201611,
+          "level": 1
+        },
+        {
+          "id": 201651,
+          "level": 1
+        },
+        {
+          "id": 201662,
+          "level": 1
+        },
+        {
+          "id": 201902,
+          "level": 1
+        },
+        {
+          "id": 202072,
+          "level": 1
+        },
+        {
+          "id": 202371,
+          "level": 1
+        },
+        {
+          "id": 210012,
+          "level": 1
+        },
+        {
+          "id": 900011,
+          "level": 1
+        },
+        {
+          "id": 900231,
+          "level": 1
+        }
+      ],
+      "support": [
+        {
+          "id": 30101,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30028,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30010,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30107,
+          "limit_breaks": 1
+        },
+        {
+          "id": 30052,
+          "limit_breaks": 2
+        },
+        {
+          "id": 30146,
+          "limit_breaks": 4
+        }
+      ],
+      "build_fingerprint": "2f081e1b6fc4aa409c66cf1a586394d99dfce89b48403245f4fa32360943aa5f",
+      "is_ghost": true,
+      "team_id": "dominium",
+      "eligible": true,
+      "scoring_place": 5,
+      "points": 0
+    },
+    {
+      "entry_id": "3",
+      "place": 6,
+      "uma": "Mejiro McQueen",
+      "owner": "BYond",
+      "capture_trainer": "NakeGhostie",
+      "gate": 4,
+      "post_number": 4,
+      "variant_id": 101302,
+      "raw_seconds": 121.88477325439453,
+      "scaled_seconds": 149.34291076660156,
+      "raw_display": "2:01.885",
+      "scaled_display": "2:29.343",
+      "stats": {
+        "speed": 1391,
+        "stamina": 964,
+        "power": 978,
+        "guts": 752,
+        "wisdom": 951
+      },
+      "running_style_code": 1,
+      "aptitudes": {
+        "distance": "A",
+        "surface": "A"
+      },
+      "skills": [
+        {
+          "id": 110131,
+          "level": 4
+        },
+        {
+          "id": 200331,
+          "level": 1
+        },
+        {
+          "id": 200351,
+          "level": 1
+        },
+        {
+          "id": 200432,
+          "level": 1
+        },
+        {
+          "id": 200452,
+          "level": 1
+        },
+        {
+          "id": 200512,
+          "level": 1
+        },
+        {
+          "id": 200532,
+          "level": 1
+        },
+        {
+          "id": 200542,
+          "level": 1
+        },
+        {
+          "id": 200552,
+          "level": 1
+        },
+        {
+          "id": 201102,
+          "level": 1
+        },
+        {
+          "id": 201112,
+          "level": 1
+        },
+        {
+          "id": 201271,
+          "level": 1
+        },
+        {
+          "id": 201522,
+          "level": 1
+        },
+        {
+          "id": 201591,
+          "level": 1
+        },
+        {
+          "id": 201601,
+          "level": 1
+        },
+        {
+          "id": 201651,
+          "level": 1
+        },
+        {
+          "id": 201662,
+          "level": 1
+        },
+        {
+          "id": 900201,
+          "level": 1
+        },
+        {
+          "id": 900681,
+          "level": 1
+        },
+        {
+          "id": 910261,
+          "level": 1
+        }
+      ],
+      "support": [
+        {
+          "id": 30028,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30107,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30052,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30010,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30101,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30016,
+          "limit_breaks": 4
+        }
+      ],
+      "build_fingerprint": "c60b711ed6022bfc4989d30c6bcb0c3c7e15594c81c808cc1bc0c50afc0e245f",
+      "is_ghost": true,
+      "team_id": "dominate",
+      "eligible": true,
+      "scoring_place": 6,
+      "points": 0
+    },
+    {
+      "entry_id": "5",
+      "place": 7,
+      "uma": "Tamamo Cross",
+      "owner": "Yokka",
+      "capture_trainer": "NakeGhostie",
+      "gate": 6,
+      "post_number": 6,
+      "variant_id": 102101,
+      "raw_seconds": 121.95567321777344,
+      "scaled_seconds": 149.42657470703125,
+      "raw_display": "2:01.956",
+      "scaled_display": "2:29.427",
+      "stats": {
+        "speed": 1354,
+        "stamina": 1068,
+        "power": 890,
+        "guts": 714,
+        "wisdom": 745
+      },
+      "running_style_code": 4,
+      "aptitudes": {
+        "distance": "A",
+        "surface": "A"
+      },
+      "skills": [
+        {
+          "id": 100211,
+          "level": 4
+        },
+        {
+          "id": 200331,
+          "level": 1
+        },
+        {
+          "id": 200351,
+          "level": 1
+        },
+        {
+          "id": 200382,
+          "level": 1
+        },
+        {
+          "id": 200502,
+          "level": 1
+        },
+        {
+          "id": 200512,
+          "level": 1
+        },
+        {
+          "id": 200642,
+          "level": 1
+        },
+        {
+          "id": 200881,
+          "level": 1
+        },
+        {
+          "id": 201212,
+          "level": 1
+        },
+        {
+          "id": 201552,
+          "level": 1
+        },
+        {
+          "id": 201612,
+          "level": 1
+        },
+        {
+          "id": 201662,
+          "level": 1
+        },
+        {
+          "id": 202021,
+          "level": 1
+        },
+        {
+          "id": 210101,
+          "level": 1
+        },
+        {
+          "id": 900071,
+          "level": 1
+        },
+        {
+          "id": 900161,
+          "level": 1
+        },
+        {
+          "id": 900591,
+          "level": 1
+        }
+      ],
+      "support": [
+        {
+          "id": 30016,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30097,
+          "limit_breaks": 0
+        },
+        {
+          "id": 30028,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30101,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30084,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30052,
+          "limit_breaks": 4
+        }
+      ],
+      "build_fingerprint": "3db45383aae1cbd95075d3a261a7c243ed1aa1a0640d03074b3c66b541356c7f",
+      "is_ghost": true,
+      "team_id": "dominium",
+      "eligible": true,
+      "scoring_place": 7,
+      "points": 0
+    },
+    {
+      "entry_id": "6",
+      "place": 8,
+      "uma": "Seiun Sky",
+      "owner": "Juqi",
+      "capture_trainer": "NakeGhostie",
+      "gate": 7,
+      "post_number": 7,
+      "variant_id": 102002,
+      "raw_seconds": 122.1800308227539,
+      "scaled_seconds": 149.69131469726562,
+      "raw_display": "2:02.180",
+      "scaled_display": "2:29.691",
+      "stats": {
+        "speed": 1608,
+        "stamina": 787,
+        "power": 1066,
+        "guts": 670,
+        "wisdom": 1188
+      },
+      "running_style_code": 1,
+      "aptitudes": {
+        "distance": "A",
+        "surface": "A"
+      },
+      "skills": [
+        {
+          "id": 110201,
+          "level": 5
+        },
+        {
+          "id": 200012,
+          "level": 1
+        },
+        {
+          "id": 200331,
+          "level": 1
+        },
+        {
+          "id": 200352,
+          "level": 1
+        },
+        {
+          "id": 200381,
+          "level": 1
+        },
+        {
+          "id": 200431,
+          "level": 1
+        },
+        {
+          "id": 200452,
+          "level": 1
+        },
+        {
+          "id": 200531,
+          "level": 1
+        },
+        {
+          "id": 200541,
+          "level": 1
+        },
+        {
+          "id": 200712,
+          "level": 1
+        },
+        {
+          "id": 201112,
+          "level": 1
+        },
+        {
+          "id": 201271,
+          "level": 1
+        },
+        {
+          "id": 201662,
+          "level": 1
+        },
+        {
+          "id": 210052,
+          "level": 1
+        },
+        {
+          "id": 900201,
+          "level": 1
+        },
+        {
+          "id": 900681,
+          "level": 1
+        },
+        {
+          "id": 910041,
+          "level": 1
+        },
+        {
+          "id": 910261,
+          "level": 1
+        }
+      ],
+      "support": [
+        {
+          "id": 30107,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30101,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30084,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30052,
+          "limit_breaks": 3
+        },
+        {
+          "id": 30066,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30111,
+          "limit_breaks": 4
+        }
+      ],
+      "build_fingerprint": "1df66331582804642e7ed2a6bb77d584c533d7b4f0443a872eab86b1926a8eef",
+      "is_ghost": true,
+      "team_id": "dominium",
+      "eligible": true,
+      "scoring_place": 8,
+      "points": 0
+    },
+    {
+      "entry_id": "2",
+      "place": 9,
+      "uma": "Mayano Top Gun",
+      "owner": "Flyingsparkz",
+      "capture_trainer": "NakeGhostie",
+      "gate": 3,
+      "post_number": 3,
+      "variant_id": 102401,
+      "raw_seconds": 122.38653564453125,
+      "scaled_seconds": 149.93499755859375,
+      "raw_display": "2:02.387",
+      "scaled_display": "2:29.935",
+      "stats": {
+        "speed": 1459,
+        "stamina": 1007,
+        "power": 1092,
+        "guts": 736,
+        "wisdom": 939
+      },
+      "running_style_code": 3,
+      "aptitudes": {
+        "distance": "A",
+        "surface": "A"
+      },
+      "skills": [
+        {
+          "id": 100241,
+          "level": 5
+        },
+        {
+          "id": 200142,
+          "level": 1
+        },
+        {
+          "id": 200331,
+          "level": 1
+        },
+        {
+          "id": 200381,
+          "level": 1
+        },
+        {
+          "id": 200462,
+          "level": 1
+        },
+        {
+          "id": 200491,
+          "level": 1
+        },
+        {
+          "id": 200592,
+          "level": 1
+        },
+        {
+          "id": 200601,
+          "level": 1
+        },
+        {
+          "id": 200612,
+          "level": 1
+        },
+        {
+          "id": 201172,
+          "level": 1
+        },
+        {
+          "id": 201202,
+          "level": 1
+        },
+        {
+          "id": 201412,
+          "level": 1
+        },
+        {
+          "id": 201542,
+          "level": 1
+        },
+        {
+          "id": 201662,
+          "level": 1
+        },
+        {
+          "id": 201701,
+          "level": 1
+        },
+        {
+          "id": 202082,
+          "level": 1
+        },
+        {
+          "id": 202152,
+          "level": 1
+        },
+        {
+          "id": 202421,
+          "level": 1
+        },
+        {
+          "id": 900591,
+          "level": 1
+        }
+      ],
+      "support": [
+        {
+          "id": 30101,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30095,
+          "limit_breaks": 3
+        },
+        {
+          "id": 30028,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30052,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30118,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30054,
+          "limit_breaks": 4
+        }
+      ],
+      "build_fingerprint": "b7af88c0acd219332669780e5cd07405a74a97bfbf1e5245fe4986cf6a7dbb00",
+      "is_ghost": true,
+      "team_id": "dominate",
+      "eligible": true,
+      "scoring_place": 9,
+      "points": 0
+    },
+    {
+      "entry_id": "0",
+      "place": 10,
+      "uma": "Special Week",
+      "owner": "Raven621",
+      "capture_trainer": "NakeGhostie",
+      "gate": 1,
+      "post_number": 1,
+      "variant_id": 100101,
+      "raw_seconds": 122.91311645507812,
+      "scaled_seconds": 150.55636596679688,
+      "raw_display": "2:02.913",
+      "scaled_display": "2:30.556",
+      "stats": {
+        "speed": 1335,
+        "stamina": 1010,
+        "power": 996,
+        "guts": 689,
+        "wisdom": 928
+      },
+      "running_style_code": 2,
+      "aptitudes": {
+        "distance": "A",
+        "surface": "A"
+      },
+      "skills": [
+        {
+          "id": 100011,
+          "level": 4
+        },
+        {
+          "id": 200192,
+          "level": 1
+        },
+        {
+          "id": 200331,
+          "level": 1
+        },
+        {
+          "id": 200351,
+          "level": 1
+        },
+        {
+          "id": 200462,
+          "level": 1
+        },
+        {
+          "id": 200492,
+          "level": 1
+        },
+        {
+          "id": 200581,
+          "level": 1
+        },
+        {
+          "id": 201311,
+          "level": 1
+        },
+        {
+          "id": 201342,
+          "level": 1
+        },
+        {
+          "id": 201351,
+          "level": 1
+        },
+        {
+          "id": 201532,
+          "level": 1
+        },
+        {
+          "id": 201591,
+          "level": 1
+        },
+        {
+          "id": 201611,
+          "level": 1
+        },
+        {
+          "id": 201662,
+          "level": 1
+        },
+        {
+          "id": 202371,
+          "level": 1
+        },
+        {
+          "id": 202482,
+          "level": 1
+        },
+        {
+          "id": 900451,
+          "level": 1
+        },
+        {
+          "id": 910151,
+          "level": 1
+        }
+      ],
+      "support": [
+        {
+          "id": 30101,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30028,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30052,
+          "limit_breaks": 1
+        },
+        {
+          "id": 30010,
+          "limit_breaks": 4
+        },
+        {
+          "id": 20023,
+          "limit_breaks": 4
+        },
+        {
+          "id": 30016,
+          "limit_breaks": 4
+        }
+      ],
+      "build_fingerprint": "01daf0028c0360f4369a68d90189395a19bc4728b8ae7588e6fc8680253efc13",
+      "is_ghost": true,
+      "team_id": "dominium",
+      "eligible": true,
+      "scoring_place": 10,
+      "points": 0
+    }
+  ],
+  "id": "88e67acbf1bf9d722ad3",
+  "round": "R2",
+  "match_id": "r2-m4",
+  "race_folder": "01 - Nakayama 2500m",
+  "file_name": "race.json",
+  "raw_path": "Dominator Tournament/R2/Dominium vs Dominate/01 - Nakayama 2500m/race.json",
+  "raw_sha256": "902bfc7dde4b4d6617d8623bf878e3a81b0da3e2485ec17c0036879bac8b729b",
+  "scoring_verified": true,
+  "review_reasons": [],
+  "team_points": {
+    "dominate": 6,
+    "dominium": 1
+  }
+}
