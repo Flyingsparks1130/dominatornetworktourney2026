@@ -1,18 +1,179 @@
 {
   "schema_version": 1,
   "match_id": "r2-m2",
-  "status": "pending",
+  "status": "locked",
   "track_pool": [],
-  "track_picks": [],
-  "track_vetoes": [],
-  "final_tracks": [],
-  "tiebreaker_track": null,
-  "uma_pre_bans": [],
+  "track_picks": [
+    {
+      "team_id": "dominant-h",
+      "track": "Hanshin (Inner) 2200m · Turf · Fall / Cloudy / Good"
+    },
+    {
+      "team_id": "dominance",
+      "track": "Sapporo 1800m · Turf · Fall / Sunny / Firm"
+    },
+    {
+      "team_id": "dominant-h",
+      "track": "Hakodate 2000m · Turf · Summer / Sunny / Firm"
+    },
+    {
+      "team_id": "dominance",
+      "track": "Kyoto (Outer) 2400m · Turf · Summer / Sunny / Firm"
+    },
+    {
+      "team_id": "dominant-h",
+      "track": "Tokyo 2500m · Turf · Spring / Cloudy / Firm"
+    },
+    {
+      "team_id": "dominance",
+      "track": "Sapporo 1500m · Turf · Fall / Sunny / Good"
+    }
+  ],
+  "track_vetoes": [
+    {
+      "team_id": "dominance",
+      "track": "Hanshin (Outer) 2600m · Turf · Spring / Rainy / Heavy"
+    },
+    {
+      "team_id": "dominant-h",
+      "track": "Nakayama (Inner) 2000m · Turf · Spring / Sunny / Firm"
+    }
+  ],
+  "final_tracks": [
+    "Hanshin (Inner) 2200m · Turf · Fall / Cloudy / Good",
+    "Sapporo 1800m · Turf · Fall / Sunny / Firm",
+    "Hakodate 2000m · Turf · Summer / Sunny / Firm",
+    "Kyoto (Outer) 2400m · Turf · Summer / Sunny / Firm",
+    "Tokyo 2500m · Turf · Spring / Cloudy / Firm",
+    "Sapporo 1500m · Turf · Fall / Sunny / Good"
+  ],
+  "tiebreaker_track": "Chukyo 1600m · Turf · Fall / Cloudy / Firm",
+  "uma_pre_bans": [
+    {
+      "team_id": "dominant-h",
+      "uma": "Mihono Bourbon (Valentine)"
+    },
+    {
+      "team_id": "dominant-h",
+      "uma": "Maruzensky (Summer)"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Oguri Cap (Christmas)"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Fine Motion (Wedding)"
+    }
+  ],
   "uma_picks": [],
-  "uma_bans": [],
+  "uma_bans": [
+    {
+      "team_id": "dominance",
+      "uma": "Silence Suzuka"
+    },
+    {
+      "team_id": "dominant-h",
+      "uma": "Seiun Sky"
+    }
+  ],
   "uma_additions": [],
-  "benched_umas": [],
+  "benched_umas": [
+    {
+      "team_id": "dominant-h",
+      "uma": "Oguri Cap"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Mejiro Ryan"
+    }
+  ],
   "training_start": null,
   "training_deadline": null,
-  "notes": ""
+  "notes": "Final selections, track picks, pre-bans and enemy vetoes transcribed from organizer screenshots. Player names come from owner_trainer_name in all seven original exports; Discord identities and external draft ID were not supplied. Oguri Cap and Mejiro Ryan were drafted but absent from all seven exports and are listed as the unfielded benches. Original snake-pick order and training dates were not supplied. Draft condition wording and literal export condition labels are preserved separately.",
+  "external_match_id": null,
+  "roster": [
+    {
+      "team_id": "dominant-h",
+      "uma": "Oguri Cap",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominant-h",
+      "uma": "Kitasan Black",
+      "discord": null,
+      "benched": false,
+      "display_name": "Kitasan"
+    },
+    {
+      "team_id": "dominant-h",
+      "uma": "Maruzensky",
+      "discord": null,
+      "benched": false,
+      "display_name": "Bean"
+    },
+    {
+      "team_id": "dominant-h",
+      "uma": "Mejiro Dober",
+      "discord": null,
+      "benched": false,
+      "display_name": "Fizzle"
+    },
+    {
+      "team_id": "dominant-h",
+      "uma": "Taiki Shuttle (Camping)",
+      "discord": null,
+      "benched": false,
+      "display_name": "Toji Fushiguro"
+    },
+    {
+      "team_id": "dominant-h",
+      "uma": "Mayano Top Gun",
+      "discord": null,
+      "benched": false,
+      "display_name": "JeryDream"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Narita Brian",
+      "discord": null,
+      "benched": false,
+      "display_name": "Bloodvvolf"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Satono Diamond",
+      "discord": null,
+      "benched": false,
+      "display_name": "Raykini"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Grass Wonder",
+      "discord": null,
+      "benched": false,
+      "display_name": "Essential"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Mejiro Ryan",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Mejiro Palmer",
+      "discord": null,
+      "benched": false,
+      "display_name": "Iviers"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Daiwa Scarlet",
+      "discord": null,
+      "benched": false,
+      "display_name": "NakeGhostie"
+    }
+  ]
 }
