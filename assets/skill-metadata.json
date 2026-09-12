@@ -3532,11 +3532,12 @@
     "source_icon_id": 20161
   },
   "210101": {
-    "icon_id": 30011,
-    "category": "debuff",
+    "icon_id": 20011,
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 1,
-    "source_icon_id": 20161
+    "source_icon_id": 20161,
+    "description": "Boosts speed at the cost of a small amount of the runner’s own HP."
   },
   "210111": {
     "icon_id": 20011,

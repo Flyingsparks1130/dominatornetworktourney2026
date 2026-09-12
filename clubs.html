@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark"><title>Clubs · The Dominator Draft</title><link rel="stylesheet" href="assets/site.css?v=10"><link rel="stylesheet" href="assets/ui.css?v=1"><style>.club-player-list{max-width:430px}.club-player-list span{display:inline-block;margin:2px 12px 2px 0}.club-player-list small{display:block;color:var(--muted);font-size:12px}@media(max-width:600px){.clubs-table th:nth-child(1),.clubs-table td:nth-child(1),.clubs-table th:nth-child(4),.clubs-table td:nth-child(4){display:none}}</style></head>
+<meta name="color-scheme" content="dark"><title>Clubs · The Dominator Draft</title><link rel="stylesheet" href="assets/site.css?v=10"><link rel="stylesheet" href="assets/ui.css?v=1"><link rel="stylesheet" href="assets/competition.css?v=1"></head>
 <body><script src="assets/site.js?v=5"></script><script>siteHeader("clubs");</script>
 
 <main class="page"><div class="page-head"><div class="section-kicker mono">TOURNAMENT FIELD</div><h1>THE CLUBS</h1>
 <p class="lead">Clubs, players and matchups.</p></div>
-<input id="club-search" class="search-box" placeholder="Search clubs or players" aria-label="Search clubs or players" autocomplete="off">
-<table class="clubs-table"><thead><tr><th>SEED</th><th>CLUB</th><th>PLAYERS</th><th>ENTRY</th><th>STATUS</th></tr></thead><tbody id="club-rows"></tbody></table></main>
+<div class="race-club-search"><input id="club-search" class="search-box" placeholder="Search clubs or players" aria-label="Search clubs or players" autocomplete="off"><span id="club-count" role="status"></span></div>
+<div id="club-rows" class="race-club-grid"></div></main>
 
-<script src="assets/clubs.js?v=2" defer></script><script>siteFooter();</script></body></html>
+<script src="assets/competition.js?v=1" defer></script><script src="assets/clubs.js?v=3" defer></script><script>siteFooter();</script></body></html>
