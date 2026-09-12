@@ -46,10 +46,12 @@ Reported runners and MVP may also include `display_name`, with the same rule for
 
 LHNCFL records Dominion **22–27** Dominarium after six standard races plus a tiebreaker. MVP is **@LESKBILL**, Tamamo Cross, with 12 podium points. Dominarium advances to face Dominator in R2. Its source is the organizer's text and screenshots; live Uma Drafter retrieval was blocked. No original race files were provided.
 
+JZENUX (`r2-m1`) records Dominator **29–13** Dominarium after six races. MVP is **@AdoboProdigy**, Taiki Shuttle, with 10 podium points. All six unchanged exports corroborate the reported podiums; they do not add a second set of points. Tamamo Cross and Gold City were benched. Chukyo 1400m remains the unused tiebreaker, with no race export. The final lineup, track picks, vetoes and bans come from the supplied draft screenshots; unsupplied snake-pick order is left empty.
+
 ## Official scores and original exports
 
 Use `Dominator Tournament/control.json` through the engine's mutation functions or local organizer to record scores and confirm advancement. Supply an audit reason and the current revision. Scores alone do not eliminate a club.
 
 For raw exports, preserve bytes and map the Uma owner's in-game name to a club. Do not infer ownership from the capture trainer, game team, or ghost flag. Explicit NPC/DQ decisions pass scoring places to the next eligible runner. Discord handles in drafts are not assumed to equal in-game names.
 
-The importer supports horseACT `raceHorse` exports with zero-based finish order, retaining all runners and distinct raw/scaled times. Displayed build data includes stats and skill/support IDs. The optional Hakuraku link is for analysis; automatic uploads, replay decoding and skill-event graphs are not implemented.
+The importer supports horseACT `raceHorse` exports with zero-based finish order, retaining all runners and distinct raw/scaled times. Displayed build data includes stats and named skills, local icons and support IDs. Native replay decoding, skill outcomes and event graphs are described in [race-analysis.md](race-analysis.md); no race files are sent to Hakuraku.

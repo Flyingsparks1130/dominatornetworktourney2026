@@ -12029,7 +12029,79 @@
         "hp_zero_remaining_m": null,
         "peak_speed_mps": 24.4,
         "skill_activations": 16,
-        "duel_events": 0
+        "duel_events": 0,
+        "skill_outcomes": {
+          "110261": {
+            "replay_skill_id": 110261,
+            "status": "activated"
+          },
+          "200212": {
+            "replay_skill_id": 200212,
+            "status": "activated"
+          },
+          "200331": {
+            "replay_skill_id": 200331,
+            "status": "activated"
+          },
+          "200351": {
+            "replay_skill_id": 200351,
+            "status": "activated"
+          },
+          "200431": {
+            "replay_skill_id": 200431,
+            "status": "activated"
+          },
+          "200452": {
+            "replay_skill_id": 200452,
+            "status": "activated"
+          },
+          "200532": {
+            "replay_skill_id": 200532,
+            "status": "activated"
+          },
+          "200541": {
+            "replay_skill_id": 200541,
+            "status": "activated"
+          },
+          "201242": {
+            "replay_skill_id": 201242,
+            "status": "activated"
+          },
+          "201252": {
+            "replay_skill_id": 201252,
+            "status": "activated"
+          },
+          "201262": {
+            "replay_skill_id": 201262,
+            "status": "activated"
+          },
+          "201271": {
+            "replay_skill_id": 201271,
+            "status": "activated"
+          },
+          "201522": {
+            "replay_skill_id": 201522,
+            "status": "activated"
+          },
+          "201601": {
+            "replay_skill_id": 201601,
+            "status": "activated"
+          },
+          "201662": {
+            "replay_skill_id": 201662,
+            "status": "failed_wit",
+            "roll": 94.8938,
+            "activation_chance": 91.9723
+          },
+          "900201": {
+            "replay_skill_id": 900201,
+            "status": "activated"
+          },
+          "900681": {
+            "replay_skill_id": 900681,
+            "status": "activated"
+          }
+        }
       },
       {
         "entry_id": "5",
@@ -12042,7 +12114,95 @@
         "hp_zero_remaining_m": null,
         "peak_speed_mps": 25.55,
         "skill_activations": 14,
-        "duel_events": 1
+        "duel_events": 1,
+        "skill_outcomes": {
+          "100241": {
+            "replay_skill_id": 100241,
+            "status": "activated"
+          },
+          "200142": {
+            "replay_skill_id": 200142,
+            "status": "activated"
+          },
+          "200331": {
+            "replay_skill_id": 200331,
+            "status": "activated"
+          },
+          "200381": {
+            "replay_skill_id": 200381,
+            "status": "activated"
+          },
+          "200462": {
+            "replay_skill_id": 200462,
+            "status": "failed_wit",
+            "roll": 99.1062,
+            "activation_chance": 90.784
+          },
+          "200491": {
+            "replay_skill_id": 200491,
+            "status": "activated"
+          },
+          "200592": {
+            "replay_skill_id": 200592,
+            "status": "activated"
+          },
+          "200601": {
+            "replay_skill_id": 200601,
+            "status": "activated"
+          },
+          "200612": {
+            "replay_skill_id": 200612,
+            "status": "activated"
+          },
+          "201172": {
+            "replay_skill_id": 201172,
+            "status": "failed_condition",
+            "roll": 59.4394,
+            "activation_chance": 90.784
+          },
+          "201202": {
+            "replay_skill_id": 201202,
+            "status": "failed_wit",
+            "roll": 93.0267,
+            "activation_chance": 90.784
+          },
+          "201412": {
+            "replay_skill_id": 201412,
+            "status": "failed_condition",
+            "roll": 48.5742,
+            "activation_chance": 90.784
+          },
+          "201542": {
+            "replay_skill_id": 201542,
+            "status": "activated"
+          },
+          "201662": {
+            "replay_skill_id": 201662,
+            "status": "activated"
+          },
+          "201701": {
+            "replay_skill_id": 201701,
+            "status": "activated"
+          },
+          "202082": {
+            "replay_skill_id": 202082,
+            "status": "activated"
+          },
+          "202152": {
+            "replay_skill_id": 202152,
+            "status": "activated"
+          },
+          "202421": {
+            "replay_skill_id": 202421,
+            "status": "failed_condition",
+            "roll": 45.2013,
+            "activation_chance": 90.784
+          },
+          "900591": {
+            "replay_skill_id": 900591,
+            "status": "activated"
+          }
+        }
       },
       {
         "entry_id": "4",
@@ -12055,7 +12215,101 @@
         "hp_zero_remaining_m": null,
         "peak_speed_mps": 24.92,
         "skill_activations": 16,
-        "duel_events": 1
+        "duel_events": 1,
+        "skill_outcomes": {
+          "110301": {
+            "replay_skill_id": 110301,
+            "status": "activated"
+          },
+          "200062": {
+            "replay_skill_id": 200062,
+            "status": "failed_condition"
+          },
+          "200331": {
+            "replay_skill_id": 200331,
+            "status": "failed_wit",
+            "roll": 95.1736,
+            "activation_chance": 91.6145
+          },
+          "200362": {
+            "replay_skill_id": 200362,
+            "status": "activated"
+          },
+          "200462": {
+            "replay_skill_id": 200462,
+            "status": "activated"
+          },
+          "200492": {
+            "replay_skill_id": 200492,
+            "status": "activated"
+          },
+          "200561": {
+            "replay_skill_id": 200561,
+            "status": "failed_condition",
+            "roll": 43.736,
+            "activation_chance": 91.6145
+          },
+          "200722": {
+            "replay_skill_id": 200722,
+            "status": "failed_wit",
+            "roll": 98.2937,
+            "activation_chance": 91.6145
+          },
+          "201112": {
+            "replay_skill_id": 201112,
+            "status": "activated"
+          },
+          "201352": {
+            "replay_skill_id": 201352,
+            "status": "activated"
+          },
+          "201571": {
+            "replay_skill_id": 201571,
+            "status": "activated"
+          },
+          "201591": {
+            "replay_skill_id": 201591,
+            "status": "activated"
+          },
+          "201611": {
+            "replay_skill_id": 201611,
+            "status": "activated"
+          },
+          "201651": {
+            "replay_skill_id": 201651,
+            "status": "activated"
+          },
+          "201662": {
+            "replay_skill_id": 201662,
+            "status": "activated"
+          },
+          "201902": {
+            "replay_skill_id": 201902,
+            "status": "activated"
+          },
+          "202072": {
+            "replay_skill_id": 202072,
+            "status": "failed_condition",
+            "roll": 66.0846,
+            "activation_chance": 91.6145
+          },
+          "202371": {
+            "replay_skill_id": 202371,
+            "status": "activated"
+          },
+          "210012": {
+            "replay_skill_id": 210012,
+            "status": "activated"
+          },
+          "900011": {
+            "replay_skill_id": 900011,
+            "status": "activated"
+          },
+          "900231": {
+            "replay_skill_id": 900231,
+            "status": "activated"
+          }
+        }
       },
       {
         "entry_id": "9",
@@ -12068,7 +12322,101 @@
         "hp_zero_remaining_m": null,
         "peak_speed_mps": 24.77,
         "skill_activations": 17,
-        "duel_events": 0
+        "duel_events": 0,
+        "skill_outcomes": {
+          "120131": {
+            "replay_skill_id": 120131,
+            "status": "activated"
+          },
+          "200282": {
+            "replay_skill_id": 200282,
+            "status": "activated"
+          },
+          "200331": {
+            "replay_skill_id": 200331,
+            "status": "activated"
+          },
+          "200351": {
+            "replay_skill_id": 200351,
+            "status": "activated"
+          },
+          "200432": {
+            "replay_skill_id": 200432,
+            "status": "activated"
+          },
+          "200492": {
+            "replay_skill_id": 200492,
+            "status": "failed_condition",
+            "roll": 65.6628,
+            "activation_chance": 91.0601
+          },
+          "200531": {
+            "replay_skill_id": 200531,
+            "status": "activated"
+          },
+          "201102": {
+            "replay_skill_id": 201102,
+            "status": "activated"
+          },
+          "201112": {
+            "replay_skill_id": 201112,
+            "status": "activated"
+          },
+          "201251": {
+            "replay_skill_id": 201251,
+            "status": "activated"
+          },
+          "201271": {
+            "replay_skill_id": 201271,
+            "status": "activated"
+          },
+          "201522": {
+            "replay_skill_id": 201522,
+            "status": "activated"
+          },
+          "201571": {
+            "replay_skill_id": 201571,
+            "status": "activated"
+          },
+          "201601": {
+            "replay_skill_id": 201601,
+            "status": "activated"
+          },
+          "201662": {
+            "replay_skill_id": 201662,
+            "status": "failed_condition",
+            "roll": 66.3598,
+            "activation_chance": 91.0601
+          },
+          "201701": {
+            "replay_skill_id": 201701,
+            "status": "activated"
+          },
+          "202011": {
+            "replay_skill_id": 202011,
+            "status": "failed_condition",
+            "roll": 35.591,
+            "activation_chance": 91.0601
+          },
+          "210101": {
+            "replay_skill_id": 210101,
+            "status": "activated"
+          },
+          "900201": {
+            "replay_skill_id": 900201,
+            "status": "failed_condition",
+            "roll": 14.8455,
+            "activation_chance": 91.0601
+          },
+          "900681": {
+            "replay_skill_id": 900681,
+            "status": "activated"
+          },
+          "910261": {
+            "replay_skill_id": 910261,
+            "status": "activated"
+          }
+        }
       },
       {
         "entry_id": "2",
@@ -12081,7 +12429,89 @@
         "hp_zero_remaining_m": null,
         "peak_speed_mps": 24.67,
         "skill_activations": 12,
-        "duel_events": 1
+        "duel_events": 1,
+        "skill_outcomes": {
+          "110201": {
+            "replay_skill_id": 110201,
+            "status": "failed_condition"
+          },
+          "200012": {
+            "replay_skill_id": 200012,
+            "status": "failed_condition"
+          },
+          "200331": {
+            "replay_skill_id": 200331,
+            "status": "activated"
+          },
+          "200352": {
+            "replay_skill_id": 200352,
+            "status": "failed_wit",
+            "roll": 99.2355,
+            "activation_chance": 92.7156
+          },
+          "200381": {
+            "replay_skill_id": 200381,
+            "status": "activated"
+          },
+          "200431": {
+            "replay_skill_id": 200431,
+            "status": "activated"
+          },
+          "200452": {
+            "replay_skill_id": 200452,
+            "status": "activated"
+          },
+          "200531": {
+            "replay_skill_id": 200531,
+            "status": "activated"
+          },
+          "200541": {
+            "replay_skill_id": 200541,
+            "status": "activated"
+          },
+          "200712": {
+            "replay_skill_id": 200712,
+            "status": "failed_condition",
+            "roll": 54.512,
+            "activation_chance": 92.7156
+          },
+          "201112": {
+            "replay_skill_id": 201112,
+            "status": "activated"
+          },
+          "201271": {
+            "replay_skill_id": 201271,
+            "status": "activated"
+          },
+          "201662": {
+            "replay_skill_id": 201662,
+            "status": "activated"
+          },
+          "210052": {
+            "replay_skill_id": 210052,
+            "status": "activated"
+          },
+          "900201": {
+            "replay_skill_id": 900201,
+            "status": "failed_condition",
+            "roll": 21.1566,
+            "activation_chance": 92.7156
+          },
+          "900681": {
+            "replay_skill_id": 900681,
+            "status": "failed_condition",
+            "roll": 19.3865,
+            "activation_chance": 92.7156
+          },
+          "910041": {
+            "replay_skill_id": 910041,
+            "status": "activated"
+          },
+          "910261": {
+            "replay_skill_id": 910261,
+            "status": "activated"
+          }
+        }
       },
       {
         "entry_id": "3",
@@ -12094,7 +12524,95 @@
         "hp_zero_remaining_m": null,
         "peak_speed_mps": 25.07,
         "skill_activations": 12,
-        "duel_events": 1
+        "duel_events": 1,
+        "skill_outcomes": {
+          "100201": {
+            "replay_skill_id": 100201,
+            "status": "failed_condition"
+          },
+          "200042": {
+            "replay_skill_id": 200042,
+            "status": "failed_condition"
+          },
+          "200331": {
+            "replay_skill_id": 200331,
+            "status": "activated"
+          },
+          "200351": {
+            "replay_skill_id": 200351,
+            "status": "activated"
+          },
+          "200362": {
+            "replay_skill_id": 200362,
+            "status": "activated"
+          },
+          "200382": {
+            "replay_skill_id": 200382,
+            "status": "activated"
+          },
+          "200531": {
+            "replay_skill_id": 200531,
+            "status": "activated"
+          },
+          "200541": {
+            "replay_skill_id": 200541,
+            "status": "activated"
+          },
+          "201172": {
+            "replay_skill_id": 201172,
+            "status": "failed_condition",
+            "roll": 60.2821,
+            "activation_chance": 92.6162
+          },
+          "201181": {
+            "replay_skill_id": 201181,
+            "status": "failed_condition",
+            "roll": 8.6496,
+            "activation_chance": 92.6162
+          },
+          "201242": {
+            "replay_skill_id": 201242,
+            "status": "activated"
+          },
+          "201251": {
+            "replay_skill_id": 201251,
+            "status": "activated"
+          },
+          "201271": {
+            "replay_skill_id": 201271,
+            "status": "activated"
+          },
+          "201282": {
+            "replay_skill_id": 201282,
+            "status": "failed_condition",
+            "roll": 44.0689,
+            "activation_chance": 92.6162
+          },
+          "201611": {
+            "replay_skill_id": 201611,
+            "status": "activated"
+          },
+          "201662": {
+            "replay_skill_id": 201662,
+            "status": "activated"
+          },
+          "210101": {
+            "replay_skill_id": 210101,
+            "status": "activated"
+          },
+          "900681": {
+            "replay_skill_id": 900681,
+            "status": "failed_condition",
+            "roll": 92.475,
+            "activation_chance": 92.6162
+          },
+          "910201": {
+            "replay_skill_id": 910201,
+            "status": "failed_condition",
+            "roll": 64.6807,
+            "activation_chance": 92.6162
+          }
+        }
       },
       {
         "entry_id": "6",
@@ -12107,7 +12625,93 @@
         "hp_zero_remaining_m": null,
         "peak_speed_mps": 24.85,
         "skill_activations": 8,
-        "duel_events": 0
+        "duel_events": 0,
+        "skill_outcomes": {
+          "100061": {
+            "replay_skill_id": 100061,
+            "status": "failed_condition"
+          },
+          "200331": {
+            "replay_skill_id": 200331,
+            "status": "activated"
+          },
+          "200381": {
+            "replay_skill_id": 200381,
+            "status": "activated"
+          },
+          "200492": {
+            "replay_skill_id": 200492,
+            "status": "activated"
+          },
+          "201321": {
+            "replay_skill_id": 201321,
+            "status": "activated"
+          },
+          "201342": {
+            "replay_skill_id": 201342,
+            "status": "failed_condition",
+            "roll": 78.1945,
+            "activation_chance": 93.1182
+          },
+          "201351": {
+            "replay_skill_id": 201351,
+            "status": "activated"
+          },
+          "201662": {
+            "replay_skill_id": 201662,
+            "status": "activated"
+          },
+          "201701": {
+            "replay_skill_id": 201701,
+            "status": "failed_condition",
+            "roll": 30.7873,
+            "activation_chance": 93.1182
+          },
+          "201902": {
+            "replay_skill_id": 201902,
+            "status": "failed_condition",
+            "roll": 38.5281,
+            "activation_chance": 93.1182
+          },
+          "202082": {
+            "replay_skill_id": 202082,
+            "status": "activated"
+          },
+          "202371": {
+            "replay_skill_id": 202371,
+            "status": "activated"
+          },
+          "202412": {
+            "replay_skill_id": 202412,
+            "status": "failed_condition",
+            "roll": 79.9798,
+            "activation_chance": 93.1182
+          },
+          "202432": {
+            "replay_skill_id": 202432,
+            "status": "failed_condition",
+            "roll": 22.7874,
+            "activation_chance": 93.1182
+          },
+          "900051": {
+            "replay_skill_id": 900051,
+            "status": "failed_condition",
+            "roll": 8.164,
+            "activation_chance": 93.1182
+          },
+          "900321": {
+            "replay_skill_id": 900321,
+            "status": "failed_condition",
+            "roll": 82.9114,
+            "activation_chance": 93.1182
+          },
+          "900451": {
+            "replay_skill_id": 900451,
+            "status": "failed_condition",
+            "roll": 23.4846,
+            "activation_chance": 93.1182
+          }
+        }
       },
       {
         "entry_id": "1",
@@ -12120,7 +12724,103 @@
         "hp_zero_remaining_m": null,
         "peak_speed_mps": 24.63,
         "skill_activations": 12,
-        "duel_events": 0
+        "duel_events": 0,
+        "skill_outcomes": {
+          "110131": {
+            "replay_skill_id": 110131,
+            "status": "failed_condition"
+          },
+          "200331": {
+            "replay_skill_id": 200331,
+            "status": "activated"
+          },
+          "200351": {
+            "replay_skill_id": 200351,
+            "status": "activated"
+          },
+          "200432": {
+            "replay_skill_id": 200432,
+            "status": "failed_wit",
+            "roll": 91.9482,
+            "activation_chance": 90.9003
+          },
+          "200452": {
+            "replay_skill_id": 200452,
+            "status": "failed_wit",
+            "roll": 94.993,
+            "activation_chance": 90.9003
+          },
+          "200512": {
+            "replay_skill_id": 200512,
+            "status": "activated"
+          },
+          "200532": {
+            "replay_skill_id": 200532,
+            "status": "activated"
+          },
+          "200542": {
+            "replay_skill_id": 200542,
+            "status": "failed_condition",
+            "roll": 26.1274,
+            "activation_chance": 90.9003
+          },
+          "200552": {
+            "replay_skill_id": 200552,
+            "status": "failed_condition",
+            "roll": 32.0076,
+            "activation_chance": 90.9003
+          },
+          "201102": {
+            "replay_skill_id": 201102,
+            "status": "activated"
+          },
+          "201112": {
+            "replay_skill_id": 201112,
+            "status": "activated"
+          },
+          "201271": {
+            "replay_skill_id": 201271,
+            "status": "activated"
+          },
+          "201522": {
+            "replay_skill_id": 201522,
+            "status": "activated"
+          },
+          "201591": {
+            "replay_skill_id": 201591,
+            "status": "activated"
+          },
+          "201601": {
+            "replay_skill_id": 201601,
+            "status": "activated"
+          },
+          "201651": {
+            "replay_skill_id": 201651,
+            "status": "activated"
+          },
+          "201662": {
+            "replay_skill_id": 201662,
+            "status": "activated"
+          },
+          "900201": {
+            "replay_skill_id": 900201,
+            "status": "failed_condition",
+            "roll": 72.3908,
+            "activation_chance": 90.9003
+          },
+          "900681": {
+            "replay_skill_id": 900681,
+            "status": "failed_condition",
+            "roll": 8.5596,
+            "activation_chance": 90.9003
+          },
+          "910261": {
+            "replay_skill_id": 910261,
+            "status": "failed_condition",
+            "roll": 51.9534,
+            "activation_chance": 90.9003
+          }
+        }
       },
       {
         "entry_id": "7",
@@ -12133,7 +12833,89 @@
         "hp_zero_remaining_m": null,
         "peak_speed_mps": 25.28,
         "skill_activations": 10,
-        "duel_events": 0
+        "duel_events": 0,
+        "skill_outcomes": {
+          "100211": {
+            "replay_skill_id": 100211,
+            "status": "failed_condition"
+          },
+          "200331": {
+            "replay_skill_id": 200331,
+            "status": "activated"
+          },
+          "200351": {
+            "replay_skill_id": 200351,
+            "status": "activated"
+          },
+          "200382": {
+            "replay_skill_id": 200382,
+            "status": "failed_wit",
+            "roll": 91.249,
+            "activation_chance": 88.3841
+          },
+          "200502": {
+            "replay_skill_id": 200502,
+            "status": "activated"
+          },
+          "200512": {
+            "replay_skill_id": 200512,
+            "status": "failed_wit",
+            "roll": 96.0674,
+            "activation_chance": 88.3841
+          },
+          "200642": {
+            "replay_skill_id": 200642,
+            "status": "activated"
+          },
+          "200881": {
+            "replay_skill_id": 200881,
+            "status": "activated"
+          },
+          "201212": {
+            "replay_skill_id": 201212,
+            "status": "failed_condition",
+            "roll": 15.4047,
+            "activation_chance": 88.3841
+          },
+          "201552": {
+            "replay_skill_id": 201552,
+            "status": "activated"
+          },
+          "201612": {
+            "replay_skill_id": 201612,
+            "status": "activated"
+          },
+          "201662": {
+            "replay_skill_id": 201662,
+            "status": "failed_condition",
+            "roll": 38.8543,
+            "activation_chance": 88.3841
+          },
+          "202021": {
+            "replay_skill_id": 202021,
+            "status": "activated"
+          },
+          "210101": {
+            "replay_skill_id": 210101,
+            "status": "activated"
+          },
+          "900071": {
+            "replay_skill_id": 900071,
+            "status": "activated"
+          },
+          "900161": {
+            "replay_skill_id": 900161,
+            "status": "failed_condition",
+            "roll": 4.1369,
+            "activation_chance": 88.3841
+          },
+          "900591": {
+            "replay_skill_id": 900591,
+            "status": "failed_condition",
+            "roll": 7.5448,
+            "activation_chance": 88.3841
+          }
+        }
       },
       {
         "entry_id": "0",
@@ -12146,7 +12928,97 @@
         "hp_zero_remaining_m": null,
         "peak_speed_mps": 24.85,
         "skill_activations": 8,
-        "duel_events": 0
+        "duel_events": 0,
+        "skill_outcomes": {
+          "100011": {
+            "replay_skill_id": 100011,
+            "status": "failed_condition"
+          },
+          "200192": {
+            "replay_skill_id": 200192,
+            "status": "failed_condition"
+          },
+          "200331": {
+            "replay_skill_id": 200331,
+            "status": "activated"
+          },
+          "200351": {
+            "replay_skill_id": 200351,
+            "status": "activated"
+          },
+          "200462": {
+            "replay_skill_id": 200462,
+            "status": "failed_condition",
+            "roll": 36.5567,
+            "activation_chance": 90.6747
+          },
+          "200492": {
+            "replay_skill_id": 200492,
+            "status": "failed_condition",
+            "roll": 18.4445,
+            "activation_chance": 90.6747
+          },
+          "200581": {
+            "replay_skill_id": 200581,
+            "status": "failed_condition",
+            "roll": 59.7197,
+            "activation_chance": 90.6747
+          },
+          "201311": {
+            "replay_skill_id": 201311,
+            "status": "failed_wit",
+            "roll": 97.0392,
+            "activation_chance": 90.6747
+          },
+          "201342": {
+            "replay_skill_id": 201342,
+            "status": "failed_condition",
+            "roll": 32.8839,
+            "activation_chance": 90.6747
+          },
+          "201351": {
+            "replay_skill_id": 201351,
+            "status": "activated"
+          },
+          "201532": {
+            "replay_skill_id": 201532,
+            "status": "activated"
+          },
+          "201591": {
+            "replay_skill_id": 201591,
+            "status": "activated"
+          },
+          "201611": {
+            "replay_skill_id": 201611,
+            "status": "activated"
+          },
+          "201662": {
+            "replay_skill_id": 201662,
+            "status": "activated"
+          },
+          "202371": {
+            "replay_skill_id": 202371,
+            "status": "activated"
+          },
+          "202482": {
+            "replay_skill_id": 202482,
+            "status": "failed_condition",
+            "roll": 26.4587,
+            "activation_chance": 90.6747
+          },
+          "900451": {
+            "replay_skill_id": 900451,
+            "status": "failed_condition",
+            "roll": 81.4387,
+            "activation_chance": 90.6747
+          },
+          "910151": {
+            "replay_skill_id": 910151,
+            "status": "failed_condition",
+            "roll": 50.2902,
+            "activation_chance": 90.6747
+          }
+        }
       }
     ],
     "events": [
@@ -13706,7 +14578,11 @@
           0
         ]
       }
-    ]
+    ],
+    "skill_lottery": {
+      "verified": true,
+      "measured_base": 396
+    }
   },
   "results": [
     {
