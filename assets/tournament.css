@@ -30,3 +30,35 @@ body.dt-body{margin:0;background:var(--dt-bg);color:var(--dt-text);font:15px/1.5
 .dt-draft-group .dt-draft-uma{display:flex;align-items:center;gap:10px;min-width:0;font-size:14px}
 .dt-draft-uma .dt-uma-portrait{width:36px;height:44px}
 .dt-draft-uma>span{overflow-wrap:anywhere}
+
+/* Match draft: portrait cards, team colors and a compact race card. */
+.dt-draft-board{--draft-accent:#ee778c;min-width:0}
+.dt-draft-intro{display:flex;justify-content:space-between;align-items:center;gap:20px;margin:28px 0;padding:24px 28px;border:1px solid #60303e;border-radius:12px;background:radial-gradient(ellipse at 95% 0,#77263b70,transparent 65%),#1b151c}
+.dt-draft-intro h2{font-size:32px;letter-spacing:-.03em;margin:6px 0}.dt-draft-intro p{margin:6px 0}.dt-draft-intro .dt-badge{flex-shrink:0}
+.dt-lineup-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;position:relative;align-items:start}
+.dt-side-0{--draft-accent:#ee778c;--draft-wash:#552638}.dt-side-1{--draft-accent:#82bafb;--draft-wash:#253b56}
+.dt-draft-versus{position:absolute;top:30px;left:50%;transform:translateX(-50%) rotate(-8deg);z-index:2;display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#f2dfba;color:#302126;border:4px solid #101012;font-size:12px;font-weight:900;font-style:italic}
+.dt-lineup-team{border:1px solid var(--draft-wash);border-top:3px solid var(--draft-accent);border-radius:12px;overflow:hidden;background:#18171d;min-width:0}
+.dt-lineup-team>header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px;background:linear-gradient(120deg,var(--draft-wash),#18171d 85%)}
+.dt-lineup-team h3{font-size:24px;margin:5px 0;color:#f8f0f2}.dt-lineup-team .dt-kicker{color:var(--draft-accent);margin:0;font-size:10px}
+.dt-team-seal{border:1px solid var(--draft-accent);color:var(--draft-accent);width:42px;height:42px;display:grid;place-items:center;transform:rotate(8deg);border-radius:10px;font-size:16px;font-weight:800;flex-shrink:0}
+.dt-pick-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:16px;margin:0;list-style:none}
+.dt-pick-cards>li{min-width:0;position:relative;border:1px solid #42323e;border-radius:9px;background:#211c25;overflow:hidden;transition:border-color .18s,box-shadow .18s}
+.dt-pick-cards>li:hover{border-color:var(--draft-accent);box-shadow:0 4px 18px #0005}
+.dt-pick-art{position:relative;height:142px;display:flex;align-items:flex-end;justify-content:center;background:radial-gradient(ellipse at 50% 95%,var(--draft-wash),transparent 70%),repeating-linear-gradient(-35deg,transparent,transparent 15px,#ffffff03 15px,#ffffff03 16px);overflow:hidden}
+.dt-pick-art .dt-uma-portrait{width:100%;height:134px;object-fit:contain;object-position:center bottom;border:0;border-radius:0;background:none;transition:transform .2s}
+.dt-pick-cards>li:hover .dt-uma-portrait{transform:scale(1.05)}
+.dt-pick-tag{position:absolute;top:8px;left:7px;font-size:9px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;background:#1b141ce8;padding:4px 6px;border-radius:4px;color:var(--draft-accent)}
+.dt-pick-name{padding:11px 9px;min-height:74px;border-top:1px solid #ffffff09}.dt-pick-name strong{display:block;font-size:13px;line-height:1.4;overflow-wrap:anywhere}.dt-pick-name>span{display:block;font-size:11px;line-height:1.4;color:#c0b6c4;margin-top:5px;overflow-wrap:anywhere}
+.dt-pick-cards .is-mvp{border-color:#d9b86c}.is-mvp .dt-pick-tag{color:#201618;background:#f2d783}.dt-pick-cards .is-bench{border-style:dashed}.is-bench .dt-pick-art{filter:saturate(.45)}.is-bench .dt-pick-tag{color:#d6ced9}
+.dt-draft-tactics{padding:0 16px 16px;display:grid;gap:14px}.dt-draft-action h4{color:#c6b8c8;text-transform:uppercase;font-size:10px;letter-spacing:.09em;margin:0 0 8px}
+.dt-draft-action ul{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0}.dt-draft-action li{display:flex;align-items:center;gap:7px;background:#111016;border:1px solid #332a37;border-radius:6px;padding:5px 8px;font-size:11px;flex:1 1 145px;min-width:0}
+.dt-draft-action li>span{min-width:0;flex:1;overflow-wrap:anywhere}.dt-draft-action small{display:block;color:var(--draft-accent)}.dt-draft-action .dt-uma-portrait{width:29px;height:35px;background:none;border:0;object-fit:contain}.dt-draft-action b{color:#ee778c;font-size:19px}.dt-draft-action.is-ban img{filter:saturate(.5)}.is-track-veto li{color:#b7aab9}
+.dt-race-tickets{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:0;margin:0 0 28px}
+.dt-race-ticket{display:flex;gap:16px;align-items:center;position:relative;background:linear-gradient(115deg,var(--draft-wash,#382734),#19171e 38%);border:1px solid #3d303e;border-radius:10px;padding:18px;min-width:0}
+.dt-ticket-number{display:grid;place-items:center;align-self:stretch;min-width:40px;font-size:26px;letter-spacing:-.04em;font-weight:900;font-style:italic;color:var(--draft-accent);border-right:1px dashed #ffffff29;padding-right:15px}.dt-race-ticket>div{min-width:0}.dt-race-ticket small{display:block;font-size:10px;color:var(--draft-accent);margin-bottom:4px}.dt-race-ticket strong{display:block;font-size:16px;overflow-wrap:anywhere}
+.dt-track-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}.dt-track-tags span{font-size:9px;color:#c6bdce;background:#ffffff06;border:1px solid #ffffff12;border-radius:4px;padding:3px 5px}.dt-track-tags .is-turf{color:#8fe2ba;background:#184c333f}.dt-track-tags .is-dirt{color:#f0bb83;background:#623a213f}
+.dt-race-ticket.is-tiebreaker{grid-column:1/-1;--draft-accent:#ecd088;--draft-wash:#4b3d24;border-color:#655437}.dt-race-ticket.is-tiebreaker .dt-ticket-number{font-size:21px}
+@media(max-width:800px){.dt-lineup-grid{grid-template-columns:1fr;gap:28px}.dt-draft-versus{display:none}.dt-pick-art{height:166px}.dt-pick-art .dt-uma-portrait{height:158px}.dt-pick-name strong{font-size:14px}.dt-race-tickets{grid-template-columns:1fr}}
+@media(max-width:420px){.dt-pick-cards{gap:7px;padding:10px}.dt-pick-art{height:125px}.dt-pick-art .dt-uma-portrait{height:118px}.dt-pick-name{padding:9px 6px}.dt-pick-name strong{font-size:12px}.dt-pick-tag{font-size:8px;left:4px;padding:3px}.dt-draft-intro{padding:18px;align-items:flex-start}.dt-draft-intro h2{font-size:26px}.dt-lineup-team>header{padding:18px}}
+@media(prefers-reduced-motion:reduce){.dt-pick-art .dt-uma-portrait,.dt-pick-cards>li{transition:none}.dt-pick-cards>li:hover .dt-uma-portrait{transform:none}}

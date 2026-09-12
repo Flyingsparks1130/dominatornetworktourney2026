@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T22:08:24Z",
+  "generated_at": "2026-09-11T23:53:50Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
-  "revision": 31,
+  "revision": 45,
   "rounds": [
     {
       "id": "R1",
@@ -2780,55 +2780,1032 @@
           "aliases": []
         }
       ],
-      "winner_id": null,
-      "loser_id": null,
-      "status": "ready",
-      "manual_scores": null,
-      "decision_reason": null,
-      "source": "race_files",
-      "races": [],
+      "winner_id": "dominator",
+      "loser_id": "dominarium",
+      "status": "complete",
+      "manual_scores": {
+        "dominarium": 13,
+        "dominator": 29
+      },
+      "decision_reason": "Publish organizer-confirmed JZENUX: Dominator 29–13 Dominarium after six races; MVP AdoboProdigy. All six exports corroborate the podiums.",
+      "source": "manual",
+      "races": [
+        {
+          "id": "56b65d20b64b13ce24a7",
+          "round": "R2",
+          "match_id": "r2-m1",
+          "race_folder": "01 - Hakodate 1800m",
+          "file_name": "King Halo-85.0445s-20260910.json",
+          "raw_path": "Dominator Tournament/R2/Dominator vs Dominarium/01 - Hakodate 1800m/King Halo-85.0445s-20260910.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10203,
+            "track_id": 10002,
+            "distance_m": 1800,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Good",
+            "weather": "Sunny",
+            "season": "Spring"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominarium": 7,
+            "dominator": 0
+          },
+          "data_file": "data/tournament-races/56b65d20b64b13ce24a7.json"
+        },
+        {
+          "id": "e11f7645e1b2ca830e18",
+          "round": "R2",
+          "match_id": "r2-m1",
+          "race_folder": "02 - Kyoto (Outer) 2200m",
+          "file_name": "Agnes Digital-105.0781s-20260910.json",
+          "raw_path": "Dominator Tournament/R2/Dominator vs Dominarium/02 - Kyoto (Outer) 2200m/Agnes Digital-105.0781s-20260910.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10808,
+            "track_id": 10008,
+            "distance_m": 2200,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Soft",
+            "weather": "Sunny",
+            "season": "Summer"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominarium": 1,
+            "dominator": 6
+          },
+          "data_file": "data/tournament-races/e11f7645e1b2ca830e18.json"
+        },
+        {
+          "id": "42e88c5ea2b55f0aed64",
+          "round": "R2",
+          "match_id": "r2-m1",
+          "race_folder": "03 - Morioka 1600m",
+          "file_name": "Taiki Shuttle-74.6814s-20260910.json",
+          "raw_path": "Dominator Tournament/R2/Dominator vs Dominarium/03 - Morioka 1600m/Taiki Shuttle-74.6814s-20260910.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 11502,
+            "track_id": 10105,
+            "distance_m": 1600,
+            "surface": "Dirt",
+            "turn": "Left",
+            "condition": "Soft",
+            "weather": "Cloudy",
+            "season": "Winter"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominarium": 0,
+            "dominator": 7
+          },
+          "data_file": "data/tournament-races/42e88c5ea2b55f0aed64.json"
+        },
+        {
+          "id": "7527405cfa43908ba451",
+          "round": "R2",
+          "match_id": "r2-m1",
+          "race_folder": "04 - Sapporo 1200m",
+          "file_name": "Bamboo Memory-55.5510s-20260910.json",
+          "raw_path": "Dominator Tournament/R2/Dominator vs Dominarium/04 - Sapporo 1200m/Bamboo Memory-55.5510s-20260910.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10101,
+            "track_id": 10001,
+            "distance_m": 1200,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Good",
+            "weather": "Sunny",
+            "season": "Spring"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominarium": 3,
+            "dominator": 4
+          },
+          "data_file": "data/tournament-races/7527405cfa43908ba451.json"
+        },
+        {
+          "id": "ea90401c018369c4fd3a",
+          "round": "R2",
+          "match_id": "r2-m1",
+          "race_folder": "05 - Fukushima 1200m",
+          "file_name": "Taiki Shuttle-55.3338s-20260910.json",
+          "raw_path": "Dominator Tournament/R2/Dominator vs Dominarium/05 - Fukushima 1200m/Taiki Shuttle-55.3338s-20260910.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10401,
+            "track_id": 10004,
+            "distance_m": 1200,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Good",
+            "weather": "Cloudy",
+            "season": "Winter"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominarium": 2,
+            "dominator": 5
+          },
+          "data_file": "data/tournament-races/ea90401c018369c4fd3a.json"
+        },
+        {
+          "id": "dbeb692653faa9b3bdda",
+          "round": "R2",
+          "match_id": "r2-m1",
+          "race_folder": "06 - Chukyo 1600m",
+          "file_name": "Bamboo Memory-74.1308s-20260910.json",
+          "raw_path": "Dominator Tournament/R2/Dominator vs Dominarium/06 - Chukyo 1600m/Bamboo Memory-74.1308s-20260910.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10703,
+            "track_id": 10007,
+            "distance_m": 1600,
+            "surface": "Turf",
+            "turn": "Left",
+            "condition": "Good",
+            "weather": "Sunny",
+            "season": "Fall"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominarium": 0,
+            "dominator": 7
+          },
+          "data_file": "data/tournament-races/dbeb692653faa9b3bdda.json"
+        }
+      ],
       "draft": {
         "schema_version": 1,
         "match_id": "r2-m1",
-        "status": "pending",
+        "status": "locked",
         "track_pool": [],
-        "track_picks": [],
-        "track_vetoes": [],
-        "final_tracks": [],
-        "tiebreaker_track": null,
-        "uma_pre_bans": [],
+        "track_picks": [
+          {
+            "team_id": "dominator",
+            "track": "Hakodate 1800m · Turf · Right · Spring / Sunny / Firm"
+          },
+          {
+            "team_id": "dominarium",
+            "track": "Kyoto (Outer) 2200m · Turf · Right · Summer / Sunny / Good"
+          },
+          {
+            "team_id": "dominator",
+            "track": "Morioka 1600m · Dirt · Left · Winter / Cloudy / Good"
+          },
+          {
+            "team_id": "dominarium",
+            "track": "Sapporo 1200m · Turf · Right · Spring / Sunny / Firm"
+          },
+          {
+            "team_id": "dominator",
+            "track": "Fukushima 1200m · Turf · Right · Winter / Cloudy / Firm"
+          },
+          {
+            "team_id": "dominarium",
+            "track": "Chukyo 1600m · Turf · Left · Fall / Sunny / Firm"
+          }
+        ],
+        "track_vetoes": [
+          {
+            "team_id": "dominarium",
+            "track": "Funabashi 2400m · Dirt · Left · Summer / Rainy / Soft"
+          },
+          {
+            "team_id": "dominator",
+            "track": "Kyoto (Outer) 3000m · Turf · Right · Fall / Rainy / Heavy"
+          }
+        ],
+        "final_tracks": [
+          "Hakodate 1800m · Turf · Right · Spring / Sunny / Firm",
+          "Kyoto (Outer) 2200m · Turf · Right · Summer / Sunny / Good",
+          "Morioka 1600m · Dirt · Left · Winter / Cloudy / Good",
+          "Sapporo 1200m · Turf · Right · Spring / Sunny / Firm",
+          "Fukushima 1200m · Turf · Right · Winter / Cloudy / Firm",
+          "Chukyo 1600m · Turf · Left · Fall / Sunny / Firm"
+        ],
+        "tiebreaker_track": "Chukyo 1400m · Turf · Left · Winter / Sunny / Firm",
+        "uma_pre_bans": [
+          {
+            "team_id": "dominator",
+            "uma": "Maruzensky (Summer)"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Inari One (Festival)"
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Agnes Digital (Halloween)"
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Mihono Bourbon (Valentine)"
+          }
+        ],
         "uma_picks": [],
-        "uma_bans": [],
+        "uma_bans": [
+          {
+            "team_id": "dominarium",
+            "uma": "Taiki Shuttle (Camping)"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "King Halo (Cheerleader)"
+          }
+        ],
         "uma_additions": [],
-        "benched_umas": [],
+        "benched_umas": [
+          {
+            "team_id": "dominator",
+            "uma": "Tamamo Cross"
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Gold City"
+          }
+        ],
         "training_start": null,
         "training_deadline": null,
-        "notes": "",
-        "external_match_id": null,
-        "roster": []
+        "notes": "Draft, named roster, bans, vetoes and podiums supplied by the organizer. All six original exports corroborate the result. Tamamo Cross and Gold City were benched. The Chukyo 1400m tiebreaker was not run. Original snake-pick order and training dates were not supplied. Draft condition wording and literal export labels are preserved separately.",
+        "external_match_id": "JZENUX",
+        "roster": [
+          {
+            "team_id": "dominator",
+            "uma": "Taiki Shuttle",
+            "discord": "@AdoboProdigy",
+            "benched": false
+          },
+          {
+            "team_id": "dominator",
+            "uma": "El Condor Pasa",
+            "discord": "@Khinus",
+            "benched": false
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Agnes Digital",
+            "discord": "@mikeluigi64 |TraineeUnLuck Whale",
+            "benched": false
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Smart Falcon (Grand Live)",
+            "discord": "@cynical",
+            "benched": false
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Tamamo Cross",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Bamboo Memory",
+            "discord": "@PKHR",
+            "benched": false
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Oguri Cap",
+            "discord": "@David",
+            "benched": false
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "El Condor Pasa (Fantasy)",
+            "discord": "@LESKBILL",
+            "benched": false
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Aston Machan",
+            "discord": "@Cal",
+            "benched": false
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Gold City",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Smart Falcon",
+            "discord": "@CallMeNeko",
+            "benched": false
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "King Halo",
+            "discord": "@eibarman",
+            "benched": false
+          }
+        ]
       },
       "draft_path": "Dominator Tournament/R2/Dominator vs Dominarium/draft.json",
-      "draft_has_content": false,
-      "reported_results": null,
-      "report_path": null,
-      "computed_scores": null,
-      "scores": null,
+      "draft_has_content": true,
+      "reported_results": {
+        "schema_version": 1,
+        "match_id": "r2-m1",
+        "external_match_id": "JZENUX",
+        "source": "Organizer screenshots, corroborated by all six original race exports. Reports and exports are not added together.",
+        "mvp": {
+          "team_id": "dominator",
+          "uma": "Taiki Shuttle",
+          "discord": "@AdoboProdigy",
+          "variant_id": 101001,
+          "portrait": "assets/runners/101001.webp",
+          "display_name": "AdoboProdigy",
+          "points": 10
+        },
+        "races": [
+          {
+            "number": 1,
+            "track": "Hakodate 1800m · Turf · Right · Spring / Sunny / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominarium",
+                "uma": "King Halo",
+                "discord": "@eibarman",
+                "place": 1,
+                "points": 4,
+                "variant_id": 106101,
+                "portrait": "assets/runners/106101.webp",
+                "display_name": "Eibarman"
+              },
+              {
+                "team_id": "dominarium",
+                "uma": "Aston Machan",
+                "discord": "@Cal",
+                "place": 2,
+                "points": 2,
+                "variant_id": 108701,
+                "portrait": "assets/runners/108701.webp",
+                "display_name": "Cal"
+              },
+              {
+                "team_id": "dominarium",
+                "uma": "Oguri Cap",
+                "discord": "@David",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "David"
+              }
+            ],
+            "scores": {
+              "dominarium": 7,
+              "dominator": 0
+            },
+            "cumulative_scores": {
+              "dominarium": 7,
+              "dominator": 0
+            }
+          },
+          {
+            "number": 2,
+            "track": "Kyoto (Outer) 2200m · Turf · Right · Summer / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominator",
+                "uma": "Agnes Digital",
+                "discord": "@mikeluigi64 |TraineeUnLuck Whale",
+                "place": 1,
+                "points": 4,
+                "variant_id": 101901,
+                "portrait": "assets/runners/101901.webp",
+                "display_name": "mikeluigi64"
+              },
+              {
+                "team_id": "dominator",
+                "uma": "Smart Falcon (Grand Live)",
+                "discord": "@cynical",
+                "place": 2,
+                "points": 2,
+                "variant_id": 104602,
+                "portrait": "assets/runners/104602.webp",
+                "display_name": "cynical"
+              },
+              {
+                "team_id": "dominarium",
+                "uma": "El Condor Pasa (Fantasy)",
+                "discord": "@LESKBILL",
+                "place": 3,
+                "points": 1,
+                "variant_id": 101402,
+                "portrait": "assets/runners/101402.webp",
+                "display_name": "LESKBILL"
+              }
+            ],
+            "scores": {
+              "dominarium": 1,
+              "dominator": 6
+            },
+            "cumulative_scores": {
+              "dominarium": 8,
+              "dominator": 6
+            }
+          },
+          {
+            "number": 3,
+            "track": "Morioka 1600m · Dirt · Left · Winter / Cloudy / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominator",
+                "uma": "Taiki Shuttle",
+                "discord": "@AdoboProdigy",
+                "place": 1,
+                "points": 4,
+                "variant_id": 101001,
+                "portrait": "assets/runners/101001.webp",
+                "display_name": "AdoboProdigy"
+              },
+              {
+                "team_id": "dominator",
+                "uma": "Agnes Digital",
+                "discord": "@mikeluigi64 |TraineeUnLuck Whale",
+                "place": 2,
+                "points": 2,
+                "variant_id": 101901,
+                "portrait": "assets/runners/101901.webp",
+                "display_name": "mikeluigi64"
+              },
+              {
+                "team_id": "dominator",
+                "uma": "El Condor Pasa",
+                "discord": "@Khinus",
+                "place": 3,
+                "points": 1,
+                "variant_id": 101401,
+                "portrait": "assets/runners/101401.webp",
+                "display_name": "Khinus"
+              }
+            ],
+            "scores": {
+              "dominarium": 0,
+              "dominator": 7
+            },
+            "cumulative_scores": {
+              "dominarium": 8,
+              "dominator": 13
+            }
+          },
+          {
+            "number": 4,
+            "track": "Sapporo 1200m · Turf · Right · Spring / Sunny / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominator",
+                "uma": "Bamboo Memory",
+                "discord": "@PKHR",
+                "place": 1,
+                "points": 4,
+                "variant_id": 105301,
+                "portrait": "assets/runners/105301.webp",
+                "display_name": "PKHR"
+              },
+              {
+                "team_id": "dominarium",
+                "uma": "King Halo",
+                "discord": "@eibarman",
+                "place": 2,
+                "points": 2,
+                "variant_id": 106101,
+                "portrait": "assets/runners/106101.webp",
+                "display_name": "Eibarman"
+              },
+              {
+                "team_id": "dominarium",
+                "uma": "Oguri Cap",
+                "discord": "@David",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "David"
+              }
+            ],
+            "scores": {
+              "dominarium": 3,
+              "dominator": 4
+            },
+            "cumulative_scores": {
+              "dominarium": 11,
+              "dominator": 17
+            }
+          },
+          {
+            "number": 5,
+            "track": "Fukushima 1200m · Turf · Right · Winter / Cloudy / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominator",
+                "uma": "Taiki Shuttle",
+                "discord": "@AdoboProdigy",
+                "place": 1,
+                "points": 4,
+                "variant_id": 101001,
+                "portrait": "assets/runners/101001.webp",
+                "display_name": "AdoboProdigy"
+              },
+              {
+                "team_id": "dominarium",
+                "uma": "Aston Machan",
+                "discord": "@Cal",
+                "place": 2,
+                "points": 2,
+                "variant_id": 108701,
+                "portrait": "assets/runners/108701.webp",
+                "display_name": "Cal"
+              },
+              {
+                "team_id": "dominator",
+                "uma": "Bamboo Memory",
+                "discord": "@PKHR",
+                "place": 3,
+                "points": 1,
+                "variant_id": 105301,
+                "portrait": "assets/runners/105301.webp",
+                "display_name": "PKHR"
+              }
+            ],
+            "scores": {
+              "dominarium": 2,
+              "dominator": 5
+            },
+            "cumulative_scores": {
+              "dominarium": 13,
+              "dominator": 22
+            }
+          },
+          {
+            "number": 6,
+            "track": "Chukyo 1600m · Turf · Left · Fall / Sunny / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominator",
+                "uma": "Bamboo Memory",
+                "discord": "@PKHR",
+                "place": 1,
+                "points": 4,
+                "variant_id": 105301,
+                "portrait": "assets/runners/105301.webp",
+                "display_name": "PKHR"
+              },
+              {
+                "team_id": "dominator",
+                "uma": "Taiki Shuttle",
+                "discord": "@AdoboProdigy",
+                "place": 2,
+                "points": 2,
+                "variant_id": 101001,
+                "portrait": "assets/runners/101001.webp",
+                "display_name": "AdoboProdigy"
+              },
+              {
+                "team_id": "dominator",
+                "uma": "El Condor Pasa",
+                "discord": "@Khinus",
+                "place": 3,
+                "points": 1,
+                "variant_id": 101401,
+                "portrait": "assets/runners/101401.webp",
+                "display_name": "Khinus"
+              }
+            ],
+            "scores": {
+              "dominarium": 0,
+              "dominator": 7
+            },
+            "cumulative_scores": {
+              "dominarium": 13,
+              "dominator": 29
+            }
+          }
+        ],
+        "totals": {
+          "dominarium": 13,
+          "dominator": 29
+        }
+      },
+      "report_path": "Dominator Tournament/R2/Dominator vs Dominarium/results.json",
+      "computed_scores": {
+        "dominator": 29,
+        "dominarium": 13
+      },
+      "scores": {
+        "dominarium": 13,
+        "dominator": 29
+      },
       "score_only": false,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": [],
-      "draft_lineup": [],
+      "target_reached": [
+        "dominator"
+      ],
+      "draft_lineup": [
+        {
+          "team_id": "dominator",
+          "uma": "Taiki Shuttle",
+          "discord": "@AdoboProdigy",
+          "benched": false,
+          "variant_id": 101001,
+          "portrait": "assets/runners/101001.webp",
+          "display_name": "AdoboProdigy"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "El Condor Pasa",
+          "discord": "@Khinus",
+          "benched": false,
+          "variant_id": 101401,
+          "portrait": "assets/runners/101401.webp",
+          "display_name": "Khinus"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Agnes Digital",
+          "discord": "@mikeluigi64 |TraineeUnLuck Whale",
+          "benched": false,
+          "variant_id": 101901,
+          "portrait": "assets/runners/101901.webp",
+          "display_name": "mikeluigi64 |TraineeUnLuck Whale"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Smart Falcon (Grand Live)",
+          "discord": "@cynical",
+          "benched": false,
+          "variant_id": 104602,
+          "portrait": "assets/runners/104602.webp",
+          "display_name": "cynical"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Tamamo Cross",
+          "discord": null,
+          "benched": true,
+          "variant_id": 102101,
+          "portrait": "assets/runners/102101.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Bamboo Memory",
+          "discord": "@PKHR",
+          "benched": false,
+          "variant_id": 105301,
+          "portrait": "assets/runners/105301.webp",
+          "display_name": "PKHR"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Oguri Cap",
+          "discord": "@David",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "David"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "El Condor Pasa (Fantasy)",
+          "discord": "@LESKBILL",
+          "benched": false,
+          "variant_id": 101402,
+          "portrait": "assets/runners/101402.webp",
+          "display_name": "LESKBILL"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Aston Machan",
+          "discord": "@Cal",
+          "benched": false,
+          "variant_id": 108701,
+          "portrait": "assets/runners/108701.webp",
+          "display_name": "Cal"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Gold City",
+          "discord": null,
+          "benched": true,
+          "variant_id": 104001,
+          "portrait": "assets/runners/104001.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Smart Falcon",
+          "discord": "@CallMeNeko",
+          "benched": false,
+          "variant_id": 104601,
+          "portrait": "assets/runners/104601.webp",
+          "display_name": "CallMeNeko"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "King Halo",
+          "discord": "@eibarman",
+          "benched": false,
+          "variant_id": 106101,
+          "portrait": "assets/runners/106101.webp",
+          "display_name": "eibarman"
+        }
+      ],
       "draft_uma_actions": {
-        "uma_pre_bans": [],
+        "uma_pre_bans": [
+          {
+            "team_id": "dominator",
+            "uma": "Maruzensky (Summer)",
+            "variant_id": 100402,
+            "portrait": "assets/runners/100402.webp"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Inari One (Festival)",
+            "variant_id": 103402,
+            "portrait": "assets/runners/103402.webp"
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Agnes Digital (Halloween)",
+            "variant_id": 101902,
+            "portrait": "assets/runners/101902.webp"
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Mihono Bourbon (Valentine)",
+            "variant_id": 102602,
+            "portrait": "assets/runners/102602.webp"
+          }
+        ],
         "uma_picks": [],
-        "uma_bans": [],
+        "uma_bans": [
+          {
+            "team_id": "dominarium",
+            "uma": "Taiki Shuttle (Camping)",
+            "variant_id": 101002,
+            "portrait": "assets/runners/101002.webp"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "King Halo (Cheerleader)",
+            "variant_id": 106102,
+            "portrait": "assets/runners/106102.webp"
+          }
+        ],
         "uma_additions": [],
-        "benched_umas": []
+        "benched_umas": [
+          {
+            "team_id": "dominator",
+            "uma": "Tamamo Cross",
+            "variant_id": 102101,
+            "portrait": "assets/runners/102101.webp"
+          },
+          {
+            "team_id": "dominarium",
+            "uma": "Gold City",
+            "variant_id": 104001,
+            "portrait": "assets/runners/104001.webp"
+          }
+        ]
       },
-      "lineup": [],
-      "lineup_source": "draft",
-      "player_points": [],
-      "player_points_recorded": false
+      "lineup": [
+        {
+          "team_id": "dominarium",
+          "uma": "Aston Machan",
+          "discord": "@Cal",
+          "benched": false,
+          "variant_id": 108701,
+          "portrait": "assets/runners/108701.webp",
+          "display_name": "Cal"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Smart Falcon",
+          "discord": "@CallMeNeko",
+          "benched": false,
+          "variant_id": 104601,
+          "portrait": "assets/runners/104601.webp",
+          "display_name": "CallMeNeko"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Oguri Cap",
+          "discord": "@David",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "David"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "King Halo",
+          "discord": "@eibarman",
+          "benched": false,
+          "variant_id": 106101,
+          "portrait": "assets/runners/106101.webp",
+          "display_name": "Eibarman"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "El Condor Pasa (Fantasy)",
+          "discord": "@LESKBILL",
+          "benched": false,
+          "variant_id": 101402,
+          "portrait": "assets/runners/101402.webp",
+          "display_name": "LESKBILL"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Taiki Shuttle",
+          "discord": "@AdoboProdigy",
+          "benched": false,
+          "variant_id": 101001,
+          "portrait": "assets/runners/101001.webp",
+          "display_name": "AdoboProdigy"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Smart Falcon (Grand Live)",
+          "discord": "@cynical",
+          "benched": false,
+          "variant_id": 104602,
+          "portrait": "assets/runners/104602.webp",
+          "display_name": "cynical"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "El Condor Pasa",
+          "discord": "@Khinus",
+          "benched": false,
+          "variant_id": 101401,
+          "portrait": "assets/runners/101401.webp",
+          "display_name": "Khinus"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Agnes Digital",
+          "discord": "@mikeluigi64 |TraineeUnLuck Whale",
+          "benched": false,
+          "variant_id": 101901,
+          "portrait": "assets/runners/101901.webp",
+          "display_name": "mikeluigi64"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Bamboo Memory",
+          "discord": "@PKHR",
+          "benched": false,
+          "variant_id": 105301,
+          "portrait": "assets/runners/105301.webp",
+          "display_name": "PKHR"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Tamamo Cross",
+          "discord": null,
+          "benched": true,
+          "variant_id": 102101,
+          "portrait": "assets/runners/102101.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Gold City",
+          "discord": null,
+          "benched": true,
+          "variant_id": 104001,
+          "portrait": "assets/runners/104001.webp",
+          "display_name": ""
+        }
+      ],
+      "lineup_source": "race",
+      "player_points": [
+        {
+          "team_id": "dominarium",
+          "uma": "King Halo",
+          "discord": "@eibarman",
+          "benched": false,
+          "variant_id": 106101,
+          "portrait": "assets/runners/106101.webp",
+          "display_name": "Eibarman",
+          "points": 6
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Aston Machan",
+          "discord": "@Cal",
+          "benched": false,
+          "variant_id": 108701,
+          "portrait": "assets/runners/108701.webp",
+          "display_name": "Cal",
+          "points": 4
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Oguri Cap",
+          "discord": "@David",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "David",
+          "points": 2
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "El Condor Pasa (Fantasy)",
+          "discord": "@LESKBILL",
+          "benched": false,
+          "variant_id": 101402,
+          "portrait": "assets/runners/101402.webp",
+          "display_name": "LESKBILL",
+          "points": 1
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Smart Falcon",
+          "discord": "@CallMeNeko",
+          "benched": false,
+          "variant_id": 104601,
+          "portrait": "assets/runners/104601.webp",
+          "display_name": "CallMeNeko",
+          "points": 0
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Taiki Shuttle",
+          "discord": "@AdoboProdigy",
+          "benched": false,
+          "variant_id": 101001,
+          "portrait": "assets/runners/101001.webp",
+          "display_name": "AdoboProdigy",
+          "points": 10
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Bamboo Memory",
+          "discord": "@PKHR",
+          "benched": false,
+          "variant_id": 105301,
+          "portrait": "assets/runners/105301.webp",
+          "display_name": "PKHR",
+          "points": 9
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Agnes Digital",
+          "discord": "@mikeluigi64 |TraineeUnLuck Whale",
+          "benched": false,
+          "variant_id": 101901,
+          "portrait": "assets/runners/101901.webp",
+          "display_name": "mikeluigi64",
+          "points": 6
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Smart Falcon (Grand Live)",
+          "discord": "@cynical",
+          "benched": false,
+          "variant_id": 104602,
+          "portrait": "assets/runners/104602.webp",
+          "display_name": "cynical",
+          "points": 2
+        },
+        {
+          "team_id": "dominator",
+          "uma": "El Condor Pasa",
+          "discord": "@Khinus",
+          "benched": false,
+          "variant_id": 101401,
+          "portrait": "assets/runners/101401.webp",
+          "display_name": "Khinus",
+          "points": 2
+        }
+      ],
+      "player_points_recorded": true
     },
     {
       "id": "r2-m2",
@@ -2889,8 +3866,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominant-h": 3,
-            "dominance": 4
+            "dominance": 4,
+            "dominant-h": 3
           },
           "data_file": "data/tournament-races/6b375895af26d382dc5b.json"
         },
@@ -2915,8 +3892,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominant-h": 2,
-            "dominance": 5
+            "dominance": 5,
+            "dominant-h": 2
           },
           "data_file": "data/tournament-races/6c7b39c05c11ae6e840e.json"
         },
@@ -2941,8 +3918,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominant-h": 1,
-            "dominance": 6
+            "dominance": 6,
+            "dominant-h": 1
           },
           "data_file": "data/tournament-races/e8033244e144f415b64f.json"
         },
@@ -2967,8 +3944,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominant-h": 2,
-            "dominance": 5
+            "dominance": 5,
+            "dominant-h": 2
           },
           "data_file": "data/tournament-races/9e3e00480b7fde58c39a.json"
         },
@@ -2993,8 +3970,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominant-h": 5,
-            "dominance": 2
+            "dominance": 2,
+            "dominant-h": 5
           },
           "data_file": "data/tournament-races/87d47b802411a4514be0.json"
         },
@@ -3019,8 +3996,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominant-h": 6,
-            "dominance": 1
+            "dominance": 1,
+            "dominant-h": 6
           },
           "data_file": "data/tournament-races/10f9086a1ed9a5f9368f.json"
         },
@@ -3045,8 +4022,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominant-h": 3,
-            "dominance": 4
+            "dominance": 4,
+            "dominant-h": 3
           },
           "data_file": "data/tournament-races/4814a3b2d89cf0102452.json"
         }
@@ -4103,8 +5080,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominate": 6,
-            "dominium": 1
+            "dominium": 1,
+            "dominate": 6
           },
           "data_file": "data/tournament-races/88e67acbf1bf9d722ad3.json"
         },
@@ -4129,8 +5106,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominate": 3,
-            "dominium": 4
+            "dominium": 4,
+            "dominate": 3
           },
           "data_file": "data/tournament-races/6a90afd4af061a79b568.json"
         },
@@ -4155,8 +5132,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominate": 7,
-            "dominium": 0
+            "dominium": 0,
+            "dominate": 7
           },
           "data_file": "data/tournament-races/37e67a4d0d6bea4e9f3e.json"
         },
@@ -4181,8 +5158,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominate": 4,
-            "dominium": 3
+            "dominium": 3,
+            "dominate": 4
           },
           "data_file": "data/tournament-races/80443fe07928e4407b7a.json"
         },
@@ -4207,8 +5184,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominate": 6,
-            "dominium": 1
+            "dominium": 1,
+            "dominate": 6
           },
           "data_file": "data/tournament-races/7c48300d6cdd861a5834.json"
         }
@@ -4999,7 +5976,13 @@
         }
       ],
       "participants": [
-        null,
+        {
+          "id": "dominator",
+          "name": "Dominator",
+          "seed": 1,
+          "club_id": "114037107",
+          "aliases": []
+        },
         {
           "id": "dominance",
           "name": "Dominance",
@@ -5010,7 +5993,7 @@
       ],
       "winner_id": null,
       "loser_id": null,
-      "status": "awaiting_opponent",
+      "status": "ready",
       "manual_scores": null,
       "decision_reason": null,
       "source": "race_files",
@@ -5145,6 +6128,7 @@
     "domichill",
     "dominant-h",
     "dominante",
+    "dominarium",
     "dominion",
     "dominium"
   ],
@@ -5173,21 +6157,21 @@
       ]
     },
     "dominarium": {
-      "match_id": "r1-m1",
-      "round": "R1",
-      "source": "draft",
+      "match_id": "r2-m1",
+      "round": "R2",
+      "source": "race",
       "members": [
-        {
-          "display_name": "CallMeNeko"
-        },
         {
           "display_name": "Cal"
         },
         {
-          "display_name": "eibarman"
+          "display_name": "CallMeNeko"
         },
         {
           "display_name": "David"
+        },
+        {
+          "display_name": "Eibarman"
         },
         {
           "display_name": "LESKBILL"
@@ -5279,6 +6263,28 @@
         },
         {
           "display_name": "Mor Mas"
+        }
+      ]
+    },
+    "dominator": {
+      "match_id": "r2-m1",
+      "round": "R2",
+      "source": "race",
+      "members": [
+        {
+          "display_name": "AdoboProdigy"
+        },
+        {
+          "display_name": "cynical"
+        },
+        {
+          "display_name": "Khinus"
+        },
+        {
+          "display_name": "mikeluigi64"
+        },
+        {
+          "display_name": "PKHR"
         }
       ]
     },

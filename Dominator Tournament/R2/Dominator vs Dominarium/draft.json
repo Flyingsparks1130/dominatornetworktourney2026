@@ -1,18 +1,169 @@
 {
   "schema_version": 1,
   "match_id": "r2-m1",
-  "status": "pending",
+  "status": "locked",
   "track_pool": [],
-  "track_picks": [],
-  "track_vetoes": [],
-  "final_tracks": [],
-  "tiebreaker_track": null,
-  "uma_pre_bans": [],
+  "track_picks": [
+    {
+      "team_id": "dominator",
+      "track": "Hakodate 1800m · Turf · Right · Spring / Sunny / Firm"
+    },
+    {
+      "team_id": "dominarium",
+      "track": "Kyoto (Outer) 2200m · Turf · Right · Summer / Sunny / Good"
+    },
+    {
+      "team_id": "dominator",
+      "track": "Morioka 1600m · Dirt · Left · Winter / Cloudy / Good"
+    },
+    {
+      "team_id": "dominarium",
+      "track": "Sapporo 1200m · Turf · Right · Spring / Sunny / Firm"
+    },
+    {
+      "team_id": "dominator",
+      "track": "Fukushima 1200m · Turf · Right · Winter / Cloudy / Firm"
+    },
+    {
+      "team_id": "dominarium",
+      "track": "Chukyo 1600m · Turf · Left · Fall / Sunny / Firm"
+    }
+  ],
+  "track_vetoes": [
+    {
+      "team_id": "dominarium",
+      "track": "Funabashi 2400m · Dirt · Left · Summer / Rainy / Soft"
+    },
+    {
+      "team_id": "dominator",
+      "track": "Kyoto (Outer) 3000m · Turf · Right · Fall / Rainy / Heavy"
+    }
+  ],
+  "final_tracks": [
+    "Hakodate 1800m · Turf · Right · Spring / Sunny / Firm",
+    "Kyoto (Outer) 2200m · Turf · Right · Summer / Sunny / Good",
+    "Morioka 1600m · Dirt · Left · Winter / Cloudy / Good",
+    "Sapporo 1200m · Turf · Right · Spring / Sunny / Firm",
+    "Fukushima 1200m · Turf · Right · Winter / Cloudy / Firm",
+    "Chukyo 1600m · Turf · Left · Fall / Sunny / Firm"
+  ],
+  "tiebreaker_track": "Chukyo 1400m · Turf · Left · Winter / Sunny / Firm",
+  "uma_pre_bans": [
+    {
+      "team_id": "dominator",
+      "uma": "Maruzensky (Summer)"
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Inari One (Festival)"
+    },
+    {
+      "team_id": "dominarium",
+      "uma": "Agnes Digital (Halloween)"
+    },
+    {
+      "team_id": "dominarium",
+      "uma": "Mihono Bourbon (Valentine)"
+    }
+  ],
   "uma_picks": [],
-  "uma_bans": [],
+  "uma_bans": [
+    {
+      "team_id": "dominarium",
+      "uma": "Taiki Shuttle (Camping)"
+    },
+    {
+      "team_id": "dominator",
+      "uma": "King Halo (Cheerleader)"
+    }
+  ],
   "uma_additions": [],
-  "benched_umas": [],
+  "benched_umas": [
+    {
+      "team_id": "dominator",
+      "uma": "Tamamo Cross"
+    },
+    {
+      "team_id": "dominarium",
+      "uma": "Gold City"
+    }
+  ],
   "training_start": null,
   "training_deadline": null,
-  "notes": ""
+  "notes": "Draft, named roster, bans, vetoes and podiums supplied by the organizer. All six original exports corroborate the result. Tamamo Cross and Gold City were benched. The Chukyo 1400m tiebreaker was not run. Original snake-pick order and training dates were not supplied. Draft condition wording and literal export labels are preserved separately.",
+  "external_match_id": "JZENUX",
+  "roster": [
+    {
+      "team_id": "dominator",
+      "uma": "Taiki Shuttle",
+      "discord": "@AdoboProdigy",
+      "benched": false
+    },
+    {
+      "team_id": "dominator",
+      "uma": "El Condor Pasa",
+      "discord": "@Khinus",
+      "benched": false
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Agnes Digital",
+      "discord": "@mikeluigi64 |TraineeUnLuck Whale",
+      "benched": false
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Smart Falcon (Grand Live)",
+      "discord": "@cynical",
+      "benched": false
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Tamamo Cross",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Bamboo Memory",
+      "discord": "@PKHR",
+      "benched": false
+    },
+    {
+      "team_id": "dominarium",
+      "uma": "Oguri Cap",
+      "discord": "@David",
+      "benched": false
+    },
+    {
+      "team_id": "dominarium",
+      "uma": "El Condor Pasa (Fantasy)",
+      "discord": "@LESKBILL",
+      "benched": false
+    },
+    {
+      "team_id": "dominarium",
+      "uma": "Aston Machan",
+      "discord": "@Cal",
+      "benched": false
+    },
+    {
+      "team_id": "dominarium",
+      "uma": "Gold City",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominarium",
+      "uma": "Smart Falcon",
+      "discord": "@CallMeNeko",
+      "benched": false
+    },
+    {
+      "team_id": "dominarium",
+      "uma": "King Halo",
+      "discord": "@eibarman",
+      "benched": false
+    }
+  ]
 }

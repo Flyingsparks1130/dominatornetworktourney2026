@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "match_id": "r2-m1",
+  "external_match_id": "JZENUX",
+  "source": "Organizer screenshots, corroborated by all six original race exports. Reports and exports are not added together.",
+  "mvp": {
+    "team_id": "dominator",
+    "uma": "Taiki Shuttle",
+    "discord": "@AdoboProdigy"
+  },
+  "races": [
+    {
+      "number": 1,
+      "track": "Hakodate 1800m · Turf · Right · Spring / Sunny / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominarium",
+          "uma": "King Halo",
+          "discord": "@eibarman"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Aston Machan",
+          "discord": "@Cal"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Oguri Cap",
+          "discord": "@David"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "track": "Kyoto (Outer) 2200m · Turf · Right · Summer / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominator",
+          "uma": "Agnes Digital",
+          "discord": "@mikeluigi64 |TraineeUnLuck Whale"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Smart Falcon (Grand Live)",
+          "discord": "@cynical"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "El Condor Pasa (Fantasy)",
+          "discord": "@LESKBILL"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "track": "Morioka 1600m · Dirt · Left · Winter / Cloudy / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominator",
+          "uma": "Taiki Shuttle",
+          "discord": "@AdoboProdigy"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Agnes Digital",
+          "discord": "@mikeluigi64 |TraineeUnLuck Whale"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "El Condor Pasa",
+          "discord": "@Khinus"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "track": "Sapporo 1200m · Turf · Right · Spring / Sunny / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominator",
+          "uma": "Bamboo Memory",
+          "discord": "@PKHR"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "King Halo",
+          "discord": "@eibarman"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Oguri Cap",
+          "discord": "@David"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "track": "Fukushima 1200m · Turf · Right · Winter / Cloudy / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominator",
+          "uma": "Taiki Shuttle",
+          "discord": "@AdoboProdigy"
+        },
+        {
+          "team_id": "dominarium",
+          "uma": "Aston Machan",
+          "discord": "@Cal"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Bamboo Memory",
+          "discord": "@PKHR"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "track": "Chukyo 1600m · Turf · Left · Fall / Sunny / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominator",
+          "uma": "Bamboo Memory",
+          "discord": "@PKHR"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Taiki Shuttle",
+          "discord": "@AdoboProdigy"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "El Condor Pasa",
+          "discord": "@Khinus"
+        }
+      ]
+    }
+  ]
+}

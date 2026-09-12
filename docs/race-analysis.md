@@ -4,7 +4,7 @@ Open a match and select any played race. A single-export folder opens its analys
 
 1. A fitted finishing table with character portraits, trainer and club, raw times, style and mood, start/spurt delay, finish HP, peak speed and points. Select a runner to open the detail dialog: raw/base stats, aptitudes, named skills and activation timestamps, support IDs, raw/scaled times, other recorded metrics, phase averages and HP/speed charts.
 2. An animated replay with play/pause, speed selection, seeking, exact recorded-frame stepping, runner highlighting, pack/full-distance views and skill popups beside the runners. Popups can be hidden; selecting a runner highlights its events.
-3. A positioning table synchronized to the replay, including distance, gap, speed, HP, lane, blocking and recent skills.
+3. Live position cards synchronized to the replay, including distance, gap, speed, HP, lane, blocking and recent skills. Overtakes slide vertically: advancing runners pass in front, falling runners move behind. Interrupted movements continue from the current position; reduced-motion preferences disable the transition.
 
 The original JSON remains downloadable. Processing and playback do not upload anything to Hakuraku or require an external analysis service.
 
@@ -23,10 +23,14 @@ The build adds replay data to each generated `data/tournament-races/*.json`. No 
 - Skill labels show activations in the preceding two seconds, not active skill duration. Unknown skills retain their numeric IDs.
 - The dialog's phase averages weight position and speed by elapsed time within each distance section. Opening is the first sixth, middle ends at two-thirds, final covers the last third, and spurt starts at the recorded spurt point (overlapping the final phase).
 - Base stats are the `raceParam.base*` values recorded in the original export, not modeled effective racing stats.
-- Hakuraku's estimated downhill, pace and wit-lottery metrics and separate individual skill-analysis graphs are not reproduced.
+- Estimated downhill and pace metrics and separate individual skill-analysis graphs are not reproduced.
 - Raw course-condition names are shown as exported; the per-match draft preserves the organizer's schedule wording. The match and club pages display verified owner names without changing the underlying Discord references or scoring assignments.
 
 The decoder and asset attributions are in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md). Character portraits are bundled for the recorded drafts and races. `assets/uma-portraits.json` maps draft names and costume aliases to explicit card IDs and local images. Unknown variants retain a text or gate-number fallback.
+
+Stats use native game icons and individual colors on a 0–2000 scale, with a marked 1200 threshold and a pale overflow segment. The full equipped skill list uses orange regular, blue recovery, green innate/passive and red debuff icons. Activated skills appear in activation order with jump-to-time buttons; failed wit checks and failed conditions have separate muted groups and red crosses.
+
+`scripts/tournament_skills.py` reconstructs wit lotteries from the export's random seed and equipped-skill order only when the random stream reproduces every runner's recorded start delay exactly. Recorded activations always take precedence. If the stream cannot be verified or metadata is missing, an unactivated skill stays in a separate reason-unavailable group rather than receiving a guessed failure reason.
 
 Match pages show each active player's Uma and total podium points, including zero scorers. Verified exports supply the points; reported podiums fill numbered races without a verified export. The two sources are never added together for the same race. Organizer score overrides do not invent individual player points. Club pages show player names only, using the latest populated lineup.
 
