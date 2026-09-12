@@ -9131,6 +9131,94 @@
       {
         "entry_id": "1",
         "frame_index": 1,
+        "analysis_data": {
+          "frame_order": 2,
+          "speed": 1554,
+          "stamina": 600,
+          "pow": 1179,
+          "guts": 561,
+          "wiz": 1194,
+          "running_style": 2,
+          "motivation": 5,
+          "fan_count": 234335,
+          "team_id": 0,
+          "skill_array": [
+            {
+              "skill_id": 100101,
+              "level": 4
+            },
+            {
+              "skill_id": 200331,
+              "level": 1
+            },
+            {
+              "skill_id": 200362,
+              "level": 1
+            },
+            {
+              "skill_id": 200582,
+              "level": 1
+            },
+            {
+              "skill_id": 200681,
+              "level": 1
+            },
+            {
+              "skill_id": 201051,
+              "level": 1
+            },
+            {
+              "skill_id": 201312,
+              "level": 1
+            },
+            {
+              "skill_id": 201321,
+              "level": 1
+            },
+            {
+              "skill_id": 201591,
+              "level": 1
+            },
+            {
+              "skill_id": 201662,
+              "level": 1
+            },
+            {
+              "skill_id": 201901,
+              "level": 1
+            },
+            {
+              "skill_id": 202032,
+              "level": 1
+            },
+            {
+              "skill_id": 202371,
+              "level": 1
+            },
+            {
+              "skill_id": 210032,
+              "level": 1
+            },
+            {
+              "skill_id": 900061,
+              "level": 1
+            },
+            {
+              "skill_id": 900511,
+              "level": 1
+            }
+          ],
+          "proper_distance_short": 7,
+          "proper_distance_mile": 7,
+          "proper_distance_middle": 3,
+          "proper_distance_long": 1,
+          "proper_running_style_nige": 5,
+          "proper_running_style_senko": 7,
+          "proper_running_style_sashi": 4,
+          "proper_running_style_oikomi": 1,
+          "proper_ground_turf": 8,
+          "proper_ground_dirt": 7
+        },
         "start_delay_ms": 64.39133733510971,
         "last_spurt_m": 801.9154052734375,
         "spurt_delay_m": 1.9154052734375,
@@ -9218,6 +9306,98 @@
       {
         "entry_id": "5",
         "frame_index": 5,
+        "analysis_data": {
+          "frame_order": 6,
+          "speed": 1619,
+          "stamina": 529,
+          "pow": 1138,
+          "guts": 546,
+          "wiz": 1010,
+          "running_style": 1,
+          "motivation": 5,
+          "fan_count": 202466,
+          "team_id": 0,
+          "skill_array": [
+            {
+              "skill_id": 100871,
+              "level": 2
+            },
+            {
+              "skill_id": 200331,
+              "level": 1
+            },
+            {
+              "skill_id": 200362,
+              "level": 1
+            },
+            {
+              "skill_id": 200432,
+              "level": 1
+            },
+            {
+              "skill_id": 200531,
+              "level": 1
+            },
+            {
+              "skill_id": 200542,
+              "level": 1
+            },
+            {
+              "skill_id": 200962,
+              "level": 1
+            },
+            {
+              "skill_id": 200972,
+              "level": 1
+            },
+            {
+              "skill_id": 201041,
+              "level": 1
+            },
+            {
+              "skill_id": 201241,
+              "level": 1
+            },
+            {
+              "skill_id": 201271,
+              "level": 1
+            },
+            {
+              "skill_id": 201521,
+              "level": 1
+            },
+            {
+              "skill_id": 201601,
+              "level": 1
+            },
+            {
+              "skill_id": 201662,
+              "level": 1
+            },
+            {
+              "skill_id": 202041,
+              "level": 1
+            },
+            {
+              "skill_id": 210052,
+              "level": 1
+            },
+            {
+              "skill_id": 900201,
+              "level": 1
+            }
+          ],
+          "proper_distance_short": 7,
+          "proper_distance_mile": 8,
+          "proper_distance_middle": 1,
+          "proper_distance_long": 1,
+          "proper_running_style_nige": 7,
+          "proper_running_style_senko": 7,
+          "proper_running_style_sashi": 1,
+          "proper_running_style_oikomi": 1,
+          "proper_ground_turf": 7,
+          "proper_ground_dirt": 1
+        },
         "start_delay_ms": 50.49528181552887,
         "last_spurt_m": 801.6324462890625,
         "spurt_delay_m": 1.6324462890625,
@@ -9305,6 +9485,102 @@
       {
         "entry_id": "4",
         "frame_index": 4,
+        "analysis_data": {
+          "frame_order": 5,
+          "speed": 1510,
+          "stamina": 541,
+          "pow": 1302,
+          "guts": 636,
+          "wiz": 1150,
+          "running_style": 3,
+          "motivation": 5,
+          "fan_count": 274608,
+          "team_id": 0,
+          "skill_array": [
+            {
+              "skill_id": 100531,
+              "level": 5
+            },
+            {
+              "skill_id": 200152,
+              "level": 1
+            },
+            {
+              "skill_id": 200331,
+              "level": 1
+            },
+            {
+              "skill_id": 200432,
+              "level": 1
+            },
+            {
+              "skill_id": 200462,
+              "level": 1
+            },
+            {
+              "skill_id": 200601,
+              "level": 1
+            },
+            {
+              "skill_id": 200611,
+              "level": 1
+            },
+            {
+              "skill_id": 200702,
+              "level": 1
+            },
+            {
+              "skill_id": 200972,
+              "level": 1
+            },
+            {
+              "skill_id": 201042,
+              "level": 1
+            },
+            {
+              "skill_id": 201392,
+              "level": 1
+            },
+            {
+              "skill_id": 201661,
+              "level": 1
+            },
+            {
+              "skill_id": 202112,
+              "level": 1
+            },
+            {
+              "skill_id": 202122,
+              "level": 1
+            },
+            {
+              "skill_id": 202401,
+              "level": 1
+            },
+            {
+              "skill_id": 210071,
+              "level": 1
+            },
+            {
+              "skill_id": 900141,
+              "level": 1
+            },
+            {
+              "skill_id": 900271,
+              "level": 1
+            }
+          ],
+          "proper_distance_short": 7,
+          "proper_distance_mile": 7,
+          "proper_distance_middle": 8,
+          "proper_distance_long": 1,
+          "proper_running_style_nige": 1,
+          "proper_running_style_senko": 3,
+          "proper_running_style_sashi": 7,
+          "proper_running_style_oikomi": 5,
+          "proper_ground_turf": 8,
+          "proper_ground_dirt": 7
+        },
         "start_delay_ms": 63.86595964431763,
         "last_spurt_m": 802.845947265625,
         "spurt_delay_m": 2.845947265625,
@@ -9406,6 +9682,94 @@
       {
         "entry_id": "8",
         "frame_index": 8,
+        "analysis_data": {
+          "frame_order": 9,
+          "speed": 1471,
+          "stamina": 635,
+          "pow": 1177,
+          "guts": 706,
+          "wiz": 995,
+          "running_style": 2,
+          "motivation": 5,
+          "fan_count": 268322,
+          "team_id": 0,
+          "skill_array": [
+            {
+              "skill_id": 100141,
+              "level": 3
+            },
+            {
+              "skill_id": 200151,
+              "level": 1
+            },
+            {
+              "skill_id": 200331,
+              "level": 1
+            },
+            {
+              "skill_id": 200362,
+              "level": 1
+            },
+            {
+              "skill_id": 200582,
+              "level": 1
+            },
+            {
+              "skill_id": 201052,
+              "level": 1
+            },
+            {
+              "skill_id": 201311,
+              "level": 1
+            },
+            {
+              "skill_id": 201322,
+              "level": 1
+            },
+            {
+              "skill_id": 201341,
+              "level": 1
+            },
+            {
+              "skill_id": 201531,
+              "level": 1
+            },
+            {
+              "skill_id": 201651,
+              "level": 1
+            },
+            {
+              "skill_id": 201662,
+              "level": 1
+            },
+            {
+              "skill_id": 201901,
+              "level": 1
+            },
+            {
+              "skill_id": 202371,
+              "level": 1
+            },
+            {
+              "skill_id": 900511,
+              "level": 1
+            },
+            {
+              "skill_id": 910101,
+              "level": 1
+            }
+          ],
+          "proper_distance_short": 8,
+          "proper_distance_mile": 7,
+          "proper_distance_middle": 7,
+          "proper_distance_long": 6,
+          "proper_running_style_nige": 3,
+          "proper_running_style_senko": 7,
+          "proper_running_style_sashi": 7,
+          "proper_running_style_oikomi": 5,
+          "proper_ground_turf": 7,
+          "proper_ground_dirt": 8
+        },
         "start_delay_ms": 35.70496663451195,
         "last_spurt_m": 802.7636108398438,
         "spurt_delay_m": 2.76361083984375,
@@ -9497,6 +9861,106 @@
       {
         "entry_id": "6",
         "frame_index": 6,
+        "analysis_data": {
+          "frame_order": 7,
+          "speed": 1561,
+          "stamina": 647,
+          "pow": 1218,
+          "guts": 629,
+          "wiz": 1073,
+          "running_style": 1,
+          "motivation": 5,
+          "fan_count": 264986,
+          "team_id": 0,
+          "skill_array": [
+            {
+              "skill_id": 100461,
+              "level": 5
+            },
+            {
+              "skill_id": 200331,
+              "level": 1
+            },
+            {
+              "skill_id": 200352,
+              "level": 1
+            },
+            {
+              "skill_id": 200362,
+              "level": 1
+            },
+            {
+              "skill_id": 200372,
+              "level": 1
+            },
+            {
+              "skill_id": 200382,
+              "level": 1
+            },
+            {
+              "skill_id": 200432,
+              "level": 1
+            },
+            {
+              "skill_id": 200452,
+              "level": 1
+            },
+            {
+              "skill_id": 200532,
+              "level": 1
+            },
+            {
+              "skill_id": 200542,
+              "level": 1
+            },
+            {
+              "skill_id": 201242,
+              "level": 1
+            },
+            {
+              "skill_id": 201271,
+              "level": 1
+            },
+            {
+              "skill_id": 201522,
+              "level": 1
+            },
+            {
+              "skill_id": 201601,
+              "level": 1
+            },
+            {
+              "skill_id": 201662,
+              "level": 1
+            },
+            {
+              "skill_id": 202392,
+              "level": 1
+            },
+            {
+              "skill_id": 210071,
+              "level": 1
+            },
+            {
+              "skill_id": 900201,
+              "level": 1
+            },
+            {
+              "skill_id": 910041,
+              "level": 1
+            }
+          ],
+          "proper_distance_short": 6,
+          "proper_distance_mile": 7,
+          "proper_distance_middle": 7,
+          "proper_distance_long": 3,
+          "proper_running_style_nige": 7,
+          "proper_running_style_senko": 4,
+          "proper_running_style_sashi": 1,
+          "proper_running_style_oikomi": 1,
+          "proper_ground_turf": 7,
+          "proper_ground_dirt": 7
+        },
         "start_delay_ms": 18.262727186083794,
         "last_spurt_m": 801.8018188476562,
         "spurt_delay_m": 1.80181884765625,
@@ -9596,6 +10060,106 @@
       {
         "entry_id": "2",
         "frame_index": 2,
+        "analysis_data": {
+          "frame_order": 3,
+          "speed": 1493,
+          "stamina": 542,
+          "pow": 1249,
+          "guts": 630,
+          "wiz": 1043,
+          "running_style": 3,
+          "motivation": 5,
+          "fan_count": 243706,
+          "team_id": 0,
+          "skill_array": [
+            {
+              "skill_id": 100611,
+              "level": 4
+            },
+            {
+              "skill_id": 200012,
+              "level": 1
+            },
+            {
+              "skill_id": 200331,
+              "level": 1
+            },
+            {
+              "skill_id": 200362,
+              "level": 1
+            },
+            {
+              "skill_id": 200512,
+              "level": 1
+            },
+            {
+              "skill_id": 200601,
+              "level": 1
+            },
+            {
+              "skill_id": 200612,
+              "level": 1
+            },
+            {
+              "skill_id": 201072,
+              "level": 1
+            },
+            {
+              "skill_id": 201651,
+              "level": 1
+            },
+            {
+              "skill_id": 201662,
+              "level": 1
+            },
+            {
+              "skill_id": 201692,
+              "level": 1
+            },
+            {
+              "skill_id": 202152,
+              "level": 1
+            },
+            {
+              "skill_id": 202402,
+              "level": 1
+            },
+            {
+              "skill_id": 202452,
+              "level": 1
+            },
+            {
+              "skill_id": 202472,
+              "level": 1
+            },
+            {
+              "skill_id": 210101,
+              "level": 1
+            },
+            {
+              "skill_id": 900011,
+              "level": 1
+            },
+            {
+              "skill_id": 900061,
+              "level": 1
+            },
+            {
+              "skill_id": 900271,
+              "level": 1
+            }
+          ],
+          "proper_distance_short": 7,
+          "proper_distance_mile": 8,
+          "proper_distance_middle": 6,
+          "proper_distance_long": 5,
+          "proper_running_style_nige": 1,
+          "proper_running_style_senko": 6,
+          "proper_running_style_sashi": 7,
+          "proper_running_style_oikomi": 4,
+          "proper_ground_turf": 7,
+          "proper_ground_dirt": 1
+        },
         "start_delay_ms": 57.18941241502762,
         "last_spurt_m": 802.041015625,
         "spurt_delay_m": 2.041015625,
@@ -9701,6 +10265,98 @@
       {
         "entry_id": "7",
         "frame_index": 7,
+        "analysis_data": {
+          "frame_order": 8,
+          "speed": 1453,
+          "stamina": 575,
+          "pow": 1234,
+          "guts": 549,
+          "wiz": 1032,
+          "running_style": 2,
+          "motivation": 5,
+          "fan_count": 346885,
+          "team_id": 0,
+          "skill_array": [
+            {
+              "skill_id": 100061,
+              "level": 3
+            },
+            {
+              "skill_id": 200331,
+              "level": 1
+            },
+            {
+              "skill_id": 200362,
+              "level": 1
+            },
+            {
+              "skill_id": 200372,
+              "level": 1
+            },
+            {
+              "skill_id": 200492,
+              "level": 1
+            },
+            {
+              "skill_id": 200582,
+              "level": 1
+            },
+            {
+              "skill_id": 201662,
+              "level": 1
+            },
+            {
+              "skill_id": 201901,
+              "level": 1
+            },
+            {
+              "skill_id": 202031,
+              "level": 1
+            },
+            {
+              "skill_id": 202161,
+              "level": 1
+            },
+            {
+              "skill_id": 202371,
+              "level": 1
+            },
+            {
+              "skill_id": 210071,
+              "level": 1
+            },
+            {
+              "skill_id": 210091,
+              "level": 1
+            },
+            {
+              "skill_id": 210101,
+              "level": 1
+            },
+            {
+              "skill_id": 900051,
+              "level": 1
+            },
+            {
+              "skill_id": 900101,
+              "level": 1
+            },
+            {
+              "skill_id": 900611,
+              "level": 1
+            }
+          ],
+          "proper_distance_short": 7,
+          "proper_distance_mile": 7,
+          "proper_distance_middle": 7,
+          "proper_distance_long": 6,
+          "proper_running_style_nige": 2,
+          "proper_running_style_senko": 7,
+          "proper_running_style_sashi": 7,
+          "proper_running_style_oikomi": 4,
+          "proper_ground_turf": 7,
+          "proper_ground_dirt": 7
+        },
         "start_delay_ms": 24.117199704051018,
         "last_spurt_m": 802.3015747070312,
         "spurt_delay_m": 2.30157470703125,
@@ -9798,6 +10454,114 @@
       {
         "entry_id": "0",
         "frame_index": 0,
+        "analysis_data": {
+          "frame_order": 1,
+          "speed": 1510,
+          "stamina": 807,
+          "pow": 948,
+          "guts": 809,
+          "wiz": 991,
+          "running_style": 1,
+          "motivation": 5,
+          "fan_count": 261136,
+          "team_id": 0,
+          "skill_array": [
+            {
+              "skill_id": 110461,
+              "level": 4
+            },
+            {
+              "skill_id": 200012,
+              "level": 1
+            },
+            {
+              "skill_id": 200331,
+              "level": 1
+            },
+            {
+              "skill_id": 200352,
+              "level": 1
+            },
+            {
+              "skill_id": 200362,
+              "level": 1
+            },
+            {
+              "skill_id": 200432,
+              "level": 1
+            },
+            {
+              "skill_id": 200531,
+              "level": 1
+            },
+            {
+              "skill_id": 200542,
+              "level": 1
+            },
+            {
+              "skill_id": 201072,
+              "level": 1
+            },
+            {
+              "skill_id": 201112,
+              "level": 1
+            },
+            {
+              "skill_id": 201242,
+              "level": 1
+            },
+            {
+              "skill_id": 201252,
+              "level": 1
+            },
+            {
+              "skill_id": 201271,
+              "level": 1
+            },
+            {
+              "skill_id": 201522,
+              "level": 1
+            },
+            {
+              "skill_id": 201601,
+              "level": 1
+            },
+            {
+              "skill_id": 201611,
+              "level": 1
+            },
+            {
+              "skill_id": 201662,
+              "level": 1
+            },
+            {
+              "skill_id": 202281,
+              "level": 1
+            },
+            {
+              "skill_id": 210101,
+              "level": 1
+            },
+            {
+              "skill_id": 900201,
+              "level": 1
+            },
+            {
+              "skill_id": 910041,
+              "level": 1
+            }
+          ],
+          "proper_distance_short": 7,
+          "proper_distance_mile": 7,
+          "proper_distance_middle": 7,
+          "proper_distance_long": 3,
+          "proper_running_style_nige": 7,
+          "proper_running_style_senko": 4,
+          "proper_running_style_sashi": 1,
+          "proper_running_style_oikomi": 1,
+          "proper_ground_turf": 7,
+          "proper_ground_dirt": 7
+        },
         "start_delay_ms": 63.82577866315842,
         "last_spurt_m": 801.5681762695312,
         "spurt_delay_m": 1.56817626953125,
@@ -9907,6 +10671,106 @@
       {
         "entry_id": "3",
         "frame_index": 3,
+        "analysis_data": {
+          "frame_order": 4,
+          "speed": 1447,
+          "stamina": 818,
+          "pow": 1007,
+          "guts": 638,
+          "wiz": 1232,
+          "running_style": 3,
+          "motivation": 5,
+          "fan_count": 223398,
+          "team_id": 0,
+          "skill_array": [
+            {
+              "skill_id": 100191,
+              "level": 5
+            },
+            {
+              "skill_id": 200182,
+              "level": 1
+            },
+            {
+              "skill_id": 200331,
+              "level": 1
+            },
+            {
+              "skill_id": 200462,
+              "level": 1
+            },
+            {
+              "skill_id": 200492,
+              "level": 1
+            },
+            {
+              "skill_id": 200592,
+              "level": 1
+            },
+            {
+              "skill_id": 200601,
+              "level": 1
+            },
+            {
+              "skill_id": 200732,
+              "level": 1
+            },
+            {
+              "skill_id": 201032,
+              "level": 1
+            },
+            {
+              "skill_id": 201042,
+              "level": 1
+            },
+            {
+              "skill_id": 201102,
+              "level": 1
+            },
+            {
+              "skill_id": 201112,
+              "level": 1
+            },
+            {
+              "skill_id": 201592,
+              "level": 1
+            },
+            {
+              "skill_id": 201662,
+              "level": 1
+            },
+            {
+              "skill_id": 202092,
+              "level": 1
+            },
+            {
+              "skill_id": 202152,
+              "level": 1
+            },
+            {
+              "skill_id": 202502,
+              "level": 1
+            },
+            {
+              "skill_id": 900271,
+              "level": 1
+            },
+            {
+              "skill_id": 900591,
+              "level": 1
+            }
+          ],
+          "proper_distance_short": 2,
+          "proper_distance_mile": 7,
+          "proper_distance_middle": 8,
+          "proper_distance_long": 1,
+          "proper_running_style_nige": 1,
+          "proper_running_style_senko": 7,
+          "proper_running_style_sashi": 7,
+          "proper_running_style_oikomi": 6,
+          "proper_ground_turf": 7,
+          "proper_ground_dirt": 7
+        },
         "start_delay_ms": 12.373827397823334,
         "last_spurt_m": 801.8563232421875,
         "spurt_delay_m": 1.8563232421875,
@@ -10020,6 +10884,98 @@
       {
         "entry_id": "9",
         "frame_index": 9,
+        "analysis_data": {
+          "frame_order": 10,
+          "speed": 1458,
+          "stamina": 831,
+          "pow": 1142,
+          "guts": 654,
+          "wiz": 1101,
+          "running_style": 3,
+          "motivation": 5,
+          "fan_count": 276959,
+          "team_id": 0,
+          "skill_array": [
+            {
+              "skill_id": 110141,
+              "level": 4
+            },
+            {
+              "skill_id": 200212,
+              "level": 1
+            },
+            {
+              "skill_id": 200331,
+              "level": 1
+            },
+            {
+              "skill_id": 200342,
+              "level": 1
+            },
+            {
+              "skill_id": 200462,
+              "level": 1
+            },
+            {
+              "skill_id": 200492,
+              "level": 1
+            },
+            {
+              "skill_id": 200601,
+              "level": 1
+            },
+            {
+              "skill_id": 200702,
+              "level": 1
+            },
+            {
+              "skill_id": 201072,
+              "level": 1
+            },
+            {
+              "skill_id": 201391,
+              "level": 1
+            },
+            {
+              "skill_id": 201541,
+              "level": 1
+            },
+            {
+              "skill_id": 201571,
+              "level": 1
+            },
+            {
+              "skill_id": 201662,
+              "level": 1
+            },
+            {
+              "skill_id": 202401,
+              "level": 1
+            },
+            {
+              "skill_id": 900271,
+              "level": 1
+            },
+            {
+              "skill_id": 900591,
+              "level": 1
+            },
+            {
+              "skill_id": 910151,
+              "level": 1
+            }
+          ],
+          "proper_distance_short": 2,
+          "proper_distance_mile": 7,
+          "proper_distance_middle": 7,
+          "proper_distance_long": 6,
+          "proper_running_style_nige": 3,
+          "proper_running_style_senko": 8,
+          "proper_running_style_sashi": 7,
+          "proper_running_style_oikomi": 5,
+          "proper_ground_turf": 7,
+          "proper_ground_dirt": 6
+        },
         "start_delay_ms": 74.80447739362717,
         "last_spurt_m": 802.6829223632812,
         "spurt_delay_m": 2.68292236328125,
@@ -12936,7 +13892,7 @@
   "scoring_verified": true,
   "review_reasons": [],
   "team_points": {
-    "dominarium": 2,
-    "dominator": 5
+    "dominator": 5,
+    "dominarium": 2
   }
 }
