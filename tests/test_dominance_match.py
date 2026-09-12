@@ -28,15 +28,17 @@ class DominanceMatchTests(unittest.TestCase):
         for r in match['races']:
             self.assertTrue(r['scoring_verified'])
             self.assertEqual(result['races'][r['id']]['replay']['status'], 'ready')
+        # These restored names belong to the R1 draft. Current club rosters may
+        # come from newer, verified exports with different in-game owner names.
+        r1 = next(m for m in index['matches'] if m['id'] == 'r1-m2')
         for club, names in {
             'domineer': {'Stayk, Taco Enjoyer','Zen','JUNI','Emperor | The Radiant One','Sonic'},
             'domichill': {'arvmilla','cannibalmira','ZUnknown','muuchan','Kurotomono'}
         }.items():
-            members = index['club_rosters'][club]['members']
+            members = [r for r in r1['draft_lineup'] if r['team_id'] == club and not r['benched']]
             self.assertEqual({r['display_name'] for r in members}, names)
-            self.assertTrue(all(set(r) == {'display_name'} for r in members))
+            self.assertTrue(all(set(r) == {'display_name'} for r in index['club_rosters'][club]['members']))
         for m in index['matches']:
             for rows in m['draft_uma_actions'].values():
                 for r in rows:
                     self.assertTrue((ROOT/r['portrait']).is_file())
-

@@ -48,6 +48,8 @@ LHNCFL records Dominion **22–27** Dominarium after six standard races plus a t
 
 JZENUX (`r2-m1`) records Dominator **29–13** Dominarium after six races. MVP is **@AdoboProdigy**, Taiki Shuttle, with 10 podium points. All six unchanged exports corroborate the reported podiums; they do not add a second set of points. Tamamo Cross and Gold City were benched. Chukyo 1400m remains the unused tiebreaker, with no race export. The final lineup, track picks, vetoes and bans come from the supplied draft screenshots; unsupplied snake-pick order is left empty.
 
+`r2-m3` records **Domineer 17–25 Dominacion** after six races. MVP is **@wata**, Rice Shower (Halloween), with 13 podium points. All six unchanged exports corroborate the reported podiums. Winning Ticket and El Condor Pasa were benched; Hakodate 1000m was the unused tiebreaker. No external match ID was supplied. With all quarterfinal winners confirmed, Round 3 is open for **Dominator vs Dominance** and **Dominacion vs Dominate**, with blank match drafts awaiting submissions.
+
 ## Official scores and original exports
 
 Use `Dominator Tournament/control.json` through the engine's mutation functions or local organizer to record scores and confirm advancement. Supply an audit reason and the current revision. Scores alone do not eliminate a club.

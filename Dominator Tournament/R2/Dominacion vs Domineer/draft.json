@@ -1,18 +1,169 @@
 {
   "schema_version": 1,
   "match_id": "r2-m3",
-  "status": "pending",
+  "status": "locked",
   "track_pool": [],
-  "track_picks": [],
-  "track_vetoes": [],
-  "final_tracks": [],
-  "tiebreaker_track": null,
-  "uma_pre_bans": [],
+  "track_picks": [
+    {
+      "team_id": "domineer",
+      "track": "Tokyo 2400m · Turf · Left · Spring / Rainy / Heavy"
+    },
+    {
+      "team_id": "dominacion",
+      "track": "Sapporo 1800m · Turf · Right · Fall / Cloudy / Firm"
+    },
+    {
+      "team_id": "domineer",
+      "track": "Tokyo 1600m · Turf · Left · Winter / Snowy / Good"
+    },
+    {
+      "team_id": "dominacion",
+      "track": "Hanshin (Inner) 2200m · Turf · Right · Fall / Cloudy / Firm"
+    },
+    {
+      "team_id": "domineer",
+      "track": "Niigata (Outer) 2000m · Turf · Left · Spring / Cloudy / Good"
+    },
+    {
+      "team_id": "dominacion",
+      "track": "Kyoto (Outer) 1800m · Turf · Right · Summer / Cloudy / Firm"
+    }
+  ],
+  "track_vetoes": [
+    {
+      "team_id": "dominacion",
+      "track": "Hanshin (Inner) 3200m · Turf · Right · Spring / Rainy / Heavy"
+    },
+    {
+      "team_id": "domineer",
+      "track": "Kawasaki 1400m · Dirt · Left · Summer / Sunny / Good"
+    }
+  ],
+  "final_tracks": [
+    "Tokyo 2400m · Turf · Left · Spring / Rainy / Heavy",
+    "Sapporo 1800m · Turf · Right · Fall / Cloudy / Firm",
+    "Tokyo 1600m · Turf · Left · Winter / Snowy / Good",
+    "Hanshin (Inner) 2200m · Turf · Right · Fall / Cloudy / Firm",
+    "Niigata (Outer) 2000m · Turf · Left · Spring / Cloudy / Good",
+    "Kyoto (Outer) 1800m · Turf · Right · Summer / Cloudy / Firm"
+  ],
+  "tiebreaker_track": "Hakodate 1000m · Turf · Right · Winter / Snowy / Good",
+  "uma_pre_bans": [
+    {
+      "team_id": "domineer",
+      "uma": "Seiun Sky"
+    },
+    {
+      "team_id": "domineer",
+      "uma": "Mihono Bourbon (Valentine)"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Maruzensky (Summer)"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Maruzensky"
+    }
+  ],
   "uma_picks": [],
-  "uma_bans": [],
+  "uma_bans": [
+    {
+      "team_id": "dominacion",
+      "uma": "Oguri Cap (Christmas)"
+    },
+    {
+      "team_id": "domineer",
+      "uma": "Agnes Digital"
+    }
+  ],
   "uma_additions": [],
-  "benched_umas": [],
+  "benched_umas": [
+    {
+      "team_id": "domineer",
+      "uma": "Winning Ticket"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "El Condor Pasa"
+    }
+  ],
   "training_start": null,
   "training_deadline": null,
-  "notes": ""
+  "notes": "Organizer screenshots supply the rosters, track picks, vetoes, bans and podiums. All six original exports corroborate the podiums and the final Domineer 17–25 Dominacion score. MVP: @wata, Rice Shower (Halloween). Winning Ticket and El Condor Pasa were benched; the Hakodate 1000m tiebreaker was not run. Snake-pick order, external match ID and training dates were not supplied. Draft condition wording and literal export labels are preserved separately.",
+  "external_match_id": null,
+  "roster": [
+    {
+      "team_id": "domineer",
+      "uma": "Narita Taishin",
+      "discord": "@Emperor | The Radiant One",
+      "benched": false
+    },
+    {
+      "team_id": "domineer",
+      "uma": "Tamamo Cross (Festival)",
+      "discord": "@Zen",
+      "benched": false
+    },
+    {
+      "team_id": "domineer",
+      "uma": "Inari One",
+      "discord": "@Sonic",
+      "benched": false
+    },
+    {
+      "team_id": "domineer",
+      "uma": "Biwa Hayahide",
+      "discord": "@JUNI",
+      "benched": false
+    },
+    {
+      "team_id": "domineer",
+      "uma": "Narita Brian",
+      "discord": "@Stayk, Taco Enjoyer",
+      "benched": false
+    },
+    {
+      "team_id": "domineer",
+      "uma": "Winning Ticket",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Rice Shower (Halloween)",
+      "discord": "@wata",
+      "benched": false
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Silence Suzuka",
+      "discord": "@AngelicVixen",
+      "benched": false
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Oguri Cap",
+      "discord": "@Zanko",
+      "benched": false
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "El Condor Pasa",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Taiki Shuttle",
+      "discord": "@McGee",
+      "benched": false
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Air Groove",
+      "discord": "@Yanagi #1 Fan (Bloop)",
+      "benched": false
+    }
+  ]
 }

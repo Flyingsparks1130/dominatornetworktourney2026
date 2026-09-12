@@ -198,5 +198,17 @@
   "King Halo (Cheerleader)": {
     "variant_id": 106102,
     "portrait": "assets/runners/106102.webp"
+  },
+  "Air Groove": {
+    "variant_id": 101801,
+    "portrait": "assets/runners/101801.webp"
+  },
+  "Tamamo Cross (Festival)": {
+    "variant_id": 102102,
+    "portrait": "assets/runners/102102.webp"
+  },
+  "Winning Ticket": {
+    "variant_id": 103501,
+    "portrait": "assets/runners/103501.webp"
   }
 }

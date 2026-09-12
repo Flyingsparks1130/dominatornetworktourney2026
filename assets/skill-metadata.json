@@ -4294,5 +4294,11 @@
     "category": "innate",
     "activate_lot": 0,
     "rarity": 1
+  },
+  "110211": {
+    "icon_id": 20013,
+    "category": "regular",
+    "activate_lot": 0,
+    "rarity": 5
   }
 }
