@@ -247,7 +247,7 @@
   },
   "100251": {
     "icon_id": 20013,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 0,
     "rarity": 5
   },
@@ -463,7 +463,7 @@
   },
   "100711": {
     "icon_id": 20013,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 0,
     "rarity": 5
   },
@@ -529,7 +529,7 @@
   },
   "110061": {
     "icon_id": 20013,
-    "category": "recovery",
+    "category": "regular",
     "activate_lot": 0,
     "rarity": 5
   },
@@ -613,13 +613,13 @@
   },
   "110261": {
     "icon_id": 20013,
-    "category": "recovery",
+    "category": "regular",
     "activate_lot": 0,
     "rarity": 5
   },
   "110301": {
     "icon_id": 20023,
-    "category": "debuff",
+    "category": "recovery",
     "activate_lot": 0,
     "rarity": 5
   },
@@ -655,7 +655,7 @@
   },
   "110461": {
     "icon_id": 20013,
-    "category": "recovery",
+    "category": "regular",
     "activate_lot": 0,
     "rarity": 5
   },
@@ -679,7 +679,7 @@
   },
   "110581": {
     "icon_id": 20013,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 0,
     "rarity": 5
   },
@@ -1387,7 +1387,7 @@
   },
   "200433": {
     "icon_id": 20064,
-    "category": "regular",
+    "category": "debuff",
     "activate_lot": 1,
     "rarity": 1
   },
@@ -1681,13 +1681,13 @@
   },
   "200691": {
     "icon_id": 20022,
-    "category": "debuff",
+    "category": "recovery",
     "activate_lot": 1,
     "rarity": 2
   },
   "200692": {
     "icon_id": 20021,
-    "category": "debuff",
+    "category": "recovery",
     "activate_lot": 1,
     "rarity": 1
   },
@@ -2329,13 +2329,13 @@
   },
   "201291": {
     "icon_id": 20042,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 2
   },
   "201292": {
     "icon_id": 20041,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 1
   },
@@ -2851,13 +2851,13 @@
   },
   "202031": {
     "icon_id": 20012,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 2
   },
   "202032": {
     "icon_id": 20011,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 1
   },
@@ -2888,13 +2888,13 @@
   },
   "202071": {
     "icon_id": 20022,
-    "category": "debuff",
+    "category": "recovery",
     "activate_lot": 1,
     "rarity": 2
   },
   "202072": {
     "icon_id": 20021,
-    "category": "debuff",
+    "category": "recovery",
     "activate_lot": 1,
     "rarity": 1
   },
@@ -2912,13 +2912,13 @@
   },
   "202091": {
     "icon_id": 20012,
-    "category": "recovery",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 2
   },
   "202092": {
     "icon_id": 20011,
-    "category": "recovery",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 1
   },
@@ -2960,13 +2960,13 @@
   },
   "202131": {
     "icon_id": 20012,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 2
   },
   "202132": {
     "icon_id": 20011,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 1
   },
@@ -2978,19 +2978,19 @@
   },
   "202151": {
     "icon_id": 20012,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 2
   },
   "202152": {
     "icon_id": 20011,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 1
   },
   "202161": {
     "icon_id": 10051,
-    "category": "debuff",
+    "category": "innate",
     "activate_lot": 0,
     "rarity": 1
   },
@@ -3302,13 +3302,13 @@
   },
   "202391": {
     "icon_id": 20012,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 2
   },
   "202392": {
     "icon_id": 20011,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 1
   },
@@ -3338,13 +3338,13 @@
   },
   "202421": {
     "icon_id": 20042,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 2
   },
   "202422": {
     "icon_id": 20041,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 1
   },
@@ -3797,7 +3797,7 @@
   },
   "900251": {
     "icon_id": 20011,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 1
   },
@@ -4013,7 +4013,7 @@
   },
   "900711": {
     "icon_id": 20011,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 1
   },
@@ -4073,7 +4073,7 @@
   },
   "910061": {
     "icon_id": 20011,
-    "category": "recovery",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 1
   },
@@ -4157,13 +4157,13 @@
   },
   "910261": {
     "icon_id": 20011,
-    "category": "recovery",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 1
   },
   "910301": {
     "icon_id": 20021,
-    "category": "debuff",
+    "category": "recovery",
     "activate_lot": 1,
     "rarity": 1
   },
@@ -4199,7 +4199,7 @@
   },
   "910461": {
     "icon_id": 20011,
-    "category": "recovery",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 1
   },
@@ -4223,7 +4223,7 @@
   },
   "910581": {
     "icon_id": 20011,
-    "category": "debuff",
+    "category": "regular",
     "activate_lot": 1,
     "rarity": 1
   },
