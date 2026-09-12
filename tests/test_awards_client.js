@@ -70,8 +70,11 @@ check('Exact ties stay pending until one sourced choice',()=>{
 });
 check('Public HTML hides all award results and private HTML escapes names',()=>{
  const f=fixture(),s=run(f),publicHTML=UI.page(f.index,f.config,s,{revealed:false});
- assert.equal((publicHTML.match(/data-award=/g)||[]).length,20);assert(!publicHTML.includes('Bakushin'));assert(!publicHTML.includes('Ada'));assert(!publicHTML.includes('See the receipts'));assert(publicHTML.includes('Tournament statistics'));
- s.awards[0].winner.name='<img onerror="alert(1)">';const privateHTML=UI.page(f.index,f.config,s,{revealed:true});assert(privateHTML.includes('&lt;img onerror='));assert(!privateHTML.includes('<img onerror='));assert(privateHTML.includes('See the receipts'));
+ assert.equal((publicHTML.match(/data-award=/g)||[]).length,20);assert.equal((publicHTML.match(/class="award-group /g)||[]).length,4);assert(!publicHTML.includes('Bakushin'));assert(!publicHTML.includes('Ada'));assert(!publicHTML.includes('See the receipts'));assert(publicHTML.includes('Tournament statistics'));
+ assert.deepEqual(['Featured Honors','Build & Strategy','Race Moments','Tournament Honors'].map(name=>publicHTML.includes(name)),[true,true,true,true]);
+ assert(!/Round 2 onward/i.test(publicHTML));assert(!publicHTML.includes('Change PNG / GIF'));assert(!publicHTML.includes('data-art='));
+ const configured=E.catalog({images:{'hard-carry':'hard.png','top-road':'ntr.png',nature:'nature.gif'}});assert.equal(configured.find(a=>a.id==='hard-carry').image,'hard.png');assert.equal(configured.find(a=>a.id==='top-road').image,'ntr.png');assert.equal(configured.find(a=>a.id==='nature').image,'nature.gif');
+ s.awards[0].winner.name='<img onerror="alert(1)">';const privateHTML=UI.page(f.index,f.config,s,{revealed:true,local:true});assert(privateHTML.includes('&lt;img onerror='));assert(!privateHTML.includes('<img onerror='));assert(privateHTML.includes('See the receipts'));assert(!/Round 2 onward/i.test(privateHTML));assert(!privateHTML.includes('Change PNG / GIF'));assert(!privateHTML.includes('data-art='));
 });
 const index=JSON.parse(fs.readFileSync('data/tournament-index.json')),config=JSON.parse(fs.readFileSync('config/awards.json')),docs={};
 for(const m of index.matches)for(const f of m.races)docs[f.id]=JSON.parse(fs.readFileSync(f.data_file));

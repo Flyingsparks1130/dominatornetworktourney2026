@@ -26,8 +26,8 @@
   ['neck','The Neck and Neck Award','Given to the player whose Umas spent the most estimated total time dueling.','duel_seconds','seconds dueling',-1,[]],
   ['gate-kept','Gate Kept Award','Given to the player with the most official disqualifications. Round 1 DQ records count here.','dqs','disqualifications',-1,[]],
   ['fences','Swing for the Fences Award','Given to the player whose Umas lost the most estimated distance to lane changes and wider cornering (WT).','lane_loss_m','metres lost',-1,[]],
-  ['mvp','MVP Award','Given to the player who earned the most tournament points after playing at least two rounds from Round 2 onward.','points','points',-1,['points_per_race',-1,'starts',1]],
-  ['wheelchair','The Wheelchair Award','Given to the player who earned the fewest tournament points after playing at least two rounds from Round 2 onward.','points','points',1,['points_per_race',1,'starts',-1]]
+  ['mvp','MVP Award','Given to the player who earned the most tournament points after playing in at least two eligible rounds.','points','points',-1,['points_per_race',-1,'starts',1]],
+  ['wheelchair','The Wheelchair Award','Given to the player who earned the fewest tournament points after playing in at least two eligible rounds.','points','points',1,['points_per_race',1,'starts',-1]]
  ];
  const rules={
   nitro:'Recorded start delay ≥ 66 ms. Ties: total delay on late starts, then worst start delay.',
@@ -48,11 +48,12 @@
   neck:'Sum Hakuraku-estimated duel intervals across each player’s runners and races. Uses start events, HP, opponent gaps, skill-adjusted speed, hills and finish time. Sourced verified observations override estimates.',
   'gate-kept':'Deduplicated organizer-confirmed DQ incidents. No automatic inference from eligibility or skill failures.',
   fences:'Sum estimated WT loss: max(0, min(previous speed, current speed) × frame duration − forward progress), interpolated at each runner’s finish. Includes lane changes and wider cornering. Sourced verified observations override estimates.',
-  mvp:'At least two distinct played rounds, starting with R2. Most points; ties: more points per race, then fewer starts.',
-  wheelchair:'At least two distinct played rounds, starting with R2. Ties: fewer points per race, then more starts.'
+  mvp:'Requires appearances in at least two eligible tournament rounds. Most points; ties: more points per race, then fewer starts.',
+  wheelchair:'Requires appearances in at least two eligible tournament rounds. Ties: fewer points per race, then more starts.'
  };
- const firstAwards=['nitro','fine-motion','hard-carry','top-road','nature'];
- function catalog(config={}){return [...firstAwards.map(id=>specs.find(s=>s[0]===id)),...specs.filter(s=>!firstAwards.includes(s[0]))].map(([id,name,description,metric,unit,direction,tie])=>({id,name,description,metric,unit,direction,tie,rule:rules[id],image:config.images?.[id]||'',trophy:id==='nitro'?'nitro':id==='fine-motion'?'wit':'champion',category:id.startsWith('blocked-')?(id==='blocked-count'?'Most incidents received':'Longest time blocked'):id==='gate-kept'?'Official record':id==='neck'||id==='fences'?'Race analysis':'Round 2 onward'}));}
+const firstAwards=['nitro','fine-motion','hard-carry','top-road','nature'];
+ const awardType=id=>firstAwards.includes(id)?'Featured Honors':['all-star','performance-anxiety','festa','flyingsparks','hot-headed','mejiro'].includes(id)?'Build & Strategy':['mvp','wheelchair'].includes(id)?'Tournament Honors':'Race Moments';
+ function catalog(config={}){return [...firstAwards.map(id=>specs.find(s=>s[0]===id)),...specs.filter(s=>!firstAwards.includes(s[0]))].map(([id,name,description,metric,unit,direction,tie])=>({id,name,description,metric,unit,direction,tie,rule:rules[id],image:config.images?.[id]||'',trophy:id==='nitro'?'nitro':id==='fine-motion'?'wit':'champion',category:awardType(id)}));}
  function nativeUnique(id,variant){
   const text=String(variant),own=100000+10000*(Number(text.slice(-2))-1)+Number(text.slice(1,-2))*10+1;
   return id===own||id===own-90000;
