@@ -5,3 +5,5 @@ Thumbs.db
 _site/
 .sites-runtime/
 *.json.tmp
+*awards-preview*.html
+*award-standings*.json
