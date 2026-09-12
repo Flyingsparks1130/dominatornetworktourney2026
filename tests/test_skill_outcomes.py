@@ -56,3 +56,13 @@ class SkillOutcomeTests(unittest.TestCase):
                     skill = meta[str(s['skill_id'])]
                     self.assertIn(skill['category'], {'innate','recovery','debuff','regular'})
                     self.assertTrue((ROOT/f"assets/icons/skills/{skill['icon_id']}.webp").is_file())
+
+    def test_racing_spirit_self_hp_cost_is_not_an_opponent_debuff(self):
+        meta = json.loads((ROOT/'assets/skill-metadata.json').read_text())
+        for skill_id in ('210091', '210101', '210111', '210121', '210131', '210141'):
+            self.assertEqual(meta[skill_id]['category'], 'regular')
+        stamina = meta['210101']
+        self.assertEqual(stamina['icon_id'], 20011)
+        self.assertEqual(stamina['source_icon_id'], 20161)
+        self.assertEqual(stamina['activate_lot'], 1)
+        self.assertIn('own HP', stamina['description'])
