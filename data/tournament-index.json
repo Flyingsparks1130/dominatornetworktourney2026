@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T00:37:37Z",
+  "generated_at": "2026-09-12T14:43:45Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
@@ -2811,8 +2811,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominarium": 7,
-            "dominator": 0
+            "dominator": 0,
+            "dominarium": 7
           },
           "data_file": "data/tournament-races/56b65d20b64b13ce24a7.json"
         },
@@ -2837,8 +2837,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominarium": 1,
-            "dominator": 6
+            "dominator": 6,
+            "dominarium": 1
           },
           "data_file": "data/tournament-races/e11f7645e1b2ca830e18.json"
         },
@@ -2863,8 +2863,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominarium": 0,
-            "dominator": 7
+            "dominator": 7,
+            "dominarium": 0
           },
           "data_file": "data/tournament-races/42e88c5ea2b55f0aed64.json"
         },
@@ -2889,8 +2889,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominarium": 3,
-            "dominator": 4
+            "dominator": 4,
+            "dominarium": 3
           },
           "data_file": "data/tournament-races/7527405cfa43908ba451.json"
         },
@@ -2915,8 +2915,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominarium": 2,
-            "dominator": 5
+            "dominator": 5,
+            "dominarium": 2
           },
           "data_file": "data/tournament-races/ea90401c018369c4fd3a.json"
         },
@@ -2941,8 +2941,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominarium": 0,
-            "dominator": 7
+            "dominator": 7,
+            "dominarium": 0
           },
           "data_file": "data/tournament-races/dbeb692653faa9b3bdda.json"
         }

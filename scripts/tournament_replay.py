@@ -104,6 +104,18 @@ def decode_replay(raw, rows):
         raise ReplayError('Race distance is unavailable.')
     runner_info = []
     seen = set()
+    analysis_fields = (
+        'frame_order', 'speed', 'stamina', 'pow', 'guts', 'wiz', 'running_style',
+        'motivation', 'fan_count', 'team_id', 'skill_array',
+        'proper_distance_short', 'proper_distance_mile', 'proper_distance_middle', 'proper_distance_long',
+        'proper_running_style_nige', 'proper_running_style_senko',
+        'proper_running_style_sashi', 'proper_running_style_oikomi',
+        'proper_ground_turf', 'proper_ground_dirt')
+    analysis_by_gate = {
+        h.get('responseHorseData', {}).get('frame_order'): {
+            k: h.get('responseHorseData', {})[k]
+            for k in analysis_fields if k in h.get('responseHorseData', {})}
+        for h in raw.get('raceHorse', [])}
     for row in rows:
         gate = row.get('gate')
         if type(gate) is not int or not 1 <= gate <= count or gate in seen:
@@ -126,6 +138,7 @@ def decode_replay(raw, rows):
         zero = next((h[0] for t, h in history if h[3] == 0 and h[0] < distance), None)
         spurt = result[6]
         runner_info.append({'entry_id': row['entry_id'], 'frame_index': i,
+            'analysis_data': analysis_by_gate.get(gate),
             'start_delay_ms': result[3] * 1000, 'last_spurt_m': spurt if spurt >= 0 else None,
             'spurt_delay_m': max(0, spurt - distance * 2 / 3) if spurt >= 0 else None,
             'hp_start': history[0][1][3], 'hp_finish': round(hp_finish, 1),

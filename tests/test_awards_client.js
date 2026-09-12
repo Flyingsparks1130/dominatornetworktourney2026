@@ -35,7 +35,7 @@ check('Race results, received blocking, Rushed, wit and debuffs',()=>{
  assert.equal(p.points,4);assert.equal(p.base_total,3300);assert.equal(p.debuffs,1);assert.equal(p.failed_wit,1);assert.equal(other.failed_wit,0);
  assert.equal(p.blocked_incidents,2);assert.equal(p.blocked_seconds,2.5);assert.equal(other.blocked_incidents,0);
  assert.equal(p.rushed,2);assert.equal(p.rushed_seconds,2.5);assert.equal(p.late_starts,1);
- assert.equal(award(s,'neck').status,'unavailable');assert.equal(award(s,'fences').status,'unavailable');assert.equal(award(s,'wheelchair').status,'pending');
+ assert.equal(award(s,'neck').status,'unavailable');assert.equal(award(s,'fences').status,'unavailable');assert.equal(award(s,'wheelchair').status,'pending');assert.equal(award(s,'mvp').status,'pending');
  assert.equal(award(s,'hard-carry').winner.name,'Ada');assert.equal(award(s,'hard-carry').runners_up.length,2);
 });
 check('Distinct builds, exports, and rounds do not double count',()=>{
@@ -43,7 +43,7 @@ check('Distinct builds, exports, and rounds do not double count',()=>{
  let s=run(f);assert.equal(s.players[0].build_count,1);assert.equal(s.players[0].starts,2);
  m.races.push({id:r.id,race_folder:r.race_folder});s=run(f);assert.equal(s.players[0].starts,2);
  const r3=structuredClone(r);r3.id='race4';r3.raw_sha256='hash4';f.docs.race4=r3;f.index.matches.push({...m,id:'r3-m1',round:'R3',races:[{id:r3.id,race_folder:'01 - Test'}],reported_results:null});
- s=run(f);assert.equal(s.players[0].build_count,2);assert.equal(s.players[0].starts,3);assert.equal(award(s,'wheelchair').status,'provisional');
+ s=run(f);assert.equal(s.players[0].build_count,2);assert.equal(s.players[0].starts,3);assert.equal(award(s,'wheelchair').status,'provisional');assert.equal(award(s,'mvp').winner.name,'Ada');assert.equal(award(s,'wheelchair').winner.name,'Cy');
 });
 check('Only Round 1 DQs enter, other Round 1 performance is excluded',()=>{
  const f=fixture();f.index.matches.push({...f.index.matches[0],id:'r1-m1',round:'R1'});
@@ -70,12 +70,15 @@ check('Exact ties stay pending until one sourced choice',()=>{
 });
 check('Public HTML hides all award results and private HTML escapes names',()=>{
  const f=fixture(),s=run(f),publicHTML=UI.page(f.index,f.config,s,{revealed:false});
- assert.equal((publicHTML.match(/data-award=/g)||[]).length,19);assert(!publicHTML.includes('Bakushin'));assert(!publicHTML.includes('Ada'));assert(!publicHTML.includes('See the receipts'));assert(publicHTML.includes('Tournament statistics'));
+ assert.equal((publicHTML.match(/data-award=/g)||[]).length,20);assert(!publicHTML.includes('Bakushin'));assert(!publicHTML.includes('Ada'));assert(!publicHTML.includes('See the receipts'));assert(publicHTML.includes('Tournament statistics'));
  s.awards[0].winner.name='<img onerror="alert(1)">';const privateHTML=UI.page(f.index,f.config,s,{revealed:true});assert(privateHTML.includes('&lt;img onerror='));assert(!privateHTML.includes('<img onerror='));assert(privateHTML.includes('See the receipts'));
 });
 const index=JSON.parse(fs.readFileSync('data/tournament-index.json')),config=JSON.parse(fs.readFileSync('config/awards.json')),docs={};
 for(const m of index.matches)for(const f of m.races)docs[f.id]=JSON.parse(fs.readFileSync(f.data_file));
-const real=E.compute(index,docs,config,catalogue);
+require('../assets/award-telemetry.js');
+const real=E.compute(index,docs,config,catalogue,require('../assets/award-telemetry-data.json'));
+assert.deepEqual(real.awards.slice(0,5).map(a=>a.id),['nitro','fine-motion','hard-carry','top-road','nature']);
+assert.equal(award(real,'neck').status,'provisional');assert.equal(award(real,'fences').status,'provisional');
 check('Every current export is included, and official points agree',()=>{
  assert.deepEqual(real.issues,[]);
  const races=index.matches.filter(m=>Number(m.round.slice(1))>=2).flatMap(m=>m.races);

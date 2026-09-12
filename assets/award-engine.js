@@ -12,20 +12,21 @@
   ['all-star','All Star Trainer Award','Given to the player with the most combined base stats across all their fielded builds.','base_total','base stats',-1,['average_stats',-1]],
   ['performance-anxiety','Professor of Performance Anxiety Award','Given to the player whose fielded stats earned the fewest points in return.','efficiency','points / 1,000 stats',1,['base_total',-1]],
   ['festa','Nakayama Festa Award','Given to the player who won the most points relative to the stats they fielded.','efficiency','points / 1,000 stats',-1,['base_total',1]],
-  ['top-road','Crying Narita Top Road Award','Given to the player whose Umas finished second the most.','seconds','second places',-1,['second_rate',-1,'points',-1]],
+  ['top-road','Crying NTR Award','Given to the player whose Umas finished second the most.','seconds','second places',-1,['second_rate',-1,'points',-1]],
   ['flyingsparks','The Flyingsparks Award','Given to the player who fielded the most opponent-debuff skills across their played builds.','debuffs','debuff skills',-1,['debuff_activations',-1]],
   ['nature','Force of Nature Award','Given to the player whose Umas finished third the most.','thirds','third places',-1,['third_rate',-1,'points',-1]],
   ['double-jet','Double Jet Award','Given to the player whose Umas entered Rushed mode the most times.','rushed','Rushed incidents',-1,['rushed_seconds',-1]],
-  ['hard-carry','The Hard Carry Award','Given to the player whose Umas took the most first-place finishes.','firsts','first places',-1,['win_rate',-1,'points',-1]],
+  ['hard-carry','Hard Carry Award','Given to the player whose Umas took the most first-place finishes.','firsts','first places',-1,['win_rate',-1,'points',-1]],
   ['bourbon','Retired Bourbon Award','Given to the player with the most verified failed wit checks across all races. Unmet skill conditions do not count.','failed_wit','failed wit checks',-1,['wit_failure_rate',-1]],
   ['hot-headed','Hot Headed Award','Given to the player with the most combined base Guts across their fielded builds.','guts','Guts',-1,['average_guts',-1]],
   ['fine-motion','Fine Motion Wit Award','Given to the player with the least combined base Wit across their fielded builds.','wisdom','Wit',1,['average_wisdom',1]],
   ['mejiro','The Mejiro Fund Award','Given to the player with the highest full-price SP total for purchased skills across their played builds, before hint discounts.','sp','SP',-1,['bought_skills',-1]],
   ['blocked-count','Asslicker Award','Given to the player whose Umas were blocked the most times.','blocked_incidents','blocking incidents received',-1,['blocked_seconds',-1]],
   ['blocked-time','Asslicker Award','Given to the player whose Umas spent the longest total time being blocked.','blocked_seconds','seconds blocked',-1,['blocked_incidents',-1]],
-  ['neck','The Neck and Neck Award','Given to the player whose Umas spent the most total time dueling.','duel_seconds','seconds dueling',-1,[]],
+  ['neck','The Neck and Neck Award','Given to the player whose Umas spent the most estimated total time dueling.','duel_seconds','seconds dueling',-1,[]],
   ['gate-kept','Gate Kept Award','Given to the player with the most official disqualifications. Round 1 DQ records count here.','dqs','disqualifications',-1,[]],
-  ['fences','Swing for the Fences Award','Given to the player whose Umas lost the most total distance to lane changes.','lane_loss_m','metres lost',-1,[]],
+  ['fences','Swing for the Fences Award','Given to the player whose Umas lost the most estimated distance to lane changes and wider cornering (WT).','lane_loss_m','metres lost',-1,[]],
+  ['mvp','MVP Award','Given to the player who earned the most tournament points after playing at least two rounds from Round 2 onward.','points','points',-1,['points_per_race',-1,'starts',1]],
   ['wheelchair','The Wheelchair Award','Given to the player who earned the fewest tournament points after playing at least two rounds from Round 2 onward.','points','points',1,['points_per_race',1,'starts',-1]]
  ];
  const rules={
@@ -44,12 +45,14 @@
   mejiro:'Full listed purchase SP, including prerequisite tiers once and purchased inherited uniques. The runner’s native unique and negative traits are excluded. Tie: purchased skill count.',
   'blocked-count':'Count unblocked → blocked transitions on the affected runner. Changing blocker without a free interval stays one incident. Tie: total blocked time.',
   'blocked-time':'Sum observed blocked intervals on the affected runner, clipped to their finish. Tie: incident count.',
-  neck:'Requires verified duel duration per race and player. A duel-start event alone cannot establish its duration.',
+  neck:'Sum Hakuraku-estimated duel intervals across each player’s runners and races. Uses start events, HP, opponent gaps, skill-adjusted speed, hills and finish time. Sourced verified observations override estimates.',
   'gate-kept':'Deduplicated organizer-confirmed DQ incidents. No automatic inference from eligibility or skill failures.',
-  fences:'Requires verified distance loss in metres per race and player. Lane movement by itself does not prove lost forward distance.',
+  fences:'Sum estimated WT loss: max(0, min(previous speed, current speed) × frame duration − forward progress), interpolated at each runner’s finish. Includes lane changes and wider cornering. Sourced verified observations override estimates.',
+  mvp:'At least two distinct played rounds, starting with R2. Most points; ties: more points per race, then fewer starts.',
   wheelchair:'At least two distinct played rounds, starting with R2. Ties: fewer points per race, then more starts.'
  };
- function catalog(config={}){return specs.map(([id,name,description,metric,unit,direction,tie])=>({id,name,description,metric,unit,direction,tie,rule:rules[id],image:config.images?.[id]||'',trophy:id==='nitro'?'nitro':id==='fine-motion'?'wit':'champion',category:id.startsWith('blocked-')?(id==='blocked-count'?'Most incidents received':'Longest time blocked'):id==='gate-kept'?'Official record':id==='neck'||id==='fences'?'Race analysis':'Round 2 onward'}));}
+ const firstAwards=['nitro','fine-motion','hard-carry','top-road','nature'];
+ function catalog(config={}){return [...firstAwards.map(id=>specs.find(s=>s[0]===id)),...specs.filter(s=>!firstAwards.includes(s[0]))].map(([id,name,description,metric,unit,direction,tie])=>({id,name,description,metric,unit,direction,tie,rule:rules[id],image:config.images?.[id]||'',trophy:id==='nitro'?'nitro':id==='fine-motion'?'wit':'champion',category:id.startsWith('blocked-')?(id==='blocked-count'?'Most incidents received':'Longest time blocked'):id==='gate-kept'?'Official record':id==='neck'||id==='fences'?'Race analysis':'Round 2 onward'}));}
  function nativeUnique(id,variant){
   const text=String(variant),own=100000+10000*(Number(text.slice(-2))-1)+Number(text.slice(1,-2))*10+1;
   return id===own||id===own-90000;
@@ -81,7 +84,7 @@
   }
   return {count,seconds,intervals};
  }
- function compute(index,raceDocs,config={},skillCatalog={}){
+ function compute(index,raceDocs,config={},skillCatalog={},telemetryData=null){
   const players=new Map(),issues=[],covered=new Set(),builds=new Map();let expectedRaces=0,loadedRaces=0,verifiedRaces=0;
   const docs=raceDocs instanceof Map?raceDocs:new Map(Object.entries(raceDocs));
   const minRound=config.performance_round_min??2;
@@ -104,6 +107,7 @@
     if(unique.length!==1){issues.push(`${match.id} race ${n}: ${unique.length?'multiple verified runs need an official selection':'verified export unavailable'}.`);continue;}
     const race=unique[0];if(covered.has(race.raw_sha256||race.id)){issues.push(`Duplicate export skipped: ${race.id}`);continue;}
     covered.add(race.raw_sha256||race.id);verifiedRaces++;handled.add(n);
+    const telemetry=telemetryData&&global.AwardTelemetry?global.AwardTelemetry.estimate(race,telemetryData):{};
     for(const row of race.results.filter(r=>r.eligible&&r.team_id&&clean(r.owner))){
      const p=player(row.team_id,row.owner);p.rounds.add(match.round);p.matches.add(match.id);p.starts++;
      finish(p,row.scoring_place??row.place,row.points);
@@ -134,10 +138,11 @@
       for(const [field,coverageKey]of [['duel_seconds','duel'],['lane_loss_m','lane']]){
        const override=(config.verified_metrics||[]).find(v=>v.race_id===race.id&&key(v.team_id,v.player)===p.id&&v.metric===field&&v.verified===true&&v.source);
        const direct=runner.award_metrics?.[field];
+       const estimated=telemetry[runner.entry_id]?.[field];
        const value=override?.value??(direct?.verified&&direct.source?direct.value:null);
        // A runner with no recorded duel starts has exactly zero duel time.
-       const known=value??(field==='duel_seconds'&&runner.duel_events===0?0:null);
-       if(number(known)&&known>=0){p[field]+=known;p.coverage[coverageKey]++;record[field]=known;}
+       const known=value??estimated?.value??(field==='duel_seconds'&&runner.duel_events===0?0:null);
+       if(number(known)&&known>=0){p[field]+=known;p.coverage[coverageKey]++;record[field]=known;record[field+'_source']=override?.source||direct?.source||estimated?.source||'No recorded duel starts';record[field+'_estimated']=value==null&&Boolean(estimated);}
       }
      }
      p.races.push(record);
@@ -169,7 +174,7 @@
   const list=[...players.values()].sort((a,b)=>a.team.localeCompare(b.team)||a.name.localeCompare(b.name));
   const awards=catalog(config).map(a=>{
    let eligible=list.filter(p=>a.id==='gate-kept'?p.dqs>0:p.starts>0),reason='';
-   if(a.id==='wheelchair')eligible=eligible.filter(p=>p.rounds.length>=(config.wheelchair_min_rounds??2));
+   if(['wheelchair','mvp'].includes(a.id))eligible=eligible.filter(p=>p.rounds.length>=(config.wheelchair_min_rounds??2));
    const metricCoverage=['base_total','guts','wisdom','efficiency','debuffs'].includes(a.metric)?'stats':a.metric==='sp'?'sp':a.metric==='failed_wit'?'wit':a.metric==='duel_seconds'?'duel':a.metric==='lane_loss_m'?'lane':['late_starts','rushed','blocked_incidents','blocked_seconds'].includes(a.metric)?'replay':null;
    if(metricCoverage){
     const complete=p=>['stats','sp'].includes(metricCoverage)?p.build_count>0&&p.coverage[metricCoverage]===p.build_count&&p.races.every(r=>!r.report_only):p.coverage[metricCoverage]===p.starts;
@@ -186,7 +191,7 @@
    if(tied&&decision?.source){const selected=eligible.find(p=>p.id===decision.player_id&&compare(p,eligible[0])===0);if(selected)chosen=selected;}
    const unresolved=tied&&(!decision?.source||chosen?.id!==decision.player_id);
    const entry=p=>({player_id:p.id,name:p.name,team:p.team,value:p[a.metric],points:p.points,build_count:p.build_count,starts:p.starts,base_total:p.base_total,rounds:p.rounds,tiebreaks:a.tie.filter((_,i)=>i%2===0).map(field=>({field,value:p[field]}))});
-   return {...a,status:reason?'unavailable':!eligible.length?'pending':unresolved?'tie':'provisional',reason:reason||(!eligible.length?(a.id==='wheelchair'?'No player has completed two played rounds from R2 yet.':'No qualifying record yet.'):unresolved?'The metric and all published tiebreakers are tied. One organizer decision is required.':''),winner:chosen&&!unresolved?entry(chosen):null,runners_up:eligible.filter(p=>!chosen||p.id!==chosen.id||unresolved).slice(0,2).map(entry),tie_count:tied?eligible.filter(p=>compare(p,eligible[0])===0).length:0,decision:decision?.source||null};
+   return {...a,status:reason?'unavailable':!eligible.length?'pending':unresolved?'tie':'provisional',reason:reason||(!eligible.length?(['wheelchair','mvp'].includes(a.id)?'No player has completed two played rounds from R2 yet.':'No qualifying record yet.'):unresolved?'The metric and all published tiebreakers are tied. One organizer decision is required.':''),winner:chosen&&!unresolved?entry(chosen):null,runners_up:eligible.filter(p=>!chosen||p.id!==chosen.id||unresolved).slice(0,2).map(entry),tie_count:tied?eligible.filter(p=>compare(p,eligible[0])===0).length:0,decision:decision?.source||null};
   });
   return {schema_version:1,generated_at:new Date().toISOString(),round_min:minRound,players:list,awards,coverage:{expected_races:expectedRaces,loaded_files:loadedRaces,verified_races:verifiedRaces,played_builds:builds.size,players:list.filter(p=>p.starts>0).length},issues,selected_matches:[...selectedIds]};
  }
