@@ -1,6 +1,6 @@
 # Awards and private rehearsal
 
-The Stats page publishes 20 blank cards: 19 award names, with separate Asslicker honors for incidents received and time spent blocked. Bakushin is pending and excluded. The cards retain the two supplied images and three custom trophy illustrations. Club statistics remain below the cards. The first five cards are Nitro, Fine Motion Wit, Hard Carry, Crying NTR, and Force of Nature. Images render at full width and their natural height; category labels and local art controls sit below the image so they never crop or cover it.
+The Stats page publishes 20 blank cards: 19 award names, with separate Asslicker honors for incidents received and time spent blocked. Bakushin is pending and excluded. The cards use the five supplied award images and three custom trophy illustrations. Club statistics remain below the cards. The first five cards are Nitro, Fine Motion Wit, Hard Carry, Crying NTR, and Force of Nature. Images render at full width and their natural height so they never crop. Award cards are divided into Featured Honors, Build & Strategy, Race Moments, and Tournament Honors.
 
 ## Reveal boundary
 
@@ -12,7 +12,7 @@ Generate a portable private copy, outside this repository:
 node scripts/build_awards_preview.cjs ../dominator-awards-preview.html
 ```
 
-Open that HTML directly in a browser. It embeds the current standings, styles, scripts, supplied art, and trophies. Refresh from live data reads the current Pages index, skill catalog and Round 2+ race documents. No authentication or secret token is needed. A failed refresh retains the saved snapshot. The local controls can preview blank cards, filter player stats, export standings, change card art for the current session, or import verified observations. Nothing in that file publishes changes. A final public reveal requires a deliberate reviewed change to the public renderer.
+Open that HTML directly in a browser. It embeds the current standings, styles, scripts, supplied art, and trophies. Refresh from live data reads the current Pages index, skill catalog and eligible race documents. No authentication or secret token is needed. A failed refresh retains the saved snapshot. The local controls can preview blank cards, filter player stats, export standings, or import verified observations. Award art is curated only through the repository configuration; the page exposes no visitor-controlled image picker. Nothing in that file publishes changes. A final public reveal requires a deliberate reviewed change to the public renderer.
 
 ## Counting rules
 

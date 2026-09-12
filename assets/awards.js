@@ -6,7 +6,10 @@
  const base='https://flyingsparks1130.github.io/dominatornetworktourney2026/';
  const asset=(path,options)=>options.assets?.[path]||((options.local&&path&&!path.startsWith('data:'))?base+path:path);
  const ordinal=i=>i===0?'02':'03';
- function awardCard(a,options={}){
+function awardCard(a,options={}){
+  // Award art is curated in configuration. Neither the public page nor the
+  // private rehearsal exposes a visitor-controlled image picker.
+  options={...options,local:false};
   const revealed=Boolean(options.revealed),winner=revealed?a.winner:null;
   const pending=revealed?(a.reason||'No qualifying record yet.'):'The winner will be revealed after the tournament.';
   const value=winner?fmt(winner.value,['efficiency','blocked_seconds','duel_seconds','lane_loss_m'].includes(a.metric)?3:0):'—';
@@ -20,11 +23,29 @@
   const races=completed.reduce((n,m)=>n+(m.reported_results?.races.length||m.races.length),0);
   return `<div class="stats-totals"><div><b>${index.teams.length}</b><span>Clubs</span></div><div><b>${completed.length}</b><span>Completed matches</span></div><div><b>${races}</b><span>Reported races</span></div><div><b>${index.matches.filter(m=>m.status==='ready').length}</b><span>Matches ready</span></div></div><div class="stats-table-wrap"><table class="stats-table"><caption>Club records · all tournament rounds</caption><thead><tr><th>Club</th><th>Wins</th><th>Losses</th><th>Points for</th><th>Points against</th><th>Status</th></tr></thead><tbody>${index.teams.slice().sort((a,b)=>a.seed-b.seed).map(t=>{const matches=completed.filter(m=>m.participants.some(p=>p?.id===t.id));return `<tr><th><a href="club.html?id=${encodeURIComponent(t.id)}">${esc(t.name)}</a></th><td>${matches.filter(m=>m.winner_id===t.id).length}</td><td>${matches.filter(m=>m.loser_id===t.id).length}</td><td>${matches.reduce((n,m)=>n+(m.scores?.[t.id]||0),0)}</td><td>${matches.reduce((n,m)=>n+Object.entries(m.scores||{}).filter(([id])=>id!==t.id).reduce((n,[,v])=>n+v,0),0)}</td><td>${index.champion_id===t.id?'Champion':index.eliminated.includes(t.id)?'Eliminated':'In contention'}</td></tr>`}).join('')}</tbody></table></div>`;
  }
- function page(index,config,standings,options={}){
+ function flatPage(index,config,standings,options={}){
   const revealed=options.revealed&&Boolean(standings);
   const cards=revealed?standings.awards:AwardEngine.catalog(config);
   const ordered=cards;
   return `<section class="awards-hero"><div><p class="awards-eyebrow">DOMINATOR NETWORK · 2026</p><h1>The awards.</h1><p>One tournament. Some very specific achievements.</p></div><span class="awards-seal">${revealed?'PRIVATE PREVIEW':'REVEAL AT THE FINAL'}</span></section>${options.local?`<aside class="preview-tools"><div><strong>Your private rehearsal</strong><p>Current standings from Round 2 onward. This file does not publish anything.</p></div><div class="preview-actions"><button id="refresh-awards" class="btn">Refresh from live data ↻</button><button id="toggle-reveal" class="btn">${revealed?'Preview blank public cards':'Show private standings'}</button><button id="download-awards" class="btn">Export standings JSON</button><label class="btn">Import verified records<input id="import-award-records" type="file" accept="application/json,.json"></label></div><p id="preview-status" role="status">${standings?`${standings.coverage.verified_races} / ${standings.coverage.expected_races} verified races · ${standings.coverage.played_builds} fielded builds · refreshed ${new Date(standings.generated_at).toLocaleString()}`:'Ready'}</p></aside>`:`<p class="awards-intro">The categories are set. Winners, numbers, and runners-up stay under wraps until the final reveal.</p>`}<section aria-label="Tournament awards" class="awards-grid">${ordered.map(a=>awardCard(a,{...options,revealed,standings})).join('')}</section><section id="tournament-statistics" class="tournament-statistics"><div class="stats-section-heading"><div><p class="awards-eyebrow">BEYOND THE TROPHIES</p><h2>Tournament statistics</h2></div><a class="btn" href="bracket.html">Open bracket ↗</a></div>${clubStats(index)}${options.local&&revealed?`<section class="player-statistics"><div class="stats-section-heading"><div><p class="awards-eyebrow">ROUND 2 ONWARD</p><h2>Player statistics</h2></div></div><div class="stats-filters"><label>Player or club<input id="stats-search" type="search" placeholder="Search trainers…"></label><label>View<select id="stats-view"><option value="results">Points & podiums</option><option value="builds">Build stats & SP</option><option value="events">Race events</option></select></label></div><div id="player-stats-table"></div><details class="stats-method"><summary>Counting rules & evidence coverage</summary><p>Each played build counts once per player per matchup. Base stats are the submitted stats before mood and race bonuses. Race results and events count for every verified race from Round 2 onward. Round 1 contributes only confirmed disqualifications.</p><p>Performance Anxiety ranks the lowest points per 1,000 base stats; Nakayama Festa ranks the highest. All other totals follow the descriptions on their cards. Equal metrics use each card’s stated tiebreakers; exact ties require one sourced organizer decision.</p><p>Blocking is credited to the affected runner. Verified failed wit checks exclude failed conditions and unresolved outcomes. SP counts full purchase prices and prerequisite tiers once, including inherited uniques; native uniques are excluded.</p><p>Duel time and WT distance loss use Hakuraku’s estimates from replay frames, clipped to each runner’s finish. WT includes lane changes and wider cornering. Verified observations override estimates. Missing evidence is never treated as zero. MVP and Wheelchair both require two played rounds from R2 onward.</p>${standings.issues.length?`<ul>${standings.issues.map(i=>`<li>${esc(i)}</li>`).join('')}</ul>`:''}</details></section>`:''}</section>`;
+ }
+ const awardGroups=[
+  {id:'featured',name:'Featured Honors',description:'The headline awards leading the ceremony.',awards:['nitro','fine-motion','hard-carry','top-road','nature']},
+  {id:'build',name:'Build & Strategy',description:'Roster construction, stats, skills, and points efficiency.',awards:['all-star','performance-anxiety','festa','flyingsparks','hot-headed','mejiro']},
+  {id:'moments',name:'Race Moments',description:'The incidents, interactions, and replay-analysis awards.',awards:['double-jet','bourbon','blocked-count','blocked-time','neck','gate-kept','fences']},
+  {id:'tournament',name:'Tournament Honors',description:'Overall performance across multiple tournament rounds.',awards:['mvp','wheelchair']}
+ ];
+ function page(index,config,standings,options={}){
+  const revealed=options.revealed&&Boolean(standings);
+  const cards=revealed?standings.awards:AwardEngine.catalog(config);
+  const byId=new Map(cards.map(a=>[a.id,a]));
+  const sections=awardGroups.map(group=>`<section class="award-group award-group-${group.id}" aria-labelledby="award-group-${group.id}"><div class="award-group-heading"><p class="awards-eyebrow">AWARD TYPE</p><h2 id="award-group-${group.id}">${group.name}</h2><p>${group.description}</p></div><div class="awards-grid">${group.awards.map(id=>byId.get(id)).filter(Boolean).map(a=>awardCard(a,{...options,revealed,standings})).join('')}</div></section>`).join('');
+  return flatPage(index,config,standings,options)
+   .replace(/<section aria-label="Tournament awards" class="awards-grid">[\s\S]*?<\/section>(?=<section id="tournament-statistics")/,`<div class="award-groups" aria-label="Tournament awards">${sections}</div>`)
+   .replaceAll('Current standings from Round 2 onward.','Current tournament standings.')
+   .replaceAll('ROUND 2 ONWARD','PLAYER LEADERBOARD')
+   .replaceAll('Race results and events count for every verified race from Round 2 onward. Round 1 contributes only confirmed disqualifications.','Race results and events count across the eligible performance window. Confirmed disqualifications are recorded separately.')
+   .replaceAll('MVP and Wheelchair both require two played rounds from Round 2 onward.','MVP and Wheelchair both require appearances in two eligible tournament rounds.');
  }
  function playerTable(standings,query='',view='results'){
   const columns={results:[['starts','Races'],['points','Points'],['firsts','1st'],['seconds','2nd'],['thirds','3rd']],builds:[['build_count','Builds'],['base_total','Base stats'],['guts','Guts'],['wisdom','Wit'],['sp','SP']],events:[['late_starts','Late starts'],['rushed','Rushed'],['failed_wit','Wit failures'],['blocked_incidents','Blocked count'],['blocked_seconds','Blocked seconds'],['duel_seconds','Duel seconds ≈'],['lane_loss_m','WT metres lost ≈']]}[view];
@@ -49,7 +70,6 @@
     try{const file=e.target.files[0];if(!file)return;const imported=JSON.parse(await file.text());if(!Array.isArray(imported.verified_metrics)&&!imported.tie_decisions)throw Error('Expected verified_metrics or tie_decisions.');config={...config,verified_metrics:imported.verified_metrics??config.verified_metrics,tie_decisions:imported.tie_decisions??config.tie_decisions};await refresh();}
     catch(err){root.querySelector('#preview-status').textContent=err.message;}
    };
-   for(const input of root.querySelectorAll('[data-art]'))input.onchange=()=>{const file=input.files[0];if(!file)return;const reader=new FileReader();reader.onload=()=>{const id=input.dataset.art;config.images[id]=reader.result;const award=standings.awards.find(a=>a.id===id);if(award)award.image=reader.result;render();};reader.readAsDataURL(file);};
    if(revealed){const draw=()=>{root.querySelector('#player-stats-table').innerHTML=playerTable(standings,root.querySelector('#stats-search').value,root.querySelector('#stats-view').value);};root.querySelector('#stats-search').oninput=draw;root.querySelector('#stats-view').onchange=draw;draw();}
   }
   async function refresh(){

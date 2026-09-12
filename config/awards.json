@@ -19,6 +19,9 @@
   "tie_decisions": {},
   "images": {
     "nitro": "assets/awards/nitro-incident.png",
-    "fine-motion": "assets/awards/fine-motion-wit.png"
+    "fine-motion": "assets/awards/fine-motion-wit.png",
+    "hard-carry": "assets/awards/hard-carry.png",
+    "top-road": "assets/awards/crying-ntr.png",
+    "nature": "assets/awards/force-of-nature.gif"
   }
 }
