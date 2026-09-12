@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "match_id": "r3-m1",
+  "status": "pending",
+  "track_pool": [],
+  "track_picks": [],
+  "track_vetoes": [],
+  "final_tracks": [],
+  "tiebreaker_track": null,
+  "uma_pre_bans": [],
+  "uma_picks": [],
+  "uma_bans": [],
+  "uma_additions": [],
+  "benched_umas": [],
+  "training_start": null,
+  "training_deadline": null,
+  "notes": "",
+  "external_match_id": null,
+  "roster": []
+}

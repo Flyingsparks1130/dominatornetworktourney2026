@@ -1,3 +1,9 @@
 # Dominacion vs Domineer
 
-Quarterfinal r2-m3. Add the match draft to draft.json. Put each original race.json in its own race-description folder as races are supplied. Record reported podiums in results.json and confirm the overall result separately through the organizer. Do not create placeholder exports or count reported and exported scores twice.
+Quarterfinal `r2-m3`: **Domineer 17–25 Dominacion** after six races. MVP: **@wata**, Rice Shower (Halloween), with 13 podium points.
+
+`draft.json` records the supplied lineups, bench, pre-bans, enemy vetoes and race card. `results.json` records the reported podiums. The six original exports are preserved unchanged in numbered race folders; all podiums and team totals agree with the report. Reported and exported scores are never added together.
+
+Winning Ticket and El Condor Pasa were benched. Hakodate 1000m remains the unused tiebreaker, with no fabricated race export. The external match ID, snake-pick order and training dates were not supplied.
+
+Dominacion advances to face Dominate in Round 3.

@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "match_id": "r2-m3",
+  "external_match_id": null,
+  "source": "Organizer screenshots, corroborated by all six original race exports. Reports and exports are not added together.",
+  "mvp": {
+    "team_id": "dominacion",
+    "uma": "Rice Shower (Halloween)",
+    "discord": "@wata"
+  },
+  "races": [
+    {
+      "number": 1,
+      "track": "Tokyo 2400m · Turf · Left · Spring / Rainy / Heavy",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "domineer",
+          "uma": "Tamamo Cross (Festival)",
+          "discord": "@Zen"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Inari One",
+          "discord": "@Sonic"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "track": "Sapporo 1800m · Turf · Right · Fall / Cloudy / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Narita Taishin",
+          "discord": "@Emperor | The Radiant One"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Biwa Hayahide",
+          "discord": "@JUNI"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "track": "Tokyo 1600m · Turf · Left · Winter / Snowy / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "domineer",
+          "uma": "Biwa Hayahide",
+          "discord": "@JUNI"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Silence Suzuka",
+          "discord": "@AngelicVixen"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "track": "Hanshin (Inner) 2200m · Turf · Right · Fall / Cloudy / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominacion",
+          "uma": "Oguri Cap",
+          "discord": "@Zanko"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Biwa Hayahide",
+          "discord": "@JUNI"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Tamamo Cross (Festival)",
+          "discord": "@Zen"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "track": "Niigata (Outer) 2000m · Turf · Left · Spring / Cloudy / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Tamamo Cross (Festival)",
+          "discord": "@Zen"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Air Groove",
+          "discord": "@Yanagi #1 Fan (Bloop)"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "track": "Kyoto (Outer) 1800m · Turf · Right · Summer / Cloudy / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominacion",
+          "uma": "Taiki Shuttle",
+          "discord": "@McGee"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Oguri Cap",
+          "discord": "@Zanko"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata"
+        }
+      ]
+    }
+  ]
+}

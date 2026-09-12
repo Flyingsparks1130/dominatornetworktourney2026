@@ -713,7 +713,8 @@
     "1100011": "Feelin' a Bit Silly",
     "1200011": "Medium Race Enthusiast",
     "1200021": "Long Race Enthusiast",
-    "1200031": "Mile Race Enthusiast"
+    "1200031": "Mile Race Enthusiast",
+    "110211": "Thunderous Firestarter"
   },
   "cards": {
     "100101": "[Special Dreamer]",
@@ -906,6 +907,9 @@
     "104001": "assets/runners/104001.webp",
     "103402": "assets/runners/103402.webp",
     "101902": "assets/runners/101902.webp",
-    "106102": "assets/runners/106102.webp"
+    "106102": "assets/runners/106102.webp",
+    "101801": "assets/runners/101801.webp",
+    "102102": "assets/runners/102102.webp",
+    "103501": "assets/runners/103501.webp"
   }
 }

@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T23:53:50Z",
+  "generated_at": "2026-09-12T00:37:37Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
-  "revision": 45,
+  "revision": 61,
   "rounds": [
     {
       "id": "R1",
@@ -4971,55 +4971,1032 @@
           "aliases": []
         }
       ],
-      "winner_id": null,
-      "loser_id": null,
-      "status": "ready",
-      "manual_scores": null,
-      "decision_reason": null,
-      "source": "race_files",
-      "races": [],
+      "winner_id": "dominacion",
+      "loser_id": "domineer",
+      "status": "complete",
+      "manual_scores": {
+        "dominacion": 25,
+        "domineer": 17
+      },
+      "decision_reason": "Organizer confirmed Domineer 17–25 Dominacion after six races; MVP @wata. All six unchanged exports corroborate the podiums. Complete Round 2 and advance Dominacion to face Dominate in Round 3.",
+      "source": "manual",
+      "races": [
+        {
+          "id": "77ff35c7e057c068ae2a",
+          "round": "R2",
+          "match_id": "r2-m3",
+          "race_folder": "01 - Tokyo 2400m",
+          "file_name": "Tamamo Cross-115.9282s-20260910.json",
+          "raw_path": "Dominator Tournament/R2/Dominacion vs Domineer/01 - Tokyo 2400m/Tamamo Cross-115.9282s-20260910.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10606,
+            "track_id": 10006,
+            "distance_m": 2400,
+            "surface": "Turf",
+            "turn": "Left",
+            "condition": "Bad",
+            "weather": "Rainy",
+            "season": "Spring"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "domineer": 5,
+            "dominacion": 2
+          },
+          "data_file": "data/tournament-races/77ff35c7e057c068ae2a.json"
+        },
+        {
+          "id": "d670795870ca6ea3e08f",
+          "round": "R2",
+          "match_id": "r2-m3",
+          "race_folder": "02 - Sapporo 1800m",
+          "file_name": "Rice Shower-84.4723s-20260910.json",
+          "raw_path": "Dominator Tournament/R2/Dominacion vs Domineer/02 - Sapporo 1800m/Rice Shower-84.4723s-20260910.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10103,
+            "track_id": 10001,
+            "distance_m": 1800,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Good",
+            "weather": "Cloudy",
+            "season": "Fall"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "domineer": 3,
+            "dominacion": 4
+          },
+          "data_file": "data/tournament-races/d670795870ca6ea3e08f.json"
+        },
+        {
+          "id": "ed4745d845438e7684b6",
+          "round": "R2",
+          "match_id": "r2-m3",
+          "race_folder": "03 - Tokyo 1600m",
+          "file_name": "Biwa Hayahide-75.0203s-20260910.json",
+          "raw_path": "Dominator Tournament/R2/Dominacion vs Domineer/03 - Tokyo 1600m/Biwa Hayahide-75.0203s-20260910.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10602,
+            "track_id": 10006,
+            "distance_m": 1600,
+            "surface": "Turf",
+            "turn": "Left",
+            "condition": "Soft",
+            "weather": "Snow",
+            "season": "Winter"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "domineer": 4,
+            "dominacion": 3
+          },
+          "data_file": "data/tournament-races/ed4745d845438e7684b6.json"
+        },
+        {
+          "id": "3073f39e17998d4eeaab",
+          "round": "R2",
+          "match_id": "r2-m3",
+          "race_folder": "04 - Hanshin (Inner) 2200m",
+          "file_name": "Oguri Cap-104.8045s-20260910.json",
+          "raw_path": "Dominator Tournament/R2/Dominacion vs Domineer/04 - Hanshin (Inner) 2200m/Oguri Cap-104.8045s-20260910.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10906,
+            "track_id": 10009,
+            "distance_m": 2200,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Good",
+            "weather": "Cloudy",
+            "season": "Fall"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "domineer": 3,
+            "dominacion": 4
+          },
+          "data_file": "data/tournament-races/3073f39e17998d4eeaab.json"
+        },
+        {
+          "id": "0920a2b9c8bcad93181f",
+          "round": "R2",
+          "match_id": "r2-m3",
+          "race_folder": "05 - Niigata (Outer) 2000m",
+          "file_name": "Rice Shower-94.7353s-20260910.json",
+          "raw_path": "Dominator Tournament/R2/Dominacion vs Domineer/05 - Niigata (Outer) 2000m/Rice Shower-94.7353s-20260910.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10307,
+            "track_id": 10003,
+            "distance_m": 2000,
+            "surface": "Turf",
+            "turn": "Left",
+            "condition": "Soft",
+            "weather": "Cloudy",
+            "season": "Spring"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "domineer": 2,
+            "dominacion": 5
+          },
+          "data_file": "data/tournament-races/0920a2b9c8bcad93181f.json"
+        },
+        {
+          "id": "03d59f7bd6a0b45e9706",
+          "round": "R2",
+          "match_id": "r2-m3",
+          "race_folder": "06 - Kyoto (Outer) 1800m",
+          "file_name": "Taiki Shuttle-84.8945s-20260910.json",
+          "raw_path": "Dominator Tournament/R2/Dominacion vs Domineer/06 - Kyoto (Outer) 1800m/Taiki Shuttle-84.8945s-20260910.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10806,
+            "track_id": 10008,
+            "distance_m": 1800,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Good",
+            "weather": "Cloudy",
+            "season": "Summer"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "domineer": 0,
+            "dominacion": 7
+          },
+          "data_file": "data/tournament-races/03d59f7bd6a0b45e9706.json"
+        }
+      ],
       "draft": {
         "schema_version": 1,
         "match_id": "r2-m3",
-        "status": "pending",
+        "status": "locked",
         "track_pool": [],
-        "track_picks": [],
-        "track_vetoes": [],
-        "final_tracks": [],
-        "tiebreaker_track": null,
-        "uma_pre_bans": [],
+        "track_picks": [
+          {
+            "team_id": "domineer",
+            "track": "Tokyo 2400m · Turf · Left · Spring / Rainy / Heavy"
+          },
+          {
+            "team_id": "dominacion",
+            "track": "Sapporo 1800m · Turf · Right · Fall / Cloudy / Firm"
+          },
+          {
+            "team_id": "domineer",
+            "track": "Tokyo 1600m · Turf · Left · Winter / Snowy / Good"
+          },
+          {
+            "team_id": "dominacion",
+            "track": "Hanshin (Inner) 2200m · Turf · Right · Fall / Cloudy / Firm"
+          },
+          {
+            "team_id": "domineer",
+            "track": "Niigata (Outer) 2000m · Turf · Left · Spring / Cloudy / Good"
+          },
+          {
+            "team_id": "dominacion",
+            "track": "Kyoto (Outer) 1800m · Turf · Right · Summer / Cloudy / Firm"
+          }
+        ],
+        "track_vetoes": [
+          {
+            "team_id": "dominacion",
+            "track": "Hanshin (Inner) 3200m · Turf · Right · Spring / Rainy / Heavy"
+          },
+          {
+            "team_id": "domineer",
+            "track": "Kawasaki 1400m · Dirt · Left · Summer / Sunny / Good"
+          }
+        ],
+        "final_tracks": [
+          "Tokyo 2400m · Turf · Left · Spring / Rainy / Heavy",
+          "Sapporo 1800m · Turf · Right · Fall / Cloudy / Firm",
+          "Tokyo 1600m · Turf · Left · Winter / Snowy / Good",
+          "Hanshin (Inner) 2200m · Turf · Right · Fall / Cloudy / Firm",
+          "Niigata (Outer) 2000m · Turf · Left · Spring / Cloudy / Good",
+          "Kyoto (Outer) 1800m · Turf · Right · Summer / Cloudy / Firm"
+        ],
+        "tiebreaker_track": "Hakodate 1000m · Turf · Right · Winter / Snowy / Good",
+        "uma_pre_bans": [
+          {
+            "team_id": "domineer",
+            "uma": "Seiun Sky"
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Mihono Bourbon (Valentine)"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Maruzensky (Summer)"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Maruzensky"
+          }
+        ],
         "uma_picks": [],
-        "uma_bans": [],
+        "uma_bans": [
+          {
+            "team_id": "dominacion",
+            "uma": "Oguri Cap (Christmas)"
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Agnes Digital"
+          }
+        ],
         "uma_additions": [],
-        "benched_umas": [],
+        "benched_umas": [
+          {
+            "team_id": "domineer",
+            "uma": "Winning Ticket"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "El Condor Pasa"
+          }
+        ],
         "training_start": null,
         "training_deadline": null,
-        "notes": "",
+        "notes": "Organizer screenshots supply the rosters, track picks, vetoes, bans and podiums. All six original exports corroborate the podiums and the final Domineer 17–25 Dominacion score. MVP: @wata, Rice Shower (Halloween). Winning Ticket and El Condor Pasa were benched; the Hakodate 1000m tiebreaker was not run. Snake-pick order, external match ID and training dates were not supplied. Draft condition wording and literal export labels are preserved separately.",
         "external_match_id": null,
-        "roster": []
+        "roster": [
+          {
+            "team_id": "domineer",
+            "uma": "Narita Taishin",
+            "discord": "@Emperor | The Radiant One",
+            "benched": false
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Tamamo Cross (Festival)",
+            "discord": "@Zen",
+            "benched": false
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Inari One",
+            "discord": "@Sonic",
+            "benched": false
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Biwa Hayahide",
+            "discord": "@JUNI",
+            "benched": false
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Narita Brian",
+            "discord": "@Stayk, Taco Enjoyer",
+            "benched": false
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Winning Ticket",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Rice Shower (Halloween)",
+            "discord": "@wata",
+            "benched": false
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Silence Suzuka",
+            "discord": "@AngelicVixen",
+            "benched": false
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Oguri Cap",
+            "discord": "@Zanko",
+            "benched": false
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "El Condor Pasa",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Taiki Shuttle",
+            "discord": "@McGee",
+            "benched": false
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Air Groove",
+            "discord": "@Yanagi #1 Fan (Bloop)",
+            "benched": false
+          }
+        ]
       },
       "draft_path": "Dominator Tournament/R2/Dominacion vs Domineer/draft.json",
-      "draft_has_content": false,
-      "reported_results": null,
-      "report_path": null,
-      "computed_scores": null,
-      "scores": null,
+      "draft_has_content": true,
+      "reported_results": {
+        "schema_version": 1,
+        "match_id": "r2-m3",
+        "external_match_id": null,
+        "source": "Organizer screenshots, corroborated by all six original race exports. Reports and exports are not added together.",
+        "mvp": {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata",
+          "variant_id": 103002,
+          "portrait": "assets/runners/103002.webp",
+          "display_name": "wata",
+          "points": 13
+        },
+        "races": [
+          {
+            "number": 1,
+            "track": "Tokyo 2400m · Turf · Left · Spring / Rainy / Heavy",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "domineer",
+                "uma": "Tamamo Cross (Festival)",
+                "discord": "@Zen",
+                "place": 1,
+                "points": 4,
+                "variant_id": 102102,
+                "portrait": "assets/runners/102102.webp",
+                "display_name": "Zen"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Rice Shower (Halloween)",
+                "discord": "@wata",
+                "place": 2,
+                "points": 2,
+                "variant_id": 103002,
+                "portrait": "assets/runners/103002.webp",
+                "display_name": "wata"
+              },
+              {
+                "team_id": "domineer",
+                "uma": "Inari One",
+                "discord": "@Sonic",
+                "place": 3,
+                "points": 1,
+                "variant_id": 103401,
+                "portrait": "assets/runners/103401.webp",
+                "display_name": "Sonic"
+              }
+            ],
+            "scores": {
+              "dominacion": 2,
+              "domineer": 5
+            },
+            "cumulative_scores": {
+              "dominacion": 2,
+              "domineer": 5
+            }
+          },
+          {
+            "number": 2,
+            "track": "Sapporo 1800m · Turf · Right · Fall / Cloudy / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominacion",
+                "uma": "Rice Shower (Halloween)",
+                "discord": "@wata",
+                "place": 1,
+                "points": 4,
+                "variant_id": 103002,
+                "portrait": "assets/runners/103002.webp",
+                "display_name": "wata"
+              },
+              {
+                "team_id": "domineer",
+                "uma": "Narita Taishin",
+                "discord": "@Emperor | The Radiant One",
+                "place": 2,
+                "points": 2,
+                "variant_id": 105001,
+                "portrait": "assets/runners/105001.webp",
+                "display_name": "Emperor"
+              },
+              {
+                "team_id": "domineer",
+                "uma": "Biwa Hayahide",
+                "discord": "@JUNI",
+                "place": 3,
+                "points": 1,
+                "variant_id": 102301,
+                "portrait": "assets/runners/102301.webp",
+                "display_name": "JUNI"
+              }
+            ],
+            "scores": {
+              "dominacion": 4,
+              "domineer": 3
+            },
+            "cumulative_scores": {
+              "dominacion": 6,
+              "domineer": 8
+            }
+          },
+          {
+            "number": 3,
+            "track": "Tokyo 1600m · Turf · Left · Winter / Snowy / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "domineer",
+                "uma": "Biwa Hayahide",
+                "discord": "@JUNI",
+                "place": 1,
+                "points": 4,
+                "variant_id": 102301,
+                "portrait": "assets/runners/102301.webp",
+                "display_name": "JUNI"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Rice Shower (Halloween)",
+                "discord": "@wata",
+                "place": 2,
+                "points": 2,
+                "variant_id": 103002,
+                "portrait": "assets/runners/103002.webp",
+                "display_name": "wata"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Silence Suzuka",
+                "discord": "@AngelicVixen",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100201,
+                "portrait": "assets/runners/100201.webp",
+                "display_name": "AngelicVixen"
+              }
+            ],
+            "scores": {
+              "dominacion": 3,
+              "domineer": 4
+            },
+            "cumulative_scores": {
+              "dominacion": 9,
+              "domineer": 12
+            }
+          },
+          {
+            "number": 4,
+            "track": "Hanshin (Inner) 2200m · Turf · Right · Fall / Cloudy / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominacion",
+                "uma": "Oguri Cap",
+                "discord": "@Zanko",
+                "place": 1,
+                "points": 4,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "Zanko"
+              },
+              {
+                "team_id": "domineer",
+                "uma": "Biwa Hayahide",
+                "discord": "@JUNI",
+                "place": 2,
+                "points": 2,
+                "variant_id": 102301,
+                "portrait": "assets/runners/102301.webp",
+                "display_name": "JUNI"
+              },
+              {
+                "team_id": "domineer",
+                "uma": "Tamamo Cross (Festival)",
+                "discord": "@Zen",
+                "place": 3,
+                "points": 1,
+                "variant_id": 102102,
+                "portrait": "assets/runners/102102.webp",
+                "display_name": "Zen"
+              }
+            ],
+            "scores": {
+              "dominacion": 4,
+              "domineer": 3
+            },
+            "cumulative_scores": {
+              "dominacion": 13,
+              "domineer": 15
+            }
+          },
+          {
+            "number": 5,
+            "track": "Niigata (Outer) 2000m · Turf · Left · Spring / Cloudy / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominacion",
+                "uma": "Rice Shower (Halloween)",
+                "discord": "@wata",
+                "place": 1,
+                "points": 4,
+                "variant_id": 103002,
+                "portrait": "assets/runners/103002.webp",
+                "display_name": "wata"
+              },
+              {
+                "team_id": "domineer",
+                "uma": "Tamamo Cross (Festival)",
+                "discord": "@Zen",
+                "place": 2,
+                "points": 2,
+                "variant_id": 102102,
+                "portrait": "assets/runners/102102.webp",
+                "display_name": "Zen"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Air Groove",
+                "discord": "@Yanagi #1 Fan (Bloop)",
+                "place": 3,
+                "points": 1,
+                "variant_id": 101801,
+                "portrait": "assets/runners/101801.webp",
+                "display_name": "bloop"
+              }
+            ],
+            "scores": {
+              "dominacion": 5,
+              "domineer": 2
+            },
+            "cumulative_scores": {
+              "dominacion": 18,
+              "domineer": 17
+            }
+          },
+          {
+            "number": 6,
+            "track": "Kyoto (Outer) 1800m · Turf · Right · Summer / Cloudy / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominacion",
+                "uma": "Taiki Shuttle",
+                "discord": "@McGee",
+                "place": 1,
+                "points": 4,
+                "variant_id": 101001,
+                "portrait": "assets/runners/101001.webp",
+                "display_name": "McGee"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Oguri Cap",
+                "discord": "@Zanko",
+                "place": 2,
+                "points": 2,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "Zanko"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Rice Shower (Halloween)",
+                "discord": "@wata",
+                "place": 3,
+                "points": 1,
+                "variant_id": 103002,
+                "portrait": "assets/runners/103002.webp",
+                "display_name": "wata"
+              }
+            ],
+            "scores": {
+              "dominacion": 7,
+              "domineer": 0
+            },
+            "cumulative_scores": {
+              "dominacion": 25,
+              "domineer": 17
+            }
+          }
+        ],
+        "totals": {
+          "dominacion": 25,
+          "domineer": 17
+        }
+      },
+      "report_path": "Dominator Tournament/R2/Dominacion vs Domineer/results.json",
+      "computed_scores": {
+        "dominacion": 25,
+        "domineer": 17
+      },
+      "scores": {
+        "dominacion": 25,
+        "domineer": 17
+      },
       "score_only": false,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": [],
-      "draft_lineup": [],
+      "target_reached": [
+        "dominacion"
+      ],
+      "draft_lineup": [
+        {
+          "team_id": "domineer",
+          "uma": "Narita Taishin",
+          "discord": "@Emperor | The Radiant One",
+          "benched": false,
+          "variant_id": 105001,
+          "portrait": "assets/runners/105001.webp",
+          "display_name": "Emperor | The Radiant One"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Tamamo Cross (Festival)",
+          "discord": "@Zen",
+          "benched": false,
+          "variant_id": 102102,
+          "portrait": "assets/runners/102102.webp",
+          "display_name": "Zen"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Inari One",
+          "discord": "@Sonic",
+          "benched": false,
+          "variant_id": 103401,
+          "portrait": "assets/runners/103401.webp",
+          "display_name": "Sonic"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Biwa Hayahide",
+          "discord": "@JUNI",
+          "benched": false,
+          "variant_id": 102301,
+          "portrait": "assets/runners/102301.webp",
+          "display_name": "JUNI"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Narita Brian",
+          "discord": "@Stayk, Taco Enjoyer",
+          "benched": false,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
+          "display_name": "Stayk, Taco Enjoyer"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Winning Ticket",
+          "discord": null,
+          "benched": true,
+          "variant_id": 103501,
+          "portrait": "assets/runners/103501.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata",
+          "benched": false,
+          "variant_id": 103002,
+          "portrait": "assets/runners/103002.webp",
+          "display_name": "wata"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Silence Suzuka",
+          "discord": "@AngelicVixen",
+          "benched": false,
+          "variant_id": 100201,
+          "portrait": "assets/runners/100201.webp",
+          "display_name": "AngelicVixen"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Oguri Cap",
+          "discord": "@Zanko",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Zanko"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "El Condor Pasa",
+          "discord": null,
+          "benched": true,
+          "variant_id": 101401,
+          "portrait": "assets/runners/101401.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Taiki Shuttle",
+          "discord": "@McGee",
+          "benched": false,
+          "variant_id": 101001,
+          "portrait": "assets/runners/101001.webp",
+          "display_name": "McGee"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Air Groove",
+          "discord": "@Yanagi #1 Fan (Bloop)",
+          "benched": false,
+          "variant_id": 101801,
+          "portrait": "assets/runners/101801.webp",
+          "display_name": "Yanagi #1 Fan (Bloop)"
+        }
+      ],
       "draft_uma_actions": {
-        "uma_pre_bans": [],
+        "uma_pre_bans": [
+          {
+            "team_id": "domineer",
+            "uma": "Seiun Sky",
+            "variant_id": 102001,
+            "portrait": "assets/runners/102001.webp"
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Mihono Bourbon (Valentine)",
+            "variant_id": 102602,
+            "portrait": "assets/runners/102602.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Maruzensky (Summer)",
+            "variant_id": 100402,
+            "portrait": "assets/runners/100402.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Maruzensky",
+            "variant_id": 100401,
+            "portrait": "assets/runners/100401.webp"
+          }
+        ],
         "uma_picks": [],
-        "uma_bans": [],
+        "uma_bans": [
+          {
+            "team_id": "dominacion",
+            "uma": "Oguri Cap (Christmas)",
+            "variant_id": 100602,
+            "portrait": "assets/runners/100602.webp"
+          },
+          {
+            "team_id": "domineer",
+            "uma": "Agnes Digital",
+            "variant_id": 101901,
+            "portrait": "assets/runners/101901.webp"
+          }
+        ],
         "uma_additions": [],
-        "benched_umas": []
+        "benched_umas": [
+          {
+            "team_id": "domineer",
+            "uma": "Winning Ticket",
+            "variant_id": 103501,
+            "portrait": "assets/runners/103501.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "El Condor Pasa",
+            "variant_id": 101401,
+            "portrait": "assets/runners/101401.webp"
+          }
+        ]
       },
-      "lineup": [],
-      "lineup_source": "draft",
-      "player_points": [],
-      "player_points_recorded": false
+      "lineup": [
+        {
+          "team_id": "dominacion",
+          "uma": "Silence Suzuka",
+          "discord": "@AngelicVixen",
+          "benched": false,
+          "variant_id": 100201,
+          "portrait": "assets/runners/100201.webp",
+          "display_name": "AngelicVixen"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Air Groove",
+          "discord": "@Yanagi #1 Fan (Bloop)",
+          "benched": false,
+          "variant_id": 101801,
+          "portrait": "assets/runners/101801.webp",
+          "display_name": "bloop"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Taiki Shuttle",
+          "discord": "@McGee",
+          "benched": false,
+          "variant_id": 101001,
+          "portrait": "assets/runners/101001.webp",
+          "display_name": "McGee"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata",
+          "benched": false,
+          "variant_id": 103002,
+          "portrait": "assets/runners/103002.webp",
+          "display_name": "wata"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Oguri Cap",
+          "discord": "@Zanko",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Zanko"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Narita Taishin",
+          "discord": "@Emperor | The Radiant One",
+          "benched": false,
+          "variant_id": 105001,
+          "portrait": "assets/runners/105001.webp",
+          "display_name": "Emperor"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Biwa Hayahide",
+          "discord": "@JUNI",
+          "benched": false,
+          "variant_id": 102301,
+          "portrait": "assets/runners/102301.webp",
+          "display_name": "JUNI"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Inari One",
+          "discord": "@Sonic",
+          "benched": false,
+          "variant_id": 103401,
+          "portrait": "assets/runners/103401.webp",
+          "display_name": "Sonic"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Narita Brian",
+          "discord": "@Stayk, Taco Enjoyer",
+          "benched": false,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
+          "display_name": "Stayk"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Tamamo Cross (Festival)",
+          "discord": "@Zen",
+          "benched": false,
+          "variant_id": 102102,
+          "portrait": "assets/runners/102102.webp",
+          "display_name": "Zen"
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Winning Ticket",
+          "discord": null,
+          "benched": true,
+          "variant_id": 103501,
+          "portrait": "assets/runners/103501.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "El Condor Pasa",
+          "discord": null,
+          "benched": true,
+          "variant_id": 101401,
+          "portrait": "assets/runners/101401.webp",
+          "display_name": ""
+        }
+      ],
+      "lineup_source": "race",
+      "player_points": [
+        {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata",
+          "benched": false,
+          "variant_id": 103002,
+          "portrait": "assets/runners/103002.webp",
+          "display_name": "wata",
+          "points": 13
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Oguri Cap",
+          "discord": "@Zanko",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Zanko",
+          "points": 6
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Taiki Shuttle",
+          "discord": "@McGee",
+          "benched": false,
+          "variant_id": 101001,
+          "portrait": "assets/runners/101001.webp",
+          "display_name": "McGee",
+          "points": 4
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Silence Suzuka",
+          "discord": "@AngelicVixen",
+          "benched": false,
+          "variant_id": 100201,
+          "portrait": "assets/runners/100201.webp",
+          "display_name": "AngelicVixen",
+          "points": 1
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Air Groove",
+          "discord": "@Yanagi #1 Fan (Bloop)",
+          "benched": false,
+          "variant_id": 101801,
+          "portrait": "assets/runners/101801.webp",
+          "display_name": "bloop",
+          "points": 1
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Biwa Hayahide",
+          "discord": "@JUNI",
+          "benched": false,
+          "variant_id": 102301,
+          "portrait": "assets/runners/102301.webp",
+          "display_name": "JUNI",
+          "points": 7
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Tamamo Cross (Festival)",
+          "discord": "@Zen",
+          "benched": false,
+          "variant_id": 102102,
+          "portrait": "assets/runners/102102.webp",
+          "display_name": "Zen",
+          "points": 7
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Narita Taishin",
+          "discord": "@Emperor | The Radiant One",
+          "benched": false,
+          "variant_id": 105001,
+          "portrait": "assets/runners/105001.webp",
+          "display_name": "Emperor",
+          "points": 2
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Inari One",
+          "discord": "@Sonic",
+          "benched": false,
+          "variant_id": 103401,
+          "portrait": "assets/runners/103401.webp",
+          "display_name": "Sonic",
+          "points": 1
+        },
+        {
+          "team_id": "domineer",
+          "uma": "Narita Brian",
+          "discord": "@Stayk, Taco Enjoyer",
+          "benched": false,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
+          "display_name": "Stayk",
+          "points": 0
+        }
+      ],
+      "player_points_recorded": true
     },
     {
       "id": "r2-m4",
@@ -5998,8 +6975,27 @@
       "decision_reason": null,
       "source": "race_files",
       "races": [],
-      "draft": null,
-      "draft_path": null,
+      "draft": {
+        "schema_version": 1,
+        "match_id": "r3-m1",
+        "status": "pending",
+        "track_pool": [],
+        "track_picks": [],
+        "track_vetoes": [],
+        "final_tracks": [],
+        "tiebreaker_track": null,
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": [],
+        "training_start": null,
+        "training_deadline": null,
+        "notes": "",
+        "external_match_id": null,
+        "roster": []
+      },
+      "draft_path": "Dominator Tournament/R3/Dominator vs Dominance/draft.json",
       "draft_has_content": false,
       "reported_results": null,
       "report_path": null,
@@ -6035,7 +7031,13 @@
         }
       ],
       "participants": [
-        null,
+        {
+          "id": "dominacion",
+          "name": "Dominacion",
+          "seed": 3,
+          "club_id": "739453372",
+          "aliases": []
+        },
         {
           "id": "dominate",
           "name": "Dominate",
@@ -6046,13 +7048,32 @@
       ],
       "winner_id": null,
       "loser_id": null,
-      "status": "awaiting_opponent",
+      "status": "ready",
       "manual_scores": null,
       "decision_reason": null,
       "source": "race_files",
       "races": [],
-      "draft": null,
-      "draft_path": null,
+      "draft": {
+        "schema_version": 1,
+        "match_id": "r3-m2",
+        "status": "pending",
+        "track_pool": [],
+        "track_picks": [],
+        "track_vetoes": [],
+        "final_tracks": [],
+        "tiebreaker_track": null,
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": [],
+        "training_start": null,
+        "training_deadline": null,
+        "notes": "",
+        "external_match_id": null,
+        "roster": []
+      },
+      "draft_path": "Dominator Tournament/R3/Dominacion vs Dominate/draft.json",
       "draft_has_content": false,
       "reported_results": null,
       "report_path": null,
@@ -6129,6 +7150,7 @@
     "dominant-h",
     "dominante",
     "dominarium",
+    "domineer",
     "dominion",
     "dominium"
   ],
@@ -6201,24 +7223,24 @@
       ]
     },
     "domineer": {
-      "match_id": "r1-m2",
-      "round": "R1",
-      "source": "draft",
+      "match_id": "r2-m3",
+      "round": "R2",
+      "source": "race",
       "members": [
         {
-          "display_name": "Stayk, Taco Enjoyer"
-        },
-        {
-          "display_name": "Zen"
+          "display_name": "Emperor"
         },
         {
           "display_name": "JUNI"
         },
         {
-          "display_name": "Emperor | The Radiant One"
+          "display_name": "Sonic"
         },
         {
-          "display_name": "Sonic"
+          "display_name": "Stayk"
+        },
+        {
+          "display_name": "Zen"
         }
       ]
     },
@@ -6329,6 +7351,28 @@
         },
         {
           "display_name": "Toji Fushiguro"
+        }
+      ]
+    },
+    "dominacion": {
+      "match_id": "r2-m3",
+      "round": "R2",
+      "source": "race",
+      "members": [
+        {
+          "display_name": "AngelicVixen"
+        },
+        {
+          "display_name": "bloop"
+        },
+        {
+          "display_name": "McGee"
+        },
+        {
+          "display_name": "wata"
+        },
+        {
+          "display_name": "Zanko"
         }
       ]
     },
