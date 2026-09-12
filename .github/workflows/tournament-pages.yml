@@ -27,6 +27,8 @@ jobs:
         run: python scripts/tournament_engine.py site
       - name: Check replay playback against the recorded races
         run: node tests/test_replay_client.js
+      - name: Check award calculations and public reveal protection
+        run: node tests/test_awards_client.js
       - name: Configure Pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
