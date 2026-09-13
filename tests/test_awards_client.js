@@ -100,18 +100,59 @@ check('Exact ties stay pending until one sourced choice',()=>{
 });
 check('Public HTML hides all award results and private HTML escapes names',()=>{
  const f=fixture(),s=run(f),publicHTML=UI.page(f.index,f.config,s,{revealed:false});
- assert.equal((publicHTML.match(/data-award=/g)||[]).length,20);assert.equal((publicHTML.match(/class="award-group /g)||[]).length,3);assert(!publicHTML.includes('Bakushin'));assert(!publicHTML.includes('Ada'));assert(!publicHTML.includes('See the receipts'));assert(publicHTML.includes('Tournament statistics'));
+ assert.equal((publicHTML.match(/data-open-award=/g)||[]).length,21);assert.equal((publicHTML.match(/class="award-group /g)||[]).length,3);assert(!publicHTML.includes('Bakushin'));assert(!publicHTML.includes('Ada'));assert(!publicHTML.includes('See the receipts'));assert(publicHTML.includes('Tournament statistics'));
  assert.deepEqual(E.groups.map(group=>group.name),['Tournament Honors','Build & Strategy','Race Moments']);
  assert(!publicHTML.includes('Featured Honors'));assert(publicHTML.includes('Agnes Digital Award'));assert(publicHTML.includes('Gate Kept (Falcon) Award'));
  assert(!/Round 2 onward/i.test(publicHTML));assert(!publicHTML.includes('Change PNG / GIF'));assert(!publicHTML.includes('data-art='));
  const configured=E.catalog({images:{'hard-carry':'hard.png','top-road':'ntr.png',nature:'nature.gif'}});assert.equal(configured.find(a=>a.id==='hard-carry').image,'hard.png');assert.equal(configured.find(a=>a.id==='top-road').image,'ntr.png');assert.equal(configured.find(a=>a.id==='nature').image,'nature.gif');
- award(s,'hard-carry').winner.name='<img onerror="alert(1)">';const privateHTML=UI.page(f.index,f.config,s,{revealed:true,local:true});assert(privateHTML.includes('&lt;img onerror='));assert(!privateHTML.includes('<img onerror='));assert(privateHTML.includes('See the receipts'));assert(!/Round 2 onward/i.test(privateHTML));assert(!privateHTML.includes('Change PNG / GIF'));assert(!privateHTML.includes('data-art='));
+ award(s,'hard-carry').winner.name='<img onerror="alert(1)">';const privateHTML=UI.page(f.index,f.config,s,{revealed:true,local:true});assert(privateHTML.includes('&lt;img onerror='));assert(!privateHTML.includes('<img onerror='));assert(UI.awardCard(award(s,'hard-carry'),{revealed:true,standings:s}).includes('See the receipts'));assert(!/Round 2 onward/i.test(privateHTML));assert(!privateHTML.includes('Change PNG / GIF'));assert(!privateHTML.includes('data-art='));
+});
+check('Individual build awards do not reward accumulated rounds or build totals',()=>{
+ const f=fixture(),r=f.docs.race2;
+ r.results[0].stats={speed:1100,stamina:900,power:900,guts:700,wisdom:100};
+ r.results[0].skills=[{id:200461},{id:200014}];
+ for(const row of r.results.slice(1))row.skills=[{id:200014}];
+ const ids=['all-star','hot-headed','fine-motion','mejiro'],initial=run(f);
+ for(let i=0;i<4;i++){
+  const next=structuredClone(r);next.id='extra'+i;next.raw_sha256=next.id;next.results=next.results.slice(1);
+  next.results[0].stats.speed+=i;f.docs[next.id]=next;
+  f.index.matches.push({...f.index.matches[0],id:'r3-m'+i,round:'R3',races:[{id:next.id,race_folder:'01 - Test'}]});
+ }
+ const after=run(f);
+ assert(after.players.find(p=>p.name==='Bea').base_total>after.players.find(p=>p.name==='Ada').base_total);
+ for(const id of ids){const a=award(after,id);assert.equal(a.winner.name,'Ada');assert.equal(a.winner.value,award(initial,id).winner.value);assert.equal(a.winner.build.uma,'Gold Ship');assert.equal(a.winner.build.match_id,'r2-m1');assert.equal(a.tiebreaks?.length||a.tie.length,0);}
+ assert.equal(award(after,'mejiro').winner.value,670);
+ const html=UI.awardCard(award(after,'all-star'),{revealed:true,standings:after});assert(html.includes('One individual Uma build'));assert(html.includes('Gold Ship'));
+});
+check('Single-build values tie without using number of rounds; missing stats and prices stay unavailable',()=>{
+ const f=fixture();f.docs.race2.results[0].stats={...f.docs.race2.results[2].stats};
+ const r=structuredClone(f.docs.race2);r.id='second';r.raw_sha256=r.id;r.results=r.results.slice(0,1);f.docs.second=r;
+ f.index.matches.push({...f.index.matches[0],id:'r3-m1',round:'R3',races:[{id:r.id,race_folder:'01 - Test'}]});
+ assert.equal(award(run(f),'all-star').status,'tie');
+ delete f.docs.race2.results[1].stats.wisdom;assert.equal(award(run(f),'all-star').status,'unavailable');
+ f.docs.race2.results[1].skills.push({id:9999999});assert.equal(award(run(f),'mejiro').status,'unavailable');
+});
+check('Zero HP counts exact finishes once per runner and never rounds positive HP down',()=>{
+ const f=fixture(),r=f.docs.race2;
+ for(const frame of r.replay.frames){frame.r[0][3]=0;frame.r[1][3]=.02;frame.r[2][3]=1;}
+ r.replay.frames.at(-1).r[2][3]=0;
+ const second=structuredClone(r);second.id='second';second.raw_sha256=second.id;second.race_folder='02 - Test';f.docs.second=second;f.index.matches[0].races.push({id:second.id,race_folder:second.race_folder});
+ let s=run(f),a=award(s,'goo-goo');assert.equal(a.winner.name,'Ada');assert.equal(a.winner.value,2);assert.equal(s.players.find(p=>p.name==='Bea').zero_hp_finishes,0);assert.equal(s.players.find(p=>p.name==='Cy').zero_hp_finishes,0);assert.equal(s.players[0].build_count,1);
+ assert(UI.awardCard(a,{revealed:true,standings:s}).includes('0 HP at finish · Counts'));
+ delete r.replay.frames.at(-1).r[1][3];assert.equal(award(run(f),'goo-goo').status,'unavailable');
+ const clean=fixture();assert.equal(award(run(clean),'goo-goo').status,'pending');
+ clean.docs.race2.replay.frames[1].r[0][3]=0;assert.equal(award(run(clean),'goo-goo').status,'pending');
+});
+check('Public trophy details contain rules but cannot expose supplied private winners',()=>{
+ const f=fixture(),s=run(f),a=award(s,'all-star');
+ const html=UI.awardCard(a,{revealed:false,standings:s});assert(html.includes('How this award is decided'));assert(html.includes('To be revealed'));assert(!html.includes('Cy'));assert(!html.includes('See the receipts'));
+ const page=UI.page(f.index,f.config,s,{revealed:false});assert(page.includes('<dialog'));assert(page.includes('aria-haspopup="dialog"'));assert(!page.includes('CURRENT LEADER'));
 });
 const index=JSON.parse(fs.readFileSync('data/tournament-index.json')),config=JSON.parse(fs.readFileSync('config/awards.json')),docs={};
 for(const m of index.matches)for(const f of m.races)docs[f.id]=JSON.parse(fs.readFileSync(f.data_file));
 require('../assets/award-telemetry.js');
 const real=E.compute(index,docs,config,catalogue,require('../assets/award-telemetry-data.json'));
-assert.deepEqual(real.awards.map(a=>a.id),['mvp','wheelchair','hard-carry','top-road','nature','gate-kept','all-star','performance-anxiety','hot-headed','fine-motion','mejiro','festa','flyingsparks','nitro','double-jet','bourbon','blocked-count','blocked-time','neck','fences']);
+assert.deepEqual(real.awards.map(a=>a.id),['mvp','wheelchair','hard-carry','top-road','nature','gate-kept','all-star','performance-anxiety','hot-headed','fine-motion','mejiro','festa','flyingsparks','nitro','double-jet','bourbon','blocked-count','blocked-time','neck','fences','goo-goo']);
 assert.equal(award(real,'neck').status,'provisional');assert.equal(award(real,'fences').status,'provisional');
 check('Every current export is included, and official points agree',()=>{
  assert.deepEqual(real.issues,[]);
@@ -124,9 +165,9 @@ check('Every current export is included, and official points agree',()=>{
  assert.equal(award(real,'gate-kept').winner.name,'CallMeNeko');
 });
 (async()=>{
- const root={innerHTML:''},requests=[],ctx={console,URLSearchParams,location:{search:'?reveal=true&private=true'},document:{getElementById:()=>root},fetch:async url=>{requests.push(url);return {ok:true,json:async()=>url.includes('index')?index:{...config,reveal:true}};}};
+ const dialog={querySelector:()=>({})},root={innerHTML:'',querySelector:()=>dialog,querySelectorAll:()=>[]},requests=[],ctx={console,URLSearchParams,location:{search:'?reveal=true&private=true'},document:{getElementById:()=>root},fetch:async url=>{requests.push(url);return {ok:true,json:async()=>url.includes('index')?index:{...config,reveal:true}};}};
  vm.createContext(ctx);vm.runInContext(fs.readFileSync('assets/award-engine.js','utf8'),ctx);vm.runInContext(fs.readFileSync('assets/awards.js','utf8'),ctx);
  ctx.AwardEngine.compute=()=>{throw Error('Public page attempted to calculate winners');};await ctx.AwardUI.publicMount();
- assert.deepEqual(requests.sort(),['config/awards.json','data/tournament-index.json']);assert(root.innerHTML.includes('To be revealed'));assert(!root.innerHTML.includes('CURRENT LEADER'));assert(!root.innerHTML.includes('could not load'));checks++;
+ assert.deepEqual(requests.sort(),['config/awards.json','data/tournament-index.json']);assert(root.innerHTML.includes('Their winners are still under wraps'));assert.equal((root.innerHTML.match(/data-open-award=/g)||[]).length,21);assert(!root.innerHTML.includes('CURRENT LEADER'));assert(!root.innerHTML.includes('could not load'));checks++;
  console.log(`${checks} award scenarios passed; ${real.coverage.verified_races} real races reconciled. Public winner data remains absent.`);
 })().catch(e=>{console.error(e);process.exitCode=1;});
