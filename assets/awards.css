@@ -57,3 +57,6 @@
 /* Long names use the same plaque height as short names on every shelf. */
 .trophy-slot{height:340px;min-height:340px}.trophy-stage{height:194px;flex:0 0 194px}.trophy-plaque{height:104px;min-height:104px;flex:0 0 104px}
 @media(max-width:650px){.trophy-slot{height:311px;min-height:311px}.trophy-stage{height:169px;flex-basis:169px}}
+/* Dark-backed custom artwork blends into the cabinet; the two original alpha trophies stay unchanged. */
+.trophy-slot{isolation:auto}
+.shelf-trophy.trophy-dark,.award-trophy.trophy-dark{mix-blend-mode:lighten;filter:none}

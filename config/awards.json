@@ -39,5 +39,26 @@
     "mvp": "assets/awards/mvp.gif",
     "wheelchair": "assets/awards/wheelchair.jpg",
     "goo-goo": "assets/awards/no-more-goo-goo-babies.gif"
+  },
+  "trophies": {
+    "mvp": "assets/awards/trophy-mvp.png",
+    "wheelchair": "assets/awards/trophy-wheelchair.png",
+    "hard-carry": "assets/awards/trophy-hard-carry.png",
+    "top-road": "assets/awards/trophy-top-road.png",
+    "nature": "assets/awards/trophy-nature.png",
+    "gate-kept": "assets/awards/trophy-gate-kept.png",
+    "all-star": "assets/awards/trophy-all-star.png",
+    "performance-anxiety": "assets/awards/trophy-performance-anxiety.png",
+    "hot-headed": "assets/awards/trophy-hot-headed.png",
+    "mejiro": "assets/awards/trophy-mejiro.png",
+    "festa": "assets/awards/trophy-festa.png",
+    "flyingsparks": "assets/awards/trophy-flyingsparks.png",
+    "double-jet": "assets/awards/trophy-double-jet.png",
+    "bourbon": "assets/awards/trophy-bourbon.png",
+    "blocked-count": "assets/awards/trophy-blocked-count.png",
+    "blocked-time": "assets/awards/trophy-blocked-time.png",
+    "neck": "assets/awards/trophy-neck.png",
+    "fences": "assets/awards/trophy-fences.png",
+    "goo-goo": "assets/awards/trophy-goo-goo.png"
   }
 }
