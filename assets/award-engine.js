@@ -22,9 +22,9 @@
   ['fine-motion','Fine Motion Wit Award','Given to the player with the least combined base Wit across their fielded builds.','wisdom','Wit',1,['average_wisdom',1]],
   ['mejiro','The Mejiro Fund Award','Given to the player with the highest full-price SP total for purchased skills across their played builds, before hint discounts.','sp','SP',-1,['bought_skills',-1]],
   ['blocked-count','Asslicker Award','Given to the player whose Umas were blocked the most times.','blocked_incidents','blocking incidents received',-1,['blocked_seconds',-1]],
-  ['blocked-time','Asslicker Award','Given to the player whose Umas spent the longest total time being blocked.','blocked_seconds','seconds blocked',-1,['blocked_incidents',-1]],
+  ['blocked-time','Agnes Digital Award','Given to the player whose Umas spent the longest total time being blocked.','blocked_seconds','seconds blocked',-1,['blocked_incidents',-1]],
   ['neck','The Neck and Neck Award','Given to the player whose Umas spent the most estimated total time dueling.','duel_seconds','seconds dueling',-1,[]],
-  ['gate-kept','Gate Kept Award','Given to the player with the most official disqualifications. Round 1 DQ records count here.','dqs','disqualifications',-1,[]],
+  ['gate-kept','Gate Kept (Falcon) Award','Given to the player with the most official disqualifications. Round 1 DQ records count here.','dqs','disqualifications',-1,[]],
   ['fences','Swing for the Fences Award','Given to the player whose Umas lost the most estimated distance to lane changes and wider cornering (WT).','lane_loss_m','metres lost',-1,[]],
   ['mvp','MVP Award','Given to the player who earned the most tournament points after playing in at least two eligible rounds.','points','points',-1,['points_per_race',-1,'starts',1]],
   ['wheelchair','The Wheelchair Award','Given to the player who earned the fewest tournament points after playing in at least two eligible rounds.','points','points',1,['points_per_race',1,'starts',-1]]
@@ -51,9 +51,12 @@
   mvp:'Requires appearances in at least two eligible tournament rounds. Most points; ties: more points per race, then fewer starts.',
   wheelchair:'Requires appearances in at least two eligible tournament rounds. Ties: fewer points per race, then more starts.'
  };
-const firstAwards=['nitro','fine-motion','hard-carry','top-road','nature'];
- const awardType=id=>firstAwards.includes(id)?'Featured Honors':['all-star','performance-anxiety','festa','flyingsparks','hot-headed','mejiro'].includes(id)?'Build & Strategy':['mvp','wheelchair'].includes(id)?'Tournament Honors':'Race Moments';
- function catalog(config={}){return [...firstAwards.map(id=>specs.find(s=>s[0]===id)),...specs.filter(s=>!firstAwards.includes(s[0]))].map(([id,name,description,metric,unit,direction,tie])=>({id,name,description,metric,unit,direction,tie,rule:rules[id],image:config.images?.[id]||'',trophy:id==='nitro'?'nitro':id==='fine-motion'?'wit':'champion',category:awardType(id)}));}
+ const groups=[
+  {id:'tournament',name:'Tournament Honors',description:'Tournament points, podium finishes, and official disqualifications.',awards:['mvp','wheelchair','hard-carry','top-road','nature','gate-kept']},
+  {id:'build',name:'Build & Strategy',description:'Roster construction, stats, skills, and points efficiency.',awards:['all-star','performance-anxiety','hot-headed','fine-motion','mejiro','festa','flyingsparks']},
+  {id:'moments',name:'Race Moments',description:'The incidents, interactions, and replay-analysis awards.',awards:['nitro','double-jet','bourbon','blocked-count','blocked-time','neck','fences']}
+ ];
+ function catalog(config={}){return groups.flatMap(group=>group.awards.map(id=>specs.find(s=>s[0]===id)).map(([id,name,description,metric,unit,direction,tie])=>({id,name,description,metric,unit,direction,tie,rule:rules[id],image:config.images?.[id]||'',trophy:id==='nitro'?'nitro':id==='fine-motion'?'wit':'champion',category:group.name})));}
  function nativeUnique(id,variant){
   const text=String(variant),own=100000+10000*(Number(text.slice(-2))-1)+Number(text.slice(1,-2))*10+1;
   return id===own||id===own-90000;
@@ -202,6 +205,6 @@ const firstAwards=['nitro','fine-motion','hard-carry','top-road','nature'];
   });
   return {schema_version:1,generated_at:new Date().toISOString(),round_min:minRound,players:list,awards,coverage:{expected_races:expectedRaces,loaded_files:loadedRaces,verified_races:verifiedRaces,played_builds:builds.size,players:list.filter(p=>p.starts>0).length},issues,selected_matches:[...selectedIds]};
  }
- global.AwardEngine={catalog,compute,purchasedSkills,nativeUnique,observedIntervals};
+ global.AwardEngine={groups,catalog,compute,purchasedSkills,nativeUnique,observedIntervals};
  if(typeof module!=='undefined'&&module.exports)module.exports=global.AwardEngine;
 })(typeof window!=='undefined'?window:globalThis);

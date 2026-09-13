@@ -1,6 +1,12 @@
 # Awards and private rehearsal
 
-The Stats page publishes 20 blank cards: 19 award names, with separate Asslicker honors for incidents received and time spent blocked. Bakushin is pending and excluded. The cards use the supplied award images and animated GIFs alongside three custom trophy illustrations. Performance Anxiety, Nakayama Festa, and Flyingsparks use the organizer’s PNGs; Hot Headed and Mejiro Fund use the organizer’s original animated GIFs. Club statistics remain below the cards. The first five cards are Nitro, Fine Motion Wit, Hard Carry, Crying NTR, and Force of Nature. Images render at full width and their natural height so they never crop. Award cards are divided into Featured Honors, Build & Strategy, Race Moments, and Tournament Honors.
+The Stats page publishes 20 blank award cards. Asslicker counts incidents received; Agnes Digital counts time spent blocked. Bakushin is pending and excluded. The cards use the supplied award images and animated GIFs alongside three custom trophy illustrations. Performance Anxiety, Nakayama Festa, and Flyingsparks use the organizer’s PNGs; Hot Headed and Mejiro Fund use the organizer’s original animated GIFs. Club statistics remain below the cards. Images render at full width and their natural height so they never crop.
+
+The sections and cards appear in this order:
+
+- Tournament Honors: MVP, The Wheelchair, Hard Carry, Crying NTR, Force of Nature, Gate Kept (Falcon).
+- Build & Strategy: All Star Trainer, Professor of Performance Anxiety, Hot Headed, Fine Motion Wit, The Mejiro Fund, Nakayama Festa, Flyingsparks.
+- Race Moments: The 5 Nitro Incident, Double Jet, Retired Bourbon, Asslicker, Agnes Digital, The Neck and Neck, Swing for the Fences.
 
 ## Reveal boundary
 
