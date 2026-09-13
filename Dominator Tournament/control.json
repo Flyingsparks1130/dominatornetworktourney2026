@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 61,
+  "revision": 62,
   "decisions": {
     "r1-m1": {
       "winner_id": "dominarium",
@@ -34934,6 +34934,17 @@
       "path": "Dominator Tournament/R3/Dominacion vs Dominate/draft.json",
       "before_sha256": null,
       "after_sha256": "1e0030ceac5b8b465a41c73ecfd617aa57c7c526a102d55c3635755c63c012ba"
+    },
+    {
+      "at": "2026-09-13T13:00:37Z",
+      "actor": "organizer",
+      "action": "draft",
+      "match_id": "r3-m1",
+      "reason": "Record the Dominator vs Dominance Round 3 race schedule and complete draft actions from organizer screenshots.",
+      "revision": 62,
+      "path": "Dominator Tournament/R3/Dominator vs Dominance/draft.json",
+      "before_sha256": "17cc79e33f41a5c5af84fb5cb072d0938d85d35996f0a4d28ce24b7a44113db3",
+      "after_sha256": "04541882a2e454ff1527dfa66edb33f4c654a8f120975c39b25b9a9067dce568"
     }
   ]
 }
