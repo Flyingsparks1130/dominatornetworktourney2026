@@ -20,8 +20,9 @@
   "images": {
     "nitro": "assets/awards/nitro-incident.png",
     "fine-motion": "assets/awards/fine-motion-wit.png",
-    "hard-carry": "assets/awards/hard-carry.png",
-    "top-road": "assets/awards/crying-ntr.png",
-    "nature": "assets/awards/force-of-nature.gif"
+    "hard-carry": "assets/awards/hard-carry-animated.gif",
+    "top-road": "assets/awards/crying-ntr-animated.gif",
+    "nature": "assets/awards/force-of-nature.gif",
+    "all-star": "assets/awards/all-star-animated.gif"
   }
 }

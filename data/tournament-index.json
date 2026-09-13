@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T14:43:45Z",
+  "generated_at": "2026-09-12T23:16:21Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
@@ -2811,8 +2811,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominator": 0,
-            "dominarium": 7
+            "dominarium": 7,
+            "dominator": 0
           },
           "data_file": "data/tournament-races/56b65d20b64b13ce24a7.json"
         },
@@ -2837,8 +2837,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominator": 6,
-            "dominarium": 1
+            "dominarium": 1,
+            "dominator": 6
           },
           "data_file": "data/tournament-races/e11f7645e1b2ca830e18.json"
         },
@@ -2863,8 +2863,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominator": 7,
-            "dominarium": 0
+            "dominarium": 0,
+            "dominator": 7
           },
           "data_file": "data/tournament-races/42e88c5ea2b55f0aed64.json"
         },
@@ -2889,8 +2889,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominator": 4,
-            "dominarium": 3
+            "dominarium": 3,
+            "dominator": 4
           },
           "data_file": "data/tournament-races/7527405cfa43908ba451.json"
         },
@@ -2915,8 +2915,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominator": 5,
-            "dominarium": 2
+            "dominarium": 2,
+            "dominator": 5
           },
           "data_file": "data/tournament-races/ea90401c018369c4fd3a.json"
         },
@@ -2941,8 +2941,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominator": 7,
-            "dominarium": 0
+            "dominarium": 0,
+            "dominator": 7
           },
           "data_file": "data/tournament-races/dbeb692653faa9b3bdda.json"
         }
@@ -3866,8 +3866,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominance": 4,
-            "dominant-h": 3
+            "dominant-h": 3,
+            "dominance": 4
           },
           "data_file": "data/tournament-races/6b375895af26d382dc5b.json"
         },
@@ -3892,8 +3892,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominance": 5,
-            "dominant-h": 2
+            "dominant-h": 2,
+            "dominance": 5
           },
           "data_file": "data/tournament-races/6c7b39c05c11ae6e840e.json"
         },
@@ -3918,8 +3918,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominance": 6,
-            "dominant-h": 1
+            "dominant-h": 1,
+            "dominance": 6
           },
           "data_file": "data/tournament-races/e8033244e144f415b64f.json"
         },
@@ -3944,8 +3944,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominance": 5,
-            "dominant-h": 2
+            "dominant-h": 2,
+            "dominance": 5
           },
           "data_file": "data/tournament-races/9e3e00480b7fde58c39a.json"
         },
@@ -3970,8 +3970,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominance": 2,
-            "dominant-h": 5
+            "dominant-h": 5,
+            "dominance": 2
           },
           "data_file": "data/tournament-races/87d47b802411a4514be0.json"
         },
@@ -3996,8 +3996,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominance": 1,
-            "dominant-h": 6
+            "dominant-h": 6,
+            "dominance": 1
           },
           "data_file": "data/tournament-races/10f9086a1ed9a5f9368f.json"
         },
@@ -4022,8 +4022,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominance": 4,
-            "dominant-h": 3
+            "dominant-h": 3,
+            "dominance": 4
           },
           "data_file": "data/tournament-races/4814a3b2d89cf0102452.json"
         }
@@ -5002,8 +5002,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "domineer": 5,
-            "dominacion": 2
+            "dominacion": 2,
+            "domineer": 5
           },
           "data_file": "data/tournament-races/77ff35c7e057c068ae2a.json"
         },
@@ -5028,8 +5028,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "domineer": 3,
-            "dominacion": 4
+            "dominacion": 4,
+            "domineer": 3
           },
           "data_file": "data/tournament-races/d670795870ca6ea3e08f.json"
         },
@@ -5054,8 +5054,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "domineer": 4,
-            "dominacion": 3
+            "dominacion": 3,
+            "domineer": 4
           },
           "data_file": "data/tournament-races/ed4745d845438e7684b6.json"
         },
@@ -5080,8 +5080,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "domineer": 3,
-            "dominacion": 4
+            "dominacion": 4,
+            "domineer": 3
           },
           "data_file": "data/tournament-races/3073f39e17998d4eeaab.json"
         },
@@ -5106,8 +5106,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "domineer": 2,
-            "dominacion": 5
+            "dominacion": 5,
+            "domineer": 2
           },
           "data_file": "data/tournament-races/0920a2b9c8bcad93181f.json"
         },
@@ -5132,8 +5132,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "domineer": 0,
-            "dominacion": 7
+            "dominacion": 7,
+            "domineer": 0
           },
           "data_file": "data/tournament-races/03d59f7bd6a0b45e9706.json"
         }
