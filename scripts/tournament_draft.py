@@ -5,7 +5,7 @@ STRING_LISTS = ('track_pool', 'final_tracks')
 EVENT_LISTS = {
     'track_picks': 'track', 'track_vetoes': 'track',
     'uma_pre_bans': 'uma', 'uma_picks': 'uma', 'uma_bans': 'uma',
-    'uma_additions': 'uma', 'benched_umas': 'uma',
+    'uma_additions': 'uma', 'benched_umas': 'uma', 'uma_selections': 'uma',
 }
 
 
@@ -15,7 +15,7 @@ def blank_draft(match_id):
         'track_pool': [], 'track_picks': [], 'track_vetoes': [],
         'final_tracks': [], 'tiebreaker_track': None,
         'uma_pre_bans': [], 'uma_picks': [], 'uma_bans': [],
-        'uma_additions': [], 'benched_umas': [],
+        'uma_additions': [], 'benched_umas': [], 'uma_selections': [],
         'training_start': None, 'training_deadline': None, 'notes': '',
         'external_match_id': None, 'roster': [],
     }

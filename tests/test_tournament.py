@@ -130,6 +130,16 @@ class EngineTests(unittest.TestCase):
         self.assertEqual(r['races'],{});self.assertFalse(any(m['scores'] or m['winner_id'] for m in by_id.values()))
         folder=self.root/ARCHIVE/'R1/Dominion vs Dominarium';folder.rename(folder.with_name('Renamed match'))
         self.assertEqual(build(self.root)['index']['matches'][0]['draft']['track_pool'],['R1 pool'])
+    def test_final_selections_do_not_invent_players_benches_or_results(self):
+        selections=[{'team_id':'dominion','uma':f'Uma {i}'} for i in range(6)]
+        r=self.draft(status='locked',uma_selections=selections)
+        m=next(m for m in r['index']['matches'] if m['id']=='r1-m1')
+        self.assertEqual(m['draft_uma_actions']['uma_selections'],selections)
+        self.assertEqual(m['draft_lineup'],[])
+        self.assertEqual(m['draft']['benched_umas'],[])
+        self.assertFalse(m['scores'] or m['winner_id'] or m['races'])
+        with self.assertRaises(TournamentError):
+            self.draft(uma_selections=[{'team_id':'dominator','uma':'Wrong club'}])
     def test_wrong_draft_match_and_club_rejected_without_overwrite(self):
         self.draft(track_pool=['Keep this pool'])
         path=self.root/ARCHIVE/'R1/Dominion vs Dominarium/draft.json';before=path.read_bytes()

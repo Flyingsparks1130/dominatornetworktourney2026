@@ -25,7 +25,7 @@ def attach_participants(matches, race_docs, portraits=None):
                                 for r in draft]
         match['draft_uma_actions'] = {
             key: [{**r, **portraits.get(r['uma'], {})} for r in (match.get('draft') or {}).get(key, [])]
-            for key in ('uma_pre_bans', 'uma_picks', 'uma_bans', 'uma_additions', 'benched_umas')}
+            for key in ('uma_pre_bans', 'uma_picks', 'uma_bans', 'uma_additions', 'benched_umas', 'uma_selections')}
         verified = [race_docs[r['id']] for r in match['races'] if r['scoring_verified']]
 
         def runner(row):

@@ -1,20 +1,145 @@
 {
   "schema_version": 1,
   "match_id": "r3-m2",
-  "status": "pending",
+  "status": "locked",
   "track_pool": [],
-  "track_picks": [],
-  "track_vetoes": [],
-  "final_tracks": [],
-  "tiebreaker_track": null,
-  "uma_pre_bans": [],
+  "track_picks": [
+    {
+      "team_id": "dominate",
+      "track": "Fukushima 2000m · Turf · Right · Winter / Sunny / Firm"
+    },
+    {
+      "team_id": "dominacion",
+      "track": "Nakayama (Inner) 2500m · Turf · Right · Summer / Sunny / Firm"
+    },
+    {
+      "team_id": "dominate",
+      "track": "Hakodate 2000m · Turf · Right · Fall / Cloudy / Good"
+    },
+    {
+      "team_id": "dominacion",
+      "track": "Niigata (Outer) 2000m · Turf · Left · Summer / Sunny / Good"
+    },
+    {
+      "team_id": "dominate",
+      "track": "Nakayama (Inner) 1800m · Turf · Right · Summer / Sunny / Firm"
+    },
+    {
+      "team_id": "dominacion",
+      "track": "Kyoto (Outer) 2200m · Turf · Right · Spring / Rainy / Heavy"
+    },
+    {
+      "team_id": "dominate",
+      "track": "Hakodate 1000m · Turf · Right · Fall / Sunny / Good"
+    },
+    {
+      "team_id": "dominacion",
+      "track": "Kyoto (Outer) 3000m · Turf · Right · Fall / Sunny / Firm"
+    }
+  ],
+  "track_vetoes": [
+    {
+      "team_id": "dominate",
+      "track": "Kyoto (Outer) 3000m · Turf · Right · Fall / Sunny / Firm"
+    },
+    {
+      "team_id": "dominacion",
+      "track": "Hakodate 1000m · Turf · Right · Fall / Sunny / Good"
+    }
+  ],
+  "final_tracks": [
+    "Fukushima 2000m · Turf · Right · Winter / Sunny / Firm",
+    "Nakayama (Inner) 2500m · Turf · Right · Summer / Sunny / Firm",
+    "Hakodate 2000m · Turf · Right · Fall / Cloudy / Good",
+    "Niigata (Outer) 2000m · Turf · Left · Summer / Sunny / Good",
+    "Nakayama (Inner) 1800m · Turf · Right · Summer / Sunny / Firm",
+    "Kyoto (Outer) 2200m · Turf · Right · Spring / Rainy / Heavy"
+  ],
+  "tiebreaker_track": "Kyoto (Inner) 1200m · Turf · Right · Winter / Cloudy / Firm",
+  "uma_pre_bans": [
+    {
+      "team_id": "dominate",
+      "uma": "Gold Ship"
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Narita Taishin"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Maruzensky (Summer)"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Seiun Sky"
+    }
+  ],
   "uma_picks": [],
-  "uma_bans": [],
+  "uma_bans": [
+    {
+      "team_id": "dominacion",
+      "uma": "Oguri Cap (Christmas)"
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Mihono Bourbon (Valentine)"
+    }
+  ],
   "uma_additions": [],
   "benched_umas": [],
   "training_start": null,
   "training_deadline": null,
-  "notes": "",
+  "notes": "Final selections, pre-bans, enemy vetoes and the seven-race schedule transcribed from the organizer screenshot. Dominate is the left team; Team 2 is Dominacion, its Round 3 bracket opponent. Selections follow the displayed team order; the original snake-pick chronology and additional-pick phase were not shown. Vetoes are attributed to the club that made them. Player assignments, benches, training dates and the external match ID were not supplied. The screenshot shows 0 races reported; official scores and results remain pending.",
   "external_match_id": null,
-  "roster": []
+  "roster": [],
+  "uma_selections": [
+    {
+      "team_id": "dominate",
+      "uma": "Kitasan Black"
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Mayano Top Gun"
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Mejiro McQueen (Summer)"
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Mihono Bourbon"
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Silence Suzuka"
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Smart Falcon"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Agnes Digital"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Meisho Doto"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Mayano Top Gun (Wedding)"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Oguri Cap"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Rice Shower (Halloween)"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Air Groove"
+    }
+  ]
 }
