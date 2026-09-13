@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T23:16:21Z",
+  "generated_at": "2026-09-13T13:02:52Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
-  "revision": 61,
+  "revision": 62,
   "rounds": [
     {
       "id": "R1",
@@ -6978,25 +6978,158 @@
       "draft": {
         "schema_version": 1,
         "match_id": "r3-m1",
-        "status": "pending",
+        "status": "locked",
         "track_pool": [],
-        "track_picks": [],
-        "track_vetoes": [],
-        "final_tracks": [],
-        "tiebreaker_track": null,
-        "uma_pre_bans": [],
-        "uma_picks": [],
-        "uma_bans": [],
-        "uma_additions": [],
+        "track_picks": [
+          {
+            "team_id": "dominator",
+            "track": "Chukyo 2200m · Turf · Summer / Sunny / Firm"
+          },
+          {
+            "team_id": "dominance",
+            "track": "Nakayama (Inner) 2000m · Turf · Fall / Sunny / Good"
+          },
+          {
+            "team_id": "dominator",
+            "track": "Hanshin (Outer) 2600m · Turf · Fall / Rainy / Heavy"
+          },
+          {
+            "team_id": "dominance",
+            "track": "Nakayama (Inner) 1800m · Turf"
+          },
+          {
+            "team_id": "dominator",
+            "track": "Tokyo 2300m · Turf · Spring / Sunny / Firm"
+          },
+          {
+            "team_id": "dominance",
+            "track": "Hakodate 1800m · Turf · Spring / Sunny / Good"
+          },
+          {
+            "team_id": "dominator",
+            "track": "Hanshin (Outer to Inner) 3200m · Turf"
+          },
+          {
+            "team_id": "dominance",
+            "track": "Hanshin (Inner) 2000m · Turf · Summer / Rainy / Heavy"
+          }
+        ],
+        "track_vetoes": [
+          {
+            "team_id": "dominator",
+            "track": "Nakayama (Inner) 1800m · Turf"
+          },
+          {
+            "team_id": "dominance",
+            "track": "Hanshin (Outer to Inner) 3200m · Turf"
+          }
+        ],
+        "final_tracks": [
+          "Chukyo 2200m · Turf · Summer / Sunny / Firm",
+          "Nakayama (Inner) 2000m · Turf · Fall / Sunny / Good",
+          "Hanshin (Outer) 2600m · Turf · Fall / Rainy / Heavy",
+          "Hakodate 1800m · Turf · Spring / Sunny / Good",
+          "Tokyo 2300m · Turf · Spring / Sunny / Firm",
+          "Hanshin (Inner) 2000m · Turf · Summer / Rainy / Heavy"
+        ],
+        "tiebreaker_track": "Chukyo 2000m · Turf · Spring / Rainy / Heavy",
+        "uma_pre_bans": [
+          {
+            "team_id": "dominator",
+            "uma": "Satono Diamond"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Oguri Cap (Christmas)"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Seiun Sky"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Mihono Bourbon (Valentine)"
+          }
+        ],
+        "uma_picks": [
+          {
+            "team_id": "dominator",
+            "uma": "Maruzensky (Summer)"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "T.M. Opera O (New Year)"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Oguri Cap"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Gold Ship"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Agnes Digital"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Mejiro Ryan"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Narita Brian"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Mayano Top Gun"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Mejiro Bright"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Eishin Flash"
+          }
+        ],
+        "uma_bans": [
+          {
+            "team_id": "dominance",
+            "uma": "Mayano Top Gun"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Mejiro Ryan"
+          }
+        ],
+        "uma_additions": [
+          {
+            "team_id": "dominance",
+            "uma": "Grass Wonder"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Kitasan Black"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Special Week"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Daiwa Scarlet"
+          }
+        ],
         "benched_umas": [],
         "training_start": null,
         "training_deadline": null,
-        "notes": "",
+        "notes": "Draft and race schedule transcribed from the organizer screenshots. Pick, pre-ban and veto order is preserved within each phase. Player assignments, benches, training dates and race results have not been supplied. Conditions for the two vetoed tracks were not shown.",
         "external_match_id": null,
         "roster": []
       },
       "draft_path": "Dominator Tournament/R3/Dominator vs Dominance/draft.json",
-      "draft_has_content": false,
+      "draft_has_content": true,
       "reported_results": null,
       "report_path": null,
       "computed_scores": null,
@@ -7007,10 +7140,134 @@
       "target_reached": [],
       "draft_lineup": [],
       "draft_uma_actions": {
-        "uma_pre_bans": [],
-        "uma_picks": [],
-        "uma_bans": [],
-        "uma_additions": [],
+        "uma_pre_bans": [
+          {
+            "team_id": "dominator",
+            "uma": "Satono Diamond",
+            "variant_id": 106701,
+            "portrait": "assets/runners/106701.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Oguri Cap (Christmas)",
+            "variant_id": 100602,
+            "portrait": "assets/runners/100602.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Seiun Sky",
+            "variant_id": 102001,
+            "portrait": "assets/runners/102001.webp"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Mihono Bourbon (Valentine)",
+            "variant_id": 102602,
+            "portrait": "assets/runners/102602.webp"
+          }
+        ],
+        "uma_picks": [
+          {
+            "team_id": "dominator",
+            "uma": "Maruzensky (Summer)",
+            "variant_id": 100402,
+            "portrait": "assets/runners/100402.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "T.M. Opera O (New Year)",
+            "variant_id": 101502,
+            "portrait": "assets/runners/101502.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Oguri Cap",
+            "variant_id": 100601,
+            "portrait": "assets/runners/100601.webp"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Gold Ship",
+            "variant_id": 100701,
+            "portrait": "assets/runners/100701.webp"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Agnes Digital",
+            "variant_id": 101901,
+            "portrait": "assets/runners/101901.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Mejiro Ryan",
+            "variant_id": 102701,
+            "portrait": "assets/runners/102701.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Narita Brian",
+            "variant_id": 101601,
+            "portrait": "assets/runners/101601.webp"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Mayano Top Gun",
+            "variant_id": 102401,
+            "portrait": "assets/runners/102401.webp"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Mejiro Bright",
+            "variant_id": 107401,
+            "portrait": "assets/runners/107401.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Eishin Flash",
+            "variant_id": 103701,
+            "portrait": "assets/runners/103701.webp"
+          }
+        ],
+        "uma_bans": [
+          {
+            "team_id": "dominance",
+            "uma": "Mayano Top Gun",
+            "variant_id": 102401,
+            "portrait": "assets/runners/102401.webp"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Mejiro Ryan",
+            "variant_id": 102701,
+            "portrait": "assets/runners/102701.webp"
+          }
+        ],
+        "uma_additions": [
+          {
+            "team_id": "dominance",
+            "uma": "Grass Wonder",
+            "variant_id": 101101,
+            "portrait": "assets/runners/101101.webp"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Kitasan Black",
+            "variant_id": 106801,
+            "portrait": "assets/runners/106801.webp"
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Special Week",
+            "variant_id": 100101,
+            "portrait": "assets/runners/100101.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Daiwa Scarlet",
+            "variant_id": 100901,
+            "portrait": "assets/runners/100901.webp"
+          }
+        ],
         "benched_umas": []
       },
       "lineup": [],

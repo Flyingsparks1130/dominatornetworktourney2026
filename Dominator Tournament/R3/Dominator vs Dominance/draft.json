@@ -1,20 +1,153 @@
 {
   "schema_version": 1,
   "match_id": "r3-m1",
-  "status": "pending",
+  "status": "locked",
   "track_pool": [],
-  "track_picks": [],
-  "track_vetoes": [],
-  "final_tracks": [],
-  "tiebreaker_track": null,
-  "uma_pre_bans": [],
-  "uma_picks": [],
-  "uma_bans": [],
-  "uma_additions": [],
+  "track_picks": [
+    {
+      "team_id": "dominator",
+      "track": "Chukyo 2200m · Turf · Summer / Sunny / Firm"
+    },
+    {
+      "team_id": "dominance",
+      "track": "Nakayama (Inner) 2000m · Turf · Fall / Sunny / Good"
+    },
+    {
+      "team_id": "dominator",
+      "track": "Hanshin (Outer) 2600m · Turf · Fall / Rainy / Heavy"
+    },
+    {
+      "team_id": "dominance",
+      "track": "Nakayama (Inner) 1800m · Turf"
+    },
+    {
+      "team_id": "dominator",
+      "track": "Tokyo 2300m · Turf · Spring / Sunny / Firm"
+    },
+    {
+      "team_id": "dominance",
+      "track": "Hakodate 1800m · Turf · Spring / Sunny / Good"
+    },
+    {
+      "team_id": "dominator",
+      "track": "Hanshin (Outer to Inner) 3200m · Turf"
+    },
+    {
+      "team_id": "dominance",
+      "track": "Hanshin (Inner) 2000m · Turf · Summer / Rainy / Heavy"
+    }
+  ],
+  "track_vetoes": [
+    {
+      "team_id": "dominator",
+      "track": "Nakayama (Inner) 1800m · Turf"
+    },
+    {
+      "team_id": "dominance",
+      "track": "Hanshin (Outer to Inner) 3200m · Turf"
+    }
+  ],
+  "final_tracks": [
+    "Chukyo 2200m · Turf · Summer / Sunny / Firm",
+    "Nakayama (Inner) 2000m · Turf · Fall / Sunny / Good",
+    "Hanshin (Outer) 2600m · Turf · Fall / Rainy / Heavy",
+    "Hakodate 1800m · Turf · Spring / Sunny / Good",
+    "Tokyo 2300m · Turf · Spring / Sunny / Firm",
+    "Hanshin (Inner) 2000m · Turf · Summer / Rainy / Heavy"
+  ],
+  "tiebreaker_track": "Chukyo 2000m · Turf · Spring / Rainy / Heavy",
+  "uma_pre_bans": [
+    {
+      "team_id": "dominator",
+      "uma": "Satono Diamond"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Oguri Cap (Christmas)"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Seiun Sky"
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Mihono Bourbon (Valentine)"
+    }
+  ],
+  "uma_picks": [
+    {
+      "team_id": "dominator",
+      "uma": "Maruzensky (Summer)"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "T.M. Opera O (New Year)"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Oguri Cap"
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Gold Ship"
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Agnes Digital"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Mejiro Ryan"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Narita Brian"
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Mayano Top Gun"
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Mejiro Bright"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Eishin Flash"
+    }
+  ],
+  "uma_bans": [
+    {
+      "team_id": "dominance",
+      "uma": "Mayano Top Gun"
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Mejiro Ryan"
+    }
+  ],
+  "uma_additions": [
+    {
+      "team_id": "dominance",
+      "uma": "Grass Wonder"
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Kitasan Black"
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Special Week"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Daiwa Scarlet"
+    }
+  ],
   "benched_umas": [],
   "training_start": null,
   "training_deadline": null,
-  "notes": "",
+  "notes": "Draft and race schedule transcribed from the organizer screenshots. Pick, pre-ban and veto order is preserved within each phase. Player assignments, benches, training dates and race results have not been supplied. Conditions for the two vetoed tracks were not shown.",
   "external_match_id": null,
   "roster": []
 }

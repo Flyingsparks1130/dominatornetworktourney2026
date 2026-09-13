@@ -210,5 +210,13 @@
   "Winning Ticket": {
     "variant_id": 103501,
     "portrait": "assets/runners/103501.webp"
+  },
+  "Eishin Flash": {
+    "variant_id": 103701,
+    "portrait": "assets/runners/103701.webp"
+  },
+  "Mejiro Bright": {
+    "variant_id": 107401,
+    "portrait": "assets/runners/107401.webp"
   }
 }
