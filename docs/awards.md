@@ -1,6 +1,6 @@
 # Awards and private rehearsal
 
-The Stats page publishes 20 blank award cards. Asslicker counts incidents received; Agnes Digital counts time spent blocked. Bakushin is pending and excluded. The cards use the supplied award images and animated GIFs alongside three custom trophy illustrations. Performance Anxiety, Nakayama Festa, and Flyingsparks use the organizer’s PNGs; Hot Headed and Mejiro Fund use the organizer’s original animated GIFs. Club statistics remain below the cards. Images render at full width and their natural height so they never crop.
+The Stats page publishes 20 blank award cards. Asslicker counts incidents received; Agnes Digital counts time spent blocked. Bakushin is pending and excluded. All 20 cards use the organizer’s supplied artwork. Original GIF files retain their animation; All Star Trainer and Wheelchair use the supplied still images. Club statistics remain below the cards. Images render at full width and their natural height so they never crop.
 
 The sections and cards appear in this order:
 
