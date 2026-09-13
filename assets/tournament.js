@@ -117,12 +117,15 @@ function draftContent(m){
   return `<section class="dt-draft-action ${key.includes('ban')?'is-ban':''}"><h4>${label}</h4><ul>${rows.map(r=>`<li>${umaPortrait(r)}<span>${key==='uma_picks'?`<small>Pick ${r.order}</small>`:''}${esc(r.uma)}</span>${key.includes('ban')?'<b aria-hidden="true">×</b>':''}</li>`).join('')}</ul></section>`;
  };
  const teamCards=teams.map((t,side)=>{
-  const rows=lineup.filter(r=>r.team_id===t.id);
+  const assigned=lineup.filter(r=>r.team_id===t.id);
+  const selections=actionRows('uma_selections').filter(r=>r.team_id===t.id);
+  const selectionOnly=!assigned.length&&selections.length>0;
+  const rows=selectionOnly?selections:assigned;
   const vetoes=d.track_vetoes.filter(r=>r.team_id===t.id);
-  return `<article class="dt-lineup-team dt-side-${side}"><header><div><p class="dt-kicker">${rows.filter(r=>!r.benched).length} fielded · ${rows.filter(r=>r.benched).length} bench</p><h3>${esc(t.name)}</h3></div><span class="dt-team-seal" aria-hidden="true">${esc(t.name.slice(0,2).toUpperCase())}</span></header><ul class="dt-pick-cards">${rows.map(r=>{
+  return `<article class="dt-lineup-team dt-side-${side}"><header><div><p class="dt-kicker">${selectionOnly?`${rows.length} drafted`:`${rows.filter(r=>!r.benched).length} fielded · ${rows.filter(r=>r.benched).length} bench`}</p><h3>${esc(t.name)}</h3></div><span class="dt-team-seal" aria-hidden="true">${esc(t.name.slice(0,2).toUpperCase())}</span></header><ul class="dt-pick-cards">${rows.map(r=>{
    const star=!r.benched&&mvp?.team_id===t.id&&(r.variant_id?mvp.variant_id===r.variant_id:mvp.uma===r.uma);
-   return `<li class="${r.benched?'is-bench':''} ${star?'is-mvp':''}"><div class="dt-pick-art">${umaPortrait(r)}<span class="dt-pick-tag">${r.benched?'Bench':star?'★ Match MVP':'Fielded'}</span></div><div class="dt-pick-name"><strong>${esc(r.benched?r.uma:r.display_name||participantName(r.discord))}</strong><span>${esc(r.benched?'Not fielded':r.uma)}</span></div></li>`;
-  }).join('')}</ul>${!rows.length?'<p class="dt-muted">Player lineup not recorded.</p>':''}<div class="dt-draft-tactics">${chips('uma_pre_bans','Pre-banned',t)}${chips('uma_bans','Vetoed by opponent',t,true)}${chips('uma_picks','Snake picks',t)}${chips('uma_additions','Additional picks',t)}${!rows.length?chips('benched_umas','Bench',t):''}${vetoes.length?`<section class="dt-draft-action is-track-veto"><h4>Track vetoes made</h4><ul>${vetoes.map(r=>`<li><b aria-hidden="true">×</b><span>${esc(r.track)}</span></li>`).join('')}</ul></section>`:''}</div></article>`;
+   return `<li class="${r.benched?'is-bench':''} ${star?'is-mvp':''}"><div class="dt-pick-art">${umaPortrait(r)}<span class="dt-pick-tag">${selectionOnly?'Drafted':r.benched?'Bench':star?'★ Match MVP':'Fielded'}</span></div><div class="dt-pick-name"><strong>${esc(selectionOnly||r.benched?r.uma:r.display_name||participantName(r.discord))}</strong><span>${esc(selectionOnly?'Player assignment pending':r.benched?'Not fielded':r.uma)}</span></div></li>`;
+  }).join('')}</ul>${selectionOnly?'<p class="dt-muted">Player lineup and bench not recorded.</p>':!rows.length?'<p class="dt-muted">Player lineup not recorded.</p>':''}<div class="dt-draft-tactics">${chips('uma_pre_bans','Pre-banned',t)}${chips('uma_bans','Vetoed by opponent',t,true)}${chips('uma_picks','Snake picks',t)}${chips('uma_additions','Additional picks',t)}${!rows.length?chips('benched_umas','Bench',t):''}${vetoes.length?`<section class="dt-draft-action is-track-veto"><h4>Track vetoes made</h4><ul>${vetoes.map(r=>`<li><b aria-hidden="true">×</b><span>${esc(r.track)}</span></li>`).join('')}</ul></section>`:''}</div></article>`;
  }).join('');
  const ticket=(track,i,tiebreaker=false)=>{
   const parts=track.split(' · '),title=parts.shift(),tags=parts.flatMap(p=>p.split(' / '));
@@ -137,7 +140,7 @@ function draftsHub(){
  $('#dt-root').innerHTML=`${crumbs([{name:'Match drafts'}])}<div class="dt-head"><div><p class="dt-kicker">The starting line</p><h1>Match drafts</h1><p class="dt-lead">Each matchup has its own track pool, picks, vetoes and final race card.</p></div></div>${index.rounds.map(r=>`<section><div class="dt-caption"><h2>${esc(r.id+' · '+r.name)}</h2></div><div class="dt-grid">${index.matches.filter(m=>m.round===r.id).map(m=>TournamentUI.matchCard(m,{view:'draft'})).join('')}</div></section>`).join('')}`;
 }
 function blankDraft(mid){
- return {schema_version:1,match_id:mid,status:'pending',track_pool:[],track_picks:[],track_vetoes:[],final_tracks:[],tiebreaker_track:null,uma_pre_bans:[],uma_picks:[],uma_bans:[],uma_additions:[],benched_umas:[],training_start:null,training_deadline:null,notes:'',external_match_id:null,roster:[]};
+ return {schema_version:1,match_id:mid,status:'pending',track_pool:[],track_picks:[],track_vetoes:[],final_tracks:[],tiebreaker_track:null,uma_pre_bans:[],uma_picks:[],uma_bans:[],uma_additions:[],benched_umas:[],uma_selections:[],training_start:null,training_deadline:null,notes:'',external_match_id:null,roster:[]};
 }
 function bindDraftEditor(m){
  const holder=document.createElement('section');holder.className='dt-panel';

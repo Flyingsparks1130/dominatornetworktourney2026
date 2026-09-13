@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-13T13:02:52Z",
+  "generated_at": "2026-09-13T13:22:44Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
@@ -257,6 +257,7 @@
             "uma": "Mejiro Dober (Camping)"
           }
         ],
+        "uma_selections": [],
         "training_start": null,
         "training_deadline": null,
         "notes": "Recorded from the organizer’s text and Uma Drafter screenshots for LHNCFL. This match used six standard races plus the Hanshin 2000m tiebreaker. The full random track pool, initial Uma pick order, additional-pick phase and training dates were not supplied. Final rosters are shown without reconstructing those phases. Track vetoes and Uma vetoes are grouped under the club that made the ban.",
@@ -850,7 +851,8 @@
             "variant_id": 105902,
             "portrait": "assets/runners/105902.webp"
           }
-        ]
+        ],
+        "uma_selections": []
       },
       "lineup": [
         {
@@ -1163,6 +1165,7 @@
             "uma": "Curren Chan (Wedding)"
           }
         ],
+        "uma_selections": [],
         "training_start": null,
         "training_deadline": null,
         "notes": "The match ended after Race 5 when Domineer reached 28 points. Tokyo 1800m (Race 6) and the Niigata tiebreaker were not run. Discord identities are preserved; player display names were transcribed from the organizer’s roster screenshot on September 11, 2026. Original pool, pick order and training dates were not supplied.",
@@ -1676,7 +1679,8 @@
             "variant_id": 103802,
             "portrait": "assets/runners/103802.webp"
           }
-        ]
+        ],
+        "uma_selections": []
       },
       "lineup": [
         {
@@ -1987,6 +1991,7 @@
             "uma": "Nice Nature (Cheerleader)"
           }
         ],
+        "uma_selections": [],
         "training_start": null,
         "training_deadline": null,
         "notes": "Organizer-supplied written schedule is authoritative. Some conditions differ in the supplied screenshots. Pick order, original pool and training dates were not supplied. Hakodate was the reserved tiebreaker and was not run.",
@@ -2535,7 +2540,8 @@
             "variant_id": 106002,
             "portrait": "assets/runners/106002.webp"
           }
-        ]
+        ],
+        "uma_selections": []
       },
       "lineup": [
         {
@@ -2811,8 +2817,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominarium": 7,
-            "dominator": 0
+            "dominator": 0,
+            "dominarium": 7
           },
           "data_file": "data/tournament-races/56b65d20b64b13ce24a7.json"
         },
@@ -2837,8 +2843,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominarium": 1,
-            "dominator": 6
+            "dominator": 6,
+            "dominarium": 1
           },
           "data_file": "data/tournament-races/e11f7645e1b2ca830e18.json"
         },
@@ -2863,8 +2869,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominarium": 0,
-            "dominator": 7
+            "dominator": 7,
+            "dominarium": 0
           },
           "data_file": "data/tournament-races/42e88c5ea2b55f0aed64.json"
         },
@@ -2889,8 +2895,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominarium": 3,
-            "dominator": 4
+            "dominator": 4,
+            "dominarium": 3
           },
           "data_file": "data/tournament-races/7527405cfa43908ba451.json"
         },
@@ -2915,8 +2921,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominarium": 2,
-            "dominator": 5
+            "dominator": 5,
+            "dominarium": 2
           },
           "data_file": "data/tournament-races/ea90401c018369c4fd3a.json"
         },
@@ -2941,8 +2947,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominarium": 0,
-            "dominator": 7
+            "dominator": 7,
+            "dominarium": 0
           },
           "data_file": "data/tournament-races/dbeb692653faa9b3bdda.json"
         }
@@ -3037,6 +3043,7 @@
             "uma": "Gold City"
           }
         ],
+        "uma_selections": [],
         "training_start": null,
         "training_deadline": null,
         "notes": "Draft, named roster, bans, vetoes and podiums supplied by the organizer. All six original exports corroborate the result. Tamamo Cross and Gold City were benched. The Chukyo 1400m tiebreaker was not run. Original snake-pick order and training dates were not supplied. Draft condition wording and literal export labels are preserved separately.",
@@ -3590,7 +3597,8 @@
             "variant_id": 104001,
             "portrait": "assets/runners/104001.webp"
           }
-        ]
+        ],
+        "uma_selections": []
       },
       "lineup": [
         {
@@ -4118,6 +4126,7 @@
             "uma": "Mejiro Ryan"
           }
         ],
+        "uma_selections": [],
         "training_start": null,
         "training_deadline": null,
         "notes": "Final selections, track picks, pre-bans and enemy vetoes transcribed from organizer screenshots. Player names come from owner_trainer_name in all seven original exports; Discord identities and external draft ID were not supplied. Oguri Cap and Mejiro Ryan were drafted but absent from all seven exports and are listed as the unfielded benches. Original snake-pick order and training dates were not supplied. Draft condition wording and literal export condition labels are preserved separately.",
@@ -4726,7 +4735,8 @@
             "variant_id": 102701,
             "portrait": "assets/runners/102701.webp"
           }
-        ]
+        ],
+        "uma_selections": []
       },
       "lineup": [
         {
@@ -5002,8 +5012,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominacion": 2,
-            "domineer": 5
+            "domineer": 5,
+            "dominacion": 2
           },
           "data_file": "data/tournament-races/77ff35c7e057c068ae2a.json"
         },
@@ -5028,8 +5038,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominacion": 4,
-            "domineer": 3
+            "domineer": 3,
+            "dominacion": 4
           },
           "data_file": "data/tournament-races/d670795870ca6ea3e08f.json"
         },
@@ -5054,8 +5064,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominacion": 3,
-            "domineer": 4
+            "domineer": 4,
+            "dominacion": 3
           },
           "data_file": "data/tournament-races/ed4745d845438e7684b6.json"
         },
@@ -5080,8 +5090,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominacion": 4,
-            "domineer": 3
+            "domineer": 3,
+            "dominacion": 4
           },
           "data_file": "data/tournament-races/3073f39e17998d4eeaab.json"
         },
@@ -5106,8 +5116,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominacion": 5,
-            "domineer": 2
+            "domineer": 2,
+            "dominacion": 5
           },
           "data_file": "data/tournament-races/0920a2b9c8bcad93181f.json"
         },
@@ -5132,8 +5142,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominacion": 7,
-            "domineer": 0
+            "domineer": 0,
+            "dominacion": 7
           },
           "data_file": "data/tournament-races/03d59f7bd6a0b45e9706.json"
         }
@@ -5228,6 +5238,7 @@
             "uma": "El Condor Pasa"
           }
         ],
+        "uma_selections": [],
         "training_start": null,
         "training_deadline": null,
         "notes": "Organizer screenshots supply the rosters, track picks, vetoes, bans and podiums. All six original exports corroborate the podiums and the final Domineer 17–25 Dominacion score. MVP: @wata, Rice Shower (Halloween). Winning Ticket and El Condor Pasa were benched; the Hakodate 1000m tiebreaker was not run. Snake-pick order, external match ID and training dates were not supplied. Draft condition wording and literal export labels are preserved separately.",
@@ -5781,7 +5792,8 @@
             "variant_id": 101401,
             "portrait": "assets/runners/101401.webp"
           }
-        ]
+        ],
+        "uma_selections": []
       },
       "lineup": [
         {
@@ -6223,6 +6235,7 @@
             "uma": "Satono Diamond"
           }
         ],
+        "uma_selections": [],
         "training_start": null,
         "training_deadline": null,
         "notes": "Dominate won 26–9 after Race 5. Race 6 and the tiebreaker were not run.",
@@ -6723,7 +6736,8 @@
             "variant_id": 106701,
             "portrait": "assets/runners/106701.webp"
           }
-        ]
+        ],
+        "uma_selections": []
       },
       "lineup": [
         {
@@ -7122,6 +7136,7 @@
           }
         ],
         "benched_umas": [],
+        "uma_selections": [],
         "training_start": null,
         "training_deadline": null,
         "notes": "Draft and race schedule transcribed from the organizer screenshots. Pick, pre-ban and veto order is preserved within each phase. Player assignments, benches, training dates and race results have not been supplied. Conditions for the two vetoed tracks were not shown.",
@@ -7268,7 +7283,8 @@
             "portrait": "assets/runners/100901.webp"
           }
         ],
-        "benched_umas": []
+        "benched_umas": [],
+        "uma_selections": []
       },
       "lineup": [],
       "lineup_source": "draft",
@@ -7313,25 +7329,150 @@
       "draft": {
         "schema_version": 1,
         "match_id": "r3-m2",
-        "status": "pending",
+        "status": "locked",
         "track_pool": [],
-        "track_picks": [],
-        "track_vetoes": [],
-        "final_tracks": [],
-        "tiebreaker_track": null,
-        "uma_pre_bans": [],
+        "track_picks": [
+          {
+            "team_id": "dominate",
+            "track": "Fukushima 2000m · Turf · Right · Winter / Sunny / Firm"
+          },
+          {
+            "team_id": "dominacion",
+            "track": "Nakayama (Inner) 2500m · Turf · Right · Summer / Sunny / Firm"
+          },
+          {
+            "team_id": "dominate",
+            "track": "Hakodate 2000m · Turf · Right · Fall / Cloudy / Good"
+          },
+          {
+            "team_id": "dominacion",
+            "track": "Niigata (Outer) 2000m · Turf · Left · Summer / Sunny / Good"
+          },
+          {
+            "team_id": "dominate",
+            "track": "Nakayama (Inner) 1800m · Turf · Right · Summer / Sunny / Firm"
+          },
+          {
+            "team_id": "dominacion",
+            "track": "Kyoto (Outer) 2200m · Turf · Right · Spring / Rainy / Heavy"
+          },
+          {
+            "team_id": "dominate",
+            "track": "Hakodate 1000m · Turf · Right · Fall / Sunny / Good"
+          },
+          {
+            "team_id": "dominacion",
+            "track": "Kyoto (Outer) 3000m · Turf · Right · Fall / Sunny / Firm"
+          }
+        ],
+        "track_vetoes": [
+          {
+            "team_id": "dominate",
+            "track": "Kyoto (Outer) 3000m · Turf · Right · Fall / Sunny / Firm"
+          },
+          {
+            "team_id": "dominacion",
+            "track": "Hakodate 1000m · Turf · Right · Fall / Sunny / Good"
+          }
+        ],
+        "final_tracks": [
+          "Fukushima 2000m · Turf · Right · Winter / Sunny / Firm",
+          "Nakayama (Inner) 2500m · Turf · Right · Summer / Sunny / Firm",
+          "Hakodate 2000m · Turf · Right · Fall / Cloudy / Good",
+          "Niigata (Outer) 2000m · Turf · Left · Summer / Sunny / Good",
+          "Nakayama (Inner) 1800m · Turf · Right · Summer / Sunny / Firm",
+          "Kyoto (Outer) 2200m · Turf · Right · Spring / Rainy / Heavy"
+        ],
+        "tiebreaker_track": "Kyoto (Inner) 1200m · Turf · Right · Winter / Cloudy / Firm",
+        "uma_pre_bans": [
+          {
+            "team_id": "dominate",
+            "uma": "Gold Ship"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Narita Taishin"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Maruzensky (Summer)"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Seiun Sky"
+          }
+        ],
         "uma_picks": [],
-        "uma_bans": [],
+        "uma_bans": [
+          {
+            "team_id": "dominacion",
+            "uma": "Oguri Cap (Christmas)"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mihono Bourbon (Valentine)"
+          }
+        ],
         "uma_additions": [],
         "benched_umas": [],
+        "uma_selections": [
+          {
+            "team_id": "dominate",
+            "uma": "Kitasan Black"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mayano Top Gun"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mejiro McQueen (Summer)"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mihono Bourbon"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Silence Suzuka"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Smart Falcon"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Agnes Digital"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Meisho Doto"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Mayano Top Gun (Wedding)"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Oguri Cap"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Rice Shower (Halloween)"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Air Groove"
+          }
+        ],
         "training_start": null,
         "training_deadline": null,
-        "notes": "",
+        "notes": "Final selections, pre-bans, enemy vetoes and the seven-race schedule transcribed from the organizer screenshot. Dominate is the left team; Team 2 is Dominacion, its Round 3 bracket opponent. Selections follow the displayed team order; the original snake-pick chronology and additional-pick phase were not shown. Vetoes are attributed to the club that made them. Player assignments, benches, training dates and the external match ID were not supplied. The screenshot shows 0 races reported; official scores and results remain pending.",
         "external_match_id": null,
         "roster": []
       },
       "draft_path": "Dominator Tournament/R3/Dominacion vs Dominate/draft.json",
-      "draft_has_content": false,
+      "draft_has_content": true,
       "reported_results": null,
       "report_path": null,
       "computed_scores": null,
@@ -7342,11 +7483,123 @@
       "target_reached": [],
       "draft_lineup": [],
       "draft_uma_actions": {
-        "uma_pre_bans": [],
+        "uma_pre_bans": [
+          {
+            "team_id": "dominate",
+            "uma": "Gold Ship",
+            "variant_id": 100701,
+            "portrait": "assets/runners/100701.webp"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Narita Taishin",
+            "variant_id": 105001,
+            "portrait": "assets/runners/105001.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Maruzensky (Summer)",
+            "variant_id": 100402,
+            "portrait": "assets/runners/100402.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Seiun Sky",
+            "variant_id": 102001,
+            "portrait": "assets/runners/102001.webp"
+          }
+        ],
         "uma_picks": [],
-        "uma_bans": [],
+        "uma_bans": [
+          {
+            "team_id": "dominacion",
+            "uma": "Oguri Cap (Christmas)",
+            "variant_id": 100602,
+            "portrait": "assets/runners/100602.webp"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mihono Bourbon (Valentine)",
+            "variant_id": 102602,
+            "portrait": "assets/runners/102602.webp"
+          }
+        ],
         "uma_additions": [],
-        "benched_umas": []
+        "benched_umas": [],
+        "uma_selections": [
+          {
+            "team_id": "dominate",
+            "uma": "Kitasan Black",
+            "variant_id": 106801,
+            "portrait": "assets/runners/106801.webp"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mayano Top Gun",
+            "variant_id": 102401,
+            "portrait": "assets/runners/102401.webp"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mejiro McQueen (Summer)",
+            "variant_id": 101303,
+            "portrait": "assets/runners/101303.webp"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mihono Bourbon",
+            "variant_id": 102601,
+            "portrait": "assets/runners/102601.webp"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Silence Suzuka",
+            "variant_id": 100201,
+            "portrait": "assets/runners/100201.webp"
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Smart Falcon",
+            "variant_id": 104601,
+            "portrait": "assets/runners/104601.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Agnes Digital",
+            "variant_id": 101901,
+            "portrait": "assets/runners/101901.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Meisho Doto",
+            "variant_id": 105801,
+            "portrait": "assets/runners/105801.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Mayano Top Gun (Wedding)",
+            "variant_id": 102402,
+            "portrait": "assets/runners/102402.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Oguri Cap",
+            "variant_id": 100601,
+            "portrait": "assets/runners/100601.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Rice Shower (Halloween)",
+            "variant_id": 103002,
+            "portrait": "assets/runners/103002.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Air Groove",
+            "variant_id": 101801,
+            "portrait": "assets/runners/101801.webp"
+          }
+        ]
       },
       "lineup": [],
       "lineup_source": "draft",
@@ -7393,7 +7646,8 @@
         "uma_picks": [],
         "uma_bans": [],
         "uma_additions": [],
-        "benched_umas": []
+        "benched_umas": [],
+        "uma_selections": []
       },
       "lineup": [],
       "lineup_source": "draft",

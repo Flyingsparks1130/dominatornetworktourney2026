@@ -218,5 +218,17 @@
   "Mejiro Bright": {
     "variant_id": 107401,
     "portrait": "assets/runners/107401.webp"
+  },
+  "Meisho Doto": {
+    "variant_id": 105801,
+    "portrait": "assets/runners/105801.webp"
+  },
+  "Mayano Top Gun (Wedding)": {
+    "variant_id": 102402,
+    "portrait": "assets/runners/102402.webp"
+  },
+  "Mihono Bourbon": {
+    "variant_id": 102601,
+    "portrait": "assets/runners/102601.webp"
   }
 }
