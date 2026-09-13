@@ -154,6 +154,13 @@ require('../assets/award-telemetry.js');
 const real=E.compute(index,docs,config,catalogue,require('../assets/award-telemetry-data.json'));
 assert.deepEqual(real.awards.map(a=>a.id),['mvp','wheelchair','hard-carry','top-road','nature','gate-kept','all-star','performance-anxiety','hot-headed','fine-motion','mejiro','festa','flyingsparks','nitro','double-jet','bourbon','blocked-count','blocked-time','neck','fences','goo-goo']);
 assert.equal(award(real,'neck').status,'provisional');assert.equal(award(real,'fences').status,'provisional');
+check('Every award has distinct trophy art in the public and private renderers',()=>{
+ const catalog=E.catalog(config),paths=catalog.map(a=>a.trophy_image||`assets/awards/trophy-${a.trophy}.png`);
+ assert.equal(new Set(paths).size,21);assert(paths.every(p=>fs.existsSync(p)));
+ assert.equal(catalog.find(a=>a.id==='nitro').trophy_image,null);assert.equal(catalog.find(a=>a.id==='fine-motion').trophy_image,null);
+ for(const a of catalog){const p=a.trophy_image||`assets/awards/trophy-${a.trophy}.png`;assert(UI.awardCard(a).includes(p));assert(UI.page(index,config,null).includes(p));}
+ const a=award(real,'mvp'),html=UI.awardCard(a,{revealed:true,local:true,standings:real,assets:{[a.trophy_image]:'data:image/png;base64,PRIVATE_TEST'}});assert(html.includes('data:image/png;base64,PRIVATE_TEST'));
+});
 check('Every current export is included, and official points agree',()=>{
  assert.deepEqual(real.issues,[]);
  const races=index.matches.filter(m=>Number(m.round.slice(1))>=2).flatMap(m=>m.races);

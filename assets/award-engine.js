@@ -58,7 +58,7 @@
   {id:'build',name:'Build & Strategy',description:'Roster construction, stats, skills, and points efficiency.',awards:['all-star','performance-anxiety','hot-headed','fine-motion','mejiro','festa','flyingsparks']},
   {id:'moments',name:'Race Moments',description:'The incidents, interactions, and replay-analysis awards.',awards:['nitro','double-jet','bourbon','blocked-count','blocked-time','neck','fences','goo-goo']}
  ];
- function catalog(config={}){return groups.flatMap(group=>group.awards.map(id=>specs.find(s=>s[0]===id)).map(([id,name,description,metric,unit,direction,tie])=>({id,name,description,metric,unit,direction,tie,rule:rules[id],image:config.images?.[id]||'',trophy:id==='nitro'?'nitro':id==='fine-motion'?'wit':'champion',category:group.name})));}
+ function catalog(config={}){return groups.flatMap(group=>group.awards.map(id=>specs.find(s=>s[0]===id)).map(([id,name,description,metric,unit,direction,tie])=>({id,name,description,metric,unit,direction,tie,rule:rules[id],image:config.images?.[id]||'',trophy_image:config.trophies?.[id]||null,trophy:id==='nitro'?'nitro':id==='fine-motion'?'wit':'champion',category:group.name})));}
  function nativeUnique(id,variant){
   const text=String(variant),own=100000+10000*(Number(text.slice(-2))-1)+Number(text.slice(1,-2))*10+1;
   return id===own||id===own-90000;
