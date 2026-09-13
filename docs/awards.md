@@ -1,16 +1,16 @@
 # Awards and private rehearsal
 
-The Stats page publishes 20 blank award cards. Asslicker counts incidents received; Agnes Digital counts time spent blocked. Bakushin is pending and excluded. All 20 cards use the organizer’s supplied artwork. Original GIF files retain their animation; All Star Trainer and Wheelchair use the supplied still images. Club statistics remain below the cards. Images render at full width and their natural height so they never crop.
+The Stats page displays 21 awards in a trophy cabinet. Each equal-size bay shows a generated trophy and a name plaque. Hover or keyboard focus previews the organizer’s artwork without cropping. Click or tap opens a native dialog with the full image, description, counting rule and hidden winner fields. Escape, the close button or clicking the backdrop closes the dialog and restores focus. The cabinet adapts from four columns to three and two; club statistics remain below it. Asslicker counts incidents received; Agnes Digital counts time spent blocked. Bakushin is pending and excluded. All 21 awards use organizer-supplied artwork, with original GIF bytes retained.
 
 The sections and cards appear in this order:
 
 - Tournament Honors: MVP, The Wheelchair, Hard Carry, Crying NTR, Force of Nature, Gate Kept (Falcon).
 - Build & Strategy: All Star Trainer, Professor of Performance Anxiety, Hot Headed, Fine Motion Wit, The Mejiro Fund, Nakayama Festa, Flyingsparks.
-- Race Moments: The 5 Nitro Incident, Double Jet, Retired Bourbon, Asslicker, Agnes Digital, The Neck and Neck, Swing for the Fences.
+- Race Moments: The 5 Nitro Incident, Double Jet, Retired Bourbon, Asslicker, Agnes Digital, The Neck and Neck, Swing for the Fences, No More Goo Goo Babies.
 
 ## Reveal boundary
 
-`stats.html` calls `AwardUI.publicMount()`, which reads only the tournament index and award configuration. It never calculates or fetches standings. A URL parameter or `config.reveal` cannot reveal a winner. Public cards contain placeholder names, values and runners-up. Do not commit a generated preview or standings export. The repository's raw race records remain public as before.
+`stats.html` calls `AwardUI.publicMount()`, which reads only the tournament index and award configuration. It never calculates or fetches standings. A URL parameter or `config.reveal` cannot reveal a winner. Public plaques contain no standings; the detail dialog shows placeholder winner fields. Hover and click do not fetch or calculate standings. Do not commit a generated preview or standings export. The repository's raw race records remain public as before.
 
 Generate a portable private copy, outside this repository:
 
@@ -18,13 +18,17 @@ Generate a portable private copy, outside this repository:
 node scripts/build_awards_preview.cjs ../dominator-awards-preview.html
 ```
 
-Open that HTML directly in a browser. It embeds the current standings, styles, scripts, supplied art, and trophies. Refresh from live data reads the current Pages index, skill catalog and eligible race documents. No authentication or secret token is needed. A failed refresh retains the saved snapshot. The local controls can preview blank cards, filter player stats, export standings, or import verified observations. Award art is curated only through the repository configuration; the page exposes no visitor-controlled image picker. Nothing in that file publishes changes. A final public reveal requires a deliberate reviewed change to the public renderer.
+Open that HTML directly in a browser. It embeds the current standings, styles, scripts, supplied art, and trophies. Refresh from live data reads the current Pages index, skill catalog and eligible race documents. No authentication or secret token is needed. A failed refresh retains the saved snapshot. The local controls can preview the public shelf, filter player stats, export standings, or import verified observations. Single-build winners and runners-up identify their Uma and match; their receipts point directly to the selected build. The event table and race receipts include exact finish HP. Award art is curated only through the repository configuration; the page exposes no visitor-controlled image picker. Nothing in that file publishes changes. A final public reveal requires a deliberate reviewed change to the public renderer.
+
+Add `--linked-art` for a compact review file that loads the already-public artwork from Pages instead of embedding every GIF. Its standings, scripts and styles still remain inside the local file; reading the saved results needs no standings endpoint. Artwork requires an internet connection in this mode. Category navigation stays within the private file.
 
 ## Counting rules
 
 - Performance scope starts at Round 2. Round 1 supplies only sourced DQ incidents; CallMeNeko's organizer-confirmed R1-M1 DQ is recorded separately from official scores.
 - Player identity uses club ID and normalized owner name. Optional aliases explicitly reconcile name changes. Equal names on different clubs are separate identities.
 - Count each distinct fielded build once per player per matchup. Its identity includes variant, five submitted stats, equipped skills and running style. Repeated races with the same build do not repeatedly add its stats or SP. The same build fielded in a later matchup counts there too. Benched/unplayed Umas do not count.
+- All Star Trainer, Hot Headed, Fine Motion Wit and Mejiro Fund compare **individual fielded Uma builds**, not accumulated player totals. Each player enters their highest combined stats, highest Guts, lowest Wit or highest full-price SP, respectively. The winning entry carries that specific Uma/build and source export. Additional builds, races and rounds add nothing, and equal values stay tied without participation-based tiebreakers. Aggregate build totals remain available only for the unchanged Performance Anxiety / Nakayama Festa efficiency formulas and receipts.
+- No More Goo Goo Babies counts each eligible runner finishing at **exactly 0 HP**, once per runner per verified race, summed by player. Interpolate raw replay-frame HP at that runner’s exact finish, before display rounding. Small positive HP, zero HP only earlier in the race, and HP exhausted after finishing do not count. Missing frame coverage leaves the award unavailable. With no zero-HP finishes it stays pending; equal positive totals remain tied.
 - Use submitted `results[].stats` before motivation/race bonuses. Existing `base_stats` includes a motivation multiplier and is intentionally not used for these awards.
 - Finishes, points and race events accumulate per verified export. Organizer podiums only fill races without a verified export; they are never added on top of an export. Conflicting exports or missing evidence are reported.
 - Professor of Performance Anxiety uses the lowest points per 1,000 fielded base stats; Nakayama Festa uses the highest. This makes the two opposing stats/points objectives one reproducible comparison. The exact formula appears in private receipts.
@@ -61,4 +65,4 @@ The full-price catalog is generated from [Hakuraku](https://github.com/ayaliz/ha
 
 The trophy illustrations were generated for this project: a sleeping clock and five stars for Nitro; an emerald question-mark light bulb, horse-ear tiara and book for Wit; a gold horse-ear crown with a rose star for the remaining awards. All share a burgundy plinth and transparent background.
 
-Run `node tests/test_awards_client.js` and `node tests/test_award_telemetry.js`. It checks purchased skill costs, self-effect classification, received blocking, clipped durations, failed wit, round/build/export deduplication, DQs, missing evidence, ties, HTML escaping, and public reveal isolation. It also reconciles all current R2+ race points. Telemetry checks cover WT integration and finish interpolation, acceleration, missing inputs, duel expiry by HP/gap/speed, overlap deduplication, and all current runner estimates. The Pages workflow runs these checks alongside the existing Python and replay suites.
+Run `node tests/test_awards_client.js` and `node tests/test_award_telemetry.js`. It checks single-build rankings without accumulated-round bias, exact finish HP without rounding false positives, purchased skill costs, self-effect classification, received blocking, clipped durations, failed wit, round/build/export deduplication, DQs, missing evidence, ties, HTML escaping, and public reveal isolation. It also reconciles all current R2+ race points. Telemetry checks cover WT integration and finish interpolation, acceleration, missing inputs, duel expiry by HP/gap/speed, overlap deduplication, and all current runner estimates. The Pages workflow runs these checks alongside the existing Python and replay suites.

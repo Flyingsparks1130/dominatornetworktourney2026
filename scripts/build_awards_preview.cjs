@@ -10,7 +10,9 @@ const index=json('data/tournament-index.json'),config=json('config/awards.json')
 for(const match of index.matches.filter(m=>Number(m.round.slice(1))>=config.performance_round_min))for(const file of match.races)docs[file.id]=json(file.data_file);
 const telemetryData=json('assets/award-telemetry-data.json');
 const standings=E.compute(index,docs,config,skills,telemetryData);
-for(const name of fs.readdirSync(path.join(root,'assets/awards'))){const p='assets/awards/'+name;assets[p]='data:image/'+(name.endsWith('.gif')?'gif':'png')+';base64,'+fs.readFileSync(path.join(root,p)).toString('base64');}
+const assetPaths=new Set([...Object.values(config.images),...E.catalog(config).map(a=>`assets/awards/trophy-${a.trophy}.png`)]);
+// Linked artwork keeps the review file small; standings still live only in this file.
+if(!process.argv.includes('--linked-art'))for(const p of assetPaths){const ext=path.extname(p).slice(1),mime=ext==='jpg'?'jpeg':ext;assets[p]='data:image/'+mime+';base64,'+fs.readFileSync(path.join(root,p)).toString('base64');}
 const seed=JSON.stringify({index,config,standings,skills,assets,telemetryData}).replaceAll('<','\\u003c');
 const styles=['site','ui','competition','awards'].map(n=>read('assets/'+n+'.css')).join('\n');
 const scripts=['site','hakuraku-award-telemetry','award-telemetry','award-engine','awards'].map(n=>read('assets/'+n+'.js')).join('\n');
