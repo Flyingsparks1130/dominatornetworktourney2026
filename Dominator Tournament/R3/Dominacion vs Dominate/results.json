@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "match_id": "r3-m2",
+  "external_match_id": "LDGU92",
+  "source": "Organizer-supplied match results and roster screenshots, corroborated by four original horseACT exports supplied on 2026-09-13.",
+  "mvp": {
+    "team_id": "dominacion",
+    "uma": "Oguri Cap",
+    "discord": "@Zanko"
+  },
+  "races": [
+    {
+      "number": 1,
+      "track": "Fukushima 2000m · Turf · Right · Winter / Sunny / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominacion",
+          "uma": "Oguri Cap",
+          "discord": "@Zanko"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Air Groove",
+          "discord": "@Yanagi #1 Fan (Bloop)"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "track": "Nakayama (Inner) 2500m · Turf · Right · Summer / Sunny / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominacion",
+          "uma": "Meisho Doto (Halloween)",
+          "discord": "@McGee"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Oguri Cap",
+          "discord": "@Zanko"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "track": "Hakodate 2000m · Turf · Right · Fall / Cloudy / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominacion",
+          "uma": "Oguri Cap",
+          "discord": "@Zanko"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Meisho Doto (Halloween)",
+          "discord": "@McGee"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "@raine"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "track": "Niigata (Outer) 2000m · Turf · Left · Summer / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Air Groove",
+          "discord": "@Yanagi #1 Fan (Bloop)"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mihono Bourbon",
+          "discord": "@Mayday"
+        }
+      ]
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-13T13:22:44Z",
+  "generated_at": "2026-09-13T17:27:00Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
-  "revision": 62,
+  "revision": 69,
   "rounds": [
     {
       "id": "R1",
@@ -7319,13 +7319,121 @@
           "aliases": []
         }
       ],
-      "winner_id": null,
-      "loser_id": null,
-      "status": "ready",
-      "manual_scores": null,
-      "decision_reason": null,
-      "source": "race_files",
-      "races": [],
+      "winner_id": "dominacion",
+      "loser_id": "dominate",
+      "status": "complete",
+      "manual_scores": {
+        "dominacion": 26,
+        "dominate": 2
+      },
+      "decision_reason": "Organizer confirmed LDGU92 final: Dominate 2-26 Dominacion after four races; MVP Zanko. All four unchanged exports corroborate every podium and the official score. Advance Dominacion to the Grand Final.",
+      "source": "manual",
+      "races": [
+        {
+          "id": "55de554b9279cd355ee9",
+          "round": "R3",
+          "match_id": "r3-m2",
+          "race_folder": "01 - Fukushima 2000m",
+          "file_name": "Oguri Cap-95.1078s-20260913.json",
+          "raw_path": "Dominator Tournament/R3/Dominacion vs Dominate/01 - Fukushima 2000m/Oguri Cap-95.1078s-20260913.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10403,
+            "track_id": 10004,
+            "distance_m": 2000,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Good",
+            "weather": "Sunny",
+            "season": "Winter"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominacion": 7,
+            "dominate": 0
+          },
+          "data_file": "data/tournament-races/55de554b9279cd355ee9.json"
+        },
+        {
+          "id": "f8329d2efedc3de9fcf0",
+          "round": "R3",
+          "match_id": "r3-m2",
+          "race_folder": "02 - Nakayama (Inner) 2500m",
+          "file_name": "Meisho Doto-121.2087s-20260913.json",
+          "raw_path": "Dominator Tournament/R3/Dominacion vs Dominate/02 - Nakayama (Inner) 2500m/Meisho Doto-121.2087s-20260913.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10506,
+            "track_id": 10005,
+            "distance_m": 2500,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Good",
+            "weather": "Sunny",
+            "season": "Summer"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominacion": 7,
+            "dominate": 0
+          },
+          "data_file": "data/tournament-races/f8329d2efedc3de9fcf0.json"
+        },
+        {
+          "id": "a850208249845f6ec8fb",
+          "round": "R3",
+          "match_id": "r3-m2",
+          "race_folder": "03 - Hakodate 2000m",
+          "file_name": "Oguri Cap-95.0702s-20260913.json",
+          "raw_path": "Dominator Tournament/R3/Dominacion vs Dominate/03 - Hakodate 2000m/Oguri Cap-95.0702s-20260913.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10204,
+            "track_id": 10002,
+            "distance_m": 2000,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Good",
+            "weather": "Cloudy",
+            "season": "Fall"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominacion": 6,
+            "dominate": 1
+          },
+          "data_file": "data/tournament-races/a850208249845f6ec8fb.json"
+        },
+        {
+          "id": "ac957e9f389137eb5a4b",
+          "round": "R3",
+          "match_id": "r3-m2",
+          "race_folder": "04 - Niigata (Outer) 2000m",
+          "file_name": "Rice Shower-94.6706s-20260913.json",
+          "raw_path": "Dominator Tournament/R3/Dominacion vs Dominate/04 - Niigata (Outer) 2000m/Rice Shower-94.6706s-20260913.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10307,
+            "track_id": 10003,
+            "distance_m": 2000,
+            "surface": "Turf",
+            "turn": "Left",
+            "condition": "Soft",
+            "weather": "Sunny",
+            "season": "Summer"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominacion": 6,
+            "dominate": 1
+          },
+          "data_file": "data/tournament-races/ac957e9f389137eb5a4b.json"
+        }
+      ],
       "draft": {
         "schema_version": 1,
         "match_id": "r3-m2",
@@ -7414,7 +7522,16 @@
           }
         ],
         "uma_additions": [],
-        "benched_umas": [],
+        "benched_umas": [
+          {
+            "team_id": "dominate",
+            "uma": "Silence Suzuka"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Agnes Digital (Halloween)"
+          }
+        ],
         "uma_selections": [
           {
             "team_id": "dominate",
@@ -7442,11 +7559,11 @@
           },
           {
             "team_id": "dominacion",
-            "uma": "Agnes Digital"
+            "uma": "Agnes Digital (Halloween)"
           },
           {
             "team_id": "dominacion",
-            "uma": "Meisho Doto"
+            "uma": "Meisho Doto (Halloween)"
           },
           {
             "team_id": "dominacion",
@@ -7467,21 +7584,411 @@
         ],
         "training_start": null,
         "training_deadline": null,
-        "notes": "Final selections, pre-bans, enemy vetoes and the seven-race schedule transcribed from the organizer screenshot. Dominate is the left team; Team 2 is Dominacion, its Round 3 bracket opponent. Selections follow the displayed team order; the original snake-pick chronology and additional-pick phase were not shown. Vetoes are attributed to the club that made them. Player assignments, benches, training dates and the external match ID were not supplied. The screenshot shows 0 races reported; official scores and results remain pending.",
-        "external_match_id": null,
-        "roster": []
+        "notes": "Organizer screenshots and four original exports confirm LDGU92: Dominate 2-26 Dominacion after Race 4; MVP @Zanko, Oguri Cap. Silence Suzuka and Agnes Digital (Halloween) were benched. The remaining two standard tracks and the Kyoto 1200m tiebreaker were not run. Dominate is the left team in the draft screenshot; Team 2 is Dominacion. Picks, vetoes and bans retain their recorded attribution. Snake-pick chronology and training dates were not supplied. Draft condition wording and literal export labels are preserved separately.",
+        "external_match_id": "LDGU92",
+        "roster": [
+          {
+            "team_id": "dominate",
+            "uma": "Kitasan Black",
+            "discord": "@Reyov",
+            "benched": false
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mayano Top Gun",
+            "discord": "@Flyingsparkz",
+            "benched": false
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mejiro McQueen (Summer)",
+            "discord": "@raine",
+            "benched": false
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Mihono Bourbon",
+            "discord": "@Mayday",
+            "benched": false
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Silence Suzuka",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominate",
+            "uma": "Smart Falcon",
+            "discord": "@BYond",
+            "benched": false
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Agnes Digital (Halloween)",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Meisho Doto (Halloween)",
+            "discord": "@McGee",
+            "benched": false
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Mayano Top Gun (Wedding)",
+            "discord": "@AngelicVixen",
+            "benched": false
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Oguri Cap",
+            "discord": "@Zanko",
+            "benched": false
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Rice Shower (Halloween)",
+            "discord": "@wata",
+            "benched": false
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Air Groove",
+            "discord": "@Yanagi #1 Fan (Bloop)",
+            "benched": false
+          }
+        ]
       },
       "draft_path": "Dominator Tournament/R3/Dominacion vs Dominate/draft.json",
       "draft_has_content": true,
-      "reported_results": null,
-      "report_path": null,
-      "computed_scores": null,
-      "scores": null,
+      "reported_results": {
+        "schema_version": 1,
+        "match_id": "r3-m2",
+        "external_match_id": "LDGU92",
+        "source": "Organizer-supplied match results and roster screenshots, corroborated by four original horseACT exports supplied on 2026-09-13.",
+        "mvp": {
+          "team_id": "dominacion",
+          "uma": "Oguri Cap",
+          "discord": "@Zanko",
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Zanko",
+          "points": 9
+        },
+        "races": [
+          {
+            "number": 1,
+            "track": "Fukushima 2000m · Turf · Right · Winter / Sunny / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominacion",
+                "uma": "Oguri Cap",
+                "discord": "@Zanko",
+                "place": 1,
+                "points": 4,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "Zanko"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Air Groove",
+                "discord": "@Yanagi #1 Fan (Bloop)",
+                "place": 2,
+                "points": 2,
+                "variant_id": 101801,
+                "portrait": "assets/runners/101801.webp",
+                "display_name": "bloop"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Rice Shower (Halloween)",
+                "discord": "@wata",
+                "place": 3,
+                "points": 1,
+                "variant_id": 103002,
+                "portrait": "assets/runners/103002.webp",
+                "display_name": "wata"
+              }
+            ],
+            "scores": {
+              "dominacion": 7,
+              "dominate": 0
+            },
+            "cumulative_scores": {
+              "dominacion": 7,
+              "dominate": 0
+            }
+          },
+          {
+            "number": 2,
+            "track": "Nakayama (Inner) 2500m · Turf · Right · Summer / Sunny / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominacion",
+                "uma": "Meisho Doto (Halloween)",
+                "discord": "@McGee",
+                "place": 1,
+                "points": 4,
+                "variant_id": 105802,
+                "portrait": "assets/runners/105802.webp",
+                "display_name": "McGee"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Rice Shower (Halloween)",
+                "discord": "@wata",
+                "place": 2,
+                "points": 2,
+                "variant_id": 103002,
+                "portrait": "assets/runners/103002.webp",
+                "display_name": "wata"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Oguri Cap",
+                "discord": "@Zanko",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "Zanko"
+              }
+            ],
+            "scores": {
+              "dominacion": 7,
+              "dominate": 0
+            },
+            "cumulative_scores": {
+              "dominacion": 14,
+              "dominate": 0
+            }
+          },
+          {
+            "number": 3,
+            "track": "Hakodate 2000m · Turf · Right · Fall / Cloudy / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominacion",
+                "uma": "Oguri Cap",
+                "discord": "@Zanko",
+                "place": 1,
+                "points": 4,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "Zanko"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Meisho Doto (Halloween)",
+                "discord": "@McGee",
+                "place": 2,
+                "points": 2,
+                "variant_id": 105802,
+                "portrait": "assets/runners/105802.webp",
+                "display_name": "McGee"
+              },
+              {
+                "team_id": "dominate",
+                "uma": "Mejiro McQueen (Summer)",
+                "discord": "@raine",
+                "place": 3,
+                "points": 1,
+                "variant_id": 101303,
+                "portrait": "assets/runners/101303.webp",
+                "display_name": "raine"
+              }
+            ],
+            "scores": {
+              "dominacion": 6,
+              "dominate": 1
+            },
+            "cumulative_scores": {
+              "dominacion": 20,
+              "dominate": 1
+            }
+          },
+          {
+            "number": 4,
+            "track": "Niigata (Outer) 2000m · Turf · Left · Summer / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominacion",
+                "uma": "Rice Shower (Halloween)",
+                "discord": "@wata",
+                "place": 1,
+                "points": 4,
+                "variant_id": 103002,
+                "portrait": "assets/runners/103002.webp",
+                "display_name": "wata"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Air Groove",
+                "discord": "@Yanagi #1 Fan (Bloop)",
+                "place": 2,
+                "points": 2,
+                "variant_id": 101801,
+                "portrait": "assets/runners/101801.webp",
+                "display_name": "bloop"
+              },
+              {
+                "team_id": "dominate",
+                "uma": "Mihono Bourbon",
+                "discord": "@Mayday",
+                "place": 3,
+                "points": 1,
+                "variant_id": 102601,
+                "portrait": "assets/runners/102601.webp",
+                "display_name": "Mayday"
+              }
+            ],
+            "scores": {
+              "dominacion": 6,
+              "dominate": 1
+            },
+            "cumulative_scores": {
+              "dominacion": 26,
+              "dominate": 2
+            }
+          }
+        ],
+        "totals": {
+          "dominacion": 26,
+          "dominate": 2
+        }
+      },
+      "report_path": "Dominator Tournament/R3/Dominacion vs Dominate/results.json",
+      "computed_scores": {
+        "dominacion": 26,
+        "dominate": 2
+      },
+      "scores": {
+        "dominacion": 26,
+        "dominate": 2
+      },
       "score_only": false,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": [],
-      "draft_lineup": [],
+      "target_reached": [
+        "dominacion"
+      ],
+      "draft_lineup": [
+        {
+          "team_id": "dominate",
+          "uma": "Kitasan Black",
+          "discord": "@Reyov",
+          "benched": false,
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp",
+          "display_name": "Reyov"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mayano Top Gun",
+          "discord": "@Flyingsparkz",
+          "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
+          "display_name": "Flyingsparkz"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "@raine",
+          "benched": false,
+          "variant_id": 101303,
+          "portrait": "assets/runners/101303.webp",
+          "display_name": "raine"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mihono Bourbon",
+          "discord": "@Mayday",
+          "benched": false,
+          "variant_id": 102601,
+          "portrait": "assets/runners/102601.webp",
+          "display_name": "Mayday"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Silence Suzuka",
+          "discord": null,
+          "benched": true,
+          "variant_id": 100201,
+          "portrait": "assets/runners/100201.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Smart Falcon",
+          "discord": "@BYond",
+          "benched": false,
+          "variant_id": 104601,
+          "portrait": "assets/runners/104601.webp",
+          "display_name": "BYond"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Agnes Digital (Halloween)",
+          "discord": null,
+          "benched": true,
+          "variant_id": 101902,
+          "portrait": "assets/runners/101902.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Meisho Doto (Halloween)",
+          "discord": "@McGee",
+          "benched": false,
+          "variant_id": 105802,
+          "portrait": "assets/runners/105802.webp",
+          "display_name": "McGee"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Mayano Top Gun (Wedding)",
+          "discord": "@AngelicVixen",
+          "benched": false,
+          "variant_id": 102402,
+          "portrait": "assets/runners/102402.webp",
+          "display_name": "AngelicVixen"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Oguri Cap",
+          "discord": "@Zanko",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Zanko"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata",
+          "benched": false,
+          "variant_id": 103002,
+          "portrait": "assets/runners/103002.webp",
+          "display_name": "wata"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Air Groove",
+          "discord": "@Yanagi #1 Fan (Bloop)",
+          "benched": false,
+          "variant_id": 101801,
+          "portrait": "assets/runners/101801.webp",
+          "display_name": "Yanagi #1 Fan (Bloop)"
+        }
+      ],
       "draft_uma_actions": {
         "uma_pre_bans": [
           {
@@ -7525,7 +8032,20 @@
           }
         ],
         "uma_additions": [],
-        "benched_umas": [],
+        "benched_umas": [
+          {
+            "team_id": "dominate",
+            "uma": "Silence Suzuka",
+            "variant_id": 100201,
+            "portrait": "assets/runners/100201.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Agnes Digital (Halloween)",
+            "variant_id": 101902,
+            "portrait": "assets/runners/101902.webp"
+          }
+        ],
         "uma_selections": [
           {
             "team_id": "dominate",
@@ -7565,15 +8085,15 @@
           },
           {
             "team_id": "dominacion",
-            "uma": "Agnes Digital",
-            "variant_id": 101901,
-            "portrait": "assets/runners/101901.webp"
+            "uma": "Agnes Digital (Halloween)",
+            "variant_id": 101902,
+            "portrait": "assets/runners/101902.webp"
           },
           {
             "team_id": "dominacion",
-            "uma": "Meisho Doto",
-            "variant_id": 105801,
-            "portrait": "assets/runners/105801.webp"
+            "uma": "Meisho Doto (Halloween)",
+            "variant_id": 105802,
+            "portrait": "assets/runners/105802.webp"
           },
           {
             "team_id": "dominacion",
@@ -7601,10 +8121,220 @@
           }
         ]
       },
-      "lineup": [],
-      "lineup_source": "draft",
-      "player_points": [],
-      "player_points_recorded": false
+      "lineup": [
+        {
+          "team_id": "dominacion",
+          "uma": "Mayano Top Gun (Wedding)",
+          "discord": "@AngelicVixen",
+          "benched": false,
+          "variant_id": 102402,
+          "portrait": "assets/runners/102402.webp",
+          "display_name": "AngelicVixen"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Air Groove",
+          "discord": "@Yanagi #1 Fan (Bloop)",
+          "benched": false,
+          "variant_id": 101801,
+          "portrait": "assets/runners/101801.webp",
+          "display_name": "bloop"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Meisho Doto (Halloween)",
+          "discord": "@McGee",
+          "benched": false,
+          "variant_id": 105802,
+          "portrait": "assets/runners/105802.webp",
+          "display_name": "McGee"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata",
+          "benched": false,
+          "variant_id": 103002,
+          "portrait": "assets/runners/103002.webp",
+          "display_name": "wata"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Oguri Cap",
+          "discord": "@Zanko",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Zanko"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Smart Falcon",
+          "discord": "@BYond",
+          "benched": false,
+          "variant_id": 104601,
+          "portrait": "assets/runners/104601.webp",
+          "display_name": "BYond"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mayano Top Gun",
+          "discord": "@Flyingsparkz",
+          "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
+          "display_name": "Flyingsparkz"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mihono Bourbon",
+          "discord": "@Mayday",
+          "benched": false,
+          "variant_id": 102601,
+          "portrait": "assets/runners/102601.webp",
+          "display_name": "Mayday"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "@raine",
+          "benched": false,
+          "variant_id": 101303,
+          "portrait": "assets/runners/101303.webp",
+          "display_name": "raine"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Kitasan Black",
+          "discord": "@Reyov",
+          "benched": false,
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp",
+          "display_name": "Reyov"
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Silence Suzuka",
+          "discord": null,
+          "benched": true,
+          "variant_id": 100201,
+          "portrait": "assets/runners/100201.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Agnes Digital (Halloween)",
+          "discord": null,
+          "benched": true,
+          "variant_id": 101902,
+          "portrait": "assets/runners/101902.webp",
+          "display_name": ""
+        }
+      ],
+      "lineup_source": "race",
+      "player_points": [
+        {
+          "team_id": "dominacion",
+          "uma": "Oguri Cap",
+          "discord": "@Zanko",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Zanko",
+          "points": 9
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Rice Shower (Halloween)",
+          "discord": "@wata",
+          "benched": false,
+          "variant_id": 103002,
+          "portrait": "assets/runners/103002.webp",
+          "display_name": "wata",
+          "points": 7
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Meisho Doto (Halloween)",
+          "discord": "@McGee",
+          "benched": false,
+          "variant_id": 105802,
+          "portrait": "assets/runners/105802.webp",
+          "display_name": "McGee",
+          "points": 6
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Air Groove",
+          "discord": "@Yanagi #1 Fan (Bloop)",
+          "benched": false,
+          "variant_id": 101801,
+          "portrait": "assets/runners/101801.webp",
+          "display_name": "bloop",
+          "points": 4
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Mayano Top Gun (Wedding)",
+          "discord": "@AngelicVixen",
+          "benched": false,
+          "variant_id": 102402,
+          "portrait": "assets/runners/102402.webp",
+          "display_name": "AngelicVixen",
+          "points": 0
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mihono Bourbon",
+          "discord": "@Mayday",
+          "benched": false,
+          "variant_id": 102601,
+          "portrait": "assets/runners/102601.webp",
+          "display_name": "Mayday",
+          "points": 1
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mejiro McQueen (Summer)",
+          "discord": "@raine",
+          "benched": false,
+          "variant_id": 101303,
+          "portrait": "assets/runners/101303.webp",
+          "display_name": "raine",
+          "points": 1
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Smart Falcon",
+          "discord": "@BYond",
+          "benched": false,
+          "variant_id": 104601,
+          "portrait": "assets/runners/104601.webp",
+          "display_name": "BYond",
+          "points": 0
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Mayano Top Gun",
+          "discord": "@Flyingsparkz",
+          "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
+          "display_name": "Flyingsparkz",
+          "points": 0
+        },
+        {
+          "team_id": "dominate",
+          "uma": "Kitasan Black",
+          "discord": "@Reyov",
+          "benched": false,
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp",
+          "display_name": "Reyov",
+          "points": 0
+        }
+      ],
+      "player_points_recorded": true
     },
     {
       "id": "r4-m1",
@@ -7620,7 +8350,13 @@
       ],
       "participants": [
         null,
-        null
+        {
+          "id": "dominacion",
+          "name": "Dominacion",
+          "seed": 3,
+          "club_id": "739453372",
+          "aliases": []
+        }
       ],
       "winner_id": null,
       "loser_id": null,
@@ -7661,6 +8397,7 @@
     "dominant-h",
     "dominante",
     "dominarium",
+    "dominate",
     "domineer",
     "dominion",
     "dominium"
@@ -7866,8 +8603,8 @@
       ]
     },
     "dominacion": {
-      "match_id": "r2-m3",
-      "round": "R2",
+      "match_id": "r3-m2",
+      "round": "R3",
       "source": "race",
       "members": [
         {
@@ -7888,8 +8625,8 @@
       ]
     },
     "dominate": {
-      "match_id": "r2-m4",
-      "round": "R2",
+      "match_id": "r3-m2",
+      "round": "R3",
       "source": "race",
       "members": [
         {

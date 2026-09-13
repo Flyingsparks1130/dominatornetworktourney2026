@@ -48,7 +48,9 @@ LHNCFL records Dominion **22–27** Dominarium after six standard races plus a t
 
 JZENUX (`r2-m1`) records Dominator **29–13** Dominarium after six races. MVP is **@AdoboProdigy**, Taiki Shuttle, with 10 podium points. All six unchanged exports corroborate the reported podiums; they do not add a second set of points. Tamamo Cross and Gold City were benched. Chukyo 1400m remains the unused tiebreaker, with no race export. The final lineup, track picks, vetoes and bans come from the supplied draft screenshots; unsupplied snake-pick order is left empty.
 
-`r2-m3` records **Domineer 17–25 Dominacion** after six races. MVP is **@wata**, Rice Shower (Halloween), with 13 podium points. All six unchanged exports corroborate the reported podiums. Winning Ticket and El Condor Pasa were benched; Hakodate 1000m was the unused tiebreaker. No external match ID was supplied. With all quarterfinal winners confirmed, Round 3 is open for **Dominator vs Dominance** and **Dominacion vs Dominate**, with blank match drafts awaiting submissions.
+`r2-m3` records **Domineer 17–25 Dominacion** after six races. MVP is **@wata**, Rice Shower (Halloween), with 13 podium points. All six unchanged exports corroborate the reported podiums. Winning Ticket and El Condor Pasa were benched; Hakodate 1000m was the unused tiebreaker. No external match ID was supplied. Dominacion advanced to face Dominate in Round 3.
+
+LDGU92 (`r3-m2`) records **Dominate 2–26 Dominacion** after four races. MVP is **@Zanko**, Oguri Cap, with 9 podium points. All four unchanged exports corroborate the reported podiums. Silence Suzuka and Agnes Digital (Halloween) were benched. The remaining two standard tracks and Kyoto (Inner) 1200m tiebreaker were not run. Dominacion advances to the Grand Final, awaiting the winner of Dominator vs Dominance.
 
 ## Official scores and original exports
 

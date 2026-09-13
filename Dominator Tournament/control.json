@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 62,
+  "revision": 69,
   "decisions": {
     "r1-m1": {
       "winner_id": "dominarium",
@@ -70,6 +70,16 @@
       "manual_scores": {
         "dominacion": 25,
         "domineer": 17
+      }
+    },
+    "r3-m2": {
+      "winner_id": "dominacion",
+      "method": "advance",
+      "reason": "Organizer confirmed LDGU92 final: Dominate 2-26 Dominacion after four races; MVP Zanko. All four unchanged exports corroborate every podium and the official score. Advance Dominacion to the Grand Final.",
+      "decided_at": "2026-09-13T17:25:59Z",
+      "manual_scores": {
+        "dominacion": 26,
+        "dominate": 2
       }
     }
   },
@@ -1081,6 +1091,48 @@
         "team_id": "domineer",
         "eligible": true
       }
+    },
+    "55de554b9279cd355ee9": {
+      "8": {
+        "team_id": "dominacion",
+        "eligible": true
+      },
+      "5": {
+        "team_id": "dominacion",
+        "eligible": true
+      },
+      "6": {
+        "team_id": "dominacion",
+        "eligible": true
+      },
+      "1": {
+        "team_id": "dominacion",
+        "eligible": true
+      },
+      "2": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "0": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "4": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "3": {
+        "team_id": "dominate",
+        "eligible": true
+      },
+      "9": {
+        "team_id": "dominacion",
+        "eligible": true
+      },
+      "7": {
+        "team_id": "dominate",
+        "eligible": true
+      }
     }
   },
   "roster": {
@@ -1119,6 +1171,18 @@
       "AngelicVixen": "dominacion",
       "Zanko": "dominacion",
       "McGee": "dominacion"
+    },
+    "r3-m2": {
+      "Zanko": "dominacion",
+      "bloop": "dominacion",
+      "wata": "dominacion",
+      "McGee": "dominacion",
+      "Mayday": "dominate",
+      "Flyingsparkz": "dominate",
+      "Reyov": "dominate",
+      "raine": "dominate",
+      "AngelicVixen": "dominacion",
+      "BYond": "dominate"
     }
   },
   "audit": [
@@ -34945,6 +35009,4729 @@
       "path": "Dominator Tournament/R3/Dominator vs Dominance/draft.json",
       "before_sha256": "17cc79e33f41a5c5af84fb5cb072d0938d85d35996f0a4d28ce24b7a44113db3",
       "after_sha256": "04541882a2e454ff1527dfa66edb33f4c654a8f120975c39b25b9a9067dce568"
+    },
+    {
+      "at": "2026-09-13T17:25:52Z",
+      "actor": "organizer",
+      "action": "draft",
+      "match_id": "r3-m2",
+      "reason": "Record LDGU92 roster, benches, Halloween variants and completed-match notes from organizer screenshots.",
+      "revision": 63,
+      "path": "Dominator Tournament/R3/Dominacion vs Dominate/draft.json",
+      "before_sha256": "3dbb147f3f5ce0fc8b0b81ab949f92067db34610d85d1006851131d462104c55",
+      "after_sha256": "f849e1389a35d813cecff99683f34356434e366e36b6da9a25d66567d48fc866"
+    },
+    {
+      "at": "2026-09-13T17:25:53Z",
+      "actor": "organizer",
+      "action": "import",
+      "match_id": "r3-m2",
+      "path": "Dominator Tournament/R3/Dominacion vs Dominate/01 - Fukushima 2000m/Oguri Cap-95.1078s-20260913.json",
+      "content_hash": "55de554b9279cd355ee97d8f473f3f8a7b65c1bc602e060155bb00fb9b3f4ddd",
+      "revision": 64
+    },
+    {
+      "at": "2026-09-13T17:25:54Z",
+      "actor": "organizer",
+      "action": "import",
+      "match_id": "r3-m2",
+      "path": "Dominator Tournament/R3/Dominacion vs Dominate/02 - Nakayama (Inner) 2500m/Meisho Doto-121.2087s-20260913.json",
+      "content_hash": "f8329d2efedc3de9fcf082237abe0dd7fb0291a63c5dafd11c6177a13e388270",
+      "revision": 65
+    },
+    {
+      "at": "2026-09-13T17:25:55Z",
+      "actor": "organizer",
+      "action": "import",
+      "match_id": "r3-m2",
+      "path": "Dominator Tournament/R3/Dominacion vs Dominate/03 - Hakodate 2000m/Oguri Cap-95.0702s-20260913.json",
+      "content_hash": "a850208249845f6ec8fb0e843fa863ddcbf4b197f18f8fd1ef2cf073b5a5d23f",
+      "revision": 66
+    },
+    {
+      "at": "2026-09-13T17:25:56Z",
+      "actor": "organizer",
+      "action": "import",
+      "match_id": "r3-m2",
+      "path": "Dominator Tournament/R3/Dominacion vs Dominate/04 - Niigata (Outer) 2000m/Rice Shower-94.6706s-20260913.json",
+      "content_hash": "ac957e9f389137eb5a4bd119c8031d6ee8354ba18db593fc0d01823851b542d5",
+      "revision": 67
+    },
+    {
+      "at": "2026-09-13T17:25:57Z",
+      "actor": "organizer",
+      "action": "mapping",
+      "match_id": "r3-m2",
+      "reason": "Map all ten export owners to the organizer-confirmed LDGU92 roster; all four races contain the same ten owners and card variants.",
+      "revision": 68,
+      "before": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          },
+          "r2-m4": {
+            "winner_id": "dominate",
+            "method": "advance",
+            "reason": "Organizer-supplied SE3RMK final 26–9 after Race 5, verified against all five original exports and reported podiums.",
+            "decided_at": "2026-09-11T16:36:56Z",
+            "manual_scores": {
+              "dominate": 26,
+              "dominium": 9
+            }
+          },
+          "r2-m2": {
+            "winner_id": "dominance",
+            "method": "advance",
+            "reason": "Organizer confirmed Dominant H 22–27 Dominance after seven races; MVP Raykini. All podiums verified against the original exports.",
+            "decided_at": "2026-09-11T22:07:15Z",
+            "manual_scores": {
+              "dominance": 27,
+              "dominant-h": 22
+            }
+          },
+          "r2-m1": {
+            "winner_id": "dominator",
+            "method": "advance",
+            "reason": "Publish organizer-confirmed JZENUX: Dominator 29–13 Dominarium after six races; MVP AdoboProdigy. All six exports corroborate the podiums.",
+            "decided_at": "2026-09-11T23:53:21Z",
+            "manual_scores": {
+              "dominarium": 13,
+              "dominator": 29
+            }
+          },
+          "r2-m3": {
+            "winner_id": "dominacion",
+            "method": "advance",
+            "reason": "Organizer confirmed Domineer 17–25 Dominacion after six races; MVP @wata. All six unchanged exports corroborate the podiums. Complete Round 2 and advance Dominacion to face Dominate in Round 3.",
+            "decided_at": "2026-09-12T00:32:24Z",
+            "manual_scores": {
+              "dominacion": 25,
+              "domineer": 17
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6a90afd4af061a79b568": {
+            "3": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "37e67a4d0d6bea4e9f3e": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "80443fe07928e4407b7a": {
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "7c48300d6cdd861a5834": {
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6b375895af26d382dc5b": {
+            "2": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominance",
+              "eligible": true
+            }
+          },
+          "6c7b39c05c11ae6e840e": {
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "e8033244e144f415b64f": {
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "9e3e00480b7fde58c39a": {
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominance",
+              "eligible": true
+            }
+          },
+          "87d47b802411a4514be0": {
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "10f9086a1ed9a5f9368f": {
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            }
+          },
+          "4814a3b2d89cf0102452": {
+            "2": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "56b65d20b64b13ce24a7": {
+            "8": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            }
+          },
+          "e11f7645e1b2ca830e18": {
+            "5": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "42e88c5ea2b55f0aed64": {
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "7527405cfa43908ba451": {
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            }
+          },
+          "ea90401c018369c4fd3a": {
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "dbeb692653faa9b3bdda": {
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "77ff35c7e057c068ae2a": {
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            }
+          },
+          "d670795870ca6ea3e08f": {
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "domineer",
+              "eligible": true
+            }
+          },
+          "ed4745d845438e7684b6": {
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            }
+          },
+          "3073f39e17998d4eeaab": {
+            "7": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominacion",
+              "eligible": true
+            }
+          },
+          "0920a2b9c8bcad93181f": {
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            }
+          },
+          "03d59f7bd6a0b45e9706": {
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            }
+          }
+        },
+        "roster": {
+          "r2-m2": {
+            "Raykini": "dominance",
+            "Toji Fushiguro": "dominant-h",
+            "Fizzle": "dominant-h",
+            "Kitasan": "dominant-h",
+            "Bean": "dominant-h",
+            "Bloodvvolf": "dominance",
+            "JeryDream": "dominant-h",
+            "Iviers": "dominance",
+            "NakeGhostie": "dominance",
+            "Essential": "dominance"
+          },
+          "r2-m1": {
+            "Eibarman": "dominarium",
+            "Cal": "dominarium",
+            "David": "dominarium",
+            "CallMeNeko": "dominarium",
+            "Khinus": "dominator",
+            "LESKBILL": "dominarium",
+            "PKHR": "dominator",
+            "mikeluigi64": "dominator",
+            "cynical": "dominator",
+            "AdoboProdigy": "dominator"
+          },
+          "r2-m3": {
+            "Zen": "domineer",
+            "wata": "dominacion",
+            "Sonic": "domineer",
+            "JUNI": "domineer",
+            "Stayk": "domineer",
+            "Emperor": "domineer",
+            "bloop": "dominacion",
+            "AngelicVixen": "dominacion",
+            "Zanko": "dominacion",
+            "McGee": "dominacion"
+          }
+        }
+      },
+      "after": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          },
+          "r2-m4": {
+            "winner_id": "dominate",
+            "method": "advance",
+            "reason": "Organizer-supplied SE3RMK final 26–9 after Race 5, verified against all five original exports and reported podiums.",
+            "decided_at": "2026-09-11T16:36:56Z",
+            "manual_scores": {
+              "dominate": 26,
+              "dominium": 9
+            }
+          },
+          "r2-m2": {
+            "winner_id": "dominance",
+            "method": "advance",
+            "reason": "Organizer confirmed Dominant H 22–27 Dominance after seven races; MVP Raykini. All podiums verified against the original exports.",
+            "decided_at": "2026-09-11T22:07:15Z",
+            "manual_scores": {
+              "dominance": 27,
+              "dominant-h": 22
+            }
+          },
+          "r2-m1": {
+            "winner_id": "dominator",
+            "method": "advance",
+            "reason": "Publish organizer-confirmed JZENUX: Dominator 29–13 Dominarium after six races; MVP AdoboProdigy. All six exports corroborate the podiums.",
+            "decided_at": "2026-09-11T23:53:21Z",
+            "manual_scores": {
+              "dominarium": 13,
+              "dominator": 29
+            }
+          },
+          "r2-m3": {
+            "winner_id": "dominacion",
+            "method": "advance",
+            "reason": "Organizer confirmed Domineer 17–25 Dominacion after six races; MVP @wata. All six unchanged exports corroborate the podiums. Complete Round 2 and advance Dominacion to face Dominate in Round 3.",
+            "decided_at": "2026-09-12T00:32:24Z",
+            "manual_scores": {
+              "dominacion": 25,
+              "domineer": 17
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6a90afd4af061a79b568": {
+            "3": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "37e67a4d0d6bea4e9f3e": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "80443fe07928e4407b7a": {
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "7c48300d6cdd861a5834": {
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6b375895af26d382dc5b": {
+            "2": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominance",
+              "eligible": true
+            }
+          },
+          "6c7b39c05c11ae6e840e": {
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "e8033244e144f415b64f": {
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "9e3e00480b7fde58c39a": {
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominance",
+              "eligible": true
+            }
+          },
+          "87d47b802411a4514be0": {
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "10f9086a1ed9a5f9368f": {
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            }
+          },
+          "4814a3b2d89cf0102452": {
+            "2": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "56b65d20b64b13ce24a7": {
+            "8": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            }
+          },
+          "e11f7645e1b2ca830e18": {
+            "5": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "42e88c5ea2b55f0aed64": {
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "7527405cfa43908ba451": {
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            }
+          },
+          "ea90401c018369c4fd3a": {
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "dbeb692653faa9b3bdda": {
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "77ff35c7e057c068ae2a": {
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            }
+          },
+          "d670795870ca6ea3e08f": {
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "domineer",
+              "eligible": true
+            }
+          },
+          "ed4745d845438e7684b6": {
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            }
+          },
+          "3073f39e17998d4eeaab": {
+            "7": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominacion",
+              "eligible": true
+            }
+          },
+          "0920a2b9c8bcad93181f": {
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            }
+          },
+          "03d59f7bd6a0b45e9706": {
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            }
+          },
+          "55de554b9279cd355ee9": {
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            }
+          }
+        },
+        "roster": {
+          "r2-m2": {
+            "Raykini": "dominance",
+            "Toji Fushiguro": "dominant-h",
+            "Fizzle": "dominant-h",
+            "Kitasan": "dominant-h",
+            "Bean": "dominant-h",
+            "Bloodvvolf": "dominance",
+            "JeryDream": "dominant-h",
+            "Iviers": "dominance",
+            "NakeGhostie": "dominance",
+            "Essential": "dominance"
+          },
+          "r2-m1": {
+            "Eibarman": "dominarium",
+            "Cal": "dominarium",
+            "David": "dominarium",
+            "CallMeNeko": "dominarium",
+            "Khinus": "dominator",
+            "LESKBILL": "dominarium",
+            "PKHR": "dominator",
+            "mikeluigi64": "dominator",
+            "cynical": "dominator",
+            "AdoboProdigy": "dominator"
+          },
+          "r2-m3": {
+            "Zen": "domineer",
+            "wata": "dominacion",
+            "Sonic": "domineer",
+            "JUNI": "domineer",
+            "Stayk": "domineer",
+            "Emperor": "domineer",
+            "bloop": "dominacion",
+            "AngelicVixen": "dominacion",
+            "Zanko": "dominacion",
+            "McGee": "dominacion"
+          },
+          "r3-m2": {
+            "Zanko": "dominacion",
+            "bloop": "dominacion",
+            "wata": "dominacion",
+            "McGee": "dominacion",
+            "Mayday": "dominate",
+            "Flyingsparkz": "dominate",
+            "Reyov": "dominate",
+            "raine": "dominate",
+            "AngelicVixen": "dominacion",
+            "BYond": "dominate"
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-09-13T17:25:59Z",
+      "actor": "organizer",
+      "action": "record_report",
+      "match_id": "r3-m2",
+      "reason": "Organizer confirmed LDGU92 final: Dominate 2-26 Dominacion after four races; MVP Zanko. All four unchanged exports corroborate every podium and the official score. Advance Dominacion to the Grand Final.",
+      "revision": 69,
+      "before": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          },
+          "r2-m4": {
+            "winner_id": "dominate",
+            "method": "advance",
+            "reason": "Organizer-supplied SE3RMK final 26–9 after Race 5, verified against all five original exports and reported podiums.",
+            "decided_at": "2026-09-11T16:36:56Z",
+            "manual_scores": {
+              "dominate": 26,
+              "dominium": 9
+            }
+          },
+          "r2-m2": {
+            "winner_id": "dominance",
+            "method": "advance",
+            "reason": "Organizer confirmed Dominant H 22–27 Dominance after seven races; MVP Raykini. All podiums verified against the original exports.",
+            "decided_at": "2026-09-11T22:07:15Z",
+            "manual_scores": {
+              "dominance": 27,
+              "dominant-h": 22
+            }
+          },
+          "r2-m1": {
+            "winner_id": "dominator",
+            "method": "advance",
+            "reason": "Publish organizer-confirmed JZENUX: Dominator 29–13 Dominarium after six races; MVP AdoboProdigy. All six exports corroborate the podiums.",
+            "decided_at": "2026-09-11T23:53:21Z",
+            "manual_scores": {
+              "dominarium": 13,
+              "dominator": 29
+            }
+          },
+          "r2-m3": {
+            "winner_id": "dominacion",
+            "method": "advance",
+            "reason": "Organizer confirmed Domineer 17–25 Dominacion after six races; MVP @wata. All six unchanged exports corroborate the podiums. Complete Round 2 and advance Dominacion to face Dominate in Round 3.",
+            "decided_at": "2026-09-12T00:32:24Z",
+            "manual_scores": {
+              "dominacion": 25,
+              "domineer": 17
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6a90afd4af061a79b568": {
+            "3": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "37e67a4d0d6bea4e9f3e": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "80443fe07928e4407b7a": {
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "7c48300d6cdd861a5834": {
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6b375895af26d382dc5b": {
+            "2": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominance",
+              "eligible": true
+            }
+          },
+          "6c7b39c05c11ae6e840e": {
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "e8033244e144f415b64f": {
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "9e3e00480b7fde58c39a": {
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominance",
+              "eligible": true
+            }
+          },
+          "87d47b802411a4514be0": {
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "10f9086a1ed9a5f9368f": {
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            }
+          },
+          "4814a3b2d89cf0102452": {
+            "2": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "56b65d20b64b13ce24a7": {
+            "8": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            }
+          },
+          "e11f7645e1b2ca830e18": {
+            "5": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "42e88c5ea2b55f0aed64": {
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "7527405cfa43908ba451": {
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            }
+          },
+          "ea90401c018369c4fd3a": {
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "dbeb692653faa9b3bdda": {
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "77ff35c7e057c068ae2a": {
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            }
+          },
+          "d670795870ca6ea3e08f": {
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "domineer",
+              "eligible": true
+            }
+          },
+          "ed4745d845438e7684b6": {
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            }
+          },
+          "3073f39e17998d4eeaab": {
+            "7": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominacion",
+              "eligible": true
+            }
+          },
+          "0920a2b9c8bcad93181f": {
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            }
+          },
+          "03d59f7bd6a0b45e9706": {
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            }
+          },
+          "55de554b9279cd355ee9": {
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            }
+          }
+        },
+        "roster": {
+          "r2-m2": {
+            "Raykini": "dominance",
+            "Toji Fushiguro": "dominant-h",
+            "Fizzle": "dominant-h",
+            "Kitasan": "dominant-h",
+            "Bean": "dominant-h",
+            "Bloodvvolf": "dominance",
+            "JeryDream": "dominant-h",
+            "Iviers": "dominance",
+            "NakeGhostie": "dominance",
+            "Essential": "dominance"
+          },
+          "r2-m1": {
+            "Eibarman": "dominarium",
+            "Cal": "dominarium",
+            "David": "dominarium",
+            "CallMeNeko": "dominarium",
+            "Khinus": "dominator",
+            "LESKBILL": "dominarium",
+            "PKHR": "dominator",
+            "mikeluigi64": "dominator",
+            "cynical": "dominator",
+            "AdoboProdigy": "dominator"
+          },
+          "r2-m3": {
+            "Zen": "domineer",
+            "wata": "dominacion",
+            "Sonic": "domineer",
+            "JUNI": "domineer",
+            "Stayk": "domineer",
+            "Emperor": "domineer",
+            "bloop": "dominacion",
+            "AngelicVixen": "dominacion",
+            "Zanko": "dominacion",
+            "McGee": "dominacion"
+          },
+          "r3-m2": {
+            "Zanko": "dominacion",
+            "bloop": "dominacion",
+            "wata": "dominacion",
+            "McGee": "dominacion",
+            "Mayday": "dominate",
+            "Flyingsparkz": "dominate",
+            "Reyov": "dominate",
+            "raine": "dominate",
+            "AngelicVixen": "dominacion",
+            "BYond": "dominate"
+          }
+        }
+      },
+      "after": {
+        "decisions": {
+          "r1-m1": {
+            "winner_id": "dominarium",
+            "method": "advance",
+            "reason": "Organizer-confirmed LHNCFL: Dominion 22–27 Dominarium, seven races, MVP @LESKBILL.",
+            "decided_at": "2026-09-11T13:41:02Z",
+            "manual_scores": {
+              "dominarium": 27,
+              "dominion": 22
+            }
+          },
+          "r1-m3": {
+            "winner_id": "dominium",
+            "method": "advance",
+            "reason": "Organizer confirmed WSPWLR: Dominium 29–13 Dominante after six races; MVP @Juqi.",
+            "decided_at": "2026-09-11T15:27:52Z",
+            "manual_scores": {
+              "dominante": 13,
+              "dominium": 29
+            }
+          },
+          "r1-m2": {
+            "winner_id": "domineer",
+            "method": "advance",
+            "reason": "Organizer confirmed 8GVX7Y: Domineer 28–7 DomiChill after five races; MVP Inari One, Discord 479998555290075136.",
+            "decided_at": "2026-09-11T15:48:29Z",
+            "manual_scores": {
+              "domichill": 7,
+              "domineer": 28
+            }
+          },
+          "r2-m4": {
+            "winner_id": "dominate",
+            "method": "advance",
+            "reason": "Organizer-supplied SE3RMK final 26–9 after Race 5, verified against all five original exports and reported podiums.",
+            "decided_at": "2026-09-11T16:36:56Z",
+            "manual_scores": {
+              "dominate": 26,
+              "dominium": 9
+            }
+          },
+          "r2-m2": {
+            "winner_id": "dominance",
+            "method": "advance",
+            "reason": "Organizer confirmed Dominant H 22–27 Dominance after seven races; MVP Raykini. All podiums verified against the original exports.",
+            "decided_at": "2026-09-11T22:07:15Z",
+            "manual_scores": {
+              "dominance": 27,
+              "dominant-h": 22
+            }
+          },
+          "r2-m1": {
+            "winner_id": "dominator",
+            "method": "advance",
+            "reason": "Publish organizer-confirmed JZENUX: Dominator 29–13 Dominarium after six races; MVP AdoboProdigy. All six exports corroborate the podiums.",
+            "decided_at": "2026-09-11T23:53:21Z",
+            "manual_scores": {
+              "dominarium": 13,
+              "dominator": 29
+            }
+          },
+          "r2-m3": {
+            "winner_id": "dominacion",
+            "method": "advance",
+            "reason": "Organizer confirmed Domineer 17–25 Dominacion after six races; MVP @wata. All six unchanged exports corroborate the podiums. Complete Round 2 and advance Dominacion to face Dominate in Round 3.",
+            "decided_at": "2026-09-12T00:32:24Z",
+            "manual_scores": {
+              "dominacion": 25,
+              "domineer": 17
+            }
+          },
+          "r3-m2": {
+            "winner_id": "dominacion",
+            "method": "advance",
+            "reason": "Organizer confirmed LDGU92 final: Dominate 2-26 Dominacion after four races; MVP Zanko. All four unchanged exports corroborate every podium and the official score. Advance Dominacion to the Grand Final.",
+            "decided_at": "2026-09-13T17:25:59Z",
+            "manual_scores": {
+              "dominacion": 26,
+              "dominate": 2
+            }
+          }
+        },
+        "race_overrides": {
+          "88e67acbf1bf9d722ad3": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6a90afd4af061a79b568": {
+            "3": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "37e67a4d0d6bea4e9f3e": {
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "80443fe07928e4407b7a": {
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "7c48300d6cdd861a5834": {
+            "8": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominium",
+              "eligible": true
+            }
+          },
+          "6b375895af26d382dc5b": {
+            "2": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominance",
+              "eligible": true
+            }
+          },
+          "6c7b39c05c11ae6e840e": {
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "e8033244e144f415b64f": {
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "9e3e00480b7fde58c39a": {
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominance",
+              "eligible": true
+            }
+          },
+          "87d47b802411a4514be0": {
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "10f9086a1ed9a5f9368f": {
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominance",
+              "eligible": true
+            }
+          },
+          "4814a3b2d89cf0102452": {
+            "2": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominant-h",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominance",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominant-h",
+              "eligible": true
+            }
+          },
+          "56b65d20b64b13ce24a7": {
+            "8": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            }
+          },
+          "e11f7645e1b2ca830e18": {
+            "5": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "42e88c5ea2b55f0aed64": {
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "7527405cfa43908ba451": {
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            }
+          },
+          "ea90401c018369c4fd3a": {
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "dbeb692653faa9b3bdda": {
+            "0": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominator",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominarium",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominarium",
+              "eligible": true
+            }
+          },
+          "77ff35c7e057c068ae2a": {
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            }
+          },
+          "d670795870ca6ea3e08f": {
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "domineer",
+              "eligible": true
+            }
+          },
+          "ed4745d845438e7684b6": {
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            }
+          },
+          "3073f39e17998d4eeaab": {
+            "7": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominacion",
+              "eligible": true
+            }
+          },
+          "0920a2b9c8bcad93181f": {
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            }
+          },
+          "03d59f7bd6a0b45e9706": {
+            "0": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "domineer",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "domineer",
+              "eligible": true
+            }
+          },
+          "55de554b9279cd355ee9": {
+            "8": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "5": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "6": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "1": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "2": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "0": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "4": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "3": {
+              "team_id": "dominate",
+              "eligible": true
+            },
+            "9": {
+              "team_id": "dominacion",
+              "eligible": true
+            },
+            "7": {
+              "team_id": "dominate",
+              "eligible": true
+            }
+          }
+        },
+        "roster": {
+          "r2-m2": {
+            "Raykini": "dominance",
+            "Toji Fushiguro": "dominant-h",
+            "Fizzle": "dominant-h",
+            "Kitasan": "dominant-h",
+            "Bean": "dominant-h",
+            "Bloodvvolf": "dominance",
+            "JeryDream": "dominant-h",
+            "Iviers": "dominance",
+            "NakeGhostie": "dominance",
+            "Essential": "dominance"
+          },
+          "r2-m1": {
+            "Eibarman": "dominarium",
+            "Cal": "dominarium",
+            "David": "dominarium",
+            "CallMeNeko": "dominarium",
+            "Khinus": "dominator",
+            "LESKBILL": "dominarium",
+            "PKHR": "dominator",
+            "mikeluigi64": "dominator",
+            "cynical": "dominator",
+            "AdoboProdigy": "dominator"
+          },
+          "r2-m3": {
+            "Zen": "domineer",
+            "wata": "dominacion",
+            "Sonic": "domineer",
+            "JUNI": "domineer",
+            "Stayk": "domineer",
+            "Emperor": "domineer",
+            "bloop": "dominacion",
+            "AngelicVixen": "dominacion",
+            "Zanko": "dominacion",
+            "McGee": "dominacion"
+          },
+          "r3-m2": {
+            "Zanko": "dominacion",
+            "bloop": "dominacion",
+            "wata": "dominacion",
+            "McGee": "dominacion",
+            "Mayday": "dominate",
+            "Flyingsparkz": "dominate",
+            "Reyov": "dominate",
+            "raine": "dominate",
+            "AngelicVixen": "dominacion",
+            "BYond": "dominate"
+          }
+        }
+      }
     }
   ]
 }
