@@ -124,6 +124,11 @@ def normalize_race(raw: dict) -> dict:
             uma = h.get('charaName') or f"Character {h.get('charaId', '?')}"
             variant = response.get('card_id', trained.get('cardId'))
             aptitude = {'distance': h.get('activeProperDistance'), 'surface': h.get('activeProperGroundType')}
+            for key, suffix in [('turf','ground_turf'),('dirt','ground_dirt'),('sprint','distance_short'),('mile','distance_mile'),('medium','distance_middle'),('long','distance_long'),('front','running_style_nige'),('pace','running_style_senko'),('late','running_style_sashi'),('end','running_style_oikomi')]:
+                value = response.get('proper_' + suffix)
+                if value is None:
+                    value = trained.get('proper' + ''.join(part.title() for part in suffix.split('_')))
+                aptitude[key] = {1:'G',2:'F',3:'E',4:'D',5:'C',6:'B',7:'A',8:'S'}.get(value)
         else:
             if h.get('finished') is False:
                 raise TournamentError('A runner has not finished.')
@@ -147,6 +152,7 @@ def normalize_race(raw: dict) -> dict:
             'gate': gate, 'post_number': h.get('postNumber'), 'variant_id': variant, 'raw_seconds': raw_time,
             'scaled_seconds': scaled, 'raw_display': time_display(raw_time), 'scaled_display': time_display(scaled),
             'stats': stats, 'running_style_code': style, 'aptitudes': aptitude, 'skills': rowskills, 'support': rowsupport,
+            'training_score': trained.get('rankScore'), 'training_rank': trained.get('rank', response.get('final_grade')),
             'build_fingerprint': digest(identity), 'is_ghost': bool(h.get('isGhost', False)),
             'mood': params.get('motivation') if act else None,
             'base_stats': {k: number(params.get(a), k, optional=True) for k,a in

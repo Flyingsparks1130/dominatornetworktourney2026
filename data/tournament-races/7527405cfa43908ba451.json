@@ -12361,7 +12361,17 @@
       "running_style_code": 3,
       "aptitudes": {
         "distance": "A",
-        "surface": "S"
+        "surface": "S",
+        "turf": "S",
+        "dirt": "A",
+        "sprint": "A",
+        "mile": "A",
+        "medium": "S",
+        "long": "G",
+        "front": "G",
+        "pace": "E",
+        "late": "A",
+        "end": "C"
       },
       "skills": [
         {
@@ -12463,6 +12473,8 @@
           "limit_breaks": 4
         }
       ],
+      "training_score": 23472,
+      "training_rank": 28,
       "build_fingerprint": "80027d2b893c22f07f409d038b9aa54272173f6e9b9833d013a32cb94cff2ac6",
       "is_ghost": true,
       "mood": "Max",
@@ -12501,7 +12513,17 @@
       "running_style_code": 3,
       "aptitudes": {
         "distance": "A",
-        "surface": "A"
+        "surface": "A",
+        "turf": "A",
+        "dirt": "G",
+        "sprint": "A",
+        "mile": "S",
+        "medium": "B",
+        "long": "C",
+        "front": "G",
+        "pace": "B",
+        "late": "A",
+        "end": "D"
       },
       "skills": [
         {
@@ -12607,6 +12629,8 @@
           "limit_breaks": 4
         }
       ],
+      "training_score": 21416,
+      "training_rank": 23,
       "build_fingerprint": "4143d21d44a83a4053dde5cf112224bdf2ab574480582a1009ec4b2ef1170b6b",
       "is_ghost": true,
       "mood": "Max",
@@ -12645,7 +12669,17 @@
       "running_style_code": 2,
       "aptitudes": {
         "distance": "A",
-        "surface": "A"
+        "surface": "A",
+        "turf": "A",
+        "dirt": "A",
+        "sprint": "A",
+        "mile": "A",
+        "medium": "A",
+        "long": "B",
+        "front": "F",
+        "pace": "A",
+        "late": "A",
+        "end": "D"
       },
       "skills": [
         {
@@ -12743,6 +12777,8 @@
           "limit_breaks": 4
         }
       ],
+      "training_score": 20773,
+      "training_rank": 21,
       "build_fingerprint": "c14387cd555ccda757c0159068cc4bd9e114b16176f6311c5826ba43052cf1b8",
       "is_ghost": true,
       "mood": "Max",
@@ -12781,7 +12817,17 @@
       "running_style_code": 1,
       "aptitudes": {
         "distance": "A",
-        "surface": "A"
+        "surface": "A",
+        "turf": "A",
+        "dirt": "A",
+        "sprint": "A",
+        "mile": "A",
+        "medium": "A",
+        "long": "E",
+        "front": "A",
+        "pace": "D",
+        "late": "G",
+        "end": "G"
       },
       "skills": [
         {
@@ -12895,6 +12941,8 @@
           "limit_breaks": 4
         }
       ],
+      "training_score": 21752,
+      "training_rank": 24,
       "build_fingerprint": "3c811e9fa96c3d44c081c0d85d33732079e205a61af845296095408b4cceaf42",
       "is_ghost": true,
       "mood": "Max",
@@ -12933,7 +12981,17 @@
       "running_style_code": 2,
       "aptitudes": {
         "distance": "A",
-        "surface": "S"
+        "surface": "S",
+        "turf": "S",
+        "dirt": "A",
+        "sprint": "A",
+        "mile": "A",
+        "medium": "E",
+        "long": "G",
+        "front": "C",
+        "pace": "A",
+        "late": "D",
+        "end": "G"
       },
       "skills": [
         {
@@ -13027,6 +13085,8 @@
           "limit_breaks": 4
         }
       ],
+      "training_score": 22979,
+      "training_rank": 26,
       "build_fingerprint": "6628e458da9fab514176a0716e02009ad52516dc2a3559c543bcdfaf0036a977",
       "is_ghost": true,
       "mood": "Max",
@@ -13065,7 +13125,17 @@
       "running_style_code": 1,
       "aptitudes": {
         "distance": "A",
-        "surface": "A"
+        "surface": "A",
+        "turf": "A",
+        "dirt": "G",
+        "sprint": "A",
+        "mile": "S",
+        "medium": "G",
+        "long": "G",
+        "front": "A",
+        "pace": "A",
+        "late": "G",
+        "end": "G"
       },
       "skills": [
         {
@@ -13163,6 +13233,8 @@
           "limit_breaks": 4
         }
       ],
+      "training_score": 21663,
+      "training_rank": 24,
       "build_fingerprint": "7ac73184d904ed93fb8e446096e70a27b196d9821c751b58e897655d18a2b598",
       "is_ghost": true,
       "mood": "Max",
@@ -13201,7 +13273,17 @@
       "running_style_code": 1,
       "aptitudes": {
         "distance": "B",
-        "surface": "A"
+        "surface": "A",
+        "turf": "A",
+        "dirt": "A",
+        "sprint": "B",
+        "mile": "A",
+        "medium": "A",
+        "long": "E",
+        "front": "A",
+        "pace": "D",
+        "late": "G",
+        "end": "G"
       },
       "skills": [
         {
@@ -13307,6 +13389,8 @@
           "limit_breaks": 4
         }
       ],
+      "training_score": 22949,
+      "training_rank": 26,
       "build_fingerprint": "995ca6ed003e72735b7523dfb555ac00dcc04ec786a9809829bbb485e1e14afe",
       "is_ghost": true,
       "mood": "Max",
@@ -13345,7 +13429,17 @@
       "running_style_code": 2,
       "aptitudes": {
         "distance": "S",
-        "surface": "A"
+        "surface": "A",
+        "turf": "A",
+        "dirt": "S",
+        "sprint": "S",
+        "mile": "A",
+        "medium": "A",
+        "long": "B",
+        "front": "E",
+        "pace": "A",
+        "late": "A",
+        "end": "C"
       },
       "skills": [
         {
@@ -13439,6 +13533,8 @@
           "limit_breaks": 4
         }
       ],
+      "training_score": 20692,
+      "training_rank": 21,
       "build_fingerprint": "c16b1aeccab1d03b28173f1a74c42e43edb7bb19d62575a6e5b66e12c6d0013f",
       "is_ghost": true,
       "mood": "Max",
@@ -13477,7 +13573,17 @@
       "running_style_code": 3,
       "aptitudes": {
         "distance": "F",
-        "surface": "A"
+        "surface": "A",
+        "turf": "A",
+        "dirt": "B",
+        "sprint": "F",
+        "mile": "A",
+        "medium": "A",
+        "long": "B",
+        "front": "E",
+        "pace": "S",
+        "late": "A",
+        "end": "C"
       },
       "skills": [
         {
@@ -13575,6 +13681,8 @@
           "limit_breaks": 4
         }
       ],
+      "training_score": 21470,
+      "training_rank": 23,
       "build_fingerprint": "3bd153106032ba989cf13ba5c6a78d063db40d051d413ced101b114ffa2d3805",
       "is_ghost": true,
       "mood": "Max",
@@ -13613,7 +13721,17 @@
       "running_style_code": 3,
       "aptitudes": {
         "distance": "F",
-        "surface": "A"
+        "surface": "A",
+        "turf": "A",
+        "dirt": "A",
+        "sprint": "F",
+        "mile": "A",
+        "medium": "S",
+        "long": "G",
+        "front": "G",
+        "pace": "A",
+        "late": "A",
+        "end": "B"
       },
       "skills": [
         {
@@ -13719,6 +13837,8 @@
           "limit_breaks": 4
         }
       ],
+      "training_score": 22041,
+      "training_rank": 24,
       "build_fingerprint": "cf4202d083782d449d36800f149d592fcca8557cba1ac74c08419d9269f61e31",
       "is_ghost": true,
       "mood": "Max",
@@ -13745,7 +13865,7 @@
   "scoring_verified": true,
   "review_reasons": [],
   "team_points": {
-    "dominator": 4,
-    "dominarium": 3
+    "dominarium": 3,
+    "dominator": 4
   }
 }
