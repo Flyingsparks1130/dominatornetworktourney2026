@@ -100,17 +100,18 @@ check('Exact ties stay pending until one sourced choice',()=>{
 });
 check('Public HTML hides all award results and private HTML escapes names',()=>{
  const f=fixture(),s=run(f),publicHTML=UI.page(f.index,f.config,s,{revealed:false});
- assert.equal((publicHTML.match(/data-award=/g)||[]).length,20);assert.equal((publicHTML.match(/class="award-group /g)||[]).length,4);assert(!publicHTML.includes('Bakushin'));assert(!publicHTML.includes('Ada'));assert(!publicHTML.includes('See the receipts'));assert(publicHTML.includes('Tournament statistics'));
- assert.deepEqual(['Featured Honors','Build & Strategy','Race Moments','Tournament Honors'].map(name=>publicHTML.includes(name)),[true,true,true,true]);
+ assert.equal((publicHTML.match(/data-award=/g)||[]).length,20);assert.equal((publicHTML.match(/class="award-group /g)||[]).length,3);assert(!publicHTML.includes('Bakushin'));assert(!publicHTML.includes('Ada'));assert(!publicHTML.includes('See the receipts'));assert(publicHTML.includes('Tournament statistics'));
+ assert.deepEqual(E.groups.map(group=>group.name),['Tournament Honors','Build & Strategy','Race Moments']);
+ assert(!publicHTML.includes('Featured Honors'));assert(publicHTML.includes('Agnes Digital Award'));assert(publicHTML.includes('Gate Kept (Falcon) Award'));
  assert(!/Round 2 onward/i.test(publicHTML));assert(!publicHTML.includes('Change PNG / GIF'));assert(!publicHTML.includes('data-art='));
  const configured=E.catalog({images:{'hard-carry':'hard.png','top-road':'ntr.png',nature:'nature.gif'}});assert.equal(configured.find(a=>a.id==='hard-carry').image,'hard.png');assert.equal(configured.find(a=>a.id==='top-road').image,'ntr.png');assert.equal(configured.find(a=>a.id==='nature').image,'nature.gif');
- s.awards[0].winner.name='<img onerror="alert(1)">';const privateHTML=UI.page(f.index,f.config,s,{revealed:true,local:true});assert(privateHTML.includes('&lt;img onerror='));assert(!privateHTML.includes('<img onerror='));assert(privateHTML.includes('See the receipts'));assert(!/Round 2 onward/i.test(privateHTML));assert(!privateHTML.includes('Change PNG / GIF'));assert(!privateHTML.includes('data-art='));
+ award(s,'hard-carry').winner.name='<img onerror="alert(1)">';const privateHTML=UI.page(f.index,f.config,s,{revealed:true,local:true});assert(privateHTML.includes('&lt;img onerror='));assert(!privateHTML.includes('<img onerror='));assert(privateHTML.includes('See the receipts'));assert(!/Round 2 onward/i.test(privateHTML));assert(!privateHTML.includes('Change PNG / GIF'));assert(!privateHTML.includes('data-art='));
 });
 const index=JSON.parse(fs.readFileSync('data/tournament-index.json')),config=JSON.parse(fs.readFileSync('config/awards.json')),docs={};
 for(const m of index.matches)for(const f of m.races)docs[f.id]=JSON.parse(fs.readFileSync(f.data_file));
 require('../assets/award-telemetry.js');
 const real=E.compute(index,docs,config,catalogue,require('../assets/award-telemetry-data.json'));
-assert.deepEqual(real.awards.slice(0,5).map(a=>a.id),['nitro','fine-motion','hard-carry','top-road','nature']);
+assert.deepEqual(real.awards.map(a=>a.id),['mvp','wheelchair','hard-carry','top-road','nature','gate-kept','all-star','performance-anxiety','hot-headed','fine-motion','mejiro','festa','flyingsparks','nitro','double-jet','bourbon','blocked-count','blocked-time','neck','fences']);
 assert.equal(award(real,'neck').status,'provisional');assert.equal(award(real,'fences').status,'provisional');
 check('Every current export is included, and official points agree',()=>{
  assert.deepEqual(real.issues,[]);
