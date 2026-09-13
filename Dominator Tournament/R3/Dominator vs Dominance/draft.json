@@ -6,56 +6,56 @@
   "track_picks": [
     {
       "team_id": "dominator",
-      "track": "Chukyo 2200m · Turf · Summer / Sunny / Firm"
+      "track": "Chukyo 2200m · Turf · Left · Summer / Sunny / Firm"
     },
     {
       "team_id": "dominance",
-      "track": "Nakayama (Inner) 2000m · Turf · Fall / Sunny / Good"
+      "track": "Nakayama (Inner) 2000m · Turf · Right · Fall / Sunny / Good"
     },
     {
       "team_id": "dominator",
-      "track": "Hanshin (Outer) 2600m · Turf · Fall / Rainy / Heavy"
+      "track": "Hanshin (Outer) 2600m · Turf · Right · Fall / Rainy / Heavy"
     },
     {
       "team_id": "dominance",
-      "track": "Nakayama (Inner) 1800m · Turf"
+      "track": "Nakayama (Inner) 1800m · Turf · Right · Fall / Cloudy / Firm"
     },
     {
       "team_id": "dominator",
-      "track": "Tokyo 2300m · Turf · Spring / Sunny / Firm"
+      "track": "Tokyo 2300m · Turf · Left · Spring / Sunny / Firm"
     },
     {
       "team_id": "dominance",
-      "track": "Hakodate 1800m · Turf · Spring / Sunny / Good"
+      "track": "Hakodate 1800m · Turf · Right · Spring / Sunny / Good"
     },
     {
       "team_id": "dominator",
-      "track": "Hanshin (Outer to Inner) 3200m · Turf"
+      "track": "Hanshin (Outer to Inner) 3200m · Turf · Right · Winter / Snowy / Soft"
     },
     {
       "team_id": "dominance",
-      "track": "Hanshin (Inner) 2000m · Turf · Summer / Rainy / Heavy"
+      "track": "Hanshin (Inner) 2000m · Turf · Right · Summer / Rainy / Heavy"
     }
   ],
   "track_vetoes": [
     {
       "team_id": "dominator",
-      "track": "Nakayama (Inner) 1800m · Turf"
+      "track": "Nakayama (Inner) 1800m · Turf · Right · Fall / Cloudy / Firm"
     },
     {
       "team_id": "dominance",
-      "track": "Hanshin (Outer to Inner) 3200m · Turf"
+      "track": "Hanshin (Outer to Inner) 3200m · Turf · Right · Winter / Snowy / Soft"
     }
   ],
   "final_tracks": [
-    "Chukyo 2200m · Turf · Summer / Sunny / Firm",
-    "Nakayama (Inner) 2000m · Turf · Fall / Sunny / Good",
-    "Hanshin (Outer) 2600m · Turf · Fall / Rainy / Heavy",
-    "Hakodate 1800m · Turf · Spring / Sunny / Good",
-    "Tokyo 2300m · Turf · Spring / Sunny / Firm",
-    "Hanshin (Inner) 2000m · Turf · Summer / Rainy / Heavy"
+    "Chukyo 2200m · Turf · Left · Summer / Sunny / Firm",
+    "Nakayama (Inner) 2000m · Turf · Right · Fall / Sunny / Good",
+    "Hanshin (Outer) 2600m · Turf · Right · Fall / Rainy / Heavy",
+    "Hakodate 1800m · Turf · Right · Spring / Sunny / Good",
+    "Tokyo 2300m · Turf · Left · Spring / Sunny / Firm",
+    "Hanshin (Inner) 2000m · Turf · Right · Summer / Rainy / Heavy"
   ],
-  "tiebreaker_track": "Chukyo 2000m · Turf · Spring / Rainy / Heavy",
+  "tiebreaker_track": "Chukyo 2000m · Turf · Left · Spring / Rainy / Heavy",
   "uma_pre_bans": [
     {
       "team_id": "dominator",
@@ -144,10 +144,93 @@
       "uma": "Daiwa Scarlet"
     }
   ],
-  "benched_umas": [],
+  "benched_umas": [
+    {
+      "team_id": "dominator",
+      "uma": "Kitasan Black"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Eishin Flash"
+    }
+  ],
+  "uma_selections": [],
   "training_start": null,
   "training_deadline": null,
-  "notes": "Draft and race schedule transcribed from the organizer screenshots. Pick, pre-ban and veto order is preserved within each phase. Player assignments, benches, training dates and race results have not been supplied. Conditions for the two vetoed tracks were not shown.",
+  "notes": "Organizer screenshots and five unchanged exports confirm Dominator 10-25 Dominance after Race 5. MVP: @Essential, Grass Wonder, with 8 podium points. Kitasan Black and Eishin Flash were benched. Hanshin (Inner) 2000m and the Chukyo 2000m tiebreaker were not run. Existing draft-action order is retained; the new screenshot supplies the vetoed-track conditions. External match ID and training dates were not supplied. The screenshot Discord mention @NakedGhostie corresponds to the Daiwa Scarlet export owner NakeGhostie. Draft condition wording and literal export labels are preserved separately.",
   "external_match_id": null,
-  "roster": []
+  "roster": [
+    {
+      "team_id": "dominator",
+      "uma": "Maruzensky (Summer)",
+      "discord": "@PKHR",
+      "benched": false
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Gold Ship",
+      "discord": "@AdoboProdigy",
+      "benched": false
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Agnes Digital",
+      "discord": "@mikeluigi64 | TraineeUnLuck Whale",
+      "benched": false
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Mejiro Bright",
+      "discord": "@cynical",
+      "benched": false
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Kitasan Black",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominator",
+      "uma": "Special Week",
+      "discord": "@Khinus",
+      "benched": false
+    },
+    {
+      "team_id": "dominance",
+      "uma": "T.M. Opera O (New Year)",
+      "discord": "@Iviers | Eishin's Sibling",
+      "benched": false
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Oguri Cap",
+      "discord": "@Raykini",
+      "benched": false
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Narita Brian",
+      "discord": "@Bloodvvolf",
+      "benched": false
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Eishin Flash",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Grass Wonder",
+      "discord": "@Essential",
+      "benched": false
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Daiwa Scarlet",
+      "discord": "@NakedGhostie",
+      "benched": false
+    }
+  ]
 }
