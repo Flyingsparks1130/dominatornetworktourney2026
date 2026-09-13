@@ -1,6 +1,6 @@
 # Awards and private rehearsal
 
-The Stats page publishes 20 blank cards: 19 award names, with separate Asslicker honors for incidents received and time spent blocked. Bakushin is pending and excluded. The cards use the five supplied award images and three custom trophy illustrations. Club statistics remain below the cards. The first five cards are Nitro, Fine Motion Wit, Hard Carry, Crying NTR, and Force of Nature. Images render at full width and their natural height so they never crop. Award cards are divided into Featured Honors, Build & Strategy, Race Moments, and Tournament Honors.
+The Stats page publishes 20 blank cards: 19 award names, with separate Asslicker honors for incidents received and time spent blocked. Bakushin is pending and excluded. The cards use the supplied award images and animated GIFs alongside three custom trophy illustrations. Performance Anxiety, Nakayama Festa, and Flyingsparks use the organizer’s PNGs; Hot Headed and Mejiro Fund use the organizer’s original animated GIFs. Club statistics remain below the cards. The first five cards are Nitro, Fine Motion Wit, Hard Carry, Crying NTR, and Force of Nature. Images render at full width and their natural height so they never crop. Award cards are divided into Featured Honors, Build & Strategy, Race Moments, and Tournament Honors.
 
 ## Reveal boundary
 
@@ -23,7 +23,7 @@ Open that HTML directly in a browser. It embeds the current standings, styles, s
 - Finishes, points and race events accumulate per verified export. Organizer podiums only fill races without a verified export; they are never added on top of an export. Conflicting exports or missing evidence are reported.
 - Professor of Performance Anxiety uses the lowest points per 1,000 fielded base stats; Nakayama Festa uses the highest. This makes the two opposing stats/points objectives one reproducible comparison. The exact formula appears in private receipts.
 - Nitro uses a start delay of at least 66 ms. Rushed mode changes within a continuous nonzero interval remain one incident.
-- Flyingsparks counts equipped opponent-debuff skills once per played build. Racing Spirit: Stamina, self costs, and negative personal traits are excluded. Recorded activations break a tie.
+- Flyingsparks counts recorded opponent-debuff skill activations across eligible races, up to each runner’s finish. Every repeat activation counts; equipped skills that never activate contribute nothing. Racing Spirit: Stamina, self costs, and negative personal traits are excluded. Race receipts show activation totals. Missing replay/event evidence keeps the award unavailable, and equal totals require a sourced organizer decision.
 - Retired Bourbon counts only `failed_wit` outcomes from a verified lottery reconstruction with complete resolved outcomes. Failed conditions never count.
 - Blocking belongs to the runner who was blocked. Continuous blocking counts once even if the blocker changes. Observed durations end at the runner's finish.
 - SP uses full purchase prices, without hints. Prerequisite tiers count once, purchased inherited uniques count, and the runner's own unique does not. Negative traits are not purchased skills.

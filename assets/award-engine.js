@@ -13,7 +13,7 @@
   ['performance-anxiety','Professor of Performance Anxiety Award','Given to the player whose fielded stats earned the fewest points in return.','efficiency','points / 1,000 stats',1,['base_total',-1]],
   ['festa','Nakayama Festa Award','Given to the player who won the most points relative to the stats they fielded.','efficiency','points / 1,000 stats',-1,['base_total',1]],
   ['top-road','Crying NTR Award','Given to the player whose Umas finished second the most.','seconds','second places',-1,['second_rate',-1,'points',-1]],
-  ['flyingsparks','The Flyingsparks Award','Given to the player who fielded the most opponent-debuff skills across their played builds.','debuffs','debuff skills',-1,['debuff_activations',-1]],
+  ['flyingsparks','The Flyingsparks Award','Given to the player whose opponent-debuff skills activated the most times across their races.','debuff_activations','debuff activations',-1,[]],
   ['nature','Force of Nature Award','Given to the player whose Umas finished third the most.','thirds','third places',-1,['third_rate',-1,'points',-1]],
   ['double-jet','Double Jet Award','Given to the player whose Umas entered Rushed mode the most times.','rushed','Rushed incidents',-1,['rushed_seconds',-1]],
   ['hard-carry','Hard Carry Award','Given to the player whose Umas took the most first-place finishes.','firsts','first places',-1,['win_rate',-1,'points',-1]],
@@ -35,7 +35,7 @@
   'performance-anxiety':'Lowest points per 1,000 fielded base stats. Tie: higher total stats. Zero-point builds are included.',
   festa:'Highest points per 1,000 fielded base stats. Tie: lower total stats.',
   'top-road':'Official second-place finishes. Ties: second-place rate, then points.',
-  flyingsparks:'Count opponent-debuff skills once per fielded build, including skills that did not activate. Tie: recorded debuff activations. Self costs and negative personal traits are excluded.',
+  flyingsparks:'Count each recorded opponent-debuff skill activation across eligible races, up to the runner’s finish. Repeated activations count each time; equipped skills that never activate do not count. Self costs and negative personal traits are excluded. Equal activation totals require a sourced organizer decision.',
   nature:'Official third-place finishes. Ties: third-place rate, then points.',
   'double-jet':'A continuous nonzero Rushed mode is one incident, including mode changes. Tie: total observed Rushed time.',
   'hard-carry':'Official first-place finishes. Ties: win rate, then points.',
@@ -134,8 +134,11 @@ const firstAwards=['nitro','fine-motion','hard-carry','top-road','nature'];
       if(rep.skill_lottery?.verified&&outcomes.length===row.skills.length&&!outcomes.some(o=>o.status==='unresolved')){
        p.coverage.wit++;record.failed_wit=outcomes.filter(o=>o.status==='failed_wit').length;p.failed_wit+=record.failed_wit;p.wit_rolls+=row.skills.filter(s=>skillCatalog[s.id]?.activate_lot===1).length;
       }
-      const fired=rep.events.filter(e=>e.type===3&&e.params[0]===runner.frame_index&&e.t<=row.raw_seconds);
-      p.debuff_activations+=fired.filter(e=>skillCatalog[e.params[1]]?.debuff).length;
+      if(Array.isArray(rep.events)&&number(row.raw_seconds)&&Number.isInteger(runner.frame_index)){
+       const fired=rep.events.filter(e=>e.type===3&&e.params?.[0]===runner.frame_index&&number(e.t)&&e.t>=0&&e.t<=row.raw_seconds);
+       record.debuff_activations=fired.filter(e=>skillCatalog[e.params[1]]?.debuff).length;
+       p.debuff_activations+=record.debuff_activations;
+      }
       for(const [field,coverageKey]of [['duel_seconds','duel'],['lane_loss_m','lane']]){
        const override=(config.verified_metrics||[]).find(v=>v.race_id===race.id&&key(v.team_id,v.player)===p.id&&v.metric===field&&v.verified===true&&v.source);
        const direct=runner.award_metrics?.[field];
@@ -176,6 +179,9 @@ const firstAwards=['nitro','fine-motion','hard-carry','top-road','nature'];
   const awards=catalog(config).map(a=>{
    let eligible=list.filter(p=>a.id==='gate-kept'?p.dqs>0:p.starts>0),reason='';
    if(['wheelchair','mvp'].includes(a.id))eligible=eligible.filter(p=>p.rounds.length>=(config.wheelchair_min_rounds??2));
+   if(a.metric==='debuff_activations'&&eligible.some(p=>p.races.some(r=>!number(r.debuff_activations)))){
+    reason='Complete debuff activation evidence is not yet available for every player.';eligible=[];
+   }
    const metricCoverage=['base_total','guts','wisdom','efficiency','debuffs'].includes(a.metric)?'stats':a.metric==='sp'?'sp':a.metric==='failed_wit'?'wit':a.metric==='duel_seconds'?'duel':a.metric==='lane_loss_m'?'lane':['late_starts','rushed','blocked_incidents','blocked_seconds'].includes(a.metric)?'replay':null;
    if(metricCoverage){
     const complete=p=>['stats','sp'].includes(metricCoverage)?p.build_count>0&&p.coverage[metricCoverage]===p.build_count&&p.races.every(r=>!r.report_only):p.coverage[metricCoverage]===p.starts;
