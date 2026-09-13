@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "match_id": "r3-m1",
+  "external_match_id": null,
+  "source": "Organizer-supplied roster, final score and podium screenshots, corroborated by five original horseACT exports supplied on 2026-09-13.",
+  "mvp": {
+    "team_id": "dominance",
+    "uma": "Grass Wonder",
+    "discord": "@Essential"
+  },
+  "races": [
+    {
+      "number": 1,
+      "track": "Chukyo 2200m · Turf · Left · Summer / Sunny / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominance",
+          "uma": "Grass Wonder",
+          "discord": "@Essential"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "@Iviers | Eishin's Sibling"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Raykini"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "track": "Nakayama (Inner) 2000m · Turf · Right · Fall / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominance",
+          "uma": "Narita Brian",
+          "discord": "@Bloodvvolf"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Maruzensky (Summer)",
+          "discord": "@PKHR"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Raykini"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "track": "Hanshin (Outer) 2600m · Turf · Right · Fall / Rainy / Heavy",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominator",
+          "uma": "Mejiro Bright",
+          "discord": "@cynical"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "@Iviers | Eishin's Sibling"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Maruzensky (Summer)",
+          "discord": "@PKHR"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "track": "Hakodate 1800m · Turf · Right · Spring / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Raykini"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Agnes Digital",
+          "discord": "@mikeluigi64 | TraineeUnLuck Whale"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Daiwa Scarlet",
+          "discord": "@NakedGhostie"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "track": "Tokyo 2300m · Turf · Left · Spring / Sunny / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominance",
+          "uma": "Grass Wonder",
+          "discord": "@Essential"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "@Iviers | Eishin's Sibling"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Gold Ship",
+          "discord": "@AdoboProdigy"
+        }
+      ]
+    }
+  ]
+}

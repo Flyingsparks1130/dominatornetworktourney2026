@@ -71,7 +71,7 @@
   function visibility(){if(document.hidden)pause()}
   function pause(){playing=false;cancelAnimationFrame(raf);const button=host.querySelector('[data-play]');if(button)button.textContent='Play'}
   labelsPromise??=Promise.all([
-   fetch('assets/race-labels.json?v=20260912-r2m3').then(r=>{if(!r.ok)throw Error('labels');return r.json()}).catch(()=>({skills:{},cards:{},portraits:{}})),
+   fetch('assets/race-labels.json?v=20260913-r3').then(r=>{if(!r.ok)throw Error('labels');return r.json()}).catch(()=>({skills:{},cards:{},portraits:{}})),
    fetch('assets/skill-metadata.json?v=20260912-style').then(r=>{if(!r.ok)throw Error('skill icons');return r.json()}).catch(()=>({}))
   ]).then(([labels,skill_meta])=>({...labels,skill_meta}));
   const labels=await labelsPromise;

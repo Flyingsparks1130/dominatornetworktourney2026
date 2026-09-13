@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-13T17:27:00Z",
+  "generated_at": "2026-09-13T17:58:22Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
-  "revision": 69,
+  "revision": 78,
   "rounds": [
     {
       "id": "R1",
@@ -6982,13 +6982,147 @@
           "aliases": []
         }
       ],
-      "winner_id": null,
-      "loser_id": null,
-      "status": "ready",
-      "manual_scores": null,
-      "decision_reason": null,
-      "source": "race_files",
-      "races": [],
+      "winner_id": "dominance",
+      "loser_id": "dominator",
+      "status": "complete",
+      "manual_scores": {
+        "dominance": 25,
+        "dominator": 10
+      },
+      "decision_reason": "Organizer confirmed Dominator 10-25 Dominance after five races; MVP Essential with 8 points. All original exports corroborate the podiums and score. Advance Dominance to face Dominacion in the Grand Final.",
+      "source": "manual",
+      "races": [
+        {
+          "id": "69d00eb3d6d7b29728d2",
+          "round": "R3",
+          "match_id": "r3-m1",
+          "race_folder": "01 - Chukyo 2200m",
+          "file_name": "Grass Wonder-104.5082s-20260913.json",
+          "raw_path": "Dominator Tournament/R3/Dominator vs Dominance/01 - Chukyo 2200m/Grass Wonder-104.5082s-20260913.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10705,
+            "track_id": 10007,
+            "distance_m": 2200,
+            "surface": "Turf",
+            "turn": "Left",
+            "condition": "Good",
+            "weather": "Sunny",
+            "season": "Summer"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominance": 7,
+            "dominator": 0
+          },
+          "data_file": "data/tournament-races/69d00eb3d6d7b29728d2.json"
+        },
+        {
+          "id": "a5d0c6a7a5a5c7b96b07",
+          "round": "R3",
+          "match_id": "r3-m1",
+          "race_folder": "02 - Nakayama (Inner) 2000m",
+          "file_name": "Narita Brian-94.6364s-20260913.json",
+          "raw_path": "Dominator Tournament/R3/Dominator vs Dominance/02 - Nakayama (Inner) 2000m/Narita Brian-94.6364s-20260913.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10504,
+            "track_id": 10005,
+            "distance_m": 2000,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Soft",
+            "weather": "Sunny",
+            "season": "Fall"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominance": 5,
+            "dominator": 2
+          },
+          "data_file": "data/tournament-races/a5d0c6a7a5a5c7b96b07.json"
+        },
+        {
+          "id": "a973d5664bc948a8a470",
+          "round": "R3",
+          "match_id": "r3-m1",
+          "race_folder": "03 - Hanshin (Outer) 2600m",
+          "file_name": "Mejiro Bright-126.6167s-20260913.json",
+          "raw_path": "Dominator Tournament/R3/Dominator vs Dominance/03 - Hanshin (Outer) 2600m/Mejiro Bright-126.6167s-20260913.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10908,
+            "track_id": 10009,
+            "distance_m": 2600,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Bad",
+            "weather": "Rainy",
+            "season": "Fall"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominance": 2,
+            "dominator": 5
+          },
+          "data_file": "data/tournament-races/a973d5664bc948a8a470.json"
+        },
+        {
+          "id": "007dd336428c42426fa6",
+          "round": "R3",
+          "match_id": "r3-m1",
+          "race_folder": "04 - Hakodate 1800m",
+          "file_name": "Oguri Cap-85.7300s-20260913.json",
+          "raw_path": "Dominator Tournament/R3/Dominator vs Dominance/04 - Hakodate 1800m/Oguri Cap-85.7300s-20260913.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10203,
+            "track_id": 10002,
+            "distance_m": 1800,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Soft",
+            "weather": "Sunny",
+            "season": "Spring"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominance": 5,
+            "dominator": 2
+          },
+          "data_file": "data/tournament-races/007dd336428c42426fa6.json"
+        },
+        {
+          "id": "7fa2565d4ba81edda2e9",
+          "round": "R3",
+          "match_id": "r3-m1",
+          "race_folder": "05 - Tokyo 2300m",
+          "file_name": "Grass Wonder-109.6674s-20260913.json",
+          "raw_path": "Dominator Tournament/R3/Dominator vs Dominance/05 - Tokyo 2300m/Grass Wonder-109.6674s-20260913.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10605,
+            "track_id": 10006,
+            "distance_m": 2300,
+            "surface": "Turf",
+            "turn": "Left",
+            "condition": "Good",
+            "weather": "Sunny",
+            "season": "Spring"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominance": 6,
+            "dominator": 1
+          },
+          "data_file": "data/tournament-races/7fa2565d4ba81edda2e9.json"
+        }
+      ],
       "draft": {
         "schema_version": 1,
         "match_id": "r3-m1",
@@ -6997,56 +7131,56 @@
         "track_picks": [
           {
             "team_id": "dominator",
-            "track": "Chukyo 2200m · Turf · Summer / Sunny / Firm"
+            "track": "Chukyo 2200m · Turf · Left · Summer / Sunny / Firm"
           },
           {
             "team_id": "dominance",
-            "track": "Nakayama (Inner) 2000m · Turf · Fall / Sunny / Good"
+            "track": "Nakayama (Inner) 2000m · Turf · Right · Fall / Sunny / Good"
           },
           {
             "team_id": "dominator",
-            "track": "Hanshin (Outer) 2600m · Turf · Fall / Rainy / Heavy"
+            "track": "Hanshin (Outer) 2600m · Turf · Right · Fall / Rainy / Heavy"
           },
           {
             "team_id": "dominance",
-            "track": "Nakayama (Inner) 1800m · Turf"
+            "track": "Nakayama (Inner) 1800m · Turf · Right · Fall / Cloudy / Firm"
           },
           {
             "team_id": "dominator",
-            "track": "Tokyo 2300m · Turf · Spring / Sunny / Firm"
+            "track": "Tokyo 2300m · Turf · Left · Spring / Sunny / Firm"
           },
           {
             "team_id": "dominance",
-            "track": "Hakodate 1800m · Turf · Spring / Sunny / Good"
+            "track": "Hakodate 1800m · Turf · Right · Spring / Sunny / Good"
           },
           {
             "team_id": "dominator",
-            "track": "Hanshin (Outer to Inner) 3200m · Turf"
+            "track": "Hanshin (Outer to Inner) 3200m · Turf · Right · Winter / Snowy / Soft"
           },
           {
             "team_id": "dominance",
-            "track": "Hanshin (Inner) 2000m · Turf · Summer / Rainy / Heavy"
+            "track": "Hanshin (Inner) 2000m · Turf · Right · Summer / Rainy / Heavy"
           }
         ],
         "track_vetoes": [
           {
             "team_id": "dominator",
-            "track": "Nakayama (Inner) 1800m · Turf"
+            "track": "Nakayama (Inner) 1800m · Turf · Right · Fall / Cloudy / Firm"
           },
           {
             "team_id": "dominance",
-            "track": "Hanshin (Outer to Inner) 3200m · Turf"
+            "track": "Hanshin (Outer to Inner) 3200m · Turf · Right · Winter / Snowy / Soft"
           }
         ],
         "final_tracks": [
-          "Chukyo 2200m · Turf · Summer / Sunny / Firm",
-          "Nakayama (Inner) 2000m · Turf · Fall / Sunny / Good",
-          "Hanshin (Outer) 2600m · Turf · Fall / Rainy / Heavy",
-          "Hakodate 1800m · Turf · Spring / Sunny / Good",
-          "Tokyo 2300m · Turf · Spring / Sunny / Firm",
-          "Hanshin (Inner) 2000m · Turf · Summer / Rainy / Heavy"
+          "Chukyo 2200m · Turf · Left · Summer / Sunny / Firm",
+          "Nakayama (Inner) 2000m · Turf · Right · Fall / Sunny / Good",
+          "Hanshin (Outer) 2600m · Turf · Right · Fall / Rainy / Heavy",
+          "Hakodate 1800m · Turf · Right · Spring / Sunny / Good",
+          "Tokyo 2300m · Turf · Left · Spring / Sunny / Firm",
+          "Hanshin (Inner) 2000m · Turf · Right · Summer / Rainy / Heavy"
         ],
-        "tiebreaker_track": "Chukyo 2000m · Turf · Spring / Rainy / Heavy",
+        "tiebreaker_track": "Chukyo 2000m · Turf · Left · Spring / Rainy / Heavy",
         "uma_pre_bans": [
           {
             "team_id": "dominator",
@@ -7135,25 +7269,469 @@
             "uma": "Daiwa Scarlet"
           }
         ],
-        "benched_umas": [],
+        "benched_umas": [
+          {
+            "team_id": "dominator",
+            "uma": "Kitasan Black"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Eishin Flash"
+          }
+        ],
         "uma_selections": [],
         "training_start": null,
         "training_deadline": null,
-        "notes": "Draft and race schedule transcribed from the organizer screenshots. Pick, pre-ban and veto order is preserved within each phase. Player assignments, benches, training dates and race results have not been supplied. Conditions for the two vetoed tracks were not shown.",
+        "notes": "Organizer screenshots and five unchanged exports confirm Dominator 10-25 Dominance after Race 5. MVP: @Essential, Grass Wonder, with 8 podium points. Kitasan Black and Eishin Flash were benched. Hanshin (Inner) 2000m and the Chukyo 2000m tiebreaker were not run. Existing draft-action order is retained; the new screenshot supplies the vetoed-track conditions. External match ID and training dates were not supplied. The screenshot Discord mention @NakedGhostie corresponds to the Daiwa Scarlet export owner NakeGhostie. Draft condition wording and literal export labels are preserved separately.",
         "external_match_id": null,
-        "roster": []
+        "roster": [
+          {
+            "team_id": "dominator",
+            "uma": "Maruzensky (Summer)",
+            "discord": "@PKHR",
+            "benched": false
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Gold Ship",
+            "discord": "@AdoboProdigy",
+            "benched": false
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Agnes Digital",
+            "discord": "@mikeluigi64 | TraineeUnLuck Whale",
+            "benched": false
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Mejiro Bright",
+            "discord": "@cynical",
+            "benched": false
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Kitasan Black",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominator",
+            "uma": "Special Week",
+            "discord": "@Khinus",
+            "benched": false
+          },
+          {
+            "team_id": "dominance",
+            "uma": "T.M. Opera O (New Year)",
+            "discord": "@Iviers | Eishin's Sibling",
+            "benched": false
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Oguri Cap",
+            "discord": "@Raykini",
+            "benched": false
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Narita Brian",
+            "discord": "@Bloodvvolf",
+            "benched": false
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Eishin Flash",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Grass Wonder",
+            "discord": "@Essential",
+            "benched": false
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Daiwa Scarlet",
+            "discord": "@NakedGhostie",
+            "benched": false
+          }
+        ]
       },
       "draft_path": "Dominator Tournament/R3/Dominator vs Dominance/draft.json",
       "draft_has_content": true,
-      "reported_results": null,
-      "report_path": null,
-      "computed_scores": null,
-      "scores": null,
+      "reported_results": {
+        "schema_version": 1,
+        "match_id": "r3-m1",
+        "external_match_id": null,
+        "source": "Organizer-supplied roster, final score and podium screenshots, corroborated by five original horseACT exports supplied on 2026-09-13.",
+        "mvp": {
+          "team_id": "dominance",
+          "uma": "Grass Wonder",
+          "discord": "@Essential",
+          "variant_id": 101101,
+          "portrait": "assets/runners/101101.webp",
+          "display_name": "Essential",
+          "points": 8
+        },
+        "races": [
+          {
+            "number": 1,
+            "track": "Chukyo 2200m · Turf · Left · Summer / Sunny / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominance",
+                "uma": "Grass Wonder",
+                "discord": "@Essential",
+                "place": 1,
+                "points": 4,
+                "variant_id": 101101,
+                "portrait": "assets/runners/101101.webp",
+                "display_name": "Essential"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "T.M. Opera O (New Year)",
+                "discord": "@Iviers | Eishin's Sibling",
+                "place": 2,
+                "points": 2,
+                "variant_id": 101502,
+                "portrait": "assets/runners/101502.webp",
+                "display_name": "Iviers"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "Oguri Cap",
+                "discord": "@Raykini",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "Raykini"
+              }
+            ],
+            "scores": {
+              "dominance": 7,
+              "dominator": 0
+            },
+            "cumulative_scores": {
+              "dominance": 7,
+              "dominator": 0
+            }
+          },
+          {
+            "number": 2,
+            "track": "Nakayama (Inner) 2000m · Turf · Right · Fall / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominance",
+                "uma": "Narita Brian",
+                "discord": "@Bloodvvolf",
+                "place": 1,
+                "points": 4,
+                "variant_id": 101601,
+                "portrait": "assets/runners/101601.webp",
+                "display_name": "Bloodvvolf"
+              },
+              {
+                "team_id": "dominator",
+                "uma": "Maruzensky (Summer)",
+                "discord": "@PKHR",
+                "place": 2,
+                "points": 2,
+                "variant_id": 100402,
+                "portrait": "assets/runners/100402.webp",
+                "display_name": "PKHR"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "Oguri Cap",
+                "discord": "@Raykini",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "Raykini"
+              }
+            ],
+            "scores": {
+              "dominance": 5,
+              "dominator": 2
+            },
+            "cumulative_scores": {
+              "dominance": 12,
+              "dominator": 2
+            }
+          },
+          {
+            "number": 3,
+            "track": "Hanshin (Outer) 2600m · Turf · Right · Fall / Rainy / Heavy",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominator",
+                "uma": "Mejiro Bright",
+                "discord": "@cynical",
+                "place": 1,
+                "points": 4,
+                "variant_id": 107401,
+                "portrait": "assets/runners/107401.webp",
+                "display_name": "cynical"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "T.M. Opera O (New Year)",
+                "discord": "@Iviers | Eishin's Sibling",
+                "place": 2,
+                "points": 2,
+                "variant_id": 101502,
+                "portrait": "assets/runners/101502.webp",
+                "display_name": "Iviers"
+              },
+              {
+                "team_id": "dominator",
+                "uma": "Maruzensky (Summer)",
+                "discord": "@PKHR",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100402,
+                "portrait": "assets/runners/100402.webp",
+                "display_name": "PKHR"
+              }
+            ],
+            "scores": {
+              "dominance": 2,
+              "dominator": 5
+            },
+            "cumulative_scores": {
+              "dominance": 14,
+              "dominator": 7
+            }
+          },
+          {
+            "number": 4,
+            "track": "Hakodate 1800m · Turf · Right · Spring / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominance",
+                "uma": "Oguri Cap",
+                "discord": "@Raykini",
+                "place": 1,
+                "points": 4,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "Raykini"
+              },
+              {
+                "team_id": "dominator",
+                "uma": "Agnes Digital",
+                "discord": "@mikeluigi64 | TraineeUnLuck Whale",
+                "place": 2,
+                "points": 2,
+                "variant_id": 101901,
+                "portrait": "assets/runners/101901.webp",
+                "display_name": "mikeluigi64"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "Daiwa Scarlet",
+                "discord": "@NakedGhostie",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100901,
+                "portrait": "assets/runners/100901.webp",
+                "display_name": "NakeGhostie"
+              }
+            ],
+            "scores": {
+              "dominance": 5,
+              "dominator": 2
+            },
+            "cumulative_scores": {
+              "dominance": 19,
+              "dominator": 9
+            }
+          },
+          {
+            "number": 5,
+            "track": "Tokyo 2300m · Turf · Left · Spring / Sunny / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominance",
+                "uma": "Grass Wonder",
+                "discord": "@Essential",
+                "place": 1,
+                "points": 4,
+                "variant_id": 101101,
+                "portrait": "assets/runners/101101.webp",
+                "display_name": "Essential"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "T.M. Opera O (New Year)",
+                "discord": "@Iviers | Eishin's Sibling",
+                "place": 2,
+                "points": 2,
+                "variant_id": 101502,
+                "portrait": "assets/runners/101502.webp",
+                "display_name": "Iviers"
+              },
+              {
+                "team_id": "dominator",
+                "uma": "Gold Ship",
+                "discord": "@AdoboProdigy",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100701,
+                "portrait": "assets/runners/100701.webp",
+                "display_name": "AdoboProdigy"
+              }
+            ],
+            "scores": {
+              "dominance": 6,
+              "dominator": 1
+            },
+            "cumulative_scores": {
+              "dominance": 25,
+              "dominator": 10
+            }
+          }
+        ],
+        "totals": {
+          "dominance": 25,
+          "dominator": 10
+        }
+      },
+      "report_path": "Dominator Tournament/R3/Dominator vs Dominance/results.json",
+      "computed_scores": {
+        "dominator": 10,
+        "dominance": 25
+      },
+      "scores": {
+        "dominance": 25,
+        "dominator": 10
+      },
       "score_only": false,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": [],
-      "draft_lineup": [],
+      "target_reached": [
+        "dominance"
+      ],
+      "draft_lineup": [
+        {
+          "team_id": "dominator",
+          "uma": "Maruzensky (Summer)",
+          "discord": "@PKHR",
+          "benched": false,
+          "variant_id": 100402,
+          "portrait": "assets/runners/100402.webp",
+          "display_name": "PKHR"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Gold Ship",
+          "discord": "@AdoboProdigy",
+          "benched": false,
+          "variant_id": 100701,
+          "portrait": "assets/runners/100701.webp",
+          "display_name": "AdoboProdigy"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Agnes Digital",
+          "discord": "@mikeluigi64 | TraineeUnLuck Whale",
+          "benched": false,
+          "variant_id": 101901,
+          "portrait": "assets/runners/101901.webp",
+          "display_name": "mikeluigi64 | TraineeUnLuck Whale"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Mejiro Bright",
+          "discord": "@cynical",
+          "benched": false,
+          "variant_id": 107401,
+          "portrait": "assets/runners/107401.webp",
+          "display_name": "cynical"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Kitasan Black",
+          "discord": null,
+          "benched": true,
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Special Week",
+          "discord": "@Khinus",
+          "benched": false,
+          "variant_id": 100101,
+          "portrait": "assets/runners/100101.webp",
+          "display_name": "Khinus"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "@Iviers | Eishin's Sibling",
+          "benched": false,
+          "variant_id": 101502,
+          "portrait": "assets/runners/101502.webp",
+          "display_name": "Iviers | Eishin's Sibling"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Raykini",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Raykini"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Narita Brian",
+          "discord": "@Bloodvvolf",
+          "benched": false,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
+          "display_name": "Bloodvvolf"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Eishin Flash",
+          "discord": null,
+          "benched": true,
+          "variant_id": 103701,
+          "portrait": "assets/runners/103701.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Grass Wonder",
+          "discord": "@Essential",
+          "benched": false,
+          "variant_id": 101101,
+          "portrait": "assets/runners/101101.webp",
+          "display_name": "Essential"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Daiwa Scarlet",
+          "discord": "@NakedGhostie",
+          "benched": false,
+          "variant_id": 100901,
+          "portrait": "assets/runners/100901.webp",
+          "display_name": "NakedGhostie"
+        }
+      ],
       "draft_uma_actions": {
         "uma_pre_bans": [
           {
@@ -7283,13 +7861,236 @@
             "portrait": "assets/runners/100901.webp"
           }
         ],
-        "benched_umas": [],
+        "benched_umas": [
+          {
+            "team_id": "dominator",
+            "uma": "Kitasan Black",
+            "variant_id": 106801,
+            "portrait": "assets/runners/106801.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Eishin Flash",
+            "variant_id": 103701,
+            "portrait": "assets/runners/103701.webp"
+          }
+        ],
         "uma_selections": []
       },
-      "lineup": [],
-      "lineup_source": "draft",
-      "player_points": [],
-      "player_points_recorded": false
+      "lineup": [
+        {
+          "team_id": "dominance",
+          "uma": "Narita Brian",
+          "discord": "@Bloodvvolf",
+          "benched": false,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
+          "display_name": "Bloodvvolf"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Grass Wonder",
+          "discord": "@Essential",
+          "benched": false,
+          "variant_id": 101101,
+          "portrait": "assets/runners/101101.webp",
+          "display_name": "Essential"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "@Iviers | Eishin's Sibling",
+          "benched": false,
+          "variant_id": 101502,
+          "portrait": "assets/runners/101502.webp",
+          "display_name": "Iviers"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Daiwa Scarlet",
+          "discord": "@NakedGhostie",
+          "benched": false,
+          "variant_id": 100901,
+          "portrait": "assets/runners/100901.webp",
+          "display_name": "NakeGhostie"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Raykini",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Raykini"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Gold Ship",
+          "discord": "@AdoboProdigy",
+          "benched": false,
+          "variant_id": 100701,
+          "portrait": "assets/runners/100701.webp",
+          "display_name": "AdoboProdigy"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Mejiro Bright",
+          "discord": "@cynical",
+          "benched": false,
+          "variant_id": 107401,
+          "portrait": "assets/runners/107401.webp",
+          "display_name": "cynical"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Special Week",
+          "discord": "@Khinus",
+          "benched": false,
+          "variant_id": 100101,
+          "portrait": "assets/runners/100101.webp",
+          "display_name": "Khinus"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Agnes Digital",
+          "discord": "@mikeluigi64 | TraineeUnLuck Whale",
+          "benched": false,
+          "variant_id": 101901,
+          "portrait": "assets/runners/101901.webp",
+          "display_name": "mikeluigi64"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Maruzensky (Summer)",
+          "discord": "@PKHR",
+          "benched": false,
+          "variant_id": 100402,
+          "portrait": "assets/runners/100402.webp",
+          "display_name": "PKHR"
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Kitasan Black",
+          "discord": null,
+          "benched": true,
+          "variant_id": 106801,
+          "portrait": "assets/runners/106801.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Eishin Flash",
+          "discord": null,
+          "benched": true,
+          "variant_id": 103701,
+          "portrait": "assets/runners/103701.webp",
+          "display_name": ""
+        }
+      ],
+      "lineup_source": "race",
+      "player_points": [
+        {
+          "team_id": "dominance",
+          "uma": "Grass Wonder",
+          "discord": "@Essential",
+          "benched": false,
+          "variant_id": 101101,
+          "portrait": "assets/runners/101101.webp",
+          "display_name": "Essential",
+          "points": 8
+        },
+        {
+          "team_id": "dominance",
+          "uma": "T.M. Opera O (New Year)",
+          "discord": "@Iviers | Eishin's Sibling",
+          "benched": false,
+          "variant_id": 101502,
+          "portrait": "assets/runners/101502.webp",
+          "display_name": "Iviers",
+          "points": 6
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Raykini",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Raykini",
+          "points": 6
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Narita Brian",
+          "discord": "@Bloodvvolf",
+          "benched": false,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
+          "display_name": "Bloodvvolf",
+          "points": 4
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Daiwa Scarlet",
+          "discord": "@NakedGhostie",
+          "benched": false,
+          "variant_id": 100901,
+          "portrait": "assets/runners/100901.webp",
+          "display_name": "NakeGhostie",
+          "points": 1
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Mejiro Bright",
+          "discord": "@cynical",
+          "benched": false,
+          "variant_id": 107401,
+          "portrait": "assets/runners/107401.webp",
+          "display_name": "cynical",
+          "points": 4
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Maruzensky (Summer)",
+          "discord": "@PKHR",
+          "benched": false,
+          "variant_id": 100402,
+          "portrait": "assets/runners/100402.webp",
+          "display_name": "PKHR",
+          "points": 3
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Agnes Digital",
+          "discord": "@mikeluigi64 | TraineeUnLuck Whale",
+          "benched": false,
+          "variant_id": 101901,
+          "portrait": "assets/runners/101901.webp",
+          "display_name": "mikeluigi64",
+          "points": 2
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Gold Ship",
+          "discord": "@AdoboProdigy",
+          "benched": false,
+          "variant_id": 100701,
+          "portrait": "assets/runners/100701.webp",
+          "display_name": "AdoboProdigy",
+          "points": 1
+        },
+        {
+          "team_id": "dominator",
+          "uma": "Special Week",
+          "discord": "@Khinus",
+          "benched": false,
+          "variant_id": 100101,
+          "portrait": "assets/runners/100101.webp",
+          "display_name": "Khinus",
+          "points": 0
+        }
+      ],
+      "player_points_recorded": true
     },
     {
       "id": "r3-m2",
@@ -8349,7 +9150,13 @@
         }
       ],
       "participants": [
-        null,
+        {
+          "id": "dominance",
+          "name": "Dominance",
+          "seed": 5,
+          "club_id": "955490905",
+          "aliases": []
+        },
         {
           "id": "dominacion",
           "name": "Dominacion",
@@ -8360,13 +9167,33 @@
       ],
       "winner_id": null,
       "loser_id": null,
-      "status": "awaiting_opponent",
+      "status": "ready",
       "manual_scores": null,
       "decision_reason": null,
       "source": "race_files",
       "races": [],
-      "draft": null,
-      "draft_path": null,
+      "draft": {
+        "schema_version": 1,
+        "match_id": "r4-m1",
+        "status": "pending",
+        "track_pool": [],
+        "track_picks": [],
+        "track_vetoes": [],
+        "final_tracks": [],
+        "tiebreaker_track": null,
+        "uma_pre_bans": [],
+        "uma_picks": [],
+        "uma_bans": [],
+        "uma_additions": [],
+        "benched_umas": [],
+        "uma_selections": [],
+        "training_start": null,
+        "training_deadline": null,
+        "notes": "",
+        "external_match_id": null,
+        "roster": []
+      },
+      "draft_path": "Dominator Tournament/R4/Dominance vs Dominacion/draft.json",
       "draft_has_content": false,
       "reported_results": null,
       "report_path": null,
@@ -8398,6 +9225,7 @@
     "dominante",
     "dominarium",
     "dominate",
+    "dominator",
     "domineer",
     "dominion",
     "dominium"
@@ -8537,8 +9365,8 @@
       ]
     },
     "dominator": {
-      "match_id": "r2-m1",
-      "round": "R2",
+      "match_id": "r3-m1",
+      "round": "R3",
       "source": "race",
       "members": [
         {
@@ -8559,8 +9387,8 @@
       ]
     },
     "dominance": {
-      "match_id": "r2-m2",
-      "round": "R2",
+      "match_id": "r3-m1",
+      "round": "R3",
       "source": "race",
       "members": [
         {

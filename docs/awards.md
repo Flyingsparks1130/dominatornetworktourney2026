@@ -38,7 +38,7 @@ Open that HTML directly in a browser. It embeds the current standings, styles, s
 
 ## Duel and WT estimates
 
-The private preview calculates both metrics automatically, including live refresh. All 28 current R2 and R3 exports (280 runner starts) have coverage. The public page still loads only the catalog and index; the estimates and standings are not mounted there.
+The private preview calculates both metrics automatically, including live refresh. All 33 current R2 and R3 exports (330 runner starts) have coverage. The public page still loads only the catalog and index; the estimates and standings are not mounted there.
 
 - **Neck and Neck:** the pinned Hakuraku `computeOtherEvents` implementation, with its speed and skill helpers, reconstructs duel intervals from COMPETE_FIGHT events (type 5). It ends them at the runner’s finish, HP below 5% of starting HP, separation of at least 5 metres from all current/former duelers, or the upstream skill-adjusted speed expiry check. That check accounts for uphill penalties, four-second recovery grace, later speed recovery, downhill effects, and full-spurt HP. Spot Struggle (type 4) is excluded. Duplicate overlapping notifications count each runner-second once. A player’s multiple runners are summed.
 - **Swing for the Fences:** use Hakuraku’s WT total, not raw lane displacement. For each consecutive frame pair, add `max(0, min(previous_speed, current_speed) * dt - max(0, current_distance - previous_distance))`. Our speeds are already metres/second. Interpolate the cumulative loss at the runner’s exact finish. This covers lane changes and wider cornering. Track geometry affects Hakuraku’s separate world/course ratio visualization, but is not an input to its total-loss formula.

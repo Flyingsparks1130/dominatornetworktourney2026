@@ -50,7 +50,9 @@ JZENUX (`r2-m1`) records Dominator **29–13** Dominarium after six races. MVP i
 
 `r2-m3` records **Domineer 17–25 Dominacion** after six races. MVP is **@wata**, Rice Shower (Halloween), with 13 podium points. All six unchanged exports corroborate the reported podiums. Winning Ticket and El Condor Pasa were benched; Hakodate 1000m was the unused tiebreaker. No external match ID was supplied. Dominacion advanced to face Dominate in Round 3.
 
-LDGU92 (`r3-m2`) records **Dominate 2–26 Dominacion** after four races. MVP is **@Zanko**, Oguri Cap, with 9 podium points. All four unchanged exports corroborate the reported podiums. Silence Suzuka and Agnes Digital (Halloween) were benched. The remaining two standard tracks and Kyoto (Inner) 1200m tiebreaker were not run. Dominacion advances to the Grand Final, awaiting the winner of Dominator vs Dominance.
+LDGU92 (`r3-m2`) records **Dominate 2–26 Dominacion** after four races. MVP is **@Zanko**, Oguri Cap, with 9 podium points. All four unchanged exports corroborate the reported podiums. Silence Suzuka and Agnes Digital (Halloween) were benched. The remaining two standard tracks and Kyoto (Inner) 1200m tiebreaker were not run. Dominacion advances to the Grand Final against Dominance.
+
+`r3-m1` records **Dominator 10–25 Dominance** after five races. MVP is **@Essential**, Grass Wonder, with 8 podium points. All five unchanged exports corroborate the reported podiums. Kitasan Black and Eishin Flash were benched; Hanshin (Inner) 2000m and the Chukyo 2000m tiebreaker were not run. No external match ID was supplied. Round 4 is open for **Dominance vs Dominacion**, with a blank draft awaiting submissions.
 
 ## Official scores and original exports
 
