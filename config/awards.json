@@ -23,8 +23,8 @@
     "hard-carry": "assets/awards/hard-carry-animated.gif",
     "top-road": "assets/awards/crying-ntr-animated.gif",
     "nature": "assets/awards/force-of-nature.gif",
-    "all-star": "assets/awards/all-star-animated.gif",
-    "performance-anxiety": "assets/awards/performance-anxiety.png",
+    "all-star": "assets/awards/all-star-trainer.png",
+    "performance-anxiety": "assets/awards/performance-anxiety.gif",
     "festa": "assets/awards/nakayama-festa.png",
     "flyingsparks": "assets/awards/flyingsparks.png",
     "hot-headed": "assets/awards/hot-headed.gif",
@@ -32,6 +32,11 @@
     "blocked-count": "assets/awards/asslicker.gif",
     "blocked-time": "assets/awards/agnes-digital.gif",
     "neck": "assets/awards/neck-and-neck.gif",
-    "gate-kept": "assets/awards/gatekept-falcon.gif"
+    "gate-kept": "assets/awards/gatekept-falcon.gif",
+    "double-jet": "assets/awards/double-jet.gif",
+    "bourbon": "assets/awards/retired-bourbon.gif",
+    "fences": "assets/awards/swing-for-the-fences.gif",
+    "mvp": "assets/awards/mvp.gif",
+    "wheelchair": "assets/awards/wheelchair.jpg"
   }
 }
