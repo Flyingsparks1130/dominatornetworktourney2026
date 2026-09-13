@@ -45,6 +45,36 @@ check('Distinct builds, exports, and rounds do not double count',()=>{
  const r3=structuredClone(r);r3.id='race4';r3.raw_sha256='hash4';f.docs.race4=r3;f.index.matches.push({...m,id:'r3-m1',round:'R3',races:[{id:r3.id,race_folder:'01 - Test'}],reported_results:null});
  s=run(f);assert.equal(s.players[0].build_count,2);assert.equal(s.players[0].starts,3);assert.equal(award(s,'wheelchair').status,'provisional');assert.equal(award(s,'mvp').winner.name,'Ada');assert.equal(award(s,'wheelchair').winner.name,'Cy');
 });
+check('Flyingsparks counts activations across races, not equipped builds',()=>{
+ const f=fixture(),r=f.docs.race2,m=f.index.matches[0];
+ const extra=Number(Object.keys(catalogue).find(id=>catalogue[id].debuff&&Number(id)!==200771));
+ r.results[1].skills.push({id:extra});
+ r.replay.events=[
+  {type:3,t:1,params:[0,200771]},{type:3,t:2,params:[0,200771]},
+  {type:3,t:1,params:[1,200771]},
+  {type:3,t:2,params:[0,210101]},
+  {type:3,t:4,params:[0,200771]},{type:3,t:-1,params:[0,200771]},
+  {type:5,t:1,params:[0,200771]}
+ ];
+ const r2=structuredClone(r);r2.id='race3';r2.raw_sha256='hash3';r2.race_folder='02 - Test';f.docs.race3=r2;m.races.push({id:r2.id,race_folder:r2.race_folder});
+ const s=run(f),a=award(s,'flyingsparks'),ada=s.players.find(p=>p.name==='Ada'),bea=s.players.find(p=>p.name==='Bea');
+ assert.equal(ada.build_count,1);assert.equal(ada.debuffs,1);assert.equal(bea.debuffs,2);
+ assert.equal(ada.debuff_activations,4);assert.equal(bea.debuff_activations,2);
+ assert.deepEqual(ada.races.map(r=>r.debuff_activations),[2,2]);
+ assert.equal(a.metric,'debuff_activations');assert.equal(a.winner.name,'Ada');assert.equal(a.winner.value,4);
+ const html=UI.awardCard(a,{revealed:true,standings:s});assert(html.includes('2 debuff activations'));assert(!html.includes('once per fielded build'));
+});
+check('Flyingsparks requires activation evidence and does not break ties by skills bought',()=>{
+ const f=fixture();
+ assert.equal(award(run(f),'flyingsparks').status,'tie');
+ delete f.docs.race2.replay.events;
+ assert.equal(award(run(f),'flyingsparks').status,'unavailable');
+ f.docs.race2.replay.events=[];f.docs.race2.replay.runners.pop();
+ assert.equal(award(run(f),'flyingsparks').status,'unavailable');
+ delete f.docs.race2;
+ f.index.matches[0].lineup=[{team_id:'a',display_name:'Ada',uma:'Gold Ship'}];
+ assert.equal(award(run(f),'flyingsparks').status,'unavailable');
+});
 check('Only Round 1 DQs enter, other Round 1 performance is excluded',()=>{
  const f=fixture();f.index.matches.push({...f.index.matches[0],id:'r1-m1',round:'R1'});
  const dq={id:'dq1',player:'DQ player',team_id:'b',round:'R1',match_id:'r1-m1',count:1,source:'Organizer confirmation'};
