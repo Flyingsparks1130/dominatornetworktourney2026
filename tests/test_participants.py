@@ -19,7 +19,9 @@ class ParticipantTests(unittest.TestCase):
         for club, names in expected.items():
             self.assertEqual({r['display_name'] for r in match['lineup'] if r['team_id'] == club and not r['benched']}, names)
             self.assertEqual({r['display_name'] for r in index['club_rosters'][club]['members']}, names)
-            self.assertEqual(index['club_rosters'][club]['round'], 'R2')
+            # The R2 match keeps its lineup; the club follows its latest played round.
+            self.assertEqual(index['club_rosters'][club]['round'], 'R3' if club == 'dominate' else 'R2')
+            self.assertEqual(index['club_rosters'][club]['match_id'], 'r3-m2' if club == 'dominate' else 'r2-m4')
         self.assertEqual(match['reported_results']['races'][1]['podium'][0]['display_name'], 'Mamboo')
         self.assertTrue(match['draft']['roster'][0]['discord'].startswith('<@'))
         self.assertEqual(len(match['races']), 5)

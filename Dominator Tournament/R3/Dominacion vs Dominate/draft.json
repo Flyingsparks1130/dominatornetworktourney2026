@@ -86,12 +86,16 @@
     }
   ],
   "uma_additions": [],
-  "benched_umas": [],
-  "training_start": null,
-  "training_deadline": null,
-  "notes": "Final selections, pre-bans, enemy vetoes and the seven-race schedule transcribed from the organizer screenshot. Dominate is the left team; Team 2 is Dominacion, its Round 3 bracket opponent. Selections follow the displayed team order; the original snake-pick chronology and additional-pick phase were not shown. Vetoes are attributed to the club that made them. Player assignments, benches, training dates and the external match ID were not supplied. The screenshot shows 0 races reported; official scores and results remain pending.",
-  "external_match_id": null,
-  "roster": [],
+  "benched_umas": [
+    {
+      "team_id": "dominate",
+      "uma": "Silence Suzuka"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Agnes Digital (Halloween)"
+    }
+  ],
   "uma_selections": [
     {
       "team_id": "dominate",
@@ -119,11 +123,11 @@
     },
     {
       "team_id": "dominacion",
-      "uma": "Agnes Digital"
+      "uma": "Agnes Digital (Halloween)"
     },
     {
       "team_id": "dominacion",
-      "uma": "Meisho Doto"
+      "uma": "Meisho Doto (Halloween)"
     },
     {
       "team_id": "dominacion",
@@ -140,6 +144,84 @@
     {
       "team_id": "dominacion",
       "uma": "Air Groove"
+    }
+  ],
+  "training_start": null,
+  "training_deadline": null,
+  "notes": "Organizer screenshots and four original exports confirm LDGU92: Dominate 2-26 Dominacion after Race 4; MVP @Zanko, Oguri Cap. Silence Suzuka and Agnes Digital (Halloween) were benched. The remaining two standard tracks and the Kyoto 1200m tiebreaker were not run. Dominate is the left team in the draft screenshot; Team 2 is Dominacion. Picks, vetoes and bans retain their recorded attribution. Snake-pick chronology and training dates were not supplied. Draft condition wording and literal export labels are preserved separately.",
+  "external_match_id": "LDGU92",
+  "roster": [
+    {
+      "team_id": "dominate",
+      "uma": "Kitasan Black",
+      "discord": "@Reyov",
+      "benched": false
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Mayano Top Gun",
+      "discord": "@Flyingsparkz",
+      "benched": false
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Mejiro McQueen (Summer)",
+      "discord": "@raine",
+      "benched": false
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Mihono Bourbon",
+      "discord": "@Mayday",
+      "benched": false
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Silence Suzuka",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominate",
+      "uma": "Smart Falcon",
+      "discord": "@BYond",
+      "benched": false
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Agnes Digital (Halloween)",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Meisho Doto (Halloween)",
+      "discord": "@McGee",
+      "benched": false
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Mayano Top Gun (Wedding)",
+      "discord": "@AngelicVixen",
+      "benched": false
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Oguri Cap",
+      "discord": "@Zanko",
+      "benched": false
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Rice Shower (Halloween)",
+      "discord": "@wata",
+      "benched": false
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Air Groove",
+      "discord": "@Yanagi #1 Fan (Bloop)",
+      "benched": false
     }
   ]
 }

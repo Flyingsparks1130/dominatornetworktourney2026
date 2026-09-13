@@ -230,5 +230,9 @@
   "Mihono Bourbon": {
     "variant_id": 102601,
     "portrait": "assets/runners/102601.webp"
+  },
+  "Meisho Doto (Halloween)": {
+    "variant_id": 105802,
+    "portrait": "assets/runners/105802.webp"
   }
 }
