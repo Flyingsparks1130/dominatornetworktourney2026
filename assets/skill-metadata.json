@@ -377,6 +377,13 @@
     "activate_lot": 0,
     "rarity": 5
   },
+  "100491": {
+    "icon_id": 20013,
+    "category": "regular",
+    "activate_lot": 0,
+    "rarity": 5,
+    "name": "Laugh in the Face of Danger"
+  },
   "100501": {
     "icon_id": 20013,
     "category": "regular",
@@ -588,6 +595,12 @@
     "rarity": 5
   },
   "110201": {
+    "icon_id": 20013,
+    "category": "regular",
+    "activate_lot": 0,
+    "rarity": 5
+  },
+  "110211": {
     "icon_id": 20013,
     "category": "regular",
     "activate_lot": 0,
@@ -4295,11 +4308,5 @@
     "category": "innate",
     "activate_lot": 0,
     "rarity": 1
-  },
-  "110211": {
-    "icon_id": 20013,
-    "category": "regular",
-    "activate_lot": 0,
-    "rarity": 5
   }
 }

@@ -26,7 +26,9 @@ jobs:
       - name: Build the folder index and static site
         run: python scripts/tournament_engine.py site
       - name: Check replay playback against the recorded races
-        run: node tests/test_replay_client.js
+        run: |
+          node tests/test_replay_client.js
+          node tests/test_championship_client.js
       - name: Check award calculations and public reveal protection
         run: |
           node tests/test_awards_client.js

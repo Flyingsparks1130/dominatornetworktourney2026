@@ -15,7 +15,7 @@ for(const id of new Set([...definitions.keys(),...prices.keys(),...Object.keys(m
   const last=id%10,paired=last===4?id-3:last===1?id+1:id-1;
   if(definitions.get(paired)?.rarity===1&&!/[×✕]/u.test(definitions.get(paired).name))requires.push(paired);
  }else if(rarity===1&&id%10===1&&definitions.get(id+1)?.rarity===1)requires.push(id+1);
- skills[id]={name:d?.name||null,cost:prices.get(id)??null,rarity:rarity??null,requires,negative:/[×✕]/u.test(d?.name||''),debuff:Boolean(d?.tagId?.includes('406')),activate_lot:d?.activateLot??metadata[id]?.activate_lot??null};
+ skills[id]={name:d?.name||metadata[id]?.name||null,cost:prices.get(id)??null,rarity:rarity??null,requires,negative:/[×✕]/u.test(d?.name||''),debuff:Boolean(d?.tagId?.includes('406')),activate_lot:d?.activateLot??metadata[id]?.activate_lot??null};
 }
 fs.writeFileSync(path.join(root,'assets/award-skills.json'),JSON.stringify({source:'ayaliz/hakuraku',revision:'88015af9f6473fa4b76463b9cf217a3c79817811',skills})+'\n');
 console.log(`Wrote ${Object.keys(skills).length} skill prices and classifications.`);

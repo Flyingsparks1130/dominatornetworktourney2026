@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-13T17:58:22Z",
+  "generated_at": "2026-09-16T23:36:01Z",
   "id": "dominator-2026",
   "name": "Dominator Tournament",
   "published": true,
-  "revision": 78,
+  "revision": 87,
   "rounds": [
     {
       "id": "R1",
@@ -2817,8 +2817,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominator": 0,
-            "dominarium": 7
+            "dominarium": 7,
+            "dominator": 0
           },
           "data_file": "data/tournament-races/56b65d20b64b13ce24a7.json"
         },
@@ -2843,8 +2843,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominator": 6,
-            "dominarium": 1
+            "dominarium": 1,
+            "dominator": 6
           },
           "data_file": "data/tournament-races/e11f7645e1b2ca830e18.json"
         },
@@ -2869,8 +2869,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominator": 7,
-            "dominarium": 0
+            "dominarium": 0,
+            "dominator": 7
           },
           "data_file": "data/tournament-races/42e88c5ea2b55f0aed64.json"
         },
@@ -2895,8 +2895,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominator": 4,
-            "dominarium": 3
+            "dominarium": 3,
+            "dominator": 4
           },
           "data_file": "data/tournament-races/7527405cfa43908ba451.json"
         },
@@ -2921,8 +2921,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominator": 5,
-            "dominarium": 2
+            "dominarium": 2,
+            "dominator": 5
           },
           "data_file": "data/tournament-races/ea90401c018369c4fd3a.json"
         },
@@ -2947,8 +2947,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominator": 7,
-            "dominarium": 0
+            "dominarium": 0,
+            "dominator": 7
           },
           "data_file": "data/tournament-races/dbeb692653faa9b3bdda.json"
         }
@@ -3874,8 +3874,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominant-h": 3,
-            "dominance": 4
+            "dominance": 4,
+            "dominant-h": 3
           },
           "data_file": "data/tournament-races/6b375895af26d382dc5b.json"
         },
@@ -3900,8 +3900,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominant-h": 2,
-            "dominance": 5
+            "dominance": 5,
+            "dominant-h": 2
           },
           "data_file": "data/tournament-races/6c7b39c05c11ae6e840e.json"
         },
@@ -3926,8 +3926,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominant-h": 1,
-            "dominance": 6
+            "dominance": 6,
+            "dominant-h": 1
           },
           "data_file": "data/tournament-races/e8033244e144f415b64f.json"
         },
@@ -3952,8 +3952,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominant-h": 2,
-            "dominance": 5
+            "dominance": 5,
+            "dominant-h": 2
           },
           "data_file": "data/tournament-races/9e3e00480b7fde58c39a.json"
         },
@@ -3978,8 +3978,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominant-h": 5,
-            "dominance": 2
+            "dominance": 2,
+            "dominant-h": 5
           },
           "data_file": "data/tournament-races/87d47b802411a4514be0.json"
         },
@@ -4004,8 +4004,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominant-h": 6,
-            "dominance": 1
+            "dominance": 1,
+            "dominant-h": 6
           },
           "data_file": "data/tournament-races/10f9086a1ed9a5f9368f.json"
         },
@@ -4030,8 +4030,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominant-h": 3,
-            "dominance": 4
+            "dominance": 4,
+            "dominant-h": 3
           },
           "data_file": "data/tournament-races/4814a3b2d89cf0102452.json"
         }
@@ -5012,8 +5012,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "domineer": 5,
-            "dominacion": 2
+            "dominacion": 2,
+            "domineer": 5
           },
           "data_file": "data/tournament-races/77ff35c7e057c068ae2a.json"
         },
@@ -5038,8 +5038,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "domineer": 3,
-            "dominacion": 4
+            "dominacion": 4,
+            "domineer": 3
           },
           "data_file": "data/tournament-races/d670795870ca6ea3e08f.json"
         },
@@ -5064,8 +5064,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "domineer": 4,
-            "dominacion": 3
+            "dominacion": 3,
+            "domineer": 4
           },
           "data_file": "data/tournament-races/ed4745d845438e7684b6.json"
         },
@@ -5090,8 +5090,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "domineer": 3,
-            "dominacion": 4
+            "dominacion": 4,
+            "domineer": 3
           },
           "data_file": "data/tournament-races/3073f39e17998d4eeaab.json"
         },
@@ -5116,8 +5116,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "domineer": 2,
-            "dominacion": 5
+            "dominacion": 5,
+            "domineer": 2
           },
           "data_file": "data/tournament-races/0920a2b9c8bcad93181f.json"
         },
@@ -5142,8 +5142,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "domineer": 0,
-            "dominacion": 7
+            "dominacion": 7,
+            "domineer": 0
           },
           "data_file": "data/tournament-races/03d59f7bd6a0b45e9706.json"
         }
@@ -6069,8 +6069,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominium": 1,
-            "dominate": 6
+            "dominate": 6,
+            "dominium": 1
           },
           "data_file": "data/tournament-races/88e67acbf1bf9d722ad3.json"
         },
@@ -6095,8 +6095,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominium": 4,
-            "dominate": 3
+            "dominate": 3,
+            "dominium": 4
           },
           "data_file": "data/tournament-races/6a90afd4af061a79b568.json"
         },
@@ -6121,8 +6121,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominium": 0,
-            "dominate": 7
+            "dominate": 7,
+            "dominium": 0
           },
           "data_file": "data/tournament-races/37e67a4d0d6bea4e9f3e.json"
         },
@@ -6147,8 +6147,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominium": 3,
-            "dominate": 4
+            "dominate": 4,
+            "dominium": 3
           },
           "data_file": "data/tournament-races/80443fe07928e4407b7a.json"
         },
@@ -6173,8 +6173,8 @@
           "scoring_verified": true,
           "review_reasons": [],
           "team_points": {
-            "dominium": 1,
-            "dominate": 6
+            "dominate": 6,
+            "dominium": 1
           },
           "data_file": "data/tournament-races/7c48300d6cdd861a5834.json"
         }
@@ -9165,62 +9165,1170 @@
           "aliases": []
         }
       ],
-      "winner_id": null,
-      "loser_id": null,
-      "status": "ready",
-      "manual_scores": null,
-      "decision_reason": null,
-      "source": "race_files",
-      "races": [],
+      "winner_id": "dominance",
+      "loser_id": "dominacion",
+      "status": "complete",
+      "manual_scores": {
+        "dominacion": 17,
+        "dominance": 25
+      },
+      "decision_reason": "Organizer confirms Dominance wins the Grand Final and tournament, 25-17 over Dominacion after six races. Match MVP Essential (Oguri Cap) earned 12 points. All exports corroborate the result.",
+      "source": "manual",
+      "races": [
+        {
+          "id": "90c25dd7c4716346d2c8",
+          "round": "R4",
+          "match_id": "r4-m1",
+          "race_folder": "01 - Niigata (Outer) 1600m",
+          "file_name": "Sakura Chiyono O-74.6391s-20260916.json",
+          "raw_path": "Dominator Tournament/R4/Dominance vs Dominacion/01 - Niigata (Outer) 1600m/Sakura Chiyono O-74.6391s-20260916.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10304,
+            "track_id": 10003,
+            "distance_m": 1600,
+            "surface": "Turf",
+            "turn": "Left",
+            "condition": "Good",
+            "weather": "Sunny",
+            "season": "Summer"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominacion": 3,
+            "dominance": 4
+          },
+          "data_file": "data/tournament-races/90c25dd7c4716346d2c8.json"
+        },
+        {
+          "id": "d255f8f92ae29b09aedd",
+          "round": "R4",
+          "match_id": "r4-m1",
+          "race_folder": "02 - Kyoto (Outer) 2200m",
+          "file_name": "Oguri Cap-104.9269s-20260916.json",
+          "raw_path": "Dominator Tournament/R4/Dominance vs Dominacion/02 - Kyoto (Outer) 2200m/Oguri Cap-104.9269s-20260916.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10808,
+            "track_id": 10008,
+            "distance_m": 2200,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Good",
+            "weather": "Sunny",
+            "season": "Fall"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominacion": 3,
+            "dominance": 4
+          },
+          "data_file": "data/tournament-races/d255f8f92ae29b09aedd.json"
+        },
+        {
+          "id": "5831e99f86c2422f7d50",
+          "round": "R4",
+          "match_id": "r4-m1",
+          "race_folder": "03 - Niigata (Outer) 1800m",
+          "file_name": "Sakura Chiyono O-84.6932s-20260916.json",
+          "raw_path": "Dominator Tournament/R4/Dominance vs Dominacion/03 - Niigata (Outer) 1800m/Sakura Chiyono O-84.6932s-20260916.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10305,
+            "track_id": 10003,
+            "distance_m": 1800,
+            "surface": "Turf",
+            "turn": "Left",
+            "condition": "Soft",
+            "weather": "Sunny",
+            "season": "Summer"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominacion": 2,
+            "dominance": 5
+          },
+          "data_file": "data/tournament-races/5831e99f86c2422f7d50.json"
+        },
+        {
+          "id": "a03536ac62545b2eca65",
+          "round": "R4",
+          "match_id": "r4-m1",
+          "race_folder": "04 - Kyoto (Inner) 2000m",
+          "file_name": "Fuji Kiseki-94.5681s-20260916.json",
+          "raw_path": "Dominator Tournament/R4/Dominance vs Dominacion/04 - Kyoto (Inner) 2000m/Fuji Kiseki-94.5681s-20260916.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10807,
+            "track_id": 10008,
+            "distance_m": 2000,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Soft",
+            "weather": "Snow",
+            "season": "Winter"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominacion": 5,
+            "dominance": 2
+          },
+          "data_file": "data/tournament-races/a03536ac62545b2eca65.json"
+        },
+        {
+          "id": "d976115583f5e159bc80",
+          "round": "R4",
+          "match_id": "r4-m1",
+          "race_folder": "05 - Niigata (Outer) 2000m",
+          "file_name": "Oguri Cap-94.7766s-20260916.json",
+          "raw_path": "Dominator Tournament/R4/Dominance vs Dominacion/05 - Niigata (Outer) 2000m/Oguri Cap-94.7766s-20260916.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10307,
+            "track_id": 10003,
+            "distance_m": 2000,
+            "surface": "Turf",
+            "turn": "Left",
+            "condition": "Hard",
+            "weather": "Snow",
+            "season": "Winter"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominacion": 0,
+            "dominance": 7
+          },
+          "data_file": "data/tournament-races/d976115583f5e159bc80.json"
+        },
+        {
+          "id": "877533525fddf5ac174b",
+          "round": "R4",
+          "match_id": "r4-m1",
+          "race_folder": "06 - Kyoto (Outer) 3000m",
+          "file_name": "Mayano Top Gun-150.7252s-20260916.json",
+          "raw_path": "Dominator Tournament/R4/Dominance vs Dominacion/06 - Kyoto (Outer) 3000m/Mayano Top Gun-150.7252s-20260916.json",
+          "runner_count": 10,
+          "course": {
+            "course_id": 10810,
+            "track_id": 10008,
+            "distance_m": 3000,
+            "surface": "Turf",
+            "turn": "Right",
+            "condition": "Soft",
+            "weather": "Cloudy",
+            "season": "Summer"
+          },
+          "scoring_verified": true,
+          "review_reasons": [],
+          "team_points": {
+            "dominacion": 4,
+            "dominance": 3
+          },
+          "data_file": "data/tournament-races/877533525fddf5ac174b.json"
+        }
+      ],
       "draft": {
         "schema_version": 1,
         "match_id": "r4-m1",
-        "status": "pending",
+        "status": "locked",
         "track_pool": [],
-        "track_picks": [],
-        "track_vetoes": [],
-        "final_tracks": [],
-        "tiebreaker_track": null,
-        "uma_pre_bans": [],
+        "track_picks": [
+          {
+            "team_id": "dominance",
+            "track": "Niigata (Outer) 1600m · Turf · Left · Summer / Sunny / Firm"
+          },
+          {
+            "team_id": "dominacion",
+            "track": "Kyoto (Outer) 2200m · Turf · Right · Fall / Sunny / Firm"
+          },
+          {
+            "team_id": "dominance",
+            "track": "Niigata (Outer) 1800m · Turf · Left · Summer / Sunny / Good"
+          },
+          {
+            "team_id": "dominacion",
+            "track": "Kyoto (Inner) 2000m · Turf · Right · Winter / Snowy / Good"
+          },
+          {
+            "team_id": "dominance",
+            "track": "Niigata (Outer) 2000m · Turf · Left · Winter / Snowy / Soft"
+          },
+          {
+            "team_id": "dominacion",
+            "track": "Kyoto (Outer) 3000m · Turf · Right · Summer / Cloudy / Good"
+          },
+          {
+            "team_id": "dominance",
+            "track": "Niigata 1000m · Turf · Straight · Summer / Cloudy / Good"
+          },
+          {
+            "team_id": "dominacion",
+            "track": "Kyoto (Outer) 3200m · Turf · Right · Spring / Rainy / Soft"
+          }
+        ],
+        "track_vetoes": [
+          {
+            "team_id": "dominacion",
+            "track": "Niigata 1000m · Turf · Straight · Summer / Cloudy / Good"
+          },
+          {
+            "team_id": "dominance",
+            "track": "Kyoto (Outer) 3200m · Turf · Right · Spring / Rainy / Soft"
+          }
+        ],
+        "final_tracks": [
+          "Niigata (Outer) 1600m · Turf · Left · Summer / Sunny / Firm",
+          "Kyoto (Outer) 2200m · Turf · Right · Fall / Sunny / Firm",
+          "Niigata (Outer) 1800m · Turf · Left · Summer / Sunny / Good",
+          "Kyoto (Inner) 2000m · Turf · Right · Winter / Snowy / Good",
+          "Niigata (Outer) 2000m · Turf · Left · Winter / Snowy / Soft",
+          "Kyoto (Outer) 3000m · Turf · Right · Summer / Cloudy / Good"
+        ],
+        "tiebreaker_track": "Tokyo 1400m · Turf · Left · Summer / Sunny / Firm",
+        "uma_pre_bans": [
+          {
+            "team_id": "dominance",
+            "uma": "Rice Shower (Halloween)"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Oguri Cap (Christmas)"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Narita Taishin"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Inari One (Festival)"
+          }
+        ],
         "uma_picks": [],
-        "uma_bans": [],
+        "uma_bans": [
+          {
+            "team_id": "dominacion",
+            "uma": "Grass Wonder"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Mihono Bourbon (Valentine)"
+          }
+        ],
         "uma_additions": [],
-        "benched_umas": [],
-        "uma_selections": [],
+        "benched_umas": [
+          {
+            "team_id": "dominance",
+            "uma": "Maruzensky"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Meisho Doto (Halloween)"
+          }
+        ],
+        "uma_selections": [
+          {
+            "team_id": "dominance",
+            "uma": "Oguri Cap"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Seiun Sky"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Maruzensky"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Nakayama Festa"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Narita Brian"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Sakura Chiyono O"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Maruzensky (Summer)"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Meisho Doto (Halloween)"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Fuji Kiseki (Ballroom)"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Mayano Top Gun"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Silence Suzuka"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Gold Ship"
+          }
+        ],
         "training_start": null,
         "training_deadline": null,
-        "notes": "",
+        "notes": "Organizer screenshots and six original exports confirm Dominance 25-17 Dominacion after Race 6. Dominance wins the Grand Final and the tournament. Match MVP: @Essential, Oguri Cap, with 12 podium points. Maruzensky and Meisho Doto (Halloween) were benched. The Tokyo 1400m tiebreaker was not run. The crossed-out Niigata 1000m and Kyoto 3200m picks were vetoed by the opposing club. Uma snake-pick chronology, external match ID and training dates were not supplied. Screenshot Discord @NakedGhostie corresponds to export owner NakeGhostie; @Yanagi #1 Fan (Bloop) corresponds to bloop. Draft condition wording and literal export labels are preserved separately.",
         "external_match_id": null,
-        "roster": []
+        "roster": [
+          {
+            "team_id": "dominance",
+            "uma": "Oguri Cap",
+            "discord": "@Essential",
+            "benched": false
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Seiun Sky",
+            "discord": "@NakedGhostie",
+            "benched": false
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Maruzensky",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Nakayama Festa",
+            "discord": "@Bloodvvolf",
+            "benched": false
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Narita Brian",
+            "discord": "@Iviers | Eishin's Sibling",
+            "benched": false
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Sakura Chiyono O",
+            "discord": "@Raykini",
+            "benched": false
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Maruzensky (Summer)",
+            "discord": "@wata",
+            "benched": false
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Meisho Doto (Halloween)",
+            "discord": null,
+            "benched": true
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Fuji Kiseki (Ballroom)",
+            "discord": "@Yanagi #1 Fan (Bloop)",
+            "benched": false
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Mayano Top Gun",
+            "discord": "@McGee",
+            "benched": false
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Silence Suzuka",
+            "discord": "@AngelicVixen",
+            "benched": false
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Gold Ship",
+            "discord": "@Zanko",
+            "benched": false
+          }
+        ]
       },
       "draft_path": "Dominator Tournament/R4/Dominance vs Dominacion/draft.json",
-      "draft_has_content": false,
-      "reported_results": null,
-      "report_path": null,
-      "computed_scores": null,
-      "scores": null,
+      "draft_has_content": true,
+      "reported_results": {
+        "schema_version": 1,
+        "match_id": "r4-m1",
+        "external_match_id": null,
+        "source": "Organizer-supplied final draft, roster, podiums, match MVP and 25-17 championship result, corroborated by six original horseACT exports supplied on 2026-09-16.",
+        "mvp": {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Essential",
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Essential",
+          "points": 12
+        },
+        "races": [
+          {
+            "number": 1,
+            "track": "Niigata (Outer) 1600m · Turf · Left · Summer / Sunny / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominance",
+                "uma": "Sakura Chiyono O",
+                "discord": "@Raykini",
+                "place": 1,
+                "points": 4,
+                "variant_id": 106901,
+                "portrait": "assets/runners/106901.webp",
+                "display_name": "Raykini"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Maruzensky (Summer)",
+                "discord": "@wata",
+                "place": 2,
+                "points": 2,
+                "variant_id": 100402,
+                "portrait": "assets/runners/100402.webp",
+                "display_name": "wata"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Silence Suzuka",
+                "discord": "@AngelicVixen",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100201,
+                "portrait": "assets/runners/100201.webp",
+                "display_name": "AngelicVixen"
+              }
+            ],
+            "scores": {
+              "dominacion": 3,
+              "dominance": 4
+            },
+            "cumulative_scores": {
+              "dominacion": 3,
+              "dominance": 4
+            }
+          },
+          {
+            "number": 2,
+            "track": "Kyoto (Outer) 2200m · Turf · Right · Fall / Sunny / Firm",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominance",
+                "uma": "Oguri Cap",
+                "discord": "@Essential",
+                "place": 1,
+                "points": 4,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "Essential"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Maruzensky (Summer)",
+                "discord": "@wata",
+                "place": 2,
+                "points": 2,
+                "variant_id": 100402,
+                "portrait": "assets/runners/100402.webp",
+                "display_name": "wata"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Fuji Kiseki (Ballroom)",
+                "discord": "@Yanagi #1 Fan (Bloop)",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100502,
+                "portrait": "assets/runners/100502.webp",
+                "display_name": "bloop"
+              }
+            ],
+            "scores": {
+              "dominacion": 3,
+              "dominance": 4
+            },
+            "cumulative_scores": {
+              "dominacion": 6,
+              "dominance": 8
+            }
+          },
+          {
+            "number": 3,
+            "track": "Niigata (Outer) 1800m · Turf · Left · Summer / Sunny / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominance",
+                "uma": "Sakura Chiyono O",
+                "discord": "@Raykini",
+                "place": 1,
+                "points": 4,
+                "variant_id": 106901,
+                "portrait": "assets/runners/106901.webp",
+                "display_name": "Raykini"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Maruzensky (Summer)",
+                "discord": "@wata",
+                "place": 2,
+                "points": 2,
+                "variant_id": 100402,
+                "portrait": "assets/runners/100402.webp",
+                "display_name": "wata"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "Oguri Cap",
+                "discord": "@Essential",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "Essential"
+              }
+            ],
+            "scores": {
+              "dominacion": 2,
+              "dominance": 5
+            },
+            "cumulative_scores": {
+              "dominacion": 8,
+              "dominance": 13
+            }
+          },
+          {
+            "number": 4,
+            "track": "Kyoto (Inner) 2000m · Turf · Right · Winter / Snowy / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominacion",
+                "uma": "Fuji Kiseki (Ballroom)",
+                "discord": "@Yanagi #1 Fan (Bloop)",
+                "place": 1,
+                "points": 4,
+                "variant_id": 100502,
+                "portrait": "assets/runners/100502.webp",
+                "display_name": "bloop"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "Oguri Cap",
+                "discord": "@Essential",
+                "place": 2,
+                "points": 2,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "Essential"
+              },
+              {
+                "team_id": "dominacion",
+                "uma": "Maruzensky (Summer)",
+                "discord": "@wata",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100402,
+                "portrait": "assets/runners/100402.webp",
+                "display_name": "wata"
+              }
+            ],
+            "scores": {
+              "dominacion": 5,
+              "dominance": 2
+            },
+            "cumulative_scores": {
+              "dominacion": 13,
+              "dominance": 15
+            }
+          },
+          {
+            "number": 5,
+            "track": "Niigata (Outer) 2000m · Turf · Left · Winter / Snowy / Soft",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominance",
+                "uma": "Oguri Cap",
+                "discord": "@Essential",
+                "place": 1,
+                "points": 4,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "Essential"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "Sakura Chiyono O",
+                "discord": "@Raykini",
+                "place": 2,
+                "points": 2,
+                "variant_id": 106901,
+                "portrait": "assets/runners/106901.webp",
+                "display_name": "Raykini"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "Seiun Sky",
+                "discord": "@NakedGhostie",
+                "place": 3,
+                "points": 1,
+                "variant_id": 102001,
+                "portrait": "assets/runners/102001.webp",
+                "display_name": "NakeGhostie"
+              }
+            ],
+            "scores": {
+              "dominacion": 0,
+              "dominance": 7
+            },
+            "cumulative_scores": {
+              "dominacion": 13,
+              "dominance": 22
+            }
+          },
+          {
+            "number": 6,
+            "track": "Kyoto (Outer) 3000m · Turf · Right · Summer / Cloudy / Good",
+            "tiebreaker": false,
+            "podium": [
+              {
+                "team_id": "dominacion",
+                "uma": "Mayano Top Gun",
+                "discord": "@McGee",
+                "place": 1,
+                "points": 4,
+                "variant_id": 102401,
+                "portrait": "assets/runners/102401.webp",
+                "display_name": "McGee"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "Nakayama Festa",
+                "discord": "@Bloodvvolf",
+                "place": 2,
+                "points": 2,
+                "variant_id": 104901,
+                "portrait": "assets/runners/104901.webp",
+                "display_name": "Bloodvvolf"
+              },
+              {
+                "team_id": "dominance",
+                "uma": "Oguri Cap",
+                "discord": "@Essential",
+                "place": 3,
+                "points": 1,
+                "variant_id": 100601,
+                "portrait": "assets/runners/100601.webp",
+                "display_name": "Essential"
+              }
+            ],
+            "scores": {
+              "dominacion": 4,
+              "dominance": 3
+            },
+            "cumulative_scores": {
+              "dominacion": 17,
+              "dominance": 25
+            }
+          }
+        ],
+        "totals": {
+          "dominacion": 17,
+          "dominance": 25
+        }
+      },
+      "report_path": "Dominator Tournament/R4/Dominance vs Dominacion/results.json",
+      "computed_scores": {
+        "dominance": 25,
+        "dominacion": 17
+      },
+      "scores": {
+        "dominacion": 17,
+        "dominance": 25
+      },
       "score_only": false,
       "report_score_mismatch": false,
       "needs_review": false,
-      "target_reached": [],
-      "draft_lineup": [],
+      "target_reached": [
+        "dominance"
+      ],
+      "draft_lineup": [
+        {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Essential",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Essential"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Seiun Sky",
+          "discord": "@NakedGhostie",
+          "benched": false,
+          "variant_id": 102001,
+          "portrait": "assets/runners/102001.webp",
+          "display_name": "NakedGhostie"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Maruzensky",
+          "discord": null,
+          "benched": true,
+          "variant_id": 100401,
+          "portrait": "assets/runners/100401.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Nakayama Festa",
+          "discord": "@Bloodvvolf",
+          "benched": false,
+          "variant_id": 104901,
+          "portrait": "assets/runners/104901.webp",
+          "display_name": "Bloodvvolf"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Narita Brian",
+          "discord": "@Iviers | Eishin's Sibling",
+          "benched": false,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
+          "display_name": "Iviers | Eishin's Sibling"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Sakura Chiyono O",
+          "discord": "@Raykini",
+          "benched": false,
+          "variant_id": 106901,
+          "portrait": "assets/runners/106901.webp",
+          "display_name": "Raykini"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Maruzensky (Summer)",
+          "discord": "@wata",
+          "benched": false,
+          "variant_id": 100402,
+          "portrait": "assets/runners/100402.webp",
+          "display_name": "wata"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Meisho Doto (Halloween)",
+          "discord": null,
+          "benched": true,
+          "variant_id": 105802,
+          "portrait": "assets/runners/105802.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Fuji Kiseki (Ballroom)",
+          "discord": "@Yanagi #1 Fan (Bloop)",
+          "benched": false,
+          "variant_id": 100502,
+          "portrait": "assets/runners/100502.webp",
+          "display_name": "Yanagi #1 Fan (Bloop)"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Mayano Top Gun",
+          "discord": "@McGee",
+          "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
+          "display_name": "McGee"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Silence Suzuka",
+          "discord": "@AngelicVixen",
+          "benched": false,
+          "variant_id": 100201,
+          "portrait": "assets/runners/100201.webp",
+          "display_name": "AngelicVixen"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Gold Ship",
+          "discord": "@Zanko",
+          "benched": false,
+          "variant_id": 100701,
+          "portrait": "assets/runners/100701.webp",
+          "display_name": "Zanko"
+        }
+      ],
       "draft_uma_actions": {
-        "uma_pre_bans": [],
+        "uma_pre_bans": [
+          {
+            "team_id": "dominance",
+            "uma": "Rice Shower (Halloween)",
+            "variant_id": 103002,
+            "portrait": "assets/runners/103002.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Oguri Cap (Christmas)",
+            "variant_id": 100602,
+            "portrait": "assets/runners/100602.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Narita Taishin",
+            "variant_id": 105001,
+            "portrait": "assets/runners/105001.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Inari One (Festival)",
+            "variant_id": 103402,
+            "portrait": "assets/runners/103402.webp"
+          }
+        ],
         "uma_picks": [],
-        "uma_bans": [],
+        "uma_bans": [
+          {
+            "team_id": "dominacion",
+            "uma": "Grass Wonder",
+            "variant_id": 101101,
+            "portrait": "assets/runners/101101.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Mihono Bourbon (Valentine)",
+            "variant_id": 102602,
+            "portrait": "assets/runners/102602.webp"
+          }
+        ],
         "uma_additions": [],
-        "benched_umas": [],
-        "uma_selections": []
+        "benched_umas": [
+          {
+            "team_id": "dominance",
+            "uma": "Maruzensky",
+            "variant_id": 100401,
+            "portrait": "assets/runners/100401.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Meisho Doto (Halloween)",
+            "variant_id": 105802,
+            "portrait": "assets/runners/105802.webp"
+          }
+        ],
+        "uma_selections": [
+          {
+            "team_id": "dominance",
+            "uma": "Oguri Cap",
+            "variant_id": 100601,
+            "portrait": "assets/runners/100601.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Seiun Sky",
+            "variant_id": 102001,
+            "portrait": "assets/runners/102001.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Maruzensky",
+            "variant_id": 100401,
+            "portrait": "assets/runners/100401.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Nakayama Festa",
+            "variant_id": 104901,
+            "portrait": "assets/runners/104901.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Narita Brian",
+            "variant_id": 101601,
+            "portrait": "assets/runners/101601.webp"
+          },
+          {
+            "team_id": "dominance",
+            "uma": "Sakura Chiyono O",
+            "variant_id": 106901,
+            "portrait": "assets/runners/106901.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Maruzensky (Summer)",
+            "variant_id": 100402,
+            "portrait": "assets/runners/100402.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Meisho Doto (Halloween)",
+            "variant_id": 105802,
+            "portrait": "assets/runners/105802.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Fuji Kiseki (Ballroom)",
+            "variant_id": 100502,
+            "portrait": "assets/runners/100502.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Mayano Top Gun",
+            "variant_id": 102401,
+            "portrait": "assets/runners/102401.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Silence Suzuka",
+            "variant_id": 100201,
+            "portrait": "assets/runners/100201.webp"
+          },
+          {
+            "team_id": "dominacion",
+            "uma": "Gold Ship",
+            "variant_id": 100701,
+            "portrait": "assets/runners/100701.webp"
+          }
+        ]
       },
-      "lineup": [],
-      "lineup_source": "draft",
-      "player_points": [],
-      "player_points_recorded": false
+      "lineup": [
+        {
+          "team_id": "dominacion",
+          "uma": "Silence Suzuka",
+          "discord": "@AngelicVixen",
+          "benched": false,
+          "variant_id": 100201,
+          "portrait": "assets/runners/100201.webp",
+          "display_name": "AngelicVixen"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Fuji Kiseki (Ballroom)",
+          "discord": "@Yanagi #1 Fan (Bloop)",
+          "benched": false,
+          "variant_id": 100502,
+          "portrait": "assets/runners/100502.webp",
+          "display_name": "bloop"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Mayano Top Gun",
+          "discord": "@McGee",
+          "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
+          "display_name": "McGee"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Maruzensky (Summer)",
+          "discord": "@wata",
+          "benched": false,
+          "variant_id": 100402,
+          "portrait": "assets/runners/100402.webp",
+          "display_name": "wata"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Gold Ship",
+          "discord": "@Zanko",
+          "benched": false,
+          "variant_id": 100701,
+          "portrait": "assets/runners/100701.webp",
+          "display_name": "Zanko"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Nakayama Festa",
+          "discord": "@Bloodvvolf",
+          "benched": false,
+          "variant_id": 104901,
+          "portrait": "assets/runners/104901.webp",
+          "display_name": "Bloodvvolf"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Essential",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Essential"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Narita Brian",
+          "discord": "@Iviers | Eishin's Sibling",
+          "benched": false,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
+          "display_name": "Iviers"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Seiun Sky",
+          "discord": "@NakedGhostie",
+          "benched": false,
+          "variant_id": 102001,
+          "portrait": "assets/runners/102001.webp",
+          "display_name": "NakeGhostie"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Sakura Chiyono O",
+          "discord": "@Raykini",
+          "benched": false,
+          "variant_id": 106901,
+          "portrait": "assets/runners/106901.webp",
+          "display_name": "Raykini"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Maruzensky",
+          "discord": null,
+          "benched": true,
+          "variant_id": 100401,
+          "portrait": "assets/runners/100401.webp",
+          "display_name": ""
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Meisho Doto (Halloween)",
+          "discord": null,
+          "benched": true,
+          "variant_id": 105802,
+          "portrait": "assets/runners/105802.webp",
+          "display_name": ""
+        }
+      ],
+      "lineup_source": "race",
+      "player_points": [
+        {
+          "team_id": "dominacion",
+          "uma": "Maruzensky (Summer)",
+          "discord": "@wata",
+          "benched": false,
+          "variant_id": 100402,
+          "portrait": "assets/runners/100402.webp",
+          "display_name": "wata",
+          "points": 7
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Fuji Kiseki (Ballroom)",
+          "discord": "@Yanagi #1 Fan (Bloop)",
+          "benched": false,
+          "variant_id": 100502,
+          "portrait": "assets/runners/100502.webp",
+          "display_name": "bloop",
+          "points": 5
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Mayano Top Gun",
+          "discord": "@McGee",
+          "benched": false,
+          "variant_id": 102401,
+          "portrait": "assets/runners/102401.webp",
+          "display_name": "McGee",
+          "points": 4
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Silence Suzuka",
+          "discord": "@AngelicVixen",
+          "benched": false,
+          "variant_id": 100201,
+          "portrait": "assets/runners/100201.webp",
+          "display_name": "AngelicVixen",
+          "points": 1
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Gold Ship",
+          "discord": "@Zanko",
+          "benched": false,
+          "variant_id": 100701,
+          "portrait": "assets/runners/100701.webp",
+          "display_name": "Zanko",
+          "points": 0
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Essential",
+          "benched": false,
+          "variant_id": 100601,
+          "portrait": "assets/runners/100601.webp",
+          "display_name": "Essential",
+          "points": 12
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Sakura Chiyono O",
+          "discord": "@Raykini",
+          "benched": false,
+          "variant_id": 106901,
+          "portrait": "assets/runners/106901.webp",
+          "display_name": "Raykini",
+          "points": 10
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Nakayama Festa",
+          "discord": "@Bloodvvolf",
+          "benched": false,
+          "variant_id": 104901,
+          "portrait": "assets/runners/104901.webp",
+          "display_name": "Bloodvvolf",
+          "points": 2
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Seiun Sky",
+          "discord": "@NakedGhostie",
+          "benched": false,
+          "variant_id": 102001,
+          "portrait": "assets/runners/102001.webp",
+          "display_name": "NakeGhostie",
+          "points": 1
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Narita Brian",
+          "discord": "@Iviers | Eishin's Sibling",
+          "benched": false,
+          "variant_id": 101601,
+          "portrait": "assets/runners/101601.webp",
+          "display_name": "Iviers",
+          "points": 0
+        }
+      ],
+      "player_points_recorded": true
     }
   ],
   "warnings": [],
   "eliminated": [
     "domichill",
+    "dominacion",
     "dominant-h",
     "dominante",
     "dominarium",
@@ -9230,7 +10338,7 @@
     "dominion",
     "dominium"
   ],
-  "champion_id": null,
+  "champion_id": "dominance",
   "club_rosters": {
     "dominion": {
       "match_id": "r1-m1",
@@ -9387,8 +10495,8 @@
       ]
     },
     "dominance": {
-      "match_id": "r3-m1",
-      "round": "R3",
+      "match_id": "r4-m1",
+      "round": "R4",
       "source": "race",
       "members": [
         {
@@ -9431,8 +10539,8 @@
       ]
     },
     "dominacion": {
-      "match_id": "r3-m2",
-      "round": "R3",
+      "match_id": "r4-m1",
+      "round": "R4",
       "source": "race",
       "members": [
         {

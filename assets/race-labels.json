@@ -63,6 +63,7 @@
     "100451": "Pure Heart",
     "100461": "SPARKLY☆STARDOM",
     "100481": "Pop & Polish",
+    "100491": "Laugh in the Face of Danger",
     "100501": "Nemesis",
     "100511": "Budding Blossom",
     "100521": "Super-Duper Climax",
@@ -99,6 +100,7 @@
     "110181": "Eternal Moments",
     "110191": "THE MOE AAAA Thanks for My Life",
     "110201": "Break It Down!",
+    "110211": "Thunderous Firestarter",
     "110221": "Best Day Ever",
     "110231": "Presents from X",
     "110241": "Flowery☆Maneuver",
@@ -713,8 +715,7 @@
     "1100011": "Feelin' a Bit Silly",
     "1200011": "Medium Race Enthusiast",
     "1200021": "Long Race Enthusiast",
-    "1200031": "Mile Race Enthusiast",
-    "110211": "Thunderous Firestarter"
+    "1200031": "Mile Race Enthusiast"
   },
   "cards": {
     "100101": "[Special Dreamer]",
@@ -916,6 +917,9 @@
     "105801": "assets/runners/105801.webp",
     "102402": "assets/runners/102402.webp",
     "102601": "assets/runners/102601.webp",
-    "105802": "assets/runners/105802.webp"
+    "105802": "assets/runners/105802.webp",
+    "100502": "assets/runners/100502.webp",
+    "104901": "assets/runners/104901.webp",
+    "106901": "assets/runners/106901.webp"
   }
 }
