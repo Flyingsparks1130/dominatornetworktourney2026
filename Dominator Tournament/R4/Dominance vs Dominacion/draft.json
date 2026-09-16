@@ -1,21 +1,227 @@
 {
   "schema_version": 1,
   "match_id": "r4-m1",
-  "status": "pending",
+  "status": "locked",
   "track_pool": [],
-  "track_picks": [],
-  "track_vetoes": [],
-  "final_tracks": [],
-  "tiebreaker_track": null,
-  "uma_pre_bans": [],
+  "track_picks": [
+    {
+      "team_id": "dominance",
+      "track": "Niigata (Outer) 1600m · Turf · Left · Summer / Sunny / Firm"
+    },
+    {
+      "team_id": "dominacion",
+      "track": "Kyoto (Outer) 2200m · Turf · Right · Fall / Sunny / Firm"
+    },
+    {
+      "team_id": "dominance",
+      "track": "Niigata (Outer) 1800m · Turf · Left · Summer / Sunny / Good"
+    },
+    {
+      "team_id": "dominacion",
+      "track": "Kyoto (Inner) 2000m · Turf · Right · Winter / Snowy / Good"
+    },
+    {
+      "team_id": "dominance",
+      "track": "Niigata (Outer) 2000m · Turf · Left · Winter / Snowy / Soft"
+    },
+    {
+      "team_id": "dominacion",
+      "track": "Kyoto (Outer) 3000m · Turf · Right · Summer / Cloudy / Good"
+    },
+    {
+      "team_id": "dominance",
+      "track": "Niigata 1000m · Turf · Straight · Summer / Cloudy / Good"
+    },
+    {
+      "team_id": "dominacion",
+      "track": "Kyoto (Outer) 3200m · Turf · Right · Spring / Rainy / Soft"
+    }
+  ],
+  "track_vetoes": [
+    {
+      "team_id": "dominacion",
+      "track": "Niigata 1000m · Turf · Straight · Summer / Cloudy / Good"
+    },
+    {
+      "team_id": "dominance",
+      "track": "Kyoto (Outer) 3200m · Turf · Right · Spring / Rainy / Soft"
+    }
+  ],
+  "final_tracks": [
+    "Niigata (Outer) 1600m · Turf · Left · Summer / Sunny / Firm",
+    "Kyoto (Outer) 2200m · Turf · Right · Fall / Sunny / Firm",
+    "Niigata (Outer) 1800m · Turf · Left · Summer / Sunny / Good",
+    "Kyoto (Inner) 2000m · Turf · Right · Winter / Snowy / Good",
+    "Niigata (Outer) 2000m · Turf · Left · Winter / Snowy / Soft",
+    "Kyoto (Outer) 3000m · Turf · Right · Summer / Cloudy / Good"
+  ],
+  "tiebreaker_track": "Tokyo 1400m · Turf · Left · Summer / Sunny / Firm",
+  "uma_pre_bans": [
+    {
+      "team_id": "dominance",
+      "uma": "Rice Shower (Halloween)"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Oguri Cap (Christmas)"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Narita Taishin"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Inari One (Festival)"
+    }
+  ],
   "uma_picks": [],
-  "uma_bans": [],
+  "uma_bans": [
+    {
+      "team_id": "dominacion",
+      "uma": "Grass Wonder"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Mihono Bourbon (Valentine)"
+    }
+  ],
   "uma_additions": [],
-  "benched_umas": [],
-  "uma_selections": [],
+  "benched_umas": [
+    {
+      "team_id": "dominance",
+      "uma": "Maruzensky"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Meisho Doto (Halloween)"
+    }
+  ],
+  "uma_selections": [
+    {
+      "team_id": "dominance",
+      "uma": "Oguri Cap"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Seiun Sky"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Maruzensky"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Nakayama Festa"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Narita Brian"
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Sakura Chiyono O"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Maruzensky (Summer)"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Meisho Doto (Halloween)"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Fuji Kiseki (Ballroom)"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Mayano Top Gun"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Silence Suzuka"
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Gold Ship"
+    }
+  ],
   "training_start": null,
   "training_deadline": null,
-  "notes": "",
+  "notes": "Organizer screenshots and six original exports confirm Dominance 25-17 Dominacion after Race 6. Dominance wins the Grand Final and the tournament. Match MVP: @Essential, Oguri Cap, with 12 podium points. Maruzensky and Meisho Doto (Halloween) were benched. The Tokyo 1400m tiebreaker was not run. The crossed-out Niigata 1000m and Kyoto 3200m picks were vetoed by the opposing club. Uma snake-pick chronology, external match ID and training dates were not supplied. Screenshot Discord @NakedGhostie corresponds to export owner NakeGhostie; @Yanagi #1 Fan (Bloop) corresponds to bloop. Draft condition wording and literal export labels are preserved separately.",
   "external_match_id": null,
-  "roster": []
+  "roster": [
+    {
+      "team_id": "dominance",
+      "uma": "Oguri Cap",
+      "discord": "@Essential",
+      "benched": false
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Seiun Sky",
+      "discord": "@NakedGhostie",
+      "benched": false
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Maruzensky",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Nakayama Festa",
+      "discord": "@Bloodvvolf",
+      "benched": false
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Narita Brian",
+      "discord": "@Iviers | Eishin's Sibling",
+      "benched": false
+    },
+    {
+      "team_id": "dominance",
+      "uma": "Sakura Chiyono O",
+      "discord": "@Raykini",
+      "benched": false
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Maruzensky (Summer)",
+      "discord": "@wata",
+      "benched": false
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Meisho Doto (Halloween)",
+      "discord": null,
+      "benched": true
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Fuji Kiseki (Ballroom)",
+      "discord": "@Yanagi #1 Fan (Bloop)",
+      "benched": false
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Mayano Top Gun",
+      "discord": "@McGee",
+      "benched": false
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Silence Suzuka",
+      "discord": "@AngelicVixen",
+      "benched": false
+    },
+    {
+      "team_id": "dominacion",
+      "uma": "Gold Ship",
+      "discord": "@Zanko",
+      "benched": false
+    }
+  ]
 }

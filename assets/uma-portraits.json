@@ -234,5 +234,17 @@
   "Meisho Doto (Halloween)": {
     "variant_id": 105802,
     "portrait": "assets/runners/105802.webp"
+  },
+  "Fuji Kiseki (Ballroom)": {
+    "variant_id": 100502,
+    "portrait": "assets/runners/100502.webp"
+  },
+  "Nakayama Festa": {
+    "variant_id": 104901,
+    "portrait": "assets/runners/104901.webp"
+  },
+  "Sakura Chiyono O": {
+    "variant_id": 106901,
+    "portrait": "assets/runners/106901.webp"
   }
 }

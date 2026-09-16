@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "match_id": "r4-m1",
+  "external_match_id": null,
+  "source": "Organizer-supplied final draft, roster, podiums, match MVP and 25-17 championship result, corroborated by six original horseACT exports supplied on 2026-09-16.",
+  "mvp": {
+    "team_id": "dominance",
+    "uma": "Oguri Cap",
+    "discord": "@Essential"
+  },
+  "races": [
+    {
+      "number": 1,
+      "track": "Niigata (Outer) 1600m · Turf · Left · Summer / Sunny / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominance",
+          "uma": "Sakura Chiyono O",
+          "discord": "@Raykini"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Maruzensky (Summer)",
+          "discord": "@wata"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Silence Suzuka",
+          "discord": "@AngelicVixen"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "track": "Kyoto (Outer) 2200m · Turf · Right · Fall / Sunny / Firm",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Essential"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Maruzensky (Summer)",
+          "discord": "@wata"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Fuji Kiseki (Ballroom)",
+          "discord": "@Yanagi #1 Fan (Bloop)"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "track": "Niigata (Outer) 1800m · Turf · Left · Summer / Sunny / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominance",
+          "uma": "Sakura Chiyono O",
+          "discord": "@Raykini"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Maruzensky (Summer)",
+          "discord": "@wata"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Essential"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "track": "Kyoto (Inner) 2000m · Turf · Right · Winter / Snowy / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominacion",
+          "uma": "Fuji Kiseki (Ballroom)",
+          "discord": "@Yanagi #1 Fan (Bloop)"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Essential"
+        },
+        {
+          "team_id": "dominacion",
+          "uma": "Maruzensky (Summer)",
+          "discord": "@wata"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "track": "Niigata (Outer) 2000m · Turf · Left · Winter / Snowy / Soft",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Essential"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Sakura Chiyono O",
+          "discord": "@Raykini"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Seiun Sky",
+          "discord": "@NakedGhostie"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "track": "Kyoto (Outer) 3000m · Turf · Right · Summer / Cloudy / Good",
+      "tiebreaker": false,
+      "podium": [
+        {
+          "team_id": "dominacion",
+          "uma": "Mayano Top Gun",
+          "discord": "@McGee"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Nakayama Festa",
+          "discord": "@Bloodvvolf"
+        },
+        {
+          "team_id": "dominance",
+          "uma": "Oguri Cap",
+          "discord": "@Essential"
+        }
+      ]
+    }
+  ]
+}

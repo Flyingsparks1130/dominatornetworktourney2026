@@ -1,3 +1,5 @@
-# Grand Final
+# Grand Final — complete
 
-Round 4 is open: **Dominance vs Dominacion** (`r4-m1`). Both semifinal winners are confirmed. The matchup folder contains a blank draft ready for the organizer's schedule and roster submissions; no final races, scores or winner have been entered.
+**Dominance are the 2026 tournament champions**, defeating Dominacion **25–17** in `r4-m1` after six races. Match MVP: **Essential**, Oguri Cap, with **12 podium points**.
+
+The matchup folder contains the locked draft, organizer-confirmed podium report, and all six unchanged original exports. The Tokyo 1400m tiebreaker was not run.
