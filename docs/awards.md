@@ -80,3 +80,9 @@ Recorded track picks are available in seven drafts; partial or missing pick hist
 Aptitude charts show all build distance/style/ground grades, A-or-S counts and S-only counts. The active-race chart instead weights each actual start by its race distance, surface and chosen style. Base-stat histograms use `stats`, before mood modifiers, and expose mean, median, range, quartiles and keyboard-accessible bin counts. Skills count equipped IDs once per build, including unique/passive skills and without adding inferred prerequisites.
 
 Run `node tests/test_tournament_statistics.cjs` for deduplication, eligibility, benches, ranks, boundaries, histogram accounting, artwork and real-data totals. Rebuild the private preview after the public snapshot to include the same statistics.
+
+## MVP championship tiebreak clarification
+
+On September 16, 2026 the organizer selected Essential over wata because Dominance won the tournament. Both finished with 27 eligible points. The sourced `mvp_champion_tiebreak` setting places membership of the confirmed champion team before the existing points-per-race and starts tiebreakers. Total points and the two-round eligibility requirement still come first. It uses only `index.champion_id`, never an inferred score winner. Other award rules and all recorded points remain unchanged. The MVP dialog publishes the clarified rule and its source; receipts show champion status as Yes/No.
+
+Statistics panels and summary cards use the shared `--race-line` border, 12px corner radius and charcoal/plum surfaces. Gold remains on podiums and chart values.

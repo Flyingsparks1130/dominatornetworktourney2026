@@ -60,5 +60,9 @@
     "neck": "assets/awards/trophy-neck.png",
     "fences": "assets/awards/trophy-fences.png",
     "goo-goo": "assets/awards/trophy-goo-goo.png"
+  },
+  "mvp_champion_tiebreak": {
+    "enabled": true,
+    "source": "Organizer clarification, September 16, 2026: Essential takes the 27-point MVP tie over wata because Dominance won the tournament."
   }
 }

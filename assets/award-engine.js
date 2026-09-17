@@ -58,7 +58,14 @@
   {id:'build',name:'Build & Strategy',description:'Roster construction, stats, skills, and points efficiency.',awards:['all-star','performance-anxiety','hot-headed','fine-motion','mejiro','festa','flyingsparks']},
   {id:'moments',name:'Race Moments',description:'The incidents, interactions, and replay-analysis awards.',awards:['nitro','double-jet','bourbon','blocked-count','blocked-time','neck','fences','goo-goo']}
  ];
- function catalog(config={}){return groups.flatMap(group=>group.awards.map(id=>specs.find(s=>s[0]===id)).map(([id,name,description,metric,unit,direction,tie])=>({id,name,description,metric,unit,direction,tie,rule:rules[id],image:config.images?.[id]||'',trophy_image:config.trophies?.[id]||null,trophy:id==='nitro'?'nitro':id==='fine-motion'?'wit':'champion',category:group.name})));}
+ function catalog(config={}){
+  const championshipTie=config.mvp_champion_tiebreak;
+  if(championshipTie?.enabled&&!championshipTie.source?.trim())throw Error('The MVP championship tiebreaker needs a sourced organizer clarification.');
+  return groups.flatMap(group=>group.awards.map(id=>specs.find(s=>s[0]===id)).map(([id,name,description,metric,unit,direction,tie])=>{
+   const championFirst=id==='mvp'&&championshipTie?.enabled;
+   return {id,name,description,metric,unit,direction,tie:championFirst?['tournament_champion',-1,...tie]:tie,rule:championFirst?'Requires appearances in at least two eligible tournament rounds. Most points; ties: the player on the confirmed tournament-winning team, then more points per race, then fewer starts. '+championshipTie.source:rules[id],image:config.images?.[id]||'',trophy_image:config.trophies?.[id]||null,trophy:id==='nitro'?'nitro':id==='fine-motion'?'wit':'champion',category:group.name};
+  }));
+ }
  function nativeUnique(id,variant){
   const text=String(variant),own=100000+10000*(Number(text.slice(-2))-1)+Number(text.slice(1,-2))*10+1;
   return id===own||id===own-90000;
@@ -187,6 +194,7 @@
    const p=player(d.team_id,d.player);p.dqs+=d.count;p.dq_records.push(d);
   }
   for(const p of players.values()){
+   p.tournament_champion=Number(Boolean(index.champion_id)&&p.team_id===index.champion_id);
    p.rounds=[...p.rounds].sort();p.matches=[...p.matches];p.build_count=p.builds.length;
    p.single_builds={};
    for(const [metric,get,direction]of [['single_stats',b=>b.total,-1],['single_guts',b=>b.stats?.guts,-1],['single_wisdom',b=>b.stats?.wisdom,1],['single_sp',b=>b.sp,-1]]){
