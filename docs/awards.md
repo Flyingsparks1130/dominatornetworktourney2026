@@ -1,6 +1,6 @@
-# Awards and private rehearsal
+# Awards and tournament statistics
 
-The Stats page displays 21 awards in a trophy cabinet. Each equal-size bay shows a generated trophy and a name plaque. Hover or keyboard focus previews the organizer’s artwork without cropping. Click or tap opens a native dialog with the full image, description, counting rule and hidden winner fields. Escape, the close button or clicking the backdrop closes the dialog and restores focus. The cabinet adapts from four columns to three and two; club statistics remain below it. Asslicker counts incidents received; Agnes Digital counts time spent blocked. Bakushin is pending and excluded. All 21 awards use organizer-supplied artwork, with original GIF bytes retained.
+The Stats page displays 21 awards in a trophy cabinet. Each equal-size bay shows a generated trophy and a name plaque. Hover or keyboard focus previews the organizer’s artwork without cropping. Click or tap opens a native dialog with the full image, description, counting rule and final standings. Escape, the close button or clicking the backdrop closes the dialog and restores focus. The cabinet adapts from four columns to three and two; club statistics and the tournament analysis remain below it. Asslicker counts incidents received; Agnes Digital counts time spent blocked. Bakushin is pending and excluded. All 21 awards use organizer-supplied artwork, with original GIF bytes retained.
 
 The sections and cards appear in this order:
 
@@ -8,9 +8,11 @@ The sections and cards appear in this order:
 - Build & Strategy: All Star Trainer, Professor of Performance Anxiety, Hot Headed, Fine Motion Wit, The Mejiro Fund, Nakayama Festa, Flyingsparks.
 - Race Moments: The 5 Nitro Incident, Double Jet, Retired Bourbon, Asslicker, Agnes Digital, The Neck and Neck, Swing for the Fences, No More Goo Goo Babies.
 
-## Reveal boundary
+## Public final reveal
 
-`stats.html` calls `AwardUI.publicMount()`, which reads only the tournament index and award configuration. It never calculates or fetches standings. A URL parameter or `config.reveal` cannot reveal a winner. Public plaques contain no standings; the detail dialog shows placeholder winner fields. Hover and click do not fetch or calculate standings. Do not commit a generated preview or standings export. The repository's raw race records remain public as before.
+The organizer authorized the final public reveal on September 16, 2026. `config/awards.json` now sets `reveal: true`. `stats.html` reads the index, configuration and `data/tournament-statistics.json`. The public snapshot contains the computed standings and statistical aggregates. Winners, values, runners-up and evidence are visible in the trophy dialogs; unresolved ties remain tied. A URL parameter does not override the reveal setting. The page checks the snapshot revision against the index. Setting the flag false and rebuilding omits standings from the snapshot; it cannot undo already-published history.
+
+Build the snapshot after updating the tournament index: `node scripts/build_public_stats.cjs`. The Pages workflow rebuilds it before copying the static site. Calculation happens at build time, so visiting Stats does not download all replay documents.
 
 Generate a portable private copy, outside this repository:
 
@@ -18,7 +20,7 @@ Generate a portable private copy, outside this repository:
 node scripts/build_awards_preview.cjs ../dominator-awards-preview.html
 ```
 
-Open that HTML directly in a browser. It embeds the current standings, styles, scripts, supplied art, and trophies. Refresh from live data reads the current Pages index, skill catalog and eligible race documents. No authentication or secret token is needed. A failed refresh retains the saved snapshot. The local controls can preview the public shelf, filter player stats, export standings, or import verified observations. Single-build winners and runners-up identify their Uma and match; their receipts point directly to the selected build. The event table and race receipts include exact finish HP. Award art is curated only through the repository configuration; the page exposes no visitor-controlled image picker. Nothing in that file publishes changes. A final public reveal requires a deliberate reviewed change to the public renderer.
+Open that HTML directly in a browser. It embeds the current standings, styles, scripts, supplied art, and trophies. Refresh from live data reads the current Pages index, skill catalog and eligible race documents. No authentication or secret token is needed. A failed refresh retains the saved snapshot. The local controls can preview the public shelf, filter player stats, export standings, or import verified observations. Single-build winners and runners-up identify their Uma and match; their receipts point directly to the selected build. The event table and race receipts include exact finish HP. Award art is curated only through the repository configuration; the page exposes no visitor-controlled image picker. Nothing in that file publishes changes. The local review controls remain exclusive to the private file.
 
 Add `--linked-art` for a compact review file that loads the already-public artwork from Pages instead of embedding every GIF. Its standings, scripts and styles still remain inside the local file; reading the saved results needs no standings endpoint. Artwork requires an internet connection in this mode. Category navigation stays within the private file.
 
@@ -65,4 +67,16 @@ The full-price catalog is generated from [Hakuraku](https://github.com/ayaliz/ha
 
 Every award now has its own trophy illustration. Nitro retains its sleeping clock and five stars; Fine Motion retains its emerald question-mark bulb, tiara and book. The other 19 awards use individually generated motifs, with shared gold detailing and burgundy plinths. `config.trophies` assigns the custom assets; award GIFs remain separate for hover previews and detail dialogs. The new PNGs use plain black backgrounds blended into the dark cabinet with CSS; the two original trophies retain their alpha transparency. The private generator uses the same catalog, so embedded and linked-art review copies show the complete custom set.
 
-Run `node tests/test_awards_client.js` and `node tests/test_award_telemetry.js`. It checks single-build rankings without accumulated-round bias, exact finish HP without rounding false positives, purchased skill costs, self-effect classification, received blocking, clipped durations, failed wit, round/build/export deduplication, DQs, missing evidence, ties, HTML escaping, and public reveal isolation. It also reconciles all current R2+ race points. Telemetry checks cover WT integration and finish interpolation, acceleration, missing inputs, duel expiry by HP/gap/speed, overlap deduplication, and all current runner estimates. The Pages workflow runs these checks alongside the existing Python and replay suites.
+Run `node tests/test_awards_client.js` and `node tests/test_award_telemetry.js`. It checks single-build rankings without accumulated-round bias, exact finish HP without rounding false positives, purchased skill costs, self-effect classification, received blocking, clipped durations, failed wit, round/build/export deduplication, DQs, missing evidence, ties, HTML escaping, and the explicit public reveal gate. It also reconciles all current R2+ race points. Telemetry checks cover WT integration and finish interpolation, acceleration, missing inputs, duel expiry by HP/gap/speed, overlap deduplication, and all current runner estimates. The Pages workflow runs these checks alongside the existing Python and replay suites.
+
+## Tournament analysis
+
+The gold statistics section follows the trophy cabinet and club records. Support cards, fielded Umas, opponent-vetoed Umas and equipped skills show top-five lists and a top-three podium. Ties share competition ranks; expanded lists preserve entries beyond fifth. Support-card IDs separate editions, while limit breaks are grouped. The five leading support cards have bundled art from the pinned Hakuraku source.
+
+Current coverage: 57 reported races and 100 non-benched roster slots from all ten matches; 39 verified exports, 390 starts and 70 fielded builds from R2–R4. Round 1 has no build exports. Build statistics use the importer fingerprint plus trainer, club and match. Repeated races with one build do not add extra deck/skill/stat observations. A build fielded in another match counts there too. Missing grades remain unknown.
+
+Recorded track picks are available in seven drafts; partial or missing pick history is not reconstructed. Picks and track vetoes are separate charts. Venue, layout, distance and surface form a track group; conditions and seasons are combined. Played track counts use reported results, not draft schedules or runner counts. Dirt/turf is separate from the four distance classes to avoid overlapping categories.
+
+Aptitude charts show all build distance/style/ground grades, A-or-S counts and S-only counts. The active-race chart instead weights each actual start by its race distance, surface and chosen style. Base-stat histograms use `stats`, before mood modifiers, and expose mean, median, range, quartiles and keyboard-accessible bin counts. Skills count equipped IDs once per build, including unique/passive skills and without adding inferred prerequisites.
+
+Run `node tests/test_tournament_statistics.cjs` for deduplication, eligibility, benches, ranks, boundaries, histogram accounting, artwork and real-data totals. Rebuild the private preview after the public snapshot to include the same statistics.

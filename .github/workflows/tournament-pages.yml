@@ -23,16 +23,20 @@ jobs:
           python-version: '3.12'
       - name: Test the importer, replay decoder and organizer rules
         run: python -m unittest discover -s tests -v
-      - name: Build the folder index and static site
-        run: python scripts/tournament_engine.py site
+      - name: Build the index, published statistics and static site
+        run: |
+          python scripts/tournament_engine.py build
+          node scripts/build_public_stats.cjs
+          python scripts/tournament_engine.py site
       - name: Check replay playback against the recorded races
         run: |
           node tests/test_replay_client.js
           node tests/test_championship_client.js
-      - name: Check award calculations and public reveal protection
+      - name: Check award calculations, reveal gate and statistics
         run: |
           node tests/test_awards_client.js
           node tests/test_award_telemetry.js
+          node tests/test_tournament_statistics.cjs
       - name: Configure Pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5

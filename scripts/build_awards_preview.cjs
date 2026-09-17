@@ -13,9 +13,10 @@ const standings=E.compute(index,docs,config,skills,telemetryData);
 const assetPaths=new Set([...Object.values(config.images),...E.catalog(config).map(a=>a.trophy_image||`assets/awards/trophy-${a.trophy}.png`)]);
 // Linked artwork keeps the review file small; standings still live only in this file.
 if(!process.argv.includes('--linked-art'))for(const p of assetPaths){const ext=path.extname(p).slice(1),mime=ext==='jpg'?'jpeg':ext;assets[p]='data:image/'+mime+';base64,'+fs.readFileSync(path.join(root,p)).toString('base64');}
-const seed=JSON.stringify({index,config,standings,skills,assets,telemetryData}).replaceAll('<','\\u003c');
-const styles=['site','ui','competition','awards'].map(n=>read('assets/'+n+'.css')).join('\n');
-const scripts=['site','hakuraku-award-telemetry','award-telemetry','award-engine','awards'].map(n=>read('assets/'+n+'.js')).join('\n');
+const statistics=json('data/tournament-statistics.json').statistics;
+const seed=JSON.stringify({index,config,standings,skills,assets,telemetryData,statistics}).replaceAll('<','\\u003c');
+const styles=['site','ui','competition','awards','tournament-statistics'].map(n=>read('assets/'+n+'.css')).join('\n');
+const scripts=['site','hakuraku-award-telemetry','award-telemetry','award-engine','tournament-statistics','awards'].map(n=>read('assets/'+n+'.js')).join('\n');
 const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><base href="https://flyingsparks1130.github.io/dominatornetworktourney2026/"><title>PRIVATE · Dominator Awards Preview</title><style>${styles}</style></head><body><main class="page awards-page" id="awards-root"></main><script>${scripts}</script><script type="application/json" id="private-snapshot">${seed}</script><script>siteHeader('stats');AwardUI.previewMount(JSON.parse(document.getElementById('private-snapshot').textContent));siteFooter();</script></body></html>`;
 fs.writeFileSync(output,html);
 console.log(JSON.stringify({output,bytes:Buffer.byteLength(html),coverage:standings.coverage,statuses:standings.awards.map(a=>({id:a.id,status:a.status})),issues:standings.issues},null,2));
