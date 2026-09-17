@@ -30,6 +30,18 @@ function fixture(){
  return {index:{matches:[match],teams,eliminated:['b']},docs:{race2:race},config:{performance_round_min:2,disqualifications:[]}};
 }
 const run=f=>E.compute(f.index,f.docs,f.config,catalogue),award=(s,id)=>s.awards.find(a=>a.id===id);
+check('MVP points ties prefer only the confirmed champion; points and eligibility still come first',()=>{
+ const f=fixture();f.config.mvp_champion_tiebreak={enabled:true,source:'Organizer: prefer the tournament-winning team in an MVP points tie.'};
+ const first=f.docs.race2;first.results[2].points=4;
+ const second=structuredClone(first);second.id='second';second.raw_sha256='second';f.docs.second=second;
+ f.index.matches.push({...f.index.matches[0],id:'r3-m1',round:'R3',races:[{id:'second',race_folder:'01 - Test'}],reported_results:null});
+ const extra=structuredClone(first);extra.id='extra';extra.raw_sha256='extra';extra.race_folder='02 - Test';extra.results=extra.results.slice(2);extra.results[0].points=0;f.docs.extra=extra;
+ f.index.matches[1].races.push({id:'extra',race_folder:'02 - Test'});
+ assert.equal(award(run(f),'mvp').winner.name,'Ada');
+ f.index.champion_id='b';let a=award(run(f),'mvp');assert.equal(a.winner.name,'Cy');assert.equal(a.winner.value,8);assert.equal(a.runners_up[0].name,'Ada');assert.equal(a.runners_up[0].value,8);assert.equal(a.winner.tiebreaks[0].field,'tournament_champion');assert.equal(a.winner.tiebreaks[0].value,1);
+ second.results[2].points=3;assert.equal(award(run(f),'mvp').winner.name,'Ada');
+ f.config.mvp_champion_tiebreak.source='';assert.throws(()=>run(f),/sourced organizer/);
+});
 check('Race results, received blocking, Rushed, wit and debuffs',()=>{
  const s=run(fixture()),p=s.players.find(p=>p.name==='Ada'),other=s.players.find(p=>p.name==='Bea');
  assert.equal(p.points,4);assert.equal(p.base_total,3300);assert.equal(p.debuffs,1);assert.equal(p.failed_wit,1);assert.equal(other.failed_wit,0);
@@ -152,6 +164,14 @@ const index=JSON.parse(fs.readFileSync('data/tournament-index.json')),config=JSO
 for(const m of index.matches)for(const f of m.races)docs[f.id]=JSON.parse(fs.readFileSync(f.data_file));
 require('../assets/award-telemetry.js');
 const real=E.compute(index,docs,config,catalogue,require('../assets/award-telemetry-data.json'));
+check('Essential wins the real 27-point MVP tie; other awards and recorded points are unchanged',()=>{
+ const previous=E.compute(index,docs,{...config,mvp_champion_tiebreak:{enabled:false}},catalogue,require('../assets/award-telemetry-data.json'));
+ assert.equal(award(previous,'mvp').winner.name,'wata');
+ const mvp=award(real,'mvp');assert.equal(mvp.winner.name,'Essential');assert.equal(mvp.winner.team,'Dominance');assert.equal(mvp.winner.value,27);assert.equal(mvp.runners_up[0].name,'wata');assert.equal(mvp.runners_up[0].value,27);assert(mvp.rule.includes('tournament-winning team'));
+ assert.deepEqual(real.awards.filter(a=>a.id!=='mvp'),previous.awards.filter(a=>a.id!=='mvp'));
+ assert.deepEqual(real.players.map(p=>[p.id,p.points]),previous.players.map(p=>[p.id,p.points]));
+ assert(UI.awardCard(mvp,{revealed:true,standings:real}).includes('tournament champion: Yes'));
+});
 assert.deepEqual(real.awards.map(a=>a.id),['mvp','wheelchair','hard-carry','top-road','nature','gate-kept','all-star','performance-anxiety','hot-headed','fine-motion','mejiro','festa','flyingsparks','nitro','double-jet','bourbon','blocked-count','blocked-time','neck','fences','goo-goo']);
 assert.equal(award(real,'neck').status,'provisional');assert.equal(award(real,'fences').status,'provisional');
 check('Every award has distinct trophy art in the public and private renderers',()=>{
