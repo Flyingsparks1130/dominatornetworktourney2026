@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reveal": false,
+  "reveal": true,
   "performance_round_min": 2,
   "wheelchair_min_rounds": 2,
   "disqualifications": [

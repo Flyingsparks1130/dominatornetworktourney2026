@@ -172,9 +172,15 @@ check('Every current export is included, and official points agree',()=>{
  assert.equal(award(real,'gate-kept').winner.name,'CallMeNeko');
 });
 (async()=>{
- const dialog={querySelector:()=>({})},root={innerHTML:'',querySelector:()=>dialog,querySelectorAll:()=>[]},requests=[],ctx={console,URLSearchParams,location:{search:'?reveal=true&private=true'},document:{getElementById:()=>root},fetch:async url=>{requests.push(url);return {ok:true,json:async()=>url.includes('index')?index:{...config,reveal:true}};}};
- vm.createContext(ctx);vm.runInContext(fs.readFileSync('assets/award-engine.js','utf8'),ctx);vm.runInContext(fs.readFileSync('assets/awards.js','utf8'),ctx);
- ctx.AwardEngine.compute=()=>{throw Error('Public page attempted to calculate winners');};await ctx.AwardUI.publicMount();
- assert.deepEqual(requests.sort(),['config/awards.json','data/tournament-index.json']);assert(root.innerHTML.includes('Their winners are still under wraps'));assert.equal((root.innerHTML.match(/data-open-award=/g)||[]).length,21);assert(!root.innerHTML.includes('CURRENT LEADER'));assert(!root.innerHTML.includes('could not load'));checks++;
- console.log(`${checks} award scenarios passed; ${real.coverage.verified_races} real races reconciled. Public winner data remains absent.`);
+ const snapshot=JSON.parse(fs.readFileSync('data/tournament-statistics.json'));
+ for(const reveal of [false,true]){
+  const dialog={querySelector:()=>({})},root={innerHTML:'',querySelector:()=>dialog,querySelectorAll:()=>[]},requests=[],ctx={console,URLSearchParams,location:{search:'?reveal=true&private=true'},document:{getElementById:()=>root},fetch:async url=>{requests.push(url);return {ok:true,json:async()=>url.includes('index')?index:url.includes('config')?{...config,reveal}:snapshot};}};
+  vm.createContext(ctx);vm.runInContext(fs.readFileSync('assets/award-engine.js','utf8'),ctx);vm.runInContext(fs.readFileSync('assets/tournament-statistics.js','utf8'),ctx);vm.runInContext(fs.readFileSync('assets/awards.js','utf8'),ctx);
+  ctx.AwardEngine.compute=()=>{throw Error('Public page attempted to calculate winners');};await ctx.AwardUI.publicMount();
+  assert.deepEqual(requests.sort(),['config/awards.json','data/tournament-index.json','data/tournament-statistics.json']);assert.equal((root.innerHTML.match(/data-open-award=/g)||[]).length,21);assert(!root.innerHTML.includes('could not load'));
+  assert.equal(root.innerHTML.includes('FINAL AWARDS'),reveal);assert.equal(root.innerHTML.includes('Their winners are still under wraps'),!reveal);assert(root.innerHTML.includes('What the field brought.'));
+  if(reveal){assert(root.innerHTML.includes('Flyingsparkz'));assert(root.innerHTML.includes('4,300'));assert(root.innerHTML.includes('Essential &amp; Reyov')||root.innerHTML.includes('Essential & Reyov'));}
+  checks++;
+ }
+ console.log(`${checks} award scenarios passed; ${real.coverage.verified_races} real races reconciled. Explicit configuration controls final reveal.`);
 })().catch(e=>{console.error(e);process.exitCode=1;});

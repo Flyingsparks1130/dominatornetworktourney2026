@@ -1,0 +1,24 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),S=require('../scripts/tournament_statistics.cjs');
+const row={eligible:true,team_id:'a',owner:'Ada',uma:'Uma',variant_id:100101,build_fingerprint:'build-a',stats:{speed:1000,stamina:500,power:900,guts:700,wisdom:600},skills:[{id:1},{id:1},{id:2}],support:[{id:30052},{id:30052}],running_style_code:1,aptitudes:{sprint:'S',mile:'A',front:'A',turf:'S',distance:'A',surface:'S'}};
+const race={id:'r',raw_sha256:'r',scoring_verified:true,results:[row]};
+const draft={roster:[{uma:'Uma',benched:false},{uma:'Bench',benched:true}],uma_bans:[{uma:'Veto'}],uma_pre_bans:[{uma:'Preban'}],track_picks:[{track:'Tokyo 1600m · Turf · Winter'}],track_vetoes:[]};
+const match={id:'m',round:'R2',draft,draft_has_content:true,races:[{id:'r'},{id:'duplicate'},{id:'second'}],reported_results:{races:[{number:1,track:'Tokyo 1600m · Turf'},{number:2,track:'Morioka 1600m · Dirt'}]}};
+let stats=S.compute({matches:[match]},{r:race,duplicate:race,second:{...race,id:'second',raw_sha256:'second'}});
+assert.equal(stats.coverage.builds,1);assert.equal(stats.coverage.starts,2);assert.equal(stats.coverage.reported_races,2);assert.equal(stats.support[0].count,1);assert.equal(stats.skills[0].count,1);assert.equal(stats.fielded.length,1);assert.equal(stats.veto[0].name,'Veto');assert.equal(stats.preban[0].name,'Preban');assert.equal(stats.aptitudes.sprint.S,1);assert.equal(stats.aptitudes.long.unknown,1);assert.equal(stats.active_aptitudes.style.A,2);assert.equal(stats.surface.find(x=>x.name==='Dirt').count,1);
+stats=S.compute({matches:[match,{...match,id:'later',races:[{id:'later'}]}]},{r:race,duplicate:race,second:{...race,raw_sha256:'second'},later:{...race,raw_sha256:'later'}});assert.equal(stats.coverage.builds,2);assert.equal(stats.support[0].count,2);
+assert.deepEqual([1400,1401,1800,1801,2400,2401].map(S.distanceType),['Sprint','Mile','Mile','Medium','Medium','Long']);assert.equal(S.trackKey('Tokyo 1600m · Turf · Summer'),S.trackKey('Tokyo 1600m · Turf · Winter'));
+assert.deepEqual(S.ranking(new Map([['a',3],['b',3],['c',1]])).map(r=>r.rank),[1,1,3]);
+const dist=S.distribution([100,200,300,400,null]);assert.equal(dist.n,4);assert.equal(dist.median,250);assert.equal(dist.q1,175);assert.equal(dist.q3,325);assert.equal(dist.bins.reduce((n,b)=>n+b.count,0),4);
+const snapshot=JSON.parse(fs.readFileSync('data/tournament-statistics.json')),real=snapshot.statistics;
+assert.deepEqual(real.coverage,{matches:10,draft_matches:10,pick_matches:7,roster_matches:10,reported_races:57,verified_races:39,starts:390,builds:70,deck_builds:70,skill_builds:70,fielded_slots:100});
+assert.equal(real.support[0].id,'30052');assert.equal(real.support[0].count,70);assert.equal(real.support.reduce((n,r)=>n+r.count,0),420);
+assert.equal(real.fielded.reduce((n,r)=>n+r.count,0),100);assert.equal(real.veto.reduce((n,r)=>n+r.count,0),20);assert.equal(real.preban.reduce((n,r)=>n+r.count,0),40);assert.equal(real.distance.reduce((n,r)=>n+r.count,0),57);assert.equal(real.surface.reduce((n,r)=>n+r.count,0),57);
+for(const g of Object.values(real.aptitudes))assert.equal(Object.values(g).reduce((a,b)=>a+b,0),70);
+for(const g of Object.values(real.active_aptitudes))assert.equal(Object.values(g).reduce((a,b)=>a+b,0),390);
+for(const d of Object.values(real.distributions)){assert.equal(d.n,70);assert.equal(d.bins.reduce((n,b)=>n+b.count,0),70);}
+assert.equal(snapshot.standings.awards.find(a=>a.id==='mejiro').winner.value,4300);assert.equal(snapshot.standings.awards.find(a=>a.id==='goo-goo').status,'tie');
+for(const key of ['support','veto','fielded','skills'])for(const r of real[key].slice(0,5))assert(r.image&&fs.existsSync(r.image),`Missing top-five image ${r.name}`);
+const UI=require('../assets/tournament-statistics.js'),html=UI.render(real);for(const text of ['Most used support cards','Most vetoed Umas','Most picked tracks','Most played distance','Turf &amp; dirt','Distance aptitude','Running-style aptitude','Ground aptitude','Most common skills'])assert(html.includes(text.replace('&amp;','&')),text);
+assert.equal((html.match(/class="meta-podium"/g)||[]).length,4);assert(html.includes('390'));assert(html.includes('57'));assert(!html.includes('NaN'));assert(!html.includes('undefined'));
+console.log('Statistics checks passed: duplicate races/builds, benches, ties, grade coverage, distance boundaries, distributions and all real totals.');
