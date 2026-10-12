@@ -23,6 +23,11 @@ jobs:
           python-version: '3.12'
       - name: Test the importer, replay decoder and organizer rules
         run: python -m unittest discover -s tests -v
+      - name: Check companion compatibility and approved results
+        run: |
+          node tests/test_companion.cjs
+          node tests/test_companion_client.cjs
+          node scripts/companion_bridge.cjs check
       - name: Build the index, published statistics and static site
         run: |
           python scripts/tournament_engine.py build

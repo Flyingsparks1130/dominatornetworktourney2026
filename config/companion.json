@@ -1,0 +1,6 @@
+{
+  "schema": "dominator-companion-site/v1",
+  "resultsPath": "data/companion/approved-results.json",
+  "expectedTournamentId": null,
+  "matchLinks": []
+}

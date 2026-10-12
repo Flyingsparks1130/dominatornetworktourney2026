@@ -1,0 +1,331 @@
+{
+  "schema": "dominator-tournament/v1",
+  "tournament": {
+    "id": "demo-event-not-official",
+    "name": "DEMO · Companion connection",
+    "scoring": {
+      "points": [
+        8,
+        4
+      ],
+      "tiebreak": "shared",
+      "aggregation": "sum",
+      "unlistedPlaces": 0
+    }
+  },
+  "results": [
+    {
+      "raceId": "race-a",
+      "match": {
+        "id": "match-a",
+        "name": "Demo match A",
+        "round": "Demo round",
+        "stage": "Example"
+      },
+      "heat": {
+        "id": "heat-a",
+        "number": 1
+      },
+      "track": {
+        "id": 10006,
+        "name": "Tokyo",
+        "distance": 2400,
+        "surface": 1,
+        "going": 1,
+        "weather": 1,
+        "season": 3
+      },
+      "rows": [
+        {
+          "index": 0,
+          "gate": 1,
+          "post": 1,
+          "rank": 1,
+          "name": "Oguri Cap (Starlight Beat)",
+          "card": 100601,
+          "trainer": "DemoAlice",
+          "owner": "DemoAlice",
+          "style": 2,
+          "finishTime": 145.1,
+          "playerId": "player-a",
+          "playerName": "Demo Alice",
+          "team": "Demo Red",
+          "points": 8
+        },
+        {
+          "index": 1,
+          "gate": 2,
+          "post": 2,
+          "rank": 2,
+          "name": "Gold Ship (Red Strife)",
+          "card": 100701,
+          "trainer": "DemoBob",
+          "owner": "DemoBob",
+          "style": 4,
+          "finishTime": 146.1,
+          "playerId": "player-b",
+          "playerName": "Demo Bob",
+          "team": "Demo Blue",
+          "points": 4
+        }
+      ],
+      "rules": {
+        "points": [
+          8,
+          4
+        ],
+        "tiebreak": "shared",
+        "aggregation": "sum",
+        "unlistedPlaces": 0
+      },
+      "approvedAt": "2026-10-12T15:00:00.000Z",
+      "operator": "Demo operator",
+      "fingerprint": "d8be68a558f442da8830b3db8297707983b9508b8824058d295c818a70d71021"
+    },
+    {
+      "raceId": "race-b",
+      "match": {
+        "id": "match-b",
+        "name": "Demo match B",
+        "round": "Demo round",
+        "stage": "Example"
+      },
+      "heat": {
+        "id": "heat-b",
+        "number": 1
+      },
+      "track": {
+        "id": 10006,
+        "name": "Tokyo",
+        "distance": 2400,
+        "surface": 1,
+        "going": 1,
+        "weather": 1,
+        "season": 3
+      },
+      "rows": [
+        {
+          "index": 1,
+          "gate": 2,
+          "post": 2,
+          "rank": 1,
+          "name": "Gold Ship (Red Strife)",
+          "card": 100701,
+          "trainer": "DemoBob",
+          "owner": "DemoBob",
+          "style": 4,
+          "finishTime": 145.1,
+          "playerId": "player-b",
+          "playerName": "Demo Bob",
+          "team": "Demo Blue",
+          "points": 8
+        },
+        {
+          "index": 0,
+          "gate": 1,
+          "post": 1,
+          "rank": 2,
+          "name": "Oguri Cap (Starlight Beat)",
+          "card": 100601,
+          "trainer": "DemoAlice",
+          "owner": "DemoAlice",
+          "style": 2,
+          "finishTime": 146.1,
+          "playerId": "player-a",
+          "playerName": "Demo Alice",
+          "team": "Demo Red",
+          "points": 4
+        }
+      ],
+      "rules": {
+        "points": [
+          8,
+          4
+        ],
+        "tiebreak": "shared",
+        "aggregation": "sum",
+        "unlistedPlaces": 0
+      },
+      "approvedAt": "2026-10-12T15:01:00.000Z",
+      "operator": "Demo operator",
+      "fingerprint": "bbc8d1f77bd2a4dd9ab3920fb5ace1c41c09a88671c22987c40d582f9c024f47"
+    }
+  ],
+  "standings": {
+    "players": [
+      {
+        "id": "player-a",
+        "name": "Demo Alice",
+        "points": 12,
+        "finishes": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entries": 2,
+        "rank": 1
+      },
+      {
+        "id": "player-b",
+        "name": "Demo Bob",
+        "points": 12,
+        "finishes": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entries": 2,
+        "rank": 1
+      }
+    ],
+    "teams": [
+      {
+        "id": "Demo Blue",
+        "name": "Demo Blue",
+        "points": 12,
+        "finishes": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entries": 2,
+        "rank": 1
+      },
+      {
+        "id": "Demo Red",
+        "name": "Demo Red",
+        "points": 12,
+        "finishes": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entries": 2,
+        "rank": 1
+      }
+    ]
+  },
+  "voided": [
+    {
+      "raceId": "voided-example",
+      "heatId": "heat-a",
+      "reason": "Demonstration rerun; excluded from scores."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Companion results · The Dominator</title>
+  <link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/companion.css">
+  <script src="assets/site.js" defer></script><script src="assets/companion-contract.js" defer></script><script src="assets/companion.js" defer></script>
+</head>
+<body>
+  <main class="page cp-page">
+    <a class="cp-back" href="archive.html">← Tournament archive</a>
+    <header class="page-head">
+      <p class="section-kicker">DOMINATOR NETWORK / COMPANION</p>
+      <h1 id="event-name">Tournament connection</h1>
+      <p class="lead">Approved race results, match scores and standings from the tournament desk.</p>
+      <div class="cp-actions">
+        <button class="btn primary" id="refresh" type="button">Refresh published results</button>
+        <label class="btn cp-file">Preview an export <input id="preview-file" type="file" accept=".json,application/json"></label>
+        <button class="btn" id="end-preview" type="button" hidden>Return to published results</button>
+        <a class="btn" id="download" download hidden>Download approved JSON</a>
+      </div>
+      <p class="cp-help">Preview opens a companion export on this device. Publishing stays in the local tournament desk.</p>
+    </header>
+    <p id="connection-status" role="status" aria-live="polite">Loading connection…</p>
+    <section id="results" aria-label="Approved tournament results" hidden></section>
+    <noscript><p>Enable JavaScript to read the approved results.</p></noscript>
+  </main>
+</body>
+</html>

@@ -32,6 +32,9 @@ This is a workflow for requested updates during an active conversation. It does 
 - [Drafts, reported results, race files, and official decisions](docs/match-data.md)
 - [Native race analysis and replay](docs/race-analysis.md)
 - [Known content inconsistencies and deferred work](docs/known-issues.md)
+- [Tournament companion connection and approved-results preview](docs/companion-integration.md)
+
+The companion foundation is available at `companion.html`. It reads the operator-approved `dominator-tournament/v1` export, with match selection and player/team totals. Scoring and event binding remain configurable; no results feed or future tournament rules are preloaded.
 
 ## Local development (optional)
 
